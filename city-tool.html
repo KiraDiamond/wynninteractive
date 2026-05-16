@@ -362,6 +362,17 @@
         Only the selected city and cities you have already placed are shown. Send me the `Copy All` JSON once you’ve moved them.
       </p>
     </section>
+
+    <section class="card">
+      <h2>Import</h2>
+      <textarea id="import-input" placeholder='Paste a JSON array here, then click "Load JSON".'></textarea>
+      <div class="button-row">
+        <button id="load-json" type="button" class="action">Load JSON</button>
+      </div>
+      <p class="note">
+        Accepts the same array shape from `Copy All`.
+      </p>
+    </section>
   </aside>
 
   <main>
@@ -420,6 +431,7 @@
       savedCount: document.querySelector("#saved-count"),
       selectionStatus: document.querySelector("#selection-status"),
       exportOutput: document.querySelector("#export-output"),
+      importInput: document.querySelector("#import-input"),
       zoomRange: document.querySelector("#zoom-range"),
       zoomValue: document.querySelector("#zoom-value"),
       viewport: document.querySelector("#viewport"),
@@ -432,6 +444,7 @@
       copySelected: document.querySelector("#copy-selected"),
       copyAll: document.querySelector("#copy-all"),
       clearAll: document.querySelector("#clear-all"),
+      loadJson: document.querySelector("#load-json"),
       nudgeStep: document.querySelector("#nudge-step"),
     };
 
@@ -613,6 +626,47 @@
         });
     }
 
+    function loadJsonIntoPlacements() {
+      let parsed;
+      try {
+        parsed = JSON.parse(elements.importInput.value);
+      } catch {
+        elements.selectionStatus.textContent = "Import failed: invalid JSON.";
+        return;
+      }
+
+      if (!Array.isArray(parsed)) {
+        elements.selectionStatus.textContent = "Import failed: expected a JSON array.";
+        return;
+      }
+
+      const nextPlacements = {};
+      for (const entry of parsed) {
+        if (!entry || typeof entry !== "object" || !entry.id || !entry.pixel) {
+          continue;
+        }
+        const city = cityById(entry.id);
+        if (!city) {
+          continue;
+        }
+        const x = Number(entry.pixel.x);
+        const y = Number(entry.pixel.y);
+        if (!Number.isFinite(x) || !Number.isFinite(y)) {
+          continue;
+        }
+        nextPlacements[entry.id] = {
+          x: clamp(Math.round(x), 0, MAP_WIDTH),
+          y: clamp(Math.round(y), 0, MAP_HEIGHT),
+        };
+      }
+
+      state.placements = nextPlacements;
+      persistPlacements();
+      render();
+      elements.selectionStatus.textContent = `Loaded ${Object.keys(nextPlacements).length} city placements from JSON.`;
+      focusCity(selectedCity());
+    }
+
     elements.citySelect.addEventListener("change", () => {
       state.cityId = elements.citySelect.value;
       render();
@@ -649,6 +703,10 @@
       state.placements = {};
       persistPlacements();
       render();
+    });
+
+    elements.loadJson.addEventListener("click", () => {
+      loadJsonIntoPlacements();
     });
 
     document.querySelectorAll("[data-nudge]").forEach((button) => {
