@@ -40,9 +40,15 @@ const state = {
   pendingCustomPoint: null,
   regionHighlight: "full",
   markerLayers: new Map(),
+  activeTab: "markers",
+  panelCollapsed: false,
 };
 
 const elements = {
+  sidePanel: document.querySelector("#side-panel"),
+  panelToggle: document.querySelector("#panel-toggle"),
+  tabButtons: [...document.querySelectorAll(".panel-tab")],
+  tabPanels: [...document.querySelectorAll(".tab-panel")],
   visibleCount: document.querySelector("#visible-count"),
   trackedCount: document.querySelector("#tracked-count"),
   customCount: document.querySelector("#custom-count"),
@@ -127,10 +133,8 @@ function imageToWorld(x, y) {
 
 function markerPoint(marker) {
   if (marker.position?.world) {
-    const converted = worldToImage(marker.position.world.x, marker.position.world.z);
-    return converted;
+    return worldToImage(marker.position.world.x, marker.position.world.z);
   }
-
   return marker.position;
 }
 
@@ -166,14 +170,6 @@ function markerIsVisible(marker) {
   return markerMatchesSearch(marker);
 }
 
-function categoryPill(meta) {
-  return `
-    <span class="category-pill" style="background:${meta.color}1f;color:${meta.color};border:1px solid ${meta.color}55;">
-      ${meta.label}
-    </span>
-  `;
-}
-
 function escapeHtml(value) {
   return value
     .replaceAll("&", "&amp;")
@@ -181,6 +177,36 @@ function escapeHtml(value) {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#39;");
+}
+
+function categoryCount(categoryId) {
+  return state.markers.filter((marker) => marker.category === categoryId).length;
+}
+
+function setActiveTab(tabId) {
+  state.activeTab = tabId;
+
+  elements.tabButtons.forEach((button) => {
+    const active = button.dataset.tab === tabId;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-selected", String(active));
+  });
+
+  elements.tabPanels.forEach((panel) => {
+    panel.classList.toggle("active", panel.dataset.panel === tabId);
+  });
+}
+
+function setPanelCollapsed(collapsed) {
+  state.panelCollapsed = collapsed;
+  elements.sidePanel.classList.toggle("collapsed", collapsed);
+}
+
+function markerFocusPadding() {
+  if (window.innerWidth <= 760 || state.panelCollapsed) {
+    return 0;
+  }
+  return 150;
 }
 
 function setSelectedMarker(markerId) {
@@ -192,6 +218,13 @@ function setSelectedMarker(markerId) {
     const isFound = state.foundIds.has(id);
     const isSelected = id === markerId;
     layer.setIcon(buildMarkerIcon(meta.color, isFound, isSelected));
+  }
+
+  if (markerId) {
+    setActiveTab("details");
+    if (window.innerWidth <= 760) {
+      setPanelCollapsed(false);
+    }
   }
 
   renderDetailCard();
@@ -217,6 +250,12 @@ function buildMarkerIcon(color, isFound, isSelected) {
 
 function flyToMarker(marker) {
   map.flyTo(markerLatLng(marker), Math.max(map.getZoom(), 0), { duration: 0.55 });
+  window.setTimeout(() => {
+    const xOffset = markerFocusPadding();
+    if (xOffset) {
+      map.panBy([xOffset, 0], { animate: true, duration: 0.35 });
+    }
+  }, 260);
   setSelectedMarker(marker.id);
 }
 
@@ -258,7 +297,7 @@ function renderDetailCard() {
     elements.detailCard.className = "detail-card empty";
     elements.detailCard.innerHTML = `
       <h2>No marker selected</h2>
-      <p>Use the map, search, or the list below to inspect locations.</p>
+      <p>Pick a marker on the map or from the list to open its details here.</p>
     `;
     return;
   }
@@ -270,21 +309,25 @@ function renderDetailCard() {
 
   elements.detailCard.className = "detail-card";
   elements.detailCard.innerHTML = `
-    <div class="marker-title-row">
-      <h2>${escapeHtml(marker.title)}</h2>
-      ${categoryPill(meta)}
+    <div class="detail-head">
+      <div>
+        <h2>${escapeHtml(marker.title)}</h2>
+        <p class="detail-meta">${escapeHtml(marker.region || "Unknown region")} | ${worldPoint.x}, ${worldPoint.z}</p>
+      </div>
+      <span class="detail-category" style="color:${meta.color};border:1px solid ${meta.color}55;">
+        ${escapeHtml(meta.label)}
+      </span>
     </div>
     <p>${escapeHtml(marker.description || "No description yet.")}</p>
-    <p class="marker-meta">Region: ${escapeHtml(marker.region || "Unknown")} | Approx world: ${worldPoint.x}, ${worldPoint.z}</p>
     <div class="detail-tags">
       ${(marker.tags || []).map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}
     </div>
     <div class="detail-actions">
-      <button type="button" class="accent-button" data-action="toggle-found">
+      <button type="button" class="primary-button" data-action="toggle-found">
         ${isFound ? "Mark not found" : "Mark found"}
       </button>
-      <button type="button" class="ghost-button" data-action="focus-marker">Focus on map</button>
-      ${marker.isCustom ? '<button type="button" class="ghost-button" data-action="delete-marker">Delete custom pin</button>' : ""}
+      <button type="button" class="text-button" data-action="focus-marker">Focus on map</button>
+      ${marker.isCustom ? '<button type="button" class="text-button" data-action="delete-marker">Delete custom pin</button>' : ""}
     </div>
   `;
 
@@ -304,7 +347,7 @@ function renderDetailCard() {
 
 function renderMarkerList() {
   if (!state.filteredMarkers.length) {
-    elements.markerList.innerHTML = "<p class='marker-meta'>No markers match the current filters.</p>";
+    elements.markerList.innerHTML = "<p class='coord-strip'>No markers match the current filters.</p>";
     return;
   }
 
@@ -314,14 +357,12 @@ function renderMarkerList() {
     const isActive = marker.id === state.selectedMarkerId;
     return `
       <article class="marker-item ${isFound ? "found" : ""} ${isActive ? "active" : ""}" data-id="${marker.id}">
-        <div class="marker-title-row">
+        <span class="marker-dot" style="background:${meta.color};"></span>
+        <div class="marker-copy">
           <h3>${escapeHtml(marker.title)}</h3>
-          ${categoryPill(meta)}
+          <p>${escapeHtml(marker.region || "Unknown region")}</p>
         </div>
-        <p class="marker-meta">${escapeHtml(marker.region || "Unknown region")}</p>
-        <div class="marker-tags">
-          ${(marker.tags || []).slice(0, 3).map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}
-        </div>
+        <span class="marker-meta-tag">${escapeHtml(meta.label)}</span>
       </article>
     `;
   }).join("");
@@ -340,11 +381,15 @@ function renderCategoryFilters() {
   elements.categoryFilters.innerHTML = Object.entries(CATEGORY_META).map(([id, meta]) => `
     <button
       type="button"
-      class="chip ${state.categoryFilter.has(id) ? "active" : ""}"
+      class="layer-card ${state.categoryFilter.has(id) ? "active" : ""}"
       data-category="${id}"
-      style="--chip:${meta.color};"
     >
-      ${meta.label}
+      <span class="layer-swatch" style="background:${meta.color};"></span>
+      <span class="layer-copy">
+        <strong>${escapeHtml(meta.label)}</strong>
+        <span>${state.categoryFilter.has(id) ? "Visible" : "Hidden"}</span>
+      </span>
+      <span class="layer-count">${categoryCount(id)}</span>
     </button>
   `).join("");
 
@@ -366,10 +411,10 @@ function renderRegionJumps() {
   elements.regionJumps.innerHTML = REGION_AREAS.map((region) => `
     <button
       type="button"
-      class="chip region-chip ${region.id === state.regionHighlight ? "active" : ""}"
+      class="region-chip ${region.id === state.regionHighlight ? "active" : ""}"
       data-region="${region.id}"
     >
-      ${region.label}
+      ${escapeHtml(region.label)}
     </button>
   `).join("");
 
@@ -387,7 +432,12 @@ function renderRegionJumps() {
         [topLeft.y * MAP_HEIGHT, topLeft.x * MAP_WIDTH],
         [bottomRight.y * MAP_HEIGHT, bottomRight.x * MAP_WIDTH],
       ];
-      map.fitBounds(bounds, { padding: [24, 24], animate: true });
+      const leftPad = window.innerWidth > 760 && !state.panelCollapsed ? 420 : 24;
+      map.fitBounds(bounds, {
+        paddingTopLeft: [leftPad, 24],
+        paddingBottomRight: [24, 24],
+        animate: true,
+      });
     });
   });
 }
@@ -434,9 +484,10 @@ function startAddMode() {
   state.addMode = true;
   state.pendingCustomPoint = null;
   elements.toggleAddMode.textContent = "Click map...";
-  elements.toggleAddMode.classList.add("ghost-button");
   elements.customPinForm.classList.remove("hidden");
   elements.customCoords.textContent = "Waiting for map click";
+  setActiveTab("planner");
+  setPanelCollapsed(false);
   elements.customTitle.focus();
 }
 
@@ -454,7 +505,7 @@ function stopAddMode(resetForm = true) {
 
 function bootstrapCustomCategorySelect() {
   elements.customCategory.innerHTML = Object.entries(CATEGORY_META)
-    .map(([id, meta]) => `<option value="${id}">${meta.label}</option>`)
+    .map(([id, meta]) => `<option value="${id}">${escapeHtml(meta.label)}</option>`)
     .join("");
   elements.customCategory.value = "custom";
 }
@@ -469,6 +520,17 @@ function hydrateMarkerState() {
 }
 
 function bindEvents() {
+  elements.panelToggle.addEventListener("click", () => {
+    setPanelCollapsed(!state.panelCollapsed);
+  });
+
+  elements.tabButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      setActiveTab(button.dataset.tab);
+      setPanelCollapsed(false);
+    });
+  });
+
   elements.searchInput.addEventListener("input", (event) => {
     state.search = event.target.value.trim().toLowerCase();
     syncVisibleMarkers();
@@ -551,6 +613,12 @@ function bindEvents() {
     const world = imageToWorld(x, y);
     elements.customCoords.textContent = `Approx world coords: ${world.x}, ${world.z}`;
   });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 760) {
+      setPanelCollapsed(false);
+    }
+  });
 }
 
 bootstrapCustomCategorySelect();
@@ -560,3 +628,4 @@ renderRegionJumps();
 bindEvents();
 syncVisibleMarkers();
 renderDetailCard();
+setActiveTab("markers");
