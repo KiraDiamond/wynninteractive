@@ -1,4 +1,5 @@
 import { CATEGORY_META, STARTER_MARKERS } from "./data/markers.js";
+import { IMPORTED_MARKERS } from "./data/imported-markers.js";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
@@ -12,6 +13,8 @@ const STORAGE_KEYS = {
   found: "lunaris-atlas-found-v1",
   custom: "lunaris-atlas-custom-v1",
 };
+
+const MARKER_LIST_LIMIT = 140;
 
 const REGION_AREAS = [
   { id: "full", label: "World", min_x: MAP_MIN_X, max_x: MAP_MAX_X, min_z: MAP_MIN_Z, max_z: MAP_MAX_Z },
@@ -351,7 +354,10 @@ function renderMarkerList() {
     return;
   }
 
-  elements.markerList.innerHTML = state.filteredMarkers.map((marker) => {
+  const visibleMarkers = state.filteredMarkers.slice(0, MARKER_LIST_LIMIT);
+  const overflow = state.filteredMarkers.length - visibleMarkers.length;
+
+  elements.markerList.innerHTML = `${overflow > 0 ? `<p class="coord-strip">Showing the first ${MARKER_LIST_LIMIT} markers. Narrow filters or search to inspect the rest.</p>` : ""}${visibleMarkers.map((marker) => {
     const meta = CATEGORY_META[marker.category];
     const isFound = state.foundIds.has(marker.id);
     const isActive = marker.id === state.selectedMarkerId;
@@ -365,7 +371,7 @@ function renderMarkerList() {
         <span class="marker-meta-tag">${escapeHtml(meta.label)}</span>
       </article>
     `;
-  }).join("");
+  }).join("")}`;
 
   elements.markerList.querySelectorAll(".marker-item").forEach((item) => {
     item.addEventListener("click", () => {
@@ -513,6 +519,7 @@ function bootstrapCustomCategorySelect() {
 function hydrateMarkerState() {
   state.markers = [
     ...STARTER_MARKERS,
+    ...IMPORTED_MARKERS,
     ...loadCustomMarkers().map((marker) => ({ ...marker, isCustom: true })),
   ];
 
