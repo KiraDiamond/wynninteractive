@@ -667,6 +667,14 @@ input {
     0 0 8px rgba(0, 0, 0, 0.3);
 }
 
+.city-map-label.editable {
+  cursor: grab;
+}
+
+.city-map-label.editable.selected {
+  cursor: grabbing;
+}
+
 .city-map-label.selected {
   color: #8ae7ff;
   text-shadow:

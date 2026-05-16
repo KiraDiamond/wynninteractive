@@ -15,6 +15,7 @@ const STORAGE_KEYS = {
   found: "wynninteractive-found-v1",
   calibrationSamples: "wynninteractive-calibration-samples-v1",
   calibrationTransform: "wynninteractive-calibration-transform-v1",
+  cityEdits: "wynninteractive-city-edits-v1",
 };
 const CONTENT_BOOK_ROOT = "./assets/content-book";
 const CITY_ICON_URL = "./assets/icon.png";
@@ -95,6 +96,8 @@ const state = {
   calibrationIndex: 0,
   calibrationLayers: new Map(),
   activeTransform: USE_STORED_CALIBRATION ? loadCalibrationTransform() : null,
+  editCities: false,
+  cityEdits: loadCityEdits(),
 };
 
 const elements = {
@@ -104,8 +107,13 @@ const elements = {
   clearSearch: document.querySelector("#clear-search"),
   showCitiesToggle: document.querySelector("#show-cities-toggle"),
   hideFoundToggle: document.querySelector("#hide-found-toggle"),
+  editCitiesToggle: document.querySelector("#edit-cities-toggle"),
   categoryFilters: document.querySelector("#category-filters"),
   detailCard: document.querySelector("#detail-card"),
+  cityEditorStatus: document.querySelector("#city-editor-status"),
+  cityEditorOutput: document.querySelector("#city-editor-output"),
+  cityEditorCopy: document.querySelector("#city-editor-copy"),
+  cityEditorClear: document.querySelector("#city-editor-clear"),
   showAllCategories: document.querySelector("#show-all-categories"),
   hideAllCategories: document.querySelector("#hide-all-categories"),
   calibrationPanel: document.querySelector("#calibration-panel"),
@@ -174,6 +182,18 @@ function persistCalibrationTransform() {
   } else {
     localStorage.removeItem(STORAGE_KEYS.calibrationTransform);
   }
+}
+
+function loadCityEdits() {
+  try {
+    return JSON.parse(localStorage.getItem(STORAGE_KEYS.cityEdits) || "{}");
+  } catch {
+    return {};
+  }
+}
+
+function persistCityEdits() {
+  localStorage.setItem(STORAGE_KEYS.cityEdits, JSON.stringify(state.cityEdits));
 }
 
 function clamp(value, min, max) {
@@ -258,6 +278,12 @@ function imageToWorld(x, y) {
 }
 
 function markerPoint(marker) {
+  if (marker.fixed && state.cityEdits[marker.id]) {
+    return {
+      x: clamp(state.cityEdits[marker.id].x / MAP_WIDTH, 0, 1),
+      y: clamp(state.cityEdits[marker.id].y / MAP_HEIGHT, 0, 1),
+    };
+  }
   if (marker.position?.world) {
     return worldToImage(marker.position.world.x, marker.position.world.z);
   }
@@ -480,6 +506,9 @@ function buildMarkerIcon(marker, isFound, isSelected) {
   const meta = CATEGORY_META[marker.category];
   if (marker.fixed) {
     const classes = ["city-map-label"];
+    if (state.editCities) {
+      classes.push("editable");
+    }
     if (isFound) {
       classes.push("found");
     }
@@ -518,9 +547,37 @@ function createMarkerLayer(marker) {
   const layer = L.marker(markerLatLng(marker), {
     icon: buildMarkerIcon(marker, state.foundIds.has(marker.id), false),
     title: marker.title,
+    draggable: marker.fixed,
+    autoPan: marker.fixed,
   });
 
   layer.on("click", () => setSelectedMarker(marker.id));
+  if (marker.fixed) {
+    layer.on("dragstart", () => {
+      if (state.editCities) {
+        setSelectedMarker(marker.id);
+      }
+    });
+    layer.on("dragend", (event) => {
+      if (!state.editCities) {
+        updateMarkerLayerPositions();
+        return;
+      }
+
+      const latlng = event.target.getLatLng();
+      state.cityEdits[marker.id] = {
+        x: clamp(Math.round(latlng.lng), 0, MAP_WIDTH),
+        y: clamp(Math.round(latlng.lat), 0, MAP_HEIGHT),
+      };
+      persistCityEdits();
+      renderCityEditor();
+      renderDetailCard();
+      syncVisibleMarkers();
+    });
+    if (!state.editCities) {
+      layer.dragging.disable();
+    }
+  }
   state.markerLayers.set(marker.id, layer);
 }
 
@@ -693,6 +750,37 @@ function renderDetailCard() {
   });
 }
 
+function cityEditExport() {
+  return state.markers
+    .filter((marker) => marker.fixed)
+    .map((marker) => {
+      const point = markerPoint(marker);
+      return {
+        id: marker.id,
+        title: marker.title,
+        region: marker.region,
+        world: marker.position.world,
+        pixel: {
+          x: Math.round(point.x * MAP_WIDTH),
+          y: Math.round(point.y * MAP_HEIGHT),
+        },
+        saved: Boolean(state.cityEdits[marker.id]),
+      };
+    });
+}
+
+function renderCityEditor() {
+  if (!elements.cityEditorStatus || !elements.cityEditorOutput) {
+    return;
+  }
+
+  const editedCount = Object.keys(state.cityEdits).length;
+  elements.cityEditorStatus.textContent = state.editCities
+    ? `Edit mode is on. Drag city labels on the map. ${editedCount} city edits saved locally.`
+    : `Edit mode is off. ${editedCount} city edits saved locally. Enable edit mode to drag city labels.`;
+  elements.cityEditorOutput.textContent = JSON.stringify(cityEditExport(), null, 2);
+}
+
 function renderCalibrationPanel() {
   if (!elements.calibrationPanel) {
     return;
@@ -777,6 +865,13 @@ function syncVisibleMarkers() {
     if (!visible && map.hasLayer(layer)) {
       map.removeLayer(layer);
     }
+    if (marker.fixed && layer.dragging) {
+      if (state.editCities) {
+        layer.dragging.enable();
+      } else {
+        layer.dragging.disable();
+      }
+    }
     layer.setIcon(buildMarkerIcon(marker, state.foundIds.has(marker.id), marker.id === state.selectedMarkerId));
   }
 }
@@ -843,6 +938,14 @@ function bindEvents() {
     renderDetailCard();
   });
 
+  if (elements.editCitiesToggle) {
+    elements.editCitiesToggle.addEventListener("change", (event) => {
+      state.editCities = event.target.checked;
+      syncVisibleMarkers();
+      renderCityEditor();
+    });
+  }
+
   if (elements.showCitiesToggle) {
     elements.showCitiesToggle.addEventListener("change", (event) => {
       state.showCities = event.target.checked;
@@ -906,6 +1009,28 @@ function bindEvents() {
     });
   }
 
+  if (elements.cityEditorCopy) {
+    elements.cityEditorCopy.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(elements.cityEditorOutput.textContent);
+        elements.cityEditorStatus.textContent = "Copied city edit JSON.";
+      } catch {
+        elements.cityEditorStatus.textContent = "Clipboard copy failed.";
+      }
+    });
+  }
+
+  if (elements.cityEditorClear) {
+    elements.cityEditorClear.addEventListener("click", () => {
+      state.cityEdits = {};
+      persistCityEdits();
+      updateMarkerLayerPositions();
+      syncVisibleMarkers();
+      renderCityEditor();
+      renderDetailCard();
+    });
+  }
+
   window.addEventListener("resize", () => {
     if (window.innerWidth > 760) {
       setPanelCollapsed(false);
@@ -919,4 +1044,5 @@ renderCalibrationMarkers();
 syncVisibleMarkers();
 renderCategoryFilters();
 renderDetailCard();
+renderCityEditor();
 renderCalibrationPanel();
