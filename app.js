@@ -98,6 +98,7 @@ const state = {
   activeTransform: USE_STORED_CALIBRATION ? loadCalibrationTransform() : null,
   editCities: false,
   cityEdits: loadCityEdits(),
+  cityTransform: null,
 };
 
 const elements = {
@@ -261,6 +262,9 @@ function invertTransform(transform, px, py) {
 }
 
 function worldToImage(x, z) {
+  if (state.cityTransform) {
+    return applyTransform(state.cityTransform, x, z);
+  }
   if (state.activeTransform) {
     return applyTransform(state.activeTransform, x, z);
   }
@@ -268,6 +272,12 @@ function worldToImage(x, z) {
 }
 
 function imageToWorld(x, y) {
+  if (state.cityTransform) {
+    const inverted = invertTransform(state.cityTransform, x * MAP_WIDTH, y * MAP_HEIGHT);
+    if (inverted) {
+      return inverted;
+    }
+  }
   if (state.activeTransform) {
     const inverted = invertTransform(state.activeTransform, x * MAP_WIDTH, y * MAP_HEIGHT);
     if (inverted) {
@@ -354,14 +364,7 @@ function solve3x3(matrix, vector) {
   return rows.map((row) => row[3]);
 }
 
-function computeCalibrationTransform() {
-  const samples = CALIBRATION_TARGETS
-    .map((target) => {
-      const sample = state.calibrationSamples[target.id];
-      return sample ? { ...target, ...sample } : null;
-    })
-    .filter(Boolean);
-
+function solveAffineTransform(samples) {
   if (samples.length < 3) {
     return null;
   }
@@ -408,6 +411,30 @@ function computeCalibrationTransform() {
   }, 0) / samples.length;
 
   return { ...transform, sampleCount: samples.length, averagePixelError: Number(error.toFixed(2)) };
+}
+
+function computeCalibrationTransform() {
+  const samples = CALIBRATION_TARGETS
+    .map((target) => {
+      const sample = state.calibrationSamples[target.id];
+      return sample ? { ...target, ...sample } : null;
+    })
+    .filter(Boolean);
+
+  return solveAffineTransform(samples);
+}
+
+function computeCityEditTransform() {
+  const samples = state.markers
+    .filter((marker) => marker.fixed && state.cityEdits[marker.id] && marker.position?.world)
+    .map((marker) => ({
+      x: marker.position.world.x,
+      z: marker.position.world.z,
+      pixelX: state.cityEdits[marker.id].x,
+      pixelY: state.cityEdits[marker.id].y,
+    }));
+
+  return solveAffineTransform(samples);
 }
 
 function importedCategory(marker) {
@@ -570,11 +597,9 @@ function createMarkerLayer(marker) {
         y: clamp(Math.round(latlng.lat), 0, MAP_HEIGHT),
       };
       persistCityEdits();
-      renderCityEditor();
-      renderDetailCard();
-      syncVisibleMarkers();
+      refreshCityTransform();
     });
-    if (!state.editCities) {
+    if (!state.editCities && layer.dragging) {
       layer.dragging.disable();
     }
   }
@@ -583,6 +608,14 @@ function createMarkerLayer(marker) {
 
 function calibrationLatLng(sample) {
   return [sample.pixelY, sample.pixelX];
+}
+
+function refreshCityTransform() {
+  state.cityTransform = computeCityEditTransform();
+  updateMarkerLayerPositions();
+  syncVisibleMarkers();
+  renderCityEditor();
+  renderDetailCard();
 }
 
 function renderCalibrationMarkers() {
@@ -775,9 +808,12 @@ function renderCityEditor() {
   }
 
   const editedCount = Object.keys(state.cityEdits).length;
+  const transformStatus = state.cityTransform
+    ? ` City-fit active from ${state.cityTransform.sampleCount} cities. Average error: ${state.cityTransform.averagePixelError}px.`
+    : (editedCount >= 3 ? " City-fit could not be solved from the current edits." : " Move at least 3 cities to solve the full map transform.");
   elements.cityEditorStatus.textContent = state.editCities
-    ? `Edit mode is on. Drag city labels on the map. ${editedCount} city edits saved locally.`
-    : `Edit mode is off. ${editedCount} city edits saved locally. Enable edit mode to drag city labels.`;
+    ? `Edit mode is on. Drag city labels on the map. ${editedCount} city edits saved locally.${transformStatus}`
+    : `Edit mode is off. ${editedCount} city edits saved locally. Enable edit mode to drag city labels.${transformStatus}`;
   elements.cityEditorOutput.textContent = JSON.stringify(cityEditExport(), null, 2);
 }
 
@@ -1024,10 +1060,7 @@ function bindEvents() {
     elements.cityEditorClear.addEventListener("click", () => {
       state.cityEdits = {};
       persistCityEdits();
-      updateMarkerLayerPositions();
-      syncVisibleMarkers();
-      renderCityEditor();
-      renderDetailCard();
+      refreshCityTransform();
     });
   }
 
@@ -1039,6 +1072,7 @@ function bindEvents() {
 }
 
 hydrateMarkerState();
+state.cityTransform = computeCityEditTransform();
 bindEvents();
 renderCalibrationMarkers();
 syncVisibleMarkers();
