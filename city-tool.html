@@ -359,7 +359,7 @@
         <button id="clear-all" type="button" class="action secondary">Clear All</button>
       </div>
       <p class="note">
-        Send me the `Copy All` JSON once you’ve moved the cities. I’ll use that to recalibrate the whole map.
+        Only the selected city and cities you have already placed are shown. Send me the `Copy All` JSON once you’ve moved them.
       </p>
     </section>
   </aside>
@@ -390,7 +390,7 @@
       minZ: -6645,
       maxZ: 12,
     };
-    const STORAGE_KEY = "wynninteractive-city-editor-v1";
+    const STORAGE_KEY = "wynninteractive-city-editor-v2";
 
     const cities = STARTER_MARKERS
       .filter((marker) => marker.category === "city")
@@ -507,8 +507,12 @@
       elements.citySelect.value = state.cityId;
     }
 
+    function visibleCities() {
+      return cities.filter((city) => city.id === state.cityId || state.placements[city.id]);
+    }
+
     function renderOverlay() {
-      elements.cityOverlay.innerHTML = cities.map((city) => {
+      elements.cityOverlay.innerHTML = visibleCities().map((city) => {
         const pixel = cityPixel(city);
         const classes = ["city-label"];
         if (city.id === state.cityId) {
@@ -558,7 +562,7 @@
       elements.savedCount.value = `${savedCityCount()} / ${cities.length}`;
       elements.selectionStatus.textContent = state.placements[city.id]
         ? `${city.title} saved at ${pixel.x}, ${pixel.y}. Click map to replace or use nudge controls.`
-        : `${city.title} is still on the projected guess. Click the map to place it exactly.`;
+        : `${city.title} is on a temporary projected guess. Click the map to place it exactly.`;
     }
 
     function renderExport() {
