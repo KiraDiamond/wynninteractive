@@ -479,26 +479,20 @@ function markerIsVisible(marker) {
 function buildMarkerIcon(marker, isFound, isSelected) {
   const meta = CATEGORY_META[marker.category];
   if (marker.fixed) {
-    const classes = ["map-pin", "fixed"];
+    const classes = ["city-map-label"];
     if (isFound) {
       classes.push("found");
     }
     if (isSelected) {
       classes.push("selected");
     }
+    const width = Math.max(84, marker.title.length * 10 + 10);
 
     return L.divIcon({
-      className: "map-pin-wrapper",
-      html: `
-        <div class="city-marker">
-          <div class="${classes.join(" ")} city-pin">
-            <img src="${CITY_ICON_URL}" alt="">
-          </div>
-          <span class="city-label">${escapeHtml(marker.title)}</span>
-        </div>
-      `,
-      iconSize: [84, 46],
-      iconAnchor: [14, 14],
+      className: "city-label-wrapper",
+      html: `<span class="${classes.join(" ")}">${escapeHtml(marker.title)}</span>`,
+      iconSize: [width, 22],
+      iconAnchor: [Math.round(width / 2), 11],
     });
   }
 

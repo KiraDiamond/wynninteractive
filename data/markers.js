@@ -83,6 +83,15 @@ export const STARTER_MARKERS = [
     position: { world: { x: 470, z: -1582 } },
   },
   {
+    id: "gelibord",
+    title: "Gelibord",
+    category: "city",
+    region: "Gavel",
+    description: "Northern Gavel city and major snowy route stop.",
+    tags: ["city", "gavel", "snow"],
+    position: { world: { x: -1020, z: -5310 } },
+  },
+  {
     id: "llevigar",
     title: "Llevigar",
     category: "city",
