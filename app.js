@@ -4,11 +4,11 @@ import { IMPORTED_MARKERS } from "./data/imported-markers.js";
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
 const MAP_BOUNDS = [[0, 0], [MAP_HEIGHT, MAP_WIDTH]];
-const DEFAULT_BOUNDS = {
-  minX: -2540,
-  maxX: 2046,
-  minZ: -6645,
-  maxZ: 12,
+const DEFAULT_WORLD_LINEAR = {
+  scaleX: 1.03,
+  offsetX: 2556.14,
+  scaleZ: 1.0038940809968847,
+  offsetY: 6627.121495327103,
 };
 
 const STORAGE_KEYS = {
@@ -164,16 +164,22 @@ function clamp(value, min, max) {
 }
 
 function defaultWorldToImage(x, z) {
+  const pixelX = DEFAULT_WORLD_LINEAR.scaleX * x + DEFAULT_WORLD_LINEAR.offsetX;
+  const pixelY = DEFAULT_WORLD_LINEAR.scaleZ * z + DEFAULT_WORLD_LINEAR.offsetY;
+
   return {
-    x: clamp((x - DEFAULT_BOUNDS.minX) / (DEFAULT_BOUNDS.maxX - DEFAULT_BOUNDS.minX), 0, 1),
-    y: clamp((z - DEFAULT_BOUNDS.minZ) / (DEFAULT_BOUNDS.maxZ - DEFAULT_BOUNDS.minZ), 0, 1),
+    x: clamp(pixelX / MAP_WIDTH, 0, 1),
+    y: clamp(pixelY / MAP_HEIGHT, 0, 1),
   };
 }
 
 function defaultImageToWorld(x, y) {
+  const pixelX = x * MAP_WIDTH;
+  const pixelY = y * MAP_HEIGHT;
+
   return {
-    x: Math.round(DEFAULT_BOUNDS.minX + x * (DEFAULT_BOUNDS.maxX - DEFAULT_BOUNDS.minX)),
-    z: Math.round(DEFAULT_BOUNDS.minZ + y * (DEFAULT_BOUNDS.maxZ - DEFAULT_BOUNDS.minZ)),
+    x: Math.round((pixelX - DEFAULT_WORLD_LINEAR.offsetX) / DEFAULT_WORLD_LINEAR.scaleX),
+    z: Math.round((pixelY - DEFAULT_WORLD_LINEAR.offsetY) / DEFAULT_WORLD_LINEAR.scaleZ),
   };
 }
 
