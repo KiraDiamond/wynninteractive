@@ -206,7 +206,7 @@ function defaultWorldToImage(x, z) {
   const normalizedX = clamp((x - DEFAULT_BOUNDS.minX) / (DEFAULT_BOUNDS.maxX - DEFAULT_BOUNDS.minX), 0, 1);
   const normalizedY = clamp((z - DEFAULT_BOUNDS.minZ) / (DEFAULT_BOUNDS.maxZ - DEFAULT_BOUNDS.minZ), 0, 1);
   return applyUrlProjectionConfig({
-    x: 1 - normalizedX,
+    x: normalizedX,
     y: 1 - normalizedY,
   });
 }
@@ -214,7 +214,7 @@ function defaultWorldToImage(x, z) {
 function defaultImageToWorld(x, y) {
   const point = removeUrlProjectionConfig({ x, y });
   return {
-    x: Math.round(DEFAULT_BOUNDS.minX + (1 - point.x) * (DEFAULT_BOUNDS.maxX - DEFAULT_BOUNDS.minX)),
+    x: Math.round(DEFAULT_BOUNDS.minX + point.x * (DEFAULT_BOUNDS.maxX - DEFAULT_BOUNDS.minX)),
     z: Math.round(DEFAULT_BOUNDS.minZ + (1 - point.y) * (DEFAULT_BOUNDS.maxZ - DEFAULT_BOUNDS.minZ)),
   };
 }
