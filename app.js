@@ -18,13 +18,32 @@ const STORAGE_KEYS = {
 };
 const CONTENT_BOOK_ROOT = "./assets/content-book";
 const CITY_ICON_URL = "./assets/icon.png";
-const CALIBRATION_MODE = new URLSearchParams(window.location.search).get("calibrate") === "1";
+const query = new URLSearchParams(window.location.search);
+const CALIBRATION_MODE = query.get("calibrate") === "1";
+const USE_STORED_CALIBRATION = CALIBRATION_MODE || query.get("useCalibration") === "1";
 const CALIBRATION_TARGETS = STARTER_MARKERS.map((marker) => ({
   id: marker.id,
   title: marker.title,
   x: marker.position.world.x,
   z: marker.position.world.z,
 }));
+const CATEGORY_GROUPS = [
+  {
+    id: "quests",
+    label: "Quests",
+    categories: ["quests", "mini_quests", "world_events"],
+  },
+  {
+    id: "discoveries",
+    label: "Discoveries",
+    categories: ["secret_discovery", "world_discovery", "territorial_discovery"],
+  },
+  {
+    id: "activities",
+    label: "Activities",
+    categories: ["caves", "dungeon", "raid", "boss_altar", "lootrun_camp"],
+  },
+];
 
 const state = {
   markers: [],
@@ -33,6 +52,7 @@ const state = {
   selectedMarkerId: null,
   search: "",
   hideFound: false,
+  showCities: true,
   panelCollapsed: false,
   markerLayers: new Map(),
   categoryFilter: new Set(CATEGORY_ORDER),
@@ -40,7 +60,7 @@ const state = {
   calibrationSamples: loadCalibrationSamples(),
   calibrationIndex: 0,
   calibrationLayers: new Map(),
-  activeTransform: loadCalibrationTransform(),
+  activeTransform: USE_STORED_CALIBRATION ? loadCalibrationTransform() : null,
 };
 
 const elements = {
@@ -48,6 +68,7 @@ const elements = {
   panelToggle: document.querySelector("#panel-toggle"),
   searchInput: document.querySelector("#search-input"),
   clearSearch: document.querySelector("#clear-search"),
+  showCitiesToggle: document.querySelector("#show-cities-toggle"),
   hideFoundToggle: document.querySelector("#hide-found-toggle"),
   categoryFilters: document.querySelector("#category-filters"),
   detailCard: document.querySelector("#detail-card"),
@@ -367,6 +388,9 @@ function markerMatchesSearch(marker) {
 
 function markerIsVisible(marker) {
   if (marker.fixed) {
+    if (!state.showCities) {
+      return false;
+    }
     if (state.hideFound && state.foundIds.has(marker.id)) {
       return false;
     }
@@ -490,21 +514,36 @@ function categoryVisibleCount(categoryId) {
 }
 
 function renderCategoryFilters() {
-  elements.categoryFilters.innerHTML = CATEGORY_ORDER.map((categoryId) => {
-    const meta = CATEGORY_META[categoryId];
-    const active = state.categoryFilter.has(categoryId);
-    const total = categoryCount(categoryId);
-    const visible = categoryVisibleCount(categoryId);
-    const iconUrl = categoryAssetUrl(categoryId, active ? "active" : "locked");
+  elements.categoryFilters.innerHTML = CATEGORY_GROUPS.map((group) => {
+    const cards = group.categories.map((categoryId) => {
+      const meta = CATEGORY_META[categoryId];
+      const active = state.categoryFilter.has(categoryId);
+      const total = categoryCount(categoryId);
+      const visible = categoryVisibleCount(categoryId);
+      const iconUrl = categoryAssetUrl(categoryId, active ? "active" : "locked");
+      return `
+        <button type="button" class="category-card ${active ? "active" : "inactive"}" data-category="${categoryId}">
+          <span class="category-icon asset-icon" style="--category-icon:url('${iconUrl}');--category-accent:${meta.color};"></span>
+          <span class="category-copy">
+            <strong>${escapeHtml(meta.label)}</strong>
+            <span class="category-meta">${active ? `${visible} shown` : "Hidden"}</span>
+          </span>
+          <span class="category-count">${total}</span>
+        </button>
+      `;
+    }).join("");
+
     return `
-      <button type="button" class="category-card ${active ? "active" : ""}" data-category="${categoryId}">
-        <span class="category-icon asset-icon" style="--category-icon:url('${iconUrl}');--category-accent:${meta.color};"></span>
-        <span class="category-copy">
-          <strong>${escapeHtml(meta.label)}</strong>
-          <span class="category-meta">${active ? `${visible} shown` : "Hidden"}</span>
-        </span>
-        <span class="category-count">${total}</span>
-      </button>
+      <section class="category-section">
+        <div class="section-head">
+          <span>${escapeHtml(group.label)}</span>
+          <div class="head-actions">
+            <button type="button" class="text-action" data-group-action="select" data-group="${group.id}">Select All</button>
+            <button type="button" class="text-action" data-group-action="clear" data-group="${group.id}">Clear</button>
+          </div>
+        </div>
+        <div class="category-grid">${cards}</div>
+      </section>
     `;
   }).join("");
 
@@ -516,6 +555,25 @@ function renderCategoryFilters() {
       } else {
         state.categoryFilter.add(id);
       }
+      syncVisibleMarkers();
+      renderCategoryFilters();
+    });
+  });
+
+  elements.categoryFilters.querySelectorAll("[data-group-action]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const group = CATEGORY_GROUPS.find((entry) => entry.id === button.dataset.group);
+      if (!group) {
+        return;
+      }
+      const select = button.dataset.groupAction === "select";
+      group.categories.forEach((categoryId) => {
+        if (select) {
+          state.categoryFilter.add(categoryId);
+        } else {
+          state.categoryFilter.delete(categoryId);
+        }
+      });
       syncVisibleMarkers();
       renderCategoryFilters();
     });
@@ -718,17 +776,29 @@ function bindEvents() {
     renderDetailCard();
   });
 
-  elements.showAllCategories.addEventListener("click", () => {
-    state.categoryFilter = new Set(CATEGORY_ORDER);
-    syncVisibleMarkers();
-    renderCategoryFilters();
-  });
+  if (elements.showCitiesToggle) {
+    elements.showCitiesToggle.addEventListener("change", (event) => {
+      state.showCities = event.target.checked;
+      syncVisibleMarkers();
+      renderDetailCard();
+    });
+  }
 
-  elements.hideAllCategories.addEventListener("click", () => {
-    state.categoryFilter = new Set();
-    syncVisibleMarkers();
-    renderCategoryFilters();
-  });
+  if (elements.showAllCategories) {
+    elements.showAllCategories.addEventListener("click", () => {
+      state.categoryFilter = new Set(CATEGORY_ORDER);
+      syncVisibleMarkers();
+      renderCategoryFilters();
+    });
+  }
+
+  if (elements.hideAllCategories) {
+    elements.hideAllCategories.addEventListener("click", () => {
+      state.categoryFilter = new Set();
+      syncVisibleMarkers();
+      renderCategoryFilters();
+    });
+  }
 
   if (elements.calibrationPrev) {
     elements.calibrationPrev.addEventListener("click", () => {

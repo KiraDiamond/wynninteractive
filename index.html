@@ -24,41 +24,76 @@
     <div id="map"></div>
 
     <header class="topbar">
+      <button id="panel-toggle" type="button" class="menu-button" aria-label="Toggle marker panel">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <div class="brand">
-        <button id="panel-toggle" type="button" class="menu-button" aria-label="Toggle marker panel">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
         <img class="brand-icon" src="./assets/icon.png" alt="">
-        <strong>Wynncraft Interactive Map</strong>
+        <div class="brand-copy">
+          <strong>Wynn Atlas</strong>
+          <span>Interactive world map</span>
+        </div>
       </div>
     </header>
 
     <aside id="marker-panel" class="marker-panel">
-      <div class="panel-tabbar">
-        <button type="button" class="panel-tab active">Markers</button>
+      <div class="panel-tabbar" role="tablist" aria-label="Map panel modes">
+        <button type="button" class="panel-tab active" aria-label="Markers">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 21c4-5 6-8.4 6-11a6 6 0 1 0-12 0c0 2.6 2 6 6 11Zm0-8.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/>
+          </svg>
+        </button>
+        <button type="button" class="panel-tab" aria-label="Notes">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H9l-4 3v-3H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm3 4h8v2H8V9Zm0 4h5v2H8v-2Z"/>
+          </svg>
+        </button>
+        <button type="button" class="panel-tab" aria-label="Highlights">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m12 2 1.7 4.3L18 8l-4.3 1.7L12 14l-1.7-4.3L6 8l4.3-1.7L12 2Zm7 11 1 2.5 2.5 1-2.5 1L19 20l-1-2.5-2.5-1 2.5-1L19 13ZM5 14l1.2 3L9 18.2l-2.8 1.1L5 22l-1.2-2.7L1 18.2 3.8 17 5 14Z"/>
+          </svg>
+        </button>
+        <button type="button" class="panel-tab" aria-label="Profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm0 2c-4.4 0-8 2.2-8 5v1h16v-1c0-2.8-3.6-5-8-5Z"/>
+          </svg>
+        </button>
       </div>
 
-      <div class="panel-search">
-        <label class="sr-only" for="search-input">Search markers</label>
-        <input id="search-input" type="search" placeholder="Search...">
-        <button id="clear-search" type="button" class="icon-button" aria-label="Clear search">✕</button>
+      <div class="panel-banner">
+        Wynncraft world atlas beta is live. Calibrate landmarks, track discoveries, and route your run from one panel.
+      </div>
+
+      <div class="panel-toolbar">
+        <button type="button" class="map-selector">
+          <span>Wynncraft Map</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m7 10 5 5 5-5z"/>
+          </svg>
+        </button>
+
+        <div class="panel-search">
+          <label class="sr-only" for="search-input">Search markers</label>
+          <input id="search-input" type="search" placeholder="Search...">
+          <button id="clear-search" type="button" class="icon-button" aria-label="Clear search">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M10.5 4a6.5 6.5 0 0 1 5.2 10.4l4 4-1.4 1.4-4-4A6.5 6.5 0 1 1 10.5 4Zm0 2a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9Z"/>
+            </svg>
+          </button>
+        </div>
       </div>
 
       <div class="panel-controls">
         <label class="toggle-row">
-          <span>Hide found</span>
+          <span>Show City Markers</span>
+          <input id="show-cities-toggle" type="checkbox" checked>
+        </label>
+        <label class="toggle-row">
+          <span>Hide Found Markers</span>
           <input id="hide-found-toggle" type="checkbox">
         </label>
-      </div>
-
-      <div class="section-head">
-        <span>Selectable</span>
-        <div class="head-actions">
-          <button id="show-all-categories" type="button" class="text-action">Select All</button>
-          <button id="hide-all-categories" type="button" class="text-action">Clear</button>
-        </div>
       </div>
 
       <div id="category-filters" class="category-list"></div>
