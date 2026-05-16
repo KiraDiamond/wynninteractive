@@ -4,16 +4,27 @@ import { IMPORTED_MARKERS } from "./data/imported-markers.js";
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
 const MAP_BOUNDS = [[0, 0], [MAP_HEIGHT, MAP_WIDTH]];
-const MAP_MIN_X = -2540;
-const MAP_MAX_X = 2046;
-const MAP_MIN_Z = -6645;
-const MAP_MAX_Z = 12;
+const DEFAULT_BOUNDS = {
+  minX: -2540,
+  maxX: 2046,
+  minZ: -6645,
+  maxZ: 12,
+};
 
 const STORAGE_KEYS = {
   found: "wynninteractive-found-v1",
+  calibrationSamples: "wynninteractive-calibration-samples-v1",
+  calibrationTransform: "wynninteractive-calibration-transform-v1",
 };
 const CONTENT_BOOK_ROOT = "./assets/content-book";
 const CITY_ICON_URL = "./assets/icon.png";
+const CALIBRATION_MODE = new URLSearchParams(window.location.search).get("calibrate") === "1";
+const CALIBRATION_TARGETS = STARTER_MARKERS.map((marker) => ({
+  id: marker.id,
+  title: marker.title,
+  x: marker.position.world.x,
+  z: marker.position.world.z,
+}));
 
 const state = {
   markers: [],
@@ -25,6 +36,11 @@ const state = {
   panelCollapsed: false,
   markerLayers: new Map(),
   categoryFilter: new Set(CATEGORY_ORDER),
+  calibrationMode: CALIBRATION_MODE,
+  calibrationSamples: loadCalibrationSamples(),
+  calibrationIndex: 0,
+  calibrationLayers: new Map(),
+  activeTransform: loadCalibrationTransform(),
 };
 
 const elements = {
@@ -37,7 +53,20 @@ const elements = {
   detailCard: document.querySelector("#detail-card"),
   showAllCategories: document.querySelector("#show-all-categories"),
   hideAllCategories: document.querySelector("#hide-all-categories"),
+  calibrationPanel: document.querySelector("#calibration-panel"),
+  calibrationTarget: document.querySelector("#calibration-target"),
+  calibrationStatus: document.querySelector("#calibration-status"),
+  calibrationOutput: document.querySelector("#calibration-output"),
+  calibrationPrev: document.querySelector("#calibration-prev"),
+  calibrationNext: document.querySelector("#calibration-next"),
+  calibrationCopy: document.querySelector("#calibration-copy"),
+  calibrationClear: document.querySelector("#calibration-clear"),
 };
+
+const firstOpenCalibrationIndex = CALIBRATION_TARGETS.findIndex((target) => !state.calibrationSamples[target.id]);
+if (firstOpenCalibrationIndex >= 0) {
+  state.calibrationIndex = firstOpenCalibrationIndex;
+}
 
 const map = L.map("map", {
   crs: L.CRS.Simple,
@@ -64,22 +93,88 @@ function persistFoundIds() {
   localStorage.setItem(STORAGE_KEYS.found, JSON.stringify([...state.foundIds]));
 }
 
+function loadCalibrationSamples() {
+  try {
+    return JSON.parse(localStorage.getItem(STORAGE_KEYS.calibrationSamples) || "{}");
+  } catch {
+    return {};
+  }
+}
+
+function persistCalibrationSamples() {
+  localStorage.setItem(STORAGE_KEYS.calibrationSamples, JSON.stringify(state.calibrationSamples));
+}
+
+function loadCalibrationTransform() {
+  try {
+    return JSON.parse(localStorage.getItem(STORAGE_KEYS.calibrationTransform) || "null");
+  } catch {
+    return null;
+  }
+}
+
+function persistCalibrationTransform() {
+  if (state.activeTransform) {
+    localStorage.setItem(STORAGE_KEYS.calibrationTransform, JSON.stringify(state.activeTransform));
+  } else {
+    localStorage.removeItem(STORAGE_KEYS.calibrationTransform);
+  }
+}
+
 function clamp(value, min, max) {
   return Math.min(Math.max(value, min), max);
 }
 
-function worldToImage(x, z) {
+function defaultWorldToImage(x, z) {
   return {
-    x: clamp((x - MAP_MIN_X) / (MAP_MAX_X - MAP_MIN_X), 0, 1),
-    y: clamp((z - MAP_MIN_Z) / (MAP_MAX_Z - MAP_MIN_Z), 0, 1),
+    x: clamp((x - DEFAULT_BOUNDS.minX) / (DEFAULT_BOUNDS.maxX - DEFAULT_BOUNDS.minX), 0, 1),
+    y: clamp((z - DEFAULT_BOUNDS.minZ) / (DEFAULT_BOUNDS.maxZ - DEFAULT_BOUNDS.minZ), 0, 1),
   };
 }
 
-function imageToWorld(x, y) {
+function defaultImageToWorld(x, y) {
   return {
-    x: Math.round(MAP_MIN_X + x * (MAP_MAX_X - MAP_MIN_X)),
-    z: Math.round(MAP_MIN_Z + y * (MAP_MAX_Z - MAP_MIN_Z)),
+    x: Math.round(DEFAULT_BOUNDS.minX + x * (DEFAULT_BOUNDS.maxX - DEFAULT_BOUNDS.minX)),
+    z: Math.round(DEFAULT_BOUNDS.minZ + y * (DEFAULT_BOUNDS.maxZ - DEFAULT_BOUNDS.minZ)),
   };
+}
+
+function applyTransform(transform, x, z) {
+  return {
+    x: clamp((transform.a * x + transform.b * z + transform.c) / MAP_WIDTH, 0, 1),
+    y: clamp((transform.d * x + transform.e * z + transform.f) / MAP_HEIGHT, 0, 1),
+  };
+}
+
+function invertTransform(transform, px, py) {
+  const det = transform.a * transform.e - transform.b * transform.d;
+  if (!det) {
+    return null;
+  }
+
+  const adjX = px - transform.c;
+  const adjY = py - transform.f;
+  return {
+    x: Math.round((transform.e * adjX - transform.b * adjY) / det),
+    z: Math.round((-transform.d * adjX + transform.a * adjY) / det),
+  };
+}
+
+function worldToImage(x, z) {
+  if (state.activeTransform) {
+    return applyTransform(state.activeTransform, x, z);
+  }
+  return defaultWorldToImage(x, z);
+}
+
+function imageToWorld(x, y) {
+  if (state.activeTransform) {
+    const inverted = invertTransform(state.activeTransform, x * MAP_WIDTH, y * MAP_HEIGHT);
+    if (inverted) {
+      return inverted;
+    }
+  }
+  return defaultImageToWorld(x, y);
 }
 
 function markerPoint(marker) {
@@ -109,6 +204,104 @@ function categoryAssetUrl(categoryId, variant = "active") {
     return null;
   }
   return `${CONTENT_BOOK_ROOT}/${icon}_${variant}.png`;
+}
+
+function activeCalibrationTarget() {
+  return CALIBRATION_TARGETS[state.calibrationIndex] || CALIBRATION_TARGETS[0];
+}
+
+function solve3x3(matrix, vector) {
+  const rows = matrix.map((row, index) => [...row, vector[index]]);
+
+  for (let pivot = 0; pivot < 3; pivot += 1) {
+    let maxRow = pivot;
+    for (let row = pivot + 1; row < 3; row += 1) {
+      if (Math.abs(rows[row][pivot]) > Math.abs(rows[maxRow][pivot])) {
+        maxRow = row;
+      }
+    }
+
+    if (Math.abs(rows[maxRow][pivot]) < 1e-8) {
+      return null;
+    }
+
+    if (maxRow !== pivot) {
+      [rows[pivot], rows[maxRow]] = [rows[maxRow], rows[pivot]];
+    }
+
+    const divisor = rows[pivot][pivot];
+    for (let column = pivot; column < 4; column += 1) {
+      rows[pivot][column] /= divisor;
+    }
+
+    for (let row = 0; row < 3; row += 1) {
+      if (row === pivot) {
+        continue;
+      }
+      const factor = rows[row][pivot];
+      for (let column = pivot; column < 4; column += 1) {
+        rows[row][column] -= factor * rows[pivot][column];
+      }
+    }
+  }
+
+  return rows.map((row) => row[3]);
+}
+
+function computeCalibrationTransform() {
+  const samples = CALIBRATION_TARGETS
+    .map((target) => {
+      const sample = state.calibrationSamples[target.id];
+      return sample ? { ...target, ...sample } : null;
+    })
+    .filter(Boolean);
+
+  if (samples.length < 3) {
+    return null;
+  }
+
+  const matrix = [
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0],
+  ];
+  const xVector = [0, 0, 0];
+  const yVector = [0, 0, 0];
+
+  for (const sample of samples) {
+    const terms = [sample.x, sample.z, 1];
+    for (let row = 0; row < 3; row += 1) {
+      for (let column = 0; column < 3; column += 1) {
+        matrix[row][column] += terms[row] * terms[column];
+      }
+      xVector[row] += terms[row] * sample.pixelX;
+      yVector[row] += terms[row] * sample.pixelY;
+    }
+  }
+
+  const xSolution = solve3x3(matrix, xVector);
+  const ySolution = solve3x3(matrix, yVector);
+  if (!xSolution || !ySolution) {
+    return null;
+  }
+
+  const transform = {
+    a: xSolution[0],
+    b: xSolution[1],
+    c: xSolution[2],
+    d: ySolution[0],
+    e: ySolution[1],
+    f: ySolution[2],
+  };
+
+  const error = samples.reduce((sum, sample) => {
+    const point = applyTransform(transform, sample.x, sample.z);
+    const dx = point.x * MAP_WIDTH - sample.pixelX;
+    const dy = point.y * MAP_HEIGHT - sample.pixelY;
+    return sum + Math.hypot(dx, dy);
+  }, 0) / samples.length;
+
+  return { ...transform, sampleCount: samples.length, averagePixelError: Number(error.toFixed(2)) };
 }
 
 function importedCategory(marker) {
@@ -240,6 +433,54 @@ function createMarkerLayer(marker) {
   state.markerLayers.set(marker.id, layer);
 }
 
+function calibrationLatLng(sample) {
+  return [sample.pixelY, sample.pixelX];
+}
+
+function renderCalibrationMarkers() {
+  for (const layer of state.calibrationLayers.values()) {
+    if (map.hasLayer(layer)) {
+      map.removeLayer(layer);
+    }
+  }
+  state.calibrationLayers.clear();
+
+  if (!state.calibrationMode) {
+    return;
+  }
+
+  const current = activeCalibrationTarget();
+  for (const target of CALIBRATION_TARGETS) {
+    const sample = state.calibrationSamples[target.id];
+    if (!sample) {
+      continue;
+    }
+
+    const layer = L.marker(calibrationLatLng(sample), {
+      icon: L.divIcon({
+        className: "map-pin-wrapper",
+        html: `<div class="calibration-anchor${target.id === current.id ? " active" : ""}"></div>`,
+        iconSize: [18, 18],
+        iconAnchor: [9, 9],
+      }),
+      title: `${target.title} calibration`,
+    });
+
+    layer.addTo(map);
+    state.calibrationLayers.set(target.id, layer);
+  }
+}
+
+function updateMarkerLayerPositions() {
+  for (const [id, layer] of state.markerLayers) {
+    const marker = state.markers.find((item) => item.id === id);
+    if (!marker) {
+      continue;
+    }
+    layer.setLatLng(markerLatLng(marker));
+  }
+}
+
 function categoryCount(categoryId) {
   return state.markers.filter((marker) => marker.category === categoryId && !marker.fixed).length;
 }
@@ -293,7 +534,7 @@ function renderDetailCard() {
   }
 
   const point = markerPoint(marker);
-  const world = imageToWorld(point.x, point.y);
+  const world = marker.position?.world || imageToWorld(point.x, point.y);
   const isFound = state.foundIds.has(marker.id);
   const meta = CATEGORY_META[marker.category];
   const iconUrl = marker.fixed ? CITY_ICON_URL : categoryAssetUrl(marker.category, isFound ? "locked" : "active");
@@ -325,6 +566,40 @@ function renderDetailCard() {
       }
     });
   });
+}
+
+function renderCalibrationPanel() {
+  if (!elements.calibrationPanel) {
+    return;
+  }
+
+  if (!state.calibrationMode) {
+    elements.calibrationPanel.classList.add("hidden");
+    return;
+  }
+
+  elements.calibrationPanel.classList.remove("hidden");
+
+  const current = activeCalibrationTarget();
+  const sample = state.calibrationSamples[current.id];
+  const solved = state.activeTransform;
+  const sampleCount = Object.keys(state.calibrationSamples).length;
+
+  elements.calibrationTarget.innerHTML = `
+    <strong>${escapeHtml(current.title)}</strong>
+    <span>World: ${current.x}, ${current.z}</span><br>
+    <span>${sample ? `Pixel: ${sample.pixelX}, ${sample.pixelY}` : "Click this landmark on the map to record it."}</span>
+  `;
+
+  elements.calibrationStatus.textContent = solved
+    ? `${sampleCount} points captured. Average error: ${solved.averagePixelError ?? "?"} px.`
+    : `${sampleCount} points captured. Need at least 3 to solve the transform.`;
+
+  elements.calibrationOutput.textContent = JSON.stringify({
+    target: current.id,
+    samples: state.calibrationSamples,
+    transform: solved,
+  }, null, 2);
 }
 
 function setPanelCollapsed(collapsed) {
@@ -388,9 +663,39 @@ function hydrateMarkerState() {
   state.markers.forEach(createMarkerLayer);
 }
 
+function refreshTransformFromSamples() {
+  state.activeTransform = computeCalibrationTransform();
+  persistCalibrationTransform();
+  updateMarkerLayerPositions();
+  syncVisibleMarkers();
+  renderCalibrationMarkers();
+  renderCalibrationPanel();
+}
+
+function recordCalibrationSample(latlng) {
+  if (!state.calibrationMode) {
+    return;
+  }
+
+  const current = activeCalibrationTarget();
+  state.calibrationSamples[current.id] = {
+    pixelX: Math.round(latlng.lng),
+    pixelY: Math.round(latlng.lat),
+  };
+
+  persistCalibrationSamples();
+  refreshTransformFromSamples();
+}
+
 function bindEvents() {
   elements.panelToggle.addEventListener("click", () => {
     setPanelCollapsed(!state.panelCollapsed);
+  });
+
+  map.on("click", (event) => {
+    if (state.calibrationMode) {
+      recordCalibrationSample(event.latlng);
+    }
   });
 
   elements.searchInput.addEventListener("input", (event) => {
@@ -425,6 +730,45 @@ function bindEvents() {
     renderCategoryFilters();
   });
 
+  if (elements.calibrationPrev) {
+    elements.calibrationPrev.addEventListener("click", () => {
+      state.calibrationIndex = (state.calibrationIndex - 1 + CALIBRATION_TARGETS.length) % CALIBRATION_TARGETS.length;
+      renderCalibrationMarkers();
+      renderCalibrationPanel();
+    });
+  }
+
+  if (elements.calibrationNext) {
+    elements.calibrationNext.addEventListener("click", () => {
+      state.calibrationIndex = (state.calibrationIndex + 1) % CALIBRATION_TARGETS.length;
+      renderCalibrationMarkers();
+      renderCalibrationPanel();
+    });
+  }
+
+  if (elements.calibrationCopy) {
+    elements.calibrationCopy.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(elements.calibrationOutput.textContent);
+      } catch {
+        // Ignore clipboard failures in unsupported contexts.
+      }
+    });
+  }
+
+  if (elements.calibrationClear) {
+    elements.calibrationClear.addEventListener("click", () => {
+      state.calibrationSamples = {};
+      state.activeTransform = null;
+      persistCalibrationSamples();
+      persistCalibrationTransform();
+      updateMarkerLayerPositions();
+      syncVisibleMarkers();
+      renderCalibrationMarkers();
+      renderCalibrationPanel();
+    });
+  }
+
   window.addEventListener("resize", () => {
     if (window.innerWidth > 760) {
       setPanelCollapsed(false);
@@ -434,6 +778,8 @@ function bindEvents() {
 
 hydrateMarkerState();
 bindEvents();
+renderCalibrationMarkers();
 syncVisibleMarkers();
 renderCategoryFilters();
 renderDetailCard();
+renderCalibrationPanel();

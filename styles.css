@@ -46,6 +46,10 @@ input {
   border: 0;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .app-shell {
   position: relative;
   min-height: 100vh;
@@ -358,6 +362,48 @@ input {
   font-size: 0.9rem;
 }
 
+.calibration-copy {
+  margin: 0 0 12px;
+  font-size: 0.88rem;
+}
+
+.calibration-copy code {
+  padding: 1px 4px;
+  background: #eef2f8;
+  border: 1px solid var(--border);
+}
+
+.calibration-target {
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  background: #f3f6fb;
+  border: 1px solid var(--border);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.calibration-target strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.calibration-status {
+  margin-bottom: 10px;
+  color: var(--ink-soft);
+  font-size: 0.84rem;
+}
+
+.calibration-output {
+  margin: 14px 0 0;
+  padding: 12px;
+  background: #eff3f9;
+  border: 1px solid var(--border);
+  color: var(--ink);
+  white-space: pre-wrap;
+  word-break: break-word;
+  font: 0.75rem/1.45 ui-monospace, SFMono-Regular, Consolas, monospace;
+}
+
 .detail-actions {
   display: flex;
   gap: 12px;
@@ -426,6 +472,19 @@ input {
 
 .map-pin.selected {
   transform: scale(1.08);
+}
+
+.calibration-anchor {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  border: 2px solid #ffffff;
+  background: #f05353;
+  box-shadow: 0 0 0 1px rgba(17, 24, 37, 0.35);
+}
+
+.calibration-anchor.active {
+  background: #f5c542;
 }
 
 @keyframes tracked-book-icon {

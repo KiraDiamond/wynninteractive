@@ -71,6 +71,27 @@
         <h2>No marker selected</h2>
         <p>Click a map marker to inspect it.</p>
       </article>
+
+      <section id="calibration-panel" class="calibration-panel hidden">
+        <div class="section-head detail-head">
+          <span>Calibration</span>
+        </div>
+
+        <article class="detail-card calibration-card">
+          <p class="calibration-copy">
+            Enable with <code>?calibrate=1</code>. Click the exact landmark center on the map for each target below.
+          </p>
+          <div id="calibration-target" class="calibration-target"></div>
+          <div id="calibration-status" class="calibration-status"></div>
+          <div class="detail-actions">
+            <button id="calibration-prev" type="button" class="detail-button secondary">Prev</button>
+            <button id="calibration-next" type="button" class="detail-button secondary">Next</button>
+            <button id="calibration-copy" type="button" class="detail-button secondary">Copy</button>
+            <button id="calibration-clear" type="button" class="detail-button secondary">Clear</button>
+          </div>
+          <pre id="calibration-output" class="calibration-output"></pre>
+        </article>
+      </section>
     </aside>
   </div>
 
