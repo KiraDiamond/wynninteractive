@@ -4,11 +4,11 @@ import { IMPORTED_MARKERS } from "./data/imported-markers.js";
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
 const MAP_BOUNDS = [[0, 0], [MAP_HEIGHT, MAP_WIDTH]];
-const DEFAULT_WORLD_CORNERS = {
-  topLeft: { x: 1878, z: -6709 },
-  topRight: { x: -2154, z: -6495 },
-  bottomLeft: { x: 1686, z: -180 },
-  bottomRight: { x: -2674, z: 169 },
+const DEFAULT_BOUNDS = {
+  minX: -2540,
+  maxX: 2046,
+  minZ: -6645,
+  maxZ: 12,
 };
 
 const STORAGE_KEYS = {
@@ -21,6 +21,23 @@ const CITY_ICON_URL = "./assets/icon.png";
 const query = new URLSearchParams(window.location.search);
 const CALIBRATION_MODE = query.get("calibrate") === "1";
 const USE_STORED_CALIBRATION = CALIBRATION_MODE || query.get("useCalibration") === "1";
+
+function parseNumberParam(name, fallback) {
+  const raw = query.get(name);
+  if (raw === null) {
+    return fallback;
+  }
+  const value = Number(raw);
+  return Number.isFinite(value) ? value : fallback;
+}
+
+const URL_PROJECTION_CONFIG = {
+  offsetX: parseNumberParam("offsetX", 0),
+  offsetY: parseNumberParam("offsetY", 0),
+  scaleX: parseNumberParam("scaleX", 1),
+  scaleY: parseNumberParam("scaleY", 1),
+};
+
 const CALIBRATION_TARGETS = STARTER_MARKERS.map((marker) => ({
   id: marker.id,
   title: marker.title,
@@ -163,71 +180,42 @@ function clamp(value, min, max) {
   return Math.min(Math.max(value, min), max);
 }
 
-function bilinearPoint(u, v) {
-  const { topLeft, topRight, bottomLeft, bottomRight } = DEFAULT_WORLD_CORNERS;
-  const mixTopX = topLeft.x + (topRight.x - topLeft.x) * u;
-  const mixTopZ = topLeft.z + (topRight.z - topLeft.z) * u;
-  const mixBottomX = bottomLeft.x + (bottomRight.x - bottomLeft.x) * u;
-  const mixBottomZ = bottomLeft.z + (bottomRight.z - bottomLeft.z) * u;
+function applyUrlProjectionConfig(point) {
+  const scaledX = (point.x - 0.5) * URL_PROJECTION_CONFIG.scaleX + 0.5;
+  const scaledY = (point.y - 0.5) * URL_PROJECTION_CONFIG.scaleY + 0.5;
 
   return {
-    x: mixTopX + (mixBottomX - mixTopX) * v,
-    z: mixTopZ + (mixBottomZ - mixTopZ) * v,
+    x: clamp(scaledX + URL_PROJECTION_CONFIG.offsetX / MAP_WIDTH, 0, 1),
+    y: clamp(scaledY + URL_PROJECTION_CONFIG.offsetY / MAP_HEIGHT, 0, 1),
   };
 }
 
-function invertDefaultWorldPoint(x, z) {
-  const { topLeft, topRight, bottomLeft } = DEFAULT_WORLD_CORNERS;
-  let u = clamp((topLeft.x - x) / Math.max(topLeft.x - topRight.x, 1), 0, 1);
-  let v = clamp((z - topLeft.z) / Math.max(bottomLeft.z - topLeft.z, 1), 0, 1);
+function removeUrlProjectionConfig(point) {
+  const shiftedX = point.x - URL_PROJECTION_CONFIG.offsetX / MAP_WIDTH;
+  const shiftedY = point.y - URL_PROJECTION_CONFIG.offsetY / MAP_HEIGHT;
+  const scaleX = URL_PROJECTION_CONFIG.scaleX || 1;
+  const scaleY = URL_PROJECTION_CONFIG.scaleY || 1;
 
-  for (let iteration = 0; iteration < 16; iteration += 1) {
-    const point = bilinearPoint(u, v);
-    const errorX = point.x - x;
-    const errorZ = point.z - z;
-
-    if (Math.abs(errorX) + Math.abs(errorZ) < 0.001) {
-      break;
-    }
-
-    const duPoint = bilinearPoint(clamp(u + 0.0001, 0, 1), v);
-    const dvPoint = bilinearPoint(u, clamp(v + 0.0001, 0, 1));
-    const j00 = (duPoint.x - point.x) / 0.0001;
-    const j01 = (dvPoint.x - point.x) / 0.0001;
-    const j10 = (duPoint.z - point.z) / 0.0001;
-    const j11 = (dvPoint.z - point.z) / 0.0001;
-    const det = j00 * j11 - j01 * j10;
-
-    if (Math.abs(det) < 1e-9) {
-      break;
-    }
-
-    const deltaU = (j11 * errorX - j01 * errorZ) / det;
-    const deltaV = (-j10 * errorX + j00 * errorZ) / det;
-    u = clamp(u - deltaU, 0, 1);
-    v = clamp(v - deltaV, 0, 1);
-  }
-
-  return { u, v };
+  return {
+    x: clamp(((shiftedX - 0.5) / scaleX) + 0.5, 0, 1),
+    y: clamp(((shiftedY - 0.5) / scaleY) + 0.5, 0, 1),
+  };
 }
 
 function defaultWorldToImage(x, z) {
-  const { u, v } = invertDefaultWorldPoint(x, z);
-  const pixelX = u * MAP_WIDTH;
-  const pixelY = v * MAP_HEIGHT;
-
-  return {
-    x: clamp(pixelX / MAP_WIDTH, 0, 1),
-    y: clamp(pixelY / MAP_HEIGHT, 0, 1),
-  };
+  const normalizedX = clamp((x - DEFAULT_BOUNDS.minX) / (DEFAULT_BOUNDS.maxX - DEFAULT_BOUNDS.minX), 0, 1);
+  const normalizedY = clamp((z - DEFAULT_BOUNDS.minZ) / (DEFAULT_BOUNDS.maxZ - DEFAULT_BOUNDS.minZ), 0, 1);
+  return applyUrlProjectionConfig({
+    x: 1 - normalizedX,
+    y: 1 - normalizedY,
+  });
 }
 
 function defaultImageToWorld(x, y) {
-  const point = bilinearPoint(clamp(x, 0, 1), clamp(y, 0, 1));
-
+  const point = removeUrlProjectionConfig({ x, y });
   return {
-    x: Math.round(point.x),
-    z: Math.round(point.z),
+    x: Math.round(DEFAULT_BOUNDS.minX + (1 - point.x) * (DEFAULT_BOUNDS.maxX - DEFAULT_BOUNDS.minX)),
+    z: Math.round(DEFAULT_BOUNDS.minZ + (1 - point.y) * (DEFAULT_BOUNDS.maxZ - DEFAULT_BOUNDS.minZ)),
   };
 }
 
@@ -278,7 +266,7 @@ function markerPoint(marker) {
 
 function markerLatLng(marker) {
   const point = markerPoint(marker);
-  return [MAP_HEIGHT - point.y * MAP_HEIGHT, point.x * MAP_WIDTH];
+  return [point.y * MAP_HEIGHT, point.x * MAP_WIDTH];
 }
 
 function escapeHtml(value) {
@@ -543,7 +531,7 @@ function createMarkerLayer(marker) {
 }
 
 function calibrationLatLng(sample) {
-  return [MAP_HEIGHT - sample.pixelY, sample.pixelX];
+  return [sample.pixelY, sample.pixelX];
 }
 
 function renderCalibrationMarkers() {
@@ -823,7 +811,7 @@ function recordCalibrationSample(latlng) {
   const current = activeCalibrationTarget();
   state.calibrationSamples[current.id] = {
     pixelX: Math.round(latlng.lng),
-    pixelY: Math.round(MAP_HEIGHT - latlng.lat),
+    pixelY: Math.round(latlng.lat),
   };
 
   persistCalibrationSamples();
