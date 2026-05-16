@@ -27,6 +27,23 @@ const CALIBRATION_TARGETS = STARTER_MARKERS.map((marker) => ({
   x: marker.position.world.x,
   z: marker.position.world.z,
 }));
+const IMPORT_ICON_META = {
+  "Content_Quest.png": { category: "quests" },
+  "Content_Miniquest.png": { category: "mini_quests" },
+  "Content_UltimateDiscovery.png": { category: "secret_discovery" },
+  "Special_LightRealm.png": { category: "world_discovery" },
+  "Special_Rune.png": { category: "world_discovery" },
+  "Special_RootsOfCorruption.png": { category: "territorial_discovery" },
+  "Content_Cave.png": { category: "caves" },
+  "Content_Dungeon.png": { category: "dungeon" },
+  "Content_CorruptedDungeon.png": { category: "dungeon" },
+  "Content_Raid.png": { category: "raid" },
+  "Content_BossAltar.png": { category: "boss_altar" },
+  "Content_GrindSpot.png": { category: "lootrun_camp" },
+};
+const BLOCKED_IMPORT_IDS = new Set([
+  "import-650-mini-quest-slay-angels",
+]);
 const CATEGORY_GROUPS = [
   {
     id: "quests",
@@ -326,46 +343,57 @@ function computeCalibrationTransform() {
 }
 
 function importedCategory(marker) {
-  switch (marker.sourceIcon) {
-    case "Content_Quest.png":
-      return "quests";
-    case "Content_Miniquest.png":
-      return "mini_quests";
-    case "Content_UltimateDiscovery.png":
-      return "secret_discovery";
-    case "Special_LightRealm.png":
-    case "Special_Rune.png":
-      return "world_discovery";
-    case "Special_RootsOfCorruption.png":
-      return "territorial_discovery";
-    case "Content_Cave.png":
-      return "caves";
-    case "Content_Dungeon.png":
-    case "Content_CorruptedDungeon.png":
-      return "dungeon";
-    case "Content_Raid.png":
-      return "raid";
-    case "Content_BossAltar.png":
-      return "boss_altar";
-    case "Content_GrindSpot.png":
-      return "lootrun_camp";
-    default:
-      return null;
+  return IMPORT_ICON_META[marker.sourceIcon]?.category ?? null;
+}
+
+function normalizedImportedTitle(marker, category) {
+  const title = marker.title?.trim() || CATEGORY_META[category]?.label || "Marker";
+
+  if (category === "lootrun_camp" && title === "Grind Spot") {
+    return "Lootrun Camp";
   }
+  if (category === "boss_altar" && title === "Boss Altar") {
+    return "Boss Altar";
+  }
+  if (category === "caves" && title === "Cave") {
+    return "Cave";
+  }
+
+  return title;
+}
+
+function normalizedImportedDescription(marker, category, title) {
+  const categoryLabel = CATEGORY_META[category]?.label || "Marker";
+
+  if (category === "lootrun_camp") {
+    return `${title} imported from the Wynncraft category dataset.`;
+  }
+  if (title === categoryLabel) {
+    return `${categoryLabel} imported from the Wynncraft category dataset.`;
+  }
+
+  return `${title} imported from the Wynncraft category dataset.`;
 }
 
 function normalizeImportedMarkers() {
   return IMPORTED_MARKERS
     .map((marker) => {
+      if (BLOCKED_IMPORT_IDS.has(marker.id)) {
+        return null;
+      }
+
       const category = importedCategory(marker);
       if (!category) {
         return null;
       }
 
+      const title = normalizedImportedTitle(marker, category);
       return {
         ...marker,
+        title,
         category,
-        tags: [...(marker.tags || []), category],
+        description: normalizedImportedDescription(marker, category, title),
+        tags: [...new Set([...(marker.tags || []), category, "curated-import"])],
       };
     })
     .filter(Boolean);
