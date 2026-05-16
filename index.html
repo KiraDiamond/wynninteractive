@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lunaris Atlas | Wynncraft Interactive Map</title>
+  <meta
+    name="description"
+    content="A GitHub Pages-ready interactive Wynncraft atlas with filters, region jumps, search, found tracking, and custom pins."
+  >
+  <link rel="icon" type="image/png" href="./assets/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    crossorigin=""
+  >
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="control-panel">
+      <div class="panel-glow"></div>
+      <header class="panel-header">
+        <p class="eyebrow">Lunaris Atlas</p>
+        <h1>Wynncraft Interactive Map</h1>
+        <p class="lede">
+          A GitHub-hostable atlas for route planning, guild coordination, loot runs, and later economy layers.
+        </p>
+      </header>
+
+      <section class="status-strip">
+        <div>
+          <span class="status-label">Visible</span>
+          <strong id="visible-count">0</strong>
+        </div>
+        <div>
+          <span class="status-label">Tracked</span>
+          <strong id="tracked-count">0</strong>
+        </div>
+        <div>
+          <span class="status-label">Custom</span>
+          <strong id="custom-count">0</strong>
+        </div>
+      </section>
+
+      <section class="toolbar-card">
+        <label class="search-label" for="search-input">Search places, regions, tags</label>
+        <div class="search-row">
+          <input id="search-input" type="search" placeholder="Detlas, raid, desert, custom...">
+          <button id="clear-search" type="button" class="ghost-button">Clear</button>
+        </div>
+
+        <div class="toggle-row">
+          <button id="show-all-categories" type="button" class="ghost-button">All</button>
+          <button id="hide-all-categories" type="button" class="ghost-button">None</button>
+          <label class="checkbox-pill">
+            <input id="hide-found-toggle" type="checkbox">
+            <span>Hide found</span>
+          </label>
+        </div>
+
+        <div class="category-group">
+          <p class="group-label">Layers</p>
+          <div id="category-filters" class="chip-grid"></div>
+        </div>
+
+        <div class="region-group">
+          <p class="group-label">Region jumps</p>
+          <div id="region-jumps" class="chip-grid"></div>
+        </div>
+      </section>
+
+      <section class="toolbar-card">
+        <div class="section-head">
+          <div>
+            <p class="group-label">Custom pins</p>
+            <p class="section-copy">Click add mode, then place a marker anywhere on the atlas.</p>
+          </div>
+          <button id="toggle-add-mode" type="button" class="accent-button">Add mode</button>
+        </div>
+
+        <form id="custom-pin-form" class="custom-form hidden">
+          <div class="form-grid">
+            <label>
+              <span>Name</span>
+              <input id="custom-title" name="title" type="text" maxlength="48" placeholder="Route cache">
+            </label>
+            <label>
+              <span>Type</span>
+              <select id="custom-category" name="category"></select>
+            </label>
+          </div>
+          <label>
+            <span>Note</span>
+            <textarea id="custom-description" name="description" rows="3" maxlength="240" placeholder="Profit loop, farming note, or meeting point"></textarea>
+          </label>
+          <div class="coord-strip">
+            <span id="custom-coords">Waiting for map click</span>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="accent-button">Save pin</button>
+            <button id="cancel-custom-pin" type="button" class="ghost-button">Cancel</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="toolbar-card">
+        <div class="section-head">
+          <div>
+            <p class="group-label">Marker details</p>
+            <p class="section-copy">Select a marker on the map or from the list.</p>
+          </div>
+        </div>
+        <article id="detail-card" class="detail-card empty">
+          <h2>No marker selected</h2>
+          <p>Use the map, search, or the list below to inspect locations.</p>
+        </article>
+      </section>
+
+      <section class="toolbar-card marker-list-card">
+        <div class="section-head">
+          <div>
+            <p class="group-label">Locations</p>
+            <p class="section-copy">Filtered live from the atlas.</p>
+          </div>
+        </div>
+        <div id="marker-list" class="marker-list"></div>
+      </section>
+    </aside>
+
+    <main class="map-stage">
+      <div class="map-topbar">
+        <div>
+          <p class="topbar-label">Deployment model</p>
+          <strong>Static site for GitHub Pages</strong>
+        </div>
+        <div>
+          <p class="topbar-label">Controls</p>
+          <strong>Scroll zoom, drag pan, click markers</strong>
+        </div>
+      </div>
+      <div id="map"></div>
+      <div class="map-footer">
+        <span>World image calibration matches your existing territory tool bounds.</span>
+        <span>Built-in pin state persists in local browser storage.</span>
+      </div>
+    </main>
+  </div>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    crossorigin=""
+  ></script>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
