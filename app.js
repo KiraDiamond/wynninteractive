@@ -491,8 +491,8 @@ function buildMarkerIcon(marker, isFound, isSelected) {
     return L.divIcon({
       className: "city-label-wrapper",
       html: `<span class="${classes.join(" ")}">${escapeHtml(marker.title)}</span>`,
-      iconSize: [width, 22],
-      iconAnchor: [Math.round(width / 2), 11],
+      iconSize: [width, 30],
+      iconAnchor: [Math.round(width / 2), 28],
     });
   }
 

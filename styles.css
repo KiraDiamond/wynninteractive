@@ -643,6 +643,7 @@ input {
 .city-label-wrapper {
   background: transparent;
   border: 0;
+  overflow: visible;
 }
 
 .city-map-label {
@@ -653,6 +654,7 @@ input {
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0.01em;
+  transform: translateY(0);
   text-shadow:
     -2px 0 #111,
     2px 0 #111,
