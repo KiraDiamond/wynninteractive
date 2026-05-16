@@ -149,14 +149,14 @@ function clamp(value, min, max) {
 function defaultWorldToImage(x, z) {
   return {
     x: clamp((x - DEFAULT_BOUNDS.minX) / (DEFAULT_BOUNDS.maxX - DEFAULT_BOUNDS.minX), 0, 1),
-    y: clamp((z - DEFAULT_BOUNDS.minZ) / (DEFAULT_BOUNDS.maxZ - DEFAULT_BOUNDS.minZ), 0, 1),
+    y: clamp((DEFAULT_BOUNDS.maxZ - z) / (DEFAULT_BOUNDS.maxZ - DEFAULT_BOUNDS.minZ), 0, 1),
   };
 }
 
 function defaultImageToWorld(x, y) {
   return {
     x: Math.round(DEFAULT_BOUNDS.minX + x * (DEFAULT_BOUNDS.maxX - DEFAULT_BOUNDS.minX)),
-    z: Math.round(DEFAULT_BOUNDS.minZ + y * (DEFAULT_BOUNDS.maxZ - DEFAULT_BOUNDS.minZ)),
+    z: Math.round(DEFAULT_BOUNDS.maxZ - y * (DEFAULT_BOUNDS.maxZ - DEFAULT_BOUNDS.minZ)),
   };
 }
 
