@@ -35,7 +35,7 @@ export const STARTER_MARKERS = [
     region: "Fruma",
     description: "Northern Fruman city.",
     tags: ["city", "fruma"],
-    position: { world: { x: 1050, z: -4600 } },
+    position: { world: { x: 1052, z: -4533 } },
   },
   {
     id: "aldorei-valley",
@@ -44,7 +44,7 @@ export const STARTER_MARKERS = [
     region: "Wynn",
     description: "Elven valley settlement.",
     tags: ["city", "wynn"],
-    position: { world: { x: -665, z: -4445 } },
+    position: { world: { x: -440, z: -4578 } },
   },
   {
     id: "almuj",
@@ -53,7 +53,7 @@ export const STARTER_MARKERS = [
     region: "Desert",
     description: "Desert city and common mid-game routing stop.",
     tags: ["city", "desert"],
-    position: { world: { x: 855, z: -1963 } },
+    position: { world: { x: 945, z: -1980 } },
   },
   {
     id: "cinfras",
@@ -62,7 +62,7 @@ export const STARTER_MARKERS = [
     region: "Wynn",
     description: "Forest city and trade route stop.",
     tags: ["city", "wynn"],
-    position: { world: { x: -445, z: -4939 } },
+    position: { world: { x: -454, z: -4948 } },
   },
   {
     id: "corkus-city",
@@ -80,7 +80,7 @@ export const STARTER_MARKERS = [
     region: "Wynn",
     description: "Central trade hub and major meeting point.",
     tags: ["city", "market"],
-    position: { world: { x: 470, z: -1582 } },
+    position: { world: { x: 469, z: -1588 } },
   },
   {
     id: "gelibord",
@@ -89,7 +89,7 @@ export const STARTER_MARKERS = [
     region: "Gavel",
     description: "Northern Gavel city and major snowy route stop.",
     tags: ["city", "gavel", "snow"],
-    position: { world: { x: -1020, z: -5310 } },
+    position: { world: { x: -1004, z: -5293 } },
   },
   {
     id: "llevigar",
@@ -98,7 +98,7 @@ export const STARTER_MARKERS = [
     region: "Llevigar",
     description: "Northern snowy city.",
     tags: ["city", "snow"],
-    position: { world: { x: -2024, z: -4395 } },
+    position: { world: { x: -1986, z: -4524 } },
   },
   {
     id: "lutho",
@@ -116,7 +116,7 @@ export const STARTER_MARKERS = [
     region: "Wynn",
     description: "Pirate coast stop with shoreline access.",
     tags: ["city", "coast"],
-    position: { world: { x: 100, z: -2200 } },
+    position: { world: { x: 110, z: -2170 } },
   },
   {
     id: "olux",
@@ -125,7 +125,7 @@ export const STARTER_MARKERS = [
     region: "Kander",
     description: "Upper-world city stop.",
     tags: ["city", "kander"],
-    position: { world: { x: -1732, z: -5528 } },
+    position: { world: { x: -1739, z: -5497 } },
   },
   {
     id: "ragni",
@@ -134,7 +134,7 @@ export const STARTER_MARKERS = [
     region: "Wynn",
     description: "Starter city and early-game anchor point.",
     tags: ["city", "spawn"],
-    position: { world: { x: -820, z: -1580 } },
+    position: { world: { x: -856, z: -1582 } },
   },
   {
     id: "rodoroc",
@@ -143,7 +143,7 @@ export const STARTER_MARKERS = [
     region: "Canyon",
     description: "Volcanic city in the canyon region.",
     tags: ["city", "canyon"],
-    position: { world: { x: 1211, z: -5190 } },
+    position: { world: { x: 1082, z: -5152 } },
   },
   {
     id: "selchar",
@@ -152,7 +152,7 @@ export const STARTER_MARKERS = [
     region: "Ocean",
     description: "Ocean trading outpost.",
     tags: ["city", "ocean"],
-    position: { world: { x: 100, z: -3150 } },
+    position: { world: { x: 55, z: -3170 } },
   },
   {
     id: "thanos",
@@ -161,7 +161,7 @@ export const STARTER_MARKERS = [
     region: "Wynn",
     description: "Upper-world city and travel node.",
     tags: ["city", "wynn"],
-    position: { world: { x: 289, z: -5242 } },
+    position: { world: { x: 122, z: -5242 } },
   },
   {
     id: "thesead",
@@ -170,7 +170,7 @@ export const STARTER_MARKERS = [
     region: "Desert",
     description: "Desert port and trading city.",
     tags: ["city", "desert"],
-    position: { world: { x: 845, z: -5123 } },
+    position: { world: { x: 810, z: -5034 } },
   },
   {
     id: "troms",
@@ -179,6 +179,6 @@ export const STARTER_MARKERS = [
     region: "Wynn",
     description: "Northern city and late Wynn checkpoint.",
     tags: ["city", "north"],
-    position: { world: { x: -840, z: -920 } },
+    position: { world: { x: -812, z: -898 } },
   },
 ];

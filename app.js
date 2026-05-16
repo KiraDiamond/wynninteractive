@@ -22,6 +22,8 @@ const CITY_ICON_URL = "./assets/icon.png";
 const query = new URLSearchParams(window.location.search);
 const CALIBRATION_MODE = query.get("calibrate") === "1";
 const USE_STORED_CALIBRATION = CALIBRATION_MODE || query.get("useCalibration") === "1";
+const EDIT_CITY_QUERY_MODE = query.get("editCities") === "1";
+const USE_CITY_EDITS = EDIT_CITY_QUERY_MODE || query.get("useCityEdits") === "1";
 
 function parseNumberParam(name, fallback) {
   const raw = query.get(name);
@@ -96,8 +98,8 @@ const state = {
   calibrationIndex: 0,
   calibrationLayers: new Map(),
   activeTransform: USE_STORED_CALIBRATION ? loadCalibrationTransform() : null,
-  editCities: false,
-  cityEdits: loadCityEdits(),
+  editCities: EDIT_CITY_QUERY_MODE,
+  cityEdits: USE_CITY_EDITS ? loadCityEdits() : {},
   cityTransform: null,
 };
 
@@ -262,7 +264,7 @@ function invertTransform(transform, px, py) {
 }
 
 function worldToImage(x, z) {
-  if (state.cityTransform) {
+  if (USE_CITY_EDITS && state.cityTransform) {
     return applyTransform(state.cityTransform, x, z);
   }
   if (state.activeTransform) {
@@ -272,7 +274,7 @@ function worldToImage(x, z) {
 }
 
 function imageToWorld(x, y) {
-  if (state.cityTransform) {
+  if (USE_CITY_EDITS && state.cityTransform) {
     const inverted = invertTransform(state.cityTransform, x * MAP_WIDTH, y * MAP_HEIGHT);
     if (inverted) {
       return inverted;
@@ -807,6 +809,18 @@ function renderCityEditor() {
     return;
   }
 
+  if (!EDIT_CITY_QUERY_MODE) {
+    const panel = elements.cityEditorStatus.closest(".city-editor-panel");
+    if (panel) {
+      panel.classList.add("hidden");
+    }
+    const toggleRow = elements.editCitiesToggle?.closest(".toggle-row");
+    if (toggleRow) {
+      toggleRow.classList.add("hidden");
+    }
+    return;
+  }
+
   const editedCount = Object.keys(state.cityEdits).length;
   const transformStatus = state.cityTransform
     ? ` City-fit active from ${state.cityTransform.sampleCount} cities. Average error: ${state.cityTransform.averagePixelError}px.`
@@ -1072,7 +1086,7 @@ function bindEvents() {
 }
 
 hydrateMarkerState();
-state.cityTransform = computeCityEditTransform();
+state.cityTransform = USE_CITY_EDITS ? computeCityEditTransform() : null;
 bindEvents();
 renderCalibrationMarkers();
 syncVisibleMarkers();
