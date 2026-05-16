@@ -4,11 +4,11 @@ import { IMPORTED_MARKERS } from "./data/imported-markers.js";
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
 const MAP_BOUNDS = [[0, 0], [MAP_HEIGHT, MAP_WIDTH]];
-const DEFAULT_WORLD_LINEAR = {
-  scaleX: 1.03,
-  offsetX: 2556.14,
-  scaleZ: 1.0038940809968847,
-  offsetY: 6627.121495327103,
+const DEFAULT_WORLD_CORNERS = {
+  topLeft: { x: 1878, z: -6709 },
+  topRight: { x: -2154, z: -6495 },
+  bottomLeft: { x: 1686, z: -180 },
+  bottomRight: { x: -2674, z: 169 },
 };
 
 const STORAGE_KEYS = {
@@ -163,9 +163,58 @@ function clamp(value, min, max) {
   return Math.min(Math.max(value, min), max);
 }
 
+function bilinearPoint(u, v) {
+  const { topLeft, topRight, bottomLeft, bottomRight } = DEFAULT_WORLD_CORNERS;
+  const mixTopX = topLeft.x + (topRight.x - topLeft.x) * u;
+  const mixTopZ = topLeft.z + (topRight.z - topLeft.z) * u;
+  const mixBottomX = bottomLeft.x + (bottomRight.x - bottomLeft.x) * u;
+  const mixBottomZ = bottomLeft.z + (bottomRight.z - bottomLeft.z) * u;
+
+  return {
+    x: mixTopX + (mixBottomX - mixTopX) * v,
+    z: mixTopZ + (mixBottomZ - mixTopZ) * v,
+  };
+}
+
+function invertDefaultWorldPoint(x, z) {
+  const { topLeft, topRight, bottomLeft } = DEFAULT_WORLD_CORNERS;
+  let u = clamp((topLeft.x - x) / Math.max(topLeft.x - topRight.x, 1), 0, 1);
+  let v = clamp((z - topLeft.z) / Math.max(bottomLeft.z - topLeft.z, 1), 0, 1);
+
+  for (let iteration = 0; iteration < 16; iteration += 1) {
+    const point = bilinearPoint(u, v);
+    const errorX = point.x - x;
+    const errorZ = point.z - z;
+
+    if (Math.abs(errorX) + Math.abs(errorZ) < 0.001) {
+      break;
+    }
+
+    const duPoint = bilinearPoint(clamp(u + 0.0001, 0, 1), v);
+    const dvPoint = bilinearPoint(u, clamp(v + 0.0001, 0, 1));
+    const j00 = (duPoint.x - point.x) / 0.0001;
+    const j01 = (dvPoint.x - point.x) / 0.0001;
+    const j10 = (duPoint.z - point.z) / 0.0001;
+    const j11 = (dvPoint.z - point.z) / 0.0001;
+    const det = j00 * j11 - j01 * j10;
+
+    if (Math.abs(det) < 1e-9) {
+      break;
+    }
+
+    const deltaU = (j11 * errorX - j01 * errorZ) / det;
+    const deltaV = (-j10 * errorX + j00 * errorZ) / det;
+    u = clamp(u - deltaU, 0, 1);
+    v = clamp(v - deltaV, 0, 1);
+  }
+
+  return { u, v };
+}
+
 function defaultWorldToImage(x, z) {
-  const pixelX = DEFAULT_WORLD_LINEAR.scaleX * x + DEFAULT_WORLD_LINEAR.offsetX;
-  const pixelY = DEFAULT_WORLD_LINEAR.scaleZ * z + DEFAULT_WORLD_LINEAR.offsetY;
+  const { u, v } = invertDefaultWorldPoint(x, z);
+  const pixelX = u * MAP_WIDTH;
+  const pixelY = v * MAP_HEIGHT;
 
   return {
     x: clamp(pixelX / MAP_WIDTH, 0, 1),
@@ -174,12 +223,11 @@ function defaultWorldToImage(x, z) {
 }
 
 function defaultImageToWorld(x, y) {
-  const pixelX = x * MAP_WIDTH;
-  const pixelY = y * MAP_HEIGHT;
+  const point = bilinearPoint(clamp(x, 0, 1), clamp(y, 0, 1));
 
   return {
-    x: Math.round((pixelX - DEFAULT_WORLD_LINEAR.offsetX) / DEFAULT_WORLD_LINEAR.scaleX),
-    z: Math.round((pixelY - DEFAULT_WORLD_LINEAR.offsetY) / DEFAULT_WORLD_LINEAR.scaleZ),
+    x: Math.round(point.x),
+    z: Math.round(point.z),
   };
 }
 
@@ -230,7 +278,7 @@ function markerPoint(marker) {
 
 function markerLatLng(marker) {
   const point = markerPoint(marker);
-  return [point.y * MAP_HEIGHT, point.x * MAP_WIDTH];
+  return [MAP_HEIGHT - point.y * MAP_HEIGHT, point.x * MAP_WIDTH];
 }
 
 function escapeHtml(value) {
@@ -454,11 +502,14 @@ function buildMarkerIcon(marker, isFound, isSelected) {
     return L.divIcon({
       className: "map-pin-wrapper",
       html: `
-        <div class="${classes.join(" ")} city-pin">
-          <img src="${CITY_ICON_URL}" alt="">
+        <div class="city-marker">
+          <div class="${classes.join(" ")} city-pin">
+            <img src="${CITY_ICON_URL}" alt="">
+          </div>
+          <span class="city-label">${escapeHtml(marker.title)}</span>
         </div>
       `,
-      iconSize: [28, 28],
+      iconSize: [84, 46],
       iconAnchor: [14, 14],
     });
   }
@@ -492,7 +543,7 @@ function createMarkerLayer(marker) {
 }
 
 function calibrationLatLng(sample) {
-  return [sample.pixelY, sample.pixelX];
+  return [MAP_HEIGHT - sample.pixelY, sample.pixelX];
 }
 
 function renderCalibrationMarkers() {
@@ -772,7 +823,7 @@ function recordCalibrationSample(latlng) {
   const current = activeCalibrationTarget();
   state.calibrationSamples[current.id] = {
     pixelX: Math.round(latlng.lng),
-    pixelY: Math.round(latlng.lat),
+    pixelY: Math.round(MAP_HEIGHT - latlng.lat),
   };
 
   persistCalibrationSamples();
