@@ -471,22 +471,6 @@ function resolveImageUrl(url) {
   return url;
 }
 
-function canInlineImage(url) {
-  if (!url) {
-    return false;
-  }
-
-  try {
-    const parsed = new URL(url);
-    if (parsed.origin === window.location.origin) {
-      return true;
-    }
-    return !parsed.hostname.endsWith("wiki.gg");
-  } catch {
-    return false;
-  }
-}
-
 function openImageLightbox(src, caption) {
   if (!elements.lightbox || !elements.lightboxImage) {
     return;
@@ -555,19 +539,14 @@ function contentPreviewHtml(marker, entry) {
   const blocks = [];
   const gallery = entry.gallery.filter((url) => url !== entry.coverImage);
   const tutorials = entry.tutorials;
-  const externalImageLinks = [];
 
   if (entry.coverImage) {
     const coverUrl = resolveImageUrl(entry.coverImage);
-    if (canInlineImage(coverUrl)) {
-      blocks.push(`
-        <button type="button" class="content-image-button content-cover" data-preview-image="${escapeAttribute(coverUrl)}" data-preview-caption="${escapeAttribute(`${marker.title} cover image`)}">
-          <img src="${escapeAttribute(coverUrl)}" alt="${escapeAttribute(marker.title)} cover image" loading="lazy">
-        </button>
-      `);
-    } else {
-      externalImageLinks.push({ url: coverUrl, label: "Open cover image" });
-    }
+    blocks.push(`
+      <button type="button" class="content-image-button content-cover" data-preview-image="${escapeAttribute(coverUrl)}" data-preview-caption="${escapeAttribute(`${marker.title} cover image`)}">
+        <img src="${escapeAttribute(coverUrl)}" alt="${escapeAttribute(marker.title)} cover image" loading="lazy" referrerpolicy="no-referrer">
+      </button>
+    `);
   }
 
   if (entry.summary) {
@@ -639,38 +618,17 @@ function contentPreviewHtml(marker, entry) {
     `);
   }
 
-  const embeddableGallery = gallery
-    .map((url) => resolveImageUrl(url))
-    .filter((url) => {
-      if (canInlineImage(url)) {
-        return true;
-      }
-      externalImageLinks.push({ url, label: "Open reference image" });
-      return false;
-    });
+  const embeddableGallery = gallery.map((url) => resolveImageUrl(url));
 
   if (embeddableGallery.length) {
     blocks.push(`
       <div class="content-gallery">
         ${embeddableGallery.map((url, index) => `
           <button type="button" class="content-image-button content-thumb" data-preview-image="${escapeAttribute(url)}" data-preview-caption="${escapeAttribute(`${marker.title} reference image ${index + 1}`)}">
-            <img src="${escapeAttribute(url)}" alt="${escapeAttribute(`${marker.title} gallery ${index + 1}`)}" loading="lazy">
+            <img src="${escapeAttribute(url)}" alt="${escapeAttribute(`${marker.title} gallery ${index + 1}`)}" loading="lazy" referrerpolicy="no-referrer">
           </button>
         `).join("")}
       </div>
-    `);
-  }
-
-  if (externalImageLinks.length) {
-    blocks.push(`
-      <section class="content-block">
-        <h3>Reference Images</h3>
-        <div class="content-link-grid">
-          ${externalImageLinks.map(({ url, label }) => `
-            <a class="content-link-card" href="${escapeAttribute(url)}" target="_blank" rel="noreferrer">${escapeHtml(label)}</a>
-          `).join("")}
-        </div>
-      </section>
     `);
   }
 
