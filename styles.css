@@ -1164,6 +1164,23 @@ input {
     0 0 8px rgba(0, 0, 0, 0.3);
 }
 
+.city-tooltip-shell .city-map-label.minor {
+  color: #9fd7ff;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-shadow:
+    -2px 0 #102031,
+    2px 0 #102031,
+    0 -2px #102031,
+    0 2px #102031,
+    -1px -1px #102031,
+    1px -1px #102031,
+    -1px 1px #102031,
+    1px 1px #102031,
+    0 0 7px rgba(44, 165, 255, 0.18);
+}
+
 .city-tooltip-shell .city-map-label.editable {
   cursor: grab;
 }

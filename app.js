@@ -1,7 +1,7 @@
-import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517aa";
-import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260517aa";
-import { MARKER_CONTENT } from "./data/marker-content.js?v=20260517aa";
-import { REFERENCE_IMAGE_URLS } from "./data/reference-images.js?v=20260517aa";
+import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517ab";
+import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260517ab";
+import { MARKER_CONTENT } from "./data/marker-content.js?v=20260517ab";
+import { REFERENCE_IMAGE_URLS } from "./data/reference-images.js?v=20260517ab";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
@@ -30,7 +30,9 @@ const USE_STORED_CALIBRATION = CALIBRATION_MODE || query.get("useCalibration") =
 const EDIT_CITY_QUERY_MODE = query.get("editCities") === "1";
 const USE_CITY_EDITS = EDIT_CITY_QUERY_MODE || query.get("useCityEdits") === "1";
 const DEV_MODE = window.location.pathname.replace(/\/+$/, "").endsWith("/devview");
-const CITY_ONLY_ZOOM = -2;
+const MAJOR_CITY_MIN_ZOOM = -2;
+const MINOR_CITY_MIN_ZOOM = -1;
+const CONTENT_MARKER_MIN_ZOOM = 0;
 const LOW_VALUE_DESCRIPTION_PATTERNS = [
   /\bi marked .+ on the live map\.?$/i,
   /\bimported from the external wynncraft marker dataset\.?$/i,
@@ -833,6 +835,9 @@ function categoryAssetUrl(categoryId, variant = "active") {
 
 function buildCityLabelHtml(marker, isFound, isSelected) {
   const classes = ["city-map-label"];
+  if (marker.minor) {
+    classes.push("minor");
+  }
   if (state.editCities) {
     classes.push("editable");
   }
@@ -1020,12 +1025,23 @@ function markerMatchesSearch(marker) {
 }
 
 function contentMarkersVisibleAtCurrentZoom() {
-  return map.getZoom() > CITY_ONLY_ZOOM;
+  return map.getZoom() >= CONTENT_MARKER_MIN_ZOOM;
+}
+
+function cityVisibleAtCurrentZoom(marker) {
+  const zoom = map.getZoom();
+  if (marker.minor) {
+    return zoom >= MINOR_CITY_MIN_ZOOM;
+  }
+  return zoom >= MAJOR_CITY_MIN_ZOOM;
 }
 
 function markerIsVisible(marker) {
   if (marker.fixed) {
     if (!state.showCities) {
+      return false;
+    }
+    if (!cityVisibleAtCurrentZoom(marker)) {
       return false;
     }
     if (state.hideFound && markerIsFound(marker)) {

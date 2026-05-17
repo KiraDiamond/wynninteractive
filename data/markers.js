@@ -46,6 +46,7 @@ export const STARTER_MARKERS = [
     region: "Fruma",
     description: "Fruman capital citadel.",
     tags: ["city", "fruma", "capital"],
+    minor: true,
     position: { world: { x: -1546, z: -962 } },
   },
   {
@@ -73,6 +74,7 @@ export const STARTER_MARKERS = [
     region: "Wynn",
     description: "Elven town in Aldorei.",
     tags: ["city", "wynn", "elf"],
+    minor: true,
     position: { world: { x: -440, z: -4578 } },
   },
   {
@@ -100,6 +102,7 @@ export const STARTER_MARKERS = [
     region: "Gavel",
     description: "Coastal Gavel settlement.",
     tags: ["city", "gavel", "coast"],
+    minor: true,
     position: { world: { x: -1620, z: -4960 } },
   },
   {
@@ -136,6 +139,7 @@ export const STARTER_MARKERS = [
     region: "Gavel",
     description: "Gavel town on the Cinfras routes.",
     tags: ["city", "gavel"],
+    minor: true,
     position: { world: { x: -1057, z: -5007 } },
   },
   {
@@ -208,6 +212,7 @@ export const STARTER_MARKERS = [
     region: "Jungle",
     description: "Jungle village and route stop.",
     tags: ["city", "jungle"],
+    minor: true,
     position: { world: { x: -750, z: -690 } },
   },
   {
@@ -217,6 +222,7 @@ export const STARTER_MARKERS = [
     region: "Canyon",
     description: "Canyon settlement on the eastern routes.",
     tags: ["city", "canyon"],
+    minor: true,
     position: { world: { x: 750, z: -4440 } },
   },
   {
@@ -226,6 +232,7 @@ export const STARTER_MARKERS = [
     region: "Gavel",
     description: "Penitentiary-side Gavel town.",
     tags: ["city", "gavel"],
+    minor: true,
     position: { world: { x: -615, z: -5435 } },
   },
   {
@@ -235,6 +242,7 @@ export const STARTER_MARKERS = [
     region: "Wynn",
     description: "Icy village on the northern path.",
     tags: ["city", "wynn", "snow"],
+    minor: true,
     position: { world: { x: -195, z: -340 } },
   },
   {
@@ -253,6 +261,7 @@ export const STARTER_MARKERS = [
     region: "Wynn",
     description: "Roadside village between Ragni and Detlas.",
     tags: ["city", "wynn"],
+    minor: true,
     position: { world: { x: -562, z: -1927 } },
   },
   {
@@ -280,6 +289,7 @@ export const STARTER_MARKERS = [
     region: "Wynn",
     description: "Starter-region village outside Ragni.",
     tags: ["city", "wynn", "starter"],
+    minor: true,
     position: { world: { x: -260, z: -1390 } },
   },
   {
@@ -307,6 +317,7 @@ export const STARTER_MARKERS = [
     region: "Ocean",
     description: "Pirate harbor and sea route stop.",
     tags: ["city", "ocean", "pirate"],
+    minor: true,
     position: { world: { x: -700, z: -3100 } },
   },
   {
@@ -316,6 +327,7 @@ export const STARTER_MARKERS = [
     region: "Ocean",
     description: "Coastal settlement west of Corkus routes.",
     tags: ["city", "ocean", "coast"],
+    minor: true,
     position: { world: { x: -1700, z: -2300 } },
   },
   {
@@ -370,6 +382,7 @@ export const STARTER_MARKERS = [
     region: "Wynn",
     description: "Eastern Wynn city on the desert route.",
     tags: ["city", "wynn"],
+    minor: true,
     position: { world: { x: 825, z: -1606 } },
   },
   {
@@ -395,6 +408,15 @@ export const STARTER_MARKERS = [
 export const CURATED_MARKERS = [
   ...WORLD_EVENT_MARKERS,
   ...GENERATED_PROFESSION_MARKERS,
+  {
+    id: "atlas-raid-orphions-nexus-of-light--732--6412",
+    title: "Orphion's Nexus of Light",
+    category: "raid",
+    region: "Realm of Light",
+    description: "Level 79 raid in the Realm of Light.",
+    tags: ["raid", "realm of light", "orphion"],
+    position: { world: { x: -732, z: -6412 } },
+  },
   {
     id: "lutho-loot-camp",
     title: "Lutho Loot Camp",
