@@ -1,5 +1,5 @@
-import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517g";
-import { IMPORTED_MARKERS } from "./data/imported-markers.js?v=20260517g";
+import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517h";
+import { IMPORTED_MARKERS } from "./data/imported-markers.js?v=20260517h";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
@@ -16,6 +16,7 @@ const STORAGE_KEYS = {
   calibrationSamples: "wynninteractive-calibration-samples-v1",
   calibrationTransform: "wynninteractive-calibration-transform-v1",
   cityEdits: "wynninteractive-city-edits-v1",
+  markerContent: "wynninteractive-marker-content-v1",
 };
 const CONTENT_BOOK_ROOT = "./assets/content-book";
 const CITY_ICON_URL = "./assets/icon.png";
@@ -100,6 +101,7 @@ const state = {
   editCities: EDIT_CITY_QUERY_MODE,
   cityEdits: USE_CITY_EDITS ? loadCityEdits() : {},
   cityTransform: null,
+  markerContent: loadMarkerContent(),
 };
 
 const elements = {
@@ -162,6 +164,18 @@ function loadFoundIds() {
 
 function persistFoundIds() {
   localStorage.setItem(STORAGE_KEYS.found, JSON.stringify([...state.foundIds]));
+}
+
+function loadMarkerContent() {
+  try {
+    return JSON.parse(localStorage.getItem(STORAGE_KEYS.markerContent) || "{}");
+  } catch {
+    return {};
+  }
+}
+
+function persistMarkerContent() {
+  localStorage.setItem(STORAGE_KEYS.markerContent, JSON.stringify(state.markerContent));
 }
 
 function loadCalibrationSamples() {
@@ -319,6 +333,218 @@ function escapeHtml(value) {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#39;");
+}
+
+function escapeAttribute(value) {
+  return escapeHtml(value ?? "");
+}
+
+function splitMultiline(value) {
+  return String(value || "")
+    .split(/\r?\n/)
+    .map((item) => item.trim())
+    .filter(Boolean);
+}
+
+function markerContentEntry(markerId) {
+  const entry = state.markerContent[markerId] || {};
+  return {
+    summary: entry.summary || "",
+    explanation: entry.explanation || "",
+    coverImage: entry.coverImage || "",
+    gallery: Array.isArray(entry.gallery) ? entry.gallery : splitMultiline(entry.gallery || ""),
+    tutorials: Array.isArray(entry.tutorials) ? entry.tutorials : splitMultiline(entry.tutorials || ""),
+  };
+}
+
+function contentExportEntry(marker) {
+  const entry = markerContentEntry(marker.id);
+  return {
+    id: marker.id,
+    title: marker.title,
+    category: marker.category,
+    region: marker.region,
+    world: marker.position?.world || null,
+    summary: entry.summary,
+    explanation: entry.explanation,
+    coverImage: entry.coverImage,
+    gallery: entry.gallery,
+    tutorials: entry.tutorials,
+  };
+}
+
+function youtubeEmbedUrl(url) {
+  if (!url) {
+    return null;
+  }
+
+  try {
+    const parsed = new URL(url);
+    if (parsed.hostname.includes("youtu.be")) {
+      const id = parsed.pathname.replaceAll("/", "");
+      return id ? `https://www.youtube.com/embed/${id}` : null;
+    }
+
+    if (parsed.hostname.includes("youtube.com")) {
+      if (parsed.pathname === "/watch") {
+        const id = parsed.searchParams.get("v");
+        return id ? `https://www.youtube.com/embed/${id}` : null;
+      }
+
+      if (parsed.pathname.startsWith("/shorts/")) {
+        const id = parsed.pathname.split("/")[2];
+        return id ? `https://www.youtube.com/embed/${id}` : null;
+      }
+
+      if (parsed.pathname.startsWith("/embed/")) {
+        return url;
+      }
+    }
+  } catch {
+    return null;
+  }
+
+  return null;
+}
+
+function contentPreviewHtml(marker, entry) {
+  const blocks = [];
+  const gallery = entry.gallery.filter((url) => url !== entry.coverImage);
+  const tutorials = entry.tutorials;
+
+  if (entry.coverImage) {
+    blocks.push(`
+      <figure class="content-cover">
+        <img src="${escapeAttribute(entry.coverImage)}" alt="${escapeAttribute(marker.title)} cover image" loading="lazy">
+      </figure>
+    `);
+  }
+
+  if (entry.summary) {
+    blocks.push(`<p class="content-summary">${escapeHtml(entry.summary)}</p>`);
+  }
+
+  if (entry.explanation) {
+    const paragraphs = entry.explanation
+      .split(/\n{2,}/)
+      .map((part) => part.trim())
+      .filter(Boolean)
+      .map((part) => `<p>${escapeHtml(part).replaceAll("\n", "<br>")}</p>`)
+      .join("");
+    blocks.push(`<div class="content-prose">${paragraphs}</div>`);
+  }
+
+  if (gallery.length) {
+    blocks.push(`
+      <div class="content-gallery">
+        ${gallery.map((url, index) => `
+          <figure class="content-thumb">
+            <img src="${escapeAttribute(url)}" alt="${escapeAttribute(`${marker.title} gallery ${index + 1}`)}" loading="lazy">
+          </figure>
+        `).join("")}
+      </div>
+    `);
+  }
+
+  if (tutorials.length) {
+    const tutorialCards = tutorials.map((url) => {
+      const embed = youtubeEmbedUrl(url);
+      if (embed) {
+        return `
+          <div class="tutorial-card">
+            <iframe
+              src="${escapeAttribute(embed)}"
+              title="${escapeAttribute(`${marker.title} tutorial video`)}"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <a href="${escapeAttribute(url)}" target="_blank" rel="noreferrer">Open source video</a>
+          </div>
+        `;
+      }
+
+      return `
+        <div class="tutorial-link">
+          <a href="${escapeAttribute(url)}" target="_blank" rel="noreferrer">${escapeHtml(url)}</a>
+        </div>
+      `;
+    }).join("");
+
+    blocks.push(`
+      <section class="content-block">
+        <h3>Tutorials</h3>
+        <div class="tutorial-stack">${tutorialCards}</div>
+      </section>
+    `);
+  }
+
+  if (!blocks.length) {
+    return `
+      <div class="content-empty">
+        <strong>Content slot is empty.</strong>
+        <span>Add explanation, image URLs, and tutorial links below. Everything saves locally in your browser.</span>
+      </div>
+    `;
+  }
+
+  return blocks.join("");
+}
+
+function contentEditorHtml(marker, entry) {
+  return `
+    <section class="content-studio">
+      <div class="content-studio-head">
+        <h3>Content Studio</h3>
+        <span class="content-studio-note">Local authoring now. Paste R2 image URLs later.</span>
+      </div>
+      <label class="content-field">
+        <span>Summary</span>
+        <input type="text" data-content-field="summary" value="${escapeAttribute(entry.summary)}" placeholder="Short line shown at the top of the marker entry.">
+      </label>
+      <label class="content-field">
+        <span>Cover Image URL</span>
+        <input type="url" data-content-field="coverImage" value="${escapeAttribute(entry.coverImage)}" placeholder="https://cdn.yourdomain.com/markers/marker-id/cover.webp">
+      </label>
+      <label class="content-field">
+        <span>Gallery Image URLs</span>
+        <textarea data-content-field="gallery" rows="4" placeholder="One image URL per line.">${escapeHtml(entry.gallery.join("\n"))}</textarea>
+      </label>
+      <label class="content-field">
+        <span>Explanation</span>
+        <textarea data-content-field="explanation" rows="8" placeholder="Write the full explanation for this location.">${escapeHtml(entry.explanation)}</textarea>
+      </label>
+      <label class="content-field">
+        <span>Tutorial Videos</span>
+        <textarea data-content-field="tutorials" rows="4" placeholder="One video URL per line. YouTube links will embed automatically.">${escapeHtml(entry.tutorials.join("\n"))}</textarea>
+      </label>
+      <div class="detail-actions">
+        <button type="button" class="detail-button secondary" data-content-action="copy-marker">Copy marker JSON</button>
+        <button type="button" class="detail-button secondary" data-content-action="copy-all">Copy all content JSON</button>
+      </div>
+      <div class="content-save-note">Typing saves automatically to this browser.</div>
+    </section>
+  `;
+}
+
+function updateMarkerContent(marker, field, rawValue) {
+  const current = markerContentEntry(marker.id);
+  if (field === "gallery" || field === "tutorials") {
+    current[field] = splitMultiline(rawValue);
+  } else {
+    current[field] = rawValue.trim();
+  }
+  state.markerContent[marker.id] = current;
+  persistMarkerContent();
+}
+
+async function copyText(value) {
+  try {
+    await navigator.clipboard.writeText(value);
+    return true;
+  } catch {
+    return false;
+  }
 }
 
 function categoryAssetUrl(categoryId, variant = "active") {
@@ -807,6 +1033,7 @@ function renderDetailCard() {
   const isFound = state.foundIds.has(marker.id);
   const meta = CATEGORY_META[marker.category];
   const iconUrl = marker.fixed ? CITY_ICON_URL : categoryAssetUrl(marker.category, isFound ? "locked" : "active");
+  const content = contentExportEntry(marker);
 
   elements.detailCard.className = "detail-card";
   elements.detailCard.innerHTML = `
@@ -823,6 +1050,16 @@ function renderDetailCard() {
       <button type="button" class="detail-button" data-action="toggle-found">${isFound ? "Mark not found" : "Mark found"}</button>
       <button type="button" class="detail-button secondary" data-action="focus">Focus</button>
     </div>
+    <section class="content-preview-panel">
+      <div class="content-preview-head">
+        <h3>Marker Content</h3>
+        <span>What players will eventually see here.</span>
+      </div>
+      <div id="content-preview-body" class="content-preview-body">
+        ${contentPreviewHtml(marker, content)}
+      </div>
+    </section>
+    ${contentEditorHtml(marker, content)}
   `;
 
   elements.detailCard.querySelectorAll("button").forEach((button) => {
@@ -832,6 +1069,35 @@ function renderDetailCard() {
         toggleFound(marker.id);
       } else if (action === "focus") {
         flyToMarker(marker);
+      }
+    });
+  });
+
+  const previewBody = elements.detailCard.querySelector("#content-preview-body");
+  const saveNote = elements.detailCard.querySelector(".content-save-note");
+  const fields = elements.detailCard.querySelectorAll("[data-content-field]");
+
+  fields.forEach((field) => {
+    field.addEventListener("input", () => {
+      updateMarkerContent(marker, field.dataset.contentField, field.value);
+      const entry = markerContentEntry(marker.id);
+      previewBody.innerHTML = contentPreviewHtml(marker, entry);
+      saveNote.textContent = "Saved locally just now.";
+    });
+  });
+
+  elements.detailCard.querySelectorAll("[data-content-action]").forEach((button) => {
+    button.addEventListener("click", async () => {
+      const action = button.dataset.contentAction;
+      if (action === "copy-marker") {
+        const ok = await copyText(JSON.stringify(contentExportEntry(marker), null, 2));
+        saveNote.textContent = ok ? "Copied marker JSON." : "Clipboard copy failed.";
+      } else if (action === "copy-all") {
+        const payload = state.markers
+          .filter((item) => state.markerContent[item.id])
+          .map((item) => contentExportEntry(item));
+        const ok = await copyText(JSON.stringify(payload, null, 2));
+        saveNote.textContent = ok ? "Copied all authored marker content." : "Clipboard copy failed.";
       }
     });
   });
