@@ -1,5 +1,6 @@
-import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517h";
-import { IMPORTED_MARKERS } from "./data/imported-markers.js?v=20260517h";
+import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517k";
+import { IMPORTED_MARKERS } from "./data/imported-markers.js?v=20260517k";
+import { MARKER_CONTENT } from "./data/marker-content.js?v=20260517k";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
@@ -18,13 +19,15 @@ const STORAGE_KEYS = {
   cityEdits: "wynninteractive-city-edits-v1",
   markerContent: "wynninteractive-marker-content-v1",
 };
-const CONTENT_BOOK_ROOT = "./assets/content-book";
-const CITY_ICON_URL = "./assets/icon.png";
+const CONTENT_BOOK_ROOT = new URL("./assets/content-book/", import.meta.url).href.replace(/\/$/, "");
+const CITY_ICON_URL = new URL("./assets/icon.png", import.meta.url).href;
+const MAP_IMAGE_URL = new URL("./assets/map/WynncraftMapFruma.png", import.meta.url).href;
 const query = new URLSearchParams(window.location.search);
 const CALIBRATION_MODE = query.get("calibrate") === "1";
 const USE_STORED_CALIBRATION = CALIBRATION_MODE || query.get("useCalibration") === "1";
 const EDIT_CITY_QUERY_MODE = query.get("editCities") === "1";
 const USE_CITY_EDITS = EDIT_CITY_QUERY_MODE || query.get("useCityEdits") === "1";
+const DEV_MODE = window.location.pathname.replace(/\/+$/, "").endsWith("/devview");
 
 function parseNumberParam(name, fallback) {
   const raw = query.get(name);
@@ -101,19 +104,23 @@ const state = {
   editCities: EDIT_CITY_QUERY_MODE,
   cityEdits: USE_CITY_EDITS ? loadCityEdits() : {},
   cityTransform: null,
-  markerContent: loadMarkerContent(),
+  markerContent: DEV_MODE ? { ...MARKER_CONTENT, ...loadMarkerContent() } : { ...MARKER_CONTENT },
+  panelView: "markers",
 };
 
 const elements = {
   panel: document.querySelector("#marker-panel"),
   panelToggle: document.querySelector("#panel-toggle"),
+  panelTabs: document.querySelectorAll("[data-panel-view]"),
+  panelViews: document.querySelectorAll("[data-panel-screen]"),
   searchInput: document.querySelector("#search-input"),
   clearSearch: document.querySelector("#clear-search"),
   showCitiesToggle: document.querySelector("#show-cities-toggle"),
   hideFoundToggle: document.querySelector("#hide-found-toggle"),
   editCitiesToggle: document.querySelector("#edit-cities-toggle"),
   categoryFilters: document.querySelector("#category-filters"),
-  detailCard: document.querySelector("#detail-card"),
+  detailCard: document.querySelector("#info-card"),
+  studioCard: document.querySelector("#studio-card"),
   cityEditorStatus: document.querySelector("#city-editor-status"),
   cityEditorOutput: document.querySelector("#city-editor-output"),
   cityEditorCopy: document.querySelector("#city-editor-copy"),
@@ -144,7 +151,7 @@ const map = L.map("map", {
   attributionControl: false,
 });
 
-L.imageOverlay("./assets/map/WynncraftMapFruma.png", MAP_BOUNDS).addTo(map);
+L.imageOverlay(MAP_IMAGE_URL, MAP_BOUNDS).addTo(map);
 map.fitBounds(MAP_BOUNDS, { padding: [24, 24] });
 
 function updatePinScale() {
@@ -339,6 +346,16 @@ function escapeAttribute(value) {
   return escapeHtml(value ?? "");
 }
 
+function setPanelView(view) {
+  state.panelView = view;
+  elements.panelTabs.forEach((button) => {
+    button.classList.toggle("active", button.dataset.panelView === view);
+  });
+  elements.panelViews.forEach((panel) => {
+    panel.classList.toggle("hidden", panel.dataset.panelScreen !== view);
+  });
+}
+
 function splitMultiline(value) {
   return String(value || "")
     .split(/\r?\n/)
@@ -371,6 +388,52 @@ function contentExportEntry(marker) {
     gallery: entry.gallery,
     tutorials: entry.tutorials,
   };
+}
+
+function hasMarkerContent(entry) {
+  return Boolean(
+    entry.summary ||
+    entry.explanation ||
+    entry.coverImage ||
+    entry.gallery.length ||
+    entry.tutorials.length
+  );
+}
+
+function extractGoogleDriveId(url) {
+  if (!url) {
+    return null;
+  }
+
+  try {
+    const parsed = new URL(url);
+    if (!parsed.hostname.includes("drive.google.com")) {
+      return null;
+    }
+
+    const directId = parsed.searchParams.get("id");
+    if (directId) {
+      return directId;
+    }
+
+    const parts = parsed.pathname.split("/");
+    const fileIndex = parts.indexOf("d");
+    if (fileIndex >= 0 && parts[fileIndex + 1]) {
+      return parts[fileIndex + 1];
+    }
+  } catch {
+    return null;
+  }
+
+  return null;
+}
+
+function resolveImageUrl(url) {
+  const fileId = extractGoogleDriveId(url);
+  if (fileId) {
+    return `https://drive.google.com/thumbnail?id=${fileId}&sz=w1600`;
+  }
+  return url;
 }
 
 function youtubeEmbedUrl(url) {
@@ -415,7 +478,7 @@ function contentPreviewHtml(marker, entry) {
   if (entry.coverImage) {
     blocks.push(`
       <figure class="content-cover">
-        <img src="${escapeAttribute(entry.coverImage)}" alt="${escapeAttribute(marker.title)} cover image" loading="lazy">
+        <img src="${escapeAttribute(resolveImageUrl(entry.coverImage))}" alt="${escapeAttribute(marker.title)} cover image" loading="lazy">
       </figure>
     `);
   }
@@ -439,7 +502,7 @@ function contentPreviewHtml(marker, entry) {
       <div class="content-gallery">
         ${gallery.map((url, index) => `
           <figure class="content-thumb">
-            <img src="${escapeAttribute(url)}" alt="${escapeAttribute(`${marker.title} gallery ${index + 1}`)}" loading="lazy">
+            <img src="${escapeAttribute(resolveImageUrl(url))}" alt="${escapeAttribute(`${marker.title} gallery ${index + 1}`)}" loading="lazy">
           </figure>
         `).join("")}
       </div>
@@ -480,10 +543,15 @@ function contentPreviewHtml(marker, entry) {
   }
 
   if (!blocks.length) {
+    const emptyTitle = DEV_MODE ? "Content slot is empty." : "No guide published yet.";
+    const emptyCopy = DEV_MODE
+      ? "Add explanation, image URLs, and tutorial links below. Everything saves locally in your browser."
+      : "This marker does not have published screenshots, notes, or tutorial links yet.";
+
     return `
       <div class="content-empty">
-        <strong>Content slot is empty.</strong>
-        <span>Add explanation, image URLs, and tutorial links below. Everything saves locally in your browser.</span>
+        <strong>${emptyTitle}</strong>
+        <span>${emptyCopy}</span>
       </div>
     `;
   }
@@ -496,7 +564,7 @@ function contentEditorHtml(marker, entry) {
     <section class="content-studio">
       <div class="content-studio-head">
         <h3>Content Studio</h3>
-        <span class="content-studio-note">Local authoring now. Paste R2 image URLs later.</span>
+        <span class="content-studio-note">Paste Google Drive image links and YouTube tutorial URLs.</span>
       </div>
       <label class="content-field">
         <span>Summary</span>
@@ -504,11 +572,11 @@ function contentEditorHtml(marker, entry) {
       </label>
       <label class="content-field">
         <span>Cover Image URL</span>
-        <input type="url" data-content-field="coverImage" value="${escapeAttribute(entry.coverImage)}" placeholder="https://cdn.yourdomain.com/markers/marker-id/cover.webp">
+        <input type="url" data-content-field="coverImage" value="${escapeAttribute(entry.coverImage)}" placeholder="https://drive.google.com/file/d/.../view">
       </label>
       <label class="content-field">
         <span>Gallery Image URLs</span>
-        <textarea data-content-field="gallery" rows="4" placeholder="One image URL per line.">${escapeHtml(entry.gallery.join("\n"))}</textarea>
+        <textarea data-content-field="gallery" rows="4" placeholder="One Google Drive image link per line.">${escapeHtml(entry.gallery.join("\n"))}</textarea>
       </label>
       <label class="content-field">
         <span>Explanation</span>
@@ -516,7 +584,7 @@ function contentEditorHtml(marker, entry) {
       </label>
       <label class="content-field">
         <span>Tutorial Videos</span>
-        <textarea data-content-field="tutorials" rows="4" placeholder="One video URL per line. YouTube links will embed automatically.">${escapeHtml(entry.tutorials.join("\n"))}</textarea>
+        <textarea data-content-field="tutorials" rows="4" placeholder="One YouTube URL per line.">${escapeHtml(entry.tutorials.join("\n"))}</textarea>
       </label>
       <div class="detail-actions">
         <button type="button" class="detail-button secondary" data-content-action="copy-marker">Copy marker JSON</button>
@@ -1025,6 +1093,13 @@ function renderDetailCard() {
       <h2>No marker selected</h2>
       <p>Click a map marker to inspect it.</p>
     `;
+    if (elements.studioCard) {
+      elements.studioCard.className = "detail-card empty";
+      elements.studioCard.innerHTML = `
+        <h2>No marker selected</h2>
+        <p>Select a marker from the map to author images, explanation text, and tutorial videos.</p>
+      `;
+    }
     return;
   }
 
@@ -1034,9 +1109,7 @@ function renderDetailCard() {
   const meta = CATEGORY_META[marker.category];
   const iconUrl = marker.fixed ? CITY_ICON_URL : categoryAssetUrl(marker.category, isFound ? "locked" : "active");
   const content = contentExportEntry(marker);
-
-  elements.detailCard.className = "detail-card";
-  elements.detailCard.innerHTML = `
+  const infoBody = `
     <div class="detail-topline">
       <span class="detail-icon${marker.fixed ? " city" : ""}" style="${marker.fixed ? `--detail-icon:url('${iconUrl}');` : `--detail-icon:url('${iconUrl}');--detail-accent:${meta.color};`}"></span>
       <div>
@@ -1053,16 +1126,28 @@ function renderDetailCard() {
     <section class="content-preview-panel">
       <div class="content-preview-head">
         <h3>Marker Content</h3>
-        <span>What players will eventually see here.</span>
+        <span>${hasMarkerContent(content) ? "Community-style preview for this marker." : "No authored content yet."}</span>
       </div>
       <div id="content-preview-body" class="content-preview-body">
         ${contentPreviewHtml(marker, content)}
       </div>
     </section>
-    ${contentEditorHtml(marker, content)}
   `;
 
-  elements.detailCard.querySelectorAll("button").forEach((button) => {
+  elements.detailCard.className = "detail-card";
+  elements.detailCard.innerHTML = infoBody;
+
+  if (elements.studioCard) {
+    elements.studioCard.className = "detail-card";
+    elements.studioCard.innerHTML = `
+      ${infoBody}
+      ${contentEditorHtml(marker, content)}
+    `;
+  }
+
+  const interactiveRoot = elements.studioCard || elements.detailCard;
+
+  interactiveRoot.querySelectorAll("[data-action]").forEach((button) => {
     button.addEventListener("click", () => {
       const action = button.dataset.action;
       if (action === "toggle-found") {
@@ -1073,34 +1158,38 @@ function renderDetailCard() {
     });
   });
 
-  const previewBody = elements.detailCard.querySelector("#content-preview-body");
-  const saveNote = elements.detailCard.querySelector(".content-save-note");
-  const fields = elements.detailCard.querySelectorAll("[data-content-field]");
+  const previewBodies = [...document.querySelectorAll("#content-preview-body")];
+  const saveNote = interactiveRoot.querySelector(".content-save-note");
+  const fields = interactiveRoot.querySelectorAll("[data-content-field]");
 
-  fields.forEach((field) => {
-    field.addEventListener("input", () => {
-      updateMarkerContent(marker, field.dataset.contentField, field.value);
-      const entry = markerContentEntry(marker.id);
-      previewBody.innerHTML = contentPreviewHtml(marker, entry);
-      saveNote.textContent = "Saved locally just now.";
+  if (elements.studioCard) {
+    fields.forEach((field) => {
+      field.addEventListener("input", () => {
+        updateMarkerContent(marker, field.dataset.contentField, field.value);
+        const entry = markerContentEntry(marker.id);
+        previewBodies.forEach((previewBody) => {
+          previewBody.innerHTML = contentPreviewHtml(marker, entry);
+        });
+        saveNote.textContent = "Saved locally just now.";
+      });
     });
-  });
 
-  elements.detailCard.querySelectorAll("[data-content-action]").forEach((button) => {
-    button.addEventListener("click", async () => {
-      const action = button.dataset.contentAction;
-      if (action === "copy-marker") {
-        const ok = await copyText(JSON.stringify(contentExportEntry(marker), null, 2));
-        saveNote.textContent = ok ? "Copied marker JSON." : "Clipboard copy failed.";
-      } else if (action === "copy-all") {
-        const payload = state.markers
-          .filter((item) => state.markerContent[item.id])
-          .map((item) => contentExportEntry(item));
-        const ok = await copyText(JSON.stringify(payload, null, 2));
-        saveNote.textContent = ok ? "Copied all authored marker content." : "Clipboard copy failed.";
-      }
+    interactiveRoot.querySelectorAll("[data-content-action]").forEach((button) => {
+      button.addEventListener("click", async () => {
+        const action = button.dataset.contentAction;
+        if (action === "copy-marker") {
+          const ok = await copyText(JSON.stringify(contentExportEntry(marker), null, 2));
+          saveNote.textContent = ok ? "Copied marker JSON." : "Clipboard copy failed.";
+        } else if (action === "copy-all") {
+          const payload = state.markers
+            .map((item) => contentExportEntry(item))
+            .filter((entry) => hasMarkerContent(entry));
+          const ok = await copyText(JSON.stringify(payload, null, 2));
+          saveNote.textContent = ok ? "Copied all authored marker content." : "Clipboard copy failed.";
+        }
+      });
     });
-  });
+  }
 }
 
 function cityEditExport() {
@@ -1201,6 +1290,12 @@ function setSelectedMarker(markerId) {
     }
   }
 
+  if (DEV_MODE && elements.studioCard) {
+    setPanelView("studio");
+  } else {
+    setPanelView("info");
+  }
+
   setPanelCollapsed(false);
   renderDetailCard();
 }
@@ -1288,6 +1383,12 @@ function recordCalibrationSample(latlng) {
 function bindEvents() {
   elements.panelToggle.addEventListener("click", () => {
     setPanelCollapsed(!state.panelCollapsed);
+  });
+
+  elements.panelTabs.forEach((button) => {
+    button.addEventListener("click", () => {
+      setPanelView(button.dataset.panelView);
+    });
   });
 
   map.on("click", (event) => {
@@ -1418,6 +1519,7 @@ function bindEvents() {
 hydrateMarkerState();
 state.cityTransform = USE_CITY_EDITS ? computeCityEditTransform() : null;
 bindEvents();
+setPanelView("markers");
 updatePinScale();
 renderCalibrationMarkers();
 syncVisibleMarkers();

@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wynn Interactive Map</title>
+  <title>Wynn Interactive Map Dev View</title>
   <meta
     name="description"
-    content="Wynncraft interactive map with quests, discoveries, caves, dungeons, raids, and lootrun camps."
+    content="Developer authoring view for Wynncraft marker content."
   >
-  <link rel="icon" type="image/png" href="./assets/icon.png">
+  <link rel="icon" type="image/png" href="../assets/icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     crossorigin=""
   >
-  <link rel="stylesheet" href="./styles.css?v=20260517k">
+  <link rel="stylesheet" href="../styles.css?v=20260517k">
 </head>
 <body>
   <div class="app-shell">
@@ -30,10 +30,10 @@
         <span></span>
       </button>
       <div class="brand">
-        <img class="brand-icon" src="./assets/icon.png" alt="">
+        <img class="brand-icon" src="../assets/icon.png" alt="">
         <div class="brand-copy">
           <strong>Wynn Atlas</strong>
-          <span>Interactive world map</span>
+          <span>Developer content view</span>
         </div>
       </div>
     </header>
@@ -50,11 +50,16 @@
             <path d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H9l-4 3v-3H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm3 4h8v2H8V9Zm0 4h5v2H8v-2Z"/>
           </svg>
         </button>
+        <button type="button" class="panel-tab" aria-label="Studio" data-panel-view="studio">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 4h16v4H4V4Zm0 6h16v10H4V10Zm3 2v6h10v-6H7Z"/>
+          </svg>
+        </button>
       </div>
 
       <section class="panel-screen" data-panel-screen="markers">
         <div class="panel-banner">
-          Wynn Atlas tracks quests, discoveries, raids, and route planning on one clean world map.
+          Dev view is for authoring marker explanations, Google Drive image links, and YouTube tutorial embeds.
         </div>
 
         <div class="panel-toolbar">
@@ -92,12 +97,23 @@
 
       <section class="panel-screen hidden" data-panel-screen="info">
         <div class="panel-banner panel-banner-info">
-          Marker info lives here. Click any icon on the map to open its explanation, screenshots, and tutorial links.
+          Info tab previews what players see on the live site for the selected marker.
         </div>
 
         <article id="info-card" class="detail-card empty">
           <h2>No marker selected</h2>
           <p>Click a map marker to inspect it.</p>
+        </article>
+      </section>
+
+      <section class="panel-screen hidden" data-panel-screen="studio">
+        <div class="panel-banner panel-banner-info">
+          Studio tab is where you paste Google Drive image links and YouTube tutorials for the selected marker.
+        </div>
+
+        <article id="studio-card" class="detail-card empty">
+          <h2>No marker selected</h2>
+          <p>Select a marker from the map to author images, explanation text, and tutorial videos.</p>
         </article>
       </section>
 
@@ -128,6 +144,6 @@
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     crossorigin=""
   ></script>
-  <script type="module" src="./app.js?v=20260517k"></script>
+  <script type="module" src="../app.js?v=20260517k"></script>
 </body>
 </html>
