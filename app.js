@@ -59,7 +59,6 @@ const IMPORT_ICON_META = {
   "Content_CorruptedDungeon.png": { category: "dungeon" },
   "Content_Raid.png": { category: "raid" },
   "Content_BossAltar.png": { category: "boss_altar" },
-  "Content_GrindSpot.png": { category: "lootrun_camp" },
 };
 const BLOCKED_IMPORT_IDS = new Set([
   "import-650-mini-quest-slay-angels",
@@ -504,9 +503,6 @@ function importedCategory(marker) {
 function normalizedImportedTitle(marker, category) {
   const title = marker.title?.trim() || CATEGORY_META[category]?.label || "Marker";
 
-  if (category === "lootrun_camp" && title === "Grind Spot") {
-    return "Lootrun Camp";
-  }
   if (category === "boss_altar" && title === "Boss Altar") {
     return "Boss Altar";
   }
@@ -520,9 +516,6 @@ function normalizedImportedTitle(marker, category) {
 function normalizedImportedDescription(marker, category, title) {
   const categoryLabel = CATEGORY_META[category]?.label || "Marker";
 
-  if (category === "lootrun_camp") {
-    return `${title} imported from the Wynncraft category dataset.`;
-  }
   if (title === categoryLabel) {
     return `${categoryLabel} imported from the Wynncraft category dataset.`;
   }
