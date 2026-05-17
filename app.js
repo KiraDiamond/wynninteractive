@@ -1,6 +1,6 @@
-import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517p";
-import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260517p";
-import { MARKER_CONTENT } from "./data/marker-content.js?v=20260517p";
+import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517q";
+import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260517q";
+import { MARKER_CONTENT } from "./data/marker-content.js?v=20260517q";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
@@ -355,6 +355,7 @@ function markerContentEntry(markerId) {
     explanation: entry.explanation || "",
     coverImage: entry.coverImage || "",
     gallery: Array.isArray(entry.gallery) ? entry.gallery : splitMultiline(entry.gallery || ""),
+    sourceUrl: entry.sourceUrl || "",
     tutorials: Array.isArray(entry.tutorials) ? entry.tutorials : splitMultiline(entry.tutorials || ""),
   };
 }
@@ -371,6 +372,7 @@ function contentExportEntry(marker) {
     explanation: entry.explanation,
     coverImage: entry.coverImage,
     gallery: entry.gallery,
+    sourceUrl: entry.sourceUrl,
     tutorials: entry.tutorials,
   };
 }
@@ -381,6 +383,7 @@ function hasMarkerContent(entry) {
     entry.explanation ||
     entry.coverImage ||
     entry.gallery.length ||
+    entry.sourceUrl ||
     entry.tutorials.length
   );
 }
@@ -473,13 +476,50 @@ function contentPreviewHtml(marker, entry) {
   }
 
   if (entry.explanation) {
-    const paragraphs = entry.explanation
+    const sections = entry.explanation
       .split(/\n{2,}/)
       .map((part) => part.trim())
       .filter(Boolean)
-      .map((part) => `<p>${escapeHtml(part).replaceAll("\n", "<br>")}</p>`)
-      .join("");
-    blocks.push(`<div class="content-prose">${paragraphs}</div>`);
+      .map((part) => part.split("\n").map((line) => line.trim()).filter(Boolean));
+
+    const stepCards = sections.every((lines) => /^Stage\s+\d+\b/i.test(lines[0] || ""))
+      ? sections
+        .map((lines) => {
+          const [title, ...items] = lines;
+          if (!items.length) {
+            return "";
+          }
+
+          return `
+            <section class="content-step">
+              <h3>${escapeHtml(title)}</h3>
+              <ul>
+                ${items.map((line) => `<li>${escapeHtml(line.replace(/^[•»]\s*/, ""))}</li>`).join("")}
+              </ul>
+            </section>
+          `;
+        })
+        .filter(Boolean)
+        .join("")
+      : "";
+
+    if (stepCards) {
+      blocks.push(`<div class="content-steps">${stepCards}</div>`);
+    } else {
+      const paragraphs = sections
+        .map((lines) => `<p>${escapeHtml(lines.join("\n")).replaceAll("\n", "<br>")}</p>`)
+        .join("");
+      blocks.push(`<div class="content-prose">${paragraphs}</div>`);
+    }
+  }
+
+  if (entry.sourceUrl) {
+    blocks.push(`
+      <section class="content-source">
+        <span>Need lore, dialogue, or the full article?</span>
+        <a href="${escapeAttribute(entry.sourceUrl)}" target="_blank" rel="noreferrer">Open the wiki page</a>
+      </section>
+    `);
   }
 
   if (gallery.length) {

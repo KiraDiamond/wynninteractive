@@ -780,6 +780,38 @@ input {
   gap: 10px;
 }
 
+.content-steps {
+  display: grid;
+  gap: 12px;
+}
+
+.content-step {
+  padding: 14px;
+  border: 1px solid #dbe3ee;
+  background:
+    linear-gradient(180deg, rgba(244, 248, 253, 0.98), rgba(236, 242, 249, 0.96));
+}
+
+.content-step h3 {
+  margin: 0 0 10px;
+  font-size: 0.86rem;
+  color: #31465c;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.content-step ul {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 18px;
+  color: #4f6177;
+}
+
+.content-step li {
+  line-height: 1.5;
+}
+
 .content-prose p {
   margin: 0;
   color: #5b6c81 !important;
@@ -798,6 +830,30 @@ input {
   color: #31465c;
   text-transform: uppercase;
   letter-spacing: 0.06em;
+}
+
+.content-source {
+  display: grid;
+  gap: 6px;
+  padding: 12px 14px;
+  background: #f4f7fb;
+  border: 1px solid #dde4ee;
+}
+
+.content-source span {
+  color: #6c7a8d;
+  font-size: 0.84rem;
+}
+
+.content-source a {
+  color: #355d92;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.content-source a:hover,
+.content-source a:focus-visible {
+  text-decoration: underline;
 }
 
 .tutorial-stack {
