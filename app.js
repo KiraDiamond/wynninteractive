@@ -1,6 +1,6 @@
-import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517q";
-import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260517q";
-import { MARKER_CONTENT } from "./data/marker-content.js?v=20260517q";
+import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517s";
+import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260517s";
+import { MARKER_CONTENT } from "./data/marker-content.js?v=20260517s";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
@@ -503,8 +503,26 @@ function contentPreviewHtml(marker, entry) {
         .join("")
       : "";
 
+    const listCards = !stepCards && sections.every((lines) => lines.length > 1 && !/^[•»]/.test(lines[0]) && lines.slice(1).every((line) => /^[•»]/.test(line)))
+      ? sections
+        .map((lines) => {
+          const [title, ...items] = lines;
+          return `
+            <section class="content-step content-step-list">
+              <h3>${escapeHtml(title)}</h3>
+              <ul>
+                ${items.map((line) => `<li>${escapeHtml(line.replace(/^[•»]\s*/, ""))}</li>`).join("")}
+              </ul>
+            </section>
+          `;
+        })
+        .join("")
+      : "";
+
     if (stepCards) {
       blocks.push(`<div class="content-steps">${stepCards}</div>`);
+    } else if (listCards) {
+      blocks.push(`<div class="content-steps">${listCards}</div>`);
     } else {
       const paragraphs = sections
         .map((lines) => `<p>${escapeHtml(lines.join("\n")).replaceAll("\n", "<br>")}</p>`)
@@ -516,7 +534,7 @@ function contentPreviewHtml(marker, entry) {
   if (entry.sourceUrl) {
     blocks.push(`
       <section class="content-source">
-        <span>Need lore, dialogue, or the full article?</span>
+        <span>Need the full article or extra details?</span>
         <a href="${escapeAttribute(entry.sourceUrl)}" target="_blank" rel="noreferrer">Open the wiki page</a>
       </section>
     `);
