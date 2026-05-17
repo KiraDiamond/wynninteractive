@@ -1,5 +1,5 @@
 import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517m";
-import { IMPORTED_MARKERS } from "./data/imported-markers.js?v=20260517m";
+import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260517m";
 import { MARKER_CONTENT } from "./data/marker-content.js?v=20260517m";
 
 const MAP_WIDTH = 4608;
@@ -51,22 +51,6 @@ const CALIBRATION_TARGETS = STARTER_MARKERS.map((marker) => ({
   x: marker.position.world.x,
   z: marker.position.world.z,
 }));
-const IMPORT_ICON_META = {
-  "Content_Quest.png": { category: "quests" },
-  "Content_Miniquest.png": { category: "mini_quests" },
-  "Content_UltimateDiscovery.png": { category: "secret_discovery" },
-  "Special_LightRealm.png": { category: "world_discovery" },
-  "Special_Rune.png": { category: "world_discovery" },
-  "Special_RootsOfCorruption.png": { category: "territorial_discovery" },
-  "Content_Cave.png": { category: "caves" },
-  "Content_Dungeon.png": { category: "dungeon" },
-  "Content_CorruptedDungeon.png": { category: "dungeon" },
-  "Content_Raid.png": { category: "raid" },
-  "Content_BossAltar.png": { category: "boss_altar" },
-};
-const BLOCKED_IMPORT_IDS = new Set([
-  "import-650-mini-quest-slay-angels",
-]);
 const CATEGORY_GROUPS = [
   {
     id: "quests",
@@ -865,57 +849,6 @@ function computeCityEditTransform() {
   return solveAffineTransform(samples);
 }
 
-function importedCategory(marker) {
-  return IMPORT_ICON_META[marker.sourceIcon]?.category ?? null;
-}
-
-function normalizedImportedTitle(marker, category) {
-  const title = marker.title?.trim() || CATEGORY_META[category]?.label || "Marker";
-
-  if (category === "boss_altar" && title === "Boss Altar") {
-    return "Boss Altar";
-  }
-  if (category === "caves" && title === "Cave") {
-    return "Cave";
-  }
-
-  return title;
-}
-
-function normalizedImportedDescription(marker, category, title) {
-  const categoryLabel = CATEGORY_META[category]?.label || "Marker";
-
-  if (title === categoryLabel) {
-    return `${categoryLabel} imported from the Wynncraft category dataset.`;
-  }
-
-  return `${title} imported from the Wynncraft category dataset.`;
-}
-
-function normalizeImportedMarkers() {
-  return IMPORTED_MARKERS
-    .map((marker) => {
-      if (BLOCKED_IMPORT_IDS.has(marker.id)) {
-        return null;
-      }
-
-      const category = importedCategory(marker);
-      if (!category) {
-        return null;
-      }
-
-      const title = normalizedImportedTitle(marker, category);
-      return {
-        ...marker,
-        title,
-        category,
-        description: normalizedImportedDescription(marker, category, title),
-        tags: [...new Set([...(marker.tags || []), category, "curated-import"])],
-      };
-    })
-    .filter(Boolean);
-}
-
 function markerMatchesSearch(marker) {
   if (!state.search) {
     return true;
@@ -1019,6 +952,13 @@ function createMarkerLayer(marker) {
     if (!state.editCities && layer.dragging) {
       layer.dragging.disable();
     }
+  } else {
+    layer.bindTooltip(marker.title, {
+      direction: "top",
+      offset: [0, -10],
+      opacity: 0.94,
+      sticky: true,
+    });
   }
   state.markerLayers.set(marker.id, layer);
 }
@@ -1425,8 +1365,8 @@ function syncVisibleMarkers() {
 
 function hydrateMarkerState() {
   const fixedCities = STARTER_MARKERS.map((marker) => ({ ...marker, fixed: true }));
-  const imported = normalizeImportedMarkers();
-  state.markers = [...fixedCities, ...CURATED_MARKERS, ...imported];
+  const lootrunCamps = CURATED_MARKERS.filter((marker) => marker.category === "lootrun_camp");
+  state.markers = [...fixedCities, ...lootrunCamps, ...WIKI_MAP_MARKERS];
   state.markers.forEach(createMarkerLayer);
 }
 

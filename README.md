@@ -16,7 +16,12 @@ Interactive Wynncraft world map built as a static GitHub Pages site.
 - `styles.css`: map and panel styling
 - `app.js`: interactive behavior and map calibration
 - `data/markers.js`: starter marker dataset
+- `data/wiki-map-markers.js`: generated wiki-backed marker dataset used by the live map
 - `assets/map/WynncraftMapFruma.png`: world map image
+
+## Data builds
+
+- `npm run build:wiki-map`: rebuild the live marker dataset from the persistent wiki scrape plus the coordinate backbone
 
 ## Deployment
 
