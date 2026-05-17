@@ -1179,6 +1179,9 @@ function renderDetailCard() {
   const iconUrl = marker.fixed ? CITY_ICON_URL : categoryAssetUrl(marker.category, isFound ? "locked" : "active");
   const content = contentExportEntry(marker);
   const eventIntel = worldEventDetailsHtml(marker);
+  const summaryParagraph = marker.category === "world_events"
+    ? ""
+    : `<p>${escapeHtml(marker.description || "No description available.")}</p>`;
   const infoBody = `
     <div class="detail-topline">
       <span class="detail-icon${marker.fixed ? " city" : ""}" style="${marker.fixed ? `--detail-icon:url('${iconUrl}');` : `--detail-icon:url('${iconUrl}');--detail-accent:${meta.color};`}"></span>
@@ -1188,7 +1191,7 @@ function renderDetailCard() {
       </div>
     </div>
     <p class="detail-meta">${escapeHtml(marker.region || "World")} | ${world.x}, ${world.z}</p>
-    <p>${escapeHtml(marker.description || "No description available.")}</p>
+    ${summaryParagraph}
     ${eventIntel}
     <div class="detail-actions">
       <button type="button" class="detail-button" data-action="toggle-found">${isFound ? "Mark not found" : "Mark found"}</button>
