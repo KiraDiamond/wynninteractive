@@ -633,7 +633,7 @@ function contentPreviewHtml(marker, entry) {
   if (entry.sourceUrl) {
     blocks.push(`
       <section class="content-source">
-        <span>I keep the full write-up here.</span>
+        <span>Full article</span>
         <a href="${escapeAttribute(entry.sourceUrl)}" target="_blank" rel="noreferrer">Open the wiki page</a>
       </section>
     `);
@@ -708,10 +708,10 @@ function contentPreviewHtml(marker, entry) {
   }
 
   if (!blocks.length) {
-    const emptyTitle = DEV_MODE ? "I have not filled this entry yet." : "I have not added notes for this marker yet.";
+    const emptyTitle = DEV_MODE ? "No entry yet." : "No notes yet.";
     const emptyCopy = DEV_MODE
-      ? "I use the editor below for notes, image links, and tutorial links. Everything saves locally in this browser."
-      : "The marker still links back to the source page, but I have not written my own notes for it yet.";
+      ? "Use the editor below for notes, image links, and tutorial links. Changes save locally in this browser."
+      : "This marker still links to the source page even when no local notes are available.";
 
     return `
       <div class="content-empty">
@@ -729,7 +729,7 @@ function contentEditorHtml(marker, entry) {
     <section class="content-studio">
       <div class="content-studio-head">
         <h3>Content Studio</h3>
-        <span class="content-studio-note">I use this for image links and tutorial links.</span>
+        <span class="content-studio-note">Notes, image links, and tutorial links.</span>
       </div>
       <label class="content-field">
         <span>Summary</span>
@@ -1296,13 +1296,13 @@ function renderDetailCard() {
     elements.detailCard.className = "detail-card empty";
     elements.detailCard.innerHTML = `
       <h2>No marker selected</h2>
-      <p>Pick a marker and I will open the notes for it here.</p>
+      <p>Select a marker to view notes, rewards, routes, and source links.</p>
     `;
     if (elements.studioCard) {
       elements.studioCard.className = "detail-card empty";
       elements.studioCard.innerHTML = `
         <h2>No marker selected</h2>
-        <p>Pick a marker and I will load its editor here.</p>
+        <p>Select a marker to open its editor here.</p>
       `;
     }
     return;
@@ -1390,7 +1390,7 @@ function renderDetailCard() {
         previewBodies.forEach((previewBody) => {
           previewBody.innerHTML = contentPreviewHtml(marker, entry);
         });
-        saveNote.textContent = "Saved locally just now.";
+        saveNote.textContent = "Saved locally.";
       });
     });
 
@@ -1399,13 +1399,13 @@ function renderDetailCard() {
         const action = button.dataset.contentAction;
         if (action === "copy-marker") {
           const ok = await copyText(JSON.stringify(contentExportEntry(marker), null, 2));
-          saveNote.textContent = ok ? "Copied marker JSON." : "Clipboard copy failed.";
+          saveNote.textContent = ok ? "Marker JSON copied." : "Clipboard copy failed.";
         } else if (action === "copy-all") {
           const payload = state.markers
             .map((item) => contentExportEntry(item))
             .filter((entry) => hasMarkerContent(entry));
           const ok = await copyText(JSON.stringify(payload, null, 2));
-          saveNote.textContent = ok ? "Copied all authored marker content." : "Clipboard copy failed.";
+          saveNote.textContent = ok ? "All authored marker content copied." : "Clipboard copy failed.";
         }
       });
     });
