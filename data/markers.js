@@ -1,3 +1,5 @@
+import { WORLD_EVENT_MARKERS } from "./world-events.js";
+
 export const CATEGORY_META = {
   quests: { label: "Quests", color: "#6f9eea", selectable: true, icon: "quest" },
   mini_quests: { label: "Mini Quests", color: "#8dca6b", selectable: true, icon: "mini_quest" },
@@ -184,6 +186,7 @@ export const STARTER_MARKERS = [
 ];
 
 export const CURATED_MARKERS = [
+  ...WORLD_EVENT_MARKERS,
   {
     id: "lutho-loot-camp",
     title: "Lutho Loot Camp",

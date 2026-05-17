@@ -1,6 +1,6 @@
-import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517k";
-import { IMPORTED_MARKERS } from "./data/imported-markers.js?v=20260517k";
-import { MARKER_CONTENT } from "./data/marker-content.js?v=20260517k";
+import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517l";
+import { IMPORTED_MARKERS } from "./data/imported-markers.js?v=20260517l";
+import { MARKER_CONTENT } from "./data/marker-content.js?v=20260517l";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
