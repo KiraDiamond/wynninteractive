@@ -602,7 +602,7 @@ function buildMarkerIcon(marker, isFound, isSelected) {
 
   const variant = isSelected ? "tracked" : (isFound ? "locked" : "active");
   const iconUrl = categoryAssetUrl(marker.category, variant);
-  const classes = ["map-pin", "asset-pin"];
+  const classes = ["asset-pin"];
   if (isFound) {
     classes.push("found");
   }
@@ -612,7 +612,7 @@ function buildMarkerIcon(marker, isFound, isSelected) {
 
   return L.divIcon({
     className: "map-pin-wrapper",
-    html: `<div class="${classes.join(" ")}" style="--pin-glow:${meta.color};--marker-icon:url('${iconUrl}');"></div>`,
+    html: `<img class="${classes.join(" ")}" src="${iconUrl}" alt="" draggable="false" style="--pin-glow:${meta.color};">`,
     iconSize: [24, 24],
     iconAnchor: [12, 12],
   });
