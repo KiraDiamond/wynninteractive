@@ -17,6 +17,7 @@
   --white: #ffffff;
   --shadow: 0 22px 48px rgba(28, 42, 61, 0.16);
   --shadow-soft: 0 10px 22px rgba(22, 32, 46, 0.08);
+  --map-pin-scale: 1;
 }
 
 * {
@@ -628,6 +629,16 @@ input {
   border: 0;
 }
 
+.asset-pin-shell {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  overflow: visible;
+  transform: scale(var(--map-pin-scale));
+  transform-origin: center center;
+}
+
 .city-anchor-icon {
   width: 1px !important;
   height: 1px !important;
@@ -701,7 +712,7 @@ input {
   width: 24px;
   height: 24px;
   image-rendering: pixelated;
-  filter: drop-shadow(0 2px 0 rgba(17, 24, 37, 0.3));
+  filter: drop-shadow(0 0 4px rgba(17, 24, 37, 0.28));
   user-select: none;
   -webkit-user-drag: none;
 }
@@ -709,7 +720,7 @@ input {
 .asset-pin.selected {
   filter:
     drop-shadow(0 0 8px color-mix(in srgb, var(--pin-glow) 68%, transparent))
-    drop-shadow(0 2px 0 rgba(17, 24, 37, 0.4));
+    drop-shadow(0 0 5px rgba(17, 24, 37, 0.34));
 }
 
 .asset-pin.found {

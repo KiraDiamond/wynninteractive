@@ -145,6 +145,12 @@ const map = L.map("map", {
 L.imageOverlay("./assets/map/WynncraftMapFruma.png", MAP_BOUNDS).addTo(map);
 map.fitBounds(MAP_BOUNDS, { padding: [24, 24] });
 
+function updatePinScale() {
+  const zoom = map.getZoom();
+  const scale = zoom <= 0 ? 1 : 1 + (zoom * 0.16);
+  document.documentElement.style.setProperty("--map-pin-scale", String(scale));
+}
+
 function loadFoundIds() {
   try {
     const raw = localStorage.getItem(STORAGE_KEYS.found);
@@ -605,7 +611,7 @@ function buildMarkerIcon(marker, isFound, isSelected) {
 
   return L.divIcon({
     className: "map-pin-wrapper",
-    html: `<img class="${classes.join(" ")}" src="${iconUrl}" alt="" draggable="false" style="--pin-glow:${meta.color};">`,
+    html: `<span class="asset-pin-shell"><img class="${classes.join(" ")}" src="${iconUrl}" alt="" draggable="false" style="--pin-glow:${meta.color};"></span>`,
     iconSize: [24, 24],
     iconAnchor: [12, 12],
   });
@@ -1139,11 +1145,14 @@ function bindEvents() {
       setPanelCollapsed(false);
     }
   });
+
+  map.on("zoom zoomend", updatePinScale);
 }
 
 hydrateMarkerState();
 state.cityTransform = USE_CITY_EDITS ? computeCityEditTransform() : null;
 bindEvents();
+updatePinScale();
 renderCalibrationMarkers();
 syncVisibleMarkers();
 renderCategoryFilters();
