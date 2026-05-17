@@ -593,14 +593,14 @@ function buildMarkerIcon(marker, isFound, isSelected) {
     });
   }
 
-  const variant = isSelected ? "tracked" : (isFound ? "locked" : "active");
+  const variant = isFound ? "locked" : "active";
   const iconUrl = categoryAssetUrl(marker.category, variant);
   const classes = ["asset-pin"];
   if (isFound) {
     classes.push("found");
   }
   if (isSelected) {
-    classes.push("selected", "tracked");
+    classes.push("selected");
   }
 
   return L.divIcon({
