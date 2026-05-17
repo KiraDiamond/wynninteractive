@@ -324,6 +324,64 @@ function categoryAssetUrl(categoryId, variant = "active") {
   return `${CONTENT_BOOK_ROOT}/${icon}_${variant}.png`;
 }
 
+function buildCityLabelHtml(marker, isFound, isSelected) {
+  const classes = ["city-map-label"];
+  if (state.editCities) {
+    classes.push("editable");
+  }
+  if (isFound) {
+    classes.push("found");
+  }
+  if (isSelected) {
+    classes.push("selected");
+  }
+
+  return `<span class="${classes.join(" ")}">${escapeHtml(marker.title)}</span>`;
+}
+
+function bindCityTooltip(layer, marker, isFound, isSelected) {
+  const html = buildCityLabelHtml(marker, isFound, isSelected);
+  const tooltipOptions = {
+    permanent: true,
+    direction: "top",
+    offset: [0, -8],
+    className: "city-tooltip-shell",
+    interactive: true,
+    opacity: 1,
+  };
+
+  if (layer.getTooltip()) {
+    layer.setTooltipContent(html);
+  } else {
+    layer.bindTooltip(html, tooltipOptions);
+  }
+
+  window.requestAnimationFrame(() => wireCityTooltip(layer, marker.id));
+}
+
+function wireCityTooltip(layer, markerId) {
+  const element = layer.getTooltip()?.getElement();
+  if (!element) {
+    return;
+  }
+
+  element.dataset.markerId = markerId;
+  if (element.dataset.clickBound === "1") {
+    return;
+  }
+
+  element.dataset.clickBound = "1";
+  element.addEventListener("click", (event) => {
+    const id = event.currentTarget?.dataset?.markerId;
+    if (!id) {
+      return;
+    }
+    event.preventDefault();
+    event.stopPropagation();
+    setSelectedMarker(id);
+  });
+}
+
 function activeCalibrationTarget() {
   return CALIBRATION_TARGETS[state.calibrationIndex] || CALIBRATION_TARGETS[0];
 }
@@ -534,23 +592,11 @@ function markerIsVisible(marker) {
 function buildMarkerIcon(marker, isFound, isSelected) {
   const meta = CATEGORY_META[marker.category];
   if (marker.fixed) {
-    const classes = ["city-map-label"];
-    if (state.editCities) {
-      classes.push("editable");
-    }
-    if (isFound) {
-      classes.push("found");
-    }
-    if (isSelected) {
-      classes.push("selected");
-    }
-    const width = Math.max(84, marker.title.length * 10 + 10);
-
     return L.divIcon({
-      className: "city-label-wrapper",
-      html: `<span class="${classes.join(" ")}">${escapeHtml(marker.title)}</span>`,
-      iconSize: [width, 30],
-      iconAnchor: [Math.round(width / 2), 28],
+      className: "city-anchor-icon",
+      html: "",
+      iconSize: [1, 1],
+      iconAnchor: [0, 0],
     });
   }
 
@@ -582,6 +628,13 @@ function createMarkerLayer(marker) {
 
   layer.on("click", () => setSelectedMarker(marker.id));
   if (marker.fixed) {
+    bindCityTooltip(layer, marker, state.foundIds.has(marker.id), false);
+    layer.on("add", () => {
+      window.requestAnimationFrame(() => wireCityTooltip(layer, marker.id));
+    });
+    layer.on("tooltipopen", () => {
+      wireCityTooltip(layer, marker.id);
+    });
     layer.on("dragstart", () => {
       if (state.editCities) {
         setSelectedMarker(marker.id);
@@ -875,7 +928,12 @@ function setSelectedMarker(markerId) {
 
   for (const [id, layer] of state.markerLayers) {
     const marker = state.markers.find((item) => item.id === id);
-    layer.setIcon(buildMarkerIcon(marker, state.foundIds.has(id), id === markerId));
+    const isFound = state.foundIds.has(id);
+    const isSelected = id === markerId;
+    layer.setIcon(buildMarkerIcon(marker, isFound, isSelected));
+    if (marker.fixed) {
+      bindCityTooltip(layer, marker, isFound, isSelected);
+    }
   }
 
   setPanelCollapsed(false);
@@ -922,7 +980,12 @@ function syncVisibleMarkers() {
         layer.dragging.disable();
       }
     }
-    layer.setIcon(buildMarkerIcon(marker, state.foundIds.has(marker.id), marker.id === state.selectedMarkerId));
+    const isFound = state.foundIds.has(marker.id);
+    const isSelected = marker.id === state.selectedMarkerId;
+    layer.setIcon(buildMarkerIcon(marker, isFound, isSelected));
+    if (marker.fixed) {
+      bindCityTooltip(layer, marker, isFound, isSelected);
+    }
   }
 }
 

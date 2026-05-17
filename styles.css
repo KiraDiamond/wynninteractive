@@ -640,13 +640,29 @@ input {
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.85);
 }
 
-.city-label-wrapper {
+.city-anchor-icon {
+  width: 1px !important;
+  height: 1px !important;
+  margin: 0 !important;
   background: transparent;
   border: 0;
-  overflow: visible;
 }
 
-.city-map-label {
+.city-tooltip-shell {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  pointer-events: none;
+}
+
+.city-tooltip-shell::before {
+  display: none;
+}
+
+.city-tooltip-shell .city-map-label {
   display: inline-block;
   white-space: nowrap;
   color: #f4ee74;
@@ -654,7 +670,8 @@ input {
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0.01em;
-  transform: translateY(0);
+  pointer-events: auto;
+  user-select: none;
   text-shadow:
     -2px 0 #111,
     2px 0 #111,
@@ -665,17 +682,15 @@ input {
     -1px 1px #111,
     1px 1px #111,
     0 0 8px rgba(0, 0, 0, 0.3);
-}
-
-.city-map-label.editable {
+.city-tooltip-shell .city-map-label.editable {
   cursor: grab;
 }
 
-.city-map-label.editable.selected {
+.city-tooltip-shell .city-map-label.editable.selected {
   cursor: grabbing;
 }
 
-.city-map-label.selected {
+.city-tooltip-shell .city-map-label.selected {
   color: #8ae7ff;
   text-shadow:
     -2px 0 #0f1722,
@@ -689,7 +704,7 @@ input {
     0 0 12px rgba(86, 215, 255, 0.45);
 }
 
-.city-map-label.found {
+.city-tooltip-shell .city-map-label.found {
   opacity: 0.56;
 }
 
