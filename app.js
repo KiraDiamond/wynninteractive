@@ -1,7 +1,7 @@
-import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517y";
-import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260517y";
-import { MARKER_CONTENT } from "./data/marker-content.js?v=20260517y";
-import { REFERENCE_IMAGE_URLS } from "./data/reference-images.js?v=20260517y";
+import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517z";
+import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260517z";
+import { MARKER_CONTENT } from "./data/marker-content.js?v=20260517z";
+import { REFERENCE_IMAGE_URLS } from "./data/reference-images.js?v=20260517z";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
@@ -30,6 +30,11 @@ const USE_STORED_CALIBRATION = CALIBRATION_MODE || query.get("useCalibration") =
 const EDIT_CITY_QUERY_MODE = query.get("editCities") === "1";
 const USE_CITY_EDITS = EDIT_CITY_QUERY_MODE || query.get("useCityEdits") === "1";
 const DEV_MODE = window.location.pathname.replace(/\/+$/, "").endsWith("/devview");
+const LOW_VALUE_DESCRIPTION_PATTERNS = [
+  /\bi marked .+ on the live map\.?$/i,
+  /\bimported from the external wynncraft marker dataset\.?$/i,
+  /\bcommunity-style preview\b/i,
+];
 
 function parseNumberParam(name, fallback) {
   const raw = query.get(name);
@@ -390,9 +395,12 @@ function markerContentAuthorEntry(markerId) {
 
 function markerContentEntry(marker) {
   const entry = markerContentAuthorEntry(marker.id);
+  const fallbackSummary = LOW_VALUE_DESCRIPTION_PATTERNS.some((pattern) => pattern.test(marker.description || ""))
+    ? ""
+    : (marker.description || "");
   return {
     ...entry,
-    summary: entry.summary || marker.description || "",
+    summary: entry.summary || fallbackSummary,
   };
 }
 
