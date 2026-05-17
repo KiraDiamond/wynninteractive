@@ -1,6 +1,6 @@
-import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517l";
-import { IMPORTED_MARKERS } from "./data/imported-markers.js?v=20260517l";
-import { MARKER_CONTENT } from "./data/marker-content.js?v=20260517l";
+import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517m";
+import { IMPORTED_MARKERS } from "./data/imported-markers.js?v=20260517m";
+import { MARKER_CONTENT } from "./data/marker-content.js?v=20260517m";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
@@ -595,6 +595,75 @@ function contentEditorHtml(marker, entry) {
   `;
 }
 
+function worldEventDetailsHtml(marker) {
+  const details = marker.details;
+  if (marker.category !== "world_events" || !details) {
+    return "";
+  }
+
+  const enemies = Array.isArray(details.enemies) ? details.enemies : [];
+  const drops = Array.isArray(details.drops) ? details.drops : [];
+  const coordinates = Array.isArray(details.coordinates) ? details.coordinates : [];
+  const coordText = coordinates.length
+    ? coordinates.map((point) => `${point.x}, ${point.z}`).join(" | ")
+    : "Unknown";
+
+  return `
+    <section class="event-intel-panel">
+      <div class="event-intel-head">
+        <h3>World Event Intel</h3>
+        <span>Combat breakdown for this event.</span>
+      </div>
+      <div class="event-stat-grid">
+        <div class="event-stat-card">
+          <strong>Suggested Lv.</strong>
+          <span>${escapeHtml(details.level)}</span>
+        </div>
+        <div class="event-stat-card">
+          <strong>Waves</strong>
+          <span>${escapeHtml(details.waves)}</span>
+        </div>
+        <div class="event-stat-card">
+          <strong>Length</strong>
+          <span>${escapeHtml(details.length)}</span>
+        </div>
+        <div class="event-stat-card">
+          <strong>Difficulty</strong>
+          <span>${escapeHtml(details.difficulty)}</span>
+        </div>
+      </div>
+      ${details.requiredQuest ? `
+        <div class="event-detail-row">
+          <strong>Required Quest</strong>
+          <span>${escapeHtml(details.requiredQuest)}</span>
+        </div>
+      ` : ""}
+      <div class="event-detail-row">
+        <strong>Anchor Coordinates</strong>
+        <span>${escapeHtml(coordText)}</span>
+      </div>
+      <div class="event-detail-grid">
+        <section class="event-detail-block">
+          <h4>Enemies</h4>
+          <ul>
+            ${enemies.map((enemy) => `<li>${escapeHtml(enemy)}</li>`).join("")}
+          </ul>
+        </section>
+        <section class="event-detail-block">
+          <h4>Boss</h4>
+          <p>${escapeHtml(details.boss || "No boss listed.")}</p>
+        </section>
+      </div>
+      <section class="event-detail-block drops">
+        <h4>Drops</h4>
+        <div class="event-drop-list">
+          ${drops.map((drop) => `<span class="event-drop-chip">${escapeHtml(drop)}</span>`).join("")}
+        </div>
+      </section>
+    </section>
+  `;
+}
+
 function updateMarkerContent(marker, field, rawValue) {
   const current = markerContentEntry(marker.id);
   if (field === "gallery" || field === "tutorials") {
@@ -1109,6 +1178,7 @@ function renderDetailCard() {
   const meta = CATEGORY_META[marker.category];
   const iconUrl = marker.fixed ? CITY_ICON_URL : categoryAssetUrl(marker.category, isFound ? "locked" : "active");
   const content = contentExportEntry(marker);
+  const eventIntel = worldEventDetailsHtml(marker);
   const infoBody = `
     <div class="detail-topline">
       <span class="detail-icon${marker.fixed ? " city" : ""}" style="${marker.fixed ? `--detail-icon:url('${iconUrl}');` : `--detail-icon:url('${iconUrl}');--detail-accent:${meta.color};`}"></span>
@@ -1119,6 +1189,7 @@ function renderDetailCard() {
     </div>
     <p class="detail-meta">${escapeHtml(marker.region || "World")} | ${world.x}, ${world.z}</p>
     <p>${escapeHtml(marker.description || "No description available.")}</p>
+    ${eventIntel}
     <div class="detail-actions">
       <button type="button" class="detail-button" data-action="toggle-found">${isFound ? "Mark not found" : "Mark found"}</button>
       <button type="button" class="detail-button secondary" data-action="focus">Focus</button>

@@ -586,6 +586,125 @@ input {
   color: var(--brand);
 }
 
+.event-intel-panel {
+  margin-top: 16px;
+  padding: 14px;
+  border: 1px solid #d7dde7;
+  background:
+    linear-gradient(180deg, rgba(244, 248, 253, 0.98), rgba(236, 242, 249, 0.96));
+}
+
+.event-intel-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.event-intel-head h3,
+.event-detail-block h4,
+.event-stat-card strong,
+.event-detail-row strong {
+  margin: 0;
+  color: #2d4056;
+}
+
+.event-intel-head span,
+.event-detail-row span,
+.event-stat-card span {
+  color: #708194;
+  font-size: 0.84rem;
+}
+
+.event-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.event-stat-card {
+  display: grid;
+  gap: 3px;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid #dbe2eb;
+}
+
+.event-stat-card strong,
+.event-detail-row strong {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.event-stat-card span {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #36516b;
+}
+
+.event-detail-row {
+  display: grid;
+  gap: 3px;
+  margin-top: 10px;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #dbe2eb;
+}
+
+.event-detail-grid {
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.event-detail-block {
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid #dbe2eb;
+}
+
+.event-detail-block h4 {
+  margin-bottom: 8px;
+  font-size: 0.84rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.event-detail-block ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #536679;
+}
+
+.event-detail-block li + li {
+  margin-top: 4px;
+}
+
+.event-detail-block p {
+  margin: 0;
+  color: #536679 !important;
+}
+
+.event-drop-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.event-drop-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 6px 10px;
+  background: #edf4ff;
+  border: 1px solid #cad7ea;
+  color: #355272;
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
 .content-preview-panel,
 .content-studio {
   margin-top: 16px;
@@ -849,6 +968,8 @@ input {
     -1px 1px #111,
     1px 1px #111,
     0 0 8px rgba(0, 0, 0, 0.3);
+}
+
 .city-tooltip-shell .city-map-label.editable {
   cursor: grab;
 }
@@ -944,6 +1065,10 @@ input {
   }
 
   .category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .event-stat-grid {
     grid-template-columns: 1fr;
   }
 }
