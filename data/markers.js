@@ -182,3 +182,51 @@ export const STARTER_MARKERS = [
     position: { world: { x: -812, z: -898 } },
   },
 ];
+
+export const CURATED_MARKERS = [
+  {
+    id: "lutho-loot-camp",
+    title: "Lutho Loot Camp",
+    category: "lootrun_camp",
+    region: "Lutho",
+    description: "Curated lootrun camp marker provided from in-game coordinates.",
+    tags: ["lootrun", "camp", "lutho"],
+    position: { world: { x: 991, z: -780 } },
+  },
+  {
+    id: "canyon-loot-camp",
+    title: "Canyon Loot Camp",
+    category: "lootrun_camp",
+    region: "Canyon",
+    description: "Curated lootrun camp marker provided from in-game coordinates.",
+    tags: ["lootrun", "camp", "canyon"],
+    position: { world: { x: 578, z: -5017 } },
+  },
+  {
+    id: "molten-loot-camp",
+    title: "Molten Loot Camp",
+    category: "lootrun_camp",
+    region: "Canyon",
+    description: "Curated lootrun camp marker provided from in-game coordinates.",
+    tags: ["lootrun", "camp", "molten"],
+    position: { world: { x: 1272, z: -5134 } },
+  },
+  {
+    id: "sky-loot-camp",
+    title: "Sky Loot Camp",
+    category: "lootrun_camp",
+    region: "Fruma",
+    description: "Curated lootrun camp marker provided from in-game coordinates.",
+    tags: ["lootrun", "camp", "sky"],
+    position: { world: { x: 1034, z: -4418 } },
+  },
+  {
+    id: "corkus-loot-camp",
+    title: "Corkus Loot Camp",
+    category: "lootrun_camp",
+    region: "Corkus",
+    description: "Curated lootrun camp marker provided from in-game coordinates.",
+    tags: ["lootrun", "camp", "corkus"],
+    position: { world: { x: 1554, z: -2667 } },
+  },
+];

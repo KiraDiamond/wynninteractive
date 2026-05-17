@@ -1,5 +1,5 @@
-import { CATEGORY_META, CATEGORY_ORDER, STARTER_MARKERS } from "./data/markers.js";
-import { IMPORTED_MARKERS } from "./data/imported-markers.js";
+import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517e";
+import { IMPORTED_MARKERS } from "./data/imported-markers.js?v=20260517e";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
@@ -985,7 +985,7 @@ function syncVisibleMarkers() {
 function hydrateMarkerState() {
   const fixedCities = STARTER_MARKERS.map((marker) => ({ ...marker, fixed: true }));
   const imported = normalizeImportedMarkers();
-  state.markers = [...fixedCities, ...imported];
+  state.markers = [...fixedCities, ...CURATED_MARKERS, ...imported];
   state.markers.forEach(createMarkerLayer);
 }
 
