@@ -227,6 +227,6 @@ export const CURATED_MARKERS = [
     region: "Corkus",
     description: "Curated lootrun camp marker provided from in-game coordinates.",
     tags: ["lootrun", "camp", "corkus"],
-    position: { world: { x: 1554, z: -2667 } },
+    position: { world: { x: -1554, z: -2667 } },
   },
 ];
