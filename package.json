@@ -9,7 +9,8 @@
     "build:wiki-map": "node scripts/build-wiki-map-markers.mjs",
     "scrape:quest-guides": "node scripts/scrape-quest-guides.mjs",
     "build:quest-content": "node scripts/build-quest-marker-content.mjs",
-    "build:supplemental-content": "node scripts/build-supplemental-marker-content.mjs"
+    "build:supplemental-content": "node scripts/build-supplemental-marker-content.mjs",
+    "build:profession-spots": "node scripts/build-profession-spots.mjs"
   },
   "dependencies": {
     "playwright-core": "^1.60.0"

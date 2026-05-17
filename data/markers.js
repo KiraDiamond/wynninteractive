@@ -1,4 +1,5 @@
 import { WORLD_EVENT_MARKERS } from "./world-events.js";
+import { GENERATED_PROFESSION_MARKERS } from "./generated-profession-markers.js";
 
 export const CATEGORY_META = {
   quests: { label: "Quests", color: "#6f9eea", selectable: true, icon: "quest" },
@@ -12,6 +13,10 @@ export const CATEGORY_META = {
   raid: { label: "Raid", color: "#d85d5d", selectable: true, icon: "raid" },
   boss_altar: { label: "Boss Altar", color: "#a63d55", selectable: true, icon: "boss_altar" },
   lootrun_camp: { label: "Lootrun Camp", color: "#c8904d", selectable: true, icon: "loot_camp" },
+  profession_fishing: { label: "Fishing Spots", color: "#5caecc", selectable: true, icon: "profession_fishing" },
+  profession_farming: { label: "Farming Spots", color: "#88ba59", selectable: true, icon: "profession_farming" },
+  profession_mining: { label: "Mining Spots", color: "#98a4b3", selectable: true, icon: "profession_mining" },
+  profession_woodcutting: { label: "Woodcutting Spots", color: "#b88853", selectable: true, icon: "profession_woodcutting" },
   city: { label: "City", color: "#d6b158", selectable: false, icon: null },
 };
 
@@ -27,6 +32,10 @@ export const CATEGORY_ORDER = [
   "raid",
   "boss_altar",
   "lootrun_camp",
+  "profession_fishing",
+  "profession_farming",
+  "profession_mining",
+  "profession_woodcutting",
 ];
 
 export const STARTER_MARKERS = [
@@ -187,6 +196,7 @@ export const STARTER_MARKERS = [
 
 export const CURATED_MARKERS = [
   ...WORLD_EVENT_MARKERS,
+  ...GENERATED_PROFESSION_MARKERS,
   {
     id: "lutho-loot-camp",
     title: "Lutho Loot Camp",

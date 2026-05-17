@@ -1,6 +1,6 @@
-import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517s";
-import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260517s";
-import { MARKER_CONTENT } from "./data/marker-content.js?v=20260517s";
+import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517u";
+import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260517u";
+import { MARKER_CONTENT } from "./data/marker-content.js?v=20260517u";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
@@ -67,6 +67,11 @@ const CATEGORY_GROUPS = [
     id: "activities",
     label: "Activities",
     categories: ["caves", "dungeon", "raid", "boss_altar", "lootrun_camp"],
+  },
+  {
+    id: "professions",
+    label: "Professions",
+    categories: ["profession_fishing", "profession_farming", "profession_mining", "profession_woodcutting"],
   },
 ];
 
@@ -1424,8 +1429,8 @@ function syncVisibleMarkers() {
 
 function hydrateMarkerState() {
   const fixedCities = STARTER_MARKERS.map((marker) => ({ ...marker, fixed: true }));
-  const lootrunCamps = CURATED_MARKERS.filter((marker) => marker.category === "lootrun_camp");
-  state.markers = [...fixedCities, ...lootrunCamps, ...WIKI_MAP_MARKERS];
+  const curatedSupplemental = CURATED_MARKERS.filter((marker) => marker.category !== "world_events");
+  state.markers = [...fixedCities, ...curatedSupplemental, ...WIKI_MAP_MARKERS];
   state.markers.forEach(createMarkerLayer);
 }
 

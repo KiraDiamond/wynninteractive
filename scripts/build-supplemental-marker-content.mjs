@@ -1190,12 +1190,25 @@ function bossAltarDropLines(section) {
 
     for (const row of table) {
       const line = row.map((cell) => stripNotes(cell)).filter(Boolean).join(" - ");
-      if (line && !/drop|reward/i.test(line)) {
+      if (
+        line
+        && !/drop|reward/i.test(line)
+        && !/^\d+\s*:/i.test(line)
+        && !/\(phase\s*\d+\)/i.test(line)
+      ) {
         drops.push(line);
       }
     }
   }
   return dedupe(drops);
+}
+
+function isInvalidBossDropLine(value) {
+  const text = stripNotes(value);
+  return !text
+    || /^\d+\s*:/i.test(text)
+    || /\(phase\s*\d+\)/i.test(text)
+    || /^phase\s*\d+/i.test(text);
 }
 
 function bossAltarEntry(target, data) {
@@ -1228,7 +1241,7 @@ function bossAltarEntry(target, data) {
       ...bossAltarDropLines(bossSection || { tables: [] }),
       ...bossAltarDropLines(rewardsSection || { tables: [] }),
       ...withoutNpcDialogue(rewardsSection?.items || []),
-    ]),
+    ].filter((item) => !isInvalidBossDropLine(item))),
     buildSection("Tips", withoutNpcDialogue(tipsSection?.items || [])),
   ].filter(Boolean);
 
