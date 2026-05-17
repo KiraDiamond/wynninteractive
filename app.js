@@ -1,6 +1,6 @@
-import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517o";
-import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260517o";
-import { MARKER_CONTENT } from "./data/marker-content.js?v=20260517o";
+import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517p";
+import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260517p";
+import { MARKER_CONTENT } from "./data/marker-content.js?v=20260517p";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;

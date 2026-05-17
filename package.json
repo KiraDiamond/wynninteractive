@@ -6,7 +6,9 @@
     "scrape:wiki": "node scripts/scrape-wiki.mjs",
     "build:atlas-api": "node scripts/build-atlas-api-dataset.mjs",
     "scrape:wiki:persistent": "node scripts/scrape-wiki-persistent.mjs",
-    "build:wiki-map": "node scripts/build-wiki-map-markers.mjs"
+    "build:wiki-map": "node scripts/build-wiki-map-markers.mjs",
+    "scrape:quest-guides": "node scripts/scrape-quest-guides.mjs",
+    "build:quest-content": "node scripts/build-quest-marker-content.mjs"
   },
   "dependencies": {
     "playwright-core": "^1.60.0"
