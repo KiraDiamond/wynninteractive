@@ -17,7 +17,7 @@
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     crossorigin=""
   >
-  <link rel="stylesheet" href="./styles.css?v=20260517w">
+  <link rel="stylesheet" href="./styles.css?v=20260517x">
 </head>
 <body>
   <div class="app-shell">
@@ -29,7 +29,7 @@
           <img class="panel-brand-icon" src="./assets/icon.png" alt="">
           <div class="panel-brand-copy">
             <strong>Wynn Atlas</strong>
-            <span>Interactive world map</span>
+            <span>My Wynncraft world map</span>
           </div>
         </div>
       </div>
@@ -49,7 +49,7 @@
 
       <section class="panel-screen" data-panel-screen="markers">
         <div class="panel-banner">
-          Current map routes, guides, rewards, discoveries, and profession overlays in one place.
+          I keep current routes, rewards, discoveries, and profession spots here.
         </div>
 
         <div class="panel-toolbar">
@@ -88,7 +88,7 @@
       <section class="panel-screen hidden" data-panel-screen="info">
         <article id="info-card" class="detail-card empty">
           <h2>No marker selected</h2>
-          <p>Select a marker on the map to open its guide, rewards, route notes, and source links.</p>
+          <p>Pick a marker and I will open its guide notes, rewards, routes, and source links.</p>
         </article>
       </section>
 
@@ -119,10 +119,20 @@
     </button>
   </div>
 
+  <div id="image-lightbox" class="image-lightbox hidden" aria-hidden="true">
+    <div class="image-lightbox-panel">
+      <button id="image-lightbox-close" type="button" class="image-lightbox-close" aria-label="Close image viewer">×</button>
+      <figure class="image-lightbox-figure">
+        <img id="image-lightbox-image" alt="">
+        <figcaption id="image-lightbox-caption"></figcaption>
+      </figure>
+    </div>
+  </div>
+
   <script
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     crossorigin=""
   ></script>
-    <script type="module" src="./app.js?v=20260517w"></script>
+    <script type="module" src="./app.js?v=20260517x"></script>
 </body>
 </html>

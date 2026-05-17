@@ -47,6 +47,10 @@ function normalizeWhitespace(value) {
   return String(value ?? "").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
 }
 
+function escapeRegex(value) {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
 function slugify(value) {
   return normalizeWhitespace(value)
     .toLowerCase()
@@ -116,7 +120,7 @@ function buildImportedDescription(title, category) {
     boss_altar: "Boss altar",
   };
 
-  return `${title} ${labels[category]?.toLowerCase() ?? "marker"} placed from the map marker dataset and enriched with wiki naming where available.`;
+  return `I marked ${title} as a current ${labels[category]?.toLowerCase() ?? "marker"} on the live map.`;
 }
 
 function importedCategory(marker) {
@@ -170,7 +174,12 @@ function buildQuestDescription(wikiRecord, fallbackDescription) {
 
   const parts = [];
   if (wikiRecord.summary) {
-    parts.push(normalizeWhitespace(wikiRecord.summary));
+    const cleanedSummary = normalizeWhitespace(wikiRecord.summary)
+      .replace(new RegExp(`^${escapeRegex(wikiRecord.title)}\\s+scraped from the Quests wiki index page\\.\\s*`, "i"), "")
+      .replace(/^scraped from the Quests wiki index page\.\s*/i, "");
+    if (cleanedSummary) {
+      parts.push(cleanedSummary);
+    }
   }
   if (wikiRecord.requirements?.length) {
     parts.push(`Requirements: ${wikiRecord.requirements.join(", ")}.`);

@@ -17,7 +17,7 @@
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     crossorigin=""
   >
-  <link rel="stylesheet" href="../styles.css?v=20260517w">
+  <link rel="stylesheet" href="../styles.css?v=20260517x">
 </head>
 <body>
   <div class="app-shell">
@@ -29,7 +29,7 @@
           <img class="panel-brand-icon" src="../assets/icon.png" alt="">
           <div class="panel-brand-copy">
             <strong>Wynn Atlas</strong>
-            <span>Content Studio</span>
+            <span>My content workspace</span>
           </div>
         </div>
       </div>
@@ -54,7 +54,7 @@
 
       <section class="panel-screen" data-panel-screen="markers">
         <div class="panel-banner">
-          Author marker guides, screenshots, and links while checking the live map presentation.
+          I use this view to edit marker notes, screenshots, and links while checking the live map.
         </div>
 
         <div class="panel-toolbar">
@@ -92,23 +92,23 @@
 
       <section class="panel-screen hidden" data-panel-screen="info">
         <div class="panel-banner panel-banner-info">
-          Live player-facing preview for the selected marker.
+          This is the same marker view I show on the live map.
         </div>
 
         <article id="info-card" class="detail-card empty">
           <h2>No marker selected</h2>
-          <p>Click a map marker to inspect it.</p>
+          <p>Pick a marker and I will load the live view here.</p>
         </article>
       </section>
 
       <section class="panel-screen hidden" data-panel-screen="studio">
         <div class="panel-banner panel-banner-info">
-          Paste Google Drive image links and YouTube tutorials for the selected marker.
+          I use this tab for image links, notes, and tutorial links.
         </div>
 
         <article id="studio-card" class="detail-card empty">
           <h2>No marker selected</h2>
-          <p>Select a marker from the map to author images, explanation text, and tutorial videos.</p>
+          <p>Pick a marker and I will load its editor here.</p>
         </article>
       </section>
 
@@ -139,10 +139,20 @@
     </button>
   </div>
 
+  <div id="image-lightbox" class="image-lightbox hidden" aria-hidden="true">
+    <div class="image-lightbox-panel">
+      <button id="image-lightbox-close" type="button" class="image-lightbox-close" aria-label="Close image viewer">×</button>
+      <figure class="image-lightbox-figure">
+        <img id="image-lightbox-image" alt="">
+        <figcaption id="image-lightbox-caption"></figcaption>
+      </figure>
+    </div>
+  </div>
+
   <script
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     crossorigin=""
   ></script>
-    <script type="module" src="../app.js?v=20260517w"></script>
+    <script type="module" src="../app.js?v=20260517x"></script>
 </body>
 </html>

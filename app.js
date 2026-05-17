@@ -1,6 +1,7 @@
-import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517w";
-import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260517w";
-import { MARKER_CONTENT } from "./data/marker-content.js?v=20260517w";
+import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517x";
+import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260517x";
+import { MARKER_CONTENT } from "./data/marker-content.js?v=20260517x";
+import { REFERENCE_IMAGE_URLS } from "./data/reference-images.js?v=20260517x";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
@@ -135,6 +136,10 @@ const elements = {
   calibrationNext: document.querySelector("#calibration-next"),
   calibrationCopy: document.querySelector("#calibration-copy"),
   calibrationClear: document.querySelector("#calibration-clear"),
+  lightbox: document.querySelector("#image-lightbox"),
+  lightboxImage: document.querySelector("#image-lightbox-image"),
+  lightboxCaption: document.querySelector("#image-lightbox-caption"),
+  lightboxClose: document.querySelector("#image-lightbox-close"),
 };
 
 const firstOpenCalibrationIndex = CALIBRATION_TARGETS.findIndex((target) => !state.calibrationSamples[target.id]);
@@ -448,6 +453,9 @@ function extractGoogleDriveId(url) {
 }
 
 function resolveImageUrl(url) {
+  if (REFERENCE_IMAGE_URLS[url]) {
+    return REFERENCE_IMAGE_URLS[url];
+  }
   const fileId = extractGoogleDriveId(url);
   if (fileId) {
     return `https://drive.google.com/thumbnail?id=${fileId}&sz=w1600`;
@@ -462,10 +470,43 @@ function canInlineImage(url) {
 
   try {
     const parsed = new URL(url);
+    if (parsed.origin === window.location.origin) {
+      return true;
+    }
     return !parsed.hostname.endsWith("wiki.gg");
   } catch {
     return false;
   }
+}
+
+function openImageLightbox(src, caption) {
+  if (!elements.lightbox || !elements.lightboxImage) {
+    return;
+  }
+
+  elements.lightboxImage.src = src;
+  elements.lightboxImage.alt = caption || "";
+  if (elements.lightboxCaption) {
+    elements.lightboxCaption.textContent = caption || "";
+  }
+  elements.lightbox.classList.remove("hidden");
+  elements.lightbox.setAttribute("aria-hidden", "false");
+  document.body.classList.add("lightbox-open");
+}
+
+function closeImageLightbox() {
+  if (!elements.lightbox || !elements.lightboxImage) {
+    return;
+  }
+
+  elements.lightbox.classList.add("hidden");
+  elements.lightbox.setAttribute("aria-hidden", "true");
+  elements.lightboxImage.src = "";
+  elements.lightboxImage.alt = "";
+  if (elements.lightboxCaption) {
+    elements.lightboxCaption.textContent = "";
+  }
+  document.body.classList.remove("lightbox-open");
 }
 
 function youtubeEmbedUrl(url) {
@@ -512,9 +553,9 @@ function contentPreviewHtml(marker, entry) {
     const coverUrl = resolveImageUrl(entry.coverImage);
     if (canInlineImage(coverUrl)) {
       blocks.push(`
-        <figure class="content-cover">
+        <button type="button" class="content-image-button content-cover" data-preview-image="${escapeAttribute(coverUrl)}" data-preview-caption="${escapeAttribute(`${marker.title} cover image`)}">
           <img src="${escapeAttribute(coverUrl)}" alt="${escapeAttribute(marker.title)} cover image" loading="lazy">
-        </figure>
+        </button>
       `);
     } else {
       externalImageLinks.push({ url: coverUrl, label: "Open cover image" });
@@ -584,7 +625,7 @@ function contentPreviewHtml(marker, entry) {
   if (entry.sourceUrl) {
     blocks.push(`
       <section class="content-source">
-        <span>Need the full article or extra details?</span>
+        <span>I keep the full write-up here.</span>
         <a href="${escapeAttribute(entry.sourceUrl)}" target="_blank" rel="noreferrer">Open the wiki page</a>
       </section>
     `);
@@ -604,9 +645,9 @@ function contentPreviewHtml(marker, entry) {
     blocks.push(`
       <div class="content-gallery">
         ${embeddableGallery.map((url, index) => `
-          <figure class="content-thumb">
+          <button type="button" class="content-image-button content-thumb" data-preview-image="${escapeAttribute(url)}" data-preview-caption="${escapeAttribute(`${marker.title} reference image ${index + 1}`)}">
             <img src="${escapeAttribute(url)}" alt="${escapeAttribute(`${marker.title} gallery ${index + 1}`)}" loading="lazy">
-          </figure>
+          </button>
         `).join("")}
       </div>
     `);
@@ -659,10 +700,10 @@ function contentPreviewHtml(marker, entry) {
   }
 
   if (!blocks.length) {
-    const emptyTitle = DEV_MODE ? "Content slot is empty." : "No guide published yet.";
+    const emptyTitle = DEV_MODE ? "I have not filled this entry yet." : "I have not added notes for this marker yet.";
     const emptyCopy = DEV_MODE
-      ? "Add explanation, image URLs, and tutorial links below. Everything saves locally in your browser."
-      : "This marker does not have published screenshots, notes, or tutorial links yet.";
+      ? "I use the editor below for notes, image links, and tutorial links. Everything saves locally in this browser."
+      : "The marker still links back to the source page, but I have not written my own notes for it yet.";
 
     return `
       <div class="content-empty">
@@ -680,7 +721,7 @@ function contentEditorHtml(marker, entry) {
     <section class="content-studio">
       <div class="content-studio-head">
         <h3>Content Studio</h3>
-        <span class="content-studio-note">Paste Google Drive image links and YouTube tutorial URLs.</span>
+        <span class="content-studio-note">I use this for image links and tutorial links.</span>
       </div>
       <label class="content-field">
         <span>Summary</span>
@@ -1232,13 +1273,13 @@ function renderDetailCard() {
     elements.detailCard.className = "detail-card empty";
     elements.detailCard.innerHTML = `
       <h2>No marker selected</h2>
-      <p>Click a map marker to inspect it.</p>
+      <p>Pick a marker and I will open the notes for it here.</p>
     `;
     if (elements.studioCard) {
       elements.studioCard.className = "detail-card empty";
       elements.studioCard.innerHTML = `
         <h2>No marker selected</h2>
-        <p>Select a marker from the map to author images, explanation text, and tutorial videos.</p>
+        <p>Pick a marker and I will load its editor here.</p>
       `;
     }
     return;
@@ -1305,6 +1346,12 @@ function renderDetailCard() {
       } else if (action === "focus") {
         flyToMarker(marker);
       }
+    });
+  });
+
+  document.querySelectorAll("[data-preview-image]").forEach((button) => {
+    button.addEventListener("click", () => {
+      openImageLightbox(button.dataset.previewImage, button.dataset.previewCaption || marker.title);
     });
   });
 
@@ -1647,6 +1694,26 @@ function bindEvents() {
       renderCalibrationPanel();
     });
   }
+
+  if (elements.lightboxClose) {
+    elements.lightboxClose.addEventListener("click", () => {
+      closeImageLightbox();
+    });
+  }
+
+  if (elements.lightbox) {
+    elements.lightbox.addEventListener("click", (event) => {
+      if (event.target === elements.lightbox) {
+        closeImageLightbox();
+      }
+    });
+  }
+
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeImageLightbox();
+    }
+  });
 
   if (elements.cityEditorCopy) {
     elements.cityEditorCopy.addEventListener("click", async () => {

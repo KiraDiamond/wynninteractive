@@ -6,7 +6,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Acacia - coastlines of the Almuj River",
     "category": "profession_woodcutting",
     "region": "coastlines of the Almuj River",
-    "description": "Woodcutting spot for Acacia. Recommended for profession levels 30-39. Nodes: [11■]. Mob pressure: Medium. Suggested tools: T5 Axe (35-45). is the coastlines of the Almuj River, which stretches from the Mummy’s Tomb to the entrance to the Rymek Canyon",
+    "description": "I use this woodcutting spot for Acacia around levels 30-39. Route note: is the coastlines of the Almuj River, which stretches from the Mummy’s Tomb to the entrance to the Rymek Canyon. Nodes: [11■]. Mob pressure: Medium. Tools: T5 Axe (35-45).",
     "tags": [
       "profession",
       "woodcutting",
@@ -25,7 +25,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Acacia - entirety of the tribal town of Bremminglar and the…",
     "category": "profession_woodcutting",
     "region": "entirety of the tribal town of Bremminglar and the Upper Savannah territories",
-    "description": "Woodcutting spot for Acacia. Recommended for profession levels 30-39. Nodes: [30+■]. Mob pressure: Medium. Suggested tools: T5 Axe (35-45). is the entirety of the tribal town of Bremminglar and the Upper Savannah territories",
+    "description": "I use this woodcutting spot for Acacia around levels 30-39. Route note: is the entirety of the tribal town of Bremminglar and the Upper Savannah territories. Nodes: [30+■]. Mob pressure: Medium. Tools: T5 Axe (35-45).",
     "tags": [
       "profession",
       "woodcutting",
@@ -44,7 +44,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Acacia - the town of Ternaves",
     "category": "profession_woodcutting",
     "region": "the town of Ternaves",
-    "description": "Woodcutting spot for Acacia. Recommended for profession levels 30-39. Nodes: [20+■]. Mob pressure: Low. Suggested tools: T5 Axe (35-45). is the entirety of the Lower Savannah territories, The Black Road, and the town of Ternaves",
+    "description": "I use this woodcutting spot for Acacia around levels 30-39. Route note: is the entirety of the Lower Savannah territories, The Black Road, and the town of Ternaves. Nodes: [20+■]. Mob pressure: Low. Tools: T5 Axe (35-45).",
     "tags": [
       "profession",
       "woodcutting",
@@ -63,7 +63,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Avo - grove of avo trees near the Woodcutting Level 96 Ga…",
     "category": "profession_woodcutting",
     "region": "grove of avo trees near the Woodcutting Level 96 Gathering Post in the territory",
-    "description": "Woodcutting spot for Avo. Recommended for profession levels 90-99. Nodes: [23■]. Mob pressure: Medium. Suggested tools: T11 Axe (95-105). is a small grove of avo trees near the Woodcutting Level 96 Gathering Post in the territory, Ruined",
+    "description": "I use this woodcutting spot for Avo around levels 90-99. Route note: is a small grove of avo trees near the Woodcutting Level 96 Gathering Post in the territory, Ruined. Nodes: [23■]. Mob pressure: Medium. Tools: T11 Axe (95-105).",
     "tags": [
       "profession",
       "woodcutting",
@@ -82,7 +82,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Avo - northwestern edge of the Corkus Forest",
     "category": "profession_woodcutting",
     "region": "northwestern edge of the Corkus Forest",
-    "description": "Woodcutting spot for Avo. Recommended for profession levels 90-99. Nodes: [60+■]. Mob pressure: High. Suggested tools: T11 Axe (95-105). is the northwestern edge of the Corkus Forest (courtesy of Olinus10), a forest with the most avo trees, however, you can find avo trees anywhere on the Corkus Island",
+    "description": "I use this woodcutting spot for Avo around levels 90-99. Route note: is the northwestern edge of the Corkus Forest (courtesy of Olinus10), a forest with the most avo trees, however, you can find avo trees anywhere on the Corkus Island. Nodes: [60+■]. Mob pressure: High. Tools: T11 Axe (95-105).",
     "tags": [
       "profession",
       "woodcutting",
@@ -101,7 +101,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Barley - 3 patches of Barley around Cinfras",
     "category": "profession_farming",
     "region": "3 patches of Barley around Cinfras",
-    "description": "Farming spot for Barley. Recommended for profession levels 10-19. Nodes: [34■/16■+14■+4■]. Mob pressure: Medium. Suggested tools: T3 Scythe (15-25). are the 3 patches of Barley around Cinfras",
+    "description": "I use this farming spot for Barley around levels 10-19. Route note: are the 3 patches of Barley around Cinfras. Nodes: [34■/16■+14■+4■]. Mob pressure: Medium. Tools: T3 Scythe (15-25).",
     "tags": [
       "profession",
       "farming",
@@ -120,7 +120,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Barley - all the fields in Olux with an astounding 41 nodes",
     "category": "profession_farming",
     "region": "all the fields in Olux with an astounding 41 nodes",
-    "description": "Farming spot for Barley. Recommended for profession levels 10-19. Nodes: [41■]. Mob pressure: None. Suggested tools: T3 Scythe (15-25). are all the fields in Olux with an astounding 41 nodes, there’s no mobs",
+    "description": "I use this farming spot for Barley around levels 10-19. Route note: are all the fields in Olux with an astounding 41 nodes, there’s no mobs. Nodes: [41■]. Mob pressure: None. Tools: T3 Scythe (15-25).",
     "tags": [
       "profession",
       "farming",
@@ -139,7 +139,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Barley - pasture in the Abandoned Farm near Time Valley",
     "category": "profession_farming",
     "region": "pasture in the Abandoned Farm near Time Valley",
-    "description": "Farming spot for Barley. Recommended for profession levels 10-19. Nodes: [14■]. Mob pressure: Low. Suggested tools: T3 Scythe (15-25). is a small pasture in the Abandoned Farm near Time Valley",
+    "description": "I use this farming spot for Barley around levels 10-19. Route note: is a small pasture in the Abandoned Farm near Time Valley. Nodes: [14■]. Mob pressure: Low. Tools: T3 Scythe (15-25).",
     "tags": [
       "profession",
       "farming",
@@ -158,7 +158,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Barley - the Detlas Suburbs and there are mobs",
     "category": "profession_farming",
     "region": "the Detlas Suburbs and there are mobs",
-    "description": "Farming spot for Barley. Recommended for profession levels 10-19. Nodes: [15■/8■+7■]. Mob pressure: Medium. Suggested tools: T3 Scythe (15-25). are 2 locations in the Detlas Suburbs and there are mobs",
+    "description": "I use this farming spot for Barley around levels 10-19. Route note: are 2 locations in the Detlas Suburbs and there are mobs. Nodes: [15■/8■+7■]. Mob pressure: Medium. Tools: T3 Scythe (15-25).",
     "tags": [
       "profession",
       "farming",
@@ -177,7 +177,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Barley - the Detlas Suburbs and there are mobs",
     "category": "profession_farming",
     "region": "the Detlas Suburbs and there are mobs",
-    "description": "Farming spot for Barley. Recommended for profession levels 10-19. Nodes: [15■/8■+7■]. Mob pressure: Medium. Suggested tools: T3 Scythe (15-25). are 2 locations in the Detlas Suburbs and there are mobs",
+    "description": "I use this farming spot for Barley around levels 10-19. Route note: are 2 locations in the Detlas Suburbs and there are mobs. Nodes: [15■/8■+7■]. Mob pressure: Medium. Tools: T3 Scythe (15-25).",
     "tags": [
       "profession",
       "farming",
@@ -196,7 +196,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Bass - just north of where the C.S.S. Wavebreaker docks",
     "category": "profession_fishing",
     "region": "just north of where the C.S.S. Wavebreaker docks",
-    "description": "Fishing spot for Bass. Recommended for profession levels 80-89. Nodes: [14■]. Mob pressure: None. Suggested tools: T10 Fishing Rod (85-95). is a small dock on the east side of Corkus Island, just north of where the C.S.S. Wavebreaker docks",
+    "description": "I use this fishing spot for Bass around levels 80-89. Route note: is a small dock on the east side of Corkus Island, just north of where the C.S.S. Wavebreaker docks. Nodes: [14■]. Mob pressure: None. Tools: T10 Fishing Rod (85-95).",
     "tags": [
       "profession",
       "fishing",
@@ -215,7 +215,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Bass - pond in the Astrochelys enclosure",
     "category": "profession_fishing",
     "region": "pond in the Astrochelys enclosure",
-    "description": "Fishing spot for Bass. Recommended for profession levels 80-89. Nodes: [7■]. Mob pressure: High. Suggested tools: T10 Fishing Rod (85-95). is a pond in the Astrochelys enclosure",
+    "description": "I use this fishing spot for Bass around levels 80-89. Route note: is a pond in the Astrochelys enclosure. Nodes: [7■]. Mob pressure: High. Tools: T10 Fishing Rod (85-95).",
     "tags": [
       "profession",
       "fishing",
@@ -234,7 +234,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Bass - Relos Bay which is located on the south side of Cor…",
     "category": "profession_fishing",
     "region": "Relos Bay which is located on the south side of Corkus Island",
-    "description": "Fishing spot for Bass. Recommended for profession levels 80-89. Nodes: [36■]. Mob pressure: None. Suggested tools: T10 Fishing Rod (85-95). is the Relos Bay which is located on the south side of Corkus Island, starting from Relos",
+    "description": "I use this fishing spot for Bass around levels 80-89. Route note: is the Relos Bay which is located on the south side of Corkus Island, starting from Relos. Nodes: [36■]. Mob pressure: None. Tools: T10 Fishing Rod (85-95).",
     "tags": [
       "profession",
       "fishing",
@@ -253,7 +253,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Bass - straight south of Thanos",
     "category": "profession_fishing",
     "region": "straight south of Thanos",
-    "description": "Fishing spot for Bass. Recommended for profession levels 80-89. Nodes: [6■]. Mob pressure: Medium. Suggested tools: T10 Fishing Rod (85-95). is the base of multiple waterfalls, east of Cinfras, and straight south of Thanos",
+    "description": "I use this fishing spot for Bass around levels 80-89. Route note: is the base of multiple waterfalls, east of Cinfras, and straight south of Thanos. Nodes: [6■]. Mob pressure: Medium. Tools: T10 Fishing Rod (85-95).",
     "tags": [
       "profession",
       "fishing",
@@ -272,7 +272,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Bass - two medium-sized ponds in the Cany0n of The Lost",
     "category": "profession_fishing",
     "region": "two medium-sized ponds in the Cany0n of The Lost",
-    "description": "Fishing spot for Bass. Recommended for profession levels 80-89. Nodes: [8■]. Mob pressure: Very Low. Suggested tools: T10 Fishing Rod (85-95). is two medium-sized ponds in the Cany0n of The Lost",
+    "description": "I use this fishing spot for Bass around levels 80-89. Route note: is two medium-sized ponds in the Cany0n of The Lost. Nodes: [8■]. Mob pressure: Very Low. Tools: T10 Fishing Rod (85-95).",
     "tags": [
       "profession",
       "fishing",
@@ -291,7 +291,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Birch - an island that can be accessed by using the Seaskip…",
     "category": "profession_woodcutting",
     "region": "an island that can be accessed by using the Seaskipper Merchant in Nemract and Selchar",
-    "description": "Woodcutting spot for Birch. Recommended for profession levels 10-19. Nodes: [20+■]. Mob pressure: None. Suggested tools: T3 Axe (15-25). is Mage Island, an island that can be accessed by using the Seaskipper Merchant in Nemract and Selchar",
+    "description": "I use this woodcutting spot for Birch around levels 10-19. Route note: is Mage Island, an island that can be accessed by using the Seaskipper Merchant in Nemract and Selchar. Nodes: [20+■]. Mob pressure: None. Tools: T3 Axe (15-25).",
     "tags": [
       "profession",
       "woodcutting",
@@ -310,7 +310,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Birch - mobs around this area are levels 10-13 and aren’t m…",
     "category": "profession_woodcutting",
     "region": "mobs around this area are levels 10-13 and aren’t much of a threat",
-    "description": "Woodcutting spot for Birch. Recommended for profession levels 10-19. Nodes: [50+■]. Mob pressure: Medium. Suggested tools: T3 Axe (15-25). is the territory known as Detlas Suburbs, mobs around this area are levels 10-13 and aren’t much of a threat",
+    "description": "I use this woodcutting spot for Birch around levels 10-19. Route note: is the territory known as Detlas Suburbs, mobs around this area are levels 10-13 and aren’t much of a threat. Nodes: [50+■]. Mob pressure: Medium. Tools: T3 Axe (15-25).",
     "tags": [
       "profession",
       "woodcutting",
@@ -329,7 +329,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Carp - lake located in the Light Forest with very spread o…",
     "category": "profession_fishing",
     "region": "lake located in the Light Forest with very spread out nodes. This location is NOT recommended for leveling",
-    "description": "Fishing spot for Carp. Recommended for profession levels 30-39. Nodes: [17■]. Mob pressure: High. Suggested tools: T5 Fishing Rod (35-45). is a large lake located in the Light Forest with very spread out nodes. This location is NOT recommended for leveling",
+    "description": "I use this fishing spot for Carp around levels 30-39. Route note: is a large lake located in the Light Forest with very spread out nodes. This location is NOT recommended for leveling. Nodes: [17■]. Mob pressure: High. Tools: T5 Fishing Rod (35-45).",
     "tags": [
       "profession",
       "fishing",
@@ -348,7 +348,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Carp - part of the river that flows throughout the Rymek C…",
     "category": "profession_fishing",
     "region": "part of the river that flows throughout the Rymek Canyon",
-    "description": "Fishing spot for Carp. Recommended for profession levels 30-39. Nodes: [10■]. Mob pressure: Medium. Suggested tools: T5 Fishing Rod (35-45). is a small part of the river that flows throughout the Rymek Canyon",
+    "description": "I use this fishing spot for Carp around levels 30-39. Route note: is a small part of the river that flows throughout the Rymek Canyon. Nodes: [10■]. Mob pressure: Medium. Tools: T5 Fishing Rod (35-45).",
     "tags": [
       "profession",
       "fishing",
@@ -367,7 +367,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Carp - pond adjacent to the Sand Swept Tomb entrance",
     "category": "profession_fishing",
     "region": "pond adjacent to the Sand Swept Tomb entrance",
-    "description": "Fishing spot for Carp. Recommended for profession levels 30-39. Nodes: [10■]. Mob pressure: Low. Suggested tools: T5 Fishing Rod (35-45). is a pond adjacent to the Sand Swept Tomb entrance",
+    "description": "I use this fishing spot for Carp around levels 30-39. Route note: is a pond adjacent to the Sand Swept Tomb entrance. Nodes: [10■]. Mob pressure: Low. Tools: T5 Fishing Rod (35-45).",
     "tags": [
       "profession",
       "fishing",
@@ -386,7 +386,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Carp - the waterfall source of the Almuj river",
     "category": "profession_fishing",
     "region": "the waterfall source of the Almuj river",
-    "description": "Fishing spot for Carp. Recommended for profession levels 30-39. Nodes: [18■/6■+9■+3■]. Mob pressure: None. Suggested tools: T5 Fishing Rod (35-45). is three locations, found at the waterfall source of the Almuj river",
+    "description": "I use this fishing spot for Carp around levels 30-39. Route note: is three locations, found at the waterfall source of the Almuj river. Nodes: [18■/6■+9■+3■]. Mob pressure: None. Tools: T5 Fishing Rod (35-45).",
     "tags": [
       "profession",
       "fishing",
@@ -405,7 +405,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Cobalt - cluster of cobalt on the cliffside of the center is…",
     "category": "profession_mining",
     "region": "cluster of cobalt on the cliffside of the center island of the Maro Peaks",
-    "description": "Mining spot for Cobalt. Recommended for profession levels 60-69. Nodes: [13■]. Mob pressure: High. Suggested tools: T8 Pickaxe (65-75). is a cluster of cobalt on the cliffside of the center island of the Maro Peaks",
+    "description": "I use this mining spot for Cobalt around levels 60-69. Route note: is a cluster of cobalt on the cliffside of the center island of the Maro Peaks. Nodes: [13■]. Mob pressure: High. Tools: T8 Pickaxe (65-75).",
     "tags": [
       "profession",
       "mining",
@@ -424,7 +424,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Cobalt - entrance to and the inside of a cavern directly sou…",
     "category": "profession_mining",
     "region": "entrance to and the inside of a cavern directly south of the entrance to the Dernel Jungle",
-    "description": "Mining spot for Cobalt. Recommended for profession levels 60-69. Nodes: [17■]. Mob pressure: High. Suggested tools: T8 Pickaxe (65-75). is the entrance to and the inside of a cavern directly south of the entrance to the Dernel Jungle",
+    "description": "I use this mining spot for Cobalt around levels 60-69. Route note: is the entrance to and the inside of a cavern directly south of the entrance to the Dernel Jungle. Nodes: [17■]. Mob pressure: High. Tools: T8 Pickaxe (65-75).",
     "tags": [
       "profession",
       "mining",
@@ -443,7 +443,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Cobalt - group of cobalt deposits on the southern side of La…",
     "category": "profession_mining",
     "region": "group of cobalt deposits on the southern side of Lake Gylia near the Mining Level 71 Gathering Post - mobs will leak into this area",
-    "description": "Mining spot for Cobalt. Recommended for profession levels 60-69. Nodes: [13■]. Mob pressure: Low. Suggested tools: T8 Pickaxe (65-75). are a group of cobalt deposits on the southern side of Lake Gylia near the Mining Level 71 Gathering Post - mobs (usually weirds) will leak into this area",
+    "description": "I use this mining spot for Cobalt around levels 60-69. Route note: are a group of cobalt deposits on the southern side of Lake Gylia near the Mining Level 71 Gathering Post - mobs (usually weirds) will leak into this area. Nodes: [13■]. Mob pressure: Low. Tools: T8 Pickaxe (65-75).",
     "tags": [
       "profession",
       "mining",
@@ -462,7 +462,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Cobalt - pocket in the side of a cliff on the center island…",
     "category": "profession_mining",
     "region": "pocket in the side of a cliff on the center island of the Maro Peaks - some of the nodes are on a wall making them somewhat hard to reach",
-    "description": "Mining spot for Cobalt. Recommended for profession levels 60-69. Nodes: [14■]. Mob pressure: Medium. Suggested tools: T8 Pickaxe (65-75). is a pocket in the side of a cliff on the center island of the Maro Peaks - some of the nodes are on a wall making them somewhat hard to reach",
+    "description": "I use this mining spot for Cobalt around levels 60-69. Route note: is a pocket in the side of a cliff on the center island of the Maro Peaks - some of the nodes are on a wall making them somewhat hard to reach. Nodes: [14■]. Mob pressure: Medium. Tools: T8 Pickaxe (65-75).",
     "tags": [
       "profession",
       "mining",
@@ -481,7 +481,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Copper - copper nodes up against a hillside next to Dereg’s…",
     "category": "profession_mining",
     "region": "copper nodes up against a hillside next to Dereg’s house",
-    "description": "Mining spot for Copper. Recommended for profession levels 0-9. Nodes: [8■]. Mob pressure: Medium. Suggested tools: T1 Pickaxe (0-5), T2 Pickaxe (5-15). are multiple copper nodes up against a hillside next to Dereg’s house (starter NPC for the quest, The Shadow of a Beast)",
+    "description": "I use this mining spot for Copper around levels 0-9. Route note: are multiple copper nodes up against a hillside next to Dereg’s house (starter NPC for the quest, The Shadow of a Beast). Nodes: [8■]. Mob pressure: Medium. Tools: T1 Pickaxe (0-5), T2 Pickaxe (5-15).",
     "tags": [
       "profession",
       "mining",
@@ -500,7 +500,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Copper - rocks with copper nodes in a clearing just off the…",
     "category": "profession_mining",
     "region": "rocks with copper nodes in a clearing just off the Emerald Trail",
-    "description": "Mining spot for Copper. Recommended for profession levels 0-9. Nodes: [10■]. Mob pressure: Low. Suggested tools: T1 Pickaxe (0-5), T2 Pickaxe (5-15). are multiple rocks with copper nodes in a clearing just off the Emerald Trail (there is 1 node on the cliffside and two nodes in the cave)",
+    "description": "I use this mining spot for Copper around levels 0-9. Route note: are multiple rocks with copper nodes in a clearing just off the Emerald Trail (there is 1 node on the cliffside and two nodes in the cave). Nodes: [10■]. Mob pressure: Low. Tools: T1 Pickaxe (0-5), T2 Pickaxe (5-15).",
     "tags": [
       "profession",
       "mining",
@@ -519,7 +519,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Copper - yet again a collective of rocks with copper nodes j…",
     "category": "profession_mining",
     "region": "yet again a collective of rocks with copper nodes just off the path to Maltic in the Maltic Plains",
-    "description": "Mining spot for Copper. Recommended for profession levels 0-9. Nodes: [8■]. Mob pressure: Low. Suggested tools: T1 Pickaxe (0-5), T2 Pickaxe (5-15). are yet again a collective of rocks with copper nodes just off the path to Maltic in the Maltic Plains",
+    "description": "I use this mining spot for Copper around levels 0-9. Route note: are yet again a collective of rocks with copper nodes just off the path to Maltic in the Maltic Plains. Nodes: [8■]. Mob pressure: Low. Tools: T1 Pickaxe (0-5), T2 Pickaxe (5-15).",
     "tags": [
       "profession",
       "mining",
@@ -538,7 +538,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Dark - coords for the Dark Forest a forest which borders t…",
     "category": "profession_woodcutting",
     "region": "coords for the Dark Forest a forest which borders the Olux Swamp",
-    "description": "Woodcutting spot for Dark. Nodes: [120+■]. Mob pressure: High. Suggested tools: T8 Axe (65-75). are the general coords for the Dark Forest a forest which borders the Olux Swamp, Light Forest, and Kander Forest",
+    "description": "I use this woodcutting spot for Dark. Route note: are the general coords for the Dark Forest a forest which borders the Olux Swamp, Light Forest, and Kander Forest. Nodes: [120+■]. Mob pressure: High. Tools: T8 Axe (65-75).",
     "tags": [
       "profession",
       "woodcutting",
@@ -557,7 +557,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Dark - coords for the Kander Forest",
     "category": "profession_woodcutting",
     "region": "coords for the Kander Forest",
-    "description": "Woodcutting spot for Dark. Nodes: [110+■]. Mob pressure: Very High. Suggested tools: T8 Axe (65-75). are the general coords for the Kander Forest, a forest larger than the Dark Forest, but with fewer trees (this area also has more mobs and is a higher level area than the Dark Forest)",
+    "description": "I use this woodcutting spot for Dark. Route note: are the general coords for the Kander Forest, a forest larger than the Dark Forest, but with fewer trees (this area also has more mobs and is a higher level area than the Dark Forest). Nodes: [110+■]. Mob pressure: Very High. Tools: T8 Axe (65-75).",
     "tags": [
       "profession",
       "woodcutting",
@@ -576,7 +576,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Dark - southeastern part of the Dark Forest near Gelibord…",
     "category": "profession_woodcutting",
     "region": "southeastern part of the Dark Forest near Gelibord with low mob spawning",
-    "description": "Woodcutting spot for Dark. Nodes: [20+■]. Mob pressure: Very Low. Suggested tools: T8 Axe (65-75). is the southeastern part of the Dark Forest near Gelibord with low mob spawning",
+    "description": "I use this woodcutting spot for Dark. Route note: is the southeastern part of the Dark Forest near Gelibord with low mob spawning. Nodes: [20+■]. Mob pressure: Very Low. Tools: T8 Axe (65-75).",
     "tags": [
       "profession",
       "woodcutting",
@@ -595,7 +595,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Decay Roots - groups of decay root nodes on the cliff that overlo…",
     "category": "profession_farming",
     "region": "groups of decay root nodes on the cliff that overlooks Lexdale and is adjacent to the Heart of Decay",
-    "description": "Farming spot for Decay Roots. Recommended for profession levels 70-79. Nodes: [11■]. Mob pressure: Medium. Suggested tools: T9 Scythe (75-85). are multiple groups of decay root nodes on the cliff that overlooks Lexdale and is adjacent to the Heart of Decay",
+    "description": "I use this farming spot for Decay Roots around levels 70-79. Route note: are multiple groups of decay root nodes on the cliff that overlooks Lexdale and is adjacent to the Heart of Decay. Nodes: [11■]. Mob pressure: Medium. Tools: T9 Scythe (75-85).",
     "tags": [
       "profession",
       "farming",
@@ -614,7 +614,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Decay Roots - patch of decay root nodes directly north of the Dar…",
     "category": "profession_farming",
     "region": "patch of decay root nodes directly north of the Dark Forest Fortress",
-    "description": "Farming spot for Decay Roots. Recommended for profession levels 70-79. Nodes: [12■]. Mob pressure: High. Suggested tools: T9 Scythe (75-85). is a patch of decay root nodes directly north of the Dark Forest Fortress",
+    "description": "I use this farming spot for Decay Roots around levels 70-79. Route note: is a patch of decay root nodes directly north of the Dark Forest Fortress. Nodes: [12■]. Mob pressure: High. Tools: T9 Scythe (75-85).",
     "tags": [
       "profession",
       "farming",
@@ -633,7 +633,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Decay Roots - several small patches of farmland with a total of 1…",
     "category": "profession_farming",
     "region": "several small patches of farmland with a total of 15 decay root nodes very close to Lexdale",
-    "description": "Farming spot for Decay Roots. Recommended for profession levels 70-79. Nodes: [15■]. Mob pressure: Medium. Suggested tools: T9 Scythe (75-85). is several small patches of farmland with a total of 15 decay root nodes very close to Lexdale",
+    "description": "I use this farming spot for Decay Roots around levels 70-79. Route note: is several small patches of farmland with a total of 15 decay root nodes very close to Lexdale. Nodes: [15■]. Mob pressure: Medium. Tools: T9 Scythe (75-85).",
     "tags": [
       "profession",
       "farming",
@@ -652,7 +652,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Decay Roots - yard with 18 decay root and 16 millet nodes southea…",
     "category": "profession_farming",
     "region": "yard with 18 decay root and 16 millet nodes southeast of Gelibord and near the Farming Level 78 Gathering Post",
-    "description": "Farming spot for Decay Roots. Recommended for profession levels 70-79. Nodes: [18■]. Mob pressure: Low. Suggested tools: T9 Scythe (75-85). is a large yard with 18 decay root and 16 millet nodes southeast of Gelibord and near the Farming Level 78 Gathering Post",
+    "description": "I use this farming spot for Decay Roots around levels 70-79. Route note: is a large yard with 18 decay root and 16 millet nodes southeast of Gelibord and near the Farming Level 78 Gathering Post. Nodes: [18■]. Mob pressure: Low. Tools: T9 Scythe (75-85).",
     "tags": [
       "profession",
       "farming",
@@ -671,7 +671,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Dernic - also located near the territory",
     "category": "profession_mining",
     "region": "also located near the territory",
-    "description": "Mining spot for Dernic. Nodes: [10■]. Mob pressure: Very Low. Suggested tools: T12 Pickaxe (105+). is a collection of dernic nodes just up the stairs from the path that connects the entirety of the Ruined Olmic City, also located near the territory, Gray Ruins (Ancient Constructs occasionally spawn here, so, extra money go brr)",
+    "description": "I use this mining spot for Dernic. Route note: is a collection of dernic nodes just up the stairs from the path that connects the entirety of the Ruined Olmic City, also located near the territory, Gray Ruins (Ancient Constructs occasionally spawn here, so, extra money go brr). Nodes: [10■]. Mob pressure: Very Low. Tools: T12 Pickaxe (105+).",
     "tags": [
       "profession",
       "mining",
@@ -690,7 +690,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Dernic - deposit of dernic adjacent to the Ruined Olmic City…",
     "category": "profession_mining",
     "region": "deposit of dernic adjacent to the Ruined Olmic City located near the territory",
-    "description": "Mining spot for Dernic. Nodes: [13■]. Mob pressure: Very Low. Suggested tools: T12 Pickaxe (105+). is a deposit of dernic adjacent to the Ruined Olmic City located near the territory, Gray Ruins (omnispective wanderer can spawn here)",
+    "description": "I use this mining spot for Dernic. Route note: is a deposit of dernic adjacent to the Ruined Olmic City located near the territory, Gray Ruins (omnispective wanderer can spawn here). Nodes: [13■]. Mob pressure: Very Low. Tools: T12 Pickaxe (105+).",
     "tags": [
       "profession",
       "mining",
@@ -709,7 +709,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Dernic - remote part of the silent expanse south of the Ruin…",
     "category": "profession_mining",
     "region": "remote part of the silent expanse south of the Ruined Olmic City containing 10 dernic nodes and is connected to the same path as the one leading to Lutho",
-    "description": "Mining spot for Dernic. Nodes: [10■]. Mob pressure: None. Suggested tools: T12 Pickaxe (105+). is a remote part of the silent expanse south of the Ruined Olmic City containing 10 dernic nodes and is connected to the same path as the one leading to Lutho",
+    "description": "I use this mining spot for Dernic. Route note: is a remote part of the silent expanse south of the Ruined Olmic City containing 10 dernic nodes and is connected to the same path as the one leading to Lutho. Nodes: [10■]. Mob pressure: None. Tools: T12 Pickaxe (105+).",
     "tags": [
       "profession",
       "mining",
@@ -728,7 +728,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Dernic - the Eyeball/Lutho Forest located in The Silent Expa…",
     "category": "profession_woodcutting",
     "region": "the Eyeball/Lutho Forest located in The Silent Expanse",
-    "description": "Woodcutting spot for Dernic. Nodes: [45+■]. Mob pressure: High. Suggested tools: T12 Axe (105+). is the one and only spot with dernic trees, the Eyeball/Lutho Forest located in The Silent Expanse (just farm the trees near Lutho, the have the least mobs)",
+    "description": "I use this woodcutting spot for Dernic. Route note: is the one and only spot with dernic trees, the Eyeball/Lutho Forest located in The Silent Expanse (just farm the trees near Lutho, the have the least mobs). Nodes: [45+■]. Mob pressure: High. Tools: T12 Axe (105+).",
     "tags": [
       "profession",
       "woodcutting",
@@ -747,7 +747,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Dernic Fish - -897 is a pond in yet again",
     "category": "profession_fishing",
     "region": "-897 is a pond in yet again",
-    "description": "Fishing spot for Dernic Fish. Nodes: [8■]. Mob pressure: Medium. Suggested tools: T12 Fishing Rod. -897 is a pond in yet again, the territory, Toxic Drip",
+    "description": "I use this fishing spot for Dernic Fish. Route note: -897 is a pond in yet again, the territory, Toxic Drip. Nodes: [8■]. Mob pressure: Medium. Tools: T12 Fishing Rod.",
     "tags": [
       "profession",
       "fishing",
@@ -766,7 +766,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Dernic Fish - there are a lot of mobs",
     "category": "profession_fishing",
     "region": "there are a lot of mobs",
-    "description": "Fishing spot for Dernic Fish. Nodes: [10■]. Mob pressure: High. Suggested tools: T12 Fishing Rod. -920 is a pond in the territory Toxic Drip, and there are a lot of mobs",
+    "description": "I use this fishing spot for Dernic Fish. Route note: -920 is a pond in the territory Toxic Drip, and there are a lot of mobs. Nodes: [10■]. Mob pressure: High. Tools: T12 Fishing Rod.",
     "tags": [
       "profession",
       "fishing",
@@ -785,7 +785,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Dernic Fish - there aren’t a lot of mobs",
     "category": "profession_fishing",
     "region": "there aren’t a lot of mobs",
-    "description": "Fishing spot for Dernic Fish. Nodes: [12■]. Mob pressure: Medium. Suggested tools: T12 Fishing Rod. -1090 is a large pool in the territory Toxic Caves, there aren’t a lot of mobs",
+    "description": "I use this fishing spot for Dernic Fish. Route note: -1090 is a large pool in the territory Toxic Caves, there aren’t a lot of mobs. Nodes: [12■]. Mob pressure: Medium. Tools: T12 Fishing Rod.",
     "tags": [
       "profession",
       "fishing",
@@ -804,7 +804,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Dernic Seed - patch of farmland underneath a tree in the territor…",
     "category": "profession_farming",
     "region": "patch of farmland underneath a tree in the territory Void Valley",
-    "description": "Farming spot for Dernic Seed. Nodes: [11■]. Mob pressure: None. Suggested tools: T12 Scythe (105+). is a patch of farmland underneath a tree in the territory Void Valley",
+    "description": "I use this farming spot for Dernic Seed. Route note: is a patch of farmland underneath a tree in the territory Void Valley. Nodes: [11■]. Mob pressure: None. Tools: T12 Scythe (105+).",
     "tags": [
       "profession",
       "farming",
@@ -823,7 +823,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Dernic Seed - patch of farmland underneath two trees in the terri…",
     "category": "profession_farming",
     "region": "patch of farmland underneath two trees in the territory Gateway to Nothing",
-    "description": "Farming spot for Dernic Seed. Nodes: [9■]. Mob pressure: Medium. Suggested tools: T12 Scythe (105+). is a patch of farmland underneath two trees in the territory Gateway to Nothing",
+    "description": "I use this farming spot for Dernic Seed. Route note: is a patch of farmland underneath two trees in the territory Gateway to Nothing. Nodes: [9■]. Mob pressure: Medium. Tools: T12 Scythe (105+).",
     "tags": [
       "profession",
       "farming",
@@ -842,7 +842,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Dernic Seed - two small fields in a small enclosure in the territ…",
     "category": "profession_farming",
     "region": "two small fields in a small enclosure in the territory Gateway to nothing and mobs can be very annoying to deal with",
-    "description": "Farming spot for Dernic Seed. Nodes: [6■]. Mob pressure: Medium. Suggested tools: T12 Scythe (105+). are two small fields in a small enclosure in the territory Gateway to nothing and mobs can be very annoying to deal with",
+    "description": "I use this farming spot for Dernic Seed. Route note: are two small fields in a small enclosure in the territory Gateway to nothing and mobs can be very annoying to deal with. Nodes: [6■]. Mob pressure: Medium. Tools: T12 Scythe (105+).",
     "tags": [
       "profession",
       "farming",
@@ -861,7 +861,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Diamond - cavern with clusters of diamond and voidstone in so…",
     "category": "profession_mining",
     "region": "cavern with clusters of diamond and voidstone in some parts of the cavern",
-    "description": "Mining spot for Diamond. Recommended for profession levels 80-89. Nodes: [12■]. Mob pressure: High. Suggested tools: T10 Pickaxe (85-95). is a huge cavern with clusters of diamond and voidstone in some parts of the cavern (4 diamond nodes at , cluster of 8 at and the all the voidstone is in a smaller cave at )",
+    "description": "I use this mining spot for Diamond around levels 80-89. Route note: is a huge cavern with clusters of diamond and voidstone in some parts of the cavern (4 diamond nodes at , cluster of 8 at and the all the voidstone is in a smaller cave at ). Nodes: [12■]. Mob pressure: High. Tools: T10 Pickaxe (85-95).",
     "tags": [
       "profession",
       "mining",
@@ -880,7 +880,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Diamond - cavern with clusters of diamond and voidstone in so…",
     "category": "profession_mining",
     "region": "cavern with clusters of diamond and voidstone in some parts of the cavern",
-    "description": "Mining spot for Diamond. Recommended for profession levels 80-89. Nodes: [12■]. Mob pressure: High. Suggested tools: T10 Pickaxe (85-95). is a huge cavern with clusters of diamond and voidstone in some parts of the cavern (4 diamond nodes at , cluster of 8 at and the all the voidstone is in a smaller cave at )",
+    "description": "I use this mining spot for Diamond around levels 80-89. Route note: is a huge cavern with clusters of diamond and voidstone in some parts of the cavern (4 diamond nodes at , cluster of 8 at and the all the voidstone is in a smaller cave at ). Nodes: [12■]. Mob pressure: High. Tools: T10 Pickaxe (85-95).",
     "tags": [
       "profession",
       "mining",
@@ -899,7 +899,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Diamond - cavern with clusters of diamond and voidstone in so…",
     "category": "profession_mining",
     "region": "cavern with clusters of diamond and voidstone in some parts of the cavern",
-    "description": "Mining spot for Diamond. Recommended for profession levels 80-89. Nodes: [12■]. Mob pressure: High. Suggested tools: T10 Pickaxe (85-95). is a huge cavern with clusters of diamond and voidstone in some parts of the cavern (4 diamond nodes at , cluster of 8 at and the all the voidstone is in a smaller cave at )",
+    "description": "I use this mining spot for Diamond around levels 80-89. Route note: is a huge cavern with clusters of diamond and voidstone in some parts of the cavern (4 diamond nodes at , cluster of 8 at and the all the voidstone is in a smaller cave at ). Nodes: [12■]. Mob pressure: High. Tools: T10 Pickaxe (85-95).",
     "tags": [
       "profession",
       "mining",
@@ -918,7 +918,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Diamond - cavern with clusters of diamond and voidstone in so…",
     "category": "profession_mining",
     "region": "cavern with clusters of diamond and voidstone in some parts of the cavern",
-    "description": "Mining spot for Diamond. Recommended for profession levels 80-89. Nodes: [12■]. Mob pressure: High. Suggested tools: T10 Pickaxe (85-95). is a huge cavern with clusters of diamond and voidstone in some parts of the cavern (4 diamond nodes at , cluster of 8 at and the all the voidstone is in a smaller cave at )",
+    "description": "I use this mining spot for Diamond around levels 80-89. Route note: is a huge cavern with clusters of diamond and voidstone in some parts of the cavern (4 diamond nodes at , cluster of 8 at and the all the voidstone is in a smaller cave at ). Nodes: [12■]. Mob pressure: High. Tools: T10 Pickaxe (85-95).",
     "tags": [
       "profession",
       "mining",
@@ -937,7 +937,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Diamond - cluster of 12 diamond nodes near where you spawn in…",
     "category": "profession_mining",
     "region": "cluster of 12 diamond nodes near where you spawn in the Realm of Light",
-    "description": "Mining spot for Diamond. Recommended for profession levels 80-89. Nodes: [12■]. Mob pressure: Medium. Suggested tools: T10 Pickaxe (85-95). is a cluster of 12 diamond nodes near where you spawn in the Realm of Light (Access to RoL requires the quest, Realm of Light V - The Realm of Light)",
+    "description": "I use this mining spot for Diamond around levels 80-89. Route note: is a cluster of 12 diamond nodes near where you spawn in the Realm of Light (Access to RoL requires the quest, Realm of Light V - The Realm of Light). Nodes: [12■]. Mob pressure: Medium. Tools: T10 Pickaxe (85-95).",
     "tags": [
       "profession",
       "mining",
@@ -956,7 +956,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Diamond - Maex Resource Mine which is a mine that costs 16EB…",
     "category": "profession_mining",
     "region": "Maex Resource Mine which is a mine that costs 16EB per use and has a total of 19 diamond nodes",
-    "description": "Mining spot for Diamond. Recommended for profession levels 80-89. Nodes: [19■]. Mob pressure: None. Suggested tools: T10 Pickaxe (85-95). is the Maex Resource Mine which is a mine that costs 16EB per use and has a total of 19 diamond nodes, 28 molten nodes, and 3 voidstone nodes - to gain access to the Maex Resource mine, you must first do the quest, Dwarves and Doguns IV",
+    "description": "I use this mining spot for Diamond around levels 80-89. Route note: is the Maex Resource Mine which is a mine that costs 16EB per use and has a total of 19 diamond nodes, 28 molten nodes, and 3 voidstone nodes - to gain access to the Maex Resource mine, you must first do the quest, Dwarves and Doguns IV. Nodes: [19■]. Mob pressure: None. Tools: T10 Pickaxe (85-95).",
     "tags": [
       "profession",
       "mining",
@@ -975,7 +975,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Diamond - Theasead - to get to here from Thesead",
     "category": "profession_mining",
     "region": "Theasead - to get to here from Thesead",
-    "description": "Mining spot for Diamond. Recommended for profession levels 80-89. Nodes: [9■]. Mob pressure: Medium. Suggested tools: T10 Pickaxe (85-95). is a small diamond deposit in the side of a cliff, near the Mining Level 88 Gathering Post, west of Theasead - to get to here from Thesead, you must first do the quest, A Marauder's Dues to get Norsten to open the gate",
+    "description": "I use this mining spot for Diamond around levels 80-89. Route note: is a small diamond deposit in the side of a cliff, near the Mining Level 88 Gathering Post, west of Theasead - to get to here from Thesead, you must first do the quest, A Marauder's Dues to get Norsten to open the gate. Nodes: [9■]. Mob pressure: Medium. Tools: T10 Pickaxe (85-95).",
     "tags": [
       "profession",
       "mining",
@@ -994,7 +994,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Gold - cave east of Corrupted Village with 14 gold nodes",
     "category": "profession_mining",
     "region": "cave east of Corrupted Village with 14 gold nodes",
-    "description": "Mining spot for Gold. Recommended for profession levels 20-29. Nodes: [14■]. Mob pressure: None. Suggested tools: T4 Pickaxe (25-35). is a small cave east of Corrupted Village with 14 gold nodes",
+    "description": "I use this mining spot for Gold around levels 20-29. Route note: is a small cave east of Corrupted Village with 14 gold nodes. Nodes: [14■]. Mob pressure: None. Tools: T4 Pickaxe (25-35).",
     "tags": [
       "profession",
       "mining",
@@ -1013,7 +1013,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Gold - easternmost side of the Abandoned Mines in territory",
     "category": "profession_mining",
     "region": "easternmost side of the Abandoned Mines in territory",
-    "description": "Mining spot for Gold. Recommended for profession levels 20-29. Nodes: [15■]. Mob pressure: None. Suggested tools: T4 Pickaxe (25-35). is the easternmost side of the Abandoned Mines in territory, Mining Base Upper",
+    "description": "I use this mining spot for Gold around levels 20-29. Route note: is the easternmost side of the Abandoned Mines in territory, Mining Base Upper. Nodes: [15■]. Mob pressure: None. Tools: T4 Pickaxe (25-35).",
     "tags": [
       "profession",
       "mining",
@@ -1032,7 +1032,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Gold - quarry in the Desert West Upper with a total of 24…",
     "category": "profession_mining",
     "region": "quarry in the Desert West Upper with a total of 24 gold nodes and 19 sandstone nodes - this spot isn’t good for leveling as the nodes are very spaced-out and there are a load of mobs",
-    "description": "Mining spot for Gold. Recommended for profession levels 20-29. Nodes: [24■]. Mob pressure: Very High. Suggested tools: T4 Pickaxe (25-35). is a huge quarry in the Desert West Upper with a total of 24 gold nodes and 19 sandstone nodes - this spot isn’t good for leveling as the nodes are very spaced-out and there are a load of mobs",
+    "description": "I use this mining spot for Gold around levels 20-29. Route note: is a huge quarry in the Desert West Upper with a total of 24 gold nodes and 19 sandstone nodes - this spot isn’t good for leveling as the nodes are very spaced-out and there are a load of mobs. Nodes: [24■]. Mob pressure: Very High. Tools: T4 Pickaxe (25-35).",
     "tags": [
       "profession",
       "mining",
@@ -1051,7 +1051,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Granite - cave system in the Pigman Ravines consisting of 13…",
     "category": "profession_mining",
     "region": "cave system in the Pigman Ravines consisting of 13 spaced-out granite nodes",
-    "description": "Mining spot for Granite. Recommended for profession levels 10-19. Nodes: [13■]. Mob pressure: Low. Suggested tools: T3 Pickaxe (15-25). is a cave system in the Pigman Ravines consisting of 13 spaced-out granite nodes",
+    "description": "I use this mining spot for Granite around levels 10-19. Route note: is a cave system in the Pigman Ravines consisting of 13 spaced-out granite nodes. Nodes: [13■]. Mob pressure: Low. Tools: T3 Pickaxe (15-25).",
     "tags": [
       "profession",
       "mining",
@@ -1070,7 +1070,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Granite - pockets in the cliffside of the Pigman Ravines adja…",
     "category": "profession_mining",
     "region": "pockets in the cliffside of the Pigman Ravines adjacent to the Mining Level 18 Gathering Post",
-    "description": "Mining spot for Granite. Recommended for profession levels 10-19. Nodes: [15■]. Mob pressure: None. Suggested tools: T3 Pickaxe (15-25). are multiple pockets in the cliffside of the Pigman Ravines adjacent to the Mining Level 18 Gathering Post",
+    "description": "I use this mining spot for Granite around levels 10-19. Route note: are multiple pockets in the cliffside of the Pigman Ravines adjacent to the Mining Level 18 Gathering Post. Nodes: [15■]. Mob pressure: None. Tools: T3 Pickaxe (15-25).",
     "tags": [
       "profession",
       "mining",
@@ -1089,7 +1089,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Granite - quarry on the cliff right above the Abandoned Mines",
     "category": "profession_mining",
     "region": "quarry on the cliff right above the Abandoned Mines",
-    "description": "Mining spot for Granite. Recommended for profession levels 10-19. Nodes: [20■]. Mob pressure: None. Suggested tools: T3 Pickaxe (15-25). is a large quarry on the cliff right above the Abandoned Mines",
+    "description": "I use this mining spot for Granite around levels 10-19. Route note: is a large quarry on the cliff right above the Abandoned Mines. Nodes: [20■]. Mob pressure: None. Tools: T3 Pickaxe (15-25).",
     "tags": [
       "profession",
       "mining",
@@ -1108,7 +1108,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Granite - yet another cave system in the Pigman Ravines consi…",
     "category": "profession_mining",
     "region": "yet another cave system in the Pigman Ravines consisting of 11 spaced-out granite nodes - mobs don’t spawn here however they can leak in from outside",
-    "description": "Mining spot for Granite. Recommended for profession levels 10-19. Nodes: [11■]. Mob pressure: Very Low. Suggested tools: T3 Pickaxe (15-25). is yet another cave system in the Pigman Ravines consisting of 11 spaced-out granite nodes - mobs don’t spawn here however they can leak in from outside",
+    "description": "I use this mining spot for Granite around levels 10-19. Route note: is yet another cave system in the Pigman Ravines consisting of 11 spaced-out granite nodes - mobs don’t spawn here however they can leak in from outside. Nodes: [11■]. Mob pressure: Very Low. Tools: T3 Pickaxe (15-25).",
     "tags": [
       "profession",
       "mining",
@@ -1127,7 +1127,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Gudgeon - Detlas",
     "category": "profession_fishing",
     "region": "Detlas",
-    "description": "Fishing spot for Gudgeon. Recommended for profession levels 0-9. Nodes: [13■]. Mob pressure: Low. Suggested tools: T1 Fishing Rod (0-5), T2 Fishing Rod (5-15). is a lake, North of Detlas",
+    "description": "I use this fishing spot for Gudgeon around levels 0-9. Route note: is a lake, North of Detlas. Nodes: [13■]. Mob pressure: Low. Tools: T1 Fishing Rod (0-5), T2 Fishing Rod (5-15).",
     "tags": [
       "profession",
       "fishing",
@@ -1146,7 +1146,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Gudgeon - just off the Emerald Trail",
     "category": "profession_fishing",
     "region": "just off the Emerald Trail",
-    "description": "Fishing spot for Gudgeon. Recommended for profession levels 0-9. Nodes: [11■]. Mob pressure: Very Low. Suggested tools: T1 Fishing Rod (0-5), T2 Fishing Rod (5-15). is a lake, just off the Emerald Trail",
+    "description": "I use this fishing spot for Gudgeon around levels 0-9. Route note: is a lake, just off the Emerald Trail. Nodes: [11■]. Mob pressure: Very Low. Tools: T1 Fishing Rod (0-5), T2 Fishing Rod (5-15).",
     "tags": [
       "profession",
       "fishing",
@@ -1165,7 +1165,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Gudgeon - southeast of Maltic",
     "category": "profession_fishing",
     "region": "southeast of Maltic",
-    "description": "Fishing spot for Gudgeon. Recommended for profession levels 0-9. Nodes: [9■]. Mob pressure: Low. Suggested tools: T1 Fishing Rod (0-5), T2 Fishing Rod (5-15). is a small pond, southeast of Maltic",
+    "description": "I use this fishing spot for Gudgeon around levels 0-9. Route note: is a small pond, southeast of Maltic. Nodes: [9■]. Mob pressure: Low. Tools: T1 Fishing Rod (0-5), T2 Fishing Rod (5-15).",
     "tags": [
       "profession",
       "fishing",
@@ -1184,7 +1184,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Gylia Fish - coast on the west end of Lake Gylia with 10 nodes",
     "category": "profession_fishing",
     "region": "coast on the west end of Lake Gylia with 10 nodes",
-    "description": "Fishing spot for Gylia Fish. Recommended for profession levels 70-79. Nodes: [15■/10■+5■]. Mob pressure: Medium. Suggested tools: T9 Fishing Rod (75-85). is a coast on the west end of Lake Gylia with 10 nodes, and going northeast is 5 extra nodes",
+    "description": "I use this fishing spot for Gylia Fish around levels 70-79. Route note: is a coast on the west end of Lake Gylia with 10 nodes, and going northeast is 5 extra nodes. Nodes: [15■/10■+5■]. Mob pressure: Medium. Tools: T9 Fishing Rod (75-85).",
     "tags": [
       "profession",
       "fishing",
@@ -1203,7 +1203,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Gylia Fish - most southwestern coast of Lake Gylia",
     "category": "profession_fishing",
     "region": "most southwestern coast of Lake Gylia",
-    "description": "Fishing spot for Gylia Fish. Recommended for profession levels 70-79. Nodes: [10■]. Mob pressure: Very Low. Suggested tools: T9 Fishing Rod (75-85). is the most southwestern coast of Lake Gylia",
+    "description": "I use this fishing spot for Gylia Fish around levels 70-79. Route note: is the most southwestern coast of Lake Gylia. Nodes: [10■]. Mob pressure: Very Low. Tools: T9 Fishing Rod (75-85).",
     "tags": [
       "profession",
       "fishing",
@@ -1222,7 +1222,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Gylia Fish - pond right next to Cinfras",
     "category": "profession_fishing",
     "region": "pond right next to Cinfras",
-    "description": "Fishing spot for Gylia Fish. Recommended for profession levels 70-79. Nodes: [10■]. Mob pressure: Very Low. Suggested tools: T9 Fishing Rod (75-85). is a pond right next to Cinfras",
+    "description": "I use this fishing spot for Gylia Fish around levels 70-79. Route note: is a pond right next to Cinfras. Nodes: [10■]. Mob pressure: Very Low. Tools: T9 Fishing Rod (75-85).",
     "tags": [
       "profession",
       "fishing",
@@ -1241,7 +1241,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Hemp - entrance to a cave which contains large amounts of…",
     "category": "profession_farming",
     "region": "entrance to a cave which contains large amounts of hemp",
-    "description": "Farming spot for Hemp. Recommended for profession levels 100-109. Nodes: [29■/14■+15■]. Mob pressure: None. Suggested tools: T12 Scythe (105+). is the entrance to a cave which contains large amounts of hemp (and also voidstone), the smaller room ( ) has 14 nodes and the larger room ( ) has 15",
+    "description": "I use this farming spot for Hemp around levels 100-109. Route note: is the entrance to a cave which contains large amounts of hemp (and also voidstone), the smaller room ( ) has 14 nodes and the larger room ( ) has 15. Nodes: [29■/14■+15■]. Mob pressure: None. Tools: T12 Scythe (105+).",
     "tags": [
       "profession",
       "farming",
@@ -1260,7 +1260,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Hemp - entrance to a cave which contains large amounts of…",
     "category": "profession_farming",
     "region": "entrance to a cave which contains large amounts of hemp",
-    "description": "Farming spot for Hemp. Recommended for profession levels 100-109. Nodes: [29■/14■+15■]. Mob pressure: None. Suggested tools: T12 Scythe (105+). is the entrance to a cave which contains large amounts of hemp (and also voidstone), the smaller room ( ) has 14 nodes and the larger room ( ) has 15",
+    "description": "I use this farming spot for Hemp around levels 100-109. Route note: is the entrance to a cave which contains large amounts of hemp (and also voidstone), the smaller room ( ) has 14 nodes and the larger room ( ) has 15. Nodes: [29■/14■+15■]. Mob pressure: None. Tools: T12 Scythe (105+).",
     "tags": [
       "profession",
       "farming",
@@ -1279,7 +1279,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Hemp - entrance to a cave which contains large amounts of…",
     "category": "profession_farming",
     "region": "entrance to a cave which contains large amounts of hemp",
-    "description": "Farming spot for Hemp. Recommended for profession levels 100-109. Nodes: [29■/14■+15■]. Mob pressure: None. Suggested tools: T12 Scythe (105+). is the entrance to a cave which contains large amounts of hemp (and also voidstone), the smaller room ( ) has 14 nodes and the larger room ( ) has 15",
+    "description": "I use this farming spot for Hemp around levels 100-109. Route note: is the entrance to a cave which contains large amounts of hemp (and also voidstone), the smaller room ( ) has 14 nodes and the larger room ( ) has 15. Nodes: [29■/14■+15■]. Mob pressure: None. Tools: T12 Scythe (105+).",
     "tags": [
       "profession",
       "farming",
@@ -1298,7 +1298,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Hemp - patches of hemp nodes on the farming islands outsid…",
     "category": "profession_farming",
     "region": "patches of hemp nodes on the farming islands outside of Ahmsord",
-    "description": "Farming spot for Hemp. Recommended for profession levels 100-109. Nodes: [8■]. Mob pressure: Medium. Suggested tools: T12 Scythe (105+). are multiple patches of hemp nodes on the farming islands outside of Ahmsord",
+    "description": "I use this farming spot for Hemp around levels 100-109. Route note: are multiple patches of hemp nodes on the farming islands outside of Ahmsord. Nodes: [8■]. Mob pressure: Medium. Tools: T12 Scythe (105+).",
     "tags": [
       "profession",
       "farming",
@@ -1317,7 +1317,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Hemp - three garden beds of hemp nodes in the Path to Ahms…",
     "category": "profession_farming",
     "region": "three garden beds of hemp nodes in the Path to Ahmsord Lower",
-    "description": "Farming spot for Hemp. Recommended for profession levels 100-109. Nodes: [10■]. Mob pressure: Low. Suggested tools: T12 Scythe (105+). are three garden beds of hemp nodes in the Path to Ahmsord Lower",
+    "description": "I use this farming spot for Hemp around levels 100-109. Route note: are three garden beds of hemp nodes in the Path to Ahmsord Lower. Nodes: [10■]. Mob pressure: Low. Tools: T12 Scythe (105+).",
     "tags": [
       "profession",
       "farming",
@@ -1336,7 +1336,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Hemp - two patches of hemp nodes on the Sky Conure island",
     "category": "profession_farming",
     "region": "two patches of hemp nodes on the Sky Conure island",
-    "description": "Farming spot for Hemp. Recommended for profession levels 100-109. Nodes: [14■]. Mob pressure: Medium. Suggested tools: T12 Scythe (105+). are two patches of hemp nodes on the Sky Conure island",
+    "description": "I use this farming spot for Hemp around levels 100-109. Route note: are two patches of hemp nodes on the Sky Conure island. Nodes: [14■]. Mob pressure: Medium. Tools: T12 Scythe (105+).",
     "tags": [
       "profession",
       "farming",
@@ -1355,7 +1355,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Hops - field in Bucie",
     "category": "profession_farming",
     "region": "field in Bucie",
-    "description": "Farming spot for Hops. Recommended for profession levels 40-49. Nodes: [8■]. Mob pressure: None. Suggested tools: T6 Scythe (45-55). is a field in Bucie",
+    "description": "I use this farming spot for Hops around levels 40-49. Route note: is a field in Bucie. Nodes: [8■]. Mob pressure: None. Tools: T6 Scythe (45-55).",
     "tags": [
       "profession",
       "farming",
@@ -1374,7 +1374,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Hops - field near the Iron Road",
     "category": "profession_farming",
     "region": "field near the Iron Road",
-    "description": "Farming spot for Hops. Recommended for profession levels 40-49. Nodes: [9■]. Mob pressure: Low. Suggested tools: T6 Scythe (45-55). is a small field near the Iron Road",
+    "description": "I use this farming spot for Hops around levels 40-49. Route note: is a small field near the Iron Road. Nodes: [9■]. Mob pressure: Low. Tools: T6 Scythe (45-55).",
     "tags": [
       "profession",
       "farming",
@@ -1393,7 +1393,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Hops - The Shadow of a Beast",
     "category": "profession_farming",
     "region": "The Shadow of a Beast",
-    "description": "Farming spot for Hops. Recommended for profession levels 40-49. Nodes: [9■]. Mob pressure: Very Low. Suggested tools: T6 Scythe (45-55). is Kroac’s Farm shown in the quest, The Shadow of a Beast",
+    "description": "I use this farming spot for Hops around levels 40-49. Route note: is Kroac’s Farm shown in the quest, The Shadow of a Beast. Nodes: [9■]. Mob pressure: Very Low. Tools: T6 Scythe (45-55).",
     "tags": [
       "profession",
       "farming",
@@ -1412,7 +1412,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Hops - The Shadow of a Beast",
     "category": "profession_farming",
     "region": "The Shadow of a Beast",
-    "description": "Farming spot for Hops. Recommended for profession levels 40-49. Nodes: [9■]. Mob pressure: Very Low. Suggested tools: T6 Scythe (45-55). is Tolem’s Farm shown in the quest, The Shadow of a Beast",
+    "description": "I use this farming spot for Hops around levels 40-49. Route note: is Tolem’s Farm shown in the quest, The Shadow of a Beast. Nodes: [9■]. Mob pressure: Very Low. Tools: T6 Scythe (45-55).",
     "tags": [
       "profession",
       "farming",
@@ -1431,7 +1431,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Icefish - cluster of fish underneath ice located at the north…",
     "category": "profession_fishing",
     "region": "cluster of fish underneath ice located at the north shore of Icy Island",
-    "description": "Fishing spot for Icefish. Recommended for profession levels 40-49. Nodes: [45■]. Mob pressure: None. Suggested tools: T6 Fishing Rod (45-55). is a cluster of fish underneath ice located at the north shore of Icy Island",
+    "description": "I use this fishing spot for Icefish around levels 40-49. Route note: is a cluster of fish underneath ice located at the north shore of Icy Island. Nodes: [45■]. Mob pressure: None. Tools: T6 Fishing Rod (45-55).",
     "tags": [
       "profession",
       "fishing",
@@ -1450,7 +1450,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Icefish - cluster of fish underneath ice located at the south…",
     "category": "profession_fishing",
     "region": "cluster of fish underneath ice located at the south shore of the aforementioned Icy Island",
-    "description": "Fishing spot for Icefish. Recommended for profession levels 40-49. Nodes: [45■]. Mob pressure: None. Suggested tools: T6 Fishing Rod (45-55). is a cluster of fish underneath ice located at the south shore of the aforementioned Icy Island",
+    "description": "I use this fishing spot for Icefish around levels 40-49. Route note: is a cluster of fish underneath ice located at the south shore of the aforementioned Icy Island. Nodes: [45■]. Mob pressure: None. Tools: T6 Fishing Rod (45-55).",
     "tags": [
       "profession",
       "fishing",
@@ -1469,7 +1469,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Icefish - unfrozen part of a river in the Lusuco region",
     "category": "profession_fishing",
     "region": "unfrozen part of a river in the Lusuco region",
-    "description": "Fishing spot for Icefish. Recommended for profession levels 40-49. Nodes: [11■]. Mob pressure: Medium. Suggested tools: T6 Fishing Rod (45-55). is an unfrozen part of a river in the Lusuco region",
+    "description": "I use this fishing spot for Icefish around levels 40-49. Route note: is an unfrozen part of a river in the Lusuco region. Nodes: [11■]. Mob pressure: Medium. Tools: T6 Fishing Rod (45-55).",
     "tags": [
       "profession",
       "fishing",
@@ -1488,7 +1488,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Iron - but they will usually leak in",
     "category": "profession_mining",
     "region": "but they will usually leak in",
-    "description": "Mining spot for Iron. Recommended for profession levels 40-49. Nodes: [20■]. Mob pressure: Low. Suggested tools: T6 Pickaxe (45-55). is a cavern west of the Tower of Ascension - mobs don’t spawn inside the cavern, but they will usually leak in",
+    "description": "I use this mining spot for Iron around levels 40-49. Route note: is a cavern west of the Tower of Ascension - mobs don’t spawn inside the cavern, but they will usually leak in. Nodes: [20■]. Mob pressure: Low. Tools: T6 Pickaxe (45-55).",
     "tags": [
       "profession",
       "mining",
@@ -1507,7 +1507,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Iron - collection of iron rocks on the southernmost island…",
     "category": "profession_mining",
     "region": "collection of iron rocks on the southernmost island where the Seaskipper Merchant is - this spot isn’t recommended because of the amount of mobs and you need a Climbing Helmet to explore this place",
-    "description": "Mining spot for Iron. Recommended for profession levels 40-49. Nodes: [13■]. Mob pressure: High. Suggested tools: T6 Pickaxe (45-55). is a collection of iron rocks on the southernmost island where the Seaskipper Merchant is - this spot isn’t recommended because of the amount of mobs and you need a Climbing Helmet to explore this place",
+    "description": "I use this mining spot for Iron around levels 40-49. Route note: is a collection of iron rocks on the southernmost island where the Seaskipper Merchant is - this spot isn’t recommended because of the amount of mobs and you need a Climbing Helmet to explore this place. Nodes: [13■]. Mob pressure: High. Tools: T6 Pickaxe (45-55).",
     "tags": [
       "profession",
       "mining",
@@ -1526,7 +1526,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Iron - few iron rocks across the river from the Fishing Do…",
     "category": "profession_mining",
     "region": "few iron rocks across the river from the Fishing Docks",
-    "description": "Mining spot for Iron. Recommended for profession levels 40-49. Nodes: [14■]. Mob pressure: Very Low. Suggested tools: T6 Pickaxe (45-55). are a few iron rocks across the river from the Fishing Docks",
+    "description": "I use this mining spot for Iron around levels 40-49. Route note: are a few iron rocks across the river from the Fishing Docks. Nodes: [14■]. Mob pressure: Very Low. Tools: T6 Pickaxe (45-55).",
     "tags": [
       "profession",
       "mining",
@@ -1545,7 +1545,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Iron - the territory",
     "category": "profession_mining",
     "region": "the territory",
-    "description": "Mining spot for Iron. Recommended for profession levels 40-49. Nodes: [13■]. Mob pressure: Very Low. Suggested tools: T6 Pickaxe (45-55). is an packed iron deposit on the surface, southwest of Olux, in the territory, Swamp Plains Basin",
+    "description": "I use this mining spot for Iron around levels 40-49. Route note: is an packed iron deposit on the surface, southwest of Olux, in the territory, Swamp Plains Basin. Nodes: [13■]. Mob pressure: Very Low. Tools: T6 Pickaxe (45-55).",
     "tags": [
       "profession",
       "mining",
@@ -1564,7 +1564,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Jungle - coords for the Troms Jungle a jungle that borders t…",
     "category": "profession_woodcutting",
     "region": "coords for the Troms Jungle a jungle that borders the large Dernel Jungle and the City of Troms",
-    "description": "Woodcutting spot for Jungle. Recommended for profession levels 50-59. Nodes: [50+■]. Mob pressure: High. Suggested tools: T7 Axe (55-65). are the general coords for the Troms Jungle a jungle that borders the large Dernel Jungle and the City of Troms (which also has jungle nodes)",
+    "description": "I use this woodcutting spot for Jungle around levels 50-59. Route note: are the general coords for the Troms Jungle a jungle that borders the large Dernel Jungle and the City of Troms (which also has jungle nodes). Nodes: [50+■]. Mob pressure: High. Tools: T7 Axe (55-65).",
     "tags": [
       "profession",
       "woodcutting",
@@ -1583,7 +1583,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Jungle - part of the light peninsula which is only accessibl…",
     "category": "profession_woodcutting",
     "region": "part of the light peninsula which is only accessible via a weird-infested cave located at -953 -4345 (this spot is courtesy of",
-    "description": "Woodcutting spot for Jungle. Recommended for profession levels 50-59. Nodes: [12■]. Suggested tools: T7 Axe (55-65). is a part of the light peninsula which is only accessible via a weird-infested cave located at -953 -4345 (this spot is courtesy of",
+    "description": "I use this woodcutting spot for Jungle around levels 50-59. Route note: is a part of the light peninsula which is only accessible via a weird-infested cave located at -953 -4345 (this spot is courtesy of. Nodes: [12■]. Tools: T7 Axe (55-65).",
     "tags": [
       "profession",
       "woodcutting",
@@ -1602,7 +1602,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Jungle - spot in the northwestern corner of the Dernel Jungl…",
     "category": "profession_woodcutting",
     "region": "spot in the northwestern corner of the Dernel Jungle close to the Sodeta Mansion - to top it off",
-    "description": "Woodcutting spot for Jungle. Recommended for profession levels 50-59. Nodes: [20+■]. Mob pressure: None. Suggested tools: T7 Axe (55-65). is a spot in the northwestern corner of the Dernel Jungle ( ) close to the Sodeta Mansion (courtesy of Olinus10) - to top it off, this spot has no mobs",
+    "description": "I use this woodcutting spot for Jungle around levels 50-59. Route note: is a spot in the northwestern corner of the Dernel Jungle ( ) close to the Sodeta Mansion (courtesy of Olinus10) - to top it off, this spot has no mobs. Nodes: [20+■]. Mob pressure: None. Tools: T7 Axe (55-65).",
     "tags": [
       "profession",
       "woodcutting",
@@ -1621,7 +1621,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Jungle - spot in the northwestern corner of the Dernel Jungl…",
     "category": "profession_woodcutting",
     "region": "spot in the northwestern corner of the Dernel Jungle close to the Sodeta Mansion - to top it off",
-    "description": "Woodcutting spot for Jungle. Recommended for profession levels 50-59. Nodes: [20+■]. Mob pressure: None. Suggested tools: T7 Axe (55-65). is a spot in the northwestern corner of the Dernel Jungle ( ) close to the Sodeta Mansion (courtesy of Olinus10) - to top it off, this spot has no mobs",
+    "description": "I use this woodcutting spot for Jungle around levels 50-59. Route note: is a spot in the northwestern corner of the Dernel Jungle ( ) close to the Sodeta Mansion (courtesy of Olinus10) - to top it off, this spot has no mobs. Nodes: [20+■]. Mob pressure: None. Tools: T7 Axe (55-65).",
     "tags": [
       "profession",
       "woodcutting",
@@ -1640,7 +1640,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Kanderstone - cluster of kanderstone on the east border of the Ka…",
     "category": "profession_mining",
     "region": "cluster of kanderstone on the east border of the Kander Forest in the territory",
-    "description": "Mining spot for Kanderstone. Recommended for profession levels 70-79. Nodes: [14■]. Mob pressure: Low. Suggested tools: T9 Pickaxe (75-85). is a cluster of kanderstone on the east border of the Kander Forest in the territory, Fallen Village",
+    "description": "I use this mining spot for Kanderstone around levels 70-79. Route note: is a cluster of kanderstone on the east border of the Kander Forest in the territory, Fallen Village. Nodes: [14■]. Mob pressure: Low. Tools: T9 Pickaxe (75-85).",
     "tags": [
       "profession",
       "mining",
@@ -1659,7 +1659,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Kanderstone - mine in the area known as the Kander Mountains abov…",
     "category": "profession_mining",
     "region": "mine in the area known as the Kander Mountains above Lexdale’s Penitentiary",
-    "description": "Mining spot for Kanderstone. Recommended for profession levels 70-79. Nodes: [12■]. Mob pressure: None. Suggested tools: T9 Pickaxe (75-85). is a mine in the area known as the Kander Mountains (it’s marked on the Wynntils map) above Lexdale’s Penitentiary",
+    "description": "I use this mining spot for Kanderstone around levels 70-79. Route note: is a mine in the area known as the Kander Mountains (it’s marked on the Wynntils map) above Lexdale’s Penitentiary. Nodes: [12■]. Mob pressure: None. Tools: T9 Pickaxe (75-85).",
     "tags": [
       "profession",
       "mining",
@@ -1678,7 +1678,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Kanderstone - quarry near the Mining Level 78 Gathering Post in t…",
     "category": "profession_mining",
     "region": "quarry near the Mining Level 78 Gathering Post in the territory",
-    "description": "Mining spot for Kanderstone. Recommended for profession levels 70-79. Nodes: [10■]. Mob pressure: Very Low. Suggested tools: T9 Pickaxe (75-85). is a small quarry near the Mining Level 78 Gathering Post in the territory, Kander Mines",
+    "description": "I use this mining spot for Kanderstone around levels 70-79. Route note: is a small quarry near the Mining Level 78 Gathering Post in the territory, Kander Mines. Nodes: [10■]. Mob pressure: Very Low. Tools: T9 Pickaxe (75-85).",
     "tags": [
       "profession",
       "mining",
@@ -1697,7 +1697,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Kanderstone - strip of kanderstone along the cliffside of the Vis…",
     "category": "profession_mining",
     "region": "strip of kanderstone along the cliffside of the Viscera Pits East",
-    "description": "Mining spot for Kanderstone. Recommended for profession levels 70-79. Nodes: [22■]. Mob pressure: Medium. Suggested tools: T9 Pickaxe (75-85). is a strip of kanderstone along the cliffside of the Viscera Pits East",
+    "description": "I use this mining spot for Kanderstone around levels 70-79. Route note: is a strip of kanderstone along the cliffside of the Viscera Pits East. Nodes: [22■]. Mob pressure: Medium. Tools: T9 Pickaxe (75-85).",
     "tags": [
       "profession",
       "mining",
@@ -1716,7 +1716,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Koi - body of water around the Fountain of Youth in the D…",
     "category": "profession_fishing",
     "region": "body of water around the Fountain of Youth in the Dernel Jungle",
-    "description": "Fishing spot for Koi. Recommended for profession levels 60-69. Nodes: [21■]. Suggested tools: T8 Fishing Rod (65-75). is a body of water around the Fountain of Youth in the Dernel Jungle, for leveling, just use the 15 node spot",
+    "description": "I use this fishing spot for Koi around levels 60-69. Route note: is a body of water around the Fountain of Youth in the Dernel Jungle, for leveling, just use the 15 node spot. Nodes: [21■]. Tools: T8 Fishing Rod (65-75).",
     "tags": [
       "profession",
       "fishing",
@@ -1735,7 +1735,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Koi - body of water around the Fountain of Youth in the D…",
     "category": "profession_fishing",
     "region": "body of water around the Fountain of Youth in the Dernel Jungle",
-    "description": "Fishing spot for Koi. Recommended for profession levels 60-69. Nodes: [21■/1■+2■+3■+15■]. Mob pressure: Very Low. Suggested tools: T8 Fishing Rod (65-75). is a body of water around the Fountain of Youth in the Dernel Jungle, for leveling, just use the 15 node spot",
+    "description": "I use this fishing spot for Koi around levels 60-69. Route note: is a body of water around the Fountain of Youth in the Dernel Jungle, for leveling, just use the 15 node spot. Nodes: [21■/1■+2■+3■+15■]. Mob pressure: Very Low. Tools: T8 Fishing Rod (65-75).",
     "tags": [
       "profession",
       "fishing",
@@ -1754,7 +1754,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Koi - pond in the Dernel Jungle which is also used to gri…",
     "category": "profession_fishing",
     "region": "pond in the Dernel Jungle which is also used to grind crafting ingredients",
-    "description": "Fishing spot for Koi. Recommended for profession levels 60-69. Nodes: [12■]. Mob pressure: Medium. Suggested tools: T8 Fishing Rod (65-75). is a large pond in the Dernel Jungle which is also used to grind crafting ingredients",
+    "description": "I use this fishing spot for Koi around levels 60-69. Route note: is a large pond in the Dernel Jungle which is also used to grind crafting ingredients. Nodes: [12■]. Mob pressure: Medium. Tools: T8 Fishing Rod (65-75).",
     "tags": [
       "profession",
       "fishing",
@@ -1773,7 +1773,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Light - adjacent to The Forgery",
     "category": "profession_woodcutting",
     "region": "adjacent to The Forgery",
-    "description": "Woodcutting spot for Light. Recommended for profession levels 70-79. Nodes: [15+■]. Mob pressure: Medium. Suggested tools: T9 Axe (75-85). is a spot in the northeastern corner of The Light Forest, adjacent to The Forgery, and bordering The Kander Forest (courtesy of Olinus10, once again)",
+    "description": "I use this woodcutting spot for Light around levels 70-79. Route note: is a spot in the northeastern corner of The Light Forest, adjacent to The Forgery, and bordering The Kander Forest (courtesy of Olinus10, once again). Nodes: [15+■]. Mob pressure: Medium. Tools: T9 Axe (75-85).",
     "tags": [
       "profession",
       "woodcutting",
@@ -1792,7 +1792,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Light - the largest forest in the entirety of the Wynncraft…",
     "category": "profession_woodcutting",
     "region": "the largest forest in the entirety of the Wynncraft map with level 70 mobs",
-    "description": "Woodcutting spot for Light. Recommended for profession levels 70-79. Nodes: [200+■]. Mob pressure: Very High. Suggested tools: T9 Axe (75-85). are the general coords for the Light Forest, the largest forest in the entirety of the Wynncraft map with level 70 mobs",
+    "description": "I use this woodcutting spot for Light around levels 70-79. Route note: are the general coords for the Light Forest, the largest forest in the entirety of the Wynncraft map with level 70 mobs. Nodes: [200+■]. Mob pressure: Very High. Tools: T9 Axe (75-85).",
     "tags": [
       "profession",
       "woodcutting",
@@ -1811,7 +1811,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Malt - singular field of malt by the Almuj River",
     "category": "profession_farming",
     "region": "singular field of malt by the Almuj River",
-    "description": "Farming spot for Malt. Recommended for profession levels 30-39. Nodes: [9■]. Mob pressure: Medium. Suggested tools: T5 Scythe (35-45). is a singular field of malt by the Almuj River",
+    "description": "I use this farming spot for Malt around levels 30-39. Route note: is a singular field of malt by the Almuj River. Nodes: [9■]. Mob pressure: Medium. Tools: T5 Scythe (35-45).",
     "tags": [
       "profession",
       "farming",
@@ -1830,7 +1830,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Malt - small farms in Rymek East Upper",
     "category": "profession_farming",
     "region": "small farms in Rymek East Upper",
-    "description": "Farming spot for Malt. Recommended for profession levels 30-39. Nodes: [14■]. Mob pressure: Very Low. Suggested tools: T5 Scythe (35-45). are multiple small farms in Rymek East Upper, close to a gathering post",
+    "description": "I use this farming spot for Malt around levels 30-39. Route note: are multiple small farms in Rymek East Upper, close to a gathering post. Nodes: [14■]. Mob pressure: Very Low. Tools: T5 Scythe (35-45).",
     "tags": [
       "profession",
       "farming",
@@ -1849,7 +1849,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Malt - southwestern island in the Durum Isles",
     "category": "profession_farming",
     "region": "southwestern island in the Durum Isles",
-    "description": "Farming spot for Malt. Recommended for profession levels 30-39. Nodes: [15■]. Mob pressure: Low. Suggested tools: T5 Scythe (35-45). is the southwestern island in the Durum Isles, this area can be accessed via the Seaskipper Merchant",
+    "description": "I use this farming spot for Malt around levels 30-39. Route note: is the southwestern island in the Durum Isles, this area can be accessed via the Seaskipper Merchant. Nodes: [15■]. Mob pressure: Low. Tools: T5 Scythe (35-45).",
     "tags": [
       "profession",
       "farming",
@@ -1868,7 +1868,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Millet - field in the shape of a spiral right by the entranc…",
     "category": "profession_farming",
     "region": "field in the shape of a spiral right by the entrance to Light Forest",
-    "description": "Farming spot for Millet. Recommended for profession levels 60-69. Nodes: [14■]. Mob pressure: Medium. Suggested tools: T8 Scythe (65-75). is a field in the shape of a spiral right by the entrance to Light Forest",
+    "description": "I use this farming spot for Millet around levels 60-69. Route note: is a field in the shape of a spiral right by the entrance to Light Forest. Nodes: [14■]. Mob pressure: Medium. Tools: T8 Scythe (65-75).",
     "tags": [
       "profession",
       "farming",
@@ -1887,7 +1887,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Millet - shown in the quest",
     "category": "profession_farming",
     "region": "shown in the quest",
-    "description": "Farming spot for Millet. Recommended for profession levels 60-69. Nodes: [14■]. Mob pressure: Medium. Suggested tools: T8 Scythe (65-75). is the location of a large field behind the Farming Level 61 Gathering Post and Arnod’s house, shown in the quest, From the Mountains",
+    "description": "I use this farming spot for Millet around levels 60-69. Route note: is the location of a large field behind the Farming Level 61 Gathering Post and Arnod’s house, shown in the quest, From the Mountains. Nodes: [14■]. Mob pressure: Medium. Tools: T8 Scythe (65-75).",
     "tags": [
       "profession",
       "farming",
@@ -1906,7 +1906,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Millet - yard with 16 millet nodes and 18 decay root nodes s…",
     "category": "profession_farming",
     "region": "yard with 16 millet nodes and 18 decay root nodes southeast of Gelibord and near the Farming Level 78 Gathering Post",
-    "description": "Farming spot for Millet. Recommended for profession levels 60-69. Nodes: [16■]. Mob pressure: Low. Suggested tools: T8 Scythe (65-75). is a large yard with 16 millet nodes and 18 decay root nodes southeast of Gelibord and near the Farming Level 78 Gathering Post",
+    "description": "I use this farming spot for Millet around levels 60-69. Route note: is a large yard with 16 millet nodes and 18 decay root nodes southeast of Gelibord and near the Farming Level 78 Gathering Post. Nodes: [16■]. Mob pressure: Low. Tools: T8 Scythe (65-75).",
     "tags": [
       "profession",
       "farming",
@@ -1925,7 +1925,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Molten - cave behind a group of mobs near the Mining Level 9…",
     "category": "profession_mining",
     "region": "cave behind a group of mobs near the Mining Level 93 Gathering Post",
-    "description": "Mining spot for Molten. Recommended for profession levels 90-99. Nodes: [11■]. Mob pressure: High. Suggested tools: T11 Pickaxe (95-105). is a cave behind a group of mobs near the Mining Level 93 Gathering Post",
+    "description": "I use this mining spot for Molten around levels 90-99. Route note: is a cave behind a group of mobs near the Mining Level 93 Gathering Post. Nodes: [11■]. Mob pressure: High. Tools: T11 Pickaxe (95-105).",
     "tags": [
       "profession",
       "mining",
@@ -1944,7 +1944,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Molten - group of four clusters of molten near the Mining Le…",
     "category": "profession_mining",
     "region": "group of four clusters of molten near the Mining Level 98 Gathering Post in the territory",
-    "description": "Mining spot for Molten. Recommended for profession levels 90-99. Nodes: [13■]. Mob pressure: Medium. Suggested tools: T11 Pickaxe (95-105). are a group of four clusters of molten near the Mining Level 98 Gathering Post in the territory, Lava Lake Bridge",
+    "description": "I use this mining spot for Molten around levels 90-99. Route note: are a group of four clusters of molten near the Mining Level 98 Gathering Post in the territory, Lava Lake Bridge. Nodes: [13■]. Mob pressure: Medium. Tools: T11 Pickaxe (95-105).",
     "tags": [
       "profession",
       "mining",
@@ -1963,7 +1963,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Molten - Maex Resource Mine which is a mine that costs 16EB…",
     "category": "profession_mining",
     "region": "Maex Resource Mine which is a mine that costs 16EB per use and has a total of 19 diamond nodes",
-    "description": "Mining spot for Molten. Recommended for profession levels 90-99. Nodes: [28■]. Mob pressure: None. Suggested tools: T11 Pickaxe (95-105). is the Maex Resource Mine which is a mine that costs 16EB per use and has a total of 19 diamond nodes, 28 molten nodes, and 3 voidstone nodes - to gain access to the Maex Resource mine, you must first do the quest, Dwarves and Doguns IV",
+    "description": "I use this mining spot for Molten around levels 90-99. Route note: is the Maex Resource Mine which is a mine that costs 16EB per use and has a total of 19 diamond nodes, 28 molten nodes, and 3 voidstone nodes - to gain access to the Maex Resource mine, you must first do the quest, Dwarves and Doguns IV. Nodes: [28■]. Mob pressure: None. Tools: T11 Pickaxe (95-105).",
     "tags": [
       "profession",
       "mining",
@@ -1982,7 +1982,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Molten - molten nodes around a lava pond near the Mining Lev…",
     "category": "profession_mining",
     "region": "molten nodes around a lava pond near the Mining Level 96 Gathering Post",
-    "description": "Mining spot for Molten. Recommended for profession levels 90-99. Nodes: [11■]. Mob pressure: Very Low. Suggested tools: T11 Pickaxe (95-105). are multiple molten nodes around a lava pond near the Mining Level 96 Gathering Post",
+    "description": "I use this mining spot for Molten around levels 90-99. Route note: are multiple molten nodes around a lava pond near the Mining Level 96 Gathering Post. Nodes: [11■]. Mob pressure: Very Low. Tools: T11 Pickaxe (95-105).",
     "tags": [
       "profession",
       "mining",
@@ -2001,7 +2001,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Molten Fish - -5085 and -5055 is two close locations in a lake be…",
     "category": "profession_fishing",
     "region": "-5085 and -5055 is two close locations in a lake behind the Molten Heights Portal",
-    "description": "Fishing spot for Molten Fish. Recommended for profession levels 90-99. Nodes: [23​​■/16■+7■]. Mob pressure: Medium. Suggested tools: T11 Fishing Rod (95-105). -5085 and -5055 is two close locations in a lake behind the Molten Heights Portal (shown in the quest Dwarves and Doguns Part V), you can get up here via Molten Heights elevators but it requires the quest Dwarves and Doguns Part V",
+    "description": "I use this fishing spot for Molten Fish around levels 90-99. Route note: -5085 and -5055 is two close locations in a lake behind the Molten Heights Portal (shown in the quest Dwarves and Doguns Part V), you can get up here via Molten Heights elevators but it requires the quest Dwarves and Doguns Part V. Nodes: [23​​■/16■+7■]. Mob pressure: Medium. Tools: T11 Fishing Rod (95-105).",
     "tags": [
       "profession",
       "fishing",
@@ -2020,7 +2020,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Molten Fish - -5085 and -5055 is two close locations in a lake be…",
     "category": "profession_fishing",
     "region": "-5085 and -5055 is two close locations in a lake behind the Molten Heights Portal",
-    "description": "Fishing spot for Molten Fish. Recommended for profession levels 90-99. Nodes: [23​​■/16■+7■]. Mob pressure: Medium. Suggested tools: T11 Fishing Rod (95-105). -5085 and -5055 is two close locations in a lake behind the Molten Heights Portal (shown in the quest Dwarves and Doguns Part V), you can get up here via Molten Heights elevators but it requires the quest Dwarves and Doguns Part V",
+    "description": "I use this fishing spot for Molten Fish around levels 90-99. Route note: -5085 and -5055 is two close locations in a lake behind the Molten Heights Portal (shown in the quest Dwarves and Doguns Part V), you can get up here via Molten Heights elevators but it requires the quest Dwarves and Doguns Part V. Nodes: [23​​■/16■+7■]. Mob pressure: Medium. Tools: T11 Fishing Rod (95-105).",
     "tags": [
       "profession",
       "fishing",
@@ -2039,7 +2039,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Molten Fish - enterance to a cave close to Eltom which connects t…",
     "category": "profession_fishing",
     "region": "enterance to a cave close to Eltom which connects to a straight-line river of 41 molten eel nodes",
-    "description": "Fishing spot for Molten Fish. Recommended for profession levels 90-99. Nodes: [41■]. Mob pressure: None. Suggested tools: T11 Fishing Rod (95-105). is the enterance to a cave close to Eltom which connects to a straight-line river of 41 molten eel nodes",
+    "description": "I use this fishing spot for Molten Fish around levels 90-99. Route note: is the enterance to a cave close to Eltom which connects to a straight-line river of 41 molten eel nodes. Nodes: [41■]. Mob pressure: None. Tools: T11 Fishing Rod (95-105).",
     "tags": [
       "profession",
       "fishing",
@@ -2058,7 +2058,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Molten Fish - Maex Resource Mine",
     "category": "profession_fishing",
     "region": "Maex Resource Mine",
-    "description": "Fishing spot for Molten Fish. Recommended for profession levels 90-99. Nodes: [27■]. Mob pressure: None. Suggested tools: T11 Fishing Rod (95-105). is the Maex Resource Mine, there are no mobs, and it costs 16EB per use",
+    "description": "I use this fishing spot for Molten Fish around levels 90-99. Route note: is the Maex Resource Mine, there are no mobs, and it costs 16EB per use. Nodes: [27■]. Mob pressure: None. Tools: T11 Fishing Rod (95-105).",
     "tags": [
       "profession",
       "fishing",
@@ -2077,7 +2077,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Oak - 37 oak trees located inside of Llevigar",
     "category": "profession_woodcutting",
     "region": "37 oak trees located inside of Llevigar",
-    "description": "Woodcutting spot for Oak. Recommended for profession levels 0-9. Nodes: [37■]. Mob pressure: None. Suggested tools: T1 Axe (0-5), T2 Axe (5-15). are the 37 oak trees located inside of Llevigar",
+    "description": "I use this woodcutting spot for Oak around levels 0-9. Route note: are the 37 oak trees located inside of Llevigar. Nodes: [37■]. Mob pressure: None. Tools: T1 Axe (0-5), T2 Axe (5-15).",
     "tags": [
       "profession",
       "woodcutting",
@@ -2096,7 +2096,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Oak - a forest with over 80 oak nodes - in terms of lowes…",
     "category": "profession_woodcutting",
     "region": "a forest with over 80 oak nodes - in terms of lowest mob density",
-    "description": "Woodcutting spot for Oak. Recommended for profession levels 0-9. Nodes: [80+■]. Mob pressure: Low. Suggested tools: T1 Axe (0-5), T2 Axe (5-15). is the entirety of the Nivla Forest, a forest with over 80 oak nodes - in terms of lowest mob density, the best area to grind woodcutting is Northwestern corner ( , courtesy of Olinus10)",
+    "description": "I use this woodcutting spot for Oak around levels 0-9. Route note: is the entirety of the Nivla Forest, a forest with over 80 oak nodes - in terms of lowest mob density, the best area to grind woodcutting is Northwestern corner ( , courtesy of Olinus10). Nodes: [80+■]. Mob pressure: Low. Tools: T1 Axe (0-5), T2 Axe (5-15).",
     "tags": [
       "profession",
       "woodcutting",
@@ -2115,7 +2115,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Oak - a forest with over 80 oak nodes - in terms of lowes…",
     "category": "profession_woodcutting",
     "region": "a forest with over 80 oak nodes - in terms of lowest mob density",
-    "description": "Woodcutting spot for Oak. Recommended for profession levels 0-9. Nodes: [80+■]. Mob pressure: Low. Suggested tools: T1 Axe (0-5), T2 Axe (5-15). is the entirety of the Nivla Forest, a forest with over 80 oak nodes - in terms of lowest mob density, the best area to grind woodcutting is Northwestern corner ( , courtesy of Olinus10)",
+    "description": "I use this woodcutting spot for Oak around levels 0-9. Route note: is the entirety of the Nivla Forest, a forest with over 80 oak nodes - in terms of lowest mob density, the best area to grind woodcutting is Northwestern corner ( , courtesy of Olinus10). Nodes: [80+■]. Mob pressure: Low. Tools: T1 Axe (0-5), T2 Axe (5-15).",
     "tags": [
       "profession",
       "woodcutting",
@@ -2134,7 +2134,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Oak - grove of oak trees north of Theasead",
     "category": "profession_woodcutting",
     "region": "grove of oak trees north of Theasead",
-    "description": "Woodcutting spot for Oak. Recommended for profession levels 0-9. Nodes: [21■]. Mob pressure: None. Suggested tools: T1 Axe (0-5), T2 Axe (5-15). is a grove of oak trees north of Theasead",
+    "description": "I use this woodcutting spot for Oak around levels 0-9. Route note: is a grove of oak trees north of Theasead. Nodes: [21■]. Mob pressure: None. Tools: T1 Axe (0-5), T2 Axe (5-15).",
     "tags": [
       "profession",
       "woodcutting",
@@ -2153,7 +2153,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Oat - Bremminglar",
     "category": "profession_farming",
     "region": "Bremminglar",
-    "description": "Farming spot for Oat. Recommended for profession levels 20-29. Nodes: [13■]. Mob pressure: None. Suggested tools: T4 Scythe (25-35). is a patch of oat near the Lion’s Den, east of Bremminglar",
+    "description": "I use this farming spot for Oat around levels 20-29. Route note: is a patch of oat near the Lion’s Den, east of Bremminglar. Nodes: [13■]. Mob pressure: None. Tools: T4 Scythe (25-35).",
     "tags": [
       "profession",
       "farming",
@@ -2172,7 +2172,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Oat - southeastern island in the Durum Isles",
     "category": "profession_farming",
     "region": "southeastern island in the Durum Isles",
-    "description": "Farming spot for Oat. Recommended for profession levels 20-29. Nodes: [12■]. Mob pressure: Low. Suggested tools: T4 Scythe (25-35). is the southeastern island in the Durum Isles, this area can be accessed via the Seaskipper Merchant",
+    "description": "I use this farming spot for Oat around levels 20-29. Route note: is the southeastern island in the Durum Isles, this area can be accessed via the Seaskipper Merchant. Nodes: [12■]. Mob pressure: Low. Tools: T4 Scythe (25-35).",
     "tags": [
       "profession",
       "farming",
@@ -2191,7 +2191,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Oat - two close locations in the territory Savannah West…",
     "category": "profession_farming",
     "region": "two close locations in the territory Savannah West Upper",
-    "description": "Farming spot for Oat. Recommended for profession levels 20-29. Nodes: [22■/13■+9■]. Mob pressure: Medium. Suggested tools: T4 Scythe (25-35). are two close locations in the territory Savannah West Upper",
+    "description": "I use this farming spot for Oat around levels 20-29. Route note: are two close locations in the territory Savannah West Upper. Nodes: [22■/13■+9■]. Mob pressure: Medium. Tools: T4 Scythe (25-35).",
     "tags": [
       "profession",
       "farming",
@@ -2210,7 +2210,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Oat - two close locations in the territory Savannah West…",
     "category": "profession_farming",
     "region": "two close locations in the territory Savannah West Upper",
-    "description": "Farming spot for Oat. Recommended for profession levels 20-29. Nodes: [22■/13■+9■]. Mob pressure: Medium. Suggested tools: T4 Scythe (25-35). are two close locations in the territory Savannah West Upper",
+    "description": "I use this farming spot for Oat around levels 20-29. Route note: are two close locations in the territory Savannah West Upper. Nodes: [22■/13■+9■]. Mob pressure: Medium. Tools: T4 Scythe (25-35).",
     "tags": [
       "profession",
       "farming",
@@ -2229,7 +2229,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Pine - a canyon that blocks The Molten Heights and The Sky…",
     "category": "profession_woodcutting",
     "region": "a canyon that blocks The Molten Heights and The Sky Islands from the rest of Gavel",
-    "description": "Woodcutting spot for Pine. Recommended for profession levels 80-89. Nodes: [200+■]. Mob pressure: Very High. Suggested tools: T10 Axe (85-95). are the general coords for The Canyon of The Lost, a canyon that blocks The Molten Heights and The Sky Islands from the rest of Gavel, each part has varying mobs",
+    "description": "I use this woodcutting spot for Pine around levels 80-89. Route note: are the general coords for The Canyon of The Lost, a canyon that blocks The Molten Heights and The Sky Islands from the rest of Gavel, each part has varying mobs. Nodes: [200+■]. Mob pressure: Very High. Tools: T10 Axe (85-95).",
     "tags": [
       "profession",
       "woodcutting",
@@ -2248,7 +2248,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Pine - spot right outside of Thesead with no mobs",
     "category": "profession_woodcutting",
     "region": "spot right outside of Thesead with no mobs",
-    "description": "Woodcutting spot for Pine. Recommended for profession levels 80-89. Nodes: [26■]. Mob pressure: None. Suggested tools: T10 Axe (85-95). is a spot right outside of Thesead with no mobs, and 26 pine nodes (courtesy of Olinus10)",
+    "description": "I use this woodcutting spot for Pine around levels 80-89. Route note: is a spot right outside of Thesead with no mobs, and 26 pine nodes (courtesy of Olinus10). Nodes: [26■]. Mob pressure: None. Tools: T10 Axe (85-95).",
     "tags": [
       "profession",
       "woodcutting",
@@ -2267,7 +2267,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Piranha - lake with 15 spread out nodes located near The City…",
     "category": "profession_fishing",
     "region": "lake with 15 spread out nodes located near The City of Troms",
-    "description": "Fishing spot for Piranha. Recommended for profession levels 50-59. Nodes: [15■]. Mob pressure: None. Suggested tools: T7 Fishing Rod (55-65). is a large lake with 15 spread out nodes located near The City of Troms",
+    "description": "I use this fishing spot for Piranha around levels 50-59. Route note: is a large lake with 15 spread out nodes located near The City of Troms. Nodes: [15■]. Mob pressure: None. Tools: T7 Fishing Rod (55-65).",
     "tags": [
       "profession",
       "fishing",
@@ -2286,7 +2286,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Piranha - pond next to Iboju Village",
     "category": "profession_fishing",
     "region": "pond next to Iboju Village",
-    "description": "Fishing spot for Piranha. Recommended for profession levels 50-59. Nodes: [10■]. Mob pressure: None. Suggested tools: T7 Fishing Rod (55-65). is a small pond next to Iboju Village",
+    "description": "I use this fishing spot for Piranha around levels 50-59. Route note: is a small pond next to Iboju Village. Nodes: [10■]. Mob pressure: None. Tools: T7 Fishing Rod (55-65).",
     "tags": [
       "profession",
       "fishing",
@@ -2305,7 +2305,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Piranha - which have nodes of all types except woodcutting an…",
     "category": "profession_fishing",
     "region": "which have nodes of all types except woodcutting and it requires the quest",
-    "description": "Fishing spot for Piranha. Recommended for profession levels 50-59. Nodes: [9■]. Suggested tools: T7 Fishing Rod (55-65). is the entrance to the Resource Tunnels, which have nodes of all types except woodcutting and it requires the quest",
+    "description": "I use this fishing spot for Piranha around levels 50-59. Route note: is the entrance to the Resource Tunnels, which have nodes of all types except woodcutting and it requires the quest. Nodes: [9■]. Tools: T7 Fishing Rod (55-65).",
     "tags": [
       "profession",
       "fishing",
@@ -2324,7 +2324,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Rice - 3 large fields or rice in the Abandoned Farms",
     "category": "profession_farming",
     "region": "3 large fields or rice in the Abandoned Farms",
-    "description": "Farming spot for Rice. Recommended for profession levels 80-89. Nodes: [11■]. Mob pressure: Low. Suggested tools: T10 Scythe (85-95). are 3 large fields or rice in the Abandoned Farms",
+    "description": "I use this farming spot for Rice around levels 80-89. Route note: are 3 large fields or rice in the Abandoned Farms. Nodes: [11■]. Mob pressure: Low. Tools: T10 Scythe (85-95).",
     "tags": [
       "profession",
       "farming",
@@ -2343,7 +2343,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Rice - pasture by a cottage near the Cliffside Waterfall",
     "category": "profession_farming",
     "region": "pasture by a cottage near the Cliffside Waterfall",
-    "description": "Farming spot for Rice. Recommended for profession levels 80-89. Nodes: [10■]. Mob pressure: Medium. Suggested tools: T10 Scythe (85-95). is a small pasture by a cottage near the Cliffside Waterfall",
+    "description": "I use this farming spot for Rice around levels 80-89. Route note: is a small pasture by a cottage near the Cliffside Waterfall. Nodes: [10■]. Mob pressure: Medium. Tools: T10 Scythe (85-95).",
     "tags": [
       "profession",
       "farming",
@@ -2362,7 +2362,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Rice - patches of rice underneath the Path to Light in the…",
     "category": "profession_farming",
     "region": "patches of rice underneath the Path to Light in the Realm of Light. Access to ROL requires the quest Realm of Light V - The Realm of Light",
-    "description": "Farming spot for Rice. Recommended for profession levels 80-89. Nodes: [16■]. Mob pressure: High. Suggested tools: T10 Scythe (85-95). are patches of rice underneath the Path to Light in the Realm of Light. Access to ROL requires the quest Realm of Light V - The Realm of Light",
+    "description": "I use this farming spot for Rice around levels 80-89. Route note: are patches of rice underneath the Path to Light in the Realm of Light. Access to ROL requires the quest Realm of Light V - The Realm of Light. Nodes: [16■]. Mob pressure: High. Tools: T10 Scythe (85-95).",
     "tags": [
       "profession",
       "farming",
@@ -2381,7 +2381,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Rice - rice fields underneath the Sakura Dojo in the Cherr…",
     "category": "profession_farming",
     "region": "rice fields underneath the Sakura Dojo in the Cherry Blossom Forest",
-    "description": "Farming spot for Rice. Recommended for profession levels 80-89. Nodes: [15■]. Mob pressure: None. Suggested tools: T10 Scythe (85-95). are the rice fields underneath the Sakura Dojo in the Cherry Blossom Forest",
+    "description": "I use this farming spot for Rice around levels 80-89. Route note: are the rice fields underneath the Sakura Dojo in the Cherry Blossom Forest. Nodes: [15■]. Mob pressure: None. Tools: T10 Scythe (85-95).",
     "tags": [
       "profession",
       "farming",
@@ -2400,7 +2400,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Rye - farm by the Farming Level 53 Gathering Post",
     "category": "profession_farming",
     "region": "farm by the Farming Level 53 Gathering Post",
-    "description": "Farming spot for Rye. Recommended for profession levels 50-59. Nodes: [10■]. Mob pressure: Medium. Suggested tools: T7 Scythe (55-65). is a small farm by the Farming Level 53 Gathering Post",
+    "description": "I use this farming spot for Rye around levels 50-59. Route note: is a small farm by the Farming Level 53 Gathering Post. Nodes: [10■]. Mob pressure: Medium. Tools: T7 Scythe (55-65).",
     "tags": [
       "profession",
       "farming",
@@ -2419,7 +2419,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Rye - just west of Lari’s Camp",
     "category": "profession_farming",
     "region": "just west of Lari’s Camp",
-    "description": "Farming spot for Rye. Recommended for profession levels 50-59. Nodes: [12■]. Mob pressure: Very Low. Suggested tools: T7 Scythe (55-65). is a patch of farmland, just west of Lari’s Camp",
+    "description": "I use this farming spot for Rye around levels 50-59. Route note: is a patch of farmland, just west of Lari’s Camp. Nodes: [12■]. Mob pressure: Very Low. Tools: T7 Scythe (55-65).",
     "tags": [
       "profession",
       "farming",
@@ -2438,7 +2438,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Rye - the Farming Level 58 Gathering Post",
     "category": "profession_farming",
     "region": "the Farming Level 58 Gathering Post",
-    "description": "Farming spot for Rye. Recommended for profession levels 50-59. Nodes: [11■]. Mob pressure: Medium. Suggested tools: T7 Scythe (55-65). is a small, walled in area, near the Farming Level 58 Gathering Post",
+    "description": "I use this farming spot for Rye around levels 50-59. Route note: is a small, walled in area, near the Farming Level 58 Gathering Post. Nodes: [11■]. Mob pressure: Medium. Tools: T7 Scythe (55-65).",
     "tags": [
       "profession",
       "farming",
@@ -2457,7 +2457,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Salmon - bay located behind the Nemract Cathedral",
     "category": "profession_fishing",
     "region": "bay located behind the Nemract Cathedral",
-    "description": "Fishing spot for Salmon. Recommended for profession levels 20-29. Nodes: [13■]. Mob pressure: None. Suggested tools: T4 Fishing Rod (25-35). is a bay located behind the Nemract Cathedral",
+    "description": "I use this fishing spot for Salmon around levels 20-29. Route note: is a bay located behind the Nemract Cathedral. Nodes: [13■]. Mob pressure: None. Tools: T4 Fishing Rod (25-35).",
     "tags": [
       "profession",
       "fishing",
@@ -2476,7 +2476,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Salmon - nodes all along the river in the canyon parts of th…",
     "category": "profession_fishing",
     "region": "nodes all along the river in the canyon parts of the Pigmen’s Ravine",
-    "description": "Fishing spot for Salmon. Recommended for profession levels 20-29. Nodes: [25■]. Mob pressure: None. Suggested tools: T4 Fishing Rod (25-35). are nodes all along the river in the canyon parts of the Pigmen’s Ravine",
+    "description": "I use this fishing spot for Salmon around levels 20-29. Route note: are nodes all along the river in the canyon parts of the Pigmen’s Ravine. Nodes: [25■]. Mob pressure: None. Tools: T4 Fishing Rod (25-35).",
     "tags": [
       "profession",
       "fishing",
@@ -2495,7 +2495,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Salmon - river located in the Dark Forest",
     "category": "profession_fishing",
     "region": "river located in the Dark Forest",
-    "description": "Fishing spot for Salmon. Recommended for profession levels 20-29. Nodes: [13■]. Mob pressure: High. Suggested tools: T4 Fishing Rod (25-35). is a river located in the Dark Forest, not too far from Gelibord",
+    "description": "I use this fishing spot for Salmon around levels 20-29. Route note: is a river located in the Dark Forest, not too far from Gelibord. Nodes: [13■]. Mob pressure: High. Tools: T4 Fishing Rod (25-35).",
     "tags": [
       "profession",
       "fishing",
@@ -2514,7 +2514,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Sandstone - Rymek East Mid",
     "category": "profession_mining",
     "region": "Rymek East Mid",
-    "description": "Mining spot for Sandstone. Recommended for profession levels 30-39. Nodes: [18■]. Mob pressure: Very Low. Suggested tools: T5 Pickaxe (35-45). are a collection of sandstone nodes all in the mines in the easternmost part of the territory, Rymek East Mid",
+    "description": "I use this mining spot for Sandstone around levels 30-39. Route note: are a collection of sandstone nodes all in the mines in the easternmost part of the territory, Rymek East Mid. Nodes: [18■]. Mob pressure: Very Low. Tools: T5 Pickaxe (35-45).",
     "tags": [
       "profession",
       "mining",
@@ -2533,7 +2533,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Sandstone - Rymek West Mid",
     "category": "profession_mining",
     "region": "Rymek West Mid",
-    "description": "Mining spot for Sandstone. Recommended for profession levels 30-39. Nodes: [14■]. Mob pressure: Medium. Suggested tools: T5 Pickaxe (35-45). are 3 sandstone mounds located in the territory, Rymek West Mid",
+    "description": "I use this mining spot for Sandstone around levels 30-39. Route note: are 3 sandstone mounds located in the territory, Rymek West Mid. Nodes: [14■]. Mob pressure: Medium. Tools: T5 Pickaxe (35-45).",
     "tags": [
       "profession",
       "mining",
@@ -2552,7 +2552,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Sandstone - same place where there are 24 gold nodes - again",
     "category": "profession_mining",
     "region": "same place where there are 24 gold nodes - again",
-    "description": "Mining spot for Sandstone. Recommended for profession levels 30-39. Nodes: [19■]. Mob pressure: Very High. Suggested tools: T5 Pickaxe (35-45). is the same place where there are 24 gold nodes - again, I don’t recommend this place for multiple reasons such as mob count and how spaced out the nodes are",
+    "description": "I use this mining spot for Sandstone around levels 30-39. Route note: is the same place where there are 24 gold nodes - again, I don’t recommend this place for multiple reasons such as mob count and how spaced out the nodes are. Nodes: [19■]. Mob pressure: Very High. Tools: T5 Pickaxe (35-45).",
     "tags": [
       "profession",
       "mining",
@@ -2571,7 +2571,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Sandstone - sandstone nodes close to the Invaded Barracks",
     "category": "profession_mining",
     "region": "sandstone nodes close to the Invaded Barracks",
-    "description": "Mining spot for Sandstone. Recommended for profession levels 30-39. Nodes: [13■]. Mob pressure: High. Suggested tools: T5 Pickaxe (35-45). are multiple sandstone nodes close to the Invaded Barracks",
+    "description": "I use this mining spot for Sandstone around levels 30-39. Route note: are multiple sandstone nodes close to the Invaded Barracks. Nodes: [13■]. Mob pressure: High. Tools: T5 Pickaxe (35-45).",
     "tags": [
       "profession",
       "mining",
@@ -2590,7 +2590,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Silver - cavern to the right of the Temple of Legends - no m…",
     "category": "profession_mining",
     "region": "cavern to the right of the Temple of Legends - no mobs spawn here",
-    "description": "Mining spot for Silver. Recommended for profession levels 50-59. Nodes: [18■]. Mob pressure: None. Suggested tools: T7 Pickaxe (55-65). is a cavern to the right of the Temple of Legends - no mobs spawn here",
+    "description": "I use this mining spot for Silver around levels 50-59. Route note: is a cavern to the right of the Temple of Legends - no mobs spawn here. Nodes: [18■]. Mob pressure: None. Tools: T7 Pickaxe (55-65).",
     "tags": [
       "profession",
       "mining",
@@ -2609,7 +2609,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Silver - cluster of iron on the northernmost part of the Vol…",
     "category": "profession_mining",
     "region": "cluster of iron on the northernmost part of the Volcanic Isles - there are a lot of mobs",
-    "description": "Mining spot for Silver. Recommended for profession levels 50-59. Nodes: [17■]. Mob pressure: High. Suggested tools: T7 Pickaxe (55-65). is a cluster of iron on the northernmost part of the Volcanic Isles - there are a lot of mobs",
+    "description": "I use this mining spot for Silver around levels 50-59. Route note: is a cluster of iron on the northernmost part of the Volcanic Isles - there are a lot of mobs. Nodes: [17■]. Mob pressure: High. Tools: T7 Pickaxe (55-65).",
     "tags": [
       "profession",
       "mining",
@@ -2628,7 +2628,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Silver - mounds of iron on the hillside of a cliff in the te…",
     "category": "profession_mining",
     "region": "mounds of iron on the hillside of a cliff in the territory",
-    "description": "Mining spot for Silver. Recommended for profession levels 50-59. Nodes: [15■]. Mob pressure: High. Suggested tools: T7 Pickaxe (55-65). are mounds of iron on the hillside of a cliff in the territory, Jungle Mid",
+    "description": "I use this mining spot for Silver around levels 50-59. Route note: are mounds of iron on the hillside of a cliff in the territory, Jungle Mid. Nodes: [15■]. Mob pressure: High. Tools: T7 Pickaxe (55-65).",
     "tags": [
       "profession",
       "mining",
@@ -2647,7 +2647,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Sky - northeast of Ahmsord -",
     "category": "profession_woodcutting",
     "region": "northeast of Ahmsord -",
-    "description": "Woodcutting spot for Sky. Recommended for profession levels 100-109. Nodes: [18■]. Mob pressure: Low. Suggested tools: T12 Axe (105+). is the Wybel Island, an island below the Angel Refuge, and northeast of Ahmsord (courtesy of Olinus10) - (also, almost every Sky Island has sky trees, so I will only go over a few spots)",
+    "description": "I use this woodcutting spot for Sky around levels 100-109. Route note: is the Wybel Island, an island below the Angel Refuge, and northeast of Ahmsord (courtesy of Olinus10) - (also, almost every Sky Island has sky trees, so I will only go over a few spots). Nodes: [18■]. Mob pressure: Low. Tools: T12 Axe (105+).",
     "tags": [
       "profession",
       "woodcutting",
@@ -2666,7 +2666,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Sky - the quest zone of “The Fortuneteller”",
     "category": "profession_woodcutting",
     "region": "the quest zone of “The Fortuneteller”",
-    "description": "Woodcutting spot for Sky. Recommended for profession levels 100-109. Nodes: [17■]. Mob pressure: None. Suggested tools: T12 Axe (105+). is a small patch of trees north of Kandon-Beda, near the quest zone of “The Fortuneteller”",
+    "description": "I use this woodcutting spot for Sky around levels 100-109. Route note: is a small patch of trees north of Kandon-Beda, near the quest zone of “The Fortuneteller”. Nodes: [17■]. Mob pressure: None. Tools: T12 Axe (105+).",
     "tags": [
       "profession",
       "woodcutting",
@@ -2685,7 +2685,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Sorghum - 3 patches of sorghum up by the Farming Level 96 Gat…",
     "category": "profession_farming",
     "region": "3 patches of sorghum up by the Farming Level 96 Gathering Post",
-    "description": "Farming spot for Sorghum. Recommended for profession levels 90-99. Nodes: [10■]. Mob pressure: High. Suggested tools: T11 Scythe (95-105). are 3 patches of sorghum up by the Farming Level 96 Gathering Post",
+    "description": "I use this farming spot for Sorghum around levels 90-99. Route note: are 3 patches of sorghum up by the Farming Level 96 Gathering Post. Nodes: [10■]. Mob pressure: High. Tools: T11 Scythe (95-105).",
     "tags": [
       "profession",
       "farming",
@@ -2704,7 +2704,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Sorghum - farm by the Uth Shrine in the territory",
     "category": "profession_farming",
     "region": "farm by the Uth Shrine in the territory",
-    "description": "Farming spot for Sorghum. Recommended for profession levels 90-99. Nodes: [12■]. Mob pressure: Low. Suggested tools: T11 Scythe (95-105). is a small farm by the Uth Shrine in the territory, Avos Workshop",
+    "description": "I use this farming spot for Sorghum around levels 90-99. Route note: is a small farm by the Uth Shrine in the territory, Avos Workshop. Nodes: [12■]. Mob pressure: Low. Tools: T11 Scythe (95-105).",
     "tags": [
       "profession",
       "farming",
@@ -2723,7 +2723,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Sorghum - sorghum fields by the southernmost part of Corkus I…",
     "category": "profession_farming",
     "region": "sorghum fields by the southernmost part of Corkus Island in the territory",
-    "description": "Farming spot for Sorghum. Recommended for profession levels 90-99. Nodes: [10■]. Mob pressure: Very Low. Suggested tools: T11 Scythe (95-105). are the sorghum fields by the southernmost part of Corkus Island in the territory, southern outpost",
+    "description": "I use this farming spot for Sorghum around levels 90-99. Route note: are the sorghum fields by the southernmost part of Corkus Island in the territory, southern outpost. Nodes: [10■]. Mob pressure: Very Low. Tools: T11 Scythe (95-105).",
     "tags": [
       "profession",
       "farming",
@@ -2742,7 +2742,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Spruce - courtesy of Olinus10",
     "category": "profession_woodcutting",
     "region": "courtesy of Olinus10",
-    "description": "Woodcutting spot for Spruce. Recommended for profession levels 40-49. Nodes: [60+■]. Mob pressure: Low. Suggested tools: T6 Axe (45-55). is the coords for the town of Nesaak and the territories surrounding it - in terms of the lowest mob density, the best place to grind Spruce is , courtesy of Olinus10",
+    "description": "I use this woodcutting spot for Spruce around levels 40-49. Route note: is the coords for the town of Nesaak and the territories surrounding it - in terms of the lowest mob density, the best place to grind Spruce is , courtesy of Olinus10. Nodes: [60+■]. Mob pressure: Low. Tools: T6 Axe (45-55).",
     "tags": [
       "profession",
       "woodcutting",
@@ -2761,7 +2761,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Spruce - courtesy of Olinus10",
     "category": "profession_woodcutting",
     "region": "courtesy of Olinus10",
-    "description": "Woodcutting spot for Spruce. Recommended for profession levels 40-49. Nodes: [60+■]. Mob pressure: Low. Suggested tools: T6 Axe (45-55). is the coords for the town of Nesaak and the territories surrounding it - in terms of the lowest mob density, the best place to grind Spruce is , courtesy of Olinus10",
+    "description": "I use this woodcutting spot for Spruce around levels 40-49. Route note: is the coords for the town of Nesaak and the territories surrounding it - in terms of the lowest mob density, the best place to grind Spruce is , courtesy of Olinus10. Nodes: [60+■]. Mob pressure: Low. Tools: T6 Axe (45-55).",
     "tags": [
       "profession",
       "woodcutting",
@@ -2780,7 +2780,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Spruce - ice island nation of Nodguj - surrounding the islan…",
     "category": "profession_woodcutting",
     "region": "ice island nation of Nodguj - surrounding the island are 19 spruce trees",
-    "description": "Woodcutting spot for Spruce. Recommended for profession levels 40-49. Nodes: [19■]. Mob pressure: Very Low. Suggested tools: T6 Axe (45-55). is the ice island nation of Nodguj - surrounding the island are 19 spruce trees",
+    "description": "I use this woodcutting spot for Spruce around levels 40-49. Route note: is the ice island nation of Nodguj - surrounding the island are 19 spruce trees. Nodes: [19■]. Mob pressure: Very Low. Tools: T6 Axe (45-55).",
     "tags": [
       "profession",
       "woodcutting",
@@ -2799,7 +2799,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Spruce - opposing ice island nation of Dujgon - surrounding…",
     "category": "profession_woodcutting",
     "region": "opposing ice island nation of Dujgon - surrounding the island are 11 spruce trees",
-    "description": "Woodcutting spot for Spruce. Recommended for profession levels 40-49. Nodes: [11■]. Mob pressure: Very Low. Suggested tools: T6 Axe (45-55). is the opposing ice island nation of Dujgon - surrounding the island are 11 spruce trees (theoretically you can move between Nodguj and Dujgon to access a total of 30 spruce nodes)",
+    "description": "I use this woodcutting spot for Spruce around levels 40-49. Route note: is the opposing ice island nation of Dujgon - surrounding the island are 11 spruce trees (theoretically you can move between Nodguj and Dujgon to access a total of 30 spruce nodes). Nodes: [11■]. Mob pressure: Very Low. Tools: T6 Axe (45-55).",
     "tags": [
       "profession",
       "woodcutting",
@@ -2818,7 +2818,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Starfish - -4600 is a pond in the Kandon Farm territory which…",
     "category": "profession_fishing",
     "region": "-4600 is a pond in the Kandon Farm territory which is right next to Kandon Beda",
-    "description": "Fishing spot for Starfish. Recommended for profession levels 100-109. Nodes: [11■]. Mob pressure: Very Low. Suggested tools: T12 Fishing Rod. -4600 is a pond in the Kandon Farm territory which is right next to Kandon Beda",
+    "description": "I use this fishing spot for Starfish around levels 100-109. Route note: -4600 is a pond in the Kandon Farm territory which is right next to Kandon Beda. Nodes: [11■]. Mob pressure: Very Low. Tools: T12 Fishing Rod.",
     "tags": [
       "profession",
       "fishing",
@@ -2837,7 +2837,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Starfish - -4905 is a river not too far from the Molten Reach",
     "category": "profession_fishing",
     "region": "-4905 is a river not too far from the Molten Reach",
-    "description": "Fishing spot for Starfish. Recommended for profession levels 100-109. Nodes: [11■]. Mob pressure: None. Suggested tools: T12 Fishing Rod. -4905 is a river not too far from the Molten Reach, an area that bridges the gap between the Sky Islands and the Molten Heights",
+    "description": "I use this fishing spot for Starfish around levels 100-109. Route note: -4905 is a river not too far from the Molten Reach, an area that bridges the gap between the Sky Islands and the Molten Heights. Nodes: [11■]. Mob pressure: None. Tools: T12 Fishing Rod.",
     "tags": [
       "profession",
       "fishing",
@@ -2856,7 +2856,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Starfish - -4960 is a small pool in a lower part of the sky is…",
     "category": "profession_fishing",
     "region": "-4960 is a small pool in a lower part of the sky islands behind Astraulus’s Tower",
-    "description": "Fishing spot for Starfish. Recommended for profession levels 100-109. Nodes: [11■]. Mob pressure: None. Suggested tools: T12 Fishing Rod. -4960 is a small pool in a lower part of the sky islands behind Astraulus’s Tower",
+    "description": "I use this fishing spot for Starfish around levels 100-109. Route note: -4960 is a small pool in a lower part of the sky islands behind Astraulus’s Tower. Nodes: [11■]. Mob pressure: None. Tools: T12 Fishing Rod.",
     "tags": [
       "profession",
       "fishing",
@@ -2875,7 +2875,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Starfish - pond in the Angel Refuge island",
     "category": "profession_fishing",
     "region": "pond in the Angel Refuge island",
-    "description": "Fishing spot for Starfish. Recommended for profession levels 100-109. Nodes: [12■]. Mob pressure: High. Suggested tools: T12 Fishing Rod. is a pond in the Angel Refuge island",
+    "description": "I use this fishing spot for Starfish around levels 100-109. Route note: is a pond in the Angel Refuge island. Nodes: [12■]. Mob pressure: High. Tools: T12 Fishing Rod.",
     "tags": [
       "profession",
       "fishing",
@@ -2894,7 +2894,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Starfish - pond right next to Kandon-Beda",
     "category": "profession_fishing",
     "region": "pond right next to Kandon-Beda",
-    "description": "Fishing spot for Starfish. Recommended for profession levels 100-109. Nodes: [12■]. Mob pressure: None. Suggested tools: T12 Fishing Rod. is a pond right next to Kandon-Beda, there is a single node farther down the river",
+    "description": "I use this fishing spot for Starfish around levels 100-109. Route note: is a pond right next to Kandon-Beda, there is a single node farther down the river. Nodes: [12■]. Mob pressure: None. Tools: T12 Fishing Rod.",
     "tags": [
       "profession",
       "fishing",
@@ -2913,7 +2913,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Starfish - two ponds on the outskirts of Ahmsord",
     "category": "profession_fishing",
     "region": "two ponds on the outskirts of Ahmsord",
-    "description": "Fishing spot for Starfish. Recommended for profession levels 100-109. Nodes: [12■]. Mob pressure: Low. Suggested tools: T12 Fishing Rod. are two ponds on the outskirts of Ahmsord",
+    "description": "I use this fishing spot for Starfish around levels 100-109. Route note: are two ponds on the outskirts of Ahmsord. Nodes: [12■]. Mob pressure: Low. Tools: T12 Fishing Rod.",
     "tags": [
       "profession",
       "fishing",
@@ -2932,7 +2932,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Trout - the Detlas Suburbs",
     "category": "profession_fishing",
     "region": "the Detlas Suburbs",
-    "description": "Fishing spot for Trout. Recommended for profession levels 10-19. Nodes: [7■]. Mob pressure: Low. Suggested tools: T3 Fishing Rod (15-25). in a small pond, near the Detlas Suburbs",
+    "description": "I use this fishing spot for Trout around levels 10-19. Route note: in a small pond, near the Detlas Suburbs. Nodes: [7■]. Mob pressure: Low. Tools: T3 Fishing Rod (15-25).",
     "tags": [
       "profession",
       "fishing",
@@ -2951,7 +2951,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Trout - two locations very close to each other",
     "category": "profession_fishing",
     "region": "two locations very close to each other",
-    "description": "Fishing spot for Trout. Recommended for profession levels 10-19. Nodes: [9■]. Mob pressure: Very Low. Suggested tools: T3 Fishing Rod (15-25). , two locations very close to each other (it used to be 12 nodes, but that only counts 3 nodes on the left side of the river)",
+    "description": "I use this fishing spot for Trout around levels 10-19. Route note: , two locations very close to each other (it used to be 12 nodes, but that only counts 3 nodes on the left side of the river). Nodes: [9■]. Mob pressure: Very Low. Tools: T3 Fishing Rod (15-25).",
     "tags": [
       "profession",
       "fishing",
@@ -2970,7 +2970,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Trout - two locations very close to each other",
     "category": "profession_fishing",
     "region": "two locations very close to each other",
-    "description": "Fishing spot for Trout. Recommended for profession levels 10-19. Nodes: [9■]. Mob pressure: Very Low. Suggested tools: T3 Fishing Rod (15-25). , two locations very close to each other (it used to be 12 nodes, but that only counts 3 nodes on the left side of the river)",
+    "description": "I use this fishing spot for Trout around levels 10-19. Route note: , two locations very close to each other (it used to be 12 nodes, but that only counts 3 nodes on the left side of the river). Nodes: [9■]. Mob pressure: Very Low. Tools: T3 Fishing Rod (15-25).",
     "tags": [
       "profession",
       "fishing",
@@ -2989,7 +2989,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Voidstone - 1 is the deepest part of a large island in The Void…",
     "category": "profession_mining",
     "region": "1 is the deepest part of a large island in The Void - to gain access to The Void",
-    "description": "Mining spot for Voidstone. Recommended for profession levels 100-109. Nodes: [16■]. Mob pressure: Very Low. Suggested tools: T12 Pickaxe (105+). 1 is the deepest part of a large island in The Void (the only mob that spawns here is a rare mob that spawns every ~10 minutes) - to gain access to The Void, you must first do the quest, 1,000 Meters Under",
+    "description": "I use this mining spot for Voidstone around levels 100-109. Route note: 1 is the deepest part of a large island in The Void (the only mob that spawns here is a rare mob that spawns every ~10 minutes) - to gain access to The Void, you must first do the quest, 1,000 Meters Under. Nodes: [16■]. Mob pressure: Very Low. Tools: T12 Pickaxe (105+).",
     "tags": [
       "profession",
       "mining",
@@ -3008,7 +3008,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Voidstone - enterance to a cave that has two high deposits of v…",
     "category": "profession_mining",
     "region": "enterance to a cave that has two high deposits of voidstone",
-    "description": "Mining spot for Voidstone. Recommended for profession levels 100-109. Nodes: [51■/31■+18■]. Mob pressure: None. Suggested tools: T12 Pickaxe (105+). is the enterance to a cave that has two high deposits of voidstone, the smaller deposit ( ) has 18 nodes & the larger deposit ( ) has 31 nodes",
+    "description": "I use this mining spot for Voidstone around levels 100-109. Route note: is the enterance to a cave that has two high deposits of voidstone, the smaller deposit ( ) has 18 nodes & the larger deposit ( ) has 31 nodes. Nodes: [51■/31■+18■]. Mob pressure: None. Tools: T12 Pickaxe (105+).",
     "tags": [
       "profession",
       "mining",
@@ -3027,7 +3027,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Voidstone - enterance to a cave that has two high deposits of v…",
     "category": "profession_mining",
     "region": "enterance to a cave that has two high deposits of voidstone",
-    "description": "Mining spot for Voidstone. Recommended for profession levels 100-109. Nodes: [51■/31■+18■]. Mob pressure: None. Suggested tools: T12 Pickaxe (105+). is the enterance to a cave that has two high deposits of voidstone, the smaller deposit ( ) has 18 nodes & the larger deposit ( ) has 31 nodes",
+    "description": "I use this mining spot for Voidstone around levels 100-109. Route note: is the enterance to a cave that has two high deposits of voidstone, the smaller deposit ( ) has 18 nodes & the larger deposit ( ) has 31 nodes. Nodes: [51■/31■+18■]. Mob pressure: None. Tools: T12 Pickaxe (105+).",
     "tags": [
       "profession",
       "mining",
@@ -3046,7 +3046,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Voidstone - enterance to a cave that has two high deposits of v…",
     "category": "profession_mining",
     "region": "enterance to a cave that has two high deposits of voidstone",
-    "description": "Mining spot for Voidstone. Recommended for profession levels 100-109. Nodes: [51■/31■+18■]. Mob pressure: None. Suggested tools: T12 Pickaxe (105+). is the enterance to a cave that has two high deposits of voidstone, the smaller deposit ( ) has 18 nodes & the larger deposit ( ) has 31 nodes",
+    "description": "I use this mining spot for Voidstone around levels 100-109. Route note: is the enterance to a cave that has two high deposits of voidstone, the smaller deposit ( ) has 18 nodes & the larger deposit ( ) has 31 nodes. Nodes: [51■/31■+18■]. Mob pressure: None. Tools: T12 Pickaxe (105+).",
     "tags": [
       "profession",
       "mining",
@@ -3065,7 +3065,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Voidstone - right outside the Void Village",
     "category": "profession_mining",
     "region": "right outside the Void Village",
-    "description": "Mining spot for Voidstone. Recommended for profession levels 100-109. Nodes: [14■/8■+6■]. Mob pressure: High. Suggested tools: T12 Pickaxe (105+). 1 are mounds of voidstone consisting of 8 nodes, and a cave that contains 6 nodes, right outside the Void Village",
+    "description": "I use this mining spot for Voidstone around levels 100-109. Route note: 1 are mounds of voidstone consisting of 8 nodes, and a cave that contains 6 nodes, right outside the Void Village. Nodes: [14■/8■+6■]. Mob pressure: High. Tools: T12 Pickaxe (105+).",
     "tags": [
       "profession",
       "mining",
@@ -3084,7 +3084,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Voidstone - the Snail Island with three voidstone crystals",
     "category": "profession_mining",
     "region": "the Snail Island with three voidstone crystals",
-    "description": "Mining spot for Voidstone. Recommended for profession levels 100-109. Nodes: [13■]. Mob pressure: High. Suggested tools: T12 Pickaxe (105+). is an area on a lower sky island, near the Snail Island with three voidstone crystals",
+    "description": "I use this mining spot for Voidstone around levels 100-109. Route note: is an area on a lower sky island, near the Snail Island with three voidstone crystals. Nodes: [13■]. Mob pressure: High. Tools: T12 Pickaxe (105+).",
     "tags": [
       "profession",
       "mining",
@@ -3103,7 +3103,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Wheat - field in the Maltic Plains with 15 nodes",
     "category": "profession_farming",
     "region": "field in the Maltic Plains with 15 nodes",
-    "description": "Farming spot for Wheat. Recommended for profession levels 0-9. Nodes: [15■]. Mob pressure: Low. Suggested tools: T1 Scythe (0-5), T2 Scythe (5-15). is a field in the Maltic Plains with 15 nodes",
+    "description": "I use this farming spot for Wheat around levels 0-9. Route note: is a field in the Maltic Plains with 15 nodes. Nodes: [15■]. Mob pressure: Low. Tools: T1 Scythe (0-5), T2 Scythe (5-15).",
     "tags": [
       "profession",
       "farming",
@@ -3122,7 +3122,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Wheat - field of wheat located in the Thesead Suburbs with…",
     "category": "profession_farming",
     "region": "field of wheat located in the Thesead Suburbs with an astronomical 37 nodes and no mobs spawn here",
-    "description": "Farming spot for Wheat. Recommended for profession levels 0-9. Nodes: [37■]. Mob pressure: None. Suggested tools: T1 Scythe (0-5), T2 Scythe (5-15). is a huge field of wheat located in the Thesead Suburbs with an astronomical 37 nodes and no mobs spawn here",
+    "description": "I use this farming spot for Wheat around levels 0-9. Route note: is a huge field of wheat located in the Thesead Suburbs with an astronomical 37 nodes and no mobs spawn here. Nodes: [37■]. Mob pressure: None. Tools: T1 Scythe (0-5), T2 Scythe (5-15).",
     "tags": [
       "profession",
       "farming",
@@ -3141,7 +3141,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Wheat - three patches of wheat in the Katoa Ranch",
     "category": "profession_farming",
     "region": "three patches of wheat in the Katoa Ranch",
-    "description": "Farming spot for Wheat. Recommended for profession levels 0-9. Nodes: [16■/8■+5■+3■]. Mob pressure: Medium. Suggested tools: T1 Scythe (0-5), T2 Scythe (5-15). is the three patches of wheat in the Katoa Ranch",
+    "description": "I use this farming spot for Wheat around levels 0-9. Route note: is the three patches of wheat in the Katoa Ranch. Nodes: [16■/8■+5■+3■]. Mob pressure: Medium. Tools: T1 Scythe (0-5), T2 Scythe (5-15).",
     "tags": [
       "profession",
       "farming",
@@ -3160,7 +3160,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Wheat - two patches of wheat in the Ragni Plains",
     "category": "profession_farming",
     "region": "two patches of wheat in the Ragni Plains",
-    "description": "Farming spot for Wheat. Recommended for profession levels 0-9. Nodes: [21■/11■+10■]. Mob pressure: Low. Suggested tools: T1 Scythe (0-5), T2 Scythe (5-15). are two patches of wheat in the Ragni Plains",
+    "description": "I use this farming spot for Wheat around levels 0-9. Route note: are two patches of wheat in the Ragni Plains. Nodes: [21■/11■+10■]. Mob pressure: Low. Tools: T1 Scythe (0-5), T2 Scythe (5-15).",
     "tags": [
       "profession",
       "farming",
@@ -3179,7 +3179,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Wheat - two patches of wheat in the Ragni Plains",
     "category": "profession_farming",
     "region": "two patches of wheat in the Ragni Plains",
-    "description": "Farming spot for Wheat. Recommended for profession levels 0-9. Nodes: [21■/11■+10■]. Mob pressure: Low. Suggested tools: T1 Scythe (0-5), T2 Scythe (5-15). are two patches of wheat in the Ragni Plains",
+    "description": "I use this farming spot for Wheat around levels 0-9. Route note: are two patches of wheat in the Ragni Plains. Nodes: [21■/11■+10■]. Mob pressure: Low. Tools: T1 Scythe (0-5), T2 Scythe (5-15).",
     "tags": [
       "profession",
       "farming",
@@ -3198,7 +3198,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Willow - a set of territories collectively known as the Nemr…",
     "category": "profession_woodcutting",
     "region": "a set of territories collectively known as the Nemract Outskirts which has over 30 willow nodes",
-    "description": "Woodcutting spot for Willow. Recommended for profession levels 20-29. Nodes: [30+■]. Mob pressure: Low. Suggested tools: T4 Axe (25-35). are the general coords for the area outside of Nemract, a set of territories collectively known as the Nemract Outskirts which has over 30 willow nodes",
+    "description": "I use this woodcutting spot for Willow around levels 20-29. Route note: are the general coords for the area outside of Nemract, a set of territories collectively known as the Nemract Outskirts which has over 30 willow nodes. Nodes: [30+■]. Mob pressure: Low. Tools: T4 Axe (25-35).",
     "tags": [
       "profession",
       "woodcutting",
@@ -3217,7 +3217,7 @@ export const GENERATED_PROFESSION_MARKERS = [
     "title": "Willow - entirety of the huge forest known as the Olux Swamp…",
     "category": "profession_woodcutting",
     "region": "entirety of the huge forest known as the Olux Swamp - this is a good spot to grind if you are combat level 50+ or higher as there are a LOT of mobs",
-    "description": "Woodcutting spot for Willow. Recommended for profession levels 20-29. Nodes: [100+■]. Mob pressure: High. Suggested tools: T4 Axe (25-35). is the entirety of the huge forest known as the Olux Swamp - this is a good spot to grind if you are combat level 50+ or higher as there are a LOT of mobs",
+    "description": "I use this woodcutting spot for Willow around levels 20-29. Route note: is the entirety of the huge forest known as the Olux Swamp - this is a good spot to grind if you are combat level 50+ or higher as there are a LOT of mobs. Nodes: [100+■]. Mob pressure: High. Tools: T4 Axe (25-35).",
     "tags": [
       "profession",
       "woodcutting",

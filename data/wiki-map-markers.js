@@ -7,7 +7,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Nether Portal",
     "category": "territorial_discovery",
     "region": "Wynn",
-    "description": "Nether Portal territorial discovery placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Nether Portal as a current territorial discovery on the live map.",
     "tags": [
       "travel",
       "special rootsofcorruption",
@@ -26,7 +26,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Light's Secret",
     "category": "world_discovery",
     "region": "Ocean",
-    "description": "Light's Secret world discovery placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Light's Secret as a current world discovery on the live map.",
     "tags": [
       "travel",
       "special lightrealm",
@@ -45,7 +45,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Uth Shrine",
     "category": "world_discovery",
     "region": "Ocean",
-    "description": "Uth Shrine world discovery placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Uth Shrine as a current world discovery on the live map.",
     "tags": [
       "travel",
       "special rune",
@@ -64,7 +64,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Uth Shrine",
     "category": "world_discovery",
     "region": "Corkus",
-    "description": "Uth Shrine world discovery placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Uth Shrine as a current world discovery on the live map.",
     "tags": [
       "travel",
       "special rune",
@@ -83,7 +83,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Sunrise Canyon",
     "category": "boss_altar",
     "region": "Desert",
-    "description": "Sunrise Canyon boss altar placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Sunrise Canyon as a current boss altar on the live map.",
     "tags": [
       "boss",
       "content bossaltar",
@@ -102,7 +102,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Prison of Souls",
     "category": "boss_altar",
     "region": "Wynn",
-    "description": "Prison of Souls boss altar placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Prison of Souls as a current boss altar on the live map.",
     "tags": [
       "boss",
       "content bossaltar",
@@ -121,7 +121,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Tribal Sanctuary",
     "category": "boss_altar",
     "region": "Jungle",
-    "description": "Tribal Sanctuary boss altar placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Tribal Sanctuary as a current boss altar on the live map.",
     "tags": [
       "boss",
       "content bossaltar",
@@ -140,7 +140,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Challenge of the Blades",
     "category": "boss_altar",
     "region": "Gavel West",
-    "description": "Challenge of the Blades boss altar placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Challenge of the Blades as a current boss altar on the live map.",
     "tags": [
       "boss",
       "content bossaltar",
@@ -159,7 +159,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Arena of the Legends",
     "category": "boss_altar",
     "region": "Jungle",
-    "description": "Arena of the Legends boss altar placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Arena of the Legends as a current boss altar on the live map.",
     "tags": [
       "boss",
       "content bossaltar",
@@ -178,7 +178,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Ice Nations",
     "category": "quests",
     "region": "Ocean",
-    "description": "Ice Nations scraped from the Quests wiki index page. Requirements: Combat level 40. Rewards: 1 Climbing Helmet Access to the Dujgon Blacksmith.",
+    "description": "Requirements: Combat level 40. Rewards: 1 Climbing Helmet Access to the Dujgon Blacksmith.",
     "tags": [
       "quest",
       "content quest",
@@ -197,7 +197,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Wrath of the Mummy",
     "category": "quests",
     "region": "Desert",
-    "description": "Wrath of the Mummy scraped from the Quests wiki index page. Requirements: Combat level 36. Rewards: 1 Mummy's Rag.",
+    "description": "Requirements: Combat level 36. Rewards: 1 Mummy's Rag.",
     "tags": [
       "quest",
       "content quest",
@@ -216,7 +216,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Slay Pernix Monkeys",
     "category": "mini_quests",
     "region": "Corkus",
-    "description": "Mini-Quest - Slay Pernix Monkeys mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Slay Pernix Monkeys as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -235,7 +235,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Slay Orcs",
     "category": "mini_quests",
     "region": "Gavel West",
-    "description": "Mini-Quest - Slay Orcs mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Slay Orcs as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -254,7 +254,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Slay Weirds",
     "category": "mini_quests",
     "region": "Gavel West",
-    "description": "Mini-Quest - Slay Weirds mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Slay Weirds as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -273,7 +273,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Gather Starfish II",
     "category": "mini_quests",
     "region": "Sky",
-    "description": "Mini-Quest - Gather Starfish II mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Gather Starfish II as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -292,7 +292,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "The Bigger Picture",
     "category": "quests",
     "region": "Ocean",
-    "description": "The Bigger Picture scraped from the Quests wiki index page. Requirements: Combat level 76. Rewards: Gnome's Ring Giant's Ring.",
+    "description": "Requirements: Combat level 76. Rewards: Gnome's Ring Giant's Ring.",
     "tags": [
       "quest",
       "content quest",
@@ -311,7 +311,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Slay Slimes",
     "category": "mini_quests",
     "region": "Jungle",
-    "description": "Mini-Quest - Slay Slimes mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Slay Slimes as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -330,7 +330,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Heart of Llevigar",
     "category": "quests",
     "region": "Gavel West",
-    "description": "Heart of Llevigar scraped from the Quests wiki index page. Requirements: Combat level 41. Rewards: Generator Amulet.",
+    "description": "Requirements: Combat level 41. Rewards: Generator Amulet.",
     "tags": [
       "quest",
       "content quest",
@@ -349,7 +349,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "The Qira Hive",
     "category": "quests",
     "region": "Canyon",
-    "description": "The Qira Hive scraped from the Quests wiki index page. Requirements: Combat level 80. Rewards: 1 Thunder Voucher 1 Air Voucher 1 Earth Voucher 1 Water Voucher 1 Fire Voucher 1 Master Voucher.",
+    "description": "Requirements: Combat level 80. Rewards: 1 Thunder Voucher 1 Air Voucher 1 Earth Voucher 1 Water Voucher 1 Fire Voucher 1 Master Voucher.",
     "tags": [
       "quest",
       "content quest",
@@ -368,7 +368,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Slay Myconids",
     "category": "mini_quests",
     "region": "Gavel West",
-    "description": "Mini-Quest - Slay Myconids mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Slay Myconids as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -387,7 +387,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Overture to Despair",
     "category": "quests",
     "region": "Fruma",
-    "description": "Overture to Despair scraped from the Quests wiki index page. Requirements: Combat level 116. Rewards: Concord Protocol.",
+    "description": "Requirements: Combat level 116. Rewards: Concord Protocol.",
     "tags": [
       "quest",
       "content quest",
@@ -406,7 +406,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "From the Mountains",
     "category": "quests",
     "region": "Gavel West",
-    "description": "From the Mountains scraped from the Quests wiki index page. Requirements: Combat level 67. Rewards: Fire Wire.",
+    "description": "Requirements: Combat level 67. Rewards: Fire Wire.",
     "tags": [
       "quest",
       "content quest",
@@ -425,7 +425,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Hunt Banshee Stags",
     "category": "mini_quests",
     "region": "Fruma",
-    "description": "Mini-Quest - Hunt Banshee Stags mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Hunt Banshee Stags as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -444,7 +444,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "An Iron Heart Part I",
     "category": "quests",
     "region": "Gavel West",
-    "description": "An Iron Heart Part I scraped from the Quests wiki index page. Requirements: Combat level 49. Rewards: Mechanical Reactor.",
+    "description": "Requirements: Combat level 49. Rewards: Mechanical Reactor.",
     "tags": [
       "quest",
       "content quest",
@@ -463,7 +463,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Gather Sky Logs I",
     "category": "mini_quests",
     "region": "Sky",
-    "description": "Mini-Quest - Gather Sky Logs I mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Gather Sky Logs I as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -482,7 +482,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "The Hero of Gavel",
     "category": "quests",
     "region": "Sky",
-    "description": "The Hero of Gavel scraped from the Quests wiki index page. Requirements: Combat level 99. Rewards: {{{reward}}}.",
+    "description": "Requirements: Combat level 99. Rewards: {{{reward}}}.",
     "tags": [
       "quest",
       "content quest",
@@ -501,7 +501,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "The Maiden Tower",
     "category": "quests",
     "region": "Gavel West",
-    "description": "The Maiden Tower scraped from the Quests wiki index page. Requirements: Combat level 51. Rewards: {{{reward}}}.",
+    "description": "Requirements: Combat level 51. Rewards: {{{reward}}}.",
     "tags": [
       "quest",
       "content quest",
@@ -520,7 +520,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Slay Frosted Guards & Cryostone Golems",
     "category": "mini_quests",
     "region": "Canyon",
-    "description": "Mini-Quest - Slay Frosted Guards & Cryostone Golems mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Slay Frosted Guards & Cryostone Golems as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -539,7 +539,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Clearing the Camps",
     "category": "quests",
     "region": "Gavel West",
-    "description": "Clearing the Camps scraped from the Quests wiki index page. Requirements: Combat level 39. Rewards: {{{reward}}}.",
+    "description": "Requirements: Combat level 39. Rewards: {{{reward}}}.",
     "tags": [
       "quest",
       "content quest",
@@ -558,7 +558,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Through the Pipes",
     "category": "quests",
     "region": "Fruma",
-    "description": "Through the Pipes scraped from the Quests wiki index page. Requirements: Combat level 110. Rewards: Rubber Duck or Decorated Rubber Duck Access to the Roughworks Resource Mine.",
+    "description": "Requirements: Combat level 110. Rewards: Rubber Duck or Decorated Rubber Duck Access to the Roughworks Resource Mine.",
     "tags": [
       "quest",
       "content quest",
@@ -577,7 +577,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "General's Orders",
     "category": "quests",
     "region": "Gavel West",
-    "description": "General's Orders scraped from the Quests wiki index page. Requirements: Combat level 80. Rewards: Changeling's Chestplate.",
+    "description": "Requirements: Combat level 80. Rewards: Changeling's Chestplate.",
     "tags": [
       "quest",
       "content quest",
@@ -596,7 +596,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Slay Wraiths & Phantasms",
     "category": "mini_quests",
     "region": "Gavel West",
-    "description": "Mini-Quest - Slay Wraiths & Phantasms mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Slay Wraiths & Phantasms as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -615,7 +615,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Tower of Ascension",
     "category": "quests",
     "region": "Wynn",
-    "description": "Tower of Ascension scraped from the Quests wiki index page. Requirements: Combat level 40. Rewards: Champion Armour.",
+    "description": "Requirements: Combat level 40. Rewards: Champion Armour.",
     "tags": [
       "quest",
       "content quest",
@@ -634,7 +634,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Tribal Aggression",
     "category": "quests",
     "region": "Desert",
-    "description": "Tribal Aggression scraped from the Quests wiki index page. Requirements: Combat level 35. Rewards: 42 Gold Bars.",
+    "description": "Requirements: Combat level 35. Rewards: 42 Gold Bars.",
     "tags": [
       "quest",
       "content quest",
@@ -653,7 +653,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "From the Bottom",
     "category": "quests",
     "region": "Gavel West",
-    "description": "From the Bottom scraped from the Quests wiki index page. Requirements: Combat level 81. Rewards: 1 Troll Hair 40 Platinum Ingots.",
+    "description": "Requirements: Combat level 81. Rewards: 1 Troll Hair 40 Platinum Ingots.",
     "tags": [
       "quest",
       "content quest",
@@ -672,7 +672,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "WynnExcavation Site B",
     "category": "quests",
     "region": "Wynn",
-    "description": "WynnExcavation Site B scraped from the Quests wiki index page. Requirements: Combat level 46. Rewards: 1 Purple Crystal Shard.",
+    "description": "Requirements: Combat level 46. Rewards: 1 Purple Crystal Shard.",
     "tags": [
       "quest",
       "content quest",
@@ -691,7 +691,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Shattered Minds",
     "category": "quests",
     "region": "Gavel West",
-    "description": "Shattered Minds scraped from the Quests wiki index page. Requirements: Combat level 70. Rewards: Psychomend Vest.",
+    "description": "Requirements: Combat level 70. Rewards: Psychomend Vest.",
     "tags": [
       "quest",
       "content quest",
@@ -710,7 +710,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "A Journey Beyond",
     "category": "quests",
     "region": "Wynn",
-    "description": "A Journey Beyond scraped from the Quests wiki index page. Requirements: Combat level 100. Rewards: Access to the Silent Expanse.",
+    "description": "Requirements: Combat level 100. Rewards: Access to the Silent Expanse.",
     "tags": [
       "quest",
       "content quest",
@@ -729,7 +729,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Taking the Tower",
     "category": "quests",
     "region": "Wynn",
-    "description": "Taking the Tower scraped from the Quests wiki index page. Requirements: Combat level 8. Rewards: {{{reward}}}.",
+    "description": "Requirements: Combat level 8. Rewards: {{{reward}}}.",
     "tags": [
       "quest",
       "content quest",
@@ -748,7 +748,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "The Ultimate Weapon",
     "category": "quests",
     "region": "Gavel West",
-    "description": "The Ultimate Weapon scraped from the Quests wiki index page. Requirements: Combat level 75. Rewards: 500 Weaponsmithing Experience 500 Woodworking Experience 1 Dodegar's Ultimate Weapon.",
+    "description": "Requirements: Combat level 75. Rewards: 500 Weaponsmithing Experience 500 Woodworking Experience 1 Dodegar's Ultimate Weapon.",
     "tags": [
       "quest",
       "content quest",
@@ -767,7 +767,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Slay Creatures of Nesaak Forest",
     "category": "mini_quests",
     "region": "Wynn",
-    "description": "Mini-Quest - Slay Creatures of Nesaak Forest mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Slay Creatures of Nesaak Forest as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -786,7 +786,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Slay Skeletons",
     "category": "mini_quests",
     "region": "Wynn",
-    "description": "Mini-Quest - Slay Skeletons mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Slay Skeletons as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -805,7 +805,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Corrupted Dungeons",
     "category": "dungeon",
     "region": "Gavel West",
-    "description": "Corrupted Dungeons dungeon placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Corrupted Dungeons as a current dungeon on the live map.",
     "tags": [
       "boss",
       "content corrupteddungeon",
@@ -824,7 +824,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Enter the Dojo",
     "category": "quests",
     "region": "Canyon",
-    "description": "Enter the Dojo scraped from the Quests wiki index page. Requirements: Combat level 89. Rewards: Master's Gi.",
+    "description": "Requirements: Combat level 89. Rewards: Master's Gi.",
     "tags": [
       "quest",
       "content quest",
@@ -843,7 +843,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mushroom Man",
     "category": "quests",
     "region": "Wynn",
-    "description": "Mushroom Man scraped from the Quests wiki index page. Requirements: Combat level 6. Rewards: {{{reward}}}.",
+    "description": "Requirements: Combat level 6. Rewards: {{{reward}}}.",
     "tags": [
       "quest",
       "content quest",
@@ -862,7 +862,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Tol Altar",
     "category": "world_discovery",
     "region": "Lutho",
-    "description": "Tol Altar world discovery placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Tol Altar as a current world discovery on the live map.",
     "tags": [
       "travel",
       "special rune",
@@ -881,7 +881,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Blazing Retribution",
     "category": "quests",
     "region": "Gavel West",
-    "description": "Blazing Retribution scraped from the Quests wiki index page. Requirements: Combat level 44. Rewards: Hide of Poxper.",
+    "description": "Requirements: Combat level 44. Rewards: Hide of Poxper.",
     "tags": [
       "quest",
       "content quest",
@@ -900,7 +900,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "A Sandy Scandal",
     "category": "quests",
     "region": "Desert",
-    "description": "A Sandy Scandal scraped from the Quests wiki index page. Requirements: Combat level 32. Rewards: {{{reward}}}.",
+    "description": "Requirements: Combat level 32. Rewards: {{{reward}}}.",
     "tags": [
       "quest",
       "content quest",
@@ -919,7 +919,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Slay Dead Villagers",
     "category": "mini_quests",
     "region": "Ocean",
-    "description": "Mini-Quest - Slay Dead Villagers mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Slay Dead Villagers as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -938,7 +938,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Aldorei's Secret Part I",
     "category": "quests",
     "region": "Ocean",
-    "description": "Aldorei's Secret Part I scraped from the Quests wiki index page. Requirements: Combat level 74. Rewards: Elven Medallion / Receipt Access to Aldorei Town.",
+    "description": "Requirements: Combat level 74. Rewards: Elven Medallion / Receipt Access to Aldorei Town.",
     "tags": [
       "quest",
       "content quest",
@@ -957,7 +957,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "A Grave Mistake",
     "category": "quests",
     "region": "Wynn",
-    "description": "A Grave Mistake scraped from the Quests wiki index page. Requirements: Combat level 50. Rewards: {{{reward}}}.",
+    "description": "Requirements: Combat level 50. Rewards: {{{reward}}}.",
     "tags": [
       "quest",
       "content quest",
@@ -976,7 +976,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "A New Beginning",
     "category": "quests",
     "region": "Fruma",
-    "description": "A New Beginning scraped from the Quests wiki index page. Requirements: Combat level 105. Rewards: Espren Passport Espren Teleportation Scroll Meliorism Access to Espren.",
+    "description": "Requirements: Combat level 105. Rewards: Espren Passport Espren Teleportation Scroll Meliorism Access to Espren.",
     "tags": [
       "quest",
       "content quest",
@@ -995,7 +995,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Tol Altar",
     "category": "world_discovery",
     "region": "Sky",
-    "description": "Tol Altar world discovery placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Tol Altar as a current world discovery on the live map.",
     "tags": [
       "travel",
       "special rune",
@@ -1014,7 +1014,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Bovine Barn",
     "category": "boss_altar",
     "region": "Ocean",
-    "description": "Bovine Barn boss altar placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Bovine Barn as a current boss altar on the live map.",
     "tags": [
       "boss",
       "content bossaltar",
@@ -1033,7 +1033,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Magmastream Core",
     "category": "boss_altar",
     "region": "Corkus",
-    "description": "Magmastream Core boss altar placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Magmastream Core as a current boss altar on the live map.",
     "tags": [
       "boss",
       "content bossaltar",
@@ -1052,7 +1052,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Rotten Passage",
     "category": "boss_altar",
     "region": "Wynn",
-    "description": "Rotten Passage boss altar placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Rotten Passage as a current boss altar on the live map.",
     "tags": [
       "boss",
       "content bossaltar",
@@ -1071,7 +1071,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Plague Laboratory",
     "category": "boss_altar",
     "region": "Gavel West",
-    "description": "Plague Laboratory boss altar placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Plague Laboratory as a current boss altar on the live map.",
     "tags": [
       "boss",
       "content bossaltar",
@@ -1090,7 +1090,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Altar of Sanctification",
     "category": "boss_altar",
     "region": "Jungle",
-    "description": "Altar of Sanctification boss altar placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Altar of Sanctification as a current boss altar on the live map.",
     "tags": [
       "boss",
       "content bossaltar",
@@ -1109,7 +1109,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Geyser Pit",
     "category": "boss_altar",
     "region": "Corkus",
-    "description": "Geyser Pit boss altar placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Geyser Pit as a current boss altar on the live map.",
     "tags": [
       "boss",
       "content bossaltar",
@@ -1128,7 +1128,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Aerie of the Recluse",
     "category": "boss_altar",
     "region": "Corkus",
-    "description": "Aerie of the Recluse boss altar placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Aerie of the Recluse as a current boss altar on the live map.",
     "tags": [
       "boss",
       "content bossaltar",
@@ -1147,7 +1147,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Bottomless Pit",
     "category": "boss_altar",
     "region": "Lutho",
-    "description": "Bottomless Pit boss altar placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Bottomless Pit as a current boss altar on the live map.",
     "tags": [
       "boss",
       "content bossaltar",
@@ -1166,7 +1166,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "The Canyon Colossus",
     "category": "raid",
     "region": "Sky",
-    "description": "The Canyon Colossus raid placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked The Canyon Colossus as a current raid on the live map.",
     "tags": [
       "boss",
       "content raid",
@@ -1185,7 +1185,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Nest of the Grootslangs",
     "category": "raid",
     "region": "Gavel West",
-    "description": "Nest of the Grootslangs raid placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Nest of the Grootslangs as a current raid on the live map.",
     "tags": [
       "boss",
       "content raid",
@@ -1204,7 +1204,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "The Nameless Anomaly",
     "category": "raid",
     "region": "Lutho",
-    "description": "The Nameless Anomaly raid placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked The Nameless Anomaly as a current raid on the live map.",
     "tags": [
       "boss",
       "content raid",
@@ -1223,7 +1223,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Unknown Area",
     "category": "boss_altar",
     "region": "Sky",
-    "description": "Unknown Area boss altar placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Unknown Area as a current boss altar on the live map.",
     "tags": [
       "boss",
       "content bossaltar",
@@ -1242,7 +1242,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "The Wartorn Palace",
     "category": "raid",
     "region": "Fruma",
-    "description": "The Wartorn Palace raid placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked The Wartorn Palace as a current raid on the live map.",
     "tags": [
       "boss",
       "content raid",
@@ -1261,7 +1261,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Deserter's Refuge",
     "category": "boss_altar",
     "region": "Fruma",
-    "description": "Deserter's Refuge boss altar placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Deserter's Refuge as a current boss altar on the live map.",
     "tags": [
       "boss",
       "content bossaltar",
@@ -1280,7 +1280,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "The Order of the Grook",
     "category": "quests",
     "region": "Ocean",
-    "description": "The Order of the Grook scraped from the Quests wiki index page. Requirements: Combat level 59. Rewards: access to The Nexus Draoi Fair /Dragon's Eye Bracelet /Renda Langit.",
+    "description": "Requirements: Combat level 59. Rewards: access to The Nexus Draoi Fair /Dragon's Eye Bracelet /Renda Langit.",
     "tags": [
       "quest",
       "content quest",
@@ -1299,7 +1299,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Star Thief",
     "category": "quests",
     "region": "Gavel West",
-    "description": "Star Thief scraped from the Quests wiki index page. Requirements: Combat level 42. Rewards: {{{reward}}}.",
+    "description": "Requirements: Combat level 42. Rewards: {{{reward}}}.",
     "tags": [
       "quest",
       "content quest",
@@ -1318,7 +1318,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Lost Tower",
     "category": "quests",
     "region": "Ocean",
-    "description": "Lost Tower scraped from the Quests wiki index page. Requirements: Combat level 24. Rewards: {{{reward}}}.",
+    "description": "Requirements: Combat level 24. Rewards: {{{reward}}}.",
     "tags": [
       "quest",
       "content quest",
@@ -1337,7 +1337,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Cluck Cluck",
     "category": "quests",
     "region": "Ocean",
-    "description": "Cluck Cluck scraped from the Quests wiki index page. Requirements: Combat level 23. Rewards: Cluckles' Favourite Feather.",
+    "description": "Requirements: Combat level 23. Rewards: Cluckles' Favourite Feather.",
     "tags": [
       "quest",
       "content quest",
@@ -1356,7 +1356,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Slay Robots",
     "category": "mini_quests",
     "region": "Corkus",
-    "description": "Mini-Quest - Slay Robots mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Slay Robots as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -1375,7 +1375,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Point of No Return",
     "category": "quests",
     "region": "Lutho",
-    "description": "Point of No Return scraped from the Quests wiki index page. Requirements: Combat level 102. Rewards: {{{reward}}}.",
+    "description": "Requirements: Combat level 102. Rewards: {{{reward}}}.",
     "tags": [
       "quest",
       "content quest",
@@ -1394,7 +1394,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Celebrations in Smoke",
     "category": "quests",
     "region": "Fruma",
-    "description": "Celebrations in Smoke scraped from the Quests wiki index page. Requirements: Combat level 115. Rewards: {{{reward}}}.",
+    "description": "Requirements: Combat level 115. Rewards: {{{reward}}}.",
     "tags": [
       "quest",
       "content quest",
@@ -1413,7 +1413,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Slay Hobgoblins",
     "category": "mini_quests",
     "region": "Canyon",
-    "description": "Mini-Quest - Slay Hobgoblins mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Slay Hobgoblins as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -1432,7 +1432,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Gather Sky Logs III",
     "category": "mini_quests",
     "region": "Sky",
-    "description": "Mini-Quest - Gather Sky Logs III mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Gather Sky Logs III as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -1451,7 +1451,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "WynnExcavation Site D",
     "category": "quests",
     "region": "Jungle",
-    "description": "WynnExcavation Site D scraped from the Quests wiki index page. Requirements: Combat level 70. Rewards: 1 Royal Token of Gratitude.",
+    "description": "Requirements: Combat level 70. Rewards: 1 Royal Token of Gratitude.",
     "tags": [
       "quest",
       "content quest",
@@ -1470,7 +1470,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Grave Digger",
     "category": "quests",
     "region": "Wynn",
-    "description": "Grave Digger scraped from the Quests wiki index page. Requirements: Combat level 20. Rewards: Access to the Saint's Row Graveyard.",
+    "description": "Requirements: Combat level 20. Rewards: Access to the Saint's Row Graveyard.",
     "tags": [
       "quest",
       "content quest",
@@ -1489,7 +1489,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "One Thousand Meters Under",
     "category": "quests",
     "region": "Sky",
-    "description": "One Thousand Meters Under scraped from the Quests wiki index page. Requirements: Combat level 95. Rewards: Access to The Void Ominous Wind.",
+    "description": "Requirements: Combat level 95. Rewards: Access to The Void Ominous Wind.",
     "tags": [
       "quest",
       "content quest",
@@ -1508,7 +1508,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Reincarnation",
     "category": "quests",
     "region": "Lutho",
-    "description": "Reincarnation scraped from the Quests wiki index page. Requirements: Combat level 74. Rewards: 1 Stone of Myths.",
+    "description": "Requirements: Combat level 74. Rewards: 1 Stone of Myths.",
     "tags": [
       "quest",
       "content quest",
@@ -1527,7 +1527,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Misadventure on the Sea",
     "category": "quests",
     "region": "Ocean",
-    "description": "Misadventure on the Sea scraped from the Quests wiki index page. Requirements: Combat level 28. Rewards: Free Seaskipper travel to Selchar Various ingredients and emeralds.",
+    "description": "Requirements: Combat level 28. Rewards: Free Seaskipper travel to Selchar Various ingredients and emeralds.",
     "tags": [
       "quest",
       "content quest",
@@ -1546,7 +1546,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Dwelling Walls",
     "category": "quests",
     "region": "Ocean",
-    "description": "Dwelling Walls scraped from the Quests wiki index page. Requirements: Combat level 22. Rewards: {{{reward}}}.",
+    "description": "Requirements: Combat level 22. Rewards: {{{reward}}}.",
     "tags": [
       "quest",
       "content quest",
@@ -1565,7 +1565,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Elemental Exercise",
     "category": "quests",
     "region": "Wynn",
-    "description": "Elemental Exercise scraped from the Quests wiki index page. Requirements: Combat level 11. Rewards: Ragon's Bracelet.",
+    "description": "Requirements: Combat level 11. Rewards: Ragon's Bracelet.",
     "tags": [
       "quest",
       "content quest",
@@ -1584,7 +1584,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Off the Rails",
     "category": "quests",
     "region": "Fruma",
-    "description": "Off the Rails scraped from the Quests wiki index page. Requirements: Combat level 109. Rewards: Access to the Fruman Underground.",
+    "description": "Requirements: Combat level 109. Rewards: Access to the Fruman Underground.",
     "tags": [
       "quest",
       "content quest",
@@ -1603,7 +1603,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "The Feathers Fly Part II",
     "category": "quests",
     "region": "Corkus",
-    "description": "The Feathers Fly Part II scraped from the Quests wiki index page. Requirements: Combat level 93. Rewards: 16 Bipedal Springs 8 Speed Surge 3 Corkian Amplifier I Access to The Workshop.",
+    "description": "Requirements: Combat level 93. Rewards: 16 Bipedal Springs 8 Speed Surge 3 Corkian Amplifier I Access to The Workshop.",
     "tags": [
       "quest",
       "content quest",
@@ -1622,7 +1622,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Fate of the Fallen",
     "category": "quests",
     "region": "Wynn",
-    "description": "Fate of the Fallen scraped from the Quests wiki index page. Requirements: Combat level 43. Rewards: 1 Avalanche 1 Ice Barrows Dungeon Key 1 Theorick's Ice Shard.",
+    "description": "Requirements: Combat level 43. Rewards: 1 Avalanche 1 Ice Barrows Dungeon Key 1 Theorick's Ice Shard.",
     "tags": [
       "quest",
       "content quest",
@@ -1641,7 +1641,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "WynnExcavation Site C",
     "category": "quests",
     "region": "Corkus",
-    "description": "WynnExcavation Site C scraped from the Quests wiki index page. Requirements: Combat level 55. Rewards: Red Crystal Shard.",
+    "description": "Requirements: Combat level 55. Rewards: Red Crystal Shard.",
     "tags": [
       "quest",
       "content quest",
@@ -1660,7 +1660,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Dwarves and Doguns Part II",
     "category": "quests",
     "region": "Canyon",
-    "description": "Dwarves and Doguns Part II scraped from the Quests wiki index page. Requirements: Combat level 92. Rewards: 1 Letter to Korzim Access to the Thanos-Rodoroc trading tunnel.",
+    "description": "Requirements: Combat level 92. Rewards: 1 Letter to Korzim Access to the Thanos-Rodoroc trading tunnel.",
     "tags": [
       "quest",
       "content quest",
@@ -1679,7 +1679,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "WynnExcavation Site A",
     "category": "quests",
     "region": "Desert",
-    "description": "WynnExcavation Site A scraped from the Quests wiki index page. Requirements: Combat level 35. Rewards: 1 Yellow Crystals.",
+    "description": "Requirements: Combat level 35. Rewards: 1 Yellow Crystals.",
     "tags": [
       "quest",
       "content quest",
@@ -1698,7 +1698,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "The House of Twain",
     "category": "quests",
     "region": "Wynn",
-    "description": "The House of Twain scraped from the Quests wiki index page. Requirements: Combat level 49. Rewards: {{{reward}}}.",
+    "description": "Requirements: Combat level 49. Rewards: {{{reward}}}.",
     "tags": [
       "quest",
       "content quest",
@@ -1717,7 +1717,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Slay Coyotes",
     "category": "mini_quests",
     "region": "Desert",
-    "description": "Mini-Quest - Slay Coyotes mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Slay Coyotes as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -1736,7 +1736,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Forbidden Prison",
     "category": "quests",
     "region": "Gavel West",
-    "description": "Forbidden Prison scraped from the Quests wiki index page. Requirements: Combat level 72. Rewards: {{{reward}}}.",
+    "description": "Requirements: Combat level 72. Rewards: {{{reward}}}.",
     "tags": [
       "quest",
       "content quest",
@@ -1755,7 +1755,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Collect Stackpeak Eggs",
     "category": "mini_quests",
     "region": "Fruma",
-    "description": "Mini-Quest - Collect Stackpeak Eggs mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Collect Stackpeak Eggs as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -1774,7 +1774,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Revelations in Fall",
     "category": "quests",
     "region": "Fruma",
-    "description": "Revelations in Fall scraped from the Quests wiki index page. Requirements: Combat level 108. Rewards: Sureshot Access to the Roughworks.",
+    "description": "Requirements: Combat level 108. Rewards: Sureshot Access to the Roughworks.",
     "tags": [
       "quest",
       "content quest",
@@ -1793,7 +1793,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "The Cursed One",
     "category": "quests",
     "region": "Fruma",
-    "description": "The Cursed One scraped from the Quests wiki index page. Requirements: Combat level 106. Rewards: Diverted Loyalty.",
+    "description": "Requirements: Combat level 106. Rewards: Diverted Loyalty.",
     "tags": [
       "quest",
       "content quest",
@@ -1812,7 +1812,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Reclaiming the House",
     "category": "quests",
     "region": "Gavel West",
-    "description": "Reclaiming the House scraped from the Quests wiki index page. Requirements: Combat level 61. Rewards: {{{reward}}}.",
+    "description": "Requirements: Combat level 61. Rewards: {{{reward}}}.",
     "tags": [
       "quest",
       "content quest",
@@ -1831,7 +1831,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Stable Story",
     "category": "quests",
     "region": "Wynn",
-    "description": "Stable Story scraped from the Quests wiki index page. Requirements: Combat level 13. Rewards: 1 Brown Horse Access to Ternaves's Horse Shop.",
+    "description": "Requirements: Combat level 13. Rewards: 1 Brown Horse Access to Ternaves's Horse Shop.",
     "tags": [
       "quest",
       "content quest",
@@ -1850,7 +1850,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Slay Idols",
     "category": "mini_quests",
     "region": "Jungle",
-    "description": "Mini-Quest - Slay Idols mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Slay Idols as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -1869,7 +1869,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Haven Antiquity",
     "category": "quests",
     "region": "Ocean",
-    "description": "Haven Antiquity scraped from the Quests wiki index page. Requirements: Combat level 70. Rewards: {{{reward}}}.",
+    "description": "Requirements: Combat level 70. Rewards: {{{reward}}}.",
     "tags": [
       "quest",
       "content quest",
@@ -1888,7 +1888,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Gather Starfish I",
     "category": "mini_quests",
     "region": "Sky",
-    "description": "Mini-Quest - Gather Starfish I mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Gather Starfish I as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -1907,7 +1907,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Underice",
     "category": "quests",
     "region": "Wynn",
-    "description": "Underice scraped from the Quests wiki index page. Requirements: Combat level 43. Rewards: Gernald's Amulet / Calamaro's Token.",
+    "description": "Requirements: Combat level 43. Rewards: Gernald's Amulet / Calamaro's Token.",
     "tags": [
       "quest",
       "content quest",
@@ -1926,7 +1926,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Queen's Recruit",
     "category": "quests",
     "region": "Wynn",
-    "description": "Queen's Recruit scraped from the Quests wiki index page. Requirements: Combat level 103. Rewards: {{{reward}}}.",
+    "description": "Requirements: Combat level 103. Rewards: {{{reward}}}.",
     "tags": [
       "quest",
       "content quest",
@@ -1945,7 +1945,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Slay Conures",
     "category": "mini_quests",
     "region": "Sky",
-    "description": "Mini-Quest - Slay Conures mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Slay Conures as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -1964,7 +1964,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "The Scarred Springs",
     "category": "quests",
     "region": "Fruma",
-    "description": "The Scarred Springs scraped from the Quests wiki index page. Requirements: Combat level 108. Rewards: {{{reward}}}.",
+    "description": "Requirements: Combat level 108. Rewards: {{{reward}}}.",
     "tags": [
       "quest",
       "content quest",
@@ -1983,7 +1983,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Out of my Mind",
     "category": "quests",
     "region": "Jungle",
-    "description": "Out of my Mind scraped from the Quests wiki index page. Requirements: Combat level 63. Rewards: Troms Kid Badge.",
+    "description": "Requirements: Combat level 63. Rewards: Troms Kid Badge.",
     "tags": [
       "quest",
       "content quest",
@@ -2002,7 +2002,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Royal Trials",
     "category": "quests",
     "region": "Sky",
-    "description": "Royal Trials scraped from the Quests wiki index page. Requirements: Combat level 98. Rewards: The Queen's Headpiece.",
+    "description": "Requirements: Combat level 98. Rewards: The Queen's Headpiece.",
     "tags": [
       "quest",
       "content quest",
@@ -2021,7 +2021,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Gather Hemp III",
     "category": "mini_quests",
     "region": "Sky",
-    "description": "Mini-Quest - Gather Hemp III mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Gather Hemp III as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -2040,7 +2040,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Memory Paranoia",
     "category": "quests",
     "region": "Gavel West",
-    "description": "Memory Paranoia scraped from the Quests wiki index page. Requirements: Combat level 67. Rewards: Ring of Generosity.",
+    "description": "Requirements: Combat level 67. Rewards: Ring of Generosity.",
     "tags": [
       "quest",
       "content quest",
@@ -2059,7 +2059,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Slay Lizardmen",
     "category": "mini_quests",
     "region": "Gavel West",
-    "description": "Mini-Quest - Slay Lizardmen mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Slay Lizardmen as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -2078,7 +2078,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "The Price of Ingenuity",
     "category": "quests",
     "region": "Fruma",
-    "description": "The Price of Ingenuity scraped from the Quests wiki index page. Requirements: Combat level 110. Rewards: Espionage.",
+    "description": "Requirements: Combat level 110. Rewards: Espionage.",
     "tags": [
       "quest",
       "content quest",
@@ -2097,7 +2097,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Lazarus Pit",
     "category": "quests",
     "region": "Gavel West",
-    "description": "Lazarus Pit scraped from the Quests wiki index page. Requirements: Combat level 69. Rewards: Lazarus' Brace.",
+    "description": "Requirements: Combat level 69. Rewards: Lazarus' Brace.",
     "tags": [
       "quest",
       "content quest",
@@ -2116,7 +2116,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Slay Mooshrooms",
     "category": "mini_quests",
     "region": "Wynn",
-    "description": "Mini-Quest - Slay Mooshrooms mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Slay Mooshrooms as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -2135,7 +2135,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Burning Bonds",
     "category": "quests",
     "region": "Fruma",
-    "description": "Burning Bonds scraped from the Quests wiki index page. Requirements: Combat level 114. Rewards: Medallion Access to Aldwell Sanctuary.",
+    "description": "Requirements: Combat level 114. Rewards: Medallion Access to Aldwell Sanctuary.",
     "tags": [
       "quest",
       "content quest",
@@ -2154,7 +2154,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Slay Felrocs",
     "category": "mini_quests",
     "region": "Gavel West",
-    "description": "Mini-Quest - Slay Felrocs mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Slay Felrocs as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -2173,7 +2173,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Lava Springs",
     "category": "quests",
     "region": "Wynn",
-    "description": "Lava Springs scraped from the Quests wiki index page. Requirements: Combat level 18. Rewards: Access to Bremminglar's Healer Shop.",
+    "description": "Requirements: Combat level 18. Rewards: Access to Bremminglar's Healer Shop.",
     "tags": [
       "quest",
       "content quest",
@@ -2192,7 +2192,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Acquiring Credentials",
     "category": "quests",
     "region": "Gavel West",
-    "description": "Acquiring Credentials scraped from the Quests wiki index page. Requirements: Combat level 74. Rewards: 1 Gavellian Passport Access to the Letvus Elevator.",
+    "description": "Requirements: Combat level 74. Rewards: 1 Gavellian Passport Access to the Letvus Elevator.",
     "tags": [
       "quest",
       "content quest",
@@ -2211,7 +2211,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Desperate Metal",
     "category": "quests",
     "region": "Corkus",
-    "description": "Desperate Metal scraped from the Quests wiki index page. Requirements: Combat level 86. Rewards: Mech Core.",
+    "description": "Requirements: Combat level 86. Rewards: Mech Core.",
     "tags": [
       "quest",
       "content quest",
@@ -2230,7 +2230,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "The Passage",
     "category": "quests",
     "region": "Jungle",
-    "description": "The Passage scraped from the Quests wiki index page. Requirements: Combat level 57. Rewards: Access to The Passage.",
+    "description": "Requirements: Combat level 57. Rewards: Access to The Passage.",
     "tags": [
       "quest",
       "content quest",
@@ -2249,7 +2249,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Flight in Distress",
     "category": "quests",
     "region": "Gavel West",
-    "description": "Flight in Distress scraped from the Quests wiki index page. Requirements: Combat level 75. Rewards: Ring of Rubies Access to fast travel between Cinfras and Detlas.",
+    "description": "Requirements: Combat level 75. Rewards: Ring of Rubies Access to fast travel between Cinfras and Detlas.",
     "tags": [
       "quest",
       "content quest",
@@ -2268,7 +2268,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Slay Astrochelys Manis",
     "category": "mini_quests",
     "region": "Corkus",
-    "description": "Mini-Quest - Slay Astrochelys Manis mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Slay Astrochelys Manis as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -2287,7 +2287,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Tempo Town Trouble",
     "category": "quests",
     "region": "Ocean",
-    "description": "Tempo Town Trouble scraped from the Quests wiki index page. Requirements: Combat level 25. Rewards: 1 Time Fragment Access to Time Valley's Time Trouble bosses Access to Mysterious Obelisk fast travel.",
+    "description": "Requirements: Combat level 25. Rewards: 1 Time Fragment Access to Time Valley's Time Trouble bosses Access to Mysterious Obelisk fast travel.",
     "tags": [
       "quest",
       "content quest",
@@ -2306,7 +2306,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Tunnel Trouble",
     "category": "quests",
     "region": "Wynn",
-    "description": "Tunnel Trouble scraped from the Quests wiki index page. Requirements: Combat level 6. Rewards: Access to fast travel between Ragni and Detlas..",
+    "description": "Requirements: Combat level 6. Rewards: Access to fast travel between Ragni and Detlas..",
     "tags": [
       "quest",
       "content quest",
@@ -2325,7 +2325,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Troubled Tribesmen",
     "category": "quests",
     "region": "Jungle",
-    "description": "Troubled Tribesmen scraped from the Quests wiki index page. Requirements: Combat level 73. Rewards: Access to the Dernel Tribe Shop in Entamis Village.",
+    "description": "Requirements: Combat level 73. Rewards: Access to the Dernel Tribe Shop in Entamis Village.",
     "tags": [
       "quest",
       "content quest",
@@ -2344,7 +2344,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Maltic's Well",
     "category": "quests",
     "region": "Wynn",
-    "description": "Maltic's Well scraped from the Quests wiki index page. Requirements: Combat level 10. Rewards: {{{reward}}}.",
+    "description": "Requirements: Combat level 10. Rewards: {{{reward}}}.",
     "tags": [
       "quest",
       "content quest",
@@ -2363,7 +2363,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Pit of the Dead",
     "category": "quests",
     "region": "Wynn",
-    "description": "Pit of the Dead scraped from the Quests wiki index page. Requirements: Combat level 20. Rewards: Skeletal Legs.",
+    "description": "Requirements: Combat level 20. Rewards: Skeletal Legs.",
     "tags": [
       "quest",
       "content quest",
@@ -2382,7 +2382,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "The Feathers Fly Part I",
     "category": "quests",
     "region": "Corkus",
-    "description": "The Feathers Fly Part I scraped from the Quests wiki index page. Requirements: Combat level 91. Rewards: 20 Bipedal Springs 3 Golden Avia Feathers.",
+    "description": "Requirements: Combat level 91. Rewards: 20 Bipedal Springs 3 Golden Avia Feathers.",
     "tags": [
       "quest",
       "content quest",
@@ -2401,7 +2401,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "The Envoy Part I",
     "category": "quests",
     "region": "Ocean",
-    "description": "The Envoy Part I scraped from the Quests wiki index page. Requirements: Combat level 83. Rewards: 1 Maxie's House Key Access to the C.S.S. Wavebreaker.",
+    "description": "Requirements: Combat level 83. Rewards: 1 Maxie's House Key Access to the C.S.S. Wavebreaker.",
     "tags": [
       "quest",
       "content quest",
@@ -2420,7 +2420,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "A Hunter's Calling",
     "category": "quests",
     "region": "Lutho",
-    "description": "A Hunter's Calling scraped from the Quests wiki index page. Requirements: Combat level 103. Rewards: 1 Corrupted Soul Token Hunted Mode.",
+    "description": "Requirements: Combat level 103. Rewards: 1 Corrupted Soul Token Hunted Mode.",
     "tags": [
       "quest",
       "content quest",
@@ -2439,7 +2439,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Gather Sky Logs II",
     "category": "mini_quests",
     "region": "Sky",
-    "description": "Mini-Quest - Gather Sky Logs II mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Gather Sky Logs II as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -2458,7 +2458,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "The Missing Piece",
     "category": "quests",
     "region": "Fruma",
-    "description": "The Missing Piece scraped from the Quests wiki index page. Requirements: Combat level 111. Rewards: {{{reward}}}.",
+    "description": "Requirements: Combat level 111. Rewards: {{{reward}}}.",
     "tags": [
       "quest",
       "content quest",
@@ -2477,7 +2477,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Enzan's Brother",
     "category": "quests",
     "region": "Wynn",
-    "description": "Enzan's Brother scraped from the Quests wiki index page. Requirements: Combat level 1. Rewards: 1 First Steps.",
+    "description": "Requirements: Combat level 1. Rewards: 1 First Steps.",
     "tags": [
       "quest",
       "content quest",
@@ -2496,7 +2496,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Gather Hemp II",
     "category": "mini_quests",
     "region": "Sky",
-    "description": "Mini-Quest - Gather Hemp II mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Gather Hemp II as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -2515,7 +2515,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Ice Barrows Dungeon",
     "category": "dungeon",
     "region": "Wynn",
-    "description": "Ice Barrows Dungeon dungeon placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Ice Barrows Dungeon as a current dungeon on the live map.",
     "tags": [
       "dungeon",
       "content dungeon",
@@ -2533,7 +2533,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Slay Azers",
     "category": "mini_quests",
     "region": "Canyon",
-    "description": "Mini-Quest - Slay Azers mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Slay Azers as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -2552,7 +2552,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Crop Failure",
     "category": "quests",
     "region": "Gavel West",
-    "description": "Crop Failure scraped from the Quests wiki index page. Requirements: Combat level 52. Rewards: 5 T3 Oat Strings and Grains 2500 Farming Experience Points.",
+    "description": "Requirements: Combat level 52. Rewards: 5 T3 Oat Strings and Grains 2500 Farming Experience Points.",
     "tags": [
       "quest",
       "content quest",
@@ -2571,7 +2571,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Jungle Fever",
     "category": "quests",
     "region": "Jungle",
-    "description": "Jungle Fever scraped from the Quests wiki index page. Requirements: Combat level 52. Rewards: 1 Undergrowth Ruins Key.",
+    "description": "Requirements: Combat level 52. Rewards: 1 Undergrowth Ruins Key.",
     "tags": [
       "quest",
       "content quest",
@@ -2590,7 +2590,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Slay Spiders",
     "category": "mini_quests",
     "region": "Wynn",
-    "description": "Mini-Quest - Slay Spiders mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Slay Spiders as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -2609,7 +2609,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Collect White Lilies",
     "category": "mini_quests",
     "region": "Fruma",
-    "description": "Mini-Quest - Collect White Lilies mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Collect White Lilies as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -2628,7 +2628,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Arachnids' Ascent",
     "category": "quests",
     "region": "Wynn",
-    "description": "Arachnids' Ascent scraped from the Quests wiki index page. Requirements: Combat level 14. Rewards: 1 Infested Pit Key Access to the Infested Pit dungeon.",
+    "description": "Requirements: Combat level 14. Rewards: 1 Infested Pit Key Access to the Infested Pit dungeon.",
     "tags": [
       "quest",
       "content quest",
@@ -2647,7 +2647,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Deja Vu",
     "category": "quests",
     "region": "Wynn",
-    "description": "Deja Vu scraped from the Quests wiki index page. Requirements: Combat level 27. Rewards: 1 Familiar Essence.",
+    "description": "Requirements: Combat level 27. Rewards: 1 Familiar Essence.",
     "tags": [
       "quest",
       "content quest",
@@ -2666,7 +2666,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Slay Hedoro",
     "category": "mini_quests",
     "region": "Fruma",
-    "description": "Mini-Quest - Slay Hedoro mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Slay Hedoro as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -2685,7 +2685,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "The Dark Descent",
     "category": "quests",
     "region": "Wynn",
-    "description": "The Dark Descent scraped from the Quests wiki index page. Requirements: Combat level 21. Rewards: Dark Diadem Underworld Crypt Dungeon Key Charon's Brain.",
+    "description": "Requirements: Combat level 21. Rewards: Dark Diadem Underworld Crypt Dungeon Key Charon's Brain.",
     "tags": [
       "quest",
       "content quest",
@@ -2704,7 +2704,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "A Journey Further",
     "category": "quests",
     "region": "Lutho",
-    "description": "A Journey Further scraped from the Quests wiki index page. Requirements: Combat level 101. Rewards: Access to the Eldritch Outlook Dungeon Access to the The Nameless Anomaly Raid.",
+    "description": "Requirements: Combat level 101. Rewards: Access to the Eldritch Outlook Dungeon Access to the The Nameless Anomaly Raid.",
     "tags": [
       "quest",
       "content quest",
@@ -2723,7 +2723,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Slay Dragonlings",
     "category": "mini_quests",
     "region": "Sky",
-    "description": "Mini-Quest - Slay Dragonlings mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Slay Dragonlings as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -2742,7 +2742,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Lost in the Jungle",
     "category": "quests",
     "region": "Jungle",
-    "description": "Lost in the Jungle scraped from the Quests wiki index page. Requirements: Combat level 62. Rewards: 3 Jungle Jet Shards Access to Gracen's house.",
+    "description": "Requirements: Combat level 62. Rewards: 3 Jungle Jet Shards Access to Gracen's house.",
     "tags": [
       "quest",
       "content quest",
@@ -2761,7 +2761,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Meaningful Holiday",
     "category": "quests",
     "region": "Desert",
-    "description": "Meaningful Holiday scraped from the Quests wiki index page. Requirements: Combat level 33. Rewards: {{{reward}}}.",
+    "description": "Requirements: Combat level 33. Rewards: {{{reward}}}.",
     "tags": [
       "quest",
       "content quest",
@@ -2780,7 +2780,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Canyon Condor",
     "category": "quests",
     "region": "Desert",
-    "description": "Canyon Condor scraped from the Quests wiki index page. Requirements: Combat level 34. Rewards: Access to Rymek elevators.",
+    "description": "Requirements: Combat level 34. Rewards: Access to Rymek elevators.",
     "tags": [
       "quest",
       "content quest",
@@ -2799,7 +2799,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Poisoning the Pest",
     "category": "quests",
     "region": "Wynn",
-    "description": "Poisoning the Pest scraped from the Quests wiki index page. Requirements: Combat level 2. Rewards: Access to Farmer Cevalus's second farm.",
+    "description": "Requirements: Combat level 2. Rewards: Access to Farmer Cevalus's second farm.",
     "tags": [
       "quest",
       "content quest",
@@ -2818,7 +2818,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Beyond the Grave",
     "category": "quests",
     "region": "Canyon",
-    "description": "Beyond the Grave scraped from the Quests wiki index page. Requirements: Combat level 87. Rewards: Raging Wind.",
+    "description": "Requirements: Combat level 87. Rewards: Raging Wind.",
     "tags": [
       "quest",
       "content quest",
@@ -2837,7 +2837,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Shrouded in Mist",
     "category": "quests",
     "region": "Fruma",
-    "description": "Shrouded in Mist scraped from the Quests wiki index page. Requirements: Combat level 113. Rewards: Creed Catalyst Access to the Canopy.",
+    "description": "Requirements: Combat level 113. Rewards: Creed Catalyst Access to the Canopy.",
     "tags": [
       "quest",
       "content quest",
@@ -2856,7 +2856,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Undersupply",
     "category": "quests",
     "region": "Fruma",
-    "description": "Undersupply scraped from the Quests wiki index page. Requirements: Combat level 107. Rewards: {{{reward}}}.",
+    "description": "Requirements: Combat level 107. Rewards: {{{reward}}}.",
     "tags": [
       "quest",
       "content quest",
@@ -2875,7 +2875,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Slay Magma Entities",
     "category": "mini_quests",
     "region": "Canyon",
-    "description": "Mini-Quest - Slay Magma Entities mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Slay Magma Entities as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -2894,7 +2894,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Beneath the Depths",
     "category": "quests",
     "region": "Ocean",
-    "description": "Beneath the Depths scraped from the Quests wiki index page. Requirements: Combat level 60. Rewards: 1 Abysso Galoshes 1 Galleon's Graveyard Key.",
+    "description": "Requirements: Combat level 60. Rewards: 1 Abysso Galoshes 1 Galleon's Graveyard Key.",
     "tags": [
       "quest",
       "content quest",
@@ -2913,7 +2913,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Dwarves and Doguns Part I",
     "category": "quests",
     "region": "Canyon",
-    "description": "Dwarves and Doguns Part I scraped from the Quests wiki index page. Requirements: Combat level 91. Rewards: 1 Dogun Badge of Trust Access to the Molten Heights elevators.",
+    "description": "Requirements: Combat level 91. Rewards: 1 Dogun Badge of Trust Access to the Molten Heights elevators.",
     "tags": [
       "quest",
       "content quest",
@@ -2932,7 +2932,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Infested Plants",
     "category": "quests",
     "region": "Wynn",
-    "description": "Infested Plants scraped from the Quests wiki index page. Requirements: Combat level 4. Rewards: Ability to use Waist Apron.",
+    "description": "Requirements: Combat level 4. Rewards: Ability to use Waist Apron.",
     "tags": [
       "quest",
       "content quest",
@@ -2951,7 +2951,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "An Iron Heart Part II",
     "category": "quests",
     "region": "Gavel West",
-    "description": "An Iron Heart Part II scraped from the Quests wiki index page. Requirements: Combat level 58. Rewards: Greaves of Honor / Shameful Greaves.",
+    "description": "Requirements: Combat level 58. Rewards: Greaves of Honor / Shameful Greaves.",
     "tags": [
       "quest",
       "content quest",
@@ -2970,7 +2970,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Death Whistle",
     "category": "quests",
     "region": "Gavel West",
-    "description": "Death Whistle scraped from the Quests wiki index page. Requirements: Combat level 53. Rewards: 1 Death Whistle Leaf 3 Cyclone Blue Leaves 3 Pink Pelulite 5 Pink Pelute.",
+    "description": "Requirements: Combat level 53. Rewards: 1 Death Whistle Leaf 3 Cyclone Blue Leaves 3 Pink Pelulite 5 Pink Pelute.",
     "tags": [
       "quest",
       "content quest",
@@ -2989,7 +2989,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Lexdale Witch Trials",
     "category": "quests",
     "region": "Gavel West",
-    "description": "Lexdale Witch Trials scraped from the Quests wiki index page. Requirements: Combat level 72. Rewards: Access to the Lexdale Accessory Merchant.",
+    "description": "Requirements: Combat level 72. Rewards: Access to the Lexdale Accessory Merchant.",
     "tags": [
       "quest",
       "content quest",
@@ -3008,7 +3008,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Grand Youth",
     "category": "quests",
     "region": "Jungle",
-    "description": "Grand Youth scraped from the Quests wiki index page. Requirements: Combat level 69. Rewards: {{{reward}}}.",
+    "description": "Requirements: Combat level 69. Rewards: {{{reward}}}.",
     "tags": [
       "quest",
       "content quest",
@@ -3027,7 +3027,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "A Journey Home",
     "category": "quests",
     "region": "Corkus",
-    "description": "A Journey Home scraped from the Quests wiki index page. Requirements: Combat level 104. Rewards: {{{reward}}}.",
+    "description": "Requirements: Combat level 104. Rewards: {{{reward}}}.",
     "tags": [
       "quest",
       "content quest",
@@ -3046,7 +3046,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Dwarves and Doguns Part IV",
     "category": "quests",
     "region": "Canyon",
-    "description": "Dwarves and Doguns Part IV scraped from the Quests wiki index page. Requirements: Combat level 94. Rewards: Access to the Ingredient Merchant in Maex.",
+    "description": "Requirements: Combat level 94. Rewards: Access to the Ingredient Merchant in Maex.",
     "tags": [
       "quest",
       "content quest",
@@ -3065,7 +3065,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Fantastic Voyage",
     "category": "quests",
     "region": "Sky",
-    "description": "Fantastic Voyage scraped from the Quests wiki index page. Requirements: Combat level 90. Rewards: Pendant of Prosperity.",
+    "description": "Requirements: Combat level 90. Rewards: Pendant of Prosperity.",
     "tags": [
       "quest",
       "content quest",
@@ -3084,7 +3084,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Slay Ailuropodas",
     "category": "mini_quests",
     "region": "Ocean",
-    "description": "Mini-Quest - Slay Ailuropodas mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Slay Ailuropodas as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -3103,7 +3103,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Collect Liff Leaves",
     "category": "mini_quests",
     "region": "Fruma",
-    "description": "Mini-Quest - Collect Liff Leaves mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Collect Liff Leaves as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -3122,7 +3122,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "The Strong Survive",
     "category": "quests",
     "region": "Fruma",
-    "description": "The Strong Survive scraped from the Quests wiki index page. Requirements: Combat level 117. Rewards: {{{reward}}}.",
+    "description": "Requirements: Combat level 117. Rewards: {{{reward}}}.",
     "tags": [
       "quest",
       "content quest",
@@ -3141,7 +3141,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Slay Ifrits",
     "category": "mini_quests",
     "region": "Canyon",
-    "description": "Mini-Quest - Slay Ifrits mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Slay Ifrits as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -3160,7 +3160,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Apotheosis",
     "category": "quests",
     "region": "Fruma",
-    "description": "Apotheosis scraped from the Quests wiki index page. Requirements: Combat level 119. Rewards: 4 Ek Runes Shattershard Access to The Wartorn Palace.",
+    "description": "Requirements: Combat level 119. Rewards: 4 Ek Runes Shattershard Access to The Wartorn Palace.",
     "tags": [
       "quest",
       "content quest",
@@ -3179,7 +3179,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Bob's Lost Soul",
     "category": "quests",
     "region": "Wynn",
-    "description": "Bob's Lost Soul scraped from the Quests wiki index page. Requirements: Combat level 45. Rewards: Bob's Battle Chestplate Access to Bob's Tomb.",
+    "description": "Requirements: Combat level 45. Rewards: Bob's Battle Chestplate Access to Bob's Tomb.",
     "tags": [
       "quest",
       "content quest",
@@ -3198,7 +3198,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Hunt Woolly Rhinos",
     "category": "mini_quests",
     "region": "Fruma",
-    "description": "Mini-Quest - Hunt Woolly Rhinos mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Hunt Woolly Rhinos as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -3217,7 +3217,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "The Lost",
     "category": "quests",
     "region": "Ocean",
-    "description": "The Lost scraped from the Quests wiki index page. Requirements: Combat level 85. Rewards: Canyon Chart.",
+    "description": "Requirements: Combat level 85. Rewards: Canyon Chart.",
     "tags": [
       "quest",
       "content quest",
@@ -3236,7 +3236,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Kingdom of Sand",
     "category": "quests",
     "region": "Desert",
-    "description": "Kingdom of Sand scraped from the Quests wiki index page. Requirements: Combat level 33. Rewards: 1 Sand-Swept Tomb Key 1 Hashr's Bone.",
+    "description": "Requirements: Combat level 33. Rewards: 1 Sand-Swept Tomb Key 1 Hashr's Bone.",
     "tags": [
       "quest",
       "content quest",
@@ -3255,7 +3255,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Dwarves and Doguns Part III",
     "category": "quests",
     "region": "Canyon",
-    "description": "Dwarves and Doguns Part III scraped from the Quests wiki index page. Requirements: Combat level 93. Rewards: Staff of True Ice Amulet of Fire Resistance Access to the Maex Resource Mine.",
+    "description": "Requirements: Combat level 93. Rewards: Staff of True Ice Amulet of Fire Resistance Access to the Maex Resource Mine.",
     "tags": [
       "quest",
       "content quest",
@@ -3274,7 +3274,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Solidarity of Steel",
     "category": "quests",
     "region": "Fruma",
-    "description": "Solidarity of Steel scraped from the Quests wiki index page. Requirements: Combat level 109. Rewards: Amplifier The Steel Feather Fast Travel.",
+    "description": "Requirements: Combat level 109. Rewards: Amplifier The Steel Feather Fast Travel.",
     "tags": [
       "quest",
       "content quest",
@@ -3293,7 +3293,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Gather Hemp I",
     "category": "mini_quests",
     "region": "Sky",
-    "description": "Mini-Quest - Gather Hemp I mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Gather Hemp I as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -3312,7 +3312,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Echoes of Change",
     "category": "quests",
     "region": "Fruma",
-    "description": "Echoes of Change scraped from the Quests wiki index page. Requirements: Combat level 112. Rewards: Mutiny.",
+    "description": "Requirements: Combat level 112. Rewards: Mutiny.",
     "tags": [
       "quest",
       "content quest",
@@ -3331,7 +3331,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Slay Scarabs",
     "category": "mini_quests",
     "region": "Desert",
-    "description": "Mini-Quest - Slay Scarabs mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Slay Scarabs as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -3350,7 +3350,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "True Colours",
     "category": "quests",
     "region": "Fruma",
-    "description": "True Colours scraped from the Quests wiki index page. Requirements: Combat level 115. Rewards: Conviction.",
+    "description": "Requirements: Combat level 115. Rewards: Conviction.",
     "tags": [
       "quest",
       "content quest",
@@ -3369,7 +3369,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Slay Jinkos",
     "category": "mini_quests",
     "region": "Canyon",
-    "description": "Mini-Quest - Slay Jinkos mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Slay Jinkos as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -3388,7 +3388,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Mini-Quest - Gather Starfish III",
     "category": "mini_quests",
     "region": "Sky",
-    "description": "Mini-Quest - Gather Starfish III mini-quest placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Mini-Quest - Gather Starfish III as a current mini-quest on the live map.",
     "tags": [
       "quest",
       "content miniquest",
@@ -3407,7 +3407,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "The Envoy Part II",
     "category": "quests",
     "region": "Corkus",
-    "description": "The Envoy Part II scraped from the Quests wiki index page. Requirements: Combat level 89. Rewards: Electro Mage's Boots 1 Fallen Factory Key Access to the hot air balloon fast travel between Corkus City and Kandon-Beda Access to the Fallen Factory Dungeon.",
+    "description": "Requirements: Combat level 89. Rewards: Electro Mage's Boots 1 Fallen Factory Key Access to the hot air balloon fast travel between Corkus City and Kandon-Beda Access to the Fallen Factory Dungeon.",
     "tags": [
       "quest",
       "content quest",
@@ -3426,7 +3426,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Underwater",
     "category": "quests",
     "region": "Wynn",
-    "description": "Underwater scraped from the Quests wiki index page. Requirements: Combat level 9. Rewards: 50 Fishing Experience Points 1 Breathing Helmet 1 Treasure Boots 1 Gathering Rod T1.",
+    "description": "Requirements: Combat level 9. Rewards: 50 Fishing Experience Points 1 Breathing Helmet 1 Treasure Boots 1 Gathering Rod T1.",
     "tags": [
       "quest",
       "content quest",
@@ -3445,7 +3445,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Master Piece",
     "category": "quests",
     "region": "Gavel West",
-    "description": "Master Piece scraped from the Quests wiki index page. Requirements: Combat level 53. Rewards: Caissop's Master Piece.",
+    "description": "Requirements: Combat level 53. Rewards: Caissop's Master Piece.",
     "tags": [
       "quest",
       "content quest",
@@ -3464,7 +3464,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "The Hidden City",
     "category": "quests",
     "region": "Canyon",
-    "description": "The Hidden City scraped from the Quests wiki index page. Requirements: Combat level 88. Rewards: Access to fast travel between Thesead and Eltom Access to the Juggler's fast travel to Thesead.",
+    "description": "Requirements: Combat level 88. Rewards: Access to fast travel between Thesead and Eltom Access to the Juggler's fast travel to Thesead.",
     "tags": [
       "quest",
       "content quest",
@@ -3483,7 +3483,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Ensemble of Hope",
     "category": "quests",
     "region": "Fruma",
-    "description": "Ensemble of Hope scraped from the Quests wiki index page. Requirements: Combat level 118. Rewards: Dimachaerus Access to Aelumia Citadel.",
+    "description": "Requirements: Combat level 118. Rewards: Dimachaerus Access to Aelumia Citadel.",
     "tags": [
       "quest",
       "content quest",
@@ -3502,7 +3502,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Zhight Island",
     "category": "quests",
     "region": "Ocean",
-    "description": "Zhight Island scraped from the Quests wiki index page. Requirements: Combat level 55. Rewards: Access to Zhight Grand Exchange Access to Zhight Treasure Tour 16 Zhight Money.",
+    "description": "Requirements: Combat level 55. Rewards: Access to Zhight Grand Exchange Access to Zhight Treasure Tour 16 Zhight Money.",
     "tags": [
       "quest",
       "content quest",
@@ -3521,7 +3521,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Fallen Delivery",
     "category": "quests",
     "region": "Gavel West",
-    "description": "Fallen Delivery scraped from the Quests wiki index page. Requirements: Combat level 79. Rewards: Access to Gawrick's Experimental Scrolls.",
+    "description": "Requirements: Combat level 79. Rewards: Access to Gawrick's Experimental Scrolls.",
     "tags": [
       "quest",
       "content quest",
@@ -3540,7 +3540,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Pirate's Trove",
     "category": "quests",
     "region": "Gavel West",
-    "description": "Pirate's Trove scraped from the Quests wiki index page. Requirements: Combat level 39. Rewards: {{{reward}}}.",
+    "description": "Requirements: Combat level 39. Rewards: {{{reward}}}.",
     "tags": [
       "quest",
       "content quest",
@@ -3559,7 +3559,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "The Corrupted Village",
     "category": "quests",
     "region": "Wynn",
-    "description": "The Corrupted Village scraped from the Quests wiki index page. Requirements: Combat level 28. Rewards: Corrupted Potato.",
+    "description": "Requirements: Combat level 28. Rewards: Corrupted Potato.",
     "tags": [
       "quest",
       "content quest",
@@ -3578,7 +3578,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Decrepit Sewers Dungeon",
     "category": "dungeon",
     "region": "Wynn",
-    "description": "Decrepit Sewers Dungeon dungeon placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Decrepit Sewers Dungeon as a current dungeon on the live map.",
     "tags": [
       "dungeon",
       "content dungeon",
@@ -3596,7 +3596,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Infested Pit Dungeon",
     "category": "dungeon",
     "region": "Wynn",
-    "description": "Infested Pit Dungeon dungeon placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Infested Pit Dungeon as a current dungeon on the live map.",
     "tags": [
       "dungeon",
       "content dungeon",
@@ -3614,7 +3614,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Timelost Sanctum Dungeon",
     "category": "dungeon",
     "region": "Wynn",
-    "description": "Timelost Sanctum Dungeon dungeon placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Timelost Sanctum Dungeon as a current dungeon on the live map.",
     "tags": [
       "dungeon",
       "content dungeon",
@@ -3632,7 +3632,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Underworld Crypt Dungeon",
     "category": "dungeon",
     "region": "Wynn",
-    "description": "Underworld Crypt Dungeon dungeon placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Underworld Crypt Dungeon as a current dungeon on the live map.",
     "tags": [
       "dungeon",
       "content dungeon",
@@ -3650,7 +3650,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Sand-Swept Tomb Dungeon",
     "category": "dungeon",
     "region": "Desert",
-    "description": "Sand-Swept Tomb Dungeon dungeon placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Sand-Swept Tomb Dungeon as a current dungeon on the live map.",
     "tags": [
       "dungeon",
       "content dungeon",
@@ -3668,7 +3668,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Undergrowth Ruins Dungeon",
     "category": "dungeon",
     "region": "Jungle",
-    "description": "Undergrowth Ruins Dungeon dungeon placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Undergrowth Ruins Dungeon as a current dungeon on the live map.",
     "tags": [
       "dungeon",
       "content dungeon",
@@ -3686,7 +3686,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Galleon's Graveyard Dungeon",
     "category": "dungeon",
     "region": "Ocean",
-    "description": "Galleon's Graveyard Dungeon dungeon placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Galleon's Graveyard Dungeon as a current dungeon on the live map.",
     "tags": [
       "dungeon",
       "content dungeon",
@@ -3704,7 +3704,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Fallen Factory Dungeon",
     "category": "dungeon",
     "region": "Corkus",
-    "description": "Fallen Factory Dungeon dungeon placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Fallen Factory Dungeon as a current dungeon on the live map.",
     "tags": [
       "dungeon",
       "content dungeon",
@@ -3722,7 +3722,7 @@ export const WIKI_MAP_MARKERS = [
     "title": "Eldritch Outlook Dungeon",
     "category": "dungeon",
     "region": "Lutho",
-    "description": "Eldritch Outlook Dungeon dungeon placed from the map marker dataset and enriched with wiki naming where available.",
+    "description": "I marked Eldritch Outlook Dungeon as a current dungeon on the live map.",
     "tags": [
       "dungeon",
       "content dungeon",

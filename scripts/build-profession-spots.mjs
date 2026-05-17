@@ -216,13 +216,13 @@ function titleFromNote(material, note, dims, spotIndex, spotCount) {
 }
 
 function buildDescription(section, material, levelRange, tools, nodeCount, mobLevel, note) {
+  const routeNote = cleanSpotNote(note, SECTION_CONFIG[section].dims);
   const parts = [
-    `${SECTION_CONFIG[section].label} spot for ${material}.`,
-    levelRange ? `Recommended for profession levels ${levelRange}.` : "",
+    `I use this ${SECTION_CONFIG[section].label.toLowerCase()} spot for ${material}${levelRange ? ` around levels ${levelRange}` : ""}.`,
+    routeNote ? `Route note: ${routeNote}.` : "",
     nodeCount ? `Nodes: ${nodeCount}.` : "",
     mobLevel ? `Mob pressure: ${mobLevel}.` : "",
-    tools.length ? `Suggested tools: ${tools.join(", ")}.` : "",
-    cleanSpotNote(note, SECTION_CONFIG[section].dims),
+    tools.length ? `Tools: ${tools.join(", ")}.` : "",
   ];
 
   return parts.filter(Boolean).join(" ");
@@ -234,15 +234,14 @@ function buildExplanation(section, material, levelRange, tools, nodeCount, mobLe
     : `${coord.x}, ${coord.y}, ${coord.z}`;
 
   return [
-    "Spot Details",
-    `• Material: ${material}`,
-    `• Profession: ${SECTION_CONFIG[section].label}`,
-    levelRange ? `• Level range: ${levelRange}` : "",
-    tools.length ? `• Suggested tools: ${tools.join(", ")}` : "",
-    nodeCount ? `• Nodes: ${nodeCount}` : "",
-    mobLevel ? `• Mobs: ${mobLevel}` : "",
-    `• Coordinates: ${coordText}`,
-    `• Guide note: ${cleanSpotNote(note, SECTION_CONFIG[section].dims)}`,
+    "My Notes",
+    `• I farm ${material} here.`,
+    levelRange ? `• I use it for levels ${levelRange}.` : "",
+    tools.length ? `• I bring ${tools.join(", ")}.` : "",
+    nodeCount ? `• I usually get ${nodeCount} nodes here.` : "",
+    mobLevel ? `• Mob pressure: ${mobLevel}.` : "",
+    `• Coordinates: ${coordText}.`,
+    cleanSpotNote(note, SECTION_CONFIG[section].dims) ? `• Route note: ${cleanSpotNote(note, SECTION_CONFIG[section].dims)}.` : "",
   ].filter(Boolean).join("\n");
 }
 
@@ -299,7 +298,7 @@ function buildOutputs(lines) {
           });
 
           content[id] = {
-            summary: `${config.label} spot for ${materialEntry.material}${materialEntry.levelRange ? ` (${materialEntry.levelRange})` : ""}.`,
+            summary: `I use this ${config.label.toLowerCase()} spot for ${materialEntry.material}${materialEntry.levelRange ? ` around levels ${materialEntry.levelRange}` : ""}.`,
             explanation: buildExplanation(sectionName, materialEntry.material, materialEntry.levelRange, materialEntry.tools, nodeCount, mobLevel, spotLine, coord),
             coverImage: "",
             gallery: [],
