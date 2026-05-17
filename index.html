@@ -17,28 +17,23 @@
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     crossorigin=""
   >
-  <link rel="stylesheet" href="./styles.css?v=20260517r">
+  <link rel="stylesheet" href="./styles.css?v=20260517w">
 </head>
 <body>
   <div class="app-shell">
     <div id="map"></div>
 
-    <header class="topbar">
-      <button id="panel-toggle" type="button" class="menu-button" aria-label="Toggle marker panel">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <div class="brand">
-        <img class="brand-icon" src="./assets/icon.png" alt="">
-        <div class="brand-copy">
-          <strong>Wynn Atlas</strong>
-          <span>Interactive world map</span>
+    <aside id="marker-panel" class="marker-panel">
+      <div class="panel-shell-head">
+        <div class="panel-brand">
+          <img class="panel-brand-icon" src="./assets/icon.png" alt="">
+          <div class="panel-brand-copy">
+            <strong>Wynn Atlas</strong>
+            <span>Interactive world map</span>
+          </div>
         </div>
       </div>
-    </header>
 
-    <aside id="marker-panel" class="marker-panel">
       <div class="panel-tabbar" role="tablist" aria-label="Map panel modes">
         <button type="button" class="panel-tab active" aria-label="Markers" data-panel-view="markers">
           <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -54,7 +49,7 @@
 
       <section class="panel-screen" data-panel-screen="markers">
         <div class="panel-banner">
-          Wynn Atlas tracks quests, discoveries, raids, and route planning on one clean world map.
+          Current map routes, guides, rewards, discoveries, and profession overlays in one place.
         </div>
 
         <div class="panel-toolbar">
@@ -91,13 +86,9 @@
       </section>
 
       <section class="panel-screen hidden" data-panel-screen="info">
-        <div class="panel-banner panel-banner-info">
-          Marker info lives here. Click any icon on the map to open its explanation, screenshots, and tutorial links.
-        </div>
-
         <article id="info-card" class="detail-card empty">
           <h2>No marker selected</h2>
-          <p>Click a map marker to inspect it.</p>
+          <p>Select a marker on the map to open its guide, rewards, route notes, and source links.</p>
         </article>
       </section>
 
@@ -122,12 +113,16 @@
         </article>
       </section>
     </aside>
+
+    <button id="panel-toggle" type="button" class="panel-edge-toggle" aria-label="Collapse marker panel" aria-expanded="true">
+      <span class="panel-edge-toggle-icon" aria-hidden="true"></span>
+    </button>
   </div>
 
   <script
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     crossorigin=""
   ></script>
-    <script type="module" src="./app.js?v=20260517u"></script>
+    <script type="module" src="./app.js?v=20260517w"></script>
 </body>
 </html>

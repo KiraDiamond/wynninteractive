@@ -1,10 +1,10 @@
-import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517u";
-import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260517u";
-import { MARKER_CONTENT } from "./data/marker-content.js?v=20260517u";
+import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517w";
+import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260517w";
+import { MARKER_CONTENT } from "./data/marker-content.js?v=20260517w";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
-const MAP_PIN_SIZE = 28;
+const MAP_PIN_SIZE = 56;
 const MAP_BOUNDS = [[0, 0], [MAP_HEIGHT, MAP_WIDTH]];
 const DEFAULT_BOUNDS = {
   minX: -2540,
@@ -74,6 +74,15 @@ const CATEGORY_GROUPS = [
     categories: ["profession_fishing", "profession_farming", "profession_mining", "profession_woodcutting"],
   },
 ];
+const PASSIVE_CATEGORIES = new Set([
+  "profession_fishing",
+  "profession_farming",
+  "profession_mining",
+  "profession_woodcutting",
+]);
+const DEFAULT_CATEGORY_FILTER = new Set(
+  CATEGORY_ORDER.filter((categoryId) => !PASSIVE_CATEGORIES.has(categoryId)),
+);
 
 const state = {
   markers: [],
@@ -85,7 +94,7 @@ const state = {
   showCities: true,
   panelCollapsed: false,
   markerLayers: new Map(),
-  categoryFilter: new Set(CATEGORY_ORDER),
+  categoryFilter: new Set(DEFAULT_CATEGORY_FILTER),
   calibrationMode: CALIBRATION_MODE,
   calibrationSamples: loadCalibrationSamples(),
   calibrationIndex: 0,
@@ -99,6 +108,7 @@ const state = {
 };
 
 const elements = {
+  appShell: document.querySelector(".app-shell"),
   panel: document.querySelector("#marker-panel"),
   panelToggle: document.querySelector("#panel-toggle"),
   panelTabs: document.querySelectorAll("[data-panel-view]"),
@@ -353,7 +363,15 @@ function splitMultiline(value) {
     .filter(Boolean);
 }
 
-function markerContentEntry(markerId) {
+function markerSupportsFound(marker) {
+  return !marker.fixed && !PASSIVE_CATEGORIES.has(marker.category);
+}
+
+function markerIsFound(marker) {
+  return markerSupportsFound(marker) && state.foundIds.has(marker.id);
+}
+
+function markerContentAuthorEntry(markerId) {
   const entry = state.markerContent[markerId] || {};
   return {
     summary: entry.summary || "",
@@ -365,8 +383,16 @@ function markerContentEntry(markerId) {
   };
 }
 
+function markerContentEntry(marker) {
+  const entry = markerContentAuthorEntry(marker.id);
+  return {
+    ...entry,
+    summary: entry.summary || marker.description || "",
+  };
+}
+
 function contentExportEntry(marker) {
-  const entry = markerContentEntry(marker.id);
+  const entry = markerContentEntry(marker);
   return {
     id: marker.id,
     title: marker.title,
@@ -429,6 +455,19 @@ function resolveImageUrl(url) {
   return url;
 }
 
+function canInlineImage(url) {
+  if (!url) {
+    return false;
+  }
+
+  try {
+    const parsed = new URL(url);
+    return !parsed.hostname.endsWith("wiki.gg");
+  } catch {
+    return false;
+  }
+}
+
 function youtubeEmbedUrl(url) {
   if (!url) {
     return null;
@@ -467,13 +506,19 @@ function contentPreviewHtml(marker, entry) {
   const blocks = [];
   const gallery = entry.gallery.filter((url) => url !== entry.coverImage);
   const tutorials = entry.tutorials;
+  const externalImageLinks = [];
 
   if (entry.coverImage) {
-    blocks.push(`
-      <figure class="content-cover">
-        <img src="${escapeAttribute(resolveImageUrl(entry.coverImage))}" alt="${escapeAttribute(marker.title)} cover image" loading="lazy">
-      </figure>
-    `);
+    const coverUrl = resolveImageUrl(entry.coverImage);
+    if (canInlineImage(coverUrl)) {
+      blocks.push(`
+        <figure class="content-cover">
+          <img src="${escapeAttribute(coverUrl)}" alt="${escapeAttribute(marker.title)} cover image" loading="lazy">
+        </figure>
+      `);
+    } else {
+      externalImageLinks.push({ url: coverUrl, label: "Open cover image" });
+    }
   }
 
   if (entry.summary) {
@@ -545,15 +590,38 @@ function contentPreviewHtml(marker, entry) {
     `);
   }
 
-  if (gallery.length) {
+  const embeddableGallery = gallery
+    .map((url) => resolveImageUrl(url))
+    .filter((url) => {
+      if (canInlineImage(url)) {
+        return true;
+      }
+      externalImageLinks.push({ url, label: "Open reference image" });
+      return false;
+    });
+
+  if (embeddableGallery.length) {
     blocks.push(`
       <div class="content-gallery">
-        ${gallery.map((url, index) => `
+        ${embeddableGallery.map((url, index) => `
           <figure class="content-thumb">
-            <img src="${escapeAttribute(resolveImageUrl(url))}" alt="${escapeAttribute(`${marker.title} gallery ${index + 1}`)}" loading="lazy">
+            <img src="${escapeAttribute(url)}" alt="${escapeAttribute(`${marker.title} gallery ${index + 1}`)}" loading="lazy">
           </figure>
         `).join("")}
       </div>
+    `);
+  }
+
+  if (externalImageLinks.length) {
+    blocks.push(`
+      <section class="content-block">
+        <h3>Reference Images</h3>
+        <div class="content-link-grid">
+          ${externalImageLinks.map(({ url, label }) => `
+            <a class="content-link-card" href="${escapeAttribute(url)}" target="_blank" rel="noreferrer">${escapeHtml(label)}</a>
+          `).join("")}
+        </div>
+      </section>
     `);
   }
 
@@ -713,7 +781,7 @@ function worldEventDetailsHtml(marker) {
 }
 
 function updateMarkerContent(marker, field, rawValue) {
-  const current = markerContentEntry(marker.id);
+  const current = markerContentAuthorEntry(marker.id);
   if (field === "gallery" || field === "tutorials") {
     current[field] = splitMultiline(rawValue);
   } else {
@@ -933,7 +1001,7 @@ function markerIsVisible(marker) {
     if (!state.showCities) {
       return false;
     }
-    if (state.hideFound && state.foundIds.has(marker.id)) {
+    if (state.hideFound && markerIsFound(marker)) {
       return false;
     }
     return markerMatchesSearch(marker);
@@ -942,7 +1010,7 @@ function markerIsVisible(marker) {
   if (!state.categoryFilter.has(marker.category)) {
     return false;
   }
-  if (state.hideFound && state.foundIds.has(marker.id)) {
+  if (state.hideFound && markerIsFound(marker)) {
     return false;
   }
   return markerMatchesSearch(marker);
@@ -979,7 +1047,7 @@ function buildMarkerIcon(marker, isFound, isSelected) {
 
 function createMarkerLayer(marker) {
   const layer = L.marker(markerLatLng(marker), {
-    icon: buildMarkerIcon(marker, state.foundIds.has(marker.id), false),
+    icon: buildMarkerIcon(marker, markerIsFound(marker), false),
     title: marker.title,
     draggable: marker.fixed,
     autoPan: marker.fixed,
@@ -987,7 +1055,7 @@ function createMarkerLayer(marker) {
 
   layer.on("click", () => setSelectedMarker(marker.id));
   if (marker.fixed) {
-    bindCityTooltip(layer, marker, state.foundIds.has(marker.id), false);
+    bindCityTooltip(layer, marker, markerIsFound(marker), false);
     layer.on("add", () => {
       window.requestAnimationFrame(() => wireCityTooltip(layer, marker.id));
     });
@@ -1178,14 +1246,21 @@ function renderDetailCard() {
 
   const point = markerPoint(marker);
   const world = marker.position?.world || imageToWorld(point.x, point.y);
-  const isFound = state.foundIds.has(marker.id);
+  const isFound = markerIsFound(marker);
+  const supportsFound = markerSupportsFound(marker);
   const meta = CATEGORY_META[marker.category];
   const iconUrl = marker.fixed ? CITY_ICON_URL : categoryAssetUrl(marker.category, isFound ? "locked" : "active");
   const content = contentExportEntry(marker);
+  const authoredContent = markerContentAuthorEntry(marker.id);
   const eventIntel = worldEventDetailsHtml(marker);
-  const summaryParagraph = marker.category === "world_events"
-    ? ""
-    : `<p>${escapeHtml(marker.description || "No description available.")}</p>`;
+  const detailMeta = [
+    `<span class="detail-pill">${escapeHtml(marker.region || "World")}</span>`,
+    `<span class="detail-pill">${world.x}, ${world.z}</span>`,
+  ].join("");
+  const actionButtons = [
+    supportsFound ? `<button type="button" class="detail-button" data-action="toggle-found">${isFound ? "Mark not found" : "Mark found"}</button>` : "",
+    `<button type="button" class="detail-button secondary" data-action="focus">Focus</button>`,
+  ].filter(Boolean).join("");
   const infoBody = `
     <div class="detail-topline">
       <span class="detail-icon${marker.fixed ? " city" : ""}" style="${marker.fixed ? `--detail-icon:url('${iconUrl}');` : `--detail-icon:url('${iconUrl}');--detail-accent:${meta.color};`}"></span>
@@ -1194,17 +1269,14 @@ function renderDetailCard() {
         <p class="detail-kind">${escapeHtml(meta.label)}</p>
       </div>
     </div>
-    <p class="detail-meta">${escapeHtml(marker.region || "World")} | ${world.x}, ${world.z}</p>
-    ${summaryParagraph}
+    <div class="detail-meta">${detailMeta}</div>
     ${eventIntel}
     <div class="detail-actions">
-      <button type="button" class="detail-button" data-action="toggle-found">${isFound ? "Mark not found" : "Mark found"}</button>
-      <button type="button" class="detail-button secondary" data-action="focus">Focus</button>
+      ${actionButtons}
     </div>
     <section class="content-preview-panel">
       <div class="content-preview-head">
-        <h3>Marker Content</h3>
-        <span>${hasMarkerContent(content) ? "Community-style preview for this marker." : "No authored content yet."}</span>
+        <h3>Guide & Reference</h3>
       </div>
       <div id="content-preview-body" class="content-preview-body">
         ${contentPreviewHtml(marker, content)}
@@ -1219,7 +1291,7 @@ function renderDetailCard() {
     elements.studioCard.className = "detail-card";
     elements.studioCard.innerHTML = `
       ${infoBody}
-      ${contentEditorHtml(marker, content)}
+      ${contentEditorHtml(marker, authoredContent)}
     `;
   }
 
@@ -1244,7 +1316,7 @@ function renderDetailCard() {
     fields.forEach((field) => {
       field.addEventListener("input", () => {
         updateMarkerContent(marker, field.dataset.contentField, field.value);
-        const entry = markerContentEntry(marker.id);
+        const entry = markerContentEntry(marker);
         previewBodies.forEach((previewBody) => {
           previewBody.innerHTML = contentPreviewHtml(marker, entry);
         });
@@ -1353,6 +1425,11 @@ function renderCalibrationPanel() {
 function setPanelCollapsed(collapsed) {
   state.panelCollapsed = collapsed;
   elements.panel.classList.toggle("collapsed", collapsed);
+  elements.appShell?.classList.toggle("panel-collapsed", collapsed);
+  if (elements.panelToggle) {
+    elements.panelToggle.setAttribute("aria-expanded", String(!collapsed));
+    elements.panelToggle.setAttribute("aria-label", collapsed ? "Open marker panel" : "Collapse marker panel");
+  }
 }
 
 function setSelectedMarker(markerId) {
@@ -1360,7 +1437,7 @@ function setSelectedMarker(markerId) {
 
   for (const [id, layer] of state.markerLayers) {
     const marker = state.markers.find((item) => item.id === id);
-    const isFound = state.foundIds.has(id);
+    const isFound = markerIsFound(marker);
     const isSelected = id === markerId;
     layer.setIcon(buildMarkerIcon(marker, isFound, isSelected));
     if (marker.fixed) {
@@ -1384,6 +1461,11 @@ function flyToMarker(marker) {
 }
 
 function toggleFound(markerId) {
+  const marker = state.markers.find((item) => item.id === markerId);
+  if (!marker || !markerSupportsFound(marker)) {
+    return;
+  }
+
   if (state.foundIds.has(markerId)) {
     state.foundIds.delete(markerId);
   } else {
@@ -1418,7 +1500,7 @@ function syncVisibleMarkers() {
         layer.dragging.disable();
       }
     }
-    const isFound = state.foundIds.has(marker.id);
+    const isFound = markerIsFound(marker);
     const isSelected = marker.id === state.selectedMarkerId;
     layer.setIcon(buildMarkerIcon(marker, isFound, isSelected));
     if (marker.fixed) {
@@ -1597,6 +1679,7 @@ function bindEvents() {
 hydrateMarkerState();
 state.cityTransform = USE_CITY_EDITS ? computeCityEditTransform() : null;
 bindEvents();
+setPanelCollapsed(state.panelCollapsed);
 setPanelView("markers");
 updatePinScale();
 renderCalibrationMarkers();
