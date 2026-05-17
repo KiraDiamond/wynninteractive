@@ -17,6 +17,7 @@
   --white: #ffffff;
   --shadow: 0 22px 48px rgba(28, 42, 61, 0.16);
   --shadow-soft: 0 10px 22px rgba(22, 32, 46, 0.08);
+  --map-pin-size: 28px;
   --map-pin-scale: 1;
 }
 
@@ -910,8 +911,8 @@ input {
 }
 
 .map-pin-wrapper {
-  width: 24px;
-  height: 24px;
+  width: var(--map-pin-size);
+  height: var(--map-pin-size);
   background: transparent;
   border: 0;
 }
@@ -919,8 +920,8 @@ input {
 .asset-pin-shell {
   display: grid;
   place-items: center;
-  width: 24px;
-  height: 24px;
+  width: var(--map-pin-size);
+  height: var(--map-pin-size);
   overflow: visible;
   transform: scale(var(--map-pin-scale));
   transform-origin: center center;
@@ -998,8 +999,8 @@ input {
 
 .asset-pin {
   display: block;
-  width: 24px;
-  height: 24px;
+  width: var(--map-pin-size);
+  height: var(--map-pin-size);
   image-rendering: pixelated;
   filter: drop-shadow(0 0 4px rgba(17, 24, 37, 0.28));
   user-select: none;

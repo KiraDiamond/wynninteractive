@@ -1,9 +1,10 @@
-import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517n";
-import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260517n";
-import { MARKER_CONTENT } from "./data/marker-content.js?v=20260517n";
+import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517o";
+import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260517o";
+import { MARKER_CONTENT } from "./data/marker-content.js?v=20260517o";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
+const MAP_PIN_SIZE = 28;
 const MAP_BOUNDS = [[0, 0], [MAP_HEIGHT, MAP_WIDTH]];
 const DEFAULT_BOUNDS = {
   minX: -2540,
@@ -140,7 +141,7 @@ map.fitBounds(MAP_BOUNDS, { padding: [24, 24] });
 
 function updatePinScale() {
   const zoom = map.getZoom();
-  const scale = zoom <= 0 ? 1 : 1 + (zoom * 0.16);
+  const scale = zoom <= 0 ? 1 : 1 + (zoom * 0.28) + (zoom * zoom * 0.05);
   document.documentElement.style.setProperty("--map-pin-scale", String(scale));
 }
 
@@ -908,8 +909,8 @@ function buildMarkerIcon(marker, isFound, isSelected) {
   return L.divIcon({
     className: "map-pin-wrapper",
     html: `<span class="asset-pin-shell"><img class="${classes.join(" ")}" src="${iconUrl}" alt="" draggable="false" style="--pin-glow:${meta.color};"></span>`,
-    iconSize: [24, 24],
-    iconAnchor: [12, 12],
+    iconSize: [MAP_PIN_SIZE, MAP_PIN_SIZE],
+    iconAnchor: [MAP_PIN_SIZE / 2, MAP_PIN_SIZE / 2],
   });
 }
 
