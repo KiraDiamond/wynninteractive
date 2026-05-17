@@ -1,7 +1,7 @@
-import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517z";
-import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260517z";
-import { MARKER_CONTENT } from "./data/marker-content.js?v=20260517z";
-import { REFERENCE_IMAGE_URLS } from "./data/reference-images.js?v=20260517z";
+import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517aa";
+import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260517aa";
+import { MARKER_CONTENT } from "./data/marker-content.js?v=20260517aa";
+import { REFERENCE_IMAGE_URLS } from "./data/reference-images.js?v=20260517aa";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
@@ -30,6 +30,7 @@ const USE_STORED_CALIBRATION = CALIBRATION_MODE || query.get("useCalibration") =
 const EDIT_CITY_QUERY_MODE = query.get("editCities") === "1";
 const USE_CITY_EDITS = EDIT_CITY_QUERY_MODE || query.get("useCityEdits") === "1";
 const DEV_MODE = window.location.pathname.replace(/\/+$/, "").endsWith("/devview");
+const CITY_ONLY_ZOOM = -2;
 const LOW_VALUE_DESCRIPTION_PATTERNS = [
   /\bi marked .+ on the live map\.?$/i,
   /\bimported from the external wynncraft marker dataset\.?$/i,
@@ -1018,6 +1019,10 @@ function markerMatchesSearch(marker) {
   return haystack.includes(state.search);
 }
 
+function contentMarkersVisibleAtCurrentZoom() {
+  return map.getZoom() > CITY_ONLY_ZOOM;
+}
+
 function markerIsVisible(marker) {
   if (marker.fixed) {
     if (!state.showCities) {
@@ -1029,6 +1034,9 @@ function markerIsVisible(marker) {
     return markerMatchesSearch(marker);
   }
 
+  if (!contentMarkersVisibleAtCurrentZoom()) {
+    return false;
+  }
   if (!state.categoryFilter.has(marker.category)) {
     return false;
   }
@@ -1721,7 +1729,16 @@ function bindEvents() {
     }
   });
 
-  map.on("zoom zoomend", updatePinScale);
+  map.on("zoom", () => {
+    updatePinScale();
+    syncVisibleMarkers();
+    renderCategoryFilters();
+  });
+  map.on("zoomend", () => {
+    updatePinScale();
+    syncVisibleMarkers();
+    renderCategoryFilters();
+  });
 }
 
 hydrateMarkerState();
