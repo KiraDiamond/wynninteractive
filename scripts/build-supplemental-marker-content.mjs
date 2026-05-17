@@ -19,6 +19,45 @@ const JS_OUTPUT_PATH = path.join(ROOT, "data", "generated-supplemental-marker-co
 const QUESTS_INDEX_URL = "https://wynncraft.wiki.gg/wiki/Quests";
 const BOSS_ALTAR_INDEX_URL = "https://wynncraft.wiki.gg/wiki/Boss_Altar";
 const CORRUPTED_DUNGEONS_URL = "https://wynncraft.fandom.com/wiki/Dungeons";
+const RAID_PAGE_URLS = new Map([
+  ["nest of the grootslangs", "https://wynncraft.wiki.gg/wiki/Nest_of_the_Grootslangs"],
+  ["the canyon colossus", "https://wynncraft.wiki.gg/wiki/The_Canyon_Colossus_(Raid)"],
+  ["the nameless anomaly", "https://wynncraft.wiki.gg/wiki/The_Nameless_Anomaly_(Raid)"],
+  ["the wartorn palace", "https://wynncraft.wiki.gg/wiki/The_Wartorn_Palace"],
+  ["orphion s nexus of light", "https://wynncraft.wiki.gg/wiki/Orphion%27s_Nexus_of_Light"],
+]);
+const RAID_OVERRIDES = new Map([
+  ["nest of the grootslangs", {
+    minLevel: "54",
+    quest: "Realm of Light I - The Worm Holes",
+    rune: "Az Rune",
+    bosses: ["The Grootslang Wyrmlings"],
+  }],
+  ["the canyon colossus", {
+    minLevel: "95",
+    quest: "The Breaking Point",
+    rune: "Tol Rune",
+    bosses: ["The Canyon Colossus"],
+  }],
+  ["the nameless anomaly", {
+    minLevel: "103",
+    quest: "A Journey Further",
+    rune: "Tol Rune",
+    bosses: ["The Nameless Anomaly"],
+  }],
+  ["the wartorn palace", {
+    minLevel: "119",
+    quest: "The Hero of Gavel",
+    rune: "Ek Rune",
+    bosses: ["Anathema"],
+  }],
+  ["orphion s nexus of light", {
+    minLevel: "79",
+    quest: "Realm of Light V - The Realm of Light",
+    rune: "Uth Rune",
+    bosses: ["Orphion, the Light Beast", "The Parasite"],
+  }],
+]);
 const WORLD_EVENT_PATH = path.join(ROOT, "data", "wiki-scrape", "browser-persistent", "categories", "world-event.json");
 const CAVE_PATH = path.join(ROOT, "data", "wiki-scrape", "browser-persistent", "categories", "cave.json");
 const SECRET_PATH = path.join(ROOT, "data", "wiki-scrape", "browser-persistent", "categories", "secret-discovery.json");
@@ -152,6 +191,10 @@ function wikiEncodeTitle(value) {
 function fandomDungeonUrl(title) {
   const normalized = normalizeWhitespace(title).replace(/\s+Dungeon$/i, "");
   return `https://wynncraft.fandom.com/wiki/${wikiEncodeTitle(normalized)}`;
+}
+
+function officialRaidUrl(title) {
+  return RAID_PAGE_URLS.get(titleKey(title)) || `https://wynncraft.wiki.gg/wiki/${wikiEncodeTitle(title)}`;
 }
 
 function officialBossAltarUrl(title) {
@@ -414,6 +457,16 @@ function buildTargets(worldEvents, caves, secrets, bossAltars) {
           kind: "dungeon",
         });
       }
+      continue;
+    }
+
+    if (marker.category === "raid") {
+      targets.push({
+        markerId: marker.id,
+        title: marker.title,
+        url: officialRaidUrl(marker.title),
+        kind: "raid",
+      });
       continue;
     }
 
@@ -743,6 +796,86 @@ async function extractBossAltarPage(page) {
         }
 
         sections.push({ title: headingText, items, tables });
+      }
+    }
+
+    return { title, intro, infobox, sections, images, sourceUrl: location.href };
+  });
+}
+
+async function extractRaidPage(page) {
+  return page.evaluate(() => {
+    const normalize = (value) => String(value ?? "").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
+    const content = document.querySelector("#mw-content-text .mw-parser-output, .mw-parser-output");
+    const title = normalize(document.querySelector(".page-header__title, .mw-page-title-main, h1")?.textContent);
+    const images = [...document.querySelectorAll(".mw-parser-output img")]
+      .map((img) => img.getAttribute("src"))
+      .filter(Boolean)
+      .map((src) => new URL(src, location.origin).toString())
+      .filter((src) => !/QuestIcon|CBQuestIcon|\/icons?\//i.test(src))
+      .slice(0, 10);
+
+    const infobox = {};
+    for (const item of document.querySelectorAll(".portable-infobox .pi-item.pi-data")) {
+      const label = normalize(item.querySelector(".pi-data-label")?.textContent);
+      const value = normalize(item.querySelector(".pi-data-value")?.textContent);
+      if (label && value) {
+        infobox[label] = value;
+      }
+    }
+    if (!Object.keys(infobox).length) {
+      for (const row of document.querySelectorAll(".infobox tr")) {
+        const label = normalize(row.querySelector("th")?.textContent);
+        const value = normalize(row.querySelector("td")?.textContent);
+        if (label && value) {
+          infobox[label] = value;
+        }
+      }
+    }
+
+    const intro = [];
+    if (content) {
+      for (const node of [...content.children]) {
+        if (/^H[23]$/.test(node.tagName)) {
+          break;
+        }
+        if (node.tagName === "P") {
+          const text = normalize(node.textContent);
+          if (text) {
+            intro.push(text);
+          }
+        }
+      }
+    }
+
+    const sections = [];
+    if (content) {
+      for (const heading of content.querySelectorAll(":scope > h2, :scope > h3")) {
+        const headingText = normalize(heading.textContent);
+        if (!/Walkthrough|Mechanics|Strategy|Tips|Rewards?/i.test(headingText)) {
+          continue;
+        }
+
+        const items = [];
+        for (let node = heading.nextElementSibling; node; node = node.nextElementSibling) {
+          if (/^H[23]$/.test(node.tagName)) {
+            break;
+          }
+
+          if (node.tagName === "P") {
+            const text = normalize(node.textContent);
+            if (text) {
+              items.push(text);
+            }
+            continue;
+          }
+
+          if (node.tagName === "UL" || node.tagName === "OL") {
+            items.push(...[...node.querySelectorAll(":scope > li")].map((item) => normalize(item.textContent)).filter(Boolean));
+          }
+        }
+
+        sections.push({ title: headingText, items });
       }
     }
 
@@ -1263,6 +1396,59 @@ function bossAltarEntry(target, data) {
   };
 }
 
+function raidRuneLabel(value) {
+  const text = stripNotes(value);
+  if (!text) {
+    return "";
+  }
+  const match = text.match(/\b(Az|Nii|Uth|Tol|Ek)\b/i);
+  return match ? `${titleCase(match[1])} Rune` : text.replace(/\bRunes?\b/i, "Rune");
+}
+
+function raidBossLines(value) {
+  return dedupe(
+    String(value || "")
+      .split(/\s{2,}|\n|,|;/)
+      .map((item) => stripNotes(item))
+      .filter(Boolean),
+  );
+}
+
+function raidEntry(target, data) {
+  const override = RAID_OVERRIDES.get(titleKey(target.title)) || null;
+  const level = override?.minLevel || getInfoboxValue(data.infobox, [/player level minimum/, /minimum level/, /^level$/]);
+  const quest = override?.quest || getInfoboxValue(data.infobox, [/quest requirements?/, /^quest$/]);
+  const rune = override?.rune || raidRuneLabel(getInfoboxValue(data.infobox, [/rune cost/, /rune/]));
+  const bosses = override?.bosses || raidBossLines(getInfoboxValue(data.infobox, [/boss/]));
+
+  const sections = [
+    buildSection("Entry", [
+      level ? `Minimum level: ${level}.` : "",
+      quest ? `Required quest: ${quest}.` : "",
+      rune ? `Rune: 1 ${rune}.` : "",
+      "Party size: 4 players.",
+    ]),
+    buildSection("Bosses", bosses),
+  ].filter(Boolean);
+
+  const summary = dedupe([
+    level ? `Level ${level} raid.` : "",
+    quest ? `Requires ${quest}.` : "",
+    rune ? `Uses 1 ${rune}.` : "",
+  ]).join(" ");
+
+  return {
+    markerId: target.markerId,
+    title: data.title || target.title,
+    sourceUrl: data.sourceUrl,
+    summary,
+    explanation: buildSectionExplanation(sections),
+    coverImage: chooseCoverImage(data.images),
+    gallery: cleanGallery(data.images),
+    tutorials: [],
+  };
+}
+
 async function main() {
   const [worldEvents, caves, secrets, bossAltars] = await Promise.all([
     fs.readFile(WORLD_EVENT_PATH, "utf8").then(JSON.parse),
@@ -1318,6 +1504,8 @@ async function main() {
         entry = fallbackQuestEntry(target, await extractQuestFallbackPage(page));
       } else if (target.kind === "dungeon") {
         entry = dungeonEntry(target, await extractDungeonPage(page));
+      } else if (target.kind === "raid") {
+        entry = raidEntry(target, await extractRaidPage(page));
       } else if (target.kind === "corrupted-dungeons") {
         entry = corruptedDungeonsEntry(target, await extractCorruptedDungeonsPage(page));
       } else if (target.kind === "boss-altar") {

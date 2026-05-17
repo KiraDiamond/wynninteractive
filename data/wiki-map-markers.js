@@ -4636,8 +4636,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-2121-61-802--2121--802",
-    "title": "-2121, 61, -802",
+    "id": "atlas-caves-water-tower-tower--2121--802",
+    "title": "Water Tower Tower",
     "category": "caves",
     "region": "Industrial District",
     "description": "Water Tower Tower [-2121, 61, -802] Industrial District 109 Long(2m) Medium 2x Tier 1 [✫✫✫✫]3x Tier 2 [✫✫✫✫]1x Tier 3 [✫✫✫✫]1x Tier 4 [✫✫✫✫] Water Authority GuardsTower ScourgeAqua Surveyors (Lv. 112)Aqua Surveyor (Lv. 113)Aqua Controller +3,000,000 XP",
@@ -4654,8 +4654,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-1832-33-794--1832--794",
-    "title": "-1832, 33, -794",
+    "id": "atlas-caves-abandoned-steelworks--1832--794",
+    "title": "Abandoned Steelworks",
     "category": "caves",
     "region": "Industrial District",
     "description": "Abandoned Steelworks Normal [-1832, 33, -794] Industrial District 110 Long(2m) Hard 1x Tier 2 [✫✫✫✫]2x Tier 3 [✫✫✫✫]1x Tier 4 [✫✫✫✫] FerrovoresSlag BeetlesGiant Slag Beetle +3,181,000 XP",
@@ -4672,8 +4672,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-1754-20-490--1754--490",
-    "title": "-1754, 20, -490",
+    "id": "atlas-caves-the-flush--1754--490",
+    "title": "The Flush",
     "category": "caves",
     "region": "Industrial District",
     "description": "The Flush Normal [-1754, 20, -490] Industrial District 110 Medium(1m 30s) Medium 1x Tier 1 [✫✫✫✫]2x Tier 4 [✫✫✫✫] GallimaufryUnderdweller ScavengersUnderdweller Smugglers +3,181,000 XP",
@@ -4690,8 +4690,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-2187-36-751--2187--751",
-    "title": "-2187, 36, -751",
+    "id": "atlas-caves-weapons-factory--2187--751",
+    "title": "Weapons Factory",
     "category": "caves",
     "region": "Industrial District",
     "description": "Weapons Factory Normal [-2187, 36, -751] Industrial District 111 Long(2m) Hard 1x Tier 2 [✫✫✫✫]3x Tier 3 [✫✫✫✫] ChimneysweepsGuard DogsFactory SharpshooterFactory GuardsElite Factory Guards +3,500,000 XP+1 Titanium Rifle",
@@ -4708,8 +4708,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-1651-30-515--1651--515",
-    "title": "-1651, 30, -515",
+    "id": "atlas-caves-freight-interchange--1651--515",
+    "title": "Freight Interchange",
     "category": "caves",
     "region": "Industrial District",
     "description": "Freight Interchange Normal [-1651, 30, -515] Industrial District 112 Long(2m) Hard 1x Tier 3 [✫✫✫✫]2x Tier 4 [✫✫✫✫] Royal MechanicsCargohandsRail SecurityTimasca's Conductor +3,881,000 XP+1 Freight Trainer",
@@ -4726,8 +4726,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-1542-55-551--1542--551",
-    "title": "-1542, 55, -551",
+    "id": "atlas-caves-nesting-place--1542--551",
+    "title": "Nesting Place",
     "category": "caves",
     "region": "Mistwoods",
     "description": "Nesting Place Normal [-1542, 55, -551] Mistwoods 113 Long(4m) Hard 3x Tier 3 [✫✫✫✫] Kamikaze Eagles Migrating Eagles +4,234,000 XP",
@@ -4762,8 +4762,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-1505-80-733--1505--733",
-    "title": "-1505, 80, -733",
+    "id": "atlas-caves-citadel-catacombs--1505--733",
+    "title": "Citadel Catacombs",
     "category": "caves",
     "region": "Mistwoods",
     "description": "Citadel Catacombs Normal [-1505, 80, -733] Mistwoods 115 Long(3m) Medium 3x Tier 3 [✫✫✫✫]1x Tier 4 [✫✫✫✫] Murkwater Hermits Nettle Flies Sculkweed Cave Mermaids +5,123,000 XP",
@@ -4780,8 +4780,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-1159-70-1014--1159--1014",
-    "title": "-1159, 70, -1014",
+    "id": "atlas-caves-tericen-stables--1159--1014",
+    "title": "Tericen Stables",
     "category": "caves",
     "region": "Highlands",
     "description": "Tericen Stables Normal [-1159, 70, -1014] Highlands 116 Long(2m) Hard ? Wolf Spiders Stables Guards Wings Cavalier +6,550,000 XP",
@@ -4798,8 +4798,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-1288-86-1319--1288--1319",
-    "title": "-1288, 86, -1319",
+    "id": "atlas-caves-saltpetre-mine--1288--1319",
+    "title": "Saltpetre Mine",
     "category": "caves",
     "region": "Highlands",
     "description": "Saltpetre Mine Normal [-1288, 86, -1319] Highlands 117 Long(2m) Medium ? Saltpetre Miners Wolf Spiders Harpy Bats Blast Chemist +6,250,000 XP+1 Arachnid Effigy+5 Saltpetre",
@@ -4852,8 +4852,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-1443-108-1037--1443--1037",
-    "title": "-1443, 108, -1037",
+    "id": "atlas-caves-liftal-castle--1443--1037",
+    "title": "Liftal Castle",
     "category": "caves",
     "region": "Highlands",
     "description": "Liftal Castle Normal [-1443, 108, -1037] Highlands 119 Long(6m) Hard ? Liftal Trainees Liftal Troopers Liftal Knights Cannons Lord Liftal Liftal Vanguard +7,950,000 XP",
@@ -4870,8 +4870,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-1020-125-1335--1020--1335",
-    "title": "-1020, 125, -1335",
+    "id": "atlas-caves-glacier-tunnels--1020--1335",
+    "title": "Glacier Tunnels",
     "category": "caves",
     "region": "Highlands",
     "description": "Glacier Tunnels Normal [-1020, 125, -1335] Highlands 119 Long(2m) Medium ? Rolling Ice Moles Ice Carver Moles Tunneling Ice Worms +6,855,000 XP+1 Embrittlement",
@@ -4906,8 +4906,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-1763-136-798--1763--798",
-    "title": "-1763, 136, -798",
+    "id": "atlas-caves-theatre-royal--1763--798",
+    "title": "Theatre Royal",
     "category": "caves",
     "region": "Aelumia Citadel",
     "description": "Theatre Royal Normal [-1763, 136, -798] Aelumia Citadel 119 Medium(1m) Hard ? Propagandists Information Officers Typewriters The Showman +7,500,000 XP+1 Theatre Cane",
@@ -4924,8 +4924,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-1500-131-808--1500--808",
-    "title": "-1500, 131, -808",
+    "id": "atlas-caves-aelumia-metalmill--1500--808",
+    "title": "Aelumia Metalmill",
     "category": "caves",
     "region": "Aelumia Citadel",
     "description": "Aelumia Metalmill Normal [-1500, 131, -808] Aelumia Citadel 119 Medium(1m) Hard ? Ductmoulders Royal Redsmiths Foreman +7,500,000 XP",
@@ -4942,8 +4942,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-1523-132-737--1523--737",
-    "title": "-1523, 132, -737",
+    "id": "atlas-caves-aelumia-weaveworks--1523--737",
+    "title": "Aelumia Weaveworks",
     "category": "caves",
     "region": "Aelumia Citadel",
     "description": "Aelumia Weaveworks Normal [-1523, 132, -737] Aelumia Citadel 119 Medium(1m) Hard ? Threadspinners Weavecutters Foreman +7,500,000 XP",
@@ -4960,8 +4960,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-1112-87-1407--1112--1407",
-    "title": "-1112, 87, -1407",
+    "id": "atlas-caves-northern-outpost--1112--1407",
+    "title": "Northern Outpost",
     "category": "caves",
     "region": "Highlands",
     "description": "Northern Outpost Normal [-1112, 87, -1407] Highlands 120 Long(2m) Hard ? Drunken Guards Outpost Patrols Outpost Hunters Lucy Captain Gindo Captain Petrus Captain Mastis +7,120,000 XP+1 Studhorn",
@@ -4978,8 +4978,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-1510-133-753--1510--753",
-    "title": "-1510, 133, -753",
+    "id": "atlas-caves-aelumia-chemical-plant--1510--753",
+    "title": "Aelumia Chemical Plant",
     "category": "caves",
     "region": "Aelumia Citadel",
     "description": "Aelumia Chemical Plant Normal [-1510, 133, -753] Aelumia Citadel 120 Medium(1m) Hard ? Hydrogen Sponges Corrosives Experts Chromatographers Foreman +7,500,000 XP",
@@ -4996,8 +4996,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-945-71-1785--945--1785",
-    "title": "-945, 71, -1785",
+    "id": "atlas-caves-mage-remains-cave--945--1785",
+    "title": "Mage Remains Cave",
     "category": "caves",
     "region": "Wynncraft",
     "description": "Mage Remains Cave Loot Grind 1-9 [-945, 71, -1785] Emerald Trail 1x Tier 2 [✫✫✫✫] Rattling Mage Remains Crumbling Mage Remains Rattling Mages Crumbling Mages Risen Zombies",
@@ -5014,8 +5014,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-355-64-1413--355--1413",
-    "title": "-355, 64, -1413",
+    "id": "atlas-caves-zombie-tree--355--1413",
+    "title": "Zombie Tree",
     "category": "caves",
     "region": "Wynncraft",
     "description": "Zombie Tree Grind 1-10 [-355, 64, -1413] Nivla Woods None Rotten Zombies",
@@ -5032,8 +5032,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-790-70-1400--790--1400",
-    "title": "-790, 70, -1400",
+    "id": "atlas-caves-ragni-raider-cave--790--1400",
+    "title": "Ragni Raider Cave",
     "category": "caves",
     "region": "Wynncraft",
     "description": "Ragni Raider Cave Loot Grind 4-14 [-790, 70, -1400] Emerald Trail None Pigman Hatchet Tossers Fierce Pigman Raiders",
@@ -5050,8 +5050,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-370-65-1370--370--1370",
-    "title": "-370, 65, -1370",
+    "id": "atlas-caves-chronoshade-temple--370--1370",
+    "title": "Chronoshade Temple",
     "category": "caves",
     "region": "Wynncraft",
     "description": "Chronoshade Temple Loot Grind 6-16 [-370, 65, -1370] Time Valley None Chronoshades Temporal Fluxes",
@@ -5068,11 +5068,11 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-630-38-2260-630--2260",
-    "title": "630, 38, -2260",
+    "id": "atlas-caves-mushroom-plain-630--2260",
+    "title": "Mushroom Plain",
     "category": "caves",
     "region": "Wynncraft",
-    "description": "Haunted Pirate Landing Loot Grind 22-32 [630, 38, -2260] Pirate's Bay None Pirate Skeptics Pirate Specters",
+    "description": "Mushroom Plain XP Grind 10-15 [630, 38, -2260] Black Road None Unstable Saprophytes Shroom Knight Watchers Cordymen Shroomified Corpsees The Shroominator",
     "tags": [
       "cave",
       "wynncraft",
@@ -5086,8 +5086,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-685-92-1380--685--1380",
-    "title": "-685, 92, -1380",
+    "id": "atlas-caves-ravine-chasm-cave--685--1380",
+    "title": "Ravine Chasm Cave",
     "category": "caves",
     "region": "Wynncraft",
     "description": "Ravine Chasm Cave Loot Grind 10-20 [-685, 92, -1380] Pigmen's Ravine None Pigman Roughnecks Pigman Brawlers Pigman Junk Flingers",
@@ -5104,8 +5104,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-480-75-1860-480--1860",
-    "title": "480, 75, -1860",
+    "id": "atlas-caves-windmill-ruins-480--1860",
+    "title": "Windmill Ruins",
     "category": "caves",
     "region": "Wynncraft",
     "description": "Windmill Ruins XP Grind 15-20 [480, 75, -1860] Nemract Swamp 1x Tier 2 [✫✫✫✫] Aimless Undead Blind Skeletons",
@@ -5122,8 +5122,26 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-175-66-2070--175--2070",
-    "title": "-175, 66, -2070",
+    "id": "atlas-caves-skittering-cave--175--2070",
+    "title": "Skittering Cave",
+    "category": "caves",
+    "region": "Wynncraft",
+    "description": "Skittering Cave Loot Grind 16-26 [-175, 66, -2070] Mount Wynn 1x Tier 1 [✫✫✫✫] 1x Tier 2 [✫✫✫✫] Mud Spiders (Lv. 17) Mud Spiders (Lv. 20) Mandible Gnasher Skittercling",
+    "tags": [
+      "cave",
+      "wynncraft",
+      "wiki-map"
+    ],
+    "position": {
+      "world": {
+        "x": -175,
+        "z": -2070
+      }
+    }
+  },
+  {
+    "id": "atlas-caves-blackstring-clearing--175--2070",
+    "title": "Blackstring Clearing",
     "category": "caves",
     "region": "Wynncraft",
     "description": "Blackstring Clearing XP Grind 20-30 [-175, 66, -2070] Mount Wynn None Blackstring Spinners Spider Tamers",
@@ -5158,8 +5176,26 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-610-105-1180--610--1180",
-    "title": "-610, 105, -1180",
+    "id": "atlas-caves-haunted-pirate-landing-630--2260",
+    "title": "Haunted Pirate Landing",
+    "category": "caves",
+    "region": "Wynncraft",
+    "description": "Haunted Pirate Landing Loot Grind 22-32 [630, 38, -2260] Pirate's Bay None Pirate Skeptics Pirate Specters",
+    "tags": [
+      "cave",
+      "wynncraft",
+      "wiki-map"
+    ],
+    "position": {
+      "world": {
+        "x": 630,
+        "z": -2260
+      }
+    }
+  },
+  {
+    "id": "atlas-caves-little-wood-clearing--610--1180",
+    "title": "Little Wood Clearing",
     "category": "caves",
     "region": "Wynncraft",
     "description": "Little Wood Clearing XP Grind 25-35 [-610, 105, -1180] Little Wood None Fate's Rejected Destanomaly",
@@ -5194,8 +5230,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-1300-78-2000-1300--2000",
-    "title": "1300, 78, -2000",
+    "id": "atlas-caves-cursed-pyramid-1300--2000",
+    "title": "Cursed Pyramid",
     "category": "caves",
     "region": "Wynncraft",
     "description": "Cursed Pyramid XP Grind 35-40 [1300, 78, -2000] Almuj Desert None Betrayers Rat Men The Curse",
@@ -5212,8 +5248,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-1500-130-1425-1500--1425",
-    "title": "1500, 130, -1425",
+    "id": "atlas-caves-jackpot-mine-1500--1425",
+    "title": "Jackpot Mine",
     "category": "caves",
     "region": "Wynncraft",
     "description": "Jackpot Mine Loot Grind 34-44 [1500, 130, -1425] Rymek Mesa None Gold Rushers (Lv. 38) Gold Rushers (Lv. 40) Mister Jackpot",
@@ -5230,8 +5266,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-2150-55-4720--2150--4720",
-    "title": "-2150, 55, -4720",
+    "id": "atlas-caves-llevigar-spider-cave--2150--4720",
+    "title": "Llevigar Spider Cave",
     "category": "caves",
     "region": "Wynncraft",
     "description": "Llevigar Spider Cave XP Grind 35-50 [-2150, 55, -4720] Llevigar Plains None Sanguine Spider Swarms Sanguine Spider Broodies",
@@ -5248,8 +5284,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-1765-56-4509--1765--4509",
-    "title": "-1765, 56, -4509",
+    "id": "atlas-caves-ore-sprite-cave--1765--4509",
+    "title": "Ore Sprite Cave",
     "category": "caves",
     "region": "Wynncraft",
     "description": "Ore Sprite Cave Loot Grind 39-51 [-1765, 56, -4509] Karoc Quarry None Emerasprites Quartzprites Geode of Cooperation",
@@ -5266,8 +5302,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-355-23-290--355--290",
-    "title": "-355, 23, -290",
+    "id": "atlas-caves-frosted-relic-cave--355--290",
+    "title": "Frosted Relic Cave",
     "category": "caves",
     "region": "Wynncraft",
     "description": "Frosted Relic Cave XP Grind 40-50 [-355, 23, -290] Ice Canyon ? Defrosters Ice Wraiths Miniature Snow Storms Defrostdeads Frosted Cave Man Ice Relic",
@@ -5302,8 +5338,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-845-50-3635--845--3635",
-    "title": "-845, 50, -3635",
+    "id": "atlas-caves-pyrocobalt-crater--845--3635",
+    "title": "Pyrocobalt Crater",
     "category": "caves",
     "region": "Wynncraft",
     "description": "Pyrocobalt Crater XP Grind 55-60 [-845, 50, -3635] Volcanic Isles None Scorched Cobalt Pyrocobalt Shellriders",
@@ -5320,8 +5356,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-705-13-275--705--275",
-    "title": "-705, 13, -275",
+    "id": "atlas-caves-reawakened-temple--705--275",
+    "title": "Reawakened Temple",
     "category": "caves",
     "region": "Wynncraft",
     "description": "Reawakened Temple XP Grind 55-65 [-705, 13, -275] Dernel Jungle None Reawakened Idols Ancient Sentry",
@@ -5374,8 +5410,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-575-26-590--575--590",
-    "title": "-575, 26, -590",
+    "id": "atlas-caves-defiled-envoy-cave--575--590",
+    "title": "Defiled Envoy Cave",
     "category": "caves",
     "region": "Wynncraft",
     "description": "Defiled Envoy Cave XP Grind 65-80 [-575, 26, -590] Dernel Jungle ? Defiled Envoys Flying Gold Mimics",
@@ -5392,8 +5428,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-720-10-4640--720--4640",
-    "title": "-720, 10, -4640",
+    "id": "atlas-caves-storm-myconid-cave--720--4640",
+    "title": "Storm Myconid Cave",
     "category": "caves",
     "region": "Wynncraft",
     "description": "Storm Myconid Cave XP Grind 70-80 [-720, 10, -4640] Light Forest ? Volkrat Myconids Ethrela Myconids Eye of the Storm Thunder Incarnate Gale Incarnate",
@@ -5410,8 +5446,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-100-37-4591--100--4591",
-    "title": "-100, 37, -4591",
+    "id": "atlas-caves-waterfall-cave--100--4591",
+    "title": "Waterfall Cave",
     "category": "caves",
     "region": "Wynncraft",
     "description": "Waterfall Cave XP Grind 65-85 [-100, 37, -4591] Gylia Plains None Ancient Worshippers Ancient Fanatics Living Scraps",
@@ -5428,8 +5464,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-225-79-5040-225--5040",
-    "title": "225, 79, -5040",
+    "id": "atlas-caves-canyon-bandit-fort-225--5040",
+    "title": "Canyon Bandit Fort",
     "category": "caves",
     "region": "Wynncraft",
     "description": "Canyon Bandit Fort XP Grind 80-85 [225, 79, -5040] Canyon of the Lost None Bandit Headhunters Bandit Pyromaniacs Kidnapped Clerics",
@@ -5446,8 +5482,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-1315-100-4295-1315--4295",
-    "title": "1315, 100, -4295",
+    "id": "atlas-caves-mirror-cave-1315--4295",
+    "title": "Mirror Cave",
     "category": "caves",
     "region": "Wynncraft",
     "description": "Mirror Cave XP Grind 95-100 [1315, 100, -4295] Sky Islands ? Elusive Emissaries Esoteric Reflecters Man in the Mirror",
@@ -5464,8 +5500,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-1560-190-4585-1560--4585",
-    "title": "1560, 190, -4585",
+    "id": "atlas-caves-frozen-fort-1560--4585",
+    "title": "Frozen Fort",
     "category": "caves",
     "region": "Wynncraft",
     "description": "Frozen Fort XP Grind 95-105 [1560, 190, -4585] Sky Islands ? Blizzard Sentries Castle Guardians Castle Intruders Ice King",
@@ -5482,8 +5518,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-1435-72-2520--1435--2520",
-    "title": "-1435, 72, -2520",
+    "id": "atlas-caves-corkus-scrapyard--1435--2520",
+    "title": "Corkus Scrapyard",
     "category": "caves",
     "region": "Wynncraft",
     "description": "Corkus Scrapyard XP Grind 95-105 [-1435, 72, -2520] Corkus Province ? H-216 War Machines P-20 Advanced Patrollers G-04 Scavenger Mechs T-12 Overseers I-15 Defense Units",
@@ -5500,8 +5536,8 @@ export const WIKI_MAP_MARKERS = [
     }
   },
   {
-    "id": "atlas-caves-1030-112-390-1030--390",
-    "title": "1030, 112, -390",
+    "id": "atlas-caves-witness-church-1030--390",
+    "title": "Witness Church",
     "category": "caves",
     "region": "Wynncraft",
     "description": "Witness Church XP Grind 100-105 [1030, 112, -390] Eyeball Forest None All-Seeing Witnesses Sated Gluttons Bedevils Hungry Bulb Eaters Volatile Bulb Cores Glow Bulb Herbages Engrossers Toxic Vomiters Toxomos Optical Zeppelin",

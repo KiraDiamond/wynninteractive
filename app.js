@@ -760,10 +760,41 @@ function worldEventDetailsHtml(marker) {
 
   const enemies = Array.isArray(details.enemies) ? details.enemies : [];
   const drops = Array.isArray(details.drops) ? details.drops : [];
+  const boss = String(details.boss || "").trim();
   const coordinates = Array.isArray(details.coordinates) ? details.coordinates : [];
   const coordText = coordinates.length
     ? coordinates.map((point) => `${point.x}, ${point.z}`).join(" | ")
     : "Unknown";
+  const enemyBlock = enemies.length ? `
+        <section class="event-detail-block">
+          <h4>Enemies</h4>
+          <ul>
+            ${enemies.map((enemy) => `<li>${escapeHtml(enemy)}</li>`).join("")}
+          </ul>
+        </section>
+      ` : "";
+  const bossBlock = boss ? `
+        <section class="event-detail-block">
+          <h4>Boss</h4>
+          <p>${escapeHtml(boss)}</p>
+        </section>
+      ` : "";
+  const detailGrid = enemyBlock || bossBlock
+    ? `
+      <div class="event-detail-grid">
+        ${enemyBlock}
+        ${bossBlock}
+      </div>
+    `
+    : "";
+  const dropsBlock = drops.length ? `
+      <section class="event-detail-block drops">
+        <h4>Drops</h4>
+        <div class="event-drop-list">
+          ${drops.map((drop) => `<span class="event-drop-chip">${escapeHtml(drop)}</span>`).join("")}
+        </div>
+      </section>
+    ` : "";
 
   return `
     <section class="event-intel-panel">
@@ -799,24 +830,8 @@ function worldEventDetailsHtml(marker) {
         <strong>Anchor Coordinates</strong>
         <span>${escapeHtml(coordText)}</span>
       </div>
-      <div class="event-detail-grid">
-        <section class="event-detail-block">
-          <h4>Enemies</h4>
-          <ul>
-            ${enemies.map((enemy) => `<li>${escapeHtml(enemy)}</li>`).join("")}
-          </ul>
-        </section>
-        <section class="event-detail-block">
-          <h4>Boss</h4>
-          <p>${escapeHtml(details.boss || "No boss listed.")}</p>
-        </section>
-      </div>
-      <section class="event-detail-block drops">
-        <h4>Drops</h4>
-        <div class="event-drop-list">
-          ${drops.map((drop) => `<span class="event-drop-chip">${escapeHtml(drop)}</span>`).join("")}
-        </div>
-      </section>
+      ${detailGrid}
+      ${dropsBlock}
     </section>
   `;
 }

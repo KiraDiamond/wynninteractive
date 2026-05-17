@@ -157,6 +157,25 @@ function parseCaveRegion(description) {
   return normalizeWhitespace(match?.[1] || "");
 }
 
+function caveTitleFromDescription(record) {
+  const rawTitle = normalizeWhitespace(record.title);
+  if (!/^-?\d+\s*,\s*-?\d+\s*,\s*-?\d+$/.test(rawTitle)) {
+    return rawTitle;
+  }
+
+  const prefix = normalizeWhitespace(String(record.description || "").split("[")[0] || "");
+  if (!prefix) {
+    return rawTitle;
+  }
+
+  return normalizeWhitespace(
+    prefix
+      .replace(/\s+\d+(?:-\d+)?\s*$/i, "")
+      .replace(/\s+(?:Loot Grind|XP Grind|Combat Grind|Mob Grind|Resource Grind)\s*$/i, "")
+      .replace(/\s+(?:Normal|Grind)\s*$/i, ""),
+  ) || rawTitle;
+}
+
 function parseWorldEventRegion(description) {
   const match = description.match(/(?:\[[^\]]+\]\s*)+(.+?)\s+(?:Short|Medium|Long)\s+\(/);
   return normalizeWhitespace(match?.[1] || "");
@@ -246,9 +265,10 @@ function buildCaveMarkers(wikiRecords) {
       }
 
       const region = parseCaveRegion(record.description) || record.region || "Wynncraft";
+      const title = caveTitleFromDescription(record);
       return {
-        id: `atlas-caves-${slugify(record.title)}-${point.x}-${point.z}`,
-        title: record.title,
+        id: `atlas-caves-${slugify(title)}-${point.x}-${point.z}`,
+        title,
         category: "caves",
         region,
         description: normalizeWhitespace(record.description),
