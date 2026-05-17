@@ -32,7 +32,7 @@ const USE_CITY_EDITS = EDIT_CITY_QUERY_MODE || query.get("useCityEdits") === "1"
 const DEV_MODE = window.location.pathname.replace(/\/+$/, "").endsWith("/devview");
 const MAJOR_CITY_MIN_ZOOM = -2;
 const MINOR_CITY_MIN_ZOOM = -1;
-const CONTENT_MARKER_MIN_ZOOM = 0;
+const CONTENT_MARKER_MIN_ZOOM = -1;
 const LOW_VALUE_DESCRIPTION_PATTERNS = [
   /\bi marked .+ on the live map\.?$/i,
   /\bimported from the external wynncraft marker dataset\.?$/i,
