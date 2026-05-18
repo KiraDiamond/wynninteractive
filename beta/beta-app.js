@@ -1102,13 +1102,7 @@ function markerIsVisible(marker) {
 
   const matchesSearch = markerMatchesSearch(marker);
   if (isMobCategory(marker.category)) {
-    const searchSurfacedMob = Boolean(state.search) && matchesSearch;
-    const selectedMob = state.selectedMarkerId === marker.id;
-    const familySurfacedMob = state.activeMobFamily === marker.category && selectedMob;
-    if (!contentMarkersVisibleAtCurrentZoom() && !searchSurfacedMob && !familySurfacedMob) {
-      return false;
-    }
-    return searchSurfacedMob || familySurfacedMob;
+    return false;
   }
 
   const searchSurfacedMob = Boolean(state.search) && isMobCategory(marker.category) && matchesSearch;
@@ -1738,7 +1732,9 @@ function renderActiveAreaHighlight() {
 
   const marker = state.markers.find((item) => item.id === state.selectedMarkerId);
   const boundsList = marker ? markerBoundsLatLngList(marker) : [];
-  const visible = marker ? state.filteredMarkers.some((item) => item.id === marker.id) : false;
+  const visible = marker
+    ? (isMobCategory(marker.category) || state.filteredMarkers.some((item) => item.id === marker.id))
+    : false;
   if (!marker || !boundsList.length || !visible) {
     return;
   }
