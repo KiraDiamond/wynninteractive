@@ -6,7 +6,7 @@
   <title>Wynn Atlas Beta</title>
   <meta
     name="description"
-    content="Beta build of Wynn Atlas with experimental mob area overlays and encounter mapping."
+    content="Beta build of Wynn Atlas with experimental exact mob markers from official ingredient drop data."
   >
   <meta name="robots" content="noindex,nofollow">
   <link rel="icon" type="image/png" href="../assets/icon.png">
@@ -29,7 +29,7 @@
     }
   </script>
   <link rel="stylesheet" href="../styles.css?v=20260517ac">
-  <link rel="stylesheet" href="./beta.css?v=20260518c">
+  <link rel="stylesheet" href="./beta.css?v=20260518e">
 </head>
 <body>
   <div class="app-shell">
@@ -61,7 +61,7 @@
 
       <section class="panel-screen" data-panel-screen="markers">
         <div class="panel-banner">
-          Routes, rewards, discoveries, profession spots, and mob area overlays.
+          Routes, rewards, discoveries, profession spots, and exact mob markers.
         </div>
 
         <div class="panel-toolbar">
@@ -100,7 +100,7 @@
       <section class="panel-screen hidden" data-panel-screen="info">
         <article id="info-card" class="detail-card empty">
           <h2>No marker selected</h2>
-          <p>Select a marker to view guide notes, rewards, routes, source links, and encounter zones.</p>
+          <p>Select a marker to view guide notes, rewards, routes, source links, and mob spawn data.</p>
         </article>
       </section>
 
@@ -145,6 +145,6 @@
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     crossorigin=""
   ></script>
-  <script type="module" src="./beta-app.js?v=20260518c"></script>
+  <script type="module" src="./beta-app.js?v=20260518e"></script>
 </body>
 </html>

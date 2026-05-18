@@ -1,7 +1,7 @@
-import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260518c";
-import { WIKI_MAP_MARKERS } from "../data/wiki-map-markers.js?v=20260518c";
-import { MARKER_CONTENT } from "./data/marker-content.js?v=20260518c";
-import { REFERENCE_IMAGE_URLS } from "../data/reference-images.js?v=20260518c";
+import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260518e";
+import { WIKI_MAP_MARKERS } from "../data/wiki-map-markers.js?v=20260518e";
+import { MARKER_CONTENT } from "./data/marker-content.js?v=20260518e";
+import { REFERENCE_IMAGE_URLS } from "../data/reference-images.js?v=20260518e";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
@@ -38,6 +38,7 @@ const LOW_VALUE_DESCRIPTION_PATTERNS = [
   /\bimported from the external wynncraft marker dataset\.?$/i,
   /\bcommunity-style preview\b/i,
 ];
+const MOB_CATEGORY_IDS = CATEGORY_ORDER.filter((categoryId) => categoryId.startsWith("hostile_mobs"));
 
 function parseNumberParam(name, fallback) {
   const raw = query.get(name);
@@ -68,11 +69,6 @@ const CATEGORY_GROUPS = [
     categories: ["quests", "mini_quests", "world_events"],
   },
   {
-    id: "encounters",
-    label: "Encounters",
-    categories: ["hostile_mobs"],
-  },
-  {
     id: "discoveries",
     label: "Discoveries",
     categories: ["secret_discovery", "world_discovery", "territorial_discovery"],
@@ -87,15 +83,21 @@ const CATEGORY_GROUPS = [
     label: "Professions",
     categories: ["profession_fishing", "profession_farming", "profession_mining", "profession_woodcutting"],
   },
+  {
+    id: "mobs",
+    label: "Mobs",
+    categories: MOB_CATEGORY_IDS,
+  },
 ];
 const PASSIVE_CATEGORIES = new Set([
-  "hostile_mobs",
+  ...MOB_CATEGORY_IDS,
   "profession_fishing",
   "profession_farming",
   "profession_mining",
   "profession_woodcutting",
 ]);
 const DEFAULT_HIDDEN_CATEGORIES = new Set([
+  ...MOB_CATEGORY_IDS,
   "profession_fishing",
   "profession_farming",
   "profession_mining",
@@ -391,6 +393,10 @@ function splitMultiline(value) {
 
 function markerSupportsFound(marker) {
   return !marker.fixed && !PASSIVE_CATEGORIES.has(marker.category);
+}
+
+function isMobCategory(categoryId) {
+  return MOB_CATEGORY_IDS.includes(categoryId);
 }
 
 function markerIsFound(marker) {
@@ -1068,16 +1074,18 @@ function markerIsVisible(marker) {
     return markerMatchesSearch(marker);
   }
 
-  if (!contentMarkersVisibleAtCurrentZoom()) {
+  const matchesSearch = markerMatchesSearch(marker);
+  const searchSurfacedMob = Boolean(state.search) && isMobCategory(marker.category) && matchesSearch;
+  if (!contentMarkersVisibleAtCurrentZoom() && !searchSurfacedMob) {
     return false;
   }
-  if (!state.categoryFilter.has(marker.category)) {
+  if (!state.categoryFilter.has(marker.category) && !searchSurfacedMob) {
     return false;
   }
   if (state.hideFound && markerIsFound(marker)) {
     return false;
   }
-  return markerMatchesSearch(marker);
+  return matchesSearch;
 }
 
 function buildMarkerIcon(marker, isFound, isSelected) {
@@ -1236,6 +1244,9 @@ function renderCategoryFilters() {
       const total = categoryCount(categoryId);
       const visible = categoryVisibleCount(categoryId);
       const iconUrl = categoryAssetUrl(categoryId, active ? "active" : "locked");
+      const metaText = active
+        ? `${visible} shown`
+        : (state.search && visible ? `${visible} matching` : "Hidden");
       const iconMarkup = iconUrl
         ? `<span class="category-icon asset-icon" style="--category-icon:url('${iconUrl}');--category-accent:${meta.color};"></span>`
         : genericIconMarkup(categoryId, "category-icon");
@@ -1244,7 +1255,7 @@ function renderCategoryFilters() {
           ${iconMarkup}
           <span class="category-copy">
             <strong>${escapeHtml(meta.label)}</strong>
-            <span class="category-meta">${active ? `${visible} shown` : "Hidden"}</span>
+            <span class="category-meta">${metaText}</span>
           </span>
           <span class="category-count">${total}</span>
         </button>
