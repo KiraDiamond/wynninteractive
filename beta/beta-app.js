@@ -145,6 +145,7 @@ const state = {
   panelView: "markers",
   activeMobFamily: null,
   currentArea: "wynn",
+  mapSelectorOpen: false,
 };
 
 const elements = {
@@ -155,6 +156,7 @@ const elements = {
   panelViews: document.querySelectorAll("[data-panel-screen]"),
   mapSelector: document.querySelector(".map-selector"),
   mapSelectorLabel: document.querySelector(".map-selector span"),
+  mapSelectorMenu: document.querySelector(".map-selector-menu"),
   searchInput: document.querySelector("#search-input"),
   clearSearch: document.querySelector("#clear-search"),
   showCitiesToggle: document.querySelector("#show-cities-toggle"),
@@ -1105,6 +1107,9 @@ function contentMarkersVisibleAtCurrentZoom() {
 }
 
 function cityVisibleAtCurrentZoom(marker) {
+  if (markerArea(marker) === "outer_void") {
+    return true;
+  }
   const zoom = map.getZoom();
   if (marker.minor) {
     return zoom >= MINOR_CITY_MIN_ZOOM;
@@ -1721,10 +1726,35 @@ function updateMapSelector() {
   if (elements.mapSelectorLabel && area) {
     elements.mapSelectorLabel.textContent = area.buttonLabel;
   }
+  if (elements.mapSelector) {
+    elements.mapSelector.setAttribute("aria-expanded", String(state.mapSelectorOpen));
+  }
+  if (elements.mapSelectorMenu) {
+    elements.mapSelectorMenu.classList.toggle("hidden", !state.mapSelectorOpen);
+    elements.mapSelectorMenu.innerHTML = Object.values(MAP_AREAS).map((mapArea) => `
+      <button
+        type="button"
+        class="map-selector-option ${mapArea.id === state.currentArea ? "active" : ""}"
+        data-map-area="${mapArea.id}"
+        role="menuitemradio"
+        aria-checked="${mapArea.id === state.currentArea ? "true" : "false"}"
+      >
+        <span class="map-selector-option-label">
+          <strong>${escapeHtml(mapArea.buttonLabel)}</strong>
+        </span>
+      </button>
+    `).join("");
+  }
+}
+
+function setMapSelectorOpen(open) {
+  state.mapSelectorOpen = open;
+  updateMapSelector();
 }
 
 function setCurrentArea(areaId) {
   if (!MAP_AREAS[areaId] || state.currentArea === areaId) {
+    setMapSelectorOpen(false);
     updateMapSelector();
     return;
   }
@@ -1742,6 +1772,7 @@ function setCurrentArea(areaId) {
   if (areaId === "outer_void" && map.getZoom() < MINOR_CITY_MIN_ZOOM) {
     map.setZoom(MINOR_CITY_MIN_ZOOM, { animate: false });
   }
+  state.mapSelectorOpen = false;
   updateMapSelector();
   syncVisibleMarkers();
   renderCategoryFilters();
@@ -1940,10 +1971,31 @@ function bindEvents() {
   });
 
   if (elements.mapSelector) {
-    elements.mapSelector.addEventListener("click", () => {
-      setCurrentArea(state.currentArea === "wynn" ? "outer_void" : "wynn");
+    elements.mapSelector.addEventListener("click", (event) => {
+      event.stopPropagation();
+      setMapSelectorOpen(!state.mapSelectorOpen);
     });
   }
+
+  if (elements.mapSelectorMenu) {
+    elements.mapSelectorMenu.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-map-area]");
+      if (!button) {
+        return;
+      }
+      setCurrentArea(button.dataset.mapArea);
+    });
+  }
+
+  document.addEventListener("click", (event) => {
+    if (!state.mapSelectorOpen) {
+      return;
+    }
+    if (event.target.closest(".map-selector-wrap")) {
+      return;
+    }
+    setMapSelectorOpen(false);
+  });
 
   map.on("click", (event) => {
     if (state.calibrationMode) {

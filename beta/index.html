@@ -28,8 +28,8 @@
       window.history.replaceState({}, "", nextUrl);
     }
   </script>
-  <link rel="stylesheet" href="../styles.css?v=20260518j">
-  <link rel="stylesheet" href="./beta.css?v=20260518j">
+  <link rel="stylesheet" href="../styles.css?v=20260518k">
+  <link rel="stylesheet" href="./beta.css?v=20260518k">
 </head>
 <body>
   <div class="app-shell">
@@ -65,12 +65,15 @@
         </div>
 
         <div class="panel-toolbar">
-          <button type="button" class="map-selector">
-            <span>Wynncraft Map</span>
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="m7 10 5 5 5-5z"/>
-            </svg>
-          </button>
+          <div class="map-selector-wrap">
+            <button type="button" class="map-selector" aria-expanded="false" aria-haspopup="menu">
+              <span>Wynncraft Map</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m7 10 5 5 5-5z"/>
+              </svg>
+            </button>
+            <div class="map-selector-menu hidden" role="menu" aria-label="Choose map area"></div>
+          </div>
 
           <div class="panel-search">
             <label class="sr-only" for="search-input">Search markers</label>
@@ -145,6 +148,6 @@
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     crossorigin=""
   ></script>
-  <script type="module" src="./beta-app.js?v=20260518j"></script>
+  <script type="module" src="./beta-app.js?v=20260518k"></script>
 </body>
 </html>
