@@ -142,7 +142,7 @@ const state = {
   editCities: EDIT_CITY_QUERY_MODE,
   cityEdits: USE_CITY_EDITS ? loadCityEdits() : {},
   cityTransform: null,
-  markerContent: { ...MARKER_CONTENT, ...loadMarkerContent() },
+  markerContent: loadMarkerContent(),
   panelView: "markers",
   activeMobFamily: null,
   currentArea: "wynn",
@@ -461,14 +461,30 @@ function markerContentAuthorEntry(markerId) {
   };
 }
 
+function normalizeMarkerContentEntry(entry) {
+  return {
+    summary: entry?.summary || "",
+    explanation: entry?.explanation || "",
+    coverImage: entry?.coverImage || "",
+    gallery: Array.isArray(entry?.gallery) ? entry.gallery : splitMultiline(entry?.gallery || ""),
+    sourceUrl: entry?.sourceUrl || "",
+    tutorials: Array.isArray(entry?.tutorials) ? entry.tutorials : splitMultiline(entry?.tutorials || ""),
+  };
+}
+
 function markerContentEntry(marker) {
   const entry = markerContentAuthorEntry(marker.id);
+  const shipped = normalizeMarkerContentEntry(MARKER_CONTENT[marker.id] || {});
   const fallbackSummary = LOW_VALUE_DESCRIPTION_PATTERNS.some((pattern) => pattern.test(marker.description || ""))
     ? ""
     : (marker.description || "");
   return {
-    ...entry,
-    summary: entry.summary || fallbackSummary,
+    summary: entry.summary || shipped.summary || fallbackSummary,
+    explanation: entry.explanation || shipped.explanation,
+    coverImage: entry.coverImage || shipped.coverImage,
+    gallery: entry.gallery.length ? entry.gallery : shipped.gallery,
+    sourceUrl: entry.sourceUrl || shipped.sourceUrl,
+    tutorials: entry.tutorials.length ? entry.tutorials : shipped.tutorials,
   };
 }
 
