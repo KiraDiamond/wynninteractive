@@ -1,4 +1,5 @@
 import { GENERATED_QUEST_MARKER_CONTENT } from "./generated-quest-marker-content.js?v=20260517ac";
+import { GENERATED_QUEST_VIDEO_LINKS } from "./generated-quest-video-links.js?v=20260518x";
 import { GENERATED_PROFESSION_MARKER_CONTENT } from "./generated-profession-marker-content.js?v=20260518u";
 import { GENERATED_SUPPLEMENTAL_MARKER_CONTENT } from "./generated-supplemental-marker-content.js?v=20260517ac";
 import { GENERATED_MOB_CONTENT } from "./generated-mob-content.js?v=20260518i";
@@ -68,6 +69,7 @@ const MANUAL_MARKER_OVERRIDES = {
 
 const ALL_MARKER_CONTENT_KEYS = new Set([
   ...Object.keys(BASE_MARKER_CONTENT),
+  ...Object.keys(GENERATED_QUEST_VIDEO_LINKS),
   ...Object.keys(MANUAL_MARKER_OVERRIDES),
 ]);
 
@@ -76,6 +78,7 @@ export const MARKER_CONTENT = Object.fromEntries(
     key,
     {
       ...(BASE_MARKER_CONTENT[key] || {}),
+      ...(GENERATED_QUEST_VIDEO_LINKS[key] || {}),
       ...(MANUAL_MARKER_OVERRIDES[key] || {}),
     },
   ]),
