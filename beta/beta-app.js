@@ -1,8 +1,8 @@
-import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260518g";
-import { WIKI_MAP_MARKERS } from "../data/wiki-map-markers.js?v=20260518g";
-import { MARKER_CONTENT } from "./data/marker-content.js?v=20260518g";
-import { MOB_ICON_URLS } from "../data/mob-icon-urls.js?v=20260518g";
-import { REFERENCE_IMAGE_URLS } from "../data/reference-images.js?v=20260518g";
+import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260518h";
+import { WIKI_MAP_MARKERS } from "../data/wiki-map-markers.js?v=20260518h";
+import { MARKER_CONTENT } from "./data/marker-content.js?v=20260518h";
+import { MOB_ICON_URLS } from "../data/mob-icon-urls.js?v=20260518h";
+import { REFERENCE_IMAGE_URLS } from "../data/reference-images.js?v=20260518h";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
