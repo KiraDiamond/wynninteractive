@@ -1,6 +1,6 @@
 import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260518u";
 import { WIKI_MAP_MARKERS } from "../data/wiki-map-markers.js?v=20260518j";
-import { MARKER_CONTENT } from "./data/marker-content.js?v=20260518u";
+import { MARKER_CONTENT } from "./data/marker-content.js?v=20260518v";
 import { MOB_ICON_URLS } from "../data/mob-icon-urls.js?v=20260518j";
 import { REFERENCE_IMAGE_URLS } from "../data/reference-images.js?v=20260518j";
 
@@ -984,15 +984,15 @@ function videoGuideEditorHtml(marker, entry) {
 
   return `
     <section class="content-studio video-guide-studio">
-      <div class="content-studio-head">
-        <h3>Linked Video</h3>
-        <span class="content-studio-note">Beta only. Saved in this browser and shown on the main site in this browser too.</span>
+        <div class="content-studio-head">
+          <h3>Linked Video</h3>
+        <span class="content-studio-note">Paste the YouTube link you want attached to this marker.</span>
       </div>
       <label class="content-field">
         <span>YouTube Link</span>
         <input type="url" data-content-field="videoGuide" value="${escapeAttribute(entry.tutorials[0] || "")}" placeholder="https://www.youtube.com/watch?v=...">
       </label>
-      <div class="content-save-note">Paste one video link for this quest or secret discovery.</div>
+      <div class="content-save-note">One link per marker. It saves as you type.</div>
     </section>
   `;
 }
