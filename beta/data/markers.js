@@ -3,8 +3,8 @@ import {
   CATEGORY_ORDER as ROOT_CATEGORY_ORDER,
   CURATED_MARKERS as ROOT_CURATED_MARKERS,
   STARTER_MARKERS,
-} from "../../data/markers.js";
-import { GENERATED_MOB_AREA_MARKERS } from "../../data/generated-mob-area-markers.js";
+} from "../../data/markers.js?v=20260518c";
+import { GENERATED_MOB_AREA_MARKERS } from "../../data/generated-mob-area-markers.js?v=20260518c";
 
 export const CATEGORY_META = {
   ...ROOT_CATEGORY_META,

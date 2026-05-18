@@ -1,7 +1,7 @@
-import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260518b";
-import { WIKI_MAP_MARKERS } from "../data/wiki-map-markers.js?v=20260518b";
-import { MARKER_CONTENT } from "./data/marker-content.js?v=20260518b";
-import { REFERENCE_IMAGE_URLS } from "../data/reference-images.js?v=20260518b";
+import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260518c";
+import { WIKI_MAP_MARKERS } from "../data/wiki-map-markers.js?v=20260518c";
+import { MARKER_CONTENT } from "./data/marker-content.js?v=20260518c";
+import { REFERENCE_IMAGE_URLS } from "../data/reference-images.js?v=20260518c";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
@@ -1515,8 +1515,7 @@ function setPanelCollapsed(collapsed) {
   }
 }
 
-function markerBoundsLatLng(marker) {
-  const bounds = marker.spawnBounds;
+function worldBoundsToLatLng(bounds) {
   if (!bounds) {
     return null;
   }
@@ -1536,6 +1535,16 @@ function markerBoundsLatLng(marker) {
   ];
 }
 
+function markerBoundsLatLngList(marker) {
+  const sourceBounds = Array.isArray(marker.spawnRegions) && marker.spawnRegions.length
+    ? marker.spawnRegions
+    : (marker.spawnBounds ? [marker.spawnBounds] : []);
+
+  return sourceBounds
+    .map((bounds) => worldBoundsToLatLng(bounds))
+    .filter(Boolean);
+}
+
 function renderActiveAreaHighlight() {
   if (state.areaHighlightLayer) {
     map.removeLayer(state.areaHighlightLayer);
@@ -1543,24 +1552,26 @@ function renderActiveAreaHighlight() {
   }
 
   const marker = state.markers.find((item) => item.id === state.selectedMarkerId);
-  const bounds = marker ? markerBoundsLatLng(marker) : null;
+  const boundsList = marker ? markerBoundsLatLngList(marker) : [];
   const visible = marker ? state.filteredMarkers.some((item) => item.id === marker.id) : false;
-  if (!marker || !bounds || !visible) {
+  if (!marker || !boundsList.length || !visible) {
     return;
   }
 
   const meta = CATEGORY_META[marker.category];
   const approximate = Boolean(marker.spawnZoneApproximate);
-  state.areaHighlightLayer = L.rectangle(bounds, {
-    color: meta.color,
-    weight: approximate ? 2 : 3,
-    opacity: 0.9,
-    fillColor: meta.color,
-    fillOpacity: approximate ? 0.05 : 0.08,
-    dashArray: approximate ? "9 7" : "4 4",
-    interactive: false,
-  }).addTo(map);
-  state.areaHighlightLayer.bringToBack();
+  state.areaHighlightLayer = L.featureGroup(
+    boundsList.map((bounds) => L.rectangle(bounds, {
+      color: meta.color,
+      weight: approximate ? 2 : 3,
+      opacity: 0.9,
+      fillColor: meta.color,
+      fillOpacity: approximate ? 0.05 : 0.08,
+      dashArray: approximate ? "9 7" : "4 4",
+      interactive: false,
+    })),
+  ).addTo(map);
+  state.areaHighlightLayer.eachLayer((layer) => layer.bringToBack());
 }
 
 function setSelectedMarker(markerId) {

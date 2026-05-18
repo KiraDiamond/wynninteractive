@@ -13,10 +13,12 @@ const CHROME_PATH = "C:/Program Files/Google/Chrome/Application/chrome.exe";
 const DEBUG_PORT = 9788;
 const DEBUG_URL = `http://127.0.0.1:${DEBUG_PORT}`;
 const CATEGORY_URL = "https://wynncraft.wiki.gg/wiki/Category:Lists_of_mobs";
+const TERRITORY_URL = "https://api.wynncraft.com/v3/guild/list/territory";
 const OUTPUT_ROOT = path.join(ROOT, "data", "wiki-scrape", "mob-areas");
 const PROFILE_DIR = path.join(OUTPUT_ROOT, "chrome-profile");
 const PROGRESS_PATH = path.join(OUTPUT_ROOT, "progress.json");
 const RAW_PATH = path.join(OUTPUT_ROOT, "mob-pages.json");
+const TERRITORY_SNAPSHOT_PATH = path.join(OUTPUT_ROOT, "territories.json");
 const SUMMARY_PATH = path.join(OUTPUT_ROOT, "summary.md");
 const MARKERS_OUTPUT_PATH = path.join(ROOT, "data", "generated-mob-area-markers.js");
 const CONTENT_OUTPUT_PATH = path.join(ROOT, "data", "generated-mob-area-content.js");
@@ -27,6 +29,44 @@ const TOKEN_STOP_WORDS = new Set([
   "territory", "road", "path", "pit", "mines", "barrows", "crypt", "ruins", "factory", "outlook", "sanctum",
   "fair", "hike", "west", "east", "south", "north", "upper", "lower", "general", "guild", "war",
   "expedition", "exploration", "claim", "heroism", "foray", "the",
+]);
+
+const GENERIC_LOCATION_CANDIDATES = new Set([
+  "from leaf piles",
+  "from mole dens",
+  "from ursa major",
+  "from lord estalis",
+  "from patrolling cavaliers",
+  "from wings cavalier",
+  "from ice carver moles",
+  "from leaf pile",
+  "from mole den",
+]);
+
+const LOCATION_ALIAS_MAP = new Map([
+  ["the barracks", ["Royal Barracks", "Citadel Barracks"]],
+  ["aelumia citadel walls", ["Gates to Aelumia"]],
+  ["aelumia citadel entrance", ["Gates to Aelumia"]],
+  ["aelumia safe zone", ["Gates to Aelumia"]],
+  ["citadel barracks", ["Citadel Barracks"]],
+  ["palace guards", ["Palace Guards"]],
+  ["royal alchemists", ["Royal Alchemists"]],
+  ["grand aisles", ["Aelumia Citadel"]],
+  ["queen's palace", ["Aelumia Citadel"]],
+  ["regal ballroom", ["Aelumia Citadel"]],
+  ["statuary hall", ["Aelumia Citadel"]],
+  ["spire's shadow", ["Aelumia Citadel"]],
+  ["spire's crown", ["Aelumia Citadel"]],
+  ["aelumia lighthouse", ["Lighthouse Lookout"]],
+  ["auburn lumbermill", ["The Lumbermill"]],
+  ["frog bog", ["The Frog Bog"]],
+  ["highway blockade", ["Auburn Forest"]],
+  ["electrifying outpost", ["Auburn Forest"]],
+  ["riverbed village", ["Auburn Forest"]],
+  ["marsh assault", ["Auburn Forest"]],
+  ["swampland squabble", ["Auburn Forest"]],
+  ["autumn poachers", ["Auburn Forest"]],
+  ["patrolling soldiers", ["Highlands"]],
 ]);
 
 function normalizeWhitespace(value) {
@@ -103,6 +143,116 @@ function pointBounds(points, pad = 120, minSpan = 220) {
   };
 }
 
+function normalizeRectBounds(bounds) {
+  return {
+    minX: Math.min(bounds.minX, bounds.maxX),
+    maxX: Math.max(bounds.minX, bounds.maxX),
+    minZ: Math.min(bounds.minZ, bounds.maxZ),
+    maxZ: Math.max(bounds.minZ, bounds.maxZ),
+  };
+}
+
+function territoryBoundsFromLocation(location) {
+  const [startX, startZ] = location.start || [];
+  const [endX, endZ] = location.end || [];
+  if (![startX, startZ, endX, endZ].every(Number.isFinite)) {
+    return null;
+  }
+  return normalizeRectBounds({
+    minX: startX,
+    maxX: endX,
+    minZ: startZ,
+    maxZ: endZ,
+  });
+}
+
+function unionBounds(boundsList, points = [], pad = 40, minSpan = 220) {
+  const xs = [];
+  const zs = [];
+  for (const bounds of boundsList.filter(Boolean)) {
+    xs.push(bounds.minX, bounds.maxX);
+    zs.push(bounds.minZ, bounds.maxZ);
+  }
+  for (const point of points.filter(Boolean)) {
+    xs.push(point.x);
+    zs.push(point.z);
+  }
+  if (!xs.length || !zs.length) {
+    return null;
+  }
+
+  let minX = Math.min(...xs);
+  let maxX = Math.max(...xs);
+  let minZ = Math.min(...zs);
+  let maxZ = Math.max(...zs);
+
+  if (maxX - minX < minSpan) {
+    const extra = (minSpan - (maxX - minX)) / 2;
+    minX -= extra;
+    maxX += extra;
+  }
+  if (maxZ - minZ < minSpan) {
+    const extra = (minSpan - (maxZ - minZ)) / 2;
+    minZ -= extra;
+    maxZ += extra;
+  }
+
+  return {
+    minX: Math.round(minX - pad),
+    maxX: Math.round(maxX + pad),
+    minZ: Math.round(minZ - pad),
+    maxZ: Math.round(maxZ + pad),
+  };
+}
+
+function expandBounds(bounds, pad = 0) {
+  return {
+    minX: Math.round(bounds.minX - pad),
+    maxX: Math.round(bounds.maxX + pad),
+    minZ: Math.round(bounds.minZ - pad),
+    maxZ: Math.round(bounds.maxZ + pad),
+  };
+}
+
+function boundsArea(bounds) {
+  return Math.max(1, bounds.maxX - bounds.minX) * Math.max(1, bounds.maxZ - bounds.minZ);
+}
+
+function boundsTouchOrOverlap(left, right, proximity = 0) {
+  return !(
+    left.maxX + proximity < right.minX ||
+    right.maxX + proximity < left.minX ||
+    left.maxZ + proximity < right.minZ ||
+    right.maxZ + proximity < left.minZ
+  );
+}
+
+function mergeBoundsList(boundsList, proximity = 120, minSpan = 180) {
+  const pending = boundsList.filter(Boolean).map((bounds) => normalizeRectBounds(bounds));
+  const merged = [];
+
+  while (pending.length) {
+    let current = pending.pop();
+    let changed = true;
+
+    while (changed) {
+      changed = false;
+      for (let index = pending.length - 1; index >= 0; index -= 1) {
+        if (!boundsTouchOrOverlap(current, pending[index], proximity)) {
+          continue;
+        }
+        current = unionBounds([current, pending[index]], [], 0, minSpan);
+        pending.splice(index, 1);
+        changed = true;
+      }
+    }
+
+    merged.push(current);
+  }
+
+  return merged.sort((left, right) => boundsArea(right) - boundsArea(left));
+}
+
 function centerFromBounds(bounds) {
   return {
     x: Math.round((bounds.minX + bounds.maxX) / 2),
@@ -170,7 +320,40 @@ function buildExistingIndex() {
   return { allMarkers, titleMap, regionMap, geoMap };
 }
 
-function existingMatchesForTitle(title, index) {
+function buildTerritoryIndex(territoryData) {
+  const territories = Object.entries(territoryData).map(([name, entry]) => {
+    const bounds = territoryBoundsFromLocation(entry.location || {});
+    return {
+      name,
+      bounds,
+      center: bounds ? centerFromBounds(bounds) : null,
+      titleKey: titleKey(name),
+      geoKey: geoKey(name),
+      searchText: titleKey(name),
+    };
+  }).filter((territory) => territory.bounds && territory.center);
+
+  const titleMap = new Map();
+  const geoMap = new Map();
+
+  for (const territory of territories) {
+    if (!titleMap.has(territory.titleKey)) {
+      titleMap.set(territory.titleKey, []);
+    }
+    titleMap.get(territory.titleKey).push(territory);
+
+    if (territory.geoKey) {
+      if (!geoMap.has(territory.geoKey)) {
+        geoMap.set(territory.geoKey, []);
+      }
+      geoMap.get(territory.geoKey).push(territory);
+    }
+  }
+
+  return { territories, titleMap, geoMap };
+}
+
+function lookupMarkerMatches(title, index) {
   const exactKey = titleKey(title);
   const simplifiedKey = geoKey(title);
   const exact = [
@@ -178,12 +361,12 @@ function existingMatchesForTitle(title, index) {
     ...(index.regionMap.get(exactKey) || []),
   ];
   if (exact.length) {
-    return dedupeMarkerMatches(exact);
+    return { quality: "exact", matches: dedupeMarkerMatches(exact) };
   }
 
   const geo = index.geoMap.get(simplifiedKey) || [];
   if (geo.length) {
-    return dedupeMarkerMatches(geo);
+    return { quality: "geo", matches: dedupeMarkerMatches(geo) };
   }
 
   const tokens = simplifiedKey
@@ -192,15 +375,152 @@ function existingMatchesForTitle(title, index) {
     .filter((token) => token.length >= 4 && !TOKEN_STOP_WORDS.has(token));
 
   if (!tokens.length) {
-    return [];
+    return { quality: "none", matches: [] };
   }
 
   const fuzzy = index.allMarkers.filter((marker) => tokens.every((token) => marker.searchText.includes(token)));
-  if (fuzzy.length && fuzzy.length <= 80) {
-    return dedupeMarkerMatches(fuzzy);
+  if (fuzzy.length && fuzzy.length <= 12) {
+    return { quality: "fuzzy", matches: dedupeMarkerMatches(fuzzy) };
   }
 
-  return [];
+  return { quality: "none", matches: [] };
+}
+
+function lookupTerritoryMatches(title, index) {
+  const exactKey = titleKey(title);
+  const simplifiedKey = geoKey(title);
+  const exact = index.titleMap.get(exactKey) || [];
+  if (exact.length) {
+    return { quality: "exact", matches: exact };
+  }
+
+  const geo = index.geoMap.get(simplifiedKey) || [];
+  if (geo.length) {
+    return { quality: "geo", matches: geo };
+  }
+
+  const tokens = simplifiedKey
+    .split(" ")
+    .map((token) => token.trim())
+    .filter((token) => token.length >= 4 && !TOKEN_STOP_WORDS.has(token));
+
+  if (!tokens.length) {
+    return { quality: "none", matches: [] };
+  }
+
+  const fuzzy = index.territories.filter((territory) => tokens.every((token) => territory.searchText.includes(token)));
+  if (fuzzy.length && fuzzy.length <= 8) {
+    return { quality: "fuzzy", matches: fuzzy };
+  }
+
+  return { quality: "none", matches: [] };
+}
+
+function collectLocationCandidates(pageData) {
+  const weighted = new Map();
+  const add = (value, weight = 1) => {
+    const normalized = normalizeWhitespace(value)
+      .replace(/\[[^\]]*]/g, " ")
+      .replace(/\s+at\s+-?\d[\d,\s-]*/gi, " ")
+      .replace(/\s+/g, " ")
+      .trim()
+      .replace(/^[,;:/-]+|[,;:/-]+$/g, "")
+      .trim();
+
+    if (!normalized) {
+      return;
+    }
+
+    const key = titleKey(normalized);
+    if (!key || GENERIC_LOCATION_CANDIDATES.has(key)) {
+      return;
+    }
+
+    weighted.set(normalized, (weighted.get(normalized) || 0) + weight);
+
+    for (const alias of LOCATION_ALIAS_MAP.get(key) || []) {
+      const aliasNormalized = normalizeWhitespace(alias);
+      weighted.set(aliasNormalized, (weighted.get(aliasNormalized) || 0) + weight);
+    }
+  };
+
+  add(pageData.title, 4);
+  for (const section of pageData.sections) {
+    for (const mob of section.mobs) {
+      const location = normalizeWhitespace(mob.location);
+      if (!location || location === "-" || location === "?") {
+        continue;
+      }
+      add(location, 1.5);
+      for (const fragment of location.split(/\s*,\s*/g)) {
+        add(fragment, 1);
+      }
+    }
+  }
+
+  return [...weighted.entries()]
+    .map(([value, weight]) => ({ value, weight }))
+    .sort((left, right) => right.weight - left.weight || left.value.localeCompare(right.value));
+}
+
+function qualityWeight(quality) {
+  if (quality === "exact") {
+    return 4;
+  }
+  if (quality === "geo") {
+    return 2.5;
+  }
+  if (quality === "fuzzy") {
+    return 1;
+  }
+  return 0;
+}
+
+function pushWeightedBounds(scoreMap, entryKey, entryValue, weight) {
+  if (!scoreMap.has(entryKey)) {
+    scoreMap.set(entryKey, { value: entryValue, score: 0 });
+  }
+  scoreMap.get(entryKey).score += weight;
+}
+
+function deriveAnchors(pageData, existingIndex, territoryIndex) {
+  const candidates = collectLocationCandidates(pageData);
+  const markerScores = new Map();
+  const territoryScores = new Map();
+
+  for (const candidate of candidates) {
+    const markerLookup = lookupMarkerMatches(candidate.value, existingIndex);
+    const markerWeight = qualityWeight(markerLookup.quality) * candidate.weight;
+    if (markerWeight > 0 && markerLookup.matches.length) {
+      const perMatch = markerWeight / markerLookup.matches.length;
+      for (const marker of markerLookup.matches) {
+        pushWeightedBounds(markerScores, marker.id, marker, perMatch);
+      }
+    }
+
+    const territoryLookup = lookupTerritoryMatches(candidate.value, territoryIndex);
+    const territoryWeight = qualityWeight(territoryLookup.quality) * candidate.weight;
+    if (territoryWeight > 0 && territoryLookup.matches.length) {
+      const perMatch = territoryWeight / territoryLookup.matches.length;
+      for (const territory of territoryLookup.matches) {
+        pushWeightedBounds(territoryScores, territory.name, territory, perMatch);
+      }
+    }
+  }
+
+  const matchedMarkers = [...markerScores.values()]
+    .filter((entry) => entry.score >= 1.5)
+    .sort((left, right) => right.score - left.score)
+    .slice(0, 18)
+    .map((entry) => entry.value);
+
+  const matchedTerritories = [...territoryScores.values()]
+    .filter((entry) => entry.score >= 1.5)
+    .sort((left, right) => right.score - left.score)
+    .slice(0, 18)
+    .map((entry) => entry.value);
+
+  return { candidates, matchedMarkers, matchedTerritories };
 }
 
 function dedupeMarkerMatches(markers) {
@@ -214,7 +534,7 @@ function dedupeMarkerMatches(markers) {
   });
 }
 
-function deriveZone(pageData, index) {
+function deriveZone(pageData, existingIndex, territoryIndex) {
   const exactPoints = [];
   for (const section of pageData.sections) {
     for (const mob of section.mobs) {
@@ -224,13 +544,38 @@ function deriveZone(pageData, index) {
     }
   }
 
+  const { matchedMarkers, matchedTerritories } = deriveAnchors(pageData, existingIndex, territoryIndex);
+  const territoryBounds = matchedTerritories.map((territory) => territory.bounds);
+  const markerPoints = matchedMarkers.map((marker) => ({
+    x: marker.position.world.x,
+    z: marker.position.world.z,
+  }));
+  const exactCoordBounds = exactPoints.length ? pointBounds(exactPoints, exactPoints.length >= 2 ? 90 : 110, 260) : null;
+
   if (exactPoints.length >= 2) {
-    const bounds = pointBounds(exactPoints, 90, 260);
+    const bounds = unionBounds([exactCoordBounds], [], 0, 260);
     return {
       position: centerFromBounds(bounds),
       bounds,
+      regions: [bounds],
       anchorSource: "spawn-coords",
       approximate: false,
+    };
+  }
+
+  if (exactPoints.length === 1 && (territoryBounds.length || markerPoints.length)) {
+    const regions = mergeBoundsList([
+      expandBounds(exactCoordBounds, 0),
+      ...territoryBounds.map((bounds) => expandBounds(bounds, 18)),
+      ...markerPoints.map((point) => pointBounds([point], 70, 180)),
+    ], 110, 180);
+    const bounds = unionBounds(regions, [], 16, 240);
+    return {
+      position: centerFromBounds(regions[0] || bounds),
+      bounds,
+      regions,
+      anchorSource: territoryBounds.length ? "single-spawn-plus-territories" : "single-spawn-plus-landmarks",
+      approximate: true,
     };
   }
 
@@ -240,22 +585,27 @@ function deriveZone(pageData, index) {
     return {
       position: point,
       bounds,
+      regions: [bounds],
       anchorSource: "single-spawn-coord",
       approximate: true,
     };
   }
 
-  const matchedMarkers = existingMatchesForTitle(pageData.title, index);
-  if (matchedMarkers.length) {
-    const points = matchedMarkers.map((marker) => ({
-      x: marker.position.world.x,
-      z: marker.position.world.z,
-    }));
-    const bounds = pointBounds(points, 140, matchedMarkers.length === 1 ? 340 : 260);
+  if (territoryBounds.length || markerPoints.length) {
+    const regions = mergeBoundsList([
+      ...territoryBounds.map((bounds) => expandBounds(bounds, 18)),
+      ...markerPoints.map((point) => pointBounds([point], 72, 180)),
+    ], 120, 180);
+    const bounds = unionBounds(regions, [], 18, markerPoints.length + territoryBounds.length === 1 ? 320 : 240);
     return {
-      position: centerFromBounds(bounds),
+      position: centerFromBounds(regions[0] || bounds),
       bounds,
-      anchorSource: matchedMarkers.length === 1 ? "existing-match-single" : "existing-match-cluster",
+      regions,
+      anchorSource: territoryBounds.length && markerPoints.length
+        ? "territories-and-landmarks"
+        : territoryBounds.length
+          ? "territory-union"
+          : "landmark-union",
       approximate: true,
     };
   }
@@ -274,8 +624,12 @@ function buildSummary(pageData) {
 
 function buildExplanation(pageData, zone) {
   const blocks = [];
-  if (zone?.approximate) {
-    blocks.push("Spawn Zone\n• Border is approximate and based on the mob list page plus nearby mapped locations.");
+  if (zone?.regions?.length > 1) {
+    blocks.push("Spawn Zone\n• Border is split into separate clusters when the mob page points at multiple subareas.");
+  } else if (zone?.approximate && /territor|landmark/i.test(zone.anchorSource || "")) {
+    blocks.push("Spawn Zone\n• Border is approximate and based on named territories and mapped subareas mentioned on the mob page.");
+  } else if (zone?.approximate) {
+    blocks.push("Spawn Zone\n• Border is approximate and based on the mob list page plus listed location anchors.");
   } else if (zone) {
     blocks.push("Spawn Zone\n• Border is based on exact spawn coordinates listed on the mob page.");
   }
@@ -305,6 +659,7 @@ function buildMarker(pageData, zone) {
     tags: dedupe(["mob area", "wiki.gg", pageData.title]),
     position: { world: zone.position },
     spawnBounds: zone.bounds,
+    spawnRegions: zone.regions || [zone.bounds],
     spawnZoneApproximate: Boolean(zone.approximate),
   };
 }
@@ -377,6 +732,24 @@ async function readJson(filePath, fallback) {
 
 async function writeJson(filePath, value) {
   await fs.writeFile(filePath, JSON.stringify(value, null, 2) + "\n", "utf8");
+}
+
+async function loadTerritorySnapshot() {
+  try {
+    const response = await fetch(TERRITORY_URL);
+    if (!response.ok) {
+      throw new Error(`Territory API returned ${response.status}`);
+    }
+    const live = await response.json();
+    await writeJson(TERRITORY_SNAPSHOT_PATH, live);
+    return live;
+  } catch (error) {
+    const cached = await readJson(TERRITORY_SNAPSHOT_PATH, null);
+    if (cached) {
+      return cached;
+    }
+    throw error;
+  }
 }
 
 async function canReachChromeDebug() {
@@ -512,6 +885,8 @@ async function main() {
   });
 
   const existingIndex = buildExistingIndex();
+  const territoryData = await loadTerritorySnapshot();
+  const territoryIndex = buildTerritoryIndex(territoryData);
   const { browser, context } = await connectToChrome();
   const page = await context.newPage();
 
@@ -542,7 +917,7 @@ async function main() {
         }));
       }
 
-      const zone = deriveZone(rawPage, existingIndex);
+      const zone = deriveZone(rawPage, existingIndex, territoryIndex);
       const marker = buildMarker(rawPage, zone);
       if (marker) {
         markers.push(marker);

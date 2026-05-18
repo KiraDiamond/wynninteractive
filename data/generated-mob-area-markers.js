@@ -25,6 +25,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -1538,
       "maxZ": -1041
     },
+    "spawnRegions": [
+      {
+        "minX": 81,
+        "maxX": 1119,
+        "minZ": -1538,
+        "maxZ": -1041
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -40,16 +48,30 @@ export const GENERATED_MOB_AREA_MARKERS =
     ],
     "position": {
       "world": {
-        "x": -1631,
-        "z": -850
+        "x": -1603,
+        "z": -887
       }
     },
     "spawnBounds": {
-      "minX": -1903,
-      "maxX": -1360,
-      "minZ": -1120,
-      "maxZ": -580
+      "minX": -1943,
+      "maxX": -1263,
+      "minZ": -2198,
+      "maxZ": -557
     },
+    "spawnRegions": [
+      {
+        "minX": -1925,
+        "maxX": -1281,
+        "minZ": -1199,
+        "maxZ": -575
+      },
+      {
+        "minX": -1860,
+        "maxX": -1615,
+        "minZ": -2180,
+        "maxZ": -2040
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -75,6 +97,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -2422,
       "maxZ": -1613
     },
+    "spawnRegions": [
+      {
+        "minX": 840,
+        "maxX": 1560,
+        "minZ": -2422,
+        "maxZ": -1613
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -90,16 +120,24 @@ export const GENERATED_MOB_AREA_MARKERS =
     ],
     "position": {
       "world": {
-        "x": 1045,
-        "z": -1972
+        "x": 945,
+        "z": -1980
       }
     },
     "spawnBounds": {
-      "minX": 775,
-      "maxX": 1315,
-      "minZ": -2380,
-      "maxZ": -1564
+      "minX": 767,
+      "maxX": 1123,
+      "minZ": -2158,
+      "maxZ": -1802
     },
+    "spawnRegions": [
+      {
+        "minX": 822,
+        "maxX": 1068,
+        "minZ": -2078,
+        "maxZ": -1882
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -125,6 +163,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -2125,
       "maxZ": -1685
     },
+    "spawnRegions": [
+      {
+        "minX": 72,
+        "maxX": 546,
+        "minZ": -2125,
+        "maxZ": -1685
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -140,16 +186,24 @@ export const GENERATED_MOB_AREA_MARKERS =
     ],
     "position": {
       "world": {
-        "x": -2399,
-        "z": -927
+        "x": -2045,
+        "z": -1250
       }
     },
     "spawnBounds": {
-      "minX": -2649,
-      "maxX": -2149,
-      "minZ": -1177,
-      "maxZ": -677
+      "minX": -2655,
+      "maxX": -1435,
+      "minZ": -1829,
+      "maxZ": -671
     },
+    "spawnRegions": [
+      {
+        "minX": -2639,
+        "maxX": -1451,
+        "minZ": -1813,
+        "maxZ": -687
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -175,6 +229,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -3525,
       "maxZ": -3085
     },
+    "spawnRegions": [
+      {
+        "minX": -1435,
+        "maxX": -995,
+        "minZ": -3525,
+        "maxZ": -3085
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -200,6 +262,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -1749,
       "maxZ": -1309
     },
+    "spawnRegions": [
+      {
+        "minX": 427,
+        "maxX": 867,
+        "minZ": -1749,
+        "maxZ": -1309
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -220,11 +290,19 @@ export const GENERATED_MOB_AREA_MARKERS =
       }
     },
     "spawnBounds": {
-      "minX": 1022,
-      "maxX": 1642,
-      "minZ": -826,
-      "maxZ": -206
+      "minX": 1152,
+      "maxX": 1512,
+      "minZ": -696,
+      "maxZ": -336
     },
+    "spawnRegions": [
+      {
+        "minX": 1170,
+        "maxX": 1494,
+        "minZ": -678,
+        "maxZ": -354
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -250,7 +328,54 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -5635,
       "maxZ": -4435
     },
+    "spawnRegions": [
+      {
+        "minX": -55,
+        "maxX": 965,
+        "minZ": -5635,
+        "maxZ": -4435
+      }
+    ],
     "spawnZoneApproximate": false
+  },
+  {
+    "id": "mob-area-canyon-of-the-lost-excursion-south",
+    "title": "Canyon of the Lost Excursion (South)",
+    "category": "hostile_mobs",
+    "region": "Canyon of the Lost Excursion (South)",
+    "description": "34 hostile mobs listed here.",
+    "tags": [
+      "mob area",
+      "wiki.gg",
+      "Canyon of the Lost Excursion (South)"
+    ],
+    "position": {
+      "world": {
+        "x": 341,
+        "z": -5138
+      }
+    },
+    "spawnBounds": {
+      "minX": -30,
+      "maxX": 711,
+      "minZ": -5443,
+      "maxZ": -4486
+    },
+    "spawnRegions": [
+      {
+        "minX": -12,
+        "maxX": 693,
+        "minZ": -5425,
+        "maxZ": -4852
+      },
+      {
+        "minX": 251,
+        "maxX": 356,
+        "minZ": -4646,
+        "maxZ": -4504
+      }
+    ],
+    "spawnZoneApproximate": true
   },
   {
     "id": "mob-area-cinfras-county",
@@ -275,6 +400,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -5120,
       "maxZ": -4500
     },
+    "spawnRegions": [
+      {
+        "minX": -840,
+        "maxX": 90,
+        "minZ": -5120,
+        "maxZ": -4500
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -300,6 +433,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -2181,
       "maxZ": -1690
     },
+    "spawnRegions": [
+      {
+        "minX": -929,
+        "maxX": -489,
+        "minZ": -2181,
+        "maxZ": -1690
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -325,6 +466,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -2750,
       "maxZ": 92
     },
+    "spawnRegions": [
+      {
+        "minX": -1930,
+        "maxX": 86,
+        "minZ": -2750,
+        "maxZ": 92
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -350,6 +499,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -1394,
       "maxZ": -954
     },
+    "spawnRegions": [
+      {
+        "minX": 49,
+        "maxX": 489,
+        "minZ": -1394,
+        "maxZ": -954
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -375,6 +532,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -5665,
       "maxZ": -5170
     },
+    "spawnRegions": [
+      {
+        "minX": -1445,
+        "maxX": -855,
+        "minZ": -5665,
+        "maxZ": -5170
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -390,16 +555,24 @@ export const GENERATED_MOB_AREA_MARKERS =
     ],
     "position": {
       "world": {
-        "x": 177,
-        "z": -2090
+        "x": 300,
+        "z": -2075
       }
     },
     "spawnBounds": {
-      "minX": -640,
-      "maxX": 993,
-      "minZ": -4030,
-      "maxZ": -150
+      "minX": 120,
+      "maxX": 480,
+      "minZ": -2255,
+      "maxZ": -1895
     },
+    "spawnRegions": [
+      {
+        "minX": 138,
+        "maxX": 462,
+        "minZ": -2237,
+        "maxZ": -1913
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -420,11 +593,19 @@ export const GENERATED_MOB_AREA_MARKERS =
       }
     },
     "spawnBounds": {
-      "minX": -1182,
-      "maxX": -562,
-      "minZ": -2288,
-      "maxZ": -1668
+      "minX": -1052,
+      "maxX": -692,
+      "minZ": -2158,
+      "maxZ": -1798
     },
+    "spawnRegions": [
+      {
+        "minX": -1034,
+        "maxX": -710,
+        "minZ": -2140,
+        "maxZ": -1816
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -450,6 +631,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -788,
       "maxZ": -150
     },
+    "spawnRegions": [
+      {
+        "minX": -1058,
+        "maxX": -465,
+        "minZ": -788,
+        "maxZ": -150
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -475,6 +664,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -1847,
       "maxZ": 91
     },
+    "spawnRegions": [
+      {
+        "minX": -88,
+        "maxX": 550,
+        "minZ": -1847,
+        "maxZ": 91
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -491,15 +688,23 @@ export const GENERATED_MOB_AREA_MARKERS =
     "position": {
       "world": {
         "x": 443,
-        "z": -2825
+        "z": -2866
       }
     },
     "spawnBounds": {
-      "minX": 173,
-      "maxX": 713,
-      "minZ": -3095,
-      "maxZ": -2555
+      "minX": 190,
+      "maxX": 695,
+      "minZ": -3092,
+      "maxZ": -2640
     },
+    "spawnRegions": [
+      {
+        "minX": 208,
+        "maxX": 677,
+        "minZ": -3074,
+        "maxZ": -2658
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -520,11 +725,25 @@ export const GENERATED_MOB_AREA_MARKERS =
       }
     },
     "spawnBounds": {
-      "minX": -249,
-      "maxX": 251,
-      "minZ": -247,
-      "maxZ": 253
+      "minX": -255,
+      "maxX": 1548,
+      "minZ": -878,
+      "maxZ": 259
     },
+    "spawnRegions": [
+      {
+        "minX": -239,
+        "maxX": 241,
+        "minZ": -237,
+        "maxZ": 243
+      },
+      {
+        "minX": 1212,
+        "maxX": 1532,
+        "minZ": -862,
+        "maxZ": -542
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -550,6 +769,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -2051,
       "maxZ": -1432
     },
+    "spawnRegions": [
+      {
+        "minX": -889,
+        "maxX": -404,
+        "minZ": -2051,
+        "maxZ": -1432
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -575,6 +802,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -610,
       "maxZ": -170
     },
+    "spawnRegions": [
+      {
+        "minX": 810,
+        "maxX": 1250,
+        "minZ": -610,
+        "maxZ": -170
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -590,16 +825,24 @@ export const GENERATED_MOB_AREA_MARKERS =
     ],
     "position": {
       "world": {
-        "x": -212,
-        "z": -3029
+        "x": -1630,
+        "z": -2590
       }
     },
     "spawnBounds": {
-      "minX": -1795,
-      "maxX": 1370,
-      "minZ": -5510,
-      "maxZ": -548
+      "minX": -1808,
+      "maxX": -1452,
+      "minZ": -2768,
+      "maxZ": -2412
     },
+    "spawnRegions": [
+      {
+        "minX": -1699,
+        "maxX": -1561,
+        "minZ": -2680,
+        "maxZ": -2500
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -620,11 +863,19 @@ export const GENERATED_MOB_AREA_MARKERS =
       }
     },
     "spawnBounds": {
-      "minX": -885,
-      "maxX": -345,
-      "minZ": -3674,
-      "maxZ": -2977
+      "minX": -820,
+      "maxX": -410,
+      "minZ": -3714,
+      "maxZ": -2937
     },
+    "spawnRegions": [
+      {
+        "minX": -802,
+        "maxX": -428,
+        "minZ": -3696,
+        "maxZ": -2955
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -640,16 +891,30 @@ export const GENERATED_MOB_AREA_MARKERS =
     ],
     "position": {
       "world": {
-        "x": -1189,
-        "z": -1159
+        "x": -1320,
+        "z": -1006
       }
     },
     "spawnBounds": {
-      "minX": -1583,
-      "maxX": -796,
-      "minZ": -1547,
-      "maxZ": -772
+      "minX": -2327,
+      "maxX": -756,
+      "minZ": -1788,
+      "maxZ": -425
     },
+    "spawnRegions": [
+      {
+        "minX": -1866,
+        "maxX": -774,
+        "minZ": -1569,
+        "maxZ": -443
+      },
+      {
+        "minX": -2309,
+        "maxX": -2004,
+        "minZ": -1770,
+        "maxZ": -1497
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -675,6 +940,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -661,
       "maxZ": -221
     },
+    "spawnRegions": [
+      {
+        "minX": -106,
+        "maxX": 334,
+        "minZ": -661,
+        "maxZ": -221
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -700,6 +973,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -630,
       "maxZ": -190
     },
+    "spawnRegions": [
+      {
+        "minX": -540,
+        "maxX": -25,
+        "minZ": -630,
+        "maxZ": -190
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -715,16 +996,60 @@ export const GENERATED_MOB_AREA_MARKERS =
     ],
     "position": {
       "world": {
-        "x": 1095,
-        "z": -2585
+        "x": 859,
+        "z": -3403
       }
     },
     "spawnBounds": {
-      "minX": 489,
-      "maxX": 1700,
-      "minZ": -5364,
-      "maxZ": 194
+      "minX": -2207,
+      "maxX": 1286,
+      "minZ": -5540,
+      "maxZ": -276
     },
+    "spawnRegions": [
+      {
+        "minX": 629,
+        "maxX": 1088,
+        "minZ": -3629,
+        "maxZ": -3178
+      },
+      {
+        "minX": -2189,
+        "maxX": -1782,
+        "minZ": -4661,
+        "maxZ": -4387
+      },
+      {
+        "minX": -150,
+        "maxX": 174,
+        "minZ": -618,
+        "maxZ": -294
+      },
+      {
+        "minX": -1502,
+        "maxX": -1178,
+        "minZ": -5522,
+        "maxZ": -5198
+      },
+      {
+        "minX": -1421,
+        "maxX": -1266,
+        "minZ": -4887,
+        "maxZ": -4730
+      },
+      {
+        "minX": 1165,
+        "maxX": 1268,
+        "minZ": -4736,
+        "maxZ": -4517
+      },
+      {
+        "minX": 57,
+        "maxX": 178,
+        "minZ": -868,
+        "maxZ": -742
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -740,16 +1065,36 @@ export const GENERATED_MOB_AREA_MARKERS =
     ],
     "position": {
       "world": {
-        "x": -1945,
+        "x": -1941,
         "z": -700
       }
     },
     "spawnBounds": {
-      "minX": -2380,
-      "maxX": -1511,
-      "minZ": -1050,
-      "maxZ": -350
+      "minX": -2420,
+      "maxX": -1463,
+      "minZ": -2766,
+      "maxZ": -310
     },
+    "spawnRegions": [
+      {
+        "minX": -2402,
+        "maxX": -1481,
+        "minZ": -1072,
+        "maxZ": -328
+      },
+      {
+        "minX": -2309,
+        "maxX": -2004,
+        "minZ": -1770,
+        "maxZ": -1497
+      },
+      {
+        "minX": -1816,
+        "maxX": -1665,
+        "minZ": -2748,
+        "maxZ": -2553
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -765,16 +1110,24 @@ export const GENERATED_MOB_AREA_MARKERS =
     ],
     "position": {
       "world": {
-        "x": 284,
-        "z": -2805
+        "x": -2115,
+        "z": -5365
       }
     },
     "spawnBounds": {
-      "minX": -564,
-      "maxX": 1132,
-      "minZ": -4359,
-      "maxZ": -1252
+      "minX": -2293,
+      "maxX": -1937,
+      "minZ": -5543,
+      "maxZ": -5187
     },
+    "spawnRegions": [
+      {
+        "minX": -2189,
+        "maxX": -2042,
+        "minZ": -5437,
+        "maxZ": -5294
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -790,16 +1143,36 @@ export const GENERATED_MOB_AREA_MARKERS =
     ],
     "position": {
       "world": {
-        "x": 1388,
+        "x": 1355,
         "z": -4108
       }
     },
     "spawnBounds": {
-      "minX": 1118,
-      "maxX": 1658,
-      "minZ": -4378,
-      "maxZ": -3838
+      "minX": -779,
+      "maxX": 1568,
+      "minZ": -4288,
+      "maxZ": -282
     },
+    "spawnRegions": [
+      {
+        "minX": 1160,
+        "maxX": 1550,
+        "minZ": -4270,
+        "maxZ": -3946
+      },
+      {
+        "minX": -745,
+        "maxX": -380,
+        "minZ": -2917,
+        "maxZ": -2593
+      },
+      {
+        "minX": -761,
+        "maxX": -437,
+        "minZ": -624,
+        "maxZ": -300
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -825,6 +1198,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -5549,
       "maxZ": -5109
     },
+    "spawnRegions": [
+      {
+        "minX": -1120,
+        "maxX": -680,
+        "minZ": -5549,
+        "maxZ": -5109
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -850,6 +1231,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -5645,
       "maxZ": -5205
     },
+    "spawnRegions": [
+      {
+        "minX": -327,
+        "maxX": 113,
+        "minZ": -5645,
+        "maxZ": -5205
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -875,6 +1264,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -218,
       "maxZ": 222
     },
+    "spawnRegions": [
+      {
+        "minX": -224,
+        "maxX": 216,
+        "minZ": -218,
+        "maxZ": 222
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -900,6 +1297,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -5150,
       "maxZ": -4330
     },
+    "spawnRegions": [
+      {
+        "minX": -1370,
+        "maxX": -555,
+        "minZ": -5150,
+        "maxZ": -4330
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -925,6 +1330,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -1542,
       "maxZ": -1090
     },
+    "spawnRegions": [
+      {
+        "minX": -759,
+        "maxX": -319,
+        "minZ": -1542,
+        "maxZ": -1090
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -950,6 +1363,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -5595,
       "maxZ": -4365
     },
+    "spawnRegions": [
+      {
+        "minX": -4790,
+        "maxX": -1410,
+        "minZ": -5595,
+        "maxZ": -4365
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -975,6 +1396,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -5710,
       "maxZ": -5110
     },
+    "spawnRegions": [
+      {
+        "minX": -1320,
+        "maxX": 1600,
+        "minZ": -5710,
+        "maxZ": -5110
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -1000,6 +1429,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -2014,
       "maxZ": -1520
     },
+    "spawnRegions": [
+      {
+        "minX": -1036,
+        "maxX": -454,
+        "minZ": -2014,
+        "maxZ": -1520
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -1015,16 +1452,36 @@ export const GENERATED_MOB_AREA_MARKERS =
     ],
     "position": {
       "world": {
-        "x": 199,
-        "z": -2421
+        "x": 206,
+        "z": -3983
       }
     },
     "spawnBounds": {
-      "minX": -71,
-      "maxX": 469,
-      "minZ": -4170,
-      "maxZ": -672
+      "minX": -779,
+      "maxX": 489,
+      "minZ": -4210,
+      "maxZ": -282
     },
+    "spawnRegions": [
+      {
+        "minX": -59,
+        "maxX": 471,
+        "minZ": -4192,
+        "maxZ": -3775
+      },
+      {
+        "minX": -761,
+        "maxX": -437,
+        "minZ": -624,
+        "maxZ": -300
+      },
+      {
+        "minX": -5,
+        "maxX": 319,
+        "minZ": -974,
+        "maxZ": -650
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -1040,41 +1497,24 @@ export const GENERATED_MOB_AREA_MARKERS =
     ],
     "position": {
       "world": {
-        "x": -1353,
-        "z": -898
+        "x": -1326,
+        "z": -935
       }
     },
     "spawnBounds": {
-      "minX": -1682,
-      "maxX": -1024,
-      "minZ": -1386,
-      "maxZ": -411
+      "minX": -1722,
+      "maxX": -931,
+      "minZ": -1499,
+      "maxZ": -371
     },
-    "spawnZoneApproximate": true
-  },
-  {
-    "id": "mob-area-molten-heights-guild-war",
-    "title": "Molten Heights Guild War",
-    "category": "hostile_mobs",
-    "region": "Molten Heights Guild War",
-    "description": "5 hostile mobs listed here.",
-    "tags": [
-      "mob area",
-      "wiki.gg",
-      "Molten Heights Guild War"
+    "spawnRegions": [
+      {
+        "minX": -1704,
+        "maxX": -949,
+        "minZ": -1481,
+        "maxZ": -389
+      }
     ],
-    "position": {
-      "world": {
-        "x": 1313,
-        "z": -5322
-      }
-    },
-    "spawnBounds": {
-      "minX": 932,
-      "maxX": 1694,
-      "minZ": -5719,
-      "maxZ": -4925
-    },
     "spawnZoneApproximate": true
   },
   {
@@ -1090,16 +1530,24 @@ export const GENERATED_MOB_AREA_MARKERS =
     ],
     "position": {
       "world": {
-        "x": 1313,
-        "z": -5322
+        "x": 1416,
+        "z": -5319
       }
     },
     "spawnBounds": {
-      "minX": 932,
-      "maxX": 1694,
-      "minZ": -5719,
-      "maxZ": -4925
+      "minX": 1189,
+      "maxX": 1643,
+      "minZ": -5605,
+      "maxZ": -5033
     },
+    "spawnRegions": [
+      {
+        "minX": 1207,
+        "maxX": 1625,
+        "minZ": -5587,
+        "maxZ": -5051
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -1125,6 +1573,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -2190,
       "maxZ": -1432
     },
+    "spawnRegions": [
+      {
+        "minX": -584,
+        "maxX": -85,
+        "minZ": -2190,
+        "maxZ": -1432
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -1150,6 +1606,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -2205,
       "maxZ": -1765
     },
+    "spawnRegions": [
+      {
+        "minX": -266,
+        "maxX": 174,
+        "minZ": -2205,
+        "maxZ": -1765
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -1175,6 +1639,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -1098,
       "maxZ": -565
     },
+    "spawnRegions": [
+      {
+        "minX": -301,
+        "maxX": 353,
+        "minZ": -1098,
+        "maxZ": -565
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -1190,16 +1662,24 @@ export const GENERATED_MOB_AREA_MARKERS =
     ],
     "position": {
       "world": {
-        "x": 44,
-        "z": -859
+        "x": 118,
+        "z": -805
       }
     },
     "spawnBounds": {
-      "minX": -348,
-      "maxX": 435,
-      "minZ": -1170,
-      "maxZ": -548
+      "minX": -60,
+      "maxX": 296,
+      "minZ": -983,
+      "maxZ": -627
     },
+    "spawnRegions": [
+      {
+        "minX": 57,
+        "maxX": 178,
+        "minZ": -868,
+        "maxZ": -742
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -1215,16 +1695,24 @@ export const GENERATED_MOB_AREA_MARKERS =
     ],
     "position": {
       "world": {
-        "x": -1977,
-        "z": -5615
+        "x": -1920,
+        "z": -5367
       }
     },
     "spawnBounds": {
-      "minX": -2287,
-      "maxX": -1667,
-      "minZ": -5925,
-      "maxZ": -5305
+      "minX": -2157,
+      "maxX": -1684,
+      "minZ": -5795,
+      "maxZ": -4940
     },
+    "spawnRegions": [
+      {
+        "minX": -2139,
+        "maxX": -1702,
+        "minZ": -5777,
+        "maxZ": -4958
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -1250,6 +1738,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -1770,
       "maxZ": -1229
     },
+    "spawnRegions": [
+      {
+        "minX": -488,
+        "maxX": 10,
+        "minZ": -1770,
+        "maxZ": -1229
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -1275,6 +1771,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -3146,
       "maxZ": -2596
     },
+    "spawnRegions": [
+      {
+        "minX": -1240,
+        "maxX": 732,
+        "minZ": -3146,
+        "maxZ": -2596
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -1300,6 +1804,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -4080,
       "maxZ": 1970
     },
+    "spawnRegions": [
+      {
+        "minX": -2340,
+        "maxX": 1532,
+        "minZ": -4080,
+        "maxZ": 1970
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -1325,6 +1837,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -5622,
       "maxZ": -4945
     },
+    "spawnRegions": [
+      {
+        "minX": -2260,
+        "maxX": -1489,
+        "minZ": -5622,
+        "maxZ": -4945
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -1345,11 +1865,25 @@ export const GENERATED_MOB_AREA_MARKERS =
       }
     },
     "spawnBounds": {
-      "minX": -165,
-      "maxX": 335,
-      "minZ": -160,
-      "maxZ": 340
+      "minX": -980,
+      "maxX": 341,
+      "minZ": -6588,
+      "maxZ": 346
     },
+    "spawnRegions": [
+      {
+        "minX": -155,
+        "maxX": 325,
+        "minZ": -150,
+        "maxZ": 330
+      },
+      {
+        "minX": -964,
+        "maxX": -572,
+        "minZ": -6572,
+        "maxZ": -6082
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -1370,11 +1904,25 @@ export const GENERATED_MOB_AREA_MARKERS =
       }
     },
     "spawnBounds": {
-      "minX": 292,
-      "maxX": 912,
-      "minZ": -984,
-      "maxZ": -364
+      "minX": 422,
+      "maxX": 1512,
+      "minZ": -854,
+      "maxZ": -336
     },
+    "spawnRegions": [
+      {
+        "minX": 440,
+        "maxX": 764,
+        "minZ": -836,
+        "maxZ": -512
+      },
+      {
+        "minX": 1170,
+        "maxX": 1494,
+        "minZ": -678,
+        "maxZ": -354
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -1400,6 +1948,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -1550,
       "maxZ": -1110
     },
+    "spawnRegions": [
+      {
+        "minX": -975,
+        "maxX": -535,
+        "minZ": -1550,
+        "maxZ": -1110
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -1425,6 +1981,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -2436,
       "maxZ": -1996
     },
+    "spawnRegions": [
+      {
+        "minX": 332,
+        "maxX": 772,
+        "minZ": -2436,
+        "maxZ": -1996
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -1441,15 +2005,29 @@ export const GENERATED_MOB_AREA_MARKERS =
     "position": {
       "world": {
         "x": -700,
-        "z": -3100
+        "z": -3103
       }
     },
     "spawnBounds": {
-      "minX": -1010,
-      "maxX": -390,
-      "minZ": -3410,
-      "maxZ": -2790
+      "minX": -880,
+      "maxX": -319,
+      "minZ": -3287,
+      "maxZ": -844
     },
+    "spawnRegions": [
+      {
+        "minX": -862,
+        "maxX": -538,
+        "minZ": -3269,
+        "maxZ": -2938
+      },
+      {
+        "minX": -661,
+        "maxX": -337,
+        "minZ": -1186,
+        "maxZ": -862
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -1475,7 +2053,66 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -4787,
       "maxZ": -4347
     },
+    "spawnRegions": [
+      {
+        "minX": -1585,
+        "maxX": -1145,
+        "minZ": -4787,
+        "maxZ": -4347
+      }
+    ],
     "spawnZoneApproximate": false
+  },
+  {
+    "id": "mob-area-regular-island",
+    "title": "Regular Island",
+    "category": "hostile_mobs",
+    "region": "Regular Island",
+    "description": "8 hostile mobs listed here.",
+    "tags": [
+      "mob area",
+      "wiki.gg",
+      "Regular Island"
+    ],
+    "position": {
+      "world": {
+        "x": -700,
+        "z": -3103
+      }
+    },
+    "spawnBounds": {
+      "minX": -880,
+      "maxX": 1630,
+      "minZ": -3800,
+      "maxZ": -785
+    },
+    "spawnRegions": [
+      {
+        "minX": -862,
+        "maxX": -538,
+        "minZ": -3269,
+        "maxZ": -2938
+      },
+      {
+        "minX": 441,
+        "maxX": 765,
+        "minZ": -2444,
+        "maxZ": -2120
+      },
+      {
+        "minX": 1288,
+        "maxX": 1612,
+        "minZ": -1127,
+        "maxZ": -803
+      },
+      {
+        "minX": 1184,
+        "maxX": 1476,
+        "minZ": -3782,
+        "maxZ": -3579
+      }
+    ],
+    "spawnZoneApproximate": true
   },
   {
     "id": "mob-area-roots-of-corruption",
@@ -1490,16 +2127,36 @@ export const GENERATED_MOB_AREA_MARKERS =
     ],
     "position": {
       "world": {
-        "x": 170,
-        "z": -1323
+        "x": -39,
+        "z": -1396
       }
     },
     "spawnBounds": {
-      "minX": -114,
-      "maxX": 453,
-      "minZ": -1600,
-      "maxZ": -1047
+      "minX": -599,
+      "maxX": 1650,
+      "minZ": -2277,
+      "maxZ": -515
     },
+    "spawnRegions": [
+      {
+        "minX": -581,
+        "maxX": 502,
+        "minZ": -2259,
+        "maxZ": -533
+      },
+      {
+        "minX": 1192,
+        "maxX": 1632,
+        "minZ": -1408,
+        "maxZ": -1073
+      },
+      {
+        "minX": 822,
+        "maxX": 1068,
+        "minZ": -2078,
+        "maxZ": -1882
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -1515,16 +2172,24 @@ export const GENERATED_MOB_AREA_MARKERS =
     ],
     "position": {
       "world": {
-        "x": 613,
-        "z": -498
+        "x": 764,
+        "z": -752
       }
     },
     "spawnBounds": {
-      "minX": 343,
-      "maxX": 883,
-      "minZ": -768,
+      "minX": 325,
+      "maxX": 1202,
+      "minZ": -1276,
       "maxZ": -228
     },
+    "spawnRegions": [
+      {
+        "minX": 343,
+        "maxX": 1184,
+        "minZ": -1258,
+        "maxZ": -246
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -1550,6 +2215,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -1777,
       "maxZ": -1125
     },
+    "spawnRegions": [
+      {
+        "minX": 935,
+        "maxX": 1578,
+        "minZ": -1777,
+        "maxZ": -1125
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -1575,6 +2248,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -210,
       "maxZ": 290
     },
+    "spawnRegions": [
+      {
+        "minX": -248,
+        "maxX": 252,
+        "minZ": -210,
+        "maxZ": 290
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -1600,6 +2281,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -2257,
       "maxZ": -1690
     },
+    "spawnRegions": [
+      {
+        "minX": 470,
+        "maxX": 911,
+        "minZ": -2257,
+        "maxZ": -1690
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -1615,16 +2304,36 @@ export const GENERATED_MOB_AREA_MARKERS =
     ],
     "position": {
       "world": {
-        "x": 896,
-        "z": -909
+        "x": 1173,
+        "z": -776
       }
     },
     "spawnBounds": {
-      "minX": 279,
-      "maxX": 1512,
-      "minZ": -1673,
-      "maxZ": -145
+      "minX": -1503,
+      "maxX": 1630,
+      "minZ": -2953,
+      "maxZ": -290
     },
+    "spawnRegions": [
+      {
+        "minX": 733,
+        "maxX": 1612,
+        "minZ": -1244,
+        "maxZ": -308
+      },
+      {
+        "minX": -1485,
+        "maxX": -1161,
+        "minZ": -1074,
+        "maxZ": -750
+      },
+      {
+        "minX": -1411,
+        "maxX": -1304,
+        "minZ": -2935,
+        "maxZ": -2818
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -1650,6 +2359,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -5100,
       "maxZ": -4175
     },
+    "spawnRegions": [
+      {
+        "minX": 715,
+        "maxX": 1650,
+        "minZ": -5100,
+        "maxZ": -4175
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -1665,16 +2382,30 @@ export const GENERATED_MOB_AREA_MARKERS =
     ],
     "position": {
       "world": {
-        "x": 1086,
-        "z": -4609
+        "x": 1160,
+        "z": -4522
       }
     },
     "spawnBounds": {
-      "minX": 739,
-      "maxX": 1432,
-      "minZ": -4950,
-      "maxZ": -4268
+      "minX": 351,
+      "maxX": 1340,
+      "minZ": -5194,
+      "maxZ": -4290
     },
+    "spawnRegions": [
+      {
+        "minX": 998,
+        "maxX": 1322,
+        "minZ": -4736,
+        "maxZ": -4308
+      },
+      {
+        "minX": 369,
+        "maxX": 693,
+        "minZ": -5176,
+        "maxZ": -4852
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -1690,16 +2421,69 @@ export const GENERATED_MOB_AREA_MARKERS =
     ],
     "position": {
       "world": {
-        "x": 662,
-        "z": -4448
+        "x": 1235,
+        "z": -5365
       }
     },
     "spawnBounds": {
-      "minX": 352,
-      "maxX": 972,
-      "minZ": -4758,
-      "maxZ": -4138
+      "minX": 482,
+      "maxX": 1415,
+      "minZ": -5545,
+      "maxZ": -4268
     },
+    "spawnRegions": [
+      {
+        "minX": 1073,
+        "maxX": 1397,
+        "minZ": -5527,
+        "maxZ": -5203
+      },
+      {
+        "minX": 500,
+        "maxX": 824,
+        "minZ": -4610,
+        "maxZ": -4286
+      }
+    ],
+    "spawnZoneApproximate": true
+  },
+  {
+    "id": "mob-area-corkus-traversal",
+    "title": "The Corkus Traversal",
+    "category": "hostile_mobs",
+    "region": "The Corkus Traversal",
+    "description": "57 hostile mobs listed here.",
+    "tags": [
+      "mob area",
+      "wiki.gg",
+      "The Corkus Traversal"
+    ],
+    "position": {
+      "world": {
+        "x": -1564,
+        "z": -2205
+      }
+    },
+    "spawnBounds": {
+      "minX": -1744,
+      "maxX": -1358,
+      "minZ": -2931,
+      "maxZ": -2025
+    },
+    "spawnRegions": [
+      {
+        "minX": -1726,
+        "maxX": -1402,
+        "minZ": -2367,
+        "maxZ": -2043
+      },
+      {
+        "minX": -1700,
+        "maxX": -1376,
+        "minZ": -2913,
+        "maxZ": -2589
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -1715,16 +2499,30 @@ export const GENERATED_MOB_AREA_MARKERS =
     ],
     "position": {
       "world": {
-        "x": -598,
-        "z": -2529
+        "x": -1271,
+        "z": -962
       }
     },
     "spawnBounds": {
-      "minX": -2389,
-      "maxX": 1192,
-      "minZ": -4673,
-      "maxZ": -386
+      "minX": -2327,
+      "maxX": -979,
+      "minZ": -1788,
+      "maxZ": -425
     },
+    "spawnRegions": [
+      {
+        "minX": -1545,
+        "maxX": -997,
+        "minZ": -1481,
+        "maxZ": -443
+      },
+      {
+        "minX": -2309,
+        "maxX": -2004,
+        "minZ": -1770,
+        "maxZ": -1497
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -1740,16 +2538,30 @@ export const GENERATED_MOB_AREA_MARKERS =
     ],
     "position": {
       "world": {
-        "x": -598,
-        "z": -2529
+        "x": -2035,
+        "z": -999
       }
     },
     "spawnBounds": {
-      "minX": -2389,
-      "maxX": 1192,
-      "minZ": -4673,
-      "maxZ": -386
+      "minX": -2414,
+      "maxX": -1647,
+      "minZ": -2766,
+      "maxZ": -383
     },
+    "spawnRegions": [
+      {
+        "minX": -2396,
+        "maxX": -1674,
+        "minZ": -1597,
+        "maxZ": -401
+      },
+      {
+        "minX": -1816,
+        "maxX": -1665,
+        "minZ": -2748,
+        "maxZ": -2553
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -1765,16 +2577,30 @@ export const GENERATED_MOB_AREA_MARKERS =
     ],
     "position": {
       "world": {
-        "x": 1193,
-        "z": -947
+        "x": 1322,
+        "z": -956
       }
     },
     "spawnBounds": {
-      "minX": 883,
-      "maxX": 1503,
-      "minZ": -1257,
-      "maxZ": -637
+      "minX": -1169,
+      "maxX": 1630,
+      "minZ": -5639,
+      "maxZ": -767
     },
+    "spawnRegions": [
+      {
+        "minX": 1031,
+        "maxX": 1612,
+        "minZ": -1127,
+        "maxZ": -785
+      },
+      {
+        "minX": -1151,
+        "maxX": -892,
+        "minZ": -5621,
+        "maxZ": -5098
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -1800,6 +2626,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -5737,
       "maxZ": -5297
     },
+    "spawnRegions": [
+      {
+        "minX": 155,
+        "maxX": 595,
+        "minZ": -5737,
+        "maxZ": -5297
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -1825,6 +2659,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -6244,
       "maxZ": -5804
     },
+    "spawnRegions": [
+      {
+        "minX": -1067,
+        "maxX": -627,
+        "minZ": -6244,
+        "maxZ": -5804
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -1841,15 +2683,23 @@ export const GENERATED_MOB_AREA_MARKERS =
     "position": {
       "world": {
         "x": 609,
-        "z": -885
+        "z": -842
       }
     },
     "spawnBounds": {
-      "minX": 339,
-      "maxX": 879,
-      "minZ": -1236,
-      "maxZ": -534
+      "minX": 325,
+      "maxX": 893,
+      "minZ": -1276,
+      "maxZ": -408
     },
+    "spawnRegions": [
+      {
+        "minX": 343,
+        "maxX": 875,
+        "minZ": -1258,
+        "maxZ": -426
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -1875,6 +2725,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -4485,
       "maxZ": -1463
     },
+    "spawnRegions": [
+      {
+        "minX": -889,
+        "maxX": 14240,
+        "minZ": -4485,
+        "maxZ": -1463
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -1890,16 +2748,24 @@ export const GENERATED_MOB_AREA_MARKERS =
     ],
     "position": {
       "world": {
-        "x": -1625,
-        "z": -674
+        "x": -1631,
+        "z": -819
       }
     },
     "spawnBounds": {
-      "minX": -1935,
-      "maxX": -1315,
-      "minZ": -984,
-      "maxZ": -364
+      "minX": -1943,
+      "maxX": -1320,
+      "minZ": -1144,
+      "maxZ": -494
     },
+    "spawnRegions": [
+      {
+        "minX": -1925,
+        "maxX": -1338,
+        "minZ": -1126,
+        "maxZ": -512
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -1925,6 +2791,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -1770,
       "maxZ": -940
     },
+    "spawnRegions": [
+      {
+        "minX": -674,
+        "maxX": 10,
+        "minZ": -1770,
+        "maxZ": -940
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -1950,6 +2824,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -204,
       "maxZ": 236
     },
+    "spawnRegions": [
+      {
+        "minX": -201,
+        "maxX": 239,
+        "minZ": -204,
+        "maxZ": 236
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -1975,6 +2857,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -214,
       "maxZ": 226
     },
+    "spawnRegions": [
+      {
+        "minX": -216,
+        "maxX": 224,
+        "minZ": -214,
+        "maxZ": 226
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -2000,6 +2890,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -1237,
       "maxZ": -797
     },
+    "spawnRegions": [
+      {
+        "minX": 711,
+        "maxX": 1151,
+        "minZ": -1237,
+        "maxZ": -797
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -2025,6 +2923,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -1098,
       "maxZ": -485
     },
+    "spawnRegions": [
+      {
+        "minX": -900,
+        "maxX": -405,
+        "minZ": -1098,
+        "maxZ": -485
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -2045,11 +2951,19 @@ export const GENERATED_MOB_AREA_MARKERS =
       }
     },
     "spawnBounds": {
-      "minX": -961,
-      "maxX": -421,
-      "minZ": -1028,
-      "maxZ": -488
+      "minX": -920,
+      "maxX": -462,
+      "minZ": -1034,
+      "maxZ": -482
     },
+    "spawnRegions": [
+      {
+        "minX": -902,
+        "maxX": -480,
+        "minZ": -1016,
+        "maxZ": -500
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -2070,11 +2984,19 @@ export const GENERATED_MOB_AREA_MARKERS =
       }
     },
     "spawnBounds": {
-      "minX": -5,
-      "maxX": 535,
-      "minZ": -2211,
-      "maxZ": -1671
+      "minX": 62,
+      "maxX": 468,
+      "minZ": -2132,
+      "maxZ": -1751
     },
+    "spawnRegions": [
+      {
+        "minX": 80,
+        "maxX": 450,
+        "minZ": -2114,
+        "maxZ": -1769
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -2090,16 +3012,42 @@ export const GENERATED_MOB_AREA_MARKERS =
     ],
     "position": {
       "world": {
-        "x": 1313,
-        "z": -5340
+        "x": 1276,
+        "z": -5308
       }
     },
     "spawnBounds": {
-      "minX": 946,
-      "maxX": 1679,
-      "minZ": -5719,
-      "maxZ": -4961
+      "minX": -1924,
+      "maxX": 1734,
+      "minZ": -5759,
+      "maxZ": -2340
     },
+    "spawnRegions": [
+      {
+        "minX": 836,
+        "maxX": 1716,
+        "minZ": -5741,
+        "maxZ": -4876
+      },
+      {
+        "minX": -1597,
+        "maxX": -1273,
+        "minZ": -2682,
+        "maxZ": -2358
+      },
+      {
+        "minX": -1906,
+        "maxX": -1665,
+        "minZ": -3193,
+        "maxZ": -2979
+      },
+      {
+        "minX": 181,
+        "maxX": 278,
+        "minZ": -5182,
+        "maxZ": -5024
+      }
+    ],
     "spawnZoneApproximate": true
   },
   {
@@ -2125,6 +3073,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -1053,
       "maxZ": 96
     },
+    "spawnRegions": [
+      {
+        "minX": -86,
+        "maxX": 1541,
+        "minZ": -1053,
+        "maxZ": 96
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -2150,6 +3106,14 @@ export const GENERATED_MOB_AREA_MARKERS =
       "minZ": -3725,
       "maxZ": 146
     },
+    "spawnRegions": [
+      {
+        "minX": -935,
+        "maxX": 145,
+        "minZ": -3725,
+        "maxZ": 146
+      }
+    ],
     "spawnZoneApproximate": false
   },
   {
@@ -2165,16 +3129,24 @@ export const GENERATED_MOB_AREA_MARKERS =
     ],
     "position": {
       "world": {
-        "x": -542,
+        "x": -562,
         "z": -2755
       }
     },
     "spawnBounds": {
-      "minX": -852,
-      "maxX": -232,
-      "minZ": -3065,
-      "maxZ": -2445
+      "minX": -763,
+      "maxX": -362,
+      "minZ": -2935,
+      "maxZ": -2575
     },
+    "spawnRegions": [
+      {
+        "minX": -745,
+        "maxX": -380,
+        "minZ": -2917,
+        "maxZ": -2593
+      }
+    ],
     "spawnZoneApproximate": true
   }
 ];
