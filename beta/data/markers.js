@@ -3,8 +3,8 @@ import {
   CATEGORY_ORDER as ROOT_CATEGORY_ORDER,
   CURATED_MARKERS as ROOT_CURATED_MARKERS,
   STARTER_MARKERS,
-} from "../../data/markers.js?v=20260518e";
-import { GENERATED_MOB_MARKERS } from "../../data/generated-mob-markers.js?v=20260518e";
+} from "../../data/markers.js?v=20260518f";
+import { GENERATED_MOB_MARKERS } from "../../data/generated-mob-markers.js?v=20260518f";
 
 const MOB_CATEGORY_META = {
   hostile_mobs_zombie: { label: "Zombies", color: "#c7644f", selectable: true, icon: null },

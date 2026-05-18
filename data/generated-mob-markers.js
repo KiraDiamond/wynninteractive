@@ -26,6 +26,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -687,
       "maxZ": -587
     },
+    "spawnNodes": [
+      {
+        "minX": 257,
+        "maxX": 287,
+        "minZ": -652,
+        "maxZ": -622
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 257,
@@ -63,6 +71,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1053,
       "maxZ": -875
     },
+    "spawnNodes": [
+      {
+        "minX": 848,
+        "maxX": 988,
+        "minZ": -1025,
+        "maxZ": -885
+      },
+      {
+        "minX": 992,
+        "maxX": 1132,
+        "minZ": -1043,
+        "maxZ": -903
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 848,
@@ -99,6 +121,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5516,
       "maxZ": -5416
     },
+    "spawnNodes": [
+      {
+        "minX": -797,
+        "maxX": -737,
+        "minZ": -5496,
+        "maxZ": -5436
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -797,
@@ -134,6 +164,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1466,
       "maxZ": -1366
     },
+    "spawnNodes": [
+      {
+        "minX": 1,
+        "maxX": 17,
+        "minZ": -1424,
+        "maxZ": -1408
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1,
@@ -169,6 +207,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1102,
       "maxZ": -1002
     },
+    "spawnNodes": [
+      {
+        "minX": -740,
+        "maxX": -720,
+        "minZ": -1062,
+        "maxZ": -1042
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -740,
@@ -206,6 +252,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4688,
       "maxZ": -4588
     },
+    "spawnNodes": [
+      {
+        "minX": -1818,
+        "maxX": -1798,
+        "minZ": -4620,
+        "maxZ": -4600
+      },
+      {
+        "minX": -1838,
+        "maxX": -1818,
+        "minZ": -4646,
+        "maxZ": -4626
+      },
+      {
+        "minX": -1839,
+        "maxX": -1819,
+        "minZ": -4673,
+        "maxZ": -4653
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1856,
@@ -241,6 +307,110 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1434,
       "maxZ": -480
     },
+    "spawnNodes": [
+      {
+        "minX": -1227,
+        "maxX": -1187,
+        "minZ": -1171,
+        "maxZ": -1131
+      },
+      {
+        "minX": -1259,
+        "maxX": -1229,
+        "minZ": -1062,
+        "maxZ": -1032
+      },
+      {
+        "minX": -1333,
+        "maxX": -1293,
+        "minZ": -974,
+        "maxZ": -934
+      },
+      {
+        "minX": -1268,
+        "maxX": -1238,
+        "minZ": -965,
+        "maxZ": -935
+      },
+      {
+        "minX": -1580,
+        "maxX": -1560,
+        "minZ": -1016,
+        "maxZ": -996
+      },
+      {
+        "minX": -1464,
+        "maxX": -1434,
+        "minZ": -1365,
+        "maxZ": -1335
+      },
+      {
+        "minX": -1418,
+        "maxX": -1402,
+        "minZ": -1402,
+        "maxZ": -1386
+      },
+      {
+        "minX": -1436,
+        "maxX": -1420,
+        "minZ": -1412,
+        "maxZ": -1396
+      },
+      {
+        "minX": -1446,
+        "maxX": -1430,
+        "minZ": -1396,
+        "maxZ": -1380
+      },
+      {
+        "minX": -1391,
+        "maxX": -1375,
+        "minZ": -1404,
+        "maxZ": -1388
+      },
+      {
+        "minX": -1467,
+        "maxX": -1451,
+        "minZ": -1403,
+        "maxZ": -1387
+      },
+      {
+        "minX": -1471,
+        "maxX": -1455,
+        "minZ": -1405,
+        "maxZ": -1389
+      },
+      {
+        "minX": -1187,
+        "maxX": -1171,
+        "minZ": -553,
+        "maxZ": -537
+      },
+      {
+        "minX": -1190,
+        "maxX": -1174,
+        "minZ": -506,
+        "maxZ": -490
+      },
+      {
+        "minX": -1194,
+        "maxX": -1178,
+        "minZ": -528,
+        "maxZ": -512
+      },
+      {
+        "minX": -1198,
+        "maxX": -1182,
+        "minZ": -525,
+        "maxZ": -509
+      },
+      {
+        "minX": -1196,
+        "maxX": -1180,
+        "minZ": -547,
+        "maxZ": -531
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1333,
@@ -300,6 +470,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -687,
       "maxZ": -587
     },
+    "spawnNodes": [
+      {
+        "minX": 257,
+        "maxX": 287,
+        "minZ": -652,
+        "maxZ": -622
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 257,
@@ -336,6 +514,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4807,
       "maxZ": -4245
     },
+    "spawnNodes": [
+      {
+        "minX": 1080,
+        "maxX": 1120,
+        "minZ": -4329,
+        "maxZ": -4289
+      },
+      {
+        "minX": 1177,
+        "maxX": 1207,
+        "minZ": -4285,
+        "maxZ": -4255
+      },
+      {
+        "minX": 1350,
+        "maxX": 1370,
+        "minZ": -4521,
+        "maxZ": -4501
+      },
+      {
+        "minX": 1263,
+        "maxX": 1283,
+        "minZ": -4715,
+        "maxZ": -4695
+      },
+      {
+        "minX": 797,
+        "maxX": 837,
+        "minZ": -4787,
+        "maxZ": -4747
+      },
+      {
+        "minX": 787,
+        "maxX": 847,
+        "minZ": -4797,
+        "maxZ": -4737
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 787,
@@ -396,6 +612,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -970,
       "maxZ": -781
     },
+    "spawnNodes": [
+      {
+        "minX": -1680,
+        "maxX": -1664,
+        "minZ": -906,
+        "maxZ": -890
+      },
+      {
+        "minX": -1686,
+        "maxX": -1670,
+        "minZ": -862,
+        "maxZ": -846
+      },
+      {
+        "minX": -1699,
+        "maxX": -1683,
+        "minZ": -847,
+        "maxZ": -831
+      },
+      {
+        "minX": -1703,
+        "maxX": -1687,
+        "minZ": -856,
+        "maxZ": -840
+      },
+      {
+        "minX": -1689,
+        "maxX": -1669,
+        "minZ": -811,
+        "maxZ": -791
+      },
+      {
+        "minX": -1614,
+        "maxX": -1598,
+        "minZ": -960,
+        "maxZ": -944
+      },
+      {
+        "minX": -1553,
+        "maxX": -1537,
+        "minZ": -894,
+        "maxZ": -878
+      },
+      {
+        "minX": -1517,
+        "maxX": -1501,
+        "minZ": -912,
+        "maxZ": -896
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1703,
@@ -431,6 +697,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4678,
       "maxZ": -4578
     },
+    "spawnNodes": [
+      {
+        "minX": 1295,
+        "maxX": 1355,
+        "minZ": -4658,
+        "maxZ": -4598
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1295,
@@ -466,6 +740,74 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3470,
       "maxZ": -2235
     },
+    "spawnNodes": [
+      {
+        "minX": -1201,
+        "maxX": -1185,
+        "minZ": -3247,
+        "maxZ": -3231
+      },
+      {
+        "minX": -1177,
+        "maxX": -1157,
+        "minZ": -3292,
+        "maxZ": -3272
+      },
+      {
+        "minX": -1171,
+        "maxX": -1151,
+        "minZ": -3322,
+        "maxZ": -3302
+      },
+      {
+        "minX": -1398,
+        "maxX": -1380,
+        "minZ": -3410,
+        "maxZ": -3392
+      },
+      {
+        "minX": -1432,
+        "maxX": -1414,
+        "minZ": -3418,
+        "maxZ": -3400
+      },
+      {
+        "minX": -1487,
+        "maxX": -1469,
+        "minZ": -3421,
+        "maxZ": -3403
+      },
+      {
+        "minX": -1525,
+        "maxX": -1507,
+        "minZ": -3424,
+        "maxZ": -3406
+      },
+      {
+        "minX": -1549,
+        "maxX": -1531,
+        "minZ": -3459,
+        "maxZ": -3441
+      },
+      {
+        "minX": -1288,
+        "maxX": -1270,
+        "minZ": -2288,
+        "maxZ": -2270
+      },
+      {
+        "minX": -1302,
+        "maxX": -1284,
+        "minZ": -2325,
+        "maxZ": -2307
+      },
+      {
+        "minX": -1306,
+        "maxX": -1288,
+        "minZ": -2263,
+        "maxZ": -2245
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1556,
@@ -514,6 +856,206 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5605,
       "maxZ": -4318
     },
+    "spawnNodes": [
+      {
+        "minX": 138,
+        "maxX": 158,
+        "minZ": -4376,
+        "maxZ": -4356
+      },
+      {
+        "minX": 118,
+        "maxX": 134,
+        "minZ": -4374,
+        "maxZ": -4358
+      },
+      {
+        "minX": 98,
+        "maxX": 118,
+        "minZ": -4367,
+        "maxZ": -4347
+      },
+      {
+        "minX": 192,
+        "maxX": 212,
+        "minZ": -4348,
+        "maxZ": -4328
+      },
+      {
+        "minX": 205,
+        "maxX": 221,
+        "minZ": -4434,
+        "maxZ": -4418
+      },
+      {
+        "minX": 198,
+        "maxX": 214,
+        "minZ": -4446,
+        "maxZ": -4430
+      },
+      {
+        "minX": 39,
+        "maxX": 69,
+        "minZ": -4487,
+        "maxZ": -4457
+      },
+      {
+        "minX": 38,
+        "maxX": 58,
+        "minZ": -4524,
+        "maxZ": -4504
+      },
+      {
+        "minX": 93,
+        "maxX": 123,
+        "minZ": -4546,
+        "maxZ": -4516
+      },
+      {
+        "minX": 101,
+        "maxX": 117,
+        "minZ": -4540,
+        "maxZ": -4524
+      },
+      {
+        "minX": 548,
+        "maxX": 564,
+        "minZ": -5501,
+        "maxZ": -5485
+      },
+      {
+        "minX": 859,
+        "maxX": 889,
+        "minZ": -5390,
+        "maxZ": -5360
+      },
+      {
+        "minX": 852,
+        "maxX": 868,
+        "minZ": -5409,
+        "maxZ": -5393
+      },
+      {
+        "minX": 864,
+        "maxX": 880,
+        "minZ": -5433,
+        "maxZ": -5417
+      },
+      {
+        "minX": 877,
+        "maxX": 893,
+        "minZ": -5470,
+        "maxZ": -5454
+      },
+      {
+        "minX": 864,
+        "maxX": 880,
+        "minZ": -5505,
+        "maxZ": -5489
+      },
+      {
+        "minX": 844,
+        "maxX": 860,
+        "minZ": -5531,
+        "maxZ": -5515
+      },
+      {
+        "minX": 831,
+        "maxX": 847,
+        "minZ": -5542,
+        "maxZ": -5526
+      },
+      {
+        "minX": 828,
+        "maxX": 844,
+        "minZ": -5570,
+        "maxZ": -5554
+      },
+      {
+        "minX": 69,
+        "maxX": 85,
+        "minZ": -4664,
+        "maxZ": -4648
+      },
+      {
+        "minX": 50,
+        "maxX": 66,
+        "minZ": -4699,
+        "maxZ": -4683
+      },
+      {
+        "minX": 153,
+        "maxX": 169,
+        "minZ": -5543,
+        "maxZ": -5527
+      },
+      {
+        "minX": 115,
+        "maxX": 131,
+        "minZ": -5578,
+        "maxZ": -5562
+      },
+      {
+        "minX": 92,
+        "maxX": 108,
+        "minZ": -5579,
+        "maxZ": -5563
+      },
+      {
+        "minX": 64,
+        "maxX": 80,
+        "minZ": -5572,
+        "maxZ": -5556
+      },
+      {
+        "minX": 578,
+        "maxX": 594,
+        "minZ": -5416,
+        "maxZ": -5400
+      },
+      {
+        "minX": 564,
+        "maxX": 580,
+        "minZ": -5409,
+        "maxZ": -5393
+      },
+      {
+        "minX": 555,
+        "maxX": 571,
+        "minZ": -5401,
+        "maxZ": -5385
+      },
+      {
+        "minX": 541,
+        "maxX": 557,
+        "minZ": -5432,
+        "maxZ": -5416
+      },
+      {
+        "minX": 504,
+        "maxX": 534,
+        "minZ": -5485,
+        "maxZ": -5455
+      },
+      {
+        "minX": 529,
+        "maxX": 545,
+        "minZ": -5495,
+        "maxZ": -5479
+      },
+      {
+        "minX": 549,
+        "maxX": 565,
+        "minZ": -5500,
+        "maxZ": -5484
+      },
+      {
+        "minX": 551,
+        "maxX": 567,
+        "minZ": -5487,
+        "maxZ": -5471
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 98,
@@ -580,6 +1122,206 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5605,
       "maxZ": -4318
     },
+    "spawnNodes": [
+      {
+        "minX": 138,
+        "maxX": 158,
+        "minZ": -4376,
+        "maxZ": -4356
+      },
+      {
+        "minX": 118,
+        "maxX": 134,
+        "minZ": -4374,
+        "maxZ": -4358
+      },
+      {
+        "minX": 98,
+        "maxX": 118,
+        "minZ": -4367,
+        "maxZ": -4347
+      },
+      {
+        "minX": 192,
+        "maxX": 212,
+        "minZ": -4348,
+        "maxZ": -4328
+      },
+      {
+        "minX": 205,
+        "maxX": 221,
+        "minZ": -4434,
+        "maxZ": -4418
+      },
+      {
+        "minX": 198,
+        "maxX": 214,
+        "minZ": -4446,
+        "maxZ": -4430
+      },
+      {
+        "minX": 39,
+        "maxX": 69,
+        "minZ": -4487,
+        "maxZ": -4457
+      },
+      {
+        "minX": 38,
+        "maxX": 58,
+        "minZ": -4524,
+        "maxZ": -4504
+      },
+      {
+        "minX": 93,
+        "maxX": 123,
+        "minZ": -4546,
+        "maxZ": -4516
+      },
+      {
+        "minX": 101,
+        "maxX": 117,
+        "minZ": -4540,
+        "maxZ": -4524
+      },
+      {
+        "minX": 548,
+        "maxX": 564,
+        "minZ": -5501,
+        "maxZ": -5485
+      },
+      {
+        "minX": 859,
+        "maxX": 889,
+        "minZ": -5390,
+        "maxZ": -5360
+      },
+      {
+        "minX": 852,
+        "maxX": 868,
+        "minZ": -5409,
+        "maxZ": -5393
+      },
+      {
+        "minX": 864,
+        "maxX": 880,
+        "minZ": -5433,
+        "maxZ": -5417
+      },
+      {
+        "minX": 877,
+        "maxX": 893,
+        "minZ": -5470,
+        "maxZ": -5454
+      },
+      {
+        "minX": 864,
+        "maxX": 880,
+        "minZ": -5505,
+        "maxZ": -5489
+      },
+      {
+        "minX": 844,
+        "maxX": 860,
+        "minZ": -5531,
+        "maxZ": -5515
+      },
+      {
+        "minX": 831,
+        "maxX": 847,
+        "minZ": -5542,
+        "maxZ": -5526
+      },
+      {
+        "minX": 828,
+        "maxX": 844,
+        "minZ": -5570,
+        "maxZ": -5554
+      },
+      {
+        "minX": 69,
+        "maxX": 85,
+        "minZ": -4664,
+        "maxZ": -4648
+      },
+      {
+        "minX": 50,
+        "maxX": 66,
+        "minZ": -4699,
+        "maxZ": -4683
+      },
+      {
+        "minX": 153,
+        "maxX": 169,
+        "minZ": -5543,
+        "maxZ": -5527
+      },
+      {
+        "minX": 115,
+        "maxX": 131,
+        "minZ": -5578,
+        "maxZ": -5562
+      },
+      {
+        "minX": 92,
+        "maxX": 108,
+        "minZ": -5579,
+        "maxZ": -5563
+      },
+      {
+        "minX": 64,
+        "maxX": 80,
+        "minZ": -5572,
+        "maxZ": -5556
+      },
+      {
+        "minX": 578,
+        "maxX": 594,
+        "minZ": -5416,
+        "maxZ": -5400
+      },
+      {
+        "minX": 564,
+        "maxX": 580,
+        "minZ": -5409,
+        "maxZ": -5393
+      },
+      {
+        "minX": 555,
+        "maxX": 571,
+        "minZ": -5401,
+        "maxZ": -5385
+      },
+      {
+        "minX": 541,
+        "maxX": 557,
+        "minZ": -5432,
+        "maxZ": -5416
+      },
+      {
+        "minX": 504,
+        "maxX": 534,
+        "minZ": -5485,
+        "maxZ": -5455
+      },
+      {
+        "minX": 529,
+        "maxX": 545,
+        "minZ": -5495,
+        "maxZ": -5479
+      },
+      {
+        "minX": 549,
+        "maxX": 565,
+        "minZ": -5500,
+        "maxZ": -5484
+      },
+      {
+        "minX": 551,
+        "maxX": 567,
+        "minZ": -5487,
+        "maxZ": -5471
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 98,
@@ -648,6 +1390,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4802,
       "maxZ": -4702
     },
+    "spawnNodes": [
+      {
+        "minX": -714,
+        "maxX": -698,
+        "minZ": -4773,
+        "maxZ": -4757
+      },
+      {
+        "minX": -807,
+        "maxX": -791,
+        "minZ": -4748,
+        "maxZ": -4732
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -807,
@@ -690,6 +1446,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4496,
       "maxZ": -4396
     },
+    "spawnNodes": [
+      {
+        "minX": -1334,
+        "maxX": -1318,
+        "minZ": -4454,
+        "maxZ": -4438
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1334,
@@ -727,6 +1491,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4137,
       "maxZ": -3906
     },
+    "spawnNodes": [
+      {
+        "minX": 345,
+        "maxX": 361,
+        "minZ": -3950,
+        "maxZ": -3934
+      },
+      {
+        "minX": 163,
+        "maxX": 179,
+        "minZ": -3940,
+        "maxZ": -3924
+      },
+      {
+        "minX": 41,
+        "maxX": 57,
+        "minZ": -3932,
+        "maxZ": -3916
+      },
+      {
+        "minX": 360,
+        "maxX": 376,
+        "minZ": -3991,
+        "maxZ": -3975
+      },
+      {
+        "minX": 347,
+        "maxX": 363,
+        "minZ": -4005,
+        "maxZ": -3989
+      },
+      {
+        "minX": 216,
+        "maxX": 232,
+        "minZ": -4127,
+        "maxZ": -4111
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 334,
@@ -780,6 +1582,80 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1245,
       "maxZ": -1130
     },
+    "spawnNodes": [
+      {
+        "minX": 790,
+        "maxX": 806,
+        "minZ": -1182,
+        "maxZ": -1166
+      },
+      {
+        "minX": 791,
+        "maxX": 807,
+        "minZ": -1171,
+        "maxZ": -1155
+      },
+      {
+        "minX": 803,
+        "maxX": 819,
+        "minZ": -1156,
+        "maxZ": -1140
+      },
+      {
+        "minX": 811,
+        "maxX": 827,
+        "minZ": -1203,
+        "maxZ": -1187
+      },
+      {
+        "minX": 832,
+        "maxX": 848,
+        "minZ": -1224,
+        "maxZ": -1208
+      },
+      {
+        "minX": 772,
+        "maxX": 788,
+        "minZ": -1204,
+        "maxZ": -1188
+      },
+      {
+        "minX": 737,
+        "maxX": 753,
+        "minZ": -1235,
+        "maxZ": -1219
+      },
+      {
+        "minX": 695,
+        "maxX": 711,
+        "minZ": -1223,
+        "maxZ": -1207
+      },
+      {
+        "minX": 746,
+        "maxX": 762,
+        "minZ": -1200,
+        "maxZ": -1184
+      },
+      {
+        "minX": 794,
+        "maxX": 810,
+        "minZ": -1156,
+        "maxZ": -1140
+      },
+      {
+        "minX": 779,
+        "maxX": 795,
+        "minZ": -1158,
+        "maxZ": -1142
+      },
+      {
+        "minX": 822,
+        "maxX": 838,
+        "minZ": -1203,
+        "maxZ": -1187
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 695,
@@ -815,6 +1691,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1223,
       "maxZ": -1123
     },
+    "spawnNodes": [
+      {
+        "minX": -576,
+        "maxX": -536,
+        "minZ": -1193,
+        "maxZ": -1153
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -576,
@@ -850,6 +1734,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -985,
       "maxZ": -885
     },
+    "spawnNodes": [
+      {
+        "minX": -454,
+        "maxX": -438,
+        "minZ": -943,
+        "maxZ": -927
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -454,
@@ -886,6 +1778,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1014,
       "maxZ": -914
     },
+    "spawnNodes": [
+      {
+        "minX": -513,
+        "maxX": -477,
+        "minZ": -968,
+        "maxZ": -932
+      },
+      {
+        "minX": -500,
+        "maxX": -464,
+        "minZ": -989,
+        "maxZ": -953
+      },
+      {
+        "minX": -485,
+        "maxX": -461,
+        "minZ": -998,
+        "maxZ": -974
+      },
+      {
+        "minX": -463,
+        "maxX": -439,
+        "minZ": -955,
+        "maxZ": -931
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -513,
@@ -922,6 +1840,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -420,
       "maxZ": -320
     },
+    "spawnNodes": [
+      {
+        "minX": -724,
+        "maxX": -696,
+        "minZ": -384,
+        "maxZ": -356
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -724,
@@ -958,6 +1884,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1984,
       "maxZ": -1826
     },
+    "spawnNodes": [
+      {
+        "minX": 161,
+        "maxX": 177,
+        "minZ": -1923,
+        "maxZ": -1907
+      },
+      {
+        "minX": 210,
+        "maxX": 270,
+        "minZ": -1896,
+        "maxZ": -1836
+      },
+      {
+        "minX": 144,
+        "maxX": 214,
+        "minZ": -1942,
+        "maxZ": -1872
+      },
+      {
+        "minX": 152,
+        "maxX": 202,
+        "minZ": -1974,
+        "maxZ": -1924
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 144,
@@ -993,6 +1945,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1928,
       "maxZ": -1828
     },
+    "spawnNodes": [
+      {
+        "minX": 243,
+        "maxX": 259,
+        "minZ": -1886,
+        "maxZ": -1870
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 243,
@@ -1028,6 +1988,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1983,
       "maxZ": -1883
     },
+    "spawnNodes": [
+      {
+        "minX": 245,
+        "maxX": 261,
+        "minZ": -1915,
+        "maxZ": -1899
+      },
+      {
+        "minX": 158,
+        "maxX": 174,
+        "minZ": -1968,
+        "maxZ": -1952
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 158,
@@ -1074,6 +2048,68 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5048,
       "maxZ": -4532
     },
+    "spawnNodes": [
+      {
+        "minX": -2003,
+        "maxX": -1883,
+        "minZ": -5008,
+        "maxZ": -4888
+      },
+      {
+        "minX": -1891,
+        "maxX": -1771,
+        "minZ": -4844,
+        "maxZ": -4724
+      },
+      {
+        "minX": -1760,
+        "maxX": -1640,
+        "minZ": -4873,
+        "maxZ": -4753
+      },
+      {
+        "minX": -1570,
+        "maxX": -1450,
+        "minZ": -4894,
+        "maxZ": -4774
+      },
+      {
+        "minX": -1755,
+        "maxX": -1635,
+        "minZ": -4662,
+        "maxZ": -4542
+      },
+      {
+        "minX": -1558,
+        "maxX": -1498,
+        "minZ": -4687,
+        "maxZ": -4627
+      },
+      {
+        "minX": -1707,
+        "maxX": -1647,
+        "minZ": -5038,
+        "maxZ": -4978
+      },
+      {
+        "minX": -2118,
+        "maxX": -2058,
+        "minZ": -4929,
+        "maxZ": -4869
+      },
+      {
+        "minX": -2093,
+        "maxX": -2033,
+        "minZ": -4793,
+        "maxZ": -4733
+      },
+      {
+        "minX": -2040,
+        "maxX": -1996,
+        "minZ": -4738,
+        "maxZ": -4694
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2003,
@@ -1148,6 +2184,86 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4875,
       "maxZ": -4596
     },
+    "spawnNodes": [
+      {
+        "minX": 1356,
+        "maxX": 1436,
+        "minZ": -4770,
+        "maxZ": -4690
+      },
+      {
+        "minX": 1351,
+        "maxX": 1411,
+        "minZ": -4802,
+        "maxZ": -4742
+      },
+      {
+        "minX": 1459,
+        "maxX": 1499,
+        "minZ": -4792,
+        "maxZ": -4752
+      },
+      {
+        "minX": 990,
+        "maxX": 1030,
+        "minZ": -4698,
+        "maxZ": -4658
+      },
+      {
+        "minX": 1004,
+        "maxX": 1044,
+        "minZ": -4762,
+        "maxZ": -4722
+      },
+      {
+        "minX": 1092,
+        "maxX": 1132,
+        "minZ": -4753,
+        "maxZ": -4713
+      },
+      {
+        "minX": 1068,
+        "maxX": 1128,
+        "minZ": -4682,
+        "maxZ": -4622
+      },
+      {
+        "minX": 1072,
+        "maxX": 1152,
+        "minZ": -4773,
+        "maxZ": -4693
+      },
+      {
+        "minX": 1058,
+        "maxX": 1138,
+        "minZ": -4692,
+        "maxZ": -4612
+      },
+      {
+        "minX": 1381,
+        "maxX": 1461,
+        "minZ": -4823,
+        "maxZ": -4743
+      },
+      {
+        "minX": 1337,
+        "maxX": 1377,
+        "minZ": -4646,
+        "maxZ": -4606
+      },
+      {
+        "minX": 1485,
+        "maxX": 1525,
+        "minZ": -4865,
+        "maxZ": -4825
+      },
+      {
+        "minX": 1461,
+        "maxX": 1521,
+        "minZ": -4694,
+        "maxZ": -4634
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1337,
@@ -1192,6 +2308,86 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4875,
       "maxZ": -4596
     },
+    "spawnNodes": [
+      {
+        "minX": 1356,
+        "maxX": 1436,
+        "minZ": -4770,
+        "maxZ": -4690
+      },
+      {
+        "minX": 1351,
+        "maxX": 1411,
+        "minZ": -4802,
+        "maxZ": -4742
+      },
+      {
+        "minX": 1459,
+        "maxX": 1499,
+        "minZ": -4792,
+        "maxZ": -4752
+      },
+      {
+        "minX": 990,
+        "maxX": 1030,
+        "minZ": -4698,
+        "maxZ": -4658
+      },
+      {
+        "minX": 1004,
+        "maxX": 1044,
+        "minZ": -4762,
+        "maxZ": -4722
+      },
+      {
+        "minX": 1092,
+        "maxX": 1132,
+        "minZ": -4753,
+        "maxZ": -4713
+      },
+      {
+        "minX": 1068,
+        "maxX": 1128,
+        "minZ": -4682,
+        "maxZ": -4622
+      },
+      {
+        "minX": 1072,
+        "maxX": 1152,
+        "minZ": -4773,
+        "maxZ": -4693
+      },
+      {
+        "minX": 1058,
+        "maxX": 1138,
+        "minZ": -4692,
+        "maxZ": -4612
+      },
+      {
+        "minX": 1381,
+        "maxX": 1461,
+        "minZ": -4823,
+        "maxZ": -4743
+      },
+      {
+        "minX": 1337,
+        "maxX": 1377,
+        "minZ": -4646,
+        "maxZ": -4606
+      },
+      {
+        "minX": 1485,
+        "maxX": 1525,
+        "minZ": -4865,
+        "maxZ": -4825
+      },
+      {
+        "minX": 1461,
+        "maxX": 1521,
+        "minZ": -4694,
+        "maxZ": -4634
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1337,
@@ -1238,6 +2434,86 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4875,
       "maxZ": -4596
     },
+    "spawnNodes": [
+      {
+        "minX": 1356,
+        "maxX": 1436,
+        "minZ": -4770,
+        "maxZ": -4690
+      },
+      {
+        "minX": 1351,
+        "maxX": 1411,
+        "minZ": -4802,
+        "maxZ": -4742
+      },
+      {
+        "minX": 1459,
+        "maxX": 1499,
+        "minZ": -4792,
+        "maxZ": -4752
+      },
+      {
+        "minX": 990,
+        "maxX": 1030,
+        "minZ": -4698,
+        "maxZ": -4658
+      },
+      {
+        "minX": 1004,
+        "maxX": 1044,
+        "minZ": -4762,
+        "maxZ": -4722
+      },
+      {
+        "minX": 1092,
+        "maxX": 1132,
+        "minZ": -4753,
+        "maxZ": -4713
+      },
+      {
+        "minX": 1068,
+        "maxX": 1128,
+        "minZ": -4682,
+        "maxZ": -4622
+      },
+      {
+        "minX": 1072,
+        "maxX": 1152,
+        "minZ": -4773,
+        "maxZ": -4693
+      },
+      {
+        "minX": 1058,
+        "maxX": 1138,
+        "minZ": -4692,
+        "maxZ": -4612
+      },
+      {
+        "minX": 1381,
+        "maxX": 1461,
+        "minZ": -4823,
+        "maxZ": -4743
+      },
+      {
+        "minX": 1337,
+        "maxX": 1377,
+        "minZ": -4646,
+        "maxZ": -4606
+      },
+      {
+        "minX": 1485,
+        "maxX": 1525,
+        "minZ": -4865,
+        "maxZ": -4825
+      },
+      {
+        "minX": 1461,
+        "maxX": 1521,
+        "minZ": -4694,
+        "maxZ": -4634
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1337,
@@ -1282,6 +2558,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4245,
       "maxZ": -4145
     },
+    "spawnNodes": [
+      {
+        "minX": -894,
+        "maxX": -878,
+        "minZ": -4203,
+        "maxZ": -4187
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -894,
@@ -1317,6 +2601,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -658,
       "maxZ": -558
     },
+    "spawnNodes": [
+      {
+        "minX": -1412,
+        "maxX": -1396,
+        "minZ": -616,
+        "maxZ": -600
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1412,
@@ -1352,6 +2644,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5518,
       "maxZ": -5418
     },
+    "spawnNodes": [
+      {
+        "minX": -1751,
+        "maxX": -1735,
+        "minZ": -5476,
+        "maxZ": -5460
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1751,
@@ -1392,6 +2692,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4019,
       "maxZ": -3899
     },
+    "spawnNodes": [
+      {
+        "minX": 115,
+        "maxX": 215,
+        "minZ": -4009,
+        "maxZ": -3909
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 115,
@@ -1427,6 +2735,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1678,
       "maxZ": -1578
     },
+    "spawnNodes": [
+      {
+        "minX": 967,
+        "maxX": 983,
+        "minZ": -1636,
+        "maxZ": -1620
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 967,
@@ -1462,6 +2778,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3192,
       "maxZ": -3069
     },
+    "spawnNodes": [
+      {
+        "minX": -1721,
+        "maxX": -1705,
+        "minZ": -3162,
+        "maxZ": -3146
+      },
+      {
+        "minX": -1721,
+        "maxX": -1705,
+        "minZ": -3162,
+        "maxZ": -3146
+      },
+      {
+        "minX": -1722,
+        "maxX": -1704,
+        "minZ": -3163,
+        "maxZ": -3145
+      },
+      {
+        "minX": -1724,
+        "maxX": -1702,
+        "minZ": -3165,
+        "maxZ": -3143
+      },
+      {
+        "minX": -1808,
+        "maxX": -1792,
+        "minZ": -3095,
+        "maxZ": -3079
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1741,
@@ -1504,6 +2852,182 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3450,
       "maxZ": -3121
     },
+    "spawnNodes": [
+      {
+        "minX": -1746,
+        "maxX": -1726,
+        "minZ": -3386,
+        "maxZ": -3366
+      },
+      {
+        "minX": -1851,
+        "maxX": -1831,
+        "minZ": -3275,
+        "maxZ": -3255
+      },
+      {
+        "minX": -1881,
+        "maxX": -1861,
+        "minZ": -3264,
+        "maxZ": -3244
+      },
+      {
+        "minX": -1875,
+        "maxX": -1855,
+        "minZ": -3268,
+        "maxZ": -3248
+      },
+      {
+        "minX": -1868,
+        "maxX": -1848,
+        "minZ": -3248,
+        "maxZ": -3228
+      },
+      {
+        "minX": -1872,
+        "maxX": -1852,
+        "minZ": -3241,
+        "maxZ": -3221
+      },
+      {
+        "minX": -1849,
+        "maxX": -1829,
+        "minZ": -3235,
+        "maxZ": -3215
+      },
+      {
+        "minX": -1669,
+        "maxX": -1649,
+        "minZ": -3160,
+        "maxZ": -3140
+      },
+      {
+        "minX": -1489,
+        "maxX": -1469,
+        "minZ": -3210,
+        "maxZ": -3190
+      },
+      {
+        "minX": -1483,
+        "maxX": -1463,
+        "minZ": -3151,
+        "maxZ": -3131
+      },
+      {
+        "minX": -1463,
+        "maxX": -1443,
+        "minZ": -3199,
+        "maxZ": -3179
+      },
+      {
+        "minX": -1439,
+        "maxX": -1419,
+        "minZ": -3192,
+        "maxZ": -3172
+      },
+      {
+        "minX": -1267,
+        "maxX": -1247,
+        "minZ": -3284,
+        "maxZ": -3264
+      },
+      {
+        "minX": -1299,
+        "maxX": -1279,
+        "minZ": -3274,
+        "maxZ": -3254
+      },
+      {
+        "minX": -1339,
+        "maxX": -1319,
+        "minZ": -3290,
+        "maxZ": -3270
+      },
+      {
+        "minX": -1375,
+        "maxX": -1355,
+        "minZ": -3300,
+        "maxZ": -3280
+      },
+      {
+        "minX": -1424,
+        "maxX": -1404,
+        "minZ": -3302,
+        "maxZ": -3282
+      },
+      {
+        "minX": -1465,
+        "maxX": -1425,
+        "minZ": -3303,
+        "maxZ": -3263
+      },
+      {
+        "minX": -1454,
+        "maxX": -1434,
+        "minZ": -3283,
+        "maxZ": -3263
+      },
+      {
+        "minX": -1450,
+        "maxX": -1430,
+        "minZ": -3307,
+        "maxZ": -3287
+      },
+      {
+        "minX": -1437,
+        "maxX": -1417,
+        "minZ": -3309,
+        "maxZ": -3289
+      },
+      {
+        "minX": -1462,
+        "maxX": -1412,
+        "minZ": -3340,
+        "maxZ": -3290
+      },
+      {
+        "minX": -1462,
+        "maxX": -1412,
+        "minZ": -3340,
+        "maxZ": -3290
+      },
+      {
+        "minX": -1462,
+        "maxX": -1412,
+        "minZ": -3340,
+        "maxZ": -3290
+      },
+      {
+        "minX": -1533,
+        "maxX": -1483,
+        "minZ": -3324,
+        "maxZ": -3274
+      },
+      {
+        "minX": -1561,
+        "maxX": -1541,
+        "minZ": -3403,
+        "maxZ": -3383
+      },
+      {
+        "minX": -1589,
+        "maxX": -1569,
+        "minZ": -3440,
+        "maxZ": -3420
+      },
+      {
+        "minX": -1396,
+        "maxX": -1376,
+        "minZ": -3354,
+        "maxZ": -3334
+      },
+      {
+        "minX": -1579,
+        "maxX": -1559,
+        "minZ": -3327,
+        "maxZ": -3307
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1589,
@@ -1562,6 +3086,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1053,
       "maxZ": -875
     },
+    "spawnNodes": [
+      {
+        "minX": 848,
+        "maxX": 988,
+        "minZ": -1025,
+        "maxZ": -885
+      },
+      {
+        "minX": 992,
+        "maxX": 1132,
+        "minZ": -1043,
+        "maxZ": -903
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 848,
@@ -1598,6 +3136,62 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3398,
       "maxZ": -3054
     },
+    "spawnNodes": [
+      {
+        "minX": -1828,
+        "maxX": -1804,
+        "minZ": -3088,
+        "maxZ": -3064
+      },
+      {
+        "minX": -1834,
+        "maxX": -1818,
+        "minZ": -3131,
+        "maxZ": -3115
+      },
+      {
+        "minX": -1895,
+        "maxX": -1875,
+        "minZ": -3189,
+        "maxZ": -3169
+      },
+      {
+        "minX": -1813,
+        "maxX": -1793,
+        "minZ": -3286,
+        "maxZ": -3266
+      },
+      {
+        "minX": -1963,
+        "maxX": -1943,
+        "minZ": -3265,
+        "maxZ": -3245
+      },
+      {
+        "minX": -1960,
+        "maxX": -1940,
+        "minZ": -3308,
+        "maxZ": -3288
+      },
+      {
+        "minX": -1897,
+        "maxX": -1877,
+        "minZ": -3363,
+        "maxZ": -3343
+      },
+      {
+        "minX": -1831,
+        "maxX": -1811,
+        "minZ": -3363,
+        "maxZ": -3343
+      },
+      {
+        "minX": -1757,
+        "maxX": -1737,
+        "minZ": -3388,
+        "maxZ": -3368
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1963,
@@ -1646,6 +3240,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3244,
       "maxZ": -3103
     },
+    "spawnNodes": [
+      {
+        "minX": -1803,
+        "maxX": -1787,
+        "minZ": -3212,
+        "maxZ": -3196
+      },
+      {
+        "minX": -1800,
+        "maxX": -1784,
+        "minZ": -3234,
+        "maxZ": -3218
+      },
+      {
+        "minX": -1804,
+        "maxX": -1772,
+        "minZ": -3145,
+        "maxZ": -3113
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1816,
@@ -1681,6 +3295,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3317,
       "maxZ": -3100
     },
+    "spawnNodes": [
+      {
+        "minX": -1721,
+        "maxX": -1705,
+        "minZ": -3237,
+        "maxZ": -3221
+      },
+      {
+        "minX": -1774,
+        "maxX": -1758,
+        "minZ": -3307,
+        "maxZ": -3291
+      },
+      {
+        "minX": -1777,
+        "maxX": -1761,
+        "minZ": -3188,
+        "maxZ": -3172
+      },
+      {
+        "minX": -1803,
+        "maxX": -1787,
+        "minZ": -3212,
+        "maxZ": -3196
+      },
+      {
+        "minX": -1800,
+        "maxX": -1784,
+        "minZ": -3234,
+        "maxZ": -3218
+      },
+      {
+        "minX": -1802,
+        "maxX": -1786,
+        "minZ": -3164,
+        "maxZ": -3148
+      },
+      {
+        "minX": -1804,
+        "maxX": -1772,
+        "minZ": -3145,
+        "maxZ": -3113
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1816,
@@ -1724,6 +3382,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -579,
       "maxZ": -479
     },
+    "spawnNodes": [
+      {
+        "minX": -703,
+        "maxX": -673,
+        "minZ": -544,
+        "maxZ": -514
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -703,
@@ -1759,6 +3425,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -498,
       "maxZ": -398
     },
+    "spawnNodes": [
+      {
+        "minX": -794,
+        "maxX": -778,
+        "minZ": -456,
+        "maxZ": -440
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -794,
@@ -1795,6 +3469,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -325,
       "maxZ": -225
     },
+    "spawnNodes": [
+      {
+        "minX": -646,
+        "maxX": -630,
+        "minZ": -283,
+        "maxZ": -267
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -646,
@@ -1831,6 +3513,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5230,
       "maxZ": -5130
     },
+    "spawnNodes": [
+      {
+        "minX": 1543,
+        "maxX": 1591,
+        "minZ": -5204,
+        "maxZ": -5156
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1543,
@@ -1867,6 +3557,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5300,
       "maxZ": -5200
     },
+    "spawnNodes": [
+      {
+        "minX": 1381,
+        "maxX": 1397,
+        "minZ": -5258,
+        "maxZ": -5242
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1381,
@@ -1903,6 +3601,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5300,
       "maxZ": -5200
     },
+    "spawnNodes": [
+      {
+        "minX": 1381,
+        "maxX": 1397,
+        "minZ": -5258,
+        "maxZ": -5242
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1381,
@@ -1939,6 +3645,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5230,
       "maxZ": -5130
     },
+    "spawnNodes": [
+      {
+        "minX": 1543,
+        "maxX": 1591,
+        "minZ": -5204,
+        "maxZ": -5156
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1543,
@@ -1976,6 +3690,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4751,
       "maxZ": -4651
     },
+    "spawnNodes": [
+      {
+        "minX": -964,
+        "maxX": -910,
+        "minZ": -4728,
+        "maxZ": -4674
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -964,
@@ -2013,6 +3735,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -568,
       "maxZ": -252
     },
+    "spawnNodes": [
+      {
+        "minX": -114,
+        "maxX": -98,
+        "minZ": -338,
+        "maxZ": -322
+      },
+      {
+        "minX": -304,
+        "maxX": -288,
+        "minZ": -542,
+        "maxZ": -526
+      },
+      {
+        "minX": -237,
+        "maxX": -221,
+        "minZ": -522,
+        "maxZ": -506
+      },
+      {
+        "minX": -467,
+        "maxX": -451,
+        "minZ": -445,
+        "maxZ": -429
+      },
+      {
+        "minX": -458,
+        "maxX": -442,
+        "minZ": -304,
+        "maxZ": -288
+      },
+      {
+        "minX": -385,
+        "maxX": -369,
+        "minZ": -278,
+        "maxZ": -262
+      },
+      {
+        "minX": -259,
+        "maxX": -243,
+        "minZ": -280,
+        "maxZ": -264
+      },
+      {
+        "minX": -181,
+        "maxX": -165,
+        "minZ": -554,
+        "maxZ": -538
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -304,
@@ -2079,6 +3851,86 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5431,
       "maxZ": -4690
     },
+    "spawnNodes": [
+      {
+        "minX": -170,
+        "maxX": -154,
+        "minZ": -5068,
+        "maxZ": -5052
+      },
+      {
+        "minX": -140,
+        "maxX": -124,
+        "minZ": -5084,
+        "maxZ": -5068
+      },
+      {
+        "minX": -142,
+        "maxX": -126,
+        "minZ": -5002,
+        "maxZ": -4986
+      },
+      {
+        "minX": -158,
+        "maxX": -142,
+        "minZ": -5020,
+        "maxZ": -5004
+      },
+      {
+        "minX": -104,
+        "maxX": -88,
+        "minZ": -5421,
+        "maxZ": -5405
+      },
+      {
+        "minX": -410,
+        "maxX": -394,
+        "minZ": -5144,
+        "maxZ": -5128
+      },
+      {
+        "minX": -437,
+        "maxX": -421,
+        "minZ": -5171,
+        "maxZ": -5155
+      },
+      {
+        "minX": -460,
+        "maxX": -444,
+        "minZ": -5132,
+        "maxZ": -5116
+      },
+      {
+        "minX": -559,
+        "maxX": -543,
+        "minZ": -5111,
+        "maxZ": -5095
+      },
+      {
+        "minX": -401,
+        "maxX": -385,
+        "minZ": -4728,
+        "maxZ": -4712
+      },
+      {
+        "minX": -416,
+        "maxX": -400,
+        "minZ": -4744,
+        "maxZ": -4728
+      },
+      {
+        "minX": -764,
+        "maxX": -748,
+        "minZ": -4927,
+        "maxZ": -4911
+      },
+      {
+        "minX": -714,
+        "maxX": -698,
+        "minZ": -4873,
+        "maxZ": -4857
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -170,
@@ -2145,6 +3997,104 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5135,
       "maxZ": -4954
     },
+    "spawnNodes": [
+      {
+        "minX": 504,
+        "maxX": 520,
+        "minZ": -5087,
+        "maxZ": -5071
+      },
+      {
+        "minX": 491,
+        "maxX": 507,
+        "minZ": -5066,
+        "maxZ": -5050
+      },
+      {
+        "minX": 476,
+        "maxX": 492,
+        "minZ": -5045,
+        "maxZ": -5029
+      },
+      {
+        "minX": 464,
+        "maxX": 480,
+        "minZ": -5021,
+        "maxZ": -5005
+      },
+      {
+        "minX": 402,
+        "maxX": 418,
+        "minZ": -5078,
+        "maxZ": -5062
+      },
+      {
+        "minX": 390,
+        "maxX": 406,
+        "minZ": -5053,
+        "maxZ": -5037
+      },
+      {
+        "minX": 383,
+        "maxX": 399,
+        "minZ": -5081,
+        "maxZ": -5065
+      },
+      {
+        "minX": 333,
+        "maxX": 349,
+        "minZ": -5081,
+        "maxZ": -5065
+      },
+      {
+        "minX": 313,
+        "maxX": 329,
+        "minZ": -5070,
+        "maxZ": -5054
+      },
+      {
+        "minX": 296,
+        "maxX": 312,
+        "minZ": -5055,
+        "maxZ": -5039
+      },
+      {
+        "minX": 284,
+        "maxX": 300,
+        "minZ": -5043,
+        "maxZ": -5027
+      },
+      {
+        "minX": 271,
+        "maxX": 287,
+        "minZ": -5029,
+        "maxZ": -5013
+      },
+      {
+        "minX": 257,
+        "maxX": 273,
+        "minZ": -5015,
+        "maxZ": -4999
+      },
+      {
+        "minX": 228,
+        "maxX": 244,
+        "minZ": -5023,
+        "maxZ": -5007
+      },
+      {
+        "minX": 259,
+        "maxX": 275,
+        "minZ": -4980,
+        "maxZ": -4964
+      },
+      {
+        "minX": 393,
+        "maxX": 419,
+        "minZ": -5125,
+        "maxZ": -5099
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 228,
@@ -2181,6 +4131,104 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5135,
       "maxZ": -4954
     },
+    "spawnNodes": [
+      {
+        "minX": 504,
+        "maxX": 520,
+        "minZ": -5087,
+        "maxZ": -5071
+      },
+      {
+        "minX": 491,
+        "maxX": 507,
+        "minZ": -5066,
+        "maxZ": -5050
+      },
+      {
+        "minX": 476,
+        "maxX": 492,
+        "minZ": -5045,
+        "maxZ": -5029
+      },
+      {
+        "minX": 464,
+        "maxX": 480,
+        "minZ": -5021,
+        "maxZ": -5005
+      },
+      {
+        "minX": 402,
+        "maxX": 418,
+        "minZ": -5078,
+        "maxZ": -5062
+      },
+      {
+        "minX": 390,
+        "maxX": 406,
+        "minZ": -5053,
+        "maxZ": -5037
+      },
+      {
+        "minX": 383,
+        "maxX": 399,
+        "minZ": -5081,
+        "maxZ": -5065
+      },
+      {
+        "minX": 333,
+        "maxX": 349,
+        "minZ": -5081,
+        "maxZ": -5065
+      },
+      {
+        "minX": 313,
+        "maxX": 329,
+        "minZ": -5070,
+        "maxZ": -5054
+      },
+      {
+        "minX": 296,
+        "maxX": 312,
+        "minZ": -5055,
+        "maxZ": -5039
+      },
+      {
+        "minX": 284,
+        "maxX": 300,
+        "minZ": -5043,
+        "maxZ": -5027
+      },
+      {
+        "minX": 271,
+        "maxX": 287,
+        "minZ": -5029,
+        "maxZ": -5013
+      },
+      {
+        "minX": 257,
+        "maxX": 273,
+        "minZ": -5015,
+        "maxZ": -4999
+      },
+      {
+        "minX": 228,
+        "maxX": 244,
+        "minZ": -5023,
+        "maxZ": -5007
+      },
+      {
+        "minX": 259,
+        "maxX": 275,
+        "minZ": -4980,
+        "maxZ": -4964
+      },
+      {
+        "minX": 393,
+        "maxX": 419,
+        "minZ": -5125,
+        "maxZ": -5099
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 228,
@@ -2217,6 +4265,104 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5135,
       "maxZ": -4954
     },
+    "spawnNodes": [
+      {
+        "minX": 504,
+        "maxX": 520,
+        "minZ": -5087,
+        "maxZ": -5071
+      },
+      {
+        "minX": 491,
+        "maxX": 507,
+        "minZ": -5066,
+        "maxZ": -5050
+      },
+      {
+        "minX": 476,
+        "maxX": 492,
+        "minZ": -5045,
+        "maxZ": -5029
+      },
+      {
+        "minX": 464,
+        "maxX": 480,
+        "minZ": -5021,
+        "maxZ": -5005
+      },
+      {
+        "minX": 402,
+        "maxX": 418,
+        "minZ": -5078,
+        "maxZ": -5062
+      },
+      {
+        "minX": 390,
+        "maxX": 406,
+        "minZ": -5053,
+        "maxZ": -5037
+      },
+      {
+        "minX": 383,
+        "maxX": 399,
+        "minZ": -5081,
+        "maxZ": -5065
+      },
+      {
+        "minX": 333,
+        "maxX": 349,
+        "minZ": -5081,
+        "maxZ": -5065
+      },
+      {
+        "minX": 313,
+        "maxX": 329,
+        "minZ": -5070,
+        "maxZ": -5054
+      },
+      {
+        "minX": 296,
+        "maxX": 312,
+        "minZ": -5055,
+        "maxZ": -5039
+      },
+      {
+        "minX": 284,
+        "maxX": 300,
+        "minZ": -5043,
+        "maxZ": -5027
+      },
+      {
+        "minX": 271,
+        "maxX": 287,
+        "minZ": -5029,
+        "maxZ": -5013
+      },
+      {
+        "minX": 257,
+        "maxX": 273,
+        "minZ": -5015,
+        "maxZ": -4999
+      },
+      {
+        "minX": 228,
+        "maxX": 244,
+        "minZ": -5023,
+        "maxZ": -5007
+      },
+      {
+        "minX": 259,
+        "maxX": 275,
+        "minZ": -4980,
+        "maxZ": -4964
+      },
+      {
+        "minX": 393,
+        "maxX": 419,
+        "minZ": -5125,
+        "maxZ": -5099
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 228,
@@ -2253,6 +4399,86 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5431,
       "maxZ": -4690
     },
+    "spawnNodes": [
+      {
+        "minX": -170,
+        "maxX": -154,
+        "minZ": -5068,
+        "maxZ": -5052
+      },
+      {
+        "minX": -140,
+        "maxX": -124,
+        "minZ": -5084,
+        "maxZ": -5068
+      },
+      {
+        "minX": -142,
+        "maxX": -126,
+        "minZ": -5002,
+        "maxZ": -4986
+      },
+      {
+        "minX": -158,
+        "maxX": -142,
+        "minZ": -5020,
+        "maxZ": -5004
+      },
+      {
+        "minX": -104,
+        "maxX": -88,
+        "minZ": -5421,
+        "maxZ": -5405
+      },
+      {
+        "minX": -410,
+        "maxX": -394,
+        "minZ": -5144,
+        "maxZ": -5128
+      },
+      {
+        "minX": -437,
+        "maxX": -421,
+        "minZ": -5171,
+        "maxZ": -5155
+      },
+      {
+        "minX": -460,
+        "maxX": -444,
+        "minZ": -5132,
+        "maxZ": -5116
+      },
+      {
+        "minX": -559,
+        "maxX": -543,
+        "minZ": -5111,
+        "maxZ": -5095
+      },
+      {
+        "minX": -401,
+        "maxX": -385,
+        "minZ": -4728,
+        "maxZ": -4712
+      },
+      {
+        "minX": -416,
+        "maxX": -400,
+        "minZ": -4744,
+        "maxZ": -4728
+      },
+      {
+        "minX": -764,
+        "maxX": -748,
+        "minZ": -4927,
+        "maxZ": -4911
+      },
+      {
+        "minX": -714,
+        "maxX": -698,
+        "minZ": -4873,
+        "maxZ": -4857
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -170,
@@ -2319,6 +4545,86 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5431,
       "maxZ": -4690
     },
+    "spawnNodes": [
+      {
+        "minX": -170,
+        "maxX": -154,
+        "minZ": -5068,
+        "maxZ": -5052
+      },
+      {
+        "minX": -140,
+        "maxX": -124,
+        "minZ": -5084,
+        "maxZ": -5068
+      },
+      {
+        "minX": -142,
+        "maxX": -126,
+        "minZ": -5002,
+        "maxZ": -4986
+      },
+      {
+        "minX": -158,
+        "maxX": -142,
+        "minZ": -5020,
+        "maxZ": -5004
+      },
+      {
+        "minX": -104,
+        "maxX": -88,
+        "minZ": -5421,
+        "maxZ": -5405
+      },
+      {
+        "minX": -410,
+        "maxX": -394,
+        "minZ": -5144,
+        "maxZ": -5128
+      },
+      {
+        "minX": -437,
+        "maxX": -421,
+        "minZ": -5171,
+        "maxZ": -5155
+      },
+      {
+        "minX": -460,
+        "maxX": -444,
+        "minZ": -5132,
+        "maxZ": -5116
+      },
+      {
+        "minX": -559,
+        "maxX": -543,
+        "minZ": -5111,
+        "maxZ": -5095
+      },
+      {
+        "minX": -401,
+        "maxX": -385,
+        "minZ": -4728,
+        "maxZ": -4712
+      },
+      {
+        "minX": -416,
+        "maxX": -400,
+        "minZ": -4744,
+        "maxZ": -4728
+      },
+      {
+        "minX": -764,
+        "maxX": -748,
+        "minZ": -4927,
+        "maxZ": -4911
+      },
+      {
+        "minX": -714,
+        "maxX": -698,
+        "minZ": -4873,
+        "maxZ": -4857
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -170,
@@ -2385,6 +4691,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4949,
       "maxZ": -4849
     },
+    "spawnNodes": [
+      {
+        "minX": 166,
+        "maxX": 182,
+        "minZ": -4919,
+        "maxZ": -4903
+      },
+      {
+        "minX": 197,
+        "maxX": 213,
+        "minZ": -4898,
+        "maxZ": -4882
+      },
+      {
+        "minX": 263,
+        "maxX": 279,
+        "minZ": -4879,
+        "maxZ": -4863
+      },
+      {
+        "minX": 252,
+        "maxX": 268,
+        "minZ": -4915,
+        "maxZ": -4899
+      },
+      {
+        "minX": 250,
+        "maxX": 270,
+        "minZ": -4917,
+        "maxZ": -4897
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 166,
@@ -2421,6 +4759,86 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5431,
       "maxZ": -4690
     },
+    "spawnNodes": [
+      {
+        "minX": -170,
+        "maxX": -154,
+        "minZ": -5068,
+        "maxZ": -5052
+      },
+      {
+        "minX": -140,
+        "maxX": -124,
+        "minZ": -5084,
+        "maxZ": -5068
+      },
+      {
+        "minX": -142,
+        "maxX": -126,
+        "minZ": -5002,
+        "maxZ": -4986
+      },
+      {
+        "minX": -158,
+        "maxX": -142,
+        "minZ": -5020,
+        "maxZ": -5004
+      },
+      {
+        "minX": -104,
+        "maxX": -88,
+        "minZ": -5421,
+        "maxZ": -5405
+      },
+      {
+        "minX": -410,
+        "maxX": -394,
+        "minZ": -5144,
+        "maxZ": -5128
+      },
+      {
+        "minX": -437,
+        "maxX": -421,
+        "minZ": -5171,
+        "maxZ": -5155
+      },
+      {
+        "minX": -460,
+        "maxX": -444,
+        "minZ": -5132,
+        "maxZ": -5116
+      },
+      {
+        "minX": -559,
+        "maxX": -543,
+        "minZ": -5111,
+        "maxZ": -5095
+      },
+      {
+        "minX": -401,
+        "maxX": -385,
+        "minZ": -4728,
+        "maxZ": -4712
+      },
+      {
+        "minX": -416,
+        "maxX": -400,
+        "minZ": -4744,
+        "maxZ": -4728
+      },
+      {
+        "minX": -764,
+        "maxX": -748,
+        "minZ": -4927,
+        "maxZ": -4911
+      },
+      {
+        "minX": -714,
+        "maxX": -698,
+        "minZ": -4873,
+        "maxZ": -4857
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -170,
@@ -2486,6 +4904,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -894,
       "maxZ": -577
     },
+    "spawnNodes": [
+      {
+        "minX": -1300,
+        "maxX": -1284,
+        "minZ": -603,
+        "maxZ": -587
+      },
+      {
+        "minX": -1216,
+        "maxX": -1200,
+        "minZ": -884,
+        "maxZ": -868
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1216,
@@ -2528,6 +4960,62 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1426,
       "maxZ": -1069
     },
+    "spawnNodes": [
+      {
+        "minX": -1982,
+        "maxX": -1942,
+        "minZ": -1318,
+        "maxZ": -1278
+      },
+      {
+        "minX": -1945,
+        "maxX": -1905,
+        "minZ": -1313,
+        "maxZ": -1273
+      },
+      {
+        "minX": -1865,
+        "maxX": -1831,
+        "minZ": -1266,
+        "maxZ": -1232
+      },
+      {
+        "minX": -1905,
+        "maxX": -1881,
+        "minZ": -1398,
+        "maxZ": -1374
+      },
+      {
+        "minX": -1958,
+        "maxX": -1934,
+        "minZ": -1408,
+        "maxZ": -1384
+      },
+      {
+        "minX": -1858,
+        "maxX": -1834,
+        "minZ": -1402,
+        "maxZ": -1378
+      },
+      {
+        "minX": -2265,
+        "maxX": -2241,
+        "minZ": -1134,
+        "maxZ": -1110
+      },
+      {
+        "minX": -2248,
+        "maxX": -2224,
+        "minZ": -1129,
+        "maxZ": -1105
+      },
+      {
+        "minX": -2220,
+        "maxX": -2196,
+        "minZ": -1109,
+        "maxZ": -1085
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1982,
@@ -2571,6 +5059,68 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1410,
       "maxZ": -1225
     },
+    "spawnNodes": [
+      {
+        "minX": 249,
+        "maxX": 279,
+        "minZ": -1358,
+        "maxZ": -1328
+      },
+      {
+        "minX": 212,
+        "maxX": 248,
+        "minZ": -1356,
+        "maxZ": -1320
+      },
+      {
+        "minX": 226,
+        "maxX": 242,
+        "minZ": -1356,
+        "maxZ": -1340
+      },
+      {
+        "minX": 246,
+        "maxX": 262,
+        "minZ": -1355,
+        "maxZ": -1339
+      },
+      {
+        "minX": 318,
+        "maxX": 334,
+        "minZ": -1259,
+        "maxZ": -1243
+      },
+      {
+        "minX": 291,
+        "maxX": 307,
+        "minZ": -1253,
+        "maxZ": -1237
+      },
+      {
+        "minX": 242,
+        "maxX": 258,
+        "minZ": -1251,
+        "maxZ": -1235
+      },
+      {
+        "minX": 231,
+        "maxX": 247,
+        "minZ": -1258,
+        "maxZ": -1242
+      },
+      {
+        "minX": 219,
+        "maxX": 259,
+        "minZ": -1342,
+        "maxZ": -1302
+      },
+      {
+        "minX": 202,
+        "maxX": 232,
+        "minZ": -1400,
+        "maxZ": -1370
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 202,
@@ -2606,6 +5156,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1743,
       "maxZ": -1643
     },
+    "spawnNodes": [
+      {
+        "minX": -632,
+        "maxX": -608,
+        "minZ": -1705,
+        "maxZ": -1681
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -632,
@@ -2641,6 +5199,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2145,
       "maxZ": -1951
     },
+    "spawnNodes": [
+      {
+        "minX": 585,
+        "maxX": 601,
+        "minZ": -2133,
+        "maxZ": -2117
+      },
+      {
+        "minX": 488,
+        "maxX": 504,
+        "minZ": -2081,
+        "maxZ": -2065
+      },
+      {
+        "minX": 501,
+        "maxX": 517,
+        "minZ": -1977,
+        "maxZ": -1961
+      },
+      {
+        "minX": 554,
+        "maxX": 570,
+        "minZ": -2135,
+        "maxZ": -2119
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 488,
@@ -2682,6 +5266,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2522,
       "maxZ": -2422
     },
+    "spawnNodes": [
+      {
+        "minX": 708,
+        "maxX": 724,
+        "minZ": -2480,
+        "maxZ": -2464
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 708,
@@ -2719,6 +5311,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4137,
       "maxZ": -3851
     },
+    "spawnNodes": [
+      {
+        "minX": 295,
+        "maxX": 311,
+        "minZ": -3877,
+        "maxZ": -3861
+      },
+      {
+        "minX": 343,
+        "maxX": 359,
+        "minZ": -3949,
+        "maxZ": -3933
+      },
+      {
+        "minX": 31,
+        "maxX": 47,
+        "minZ": -3939,
+        "maxZ": -3923
+      },
+      {
+        "minX": 56,
+        "maxX": 72,
+        "minZ": -3947,
+        "maxZ": -3931
+      },
+      {
+        "minX": 134,
+        "maxX": 150,
+        "minZ": -3956,
+        "maxZ": -3940
+      },
+      {
+        "minX": 147,
+        "maxX": 163,
+        "minZ": -4008,
+        "maxZ": -3992
+      },
+      {
+        "minX": 141,
+        "maxX": 157,
+        "minZ": -4008,
+        "maxZ": -3992
+      },
+      {
+        "minX": 216,
+        "maxX": 232,
+        "minZ": -4127,
+        "maxZ": -4111
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 31,
@@ -2777,6 +5419,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1734,
       "maxZ": -1553
     },
+    "spawnNodes": [
+      {
+        "minX": -188,
+        "maxX": -108,
+        "minZ": -1643,
+        "maxZ": -1563
+      },
+      {
+        "minX": -169,
+        "maxX": -59,
+        "minZ": -1712,
+        "maxZ": -1602
+      },
+      {
+        "minX": -418,
+        "maxX": -328,
+        "minZ": -1724,
+        "maxZ": -1634
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -188,
@@ -2819,6 +5481,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1519,
       "maxZ": -1059
     },
+    "spawnNodes": [
+      {
+        "minX": -1933,
+        "maxX": -1853,
+        "minZ": -1271,
+        "maxZ": -1191
+      },
+      {
+        "minX": -1914,
+        "maxX": -1834,
+        "minZ": -1396,
+        "maxZ": -1316
+      },
+      {
+        "minX": -1842,
+        "maxX": -1762,
+        "minZ": -1464,
+        "maxZ": -1384
+      },
+      {
+        "minX": -2045,
+        "maxX": -1965,
+        "minZ": -1509,
+        "maxZ": -1429
+      },
+      {
+        "minX": -2058,
+        "maxX": -1978,
+        "minZ": -1440,
+        "maxZ": -1360
+      },
+      {
+        "minX": -1837,
+        "maxX": -1757,
+        "minZ": -1149,
+        "maxZ": -1069
+      },
+      {
+        "minX": -1782,
+        "maxX": -1702,
+        "minZ": -1249,
+        "maxZ": -1169
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2058,
@@ -2854,6 +5560,68 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2009,
       "maxZ": -1773
     },
+    "spawnNodes": [
+      {
+        "minX": 66,
+        "maxX": 82,
+        "minZ": -1987,
+        "maxZ": -1971
+      },
+      {
+        "minX": 107,
+        "maxX": 123,
+        "minZ": -1999,
+        "maxZ": -1983
+      },
+      {
+        "minX": 110,
+        "maxX": 126,
+        "minZ": -1976,
+        "maxZ": -1960
+      },
+      {
+        "minX": 69,
+        "maxX": 85,
+        "minZ": -1967,
+        "maxZ": -1951
+      },
+      {
+        "minX": 15,
+        "maxX": 31,
+        "minZ": -1904,
+        "maxZ": -1888
+      },
+      {
+        "minX": 3,
+        "maxX": 19,
+        "minZ": -1881,
+        "maxZ": -1865
+      },
+      {
+        "minX": 308,
+        "maxX": 324,
+        "minZ": -1849,
+        "maxZ": -1833
+      },
+      {
+        "minX": 315,
+        "maxX": 331,
+        "minZ": -1839,
+        "maxZ": -1823
+      },
+      {
+        "minX": 326,
+        "maxX": 342,
+        "minZ": -1832,
+        "maxZ": -1816
+      },
+      {
+        "minX": 282,
+        "maxX": 298,
+        "minZ": -1807,
+        "maxZ": -1791
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -11,
@@ -2895,6 +5663,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3284,
       "maxZ": -3184
     },
+    "spawnNodes": [
+      {
+        "minX": -2252,
+        "maxX": -2192,
+        "minZ": -3264,
+        "maxZ": -3204
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2252,
@@ -2930,6 +5706,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3284,
       "maxZ": -3184
     },
+    "spawnNodes": [
+      {
+        "minX": -2252,
+        "maxX": -2192,
+        "minZ": -3264,
+        "maxZ": -3204
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2252,
@@ -2965,6 +5749,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3284,
       "maxZ": -3184
     },
+    "spawnNodes": [
+      {
+        "minX": -2252,
+        "maxX": -2192,
+        "minZ": -3264,
+        "maxZ": -3204
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2252,
@@ -3001,6 +5793,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1738,
       "maxZ": -1252
     },
+    "spawnNodes": [
+      {
+        "minX": 666,
+        "maxX": 682,
+        "minZ": -1278,
+        "maxZ": -1262
+      },
+      {
+        "minX": 440,
+        "maxX": 456,
+        "minZ": -1323,
+        "maxZ": -1307
+      },
+      {
+        "minX": 94,
+        "maxX": 114,
+        "minZ": -1728,
+        "maxZ": -1708
+      },
+      {
+        "minX": 373,
+        "maxX": 403,
+        "minZ": -1392,
+        "maxZ": -1362
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 373,
@@ -3049,6 +5867,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5604,
       "maxZ": -5504
     },
+    "spawnNodes": [
+      {
+        "minX": -953,
+        "maxX": -905,
+        "minZ": -5578,
+        "maxZ": -5530
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -953,
@@ -3088,6 +5914,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -673,
       "maxZ": -266
     },
+    "spawnNodes": [
+      {
+        "minX": -802,
+        "maxX": -654,
+        "minZ": -424,
+        "maxZ": -276
+      },
+      {
+        "minX": -960,
+        "maxX": -800,
+        "minZ": -439,
+        "maxZ": -279
+      },
+      {
+        "minX": -992,
+        "maxX": -812,
+        "minZ": -663,
+        "maxZ": -483
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -992,
@@ -3123,6 +5969,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1302,
       "maxZ": -1202
     },
+    "spawnNodes": [
+      {
+        "minX": -1354,
+        "maxX": -1338,
+        "minZ": -1260,
+        "maxZ": -1244
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1354,
@@ -3159,6 +6013,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1329,
       "maxZ": -1229
     },
+    "spawnNodes": [
+      {
+        "minX": 216,
+        "maxX": 286,
+        "minZ": -1314,
+        "maxZ": -1244
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 216,
@@ -3195,6 +6057,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1476,
       "maxZ": -1376
     },
+    "spawnNodes": [
+      {
+        "minX": 1000,
+        "maxX": 1016,
+        "minZ": -1434,
+        "maxZ": -1418
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1000,
@@ -3232,6 +6102,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -650,
       "maxZ": -430
     },
+    "spawnNodes": [
+      {
+        "minX": 737,
+        "maxX": 937,
+        "minZ": -640,
+        "maxZ": -440
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 737,
@@ -3272,6 +6150,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -650,
       "maxZ": -430
     },
+    "spawnNodes": [
+      {
+        "minX": 737,
+        "maxX": 937,
+        "minZ": -640,
+        "maxZ": -440
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 737,
@@ -3307,6 +6193,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -687,
       "maxZ": -587
     },
+    "spawnNodes": [
+      {
+        "minX": 257,
+        "maxX": 287,
+        "minZ": -652,
+        "maxZ": -622
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 257,
@@ -3343,6 +6237,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5018,
       "maxZ": -4918
     },
+    "spawnNodes": [
+      {
+        "minX": -2105,
+        "maxX": -2075,
+        "minZ": -4983,
+        "maxZ": -4953
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2105,
@@ -3383,6 +6285,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5445,
       "maxZ": -5125
     },
+    "spawnNodes": [
+      {
+        "minX": -1777,
+        "maxX": -1477,
+        "minZ": -5435,
+        "maxZ": -5135
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1777,
@@ -3418,6 +6328,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4553,
       "maxZ": -4453
     },
+    "spawnNodes": [
+      {
+        "minX": 1015,
+        "maxX": 1031,
+        "minZ": -4511,
+        "maxZ": -4495
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1015,
@@ -3454,6 +6372,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1601,
       "maxZ": -1501
     },
+    "spawnNodes": [
+      {
+        "minX": -604,
+        "maxX": -580,
+        "minZ": -1563,
+        "maxZ": -1539
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -604,
@@ -3489,6 +6415,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5318,
       "maxZ": -5218
     },
+    "spawnNodes": [
+      {
+        "minX": -1116,
+        "maxX": -1074,
+        "minZ": -5289,
+        "maxZ": -5247
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1116,
@@ -3524,6 +6458,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2034,
       "maxZ": -1914
     },
+    "spawnNodes": [
+      {
+        "minX": 270,
+        "maxX": 370,
+        "minZ": -2024,
+        "maxZ": -1924
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 270,
@@ -3559,6 +6501,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -306,
       "maxZ": -206
     },
+    "spawnNodes": [
+      {
+        "minX": -723,
+        "maxX": -707,
+        "minZ": -234,
+        "maxZ": -218
+      },
+      {
+        "minX": -695,
+        "maxX": -679,
+        "minZ": -254,
+        "maxZ": -238
+      },
+      {
+        "minX": -671,
+        "maxX": -655,
+        "minZ": -257,
+        "maxZ": -241
+      },
+      {
+        "minX": -683,
+        "maxX": -667,
+        "minZ": -294,
+        "maxZ": -278
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -723,
@@ -3598,6 +6566,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2179,
       "maxZ": -1959
     },
+    "spawnNodes": [
+      {
+        "minX": -107,
+        "maxX": 93,
+        "minZ": -2169,
+        "maxZ": -1969
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -107,
@@ -3633,6 +6609,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -877,
       "maxZ": -487
     },
+    "spawnNodes": [
+      {
+        "minX": -2229,
+        "maxX": -2213,
+        "minZ": -850,
+        "maxZ": -834
+      },
+      {
+        "minX": -1820,
+        "maxX": -1804,
+        "minZ": -849,
+        "maxZ": -833
+      },
+      {
+        "minX": -1798,
+        "maxX": -1782,
+        "minZ": -717,
+        "maxZ": -701
+      },
+      {
+        "minX": -1812,
+        "maxX": -1796,
+        "minZ": -616,
+        "maxZ": -600
+      },
+      {
+        "minX": -2108,
+        "maxX": -2092,
+        "minZ": -533,
+        "maxZ": -517
+      },
+      {
+        "minX": -2108,
+        "maxX": -2092,
+        "minZ": -533,
+        "maxZ": -517
+      },
+      {
+        "minX": -2234,
+        "maxX": -2218,
+        "minZ": -845,
+        "maxZ": -829
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2251,
@@ -3697,6 +6717,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5417,
       "maxZ": -5317
     },
+    "spawnNodes": [
+      {
+        "minX": -123,
+        "maxX": -107,
+        "minZ": -5403,
+        "maxZ": -5387
+      },
+      {
+        "minX": -101,
+        "maxX": -71,
+        "minZ": -5390,
+        "maxZ": -5360
+      },
+      {
+        "minX": -48,
+        "maxX": -18,
+        "minZ": -5361,
+        "maxZ": -5331
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -123,
@@ -3732,6 +6772,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2078,
       "maxZ": -1663
     },
+    "spawnNodes": [
+      {
+        "minX": 1278,
+        "maxX": 1302,
+        "minZ": -1714,
+        "maxZ": -1690
+      },
+      {
+        "minX": 1151,
+        "maxX": 1175,
+        "minZ": -1703,
+        "maxZ": -1679
+      },
+      {
+        "minX": 1139,
+        "maxX": 1163,
+        "minZ": -1723,
+        "maxZ": -1699
+      },
+      {
+        "minX": 1096,
+        "maxX": 1112,
+        "minZ": -2022,
+        "maxZ": -2006
+      },
+      {
+        "minX": 1115,
+        "maxX": 1131,
+        "minZ": -2068,
+        "maxZ": -2052
+      },
+      {
+        "minX": 1152,
+        "maxX": 1168,
+        "minZ": -2016,
+        "maxZ": -2000
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1096,
@@ -3779,6 +6857,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2155,
       "maxZ": -2055
     },
+    "spawnNodes": [
+      {
+        "minX": 68,
+        "maxX": 84,
+        "minZ": -2113,
+        "maxZ": -2097
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 68,
@@ -3817,6 +6903,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1788,
       "maxZ": -1474
     },
+    "spawnNodes": [
+      {
+        "minX": 41,
+        "maxX": 57,
+        "minZ": -1673,
+        "maxZ": -1657
+      },
+      {
+        "minX": 30,
+        "maxX": 46,
+        "minZ": -1778,
+        "maxZ": -1762
+      },
+      {
+        "minX": 221,
+        "maxX": 237,
+        "minZ": -1717,
+        "maxZ": -1701
+      },
+      {
+        "minX": 290,
+        "maxX": 306,
+        "minZ": -1685,
+        "maxZ": -1669
+      },
+      {
+        "minX": 300,
+        "maxX": 316,
+        "minZ": -1572,
+        "maxZ": -1556
+      },
+      {
+        "minX": 248,
+        "maxX": 264,
+        "minZ": -1722,
+        "maxZ": -1706
+      },
+      {
+        "minX": 222,
+        "maxX": 238,
+        "minZ": -1530,
+        "maxZ": -1514
+      },
+      {
+        "minX": 155,
+        "maxX": 171,
+        "minZ": -1511,
+        "maxZ": -1495
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 221,
@@ -3877,6 +7013,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1440,
       "maxZ": -1005
     },
+    "spawnNodes": [
+      {
+        "minX": 183,
+        "maxX": 323,
+        "minZ": -1155,
+        "maxZ": -1015
+      },
+      {
+        "minX": 366,
+        "maxX": 486,
+        "minZ": -1405,
+        "maxZ": -1285
+      },
+      {
+        "minX": 429,
+        "maxX": 629,
+        "minZ": -1430,
+        "maxZ": -1230
+      },
+      {
+        "minX": 249,
+        "maxX": 289,
+        "minZ": -1229,
+        "maxZ": -1189
+      },
+      {
+        "minX": 344,
+        "maxX": 404,
+        "minZ": -1364,
+        "maxZ": -1304
+      },
+      {
+        "minX": 68,
+        "maxX": 108,
+        "minZ": -1336,
+        "maxZ": -1296
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 344,
@@ -3924,6 +7098,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2061,
       "maxZ": -1821
     },
+    "spawnNodes": [
+      {
+        "minX": 242,
+        "maxX": 258,
+        "minZ": -2051,
+        "maxZ": -2035
+      },
+      {
+        "minX": 368,
+        "maxX": 384,
+        "minZ": -1958,
+        "maxZ": -1942
+      },
+      {
+        "minX": 429,
+        "maxX": 445,
+        "minZ": -1888,
+        "maxZ": -1872
+      },
+      {
+        "minX": 331,
+        "maxX": 347,
+        "minZ": -1847,
+        "maxZ": -1831
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 331,
@@ -3977,6 +7177,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2913,
       "maxZ": -2701
     },
+    "spawnNodes": [
+      {
+        "minX": -1841,
+        "maxX": -1721,
+        "minZ": -2831,
+        "maxZ": -2711
+      },
+      {
+        "minX": -1843,
+        "maxX": -1723,
+        "minZ": -2903,
+        "maxZ": -2783
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1843,
@@ -4016,6 +7230,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2217,
       "maxZ": -2117
     },
+    "spawnNodes": [
+      {
+        "minX": -1825,
+        "maxX": -1785,
+        "minZ": -2187,
+        "maxZ": -2147
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1825,
@@ -4052,6 +7274,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1379,
       "maxZ": -1279
     },
+    "spawnNodes": [
+      {
+        "minX": 987,
+        "maxX": 1003,
+        "minZ": -1340,
+        "maxZ": -1324
+      },
+      {
+        "minX": 955,
+        "maxX": 971,
+        "minZ": -1335,
+        "maxZ": -1319
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 951,
@@ -4087,6 +7323,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2157,
       "maxZ": -2057
     },
+    "spawnNodes": [
+      {
+        "minX": 468,
+        "maxX": 500,
+        "minZ": -2123,
+        "maxZ": -2091
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 468,
@@ -4123,6 +7367,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -526,
       "maxZ": -333
     },
+    "spawnNodes": [
+      {
+        "minX": -536,
+        "maxX": -520,
+        "minZ": -516,
+        "maxZ": -500
+      },
+      {
+        "minX": -590,
+        "maxX": -574,
+        "minZ": -414,
+        "maxZ": -398
+      },
+      {
+        "minX": -616,
+        "maxX": -600,
+        "minZ": -394,
+        "maxZ": -378
+      },
+      {
+        "minX": -606,
+        "maxX": -590,
+        "minZ": -365,
+        "maxZ": -349
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -631,
@@ -4164,6 +7434,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1683,
       "maxZ": -1492
     },
+    "spawnNodes": [
+      {
+        "minX": 1224,
+        "maxX": 1254,
+        "minZ": -1532,
+        "maxZ": -1502
+      },
+      {
+        "minX": 1182,
+        "maxX": 1222,
+        "minZ": -1673,
+        "maxZ": -1633
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1182,
@@ -4206,6 +7490,74 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1949,
       "maxZ": -1309
     },
+    "spawnNodes": [
+      {
+        "minX": 1088,
+        "maxX": 1108,
+        "minZ": -1339,
+        "maxZ": -1319
+      },
+      {
+        "minX": 1030,
+        "maxX": 1050,
+        "minZ": -1514,
+        "maxZ": -1494
+      },
+      {
+        "minX": 1091,
+        "maxX": 1111,
+        "minZ": -1546,
+        "maxZ": -1526
+      },
+      {
+        "minX": 1179,
+        "maxX": 1199,
+        "minZ": -1591,
+        "maxZ": -1571
+      },
+      {
+        "minX": 1358,
+        "maxX": 1378,
+        "minZ": -1543,
+        "maxZ": -1523
+      },
+      {
+        "minX": 1369,
+        "maxX": 1389,
+        "minZ": -1515,
+        "maxZ": -1495
+      },
+      {
+        "minX": 1211,
+        "maxX": 1231,
+        "minZ": -1462,
+        "maxZ": -1442
+      },
+      {
+        "minX": 1260,
+        "maxX": 1280,
+        "minZ": -1445,
+        "maxZ": -1425
+      },
+      {
+        "minX": 1375,
+        "maxX": 1395,
+        "minZ": -1416,
+        "maxZ": -1396
+      },
+      {
+        "minX": 1329,
+        "maxX": 1349,
+        "minZ": -1425,
+        "maxZ": -1405
+      },
+      {
+        "minX": -833,
+        "maxX": -773,
+        "minZ": -1939,
+        "maxZ": -1879
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1179,
@@ -4261,6 +7613,68 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5447,
       "maxZ": -5245
     },
+    "spawnNodes": [
+      {
+        "minX": 887,
+        "maxX": 907,
+        "minZ": -5355,
+        "maxZ": -5335
+      },
+      {
+        "minX": 881,
+        "maxX": 901,
+        "minZ": -5300,
+        "maxZ": -5280
+      },
+      {
+        "minX": 879,
+        "maxX": 895,
+        "minZ": -5327,
+        "maxZ": -5311
+      },
+      {
+        "minX": 914,
+        "maxX": 930,
+        "minZ": -5426,
+        "maxZ": -5410
+      },
+      {
+        "minX": 924,
+        "maxX": 940,
+        "minZ": -5414,
+        "maxZ": -5398
+      },
+      {
+        "minX": 966,
+        "maxX": 982,
+        "minZ": -5414,
+        "maxZ": -5398
+      },
+      {
+        "minX": 978,
+        "maxX": 994,
+        "minZ": -5421,
+        "maxZ": -5405
+      },
+      {
+        "minX": 989,
+        "maxX": 1005,
+        "minZ": -5317,
+        "maxZ": -5301
+      },
+      {
+        "minX": 1041,
+        "maxX": 1057,
+        "minZ": -5271,
+        "maxZ": -5255
+      },
+      {
+        "minX": 1070,
+        "maxX": 1086,
+        "minZ": -5319,
+        "maxZ": -5303
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 879,
@@ -4304,6 +7718,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5005,
       "maxZ": -4764
     },
+    "spawnNodes": [
+      {
+        "minX": 605,
+        "maxX": 621,
+        "minZ": -4995,
+        "maxZ": -4979
+      },
+      {
+        "minX": 632,
+        "maxX": 648,
+        "minZ": -4816,
+        "maxZ": -4800
+      },
+      {
+        "minX": 622,
+        "maxX": 638,
+        "minZ": -4830,
+        "maxZ": -4814
+      },
+      {
+        "minX": 625,
+        "maxX": 641,
+        "minZ": -4791,
+        "maxZ": -4775
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 604,
@@ -4345,6 +7785,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1421,
       "maxZ": -1321
     },
+    "spawnNodes": [
+      {
+        "minX": 1211,
+        "maxX": 1231,
+        "minZ": -1381,
+        "maxZ": -1361
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1211,
@@ -4381,6 +7829,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4895,
       "maxZ": -4607
     },
+    "spawnNodes": [
+      {
+        "minX": 200,
+        "maxX": 216,
+        "minZ": -4657,
+        "maxZ": -4641
+      },
+      {
+        "minX": 260,
+        "maxX": 276,
+        "minZ": -4658,
+        "maxZ": -4642
+      },
+      {
+        "minX": 243,
+        "maxX": 259,
+        "minZ": -4655,
+        "maxZ": -4639
+      },
+      {
+        "minX": 270,
+        "maxX": 286,
+        "minZ": -4652,
+        "maxZ": -4636
+      },
+      {
+        "minX": 171,
+        "maxX": 201,
+        "minZ": -4885,
+        "maxZ": -4855
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 200,
@@ -4423,6 +7903,170 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1005,
       "maxZ": -707
     },
+    "spawnNodes": [
+      {
+        "minX": -1678,
+        "maxX": -1662,
+        "minZ": -909,
+        "maxZ": -893
+      },
+      {
+        "minX": -1650,
+        "maxX": -1634,
+        "minZ": -911,
+        "maxZ": -895
+      },
+      {
+        "minX": -1650,
+        "maxX": -1634,
+        "minZ": -905,
+        "maxZ": -889
+      },
+      {
+        "minX": -1525,
+        "maxX": -1509,
+        "minZ": -733,
+        "maxZ": -717
+      },
+      {
+        "minX": -1700,
+        "maxX": -1684,
+        "minZ": -972,
+        "maxZ": -956
+      },
+      {
+        "minX": -1697,
+        "maxX": -1681,
+        "minZ": -933,
+        "maxZ": -917
+      },
+      {
+        "minX": -1671,
+        "maxX": -1655,
+        "minZ": -942,
+        "maxZ": -926
+      },
+      {
+        "minX": -1677,
+        "maxX": -1661,
+        "minZ": -942,
+        "maxZ": -926
+      },
+      {
+        "minX": -1679,
+        "maxX": -1663,
+        "minZ": -972,
+        "maxZ": -956
+      },
+      {
+        "minX": -1671,
+        "maxX": -1655,
+        "minZ": -969,
+        "maxZ": -953
+      },
+      {
+        "minX": -1612,
+        "maxX": -1596,
+        "minZ": -981,
+        "maxZ": -965
+      },
+      {
+        "minX": -1562,
+        "maxX": -1546,
+        "minZ": -906,
+        "maxZ": -890
+      },
+      {
+        "minX": -1503,
+        "maxX": -1487,
+        "minZ": -912,
+        "maxZ": -896
+      },
+      {
+        "minX": -1475,
+        "maxX": -1459,
+        "minZ": -872,
+        "maxZ": -856
+      },
+      {
+        "minX": -1483,
+        "maxX": -1467,
+        "minZ": -862,
+        "maxZ": -846
+      },
+      {
+        "minX": -1479,
+        "maxX": -1463,
+        "minZ": -856,
+        "maxZ": -840
+      },
+      {
+        "minX": -1475,
+        "maxX": -1459,
+        "minZ": -859,
+        "maxZ": -843
+      },
+      {
+        "minX": -1503,
+        "maxX": -1487,
+        "minZ": -887,
+        "maxZ": -871
+      },
+      {
+        "minX": -1515,
+        "maxX": -1499,
+        "minZ": -910,
+        "maxZ": -894
+      },
+      {
+        "minX": -1515,
+        "maxX": -1499,
+        "minZ": -906,
+        "maxZ": -890
+      },
+      {
+        "minX": -1550,
+        "maxX": -1534,
+        "minZ": -873,
+        "maxZ": -857
+      },
+      {
+        "minX": -1554,
+        "maxX": -1538,
+        "minZ": -895,
+        "maxZ": -879
+      },
+      {
+        "minX": -1563,
+        "maxX": -1547,
+        "minZ": -895,
+        "maxZ": -879
+      },
+      {
+        "minX": -1556,
+        "maxX": -1540,
+        "minZ": -884,
+        "maxZ": -868
+      },
+      {
+        "minX": -1546,
+        "maxX": -1530,
+        "minZ": -874,
+        "maxZ": -858
+      },
+      {
+        "minX": -1521,
+        "maxX": -1505,
+        "minZ": -798,
+        "maxZ": -782
+      },
+      {
+        "minX": -1526,
+        "maxX": -1510,
+        "minZ": -798,
+        "maxZ": -782
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1563,
@@ -4464,6 +8108,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2418,
       "maxZ": -2318
     },
+    "spawnNodes": [
+      {
+        "minX": 785,
+        "maxX": 801,
+        "minZ": -2376,
+        "maxZ": -2360
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 785,
@@ -4500,6 +8152,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -988,
       "maxZ": -490
     },
+    "spawnNodes": [
+      {
+        "minX": -1824,
+        "maxX": -1808,
+        "minZ": -851,
+        "maxZ": -835
+      },
+      {
+        "minX": -1793,
+        "maxX": -1777,
+        "minZ": -706,
+        "maxZ": -690
+      },
+      {
+        "minX": -2104,
+        "maxX": -2088,
+        "minZ": -532,
+        "maxZ": -516
+      },
+      {
+        "minX": -2107,
+        "maxX": -2091,
+        "minZ": -541,
+        "maxZ": -525
+      },
+      {
+        "minX": -2182,
+        "maxX": -2166,
+        "minZ": -965,
+        "maxZ": -949
+      },
+      {
+        "minX": -2186,
+        "maxX": -2170,
+        "minZ": -952,
+        "maxZ": -936
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2204,
@@ -4554,6 +8244,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -948,
       "maxZ": -778
     },
+    "spawnNodes": [
+      {
+        "minX": -689,
+        "maxX": -635,
+        "minZ": -842,
+        "maxZ": -788
+      },
+      {
+        "minX": -601,
+        "maxX": -525,
+        "minZ": -938,
+        "maxZ": -862
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -689,
@@ -4592,6 +8296,80 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5591,
       "maxZ": -5130
     },
+    "spawnNodes": [
+      {
+        "minX": 1335,
+        "maxX": 1351,
+        "minZ": -5218,
+        "maxZ": -5202
+      },
+      {
+        "minX": 1378,
+        "maxX": 1394,
+        "minZ": -5204,
+        "maxZ": -5188
+      },
+      {
+        "minX": 1319,
+        "maxX": 1335,
+        "minZ": -5389,
+        "maxZ": -5373
+      },
+      {
+        "minX": 1377,
+        "maxX": 1393,
+        "minZ": -5441,
+        "maxZ": -5425
+      },
+      {
+        "minX": 1476,
+        "maxX": 1492,
+        "minZ": -5527,
+        "maxZ": -5511
+      },
+      {
+        "minX": 1463,
+        "maxX": 1479,
+        "minZ": -5546,
+        "maxZ": -5530
+      },
+      {
+        "minX": 1427,
+        "maxX": 1443,
+        "minZ": -5538,
+        "maxZ": -5522
+      },
+      {
+        "minX": 1329,
+        "maxX": 1345,
+        "minZ": -5156,
+        "maxZ": -5140
+      },
+      {
+        "minX": 1315,
+        "maxX": 1331,
+        "minZ": -5161,
+        "maxZ": -5145
+      },
+      {
+        "minX": 1304,
+        "maxX": 1324,
+        "minZ": -5255,
+        "maxZ": -5235
+      },
+      {
+        "minX": 1415,
+        "maxX": 1435,
+        "minZ": -5211,
+        "maxZ": -5191
+      },
+      {
+        "minX": 1466,
+        "maxX": 1486,
+        "minZ": -5581,
+        "maxZ": -5561
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1304,
@@ -4640,6 +8418,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5461,
       "maxZ": -5361
     },
+    "spawnNodes": [
+      {
+        "minX": -756,
+        "maxX": -732,
+        "minZ": -5423,
+        "maxZ": -5399
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -756,
@@ -4678,6 +8464,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3383,
       "maxZ": -3283
     },
+    "spawnNodes": [
+      {
+        "minX": 1113,
+        "maxX": 1129,
+        "minZ": -3329,
+        "maxZ": -3313
+      },
+      {
+        "minX": 1117,
+        "maxX": 1133,
+        "minZ": -3354,
+        "maxZ": -3338
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1095,
@@ -4714,6 +8514,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4768,
       "maxZ": -4462
     },
+    "spawnNodes": [
+      {
+        "minX": -1453,
+        "maxX": -1437,
+        "minZ": -4600,
+        "maxZ": -4584
+      },
+      {
+        "minX": -1333,
+        "maxX": -1305,
+        "minZ": -4728,
+        "maxZ": -4700
+      },
+      {
+        "minX": -1295,
+        "maxX": -1275,
+        "minZ": -4726,
+        "maxZ": -4706
+      },
+      {
+        "minX": -1247,
+        "maxX": -1227,
+        "minZ": -4741,
+        "maxZ": -4721
+      },
+      {
+        "minX": -1224,
+        "maxX": -1200,
+        "minZ": -4742,
+        "maxZ": -4718
+      },
+      {
+        "minX": -1362,
+        "maxX": -1332,
+        "minZ": -4502,
+        "maxZ": -4472
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1333,
@@ -4762,6 +8600,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -393,
       "maxZ": -293
     },
+    "spawnNodes": [
+      {
+        "minX": -27,
+        "maxX": -11,
+        "minZ": -376,
+        "maxZ": -360
+      },
+      {
+        "minX": -27,
+        "maxX": -11,
+        "minZ": -359,
+        "maxZ": -343
+      },
+      {
+        "minX": -18,
+        "maxX": -2,
+        "minZ": -334,
+        "maxZ": -318
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -42,
@@ -4797,6 +8655,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5596,
       "maxZ": -5496
     },
+    "spawnNodes": [
+      {
+        "minX": -1508,
+        "maxX": -1492,
+        "minZ": -5562,
+        "maxZ": -5546
+      },
+      {
+        "minX": -1515,
+        "maxX": -1499,
+        "minZ": -5554,
+        "maxZ": -5538
+      },
+      {
+        "minX": -1524,
+        "maxX": -1508,
+        "minZ": -5554,
+        "maxZ": -5538
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1539,
@@ -4832,6 +8710,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2050,
       "maxZ": -1950
     },
+    "spawnNodes": [
+      {
+        "minX": -204,
+        "maxX": -186,
+        "minZ": -2028,
+        "maxZ": -2010
+      },
+      {
+        "minX": -188,
+        "maxX": -170,
+        "minZ": -2017,
+        "maxZ": -1999
+      },
+      {
+        "minX": -177,
+        "maxX": -159,
+        "minZ": -2002,
+        "maxZ": -1984
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -204,
@@ -4868,6 +8766,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2121,
       "maxZ": -2021
     },
+    "spawnNodes": [
+      {
+        "minX": -459,
+        "maxX": -443,
+        "minZ": -2070,
+        "maxZ": -2054
+      },
+      {
+        "minX": -455,
+        "maxX": -439,
+        "minZ": -2073,
+        "maxZ": -2057
+      },
+      {
+        "minX": -386,
+        "maxX": -370,
+        "minZ": -2106,
+        "maxZ": -2090
+      },
+      {
+        "minX": -403,
+        "maxX": -387,
+        "minZ": -2097,
+        "maxZ": -2081
+      },
+      {
+        "minX": -432,
+        "maxX": -416,
+        "minZ": -2053,
+        "maxZ": -2037
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -459,
@@ -4904,6 +8834,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -650,
       "maxZ": -430
     },
+    "spawnNodes": [
+      {
+        "minX": 737,
+        "maxX": 937,
+        "minZ": -640,
+        "maxZ": -440
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 737,
@@ -4940,6 +8878,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -650,
       "maxZ": -430
     },
+    "spawnNodes": [
+      {
+        "minX": 737,
+        "maxX": 937,
+        "minZ": -640,
+        "maxZ": -440
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 737,
@@ -4975,6 +8921,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1301,
       "maxZ": -1194
     },
+    "spawnNodes": [
+      {
+        "minX": 539,
+        "maxX": 559,
+        "minZ": -1224,
+        "maxZ": -1204
+      },
+      {
+        "minX": 497,
+        "maxX": 517,
+        "minZ": -1255,
+        "maxZ": -1235
+      },
+      {
+        "minX": 527,
+        "maxX": 547,
+        "minZ": -1277,
+        "maxZ": -1257
+      },
+      {
+        "minX": 550,
+        "maxX": 570,
+        "minZ": -1270,
+        "maxZ": -1250
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 497,
@@ -5012,6 +8984,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5209,
       "maxZ": -5094
     },
+    "spawnNodes": [
+      {
+        "minX": 479,
+        "maxX": 495,
+        "minZ": -5199,
+        "maxZ": -5183
+      },
+      {
+        "minX": 453,
+        "maxX": 469,
+        "minZ": -5138,
+        "maxZ": -5122
+      },
+      {
+        "minX": 450,
+        "maxX": 466,
+        "minZ": -5120,
+        "maxZ": -5104
+      },
+      {
+        "minX": 464,
+        "maxX": 480,
+        "minZ": -5150,
+        "maxZ": -5134
+      },
+      {
+        "minX": 469,
+        "maxX": 485,
+        "minZ": -5167,
+        "maxZ": -5151
+      },
+      {
+        "minX": 442,
+        "maxX": 458,
+        "minZ": -5171,
+        "maxZ": -5155
+      },
+      {
+        "minX": 443,
+        "maxX": 459,
+        "minZ": -5152,
+        "maxZ": -5136
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 423,
@@ -5049,6 +9065,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1670,
       "maxZ": -1570
     },
+    "spawnNodes": [
+      {
+        "minX": -553,
+        "maxX": -533,
+        "minZ": -1630,
+        "maxZ": -1610
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -553,
@@ -5085,6 +9109,86 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5404,
       "maxZ": -5035
     },
+    "spawnNodes": [
+      {
+        "minX": 1441,
+        "maxX": 1481,
+        "minZ": -5260,
+        "maxZ": -5220
+      },
+      {
+        "minX": 1209,
+        "maxX": 1259,
+        "minZ": -5370,
+        "maxZ": -5320
+      },
+      {
+        "minX": 1270,
+        "maxX": 1320,
+        "minZ": -5394,
+        "maxZ": -5344
+      },
+      {
+        "minX": 1252,
+        "maxX": 1284,
+        "minZ": -5309,
+        "maxZ": -5277
+      },
+      {
+        "minX": 1264,
+        "maxX": 1296,
+        "minZ": -5246,
+        "maxZ": -5214
+      },
+      {
+        "minX": 1368,
+        "maxX": 1400,
+        "minZ": -5120,
+        "maxZ": -5088
+      },
+      {
+        "minX": 1433,
+        "maxX": 1449,
+        "minZ": -5178,
+        "maxZ": -5162
+      },
+      {
+        "minX": 1514,
+        "maxX": 1538,
+        "minZ": -5128,
+        "maxZ": -5104
+      },
+      {
+        "minX": 1503,
+        "maxX": 1527,
+        "minZ": -5104,
+        "maxZ": -5080
+      },
+      {
+        "minX": 1525,
+        "maxX": 1557,
+        "minZ": -5103,
+        "maxZ": -5071
+      },
+      {
+        "minX": 1555,
+        "maxX": 1587,
+        "minZ": -5077,
+        "maxZ": -5045
+      },
+      {
+        "minX": 1235,
+        "maxX": 1267,
+        "minZ": -5166,
+        "maxZ": -5134
+      },
+      {
+        "minX": 1252,
+        "maxX": 1284,
+        "minZ": -5152,
+        "maxZ": -5120
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1209,
@@ -5120,6 +9224,62 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -852,
       "maxZ": -564
     },
+    "spawnNodes": [
+      {
+        "minX": -2060,
+        "maxX": -2044,
+        "minZ": -729,
+        "maxZ": -713
+      },
+      {
+        "minX": -2100,
+        "maxX": -2084,
+        "minZ": -731,
+        "maxZ": -715
+      },
+      {
+        "minX": -1987,
+        "maxX": -1971,
+        "minZ": -615,
+        "maxZ": -599
+      },
+      {
+        "minX": -1866,
+        "maxX": -1850,
+        "minZ": -657,
+        "maxZ": -641
+      },
+      {
+        "minX": -1861,
+        "maxX": -1845,
+        "minZ": -660,
+        "maxZ": -644
+      },
+      {
+        "minX": -1839,
+        "maxX": -1823,
+        "minZ": -842,
+        "maxZ": -826
+      },
+      {
+        "minX": -1932,
+        "maxX": -1916,
+        "minZ": -590,
+        "maxZ": -574
+      },
+      {
+        "minX": -2274,
+        "maxX": -2258,
+        "minZ": -760,
+        "maxZ": -744
+      },
+      {
+        "minX": -2274,
+        "maxX": -2258,
+        "minZ": -770,
+        "maxZ": -754
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1987,
@@ -5174,6 +9334,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4963,
       "maxZ": -4508
     },
+    "spawnNodes": [
+      {
+        "minX": 1001,
+        "maxX": 1041,
+        "minZ": -4953,
+        "maxZ": -4913
+      },
+      {
+        "minX": 920,
+        "maxX": 960,
+        "minZ": -4769,
+        "maxZ": -4729
+      },
+      {
+        "minX": 907,
+        "maxX": 947,
+        "minZ": -4817,
+        "maxZ": -4777
+      },
+      {
+        "minX": 1358,
+        "maxX": 1398,
+        "minZ": -4558,
+        "maxZ": -4518
+      },
+      {
+        "minX": 942,
+        "maxX": 982,
+        "minZ": -4800,
+        "maxZ": -4760
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 907,
@@ -5222,6 +9414,152 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5457,
       "maxZ": -4696
     },
+    "spawnNodes": [
+      {
+        "minX": -417,
+        "maxX": -397,
+        "minZ": -5236,
+        "maxZ": -5216
+      },
+      {
+        "minX": -321,
+        "maxX": -305,
+        "minZ": -5447,
+        "maxZ": -5431
+      },
+      {
+        "minX": -420,
+        "maxX": -404,
+        "minZ": -5136,
+        "maxZ": -5120
+      },
+      {
+        "minX": -382,
+        "maxX": -366,
+        "minZ": -5167,
+        "maxZ": -5151
+      },
+      {
+        "minX": -372,
+        "maxX": -352,
+        "minZ": -5122,
+        "maxZ": -5102
+      },
+      {
+        "minX": -352,
+        "maxX": -332,
+        "minZ": -5179,
+        "maxZ": -5159
+      },
+      {
+        "minX": -317,
+        "maxX": -301,
+        "minZ": -5163,
+        "maxZ": -5147
+      },
+      {
+        "minX": -301,
+        "maxX": -285,
+        "minZ": -5237,
+        "maxZ": -5221
+      },
+      {
+        "minX": -280,
+        "maxX": -264,
+        "minZ": -5130,
+        "maxZ": -5114
+      },
+      {
+        "minX": -198,
+        "maxX": -182,
+        "minZ": -5115,
+        "maxZ": -5099
+      },
+      {
+        "minX": -222,
+        "maxX": -206,
+        "minZ": -5068,
+        "maxZ": -5052
+      },
+      {
+        "minX": -195,
+        "maxX": -179,
+        "minZ": -5033,
+        "maxZ": -5017
+      },
+      {
+        "minX": -166,
+        "maxX": -150,
+        "minZ": -5053,
+        "maxZ": -5037
+      },
+      {
+        "minX": -176,
+        "maxX": -160,
+        "minZ": -4989,
+        "maxZ": -4973
+      },
+      {
+        "minX": -352,
+        "maxX": -336,
+        "minZ": -4986,
+        "maxZ": -4970
+      },
+      {
+        "minX": -136,
+        "maxX": -120,
+        "minZ": -4758,
+        "maxZ": -4742
+      },
+      {
+        "minX": -174,
+        "maxX": -158,
+        "minZ": -4851,
+        "maxZ": -4835
+      },
+      {
+        "minX": -457,
+        "maxX": -441,
+        "minZ": -4722,
+        "maxZ": -4706
+      },
+      {
+        "minX": -427,
+        "maxX": -411,
+        "minZ": -4750,
+        "maxZ": -4734
+      },
+      {
+        "minX": -390,
+        "maxX": -370,
+        "minZ": -4771,
+        "maxZ": -4751
+      },
+      {
+        "minX": -363,
+        "maxX": -347,
+        "minZ": -4787,
+        "maxZ": -4771
+      },
+      {
+        "minX": -375,
+        "maxX": -359,
+        "minZ": -4734,
+        "maxZ": -4718
+      },
+      {
+        "minX": -344,
+        "maxX": -320,
+        "minZ": -4754,
+        "maxZ": -4730
+      },
+      {
+        "minX": -331,
+        "maxX": -311,
+        "minZ": -4781,
+        "maxZ": -4761
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -420,
@@ -5292,6 +9630,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4829,
       "maxZ": -4729
     },
+    "spawnNodes": [
+      {
+        "minX": -2173,
+        "maxX": -2153,
+        "minZ": -4789,
+        "maxZ": -4769
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2173,
@@ -5332,6 +9678,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4829,
       "maxZ": -4729
     },
+    "spawnNodes": [
+      {
+        "minX": -2173,
+        "maxX": -2153,
+        "minZ": -4789,
+        "maxZ": -4769
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2173,
@@ -5372,6 +9726,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4829,
       "maxZ": -4729
     },
+    "spawnNodes": [
+      {
+        "minX": -2173,
+        "maxX": -2153,
+        "minZ": -4789,
+        "maxZ": -4769
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2173,
@@ -5407,6 +9769,98 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5075,
       "maxZ": -4975
     },
+    "spawnNodes": [
+      {
+        "minX": 658,
+        "maxX": 674,
+        "minZ": -5062,
+        "maxZ": -5046
+      },
+      {
+        "minX": 667,
+        "maxX": 683,
+        "minZ": -5057,
+        "maxZ": -5041
+      },
+      {
+        "minX": 666,
+        "maxX": 682,
+        "minZ": -5037,
+        "maxZ": -5021
+      },
+      {
+        "minX": 649,
+        "maxX": 665,
+        "minZ": -5036,
+        "maxZ": -5020
+      },
+      {
+        "minX": 649,
+        "maxX": 665,
+        "minZ": -5037,
+        "maxZ": -5021
+      },
+      {
+        "minX": 619,
+        "maxX": 635,
+        "minZ": -5033,
+        "maxZ": -5017
+      },
+      {
+        "minX": 619,
+        "maxX": 635,
+        "minZ": -5034,
+        "maxZ": -5018
+      },
+      {
+        "minX": 585,
+        "maxX": 601,
+        "minZ": -5037,
+        "maxZ": -5021
+      },
+      {
+        "minX": 590,
+        "maxX": 606,
+        "minZ": -5031,
+        "maxZ": -5015
+      },
+      {
+        "minX": 607,
+        "maxX": 623,
+        "minZ": -5014,
+        "maxZ": -4998
+      },
+      {
+        "minX": 607,
+        "maxX": 623,
+        "minZ": -5015,
+        "maxZ": -4999
+      },
+      {
+        "minX": 632,
+        "maxX": 648,
+        "minZ": -5004,
+        "maxZ": -4988
+      },
+      {
+        "minX": 632,
+        "maxX": 648,
+        "minZ": -5005,
+        "maxZ": -4989
+      },
+      {
+        "minX": 638,
+        "maxX": 654,
+        "minZ": -5029,
+        "maxZ": -5013
+      },
+      {
+        "minX": 646,
+        "maxX": 662,
+        "minZ": -5032,
+        "maxZ": -5016
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 585,
@@ -5443,6 +9897,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -844,
       "maxZ": -519
     },
+    "spawnNodes": [
+      {
+        "minX": -1502,
+        "maxX": -1486,
+        "minZ": -696,
+        "maxZ": -680
+      },
+      {
+        "minX": -1136,
+        "maxX": -1120,
+        "minZ": -834,
+        "maxZ": -818
+      },
+      {
+        "minX": -1236,
+        "maxX": -1220,
+        "minZ": -545,
+        "maxZ": -529
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1236,
@@ -5491,6 +9965,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2240,
       "maxZ": -2140
     },
+    "spawnNodes": [
+      {
+        "minX": 607,
+        "maxX": 623,
+        "minZ": -2198,
+        "maxZ": -2182
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 607,
@@ -5529,6 +10011,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1031,
       "maxZ": -648
     },
+    "spawnNodes": [
+      {
+        "minX": -124,
+        "maxX": -108,
+        "minZ": -898,
+        "maxZ": -882
+      },
+      {
+        "minX": 7,
+        "maxX": 23,
+        "minZ": -832,
+        "maxZ": -816
+      },
+      {
+        "minX": 14,
+        "maxX": 30,
+        "minZ": -747,
+        "maxZ": -731
+      },
+      {
+        "minX": -68,
+        "maxX": -52,
+        "minZ": -707,
+        "maxZ": -691
+      },
+      {
+        "minX": -5,
+        "maxX": 11,
+        "minZ": -681,
+        "maxZ": -665
+      },
+      {
+        "minX": 185,
+        "maxX": 201,
+        "minZ": -743,
+        "maxZ": -727
+      },
+      {
+        "minX": 189,
+        "maxX": 205,
+        "minZ": -1021,
+        "maxZ": -1005
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -68,
@@ -5590,6 +10116,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -471,
       "maxZ": -319
     },
+    "spawnNodes": [
+      {
+        "minX": -305,
+        "maxX": -225,
+        "minZ": -426,
+        "maxZ": -346
+      },
+      {
+        "minX": -276,
+        "maxX": -196,
+        "minZ": -440,
+        "maxZ": -360
+      },
+      {
+        "minX": -228,
+        "maxX": -148,
+        "minZ": -409,
+        "maxZ": -329
+      },
+      {
+        "minX": -229,
+        "maxX": -149,
+        "minZ": -461,
+        "maxZ": -381
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -305,
@@ -5629,6 +10181,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5461,
       "maxZ": -5204
     },
+    "spawnNodes": [
+      {
+        "minX": 342,
+        "maxX": 442,
+        "minZ": -5314,
+        "maxZ": -5214
+      },
+      {
+        "minX": 495,
+        "maxX": 555,
+        "minZ": -5451,
+        "maxZ": -5391
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 342,
@@ -5670,6 +10236,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5051,
       "maxZ": -4951
     },
+    "spawnNodes": [
+      {
+        "minX": -528,
+        "maxX": -512,
+        "minZ": -5009,
+        "maxZ": -4993
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -528,
@@ -5705,6 +10279,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1480,
       "maxZ": -1380
     },
+    "spawnNodes": [
+      {
+        "minX": 694,
+        "maxX": 744,
+        "minZ": -1455,
+        "maxZ": -1405
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 694,
@@ -5742,6 +10324,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5005,
       "maxZ": -4764
     },
+    "spawnNodes": [
+      {
+        "minX": 605,
+        "maxX": 621,
+        "minZ": -4995,
+        "maxZ": -4979
+      },
+      {
+        "minX": 632,
+        "maxX": 648,
+        "minZ": -4816,
+        "maxZ": -4800
+      },
+      {
+        "minX": 622,
+        "maxX": 638,
+        "minZ": -4830,
+        "maxZ": -4814
+      },
+      {
+        "minX": 625,
+        "maxX": 641,
+        "minZ": -4791,
+        "maxZ": -4775
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 604,
@@ -5783,6 +10391,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -904,
       "maxZ": -416
     },
+    "spawnNodes": [
+      {
+        "minX": -1822,
+        "maxX": -1806,
+        "minZ": -894,
+        "maxZ": -878
+      },
+      {
+        "minX": -1775,
+        "maxX": -1759,
+        "minZ": -699,
+        "maxZ": -683
+      },
+      {
+        "minX": -1789,
+        "maxX": -1773,
+        "minZ": -442,
+        "maxZ": -426
+      },
+      {
+        "minX": -1934,
+        "maxX": -1918,
+        "minZ": -550,
+        "maxZ": -534
+      },
+      {
+        "minX": -1961,
+        "maxX": -1945,
+        "minZ": -591,
+        "maxZ": -575
+      },
+      {
+        "minX": -2276,
+        "maxX": -2260,
+        "minZ": -617,
+        "maxZ": -601
+      },
+      {
+        "minX": -2250,
+        "maxX": -2234,
+        "minZ": -806,
+        "maxZ": -790
+      },
+      {
+        "minX": -1955,
+        "maxX": -1939,
+        "minZ": -764,
+        "maxZ": -748
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1967,
@@ -5854,6 +10512,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -989,
       "maxZ": -889
     },
+    "spawnNodes": [
+      {
+        "minX": -2077,
+        "maxX": -2061,
+        "minZ": -947,
+        "maxZ": -931
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2077,
@@ -5891,6 +10557,188 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1551,
       "maxZ": -660
     },
+    "spawnNodes": [
+      {
+        "minX": -1214,
+        "maxX": -1198,
+        "minZ": -934,
+        "maxZ": -918
+      },
+      {
+        "minX": -1224,
+        "maxX": -1208,
+        "minZ": -934,
+        "maxZ": -918
+      },
+      {
+        "minX": -1410,
+        "maxX": -1394,
+        "minZ": -865,
+        "maxZ": -849
+      },
+      {
+        "minX": -1402,
+        "maxX": -1386,
+        "minZ": -865,
+        "maxZ": -849
+      },
+      {
+        "minX": -1505,
+        "maxX": -1489,
+        "minZ": -706,
+        "maxZ": -690
+      },
+      {
+        "minX": -1478,
+        "maxX": -1462,
+        "minZ": -711,
+        "maxZ": -695
+      },
+      {
+        "minX": -1478,
+        "maxX": -1462,
+        "minZ": -719,
+        "maxZ": -703
+      },
+      {
+        "minX": -1492,
+        "maxX": -1476,
+        "minZ": -694,
+        "maxZ": -678
+      },
+      {
+        "minX": -1136,
+        "maxX": -1120,
+        "minZ": -760,
+        "maxZ": -744
+      },
+      {
+        "minX": -1136,
+        "maxX": -1120,
+        "minZ": -768,
+        "maxZ": -752
+      },
+      {
+        "minX": -1122,
+        "maxX": -1106,
+        "minZ": -769,
+        "maxZ": -753
+      },
+      {
+        "minX": -1122,
+        "maxX": -1106,
+        "minZ": -759,
+        "maxZ": -743
+      },
+      {
+        "minX": -1112,
+        "maxX": -1096,
+        "minZ": -769,
+        "maxZ": -753
+      },
+      {
+        "minX": -1112,
+        "maxX": -1096,
+        "minZ": -759,
+        "maxZ": -743
+      },
+      {
+        "minX": -1101,
+        "maxX": -1085,
+        "minZ": -769,
+        "maxZ": -753
+      },
+      {
+        "minX": -1101,
+        "maxX": -1085,
+        "minZ": -759,
+        "maxZ": -743
+      },
+      {
+        "minX": -1627,
+        "maxX": -1611,
+        "minZ": -1310,
+        "maxZ": -1294
+      },
+      {
+        "minX": -1671,
+        "maxX": -1655,
+        "minZ": -1473,
+        "maxZ": -1457
+      },
+      {
+        "minX": -1670,
+        "maxX": -1654,
+        "minZ": -1022,
+        "maxZ": -1006
+      },
+      {
+        "minX": -1615,
+        "maxX": -1599,
+        "minZ": -1272,
+        "maxZ": -1256
+      },
+      {
+        "minX": -1614,
+        "maxX": -1598,
+        "minZ": -1255,
+        "maxZ": -1239
+      },
+      {
+        "minX": -1619,
+        "maxX": -1603,
+        "minZ": -1255,
+        "maxZ": -1239
+      },
+      {
+        "minX": -1614,
+        "maxX": -1598,
+        "minZ": -1236,
+        "maxZ": -1220
+      },
+      {
+        "minX": -1615,
+        "maxX": -1599,
+        "minZ": -1218,
+        "maxZ": -1202
+      },
+      {
+        "minX": -1619,
+        "maxX": -1603,
+        "minZ": -1235,
+        "maxZ": -1219
+      },
+      {
+        "minX": -1979,
+        "maxX": -1963,
+        "minZ": -1246,
+        "maxZ": -1230
+      },
+      {
+        "minX": -1973,
+        "maxX": -1957,
+        "minZ": -1246,
+        "maxZ": -1230
+      },
+      {
+        "minX": -1959,
+        "maxX": -1943,
+        "minZ": -1257,
+        "maxZ": -1241
+      },
+      {
+        "minX": -1959,
+        "maxX": -1943,
+        "minZ": -1253,
+        "maxZ": -1237
+      },
+      {
+        "minX": -1919,
+        "maxX": -1903,
+        "minZ": -1541,
+        "maxZ": -1525
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1637,
@@ -5974,6 +10822,74 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -956,
       "maxZ": -727
     },
+    "spawnNodes": [
+      {
+        "minX": -1531,
+        "maxX": -1515,
+        "minZ": -908,
+        "maxZ": -892
+      },
+      {
+        "minX": -1508,
+        "maxX": -1492,
+        "minZ": -876,
+        "maxZ": -860
+      },
+      {
+        "minX": -1566,
+        "maxX": -1550,
+        "minZ": -946,
+        "maxZ": -930
+      },
+      {
+        "minX": -1664,
+        "maxX": -1648,
+        "minZ": -788,
+        "maxZ": -772
+      },
+      {
+        "minX": -1672,
+        "maxX": -1656,
+        "minZ": -780,
+        "maxZ": -764
+      },
+      {
+        "minX": -1683,
+        "maxX": -1667,
+        "minZ": -818,
+        "maxZ": -802
+      },
+      {
+        "minX": -1572,
+        "maxX": -1556,
+        "minZ": -882,
+        "maxZ": -866
+      },
+      {
+        "minX": -1493,
+        "maxX": -1477,
+        "minZ": -816,
+        "maxZ": -800
+      },
+      {
+        "minX": -1514,
+        "maxX": -1498,
+        "minZ": -816,
+        "maxZ": -800
+      },
+      {
+        "minX": -1505,
+        "maxX": -1489,
+        "minZ": -778,
+        "maxZ": -762
+      },
+      {
+        "minX": -1505,
+        "maxX": -1489,
+        "minZ": -768,
+        "maxZ": -752
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1572,
@@ -6015,6 +10931,74 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3470,
       "maxZ": -2235
     },
+    "spawnNodes": [
+      {
+        "minX": -1201,
+        "maxX": -1185,
+        "minZ": -3247,
+        "maxZ": -3231
+      },
+      {
+        "minX": -1177,
+        "maxX": -1157,
+        "minZ": -3292,
+        "maxZ": -3272
+      },
+      {
+        "minX": -1171,
+        "maxX": -1151,
+        "minZ": -3322,
+        "maxZ": -3302
+      },
+      {
+        "minX": -1398,
+        "maxX": -1380,
+        "minZ": -3410,
+        "maxZ": -3392
+      },
+      {
+        "minX": -1432,
+        "maxX": -1414,
+        "minZ": -3418,
+        "maxZ": -3400
+      },
+      {
+        "minX": -1487,
+        "maxX": -1469,
+        "minZ": -3421,
+        "maxZ": -3403
+      },
+      {
+        "minX": -1525,
+        "maxX": -1507,
+        "minZ": -3424,
+        "maxZ": -3406
+      },
+      {
+        "minX": -1549,
+        "maxX": -1531,
+        "minZ": -3459,
+        "maxZ": -3441
+      },
+      {
+        "minX": -1288,
+        "maxX": -1270,
+        "minZ": -2288,
+        "maxZ": -2270
+      },
+      {
+        "minX": -1302,
+        "maxX": -1284,
+        "minZ": -2325,
+        "maxZ": -2307
+      },
+      {
+        "minX": -1306,
+        "maxX": -1288,
+        "minZ": -2263,
+        "maxZ": -2245
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1556,
@@ -6062,6 +11046,74 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3470,
       "maxZ": -2235
     },
+    "spawnNodes": [
+      {
+        "minX": -1201,
+        "maxX": -1185,
+        "minZ": -3247,
+        "maxZ": -3231
+      },
+      {
+        "minX": -1177,
+        "maxX": -1157,
+        "minZ": -3292,
+        "maxZ": -3272
+      },
+      {
+        "minX": -1171,
+        "maxX": -1151,
+        "minZ": -3322,
+        "maxZ": -3302
+      },
+      {
+        "minX": -1398,
+        "maxX": -1380,
+        "minZ": -3410,
+        "maxZ": -3392
+      },
+      {
+        "minX": -1432,
+        "maxX": -1414,
+        "minZ": -3418,
+        "maxZ": -3400
+      },
+      {
+        "minX": -1487,
+        "maxX": -1469,
+        "minZ": -3421,
+        "maxZ": -3403
+      },
+      {
+        "minX": -1525,
+        "maxX": -1507,
+        "minZ": -3424,
+        "maxZ": -3406
+      },
+      {
+        "minX": -1549,
+        "maxX": -1531,
+        "minZ": -3459,
+        "maxZ": -3441
+      },
+      {
+        "minX": -1288,
+        "maxX": -1270,
+        "minZ": -2288,
+        "maxZ": -2270
+      },
+      {
+        "minX": -1302,
+        "maxX": -1284,
+        "minZ": -2325,
+        "maxZ": -2307
+      },
+      {
+        "minX": -1306,
+        "maxX": -1288,
+        "minZ": -2263,
+        "maxZ": -2245
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1556,
@@ -6110,6 +11162,170 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3418,
       "maxZ": -1631
     },
+    "spawnNodes": [
+      {
+        "minX": -1665,
+        "maxX": -1649,
+        "minZ": -3389,
+        "maxZ": -3373
+      },
+      {
+        "minX": -1651,
+        "maxX": -1635,
+        "minZ": -3387,
+        "maxZ": -3371
+      },
+      {
+        "minX": -1885,
+        "maxX": -1869,
+        "minZ": -2845,
+        "maxZ": -2829
+      },
+      {
+        "minX": -1838,
+        "maxX": -1822,
+        "minZ": -2846,
+        "maxZ": -2830
+      },
+      {
+        "minX": -1824,
+        "maxX": -1808,
+        "minZ": -2867,
+        "maxZ": -2851
+      },
+      {
+        "minX": -1810,
+        "maxX": -1794,
+        "minZ": -2841,
+        "maxZ": -2825
+      },
+      {
+        "minX": -1562,
+        "maxX": -1546,
+        "minZ": -2277,
+        "maxZ": -2261
+      },
+      {
+        "minX": -1591,
+        "maxX": -1575,
+        "minZ": -2279,
+        "maxZ": -2263
+      },
+      {
+        "minX": -1641,
+        "maxX": -1625,
+        "minZ": -2283,
+        "maxZ": -2267
+      },
+      {
+        "minX": -1619,
+        "maxX": -1603,
+        "minZ": -2243,
+        "maxZ": -2227
+      },
+      {
+        "minX": -1895,
+        "maxX": -1865,
+        "minZ": -2774,
+        "maxZ": -2744
+      },
+      {
+        "minX": -1828,
+        "maxX": -1800,
+        "minZ": -2609,
+        "maxZ": -2581
+      },
+      {
+        "minX": -1862,
+        "maxX": -1834,
+        "minZ": -2645,
+        "maxZ": -2617
+      },
+      {
+        "minX": -1802,
+        "maxX": -1752,
+        "minZ": -2738,
+        "maxZ": -2688
+      },
+      {
+        "minX": -1525,
+        "maxX": -1509,
+        "minZ": -2250,
+        "maxZ": -2234
+      },
+      {
+        "minX": -1750,
+        "maxX": -1734,
+        "minZ": -3003,
+        "maxZ": -2987
+      },
+      {
+        "minX": -1625,
+        "maxX": -1605,
+        "minZ": -2794,
+        "maxZ": -2774
+      },
+      {
+        "minX": -1555,
+        "maxX": -1525,
+        "minZ": -2768,
+        "maxZ": -2738
+      },
+      {
+        "minX": -1859,
+        "maxX": -1843,
+        "minZ": -2828,
+        "maxZ": -2812
+      },
+      {
+        "minX": -1802,
+        "maxX": -1786,
+        "minZ": -2909,
+        "maxZ": -2893
+      },
+      {
+        "minX": -1569,
+        "maxX": -1553,
+        "minZ": -2585,
+        "maxZ": -2569
+      },
+      {
+        "minX": -1639,
+        "maxX": -1611,
+        "minZ": -2626,
+        "maxZ": -2598
+      },
+      {
+        "minX": -1640,
+        "maxX": -1610,
+        "minZ": -2627,
+        "maxZ": -2597
+      },
+      {
+        "minX": -1641,
+        "maxX": -1609,
+        "minZ": -2628,
+        "maxZ": -2596
+      },
+      {
+        "minX": -1545,
+        "maxX": -1529,
+        "minZ": -2602,
+        "maxZ": -2586
+      },
+      {
+        "minX": 1423,
+        "maxX": 1439,
+        "minZ": -1681,
+        "maxZ": -1665
+      },
+      {
+        "minX": 1430,
+        "maxX": 1446,
+        "minZ": -1674,
+        "maxZ": -1658
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1895,
@@ -6181,6 +11397,62 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2061,
       "maxZ": -1480
     },
+    "spawnNodes": [
+      {
+        "minX": -593,
+        "maxX": -549,
+        "minZ": -1713,
+        "maxZ": -1669
+      },
+      {
+        "minX": -521,
+        "maxX": -497,
+        "minZ": -1966,
+        "maxZ": -1942
+      },
+      {
+        "minX": -835,
+        "maxX": -811,
+        "minZ": -1804,
+        "maxZ": -1780
+      },
+      {
+        "minX": -435,
+        "maxX": -279,
+        "minZ": -2051,
+        "maxZ": -1895
+      },
+      {
+        "minX": -696,
+        "maxX": -652,
+        "minZ": -1870,
+        "maxZ": -1826
+      },
+      {
+        "minX": -446,
+        "maxX": -422,
+        "minZ": -1693,
+        "maxZ": -1669
+      },
+      {
+        "minX": -409,
+        "maxX": -365,
+        "minZ": -1795,
+        "maxZ": -1751
+      },
+      {
+        "minX": -578,
+        "maxX": -512,
+        "minZ": -1587,
+        "maxZ": -1521
+      },
+      {
+        "minX": -752,
+        "maxX": -686,
+        "minZ": -1556,
+        "maxZ": -1490
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -435,
@@ -6266,6 +11538,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1341,
       "maxZ": -1241
     },
+    "spawnNodes": [
+      {
+        "minX": 163,
+        "maxX": 233,
+        "minZ": -1326,
+        "maxZ": -1256
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 163,
@@ -6302,6 +11582,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1661,
       "maxZ": -1561
     },
+    "spawnNodes": [
+      {
+        "minX": 252,
+        "maxX": 292,
+        "minZ": -1631,
+        "maxZ": -1591
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 252,
@@ -6339,6 +11627,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -533,
       "maxZ": -433
     },
+    "spawnNodes": [
+      {
+        "minX": -975,
+        "maxX": -959,
+        "minZ": -483,
+        "maxZ": -467
+      },
+      {
+        "minX": -992,
+        "maxX": -976,
+        "minZ": -500,
+        "maxZ": -484
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1003,
@@ -6375,6 +11677,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -612,
       "maxZ": -402
     },
+    "spawnNodes": [
+      {
+        "minX": -609,
+        "maxX": -593,
+        "minZ": -602,
+        "maxZ": -586
+      },
+      {
+        "minX": -657,
+        "maxX": -641,
+        "minZ": -448,
+        "maxZ": -432
+      },
+      {
+        "minX": -664,
+        "maxX": -648,
+        "minZ": -459,
+        "maxZ": -443
+      },
+      {
+        "minX": -679,
+        "maxX": -663,
+        "minZ": -437,
+        "maxZ": -421
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -691,
@@ -6417,6 +11745,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1341,
       "maxZ": -1241
     },
+    "spawnNodes": [
+      {
+        "minX": 163,
+        "maxX": 233,
+        "minZ": -1326,
+        "maxZ": -1256
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 163,
@@ -6454,6 +11790,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -420,
       "maxZ": -320
     },
+    "spawnNodes": [
+      {
+        "minX": -724,
+        "maxX": -696,
+        "minZ": -384,
+        "maxZ": -356
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -724,
@@ -6491,6 +11835,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -520,
       "maxZ": -370
     },
+    "spawnNodes": [
+      {
+        "minX": -998,
+        "maxX": -982,
+        "minZ": -473,
+        "maxZ": -457
+      },
+      {
+        "minX": -1007,
+        "maxX": -991,
+        "minZ": -507,
+        "maxZ": -491
+      },
+      {
+        "minX": -540,
+        "maxX": -524,
+        "minZ": -396,
+        "maxZ": -380
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1022,
@@ -6534,6 +11898,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -583,
       "maxZ": -199
     },
+    "spawnNodes": [
+      {
+        "minX": -1008,
+        "maxX": -984,
+        "minZ": -573,
+        "maxZ": -549
+      },
+      {
+        "minX": -622,
+        "maxX": -586,
+        "minZ": -311,
+        "maxZ": -275
+      },
+      {
+        "minX": -740,
+        "maxX": -722,
+        "minZ": -243,
+        "maxZ": -225
+      },
+      {
+        "minX": -719,
+        "maxX": -701,
+        "minZ": -242,
+        "maxZ": -224
+      },
+      {
+        "minX": -689,
+        "maxX": -665,
+        "minZ": -250,
+        "maxZ": -226
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -740,
@@ -6576,6 +11972,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1265,
       "maxZ": -1082
     },
+    "spawnNodes": [
+      {
+        "minX": 773,
+        "maxX": 789,
+        "minZ": -1234,
+        "maxZ": -1218
+      },
+      {
+        "minX": 744,
+        "maxX": 760,
+        "minZ": -1236,
+        "maxZ": -1220
+      },
+      {
+        "minX": 715,
+        "maxX": 731,
+        "minZ": -1255,
+        "maxZ": -1239
+      },
+      {
+        "minX": 802,
+        "maxX": 818,
+        "minZ": -1225,
+        "maxZ": -1209
+      },
+      {
+        "minX": 440,
+        "maxX": 456,
+        "minZ": -1108,
+        "maxZ": -1092
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 715,
@@ -6618,6 +12046,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -583,
       "maxZ": -199
     },
+    "spawnNodes": [
+      {
+        "minX": -1008,
+        "maxX": -984,
+        "minZ": -573,
+        "maxZ": -549
+      },
+      {
+        "minX": -622,
+        "maxX": -586,
+        "minZ": -311,
+        "maxZ": -275
+      },
+      {
+        "minX": -740,
+        "maxX": -722,
+        "minZ": -243,
+        "maxZ": -225
+      },
+      {
+        "minX": -719,
+        "maxX": -701,
+        "minZ": -242,
+        "maxZ": -224
+      },
+      {
+        "minX": -689,
+        "maxX": -665,
+        "minZ": -250,
+        "maxZ": -226
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -740,
@@ -6661,6 +12121,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -732,
       "maxZ": -387
     },
+    "spawnNodes": [
+      {
+        "minX": -131,
+        "maxX": -91,
+        "minZ": -610,
+        "maxZ": -570
+      },
+      {
+        "minX": -139,
+        "maxX": -99,
+        "minZ": -588,
+        "maxZ": -548
+      },
+      {
+        "minX": -141,
+        "maxX": -101,
+        "minZ": -560,
+        "maxZ": -520
+      },
+      {
+        "minX": -155,
+        "maxX": -115,
+        "minZ": -526,
+        "maxZ": -486
+      },
+      {
+        "minX": -222,
+        "maxX": -192,
+        "minZ": -427,
+        "maxZ": -397
+      },
+      {
+        "minX": -184,
+        "maxX": -154,
+        "minZ": -709,
+        "maxZ": -679
+      },
+      {
+        "minX": -224,
+        "maxX": -170,
+        "minZ": -721,
+        "maxZ": -667
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -156,
@@ -6708,6 +12212,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1055,
       "maxZ": -955
     },
+    "spawnNodes": [
+      {
+        "minX": -777,
+        "maxX": -761,
+        "minZ": -1013,
+        "maxZ": -997
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -777,
@@ -6743,6 +12255,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2871,
       "maxZ": -2724
     },
+    "spawnNodes": [
+      {
+        "minX": -1661,
+        "maxX": -1631,
+        "minZ": -2825,
+        "maxZ": -2795
+      },
+      {
+        "minX": -1648,
+        "maxX": -1618,
+        "minZ": -2764,
+        "maxZ": -2734
+      },
+      {
+        "minX": -1527,
+        "maxX": -1497,
+        "minZ": -2861,
+        "maxZ": -2831
+      },
+      {
+        "minX": -1476,
+        "maxX": -1446,
+        "minZ": -2853,
+        "maxZ": -2823
+      },
+      {
+        "minX": -1502,
+        "maxX": -1486,
+        "minZ": -2795,
+        "maxZ": -2779
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1527,
@@ -6784,6 +12328,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5365,
       "maxZ": -4890
     },
+    "spawnNodes": [
+      {
+        "minX": -922,
+        "maxX": -906,
+        "minZ": -5325,
+        "maxZ": -5309
+      },
+      {
+        "minX": -914,
+        "maxX": -898,
+        "minZ": -5345,
+        "maxZ": -5329
+      },
+      {
+        "minX": -824,
+        "maxX": -794,
+        "minZ": -4930,
+        "maxZ": -4900
+      },
+      {
+        "minX": -49,
+        "maxX": 51,
+        "minZ": -5056,
+        "maxZ": -4956
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -49,
@@ -6831,6 +12401,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5638,
       "maxZ": -5538
     },
+    "spawnNodes": [
+      {
+        "minX": -1564,
+        "maxX": -1538,
+        "minZ": -5601,
+        "maxZ": -5575
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1564,
@@ -6867,6 +12445,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2155,
       "maxZ": -1997
     },
+    "spawnNodes": [
+      {
+        "minX": -745,
+        "maxX": -729,
+        "minZ": -2023,
+        "maxZ": -2007
+      },
+      {
+        "minX": -712,
+        "maxX": -696,
+        "minZ": -2043,
+        "maxZ": -2027
+      },
+      {
+        "minX": -678,
+        "maxX": -662,
+        "minZ": -2057,
+        "maxZ": -2041
+      },
+      {
+        "minX": -774,
+        "maxX": -734,
+        "minZ": -2145,
+        "maxZ": -2105
+      },
+      {
+        "minX": -456,
+        "maxX": -436,
+        "minZ": -2073,
+        "maxZ": -2053
+      },
+      {
+        "minX": -388,
+        "maxX": -348,
+        "minZ": -2138,
+        "maxZ": -2098
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -456,
@@ -6914,6 +12530,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1260,
       "maxZ": -1160
     },
+    "spawnNodes": [
+      {
+        "minX": 1312,
+        "maxX": 1372,
+        "minZ": -1240,
+        "maxZ": -1180
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1312,
@@ -6949,6 +12573,74 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1670,
       "maxZ": -1357
     },
+    "spawnNodes": [
+      {
+        "minX": 1376,
+        "maxX": 1436,
+        "minZ": -1427,
+        "maxZ": -1367
+      },
+      {
+        "minX": 1352,
+        "maxX": 1412,
+        "minZ": -1512,
+        "maxZ": -1452
+      },
+      {
+        "minX": 1282,
+        "maxX": 1342,
+        "minZ": -1450,
+        "maxZ": -1390
+      },
+      {
+        "minX": 1183,
+        "maxX": 1243,
+        "minZ": -1492,
+        "maxZ": -1432
+      },
+      {
+        "minX": 1142,
+        "maxX": 1202,
+        "minZ": -1459,
+        "maxZ": -1399
+      },
+      {
+        "minX": 1083,
+        "maxX": 1143,
+        "minZ": -1472,
+        "maxZ": -1412
+      },
+      {
+        "minX": 1035,
+        "maxX": 1095,
+        "minZ": -1480,
+        "maxZ": -1420
+      },
+      {
+        "minX": 1179,
+        "maxX": 1299,
+        "minZ": -1651,
+        "maxZ": -1531
+      },
+      {
+        "minX": 1117,
+        "maxX": 1177,
+        "minZ": -1540,
+        "maxZ": -1480
+      },
+      {
+        "minX": 1134,
+        "maxX": 1184,
+        "minZ": -1660,
+        "maxZ": -1610
+      },
+      {
+        "minX": 1004,
+        "maxX": 1064,
+        "minZ": -1585,
+        "maxZ": -1525
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1004,
@@ -6988,6 +12680,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2117,
       "maxZ": -1688
     },
+    "spawnNodes": [
+      {
+        "minX": 638,
+        "maxX": 698,
+        "minZ": -1919,
+        "maxZ": -1859
+      },
+      {
+        "minX": 739,
+        "maxX": 799,
+        "minZ": -1821,
+        "maxZ": -1761
+      },
+      {
+        "minX": 758,
+        "maxX": 798,
+        "minZ": -1738,
+        "maxZ": -1698
+      },
+      {
+        "minX": 775,
+        "maxX": 835,
+        "minZ": -2107,
+        "maxZ": -2047
+      },
+      {
+        "minX": 705,
+        "maxX": 765,
+        "minZ": -1793,
+        "maxZ": -1733
+      },
+      {
+        "minX": 815,
+        "maxX": 875,
+        "minZ": -1787,
+        "maxZ": -1727
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 638,
@@ -7030,6 +12760,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -691,
       "maxZ": -591
     },
+    "spawnNodes": [
+      {
+        "minX": 265,
+        "maxX": 281,
+        "minZ": -649,
+        "maxZ": -633
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 265,
@@ -7067,6 +12805,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5505,
       "maxZ": -5371
     },
+    "spawnNodes": [
+      {
+        "minX": 1508,
+        "maxX": 1538,
+        "minZ": -5495,
+        "maxZ": -5465
+      },
+      {
+        "minX": 1488,
+        "maxX": 1548,
+        "minZ": -5475,
+        "maxZ": -5415
+      },
+      {
+        "minX": 1474,
+        "maxX": 1534,
+        "minZ": -5449,
+        "maxZ": -5389
+      },
+      {
+        "minX": 1496,
+        "maxX": 1516,
+        "minZ": -5401,
+        "maxZ": -5381
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1474,
@@ -7102,6 +12866,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1905,
       "maxZ": -1805
     },
+    "spawnNodes": [
+      {
+        "minX": 495,
+        "maxX": 515,
+        "minZ": -1865,
+        "maxZ": -1845
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 495,
@@ -7137,6 +12909,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2115,
       "maxZ": -2015
     },
+    "spawnNodes": [
+      {
+        "minX": 1000,
+        "maxX": 1044,
+        "minZ": -2087,
+        "maxZ": -2043
+      },
+      {
+        "minX": 1014,
+        "maxX": 1030,
+        "minZ": -2073,
+        "maxZ": -2057
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 994,
@@ -7174,6 +12960,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1058,
       "maxZ": -958
     },
+    "spawnNodes": [
+      {
+        "minX": 1352,
+        "maxX": 1412,
+        "minZ": -1038,
+        "maxZ": -978
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1352,
@@ -7213,6 +13007,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5473,
       "maxZ": -5253
     },
+    "spawnNodes": [
+      {
+        "minX": 659,
+        "maxX": 859,
+        "minZ": -5463,
+        "maxZ": -5263
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 659,
@@ -7252,6 +13054,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3839,
       "maxZ": -3593
     },
+    "spawnNodes": [
+      {
+        "minX": -887,
+        "maxX": -767,
+        "minZ": -3723,
+        "maxZ": -3603
+      },
+      {
+        "minX": -921,
+        "maxX": -801,
+        "minZ": -3829,
+        "maxZ": -3709
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -921,
@@ -7287,6 +13103,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2160,
       "maxZ": -2060
     },
+    "spawnNodes": [
+      {
+        "minX": 1096,
+        "maxX": 1112,
+        "minZ": -2118,
+        "maxZ": -2102
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1096,
@@ -7323,6 +13147,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2097,
       "maxZ": -1997
     },
+    "spawnNodes": [
+      {
+        "minX": 1008,
+        "maxX": 1024,
+        "minZ": -2055,
+        "maxZ": -2039
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1008,
@@ -7360,6 +13192,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -980,
       "maxZ": -787
     },
+    "spawnNodes": [
+      {
+        "minX": -1520,
+        "maxX": -1480,
+        "minZ": -875,
+        "maxZ": -835
+      },
+      {
+        "minX": -1614,
+        "maxX": -1574,
+        "minZ": -970,
+        "maxZ": -930
+      },
+      {
+        "minX": -1701,
+        "maxX": -1671,
+        "minZ": -830,
+        "maxZ": -800
+      },
+      {
+        "minX": -1672,
+        "maxX": -1642,
+        "minZ": -893,
+        "maxZ": -863
+      },
+      {
+        "minX": -1602,
+        "maxX": -1572,
+        "minZ": -901,
+        "maxZ": -871
+      },
+      {
+        "minX": -1632,
+        "maxX": -1602,
+        "minZ": -913,
+        "maxZ": -883
+      },
+      {
+        "minX": -1702,
+        "maxX": -1672,
+        "minZ": -827,
+        "maxZ": -797
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1702,
@@ -7396,6 +13272,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1480,
       "maxZ": -1380
     },
+    "spawnNodes": [
+      {
+        "minX": 711,
+        "maxX": 727,
+        "minZ": -1438,
+        "maxZ": -1422
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 711,
@@ -7432,6 +13316,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4455,
       "maxZ": -4352
     },
+    "spawnNodes": [
+      {
+        "minX": -1110,
+        "maxX": -1050,
+        "minZ": -4445,
+        "maxZ": -4385
+      },
+      {
+        "minX": -1018,
+        "maxX": -958,
+        "minZ": -4422,
+        "maxZ": -4362
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1110,
@@ -7469,6 +13367,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5375,
       "maxZ": -5173
     },
+    "spawnNodes": [
+      {
+        "minX": -998,
+        "maxX": -946,
+        "minZ": -5235,
+        "maxZ": -5183
+      },
+      {
+        "minX": -1105,
+        "maxX": -1045,
+        "minZ": -5365,
+        "maxZ": -5305
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1105,
@@ -7511,6 +13423,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5375,
       "maxZ": -5173
     },
+    "spawnNodes": [
+      {
+        "minX": -998,
+        "maxX": -946,
+        "minZ": -5235,
+        "maxZ": -5183
+      },
+      {
+        "minX": -1105,
+        "maxX": -1045,
+        "minZ": -5365,
+        "maxZ": -5305
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1105,
@@ -7553,6 +13479,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2225,
       "maxZ": -2125
     },
+    "spawnNodes": [
+      {
+        "minX": 582,
+        "maxX": 642,
+        "minZ": -2205,
+        "maxZ": -2145
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 582,
@@ -7590,6 +13524,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2418,
       "maxZ": -2318
     },
+    "spawnNodes": [
+      {
+        "minX": 785,
+        "maxX": 801,
+        "minZ": -2376,
+        "maxZ": -2360
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 785,
@@ -7627,6 +13569,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1103,
       "maxZ": -1003
     },
+    "spawnNodes": [
+      {
+        "minX": 1167,
+        "maxX": 1183,
+        "minZ": -1061,
+        "maxZ": -1045
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1167,
@@ -7664,6 +13614,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5260,
       "maxZ": -5150
     },
+    "spawnNodes": [
+      {
+        "minX": -1807,
+        "maxX": -1717,
+        "minZ": -5250,
+        "maxZ": -5160
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1807,
@@ -7700,6 +13658,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5401,
       "maxZ": -5118
     },
+    "spawnNodes": [
+      {
+        "minX": -1964,
+        "maxX": -1924,
+        "minZ": -5181,
+        "maxZ": -5141
+      },
+      {
+        "minX": -1961,
+        "maxX": -1917,
+        "minZ": -5176,
+        "maxZ": -5132
+      },
+      {
+        "minX": -1609,
+        "maxX": -1565,
+        "minZ": -5275,
+        "maxZ": -5231
+      },
+      {
+        "minX": -1421,
+        "maxX": -1377,
+        "minZ": -5368,
+        "maxZ": -5324
+      },
+      {
+        "minX": -1870,
+        "maxX": -1826,
+        "minZ": -5391,
+        "maxZ": -5347
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1968,
@@ -7754,6 +13744,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5375,
       "maxZ": -5173
     },
+    "spawnNodes": [
+      {
+        "minX": -998,
+        "maxX": -946,
+        "minZ": -5235,
+        "maxZ": -5183
+      },
+      {
+        "minX": -1105,
+        "maxX": -1045,
+        "minZ": -5365,
+        "maxZ": -5305
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1105,
@@ -7798,6 +13802,80 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4802,
       "maxZ": -4621
     },
+    "spawnNodes": [
+      {
+        "minX": 217,
+        "maxX": 233,
+        "minZ": -4724,
+        "maxZ": -4708
+      },
+      {
+        "minX": 193,
+        "maxX": 209,
+        "minZ": -4737,
+        "maxZ": -4721
+      },
+      {
+        "minX": 167,
+        "maxX": 183,
+        "minZ": -4747,
+        "maxZ": -4731
+      },
+      {
+        "minX": 150,
+        "maxX": 166,
+        "minZ": -4740,
+        "maxZ": -4724
+      },
+      {
+        "minX": 126,
+        "maxX": 142,
+        "minZ": -4725,
+        "maxZ": -4709
+      },
+      {
+        "minX": 112,
+        "maxX": 128,
+        "minZ": -4714,
+        "maxZ": -4698
+      },
+      {
+        "minX": 108,
+        "maxX": 124,
+        "minZ": -4695,
+        "maxZ": -4679
+      },
+      {
+        "minX": 112,
+        "maxX": 128,
+        "minZ": -4671,
+        "maxZ": -4655
+      },
+      {
+        "minX": 128,
+        "maxX": 144,
+        "minZ": -4665,
+        "maxZ": -4649
+      },
+      {
+        "minX": 149,
+        "maxX": 179,
+        "minZ": -4661,
+        "maxZ": -4631
+      },
+      {
+        "minX": 156,
+        "maxX": 172,
+        "minZ": -4764,
+        "maxZ": -4748
+      },
+      {
+        "minX": 164,
+        "maxX": 180,
+        "minZ": -4780,
+        "maxZ": -4764
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 108,
@@ -7834,6 +13912,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1401,
       "maxZ": -1032
     },
+    "spawnNodes": [
+      {
+        "minX": -297,
+        "maxX": -237,
+        "minZ": -1336,
+        "maxZ": -1276
+      },
+      {
+        "minX": -238,
+        "maxX": -202,
+        "minZ": -1234,
+        "maxZ": -1198
+      },
+      {
+        "minX": -131,
+        "maxX": -71,
+        "minZ": -1102,
+        "maxZ": -1042
+      },
+      {
+        "minX": -600,
+        "maxX": -584,
+        "minZ": -1386,
+        "maxZ": -1370
+      },
+      {
+        "minX": -574,
+        "maxX": -558,
+        "minZ": -1381,
+        "maxZ": -1365
+      },
+      {
+        "minX": -639,
+        "maxX": -623,
+        "minZ": -1364,
+        "maxZ": -1348
+      },
+      {
+        "minX": -654,
+        "maxX": -638,
+        "minZ": -1378,
+        "maxZ": -1362
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -297,
@@ -7883,6 +14005,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5425,
       "maxZ": -5325
     },
+    "spawnNodes": [
+      {
+        "minX": -1246,
+        "maxX": -1230,
+        "minZ": -5383,
+        "maxZ": -5367
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1246,
@@ -7920,6 +14050,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5425,
       "maxZ": -5325
     },
+    "spawnNodes": [
+      {
+        "minX": -1246,
+        "maxX": -1230,
+        "minZ": -5383,
+        "maxZ": -5367
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1246,
@@ -7956,6 +14094,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5483,
       "maxZ": -5284
     },
+    "spawnNodes": [
+      {
+        "minX": -542,
+        "maxX": -478,
+        "minZ": -5473,
+        "maxZ": -5409
+      },
+      {
+        "minX": -596,
+        "maxX": -496,
+        "minZ": -5394,
+        "maxZ": -5294
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -596,
@@ -7991,6 +14143,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5604,
       "maxZ": -5504
     },
+    "spawnNodes": [
+      {
+        "minX": -953,
+        "maxX": -905,
+        "minZ": -5578,
+        "maxZ": -5530
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -953,
@@ -8027,6 +14187,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5586,
       "maxZ": -5107
     },
+    "spawnNodes": [
+      {
+        "minX": -1384,
+        "maxX": -1264,
+        "minZ": -5576,
+        "maxZ": -5456
+      },
+      {
+        "minX": -1310,
+        "maxX": -1238,
+        "minZ": -5454,
+        "maxZ": -5382
+      },
+      {
+        "minX": -1212,
+        "maxX": -1112,
+        "minZ": -5376,
+        "maxZ": -5276
+      },
+      {
+        "minX": -1290,
+        "maxX": -1226,
+        "minZ": -5181,
+        "maxZ": -5117
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1384,
@@ -8071,6 +14257,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1570,
       "maxZ": -1470
     },
+    "spawnNodes": [
+      {
+        "minX": 1245,
+        "maxX": 1261,
+        "minZ": -1509,
+        "maxZ": -1493
+      },
+      {
+        "minX": 1210,
+        "maxX": 1226,
+        "minZ": -1514,
+        "maxZ": -1498
+      },
+      {
+        "minX": 1194,
+        "maxX": 1210,
+        "minZ": -1523,
+        "maxZ": -1507
+      },
+      {
+        "minX": 1163,
+        "maxX": 1179,
+        "minZ": -1533,
+        "maxZ": -1517
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1159,
@@ -8110,6 +14322,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -982,
       "maxZ": -649
     },
+    "spawnNodes": [
+      {
+        "minX": -105,
+        "maxX": 35,
+        "minZ": -799,
+        "maxZ": -659
+      },
+      {
+        "minX": -61,
+        "maxX": 79,
+        "minZ": -972,
+        "maxZ": -832
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -105,
@@ -8145,6 +14371,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3909,
       "maxZ": -3809
     },
+    "spawnNodes": [
+      {
+        "minX": 884,
+        "maxX": 900,
+        "minZ": -3867,
+        "maxZ": -3851
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 884,
@@ -8180,6 +14414,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1719,
       "maxZ": -1346
     },
+    "spawnNodes": [
+      {
+        "minX": 254,
+        "maxX": 302,
+        "minZ": -1676,
+        "maxZ": -1628
+      },
+      {
+        "minX": -80,
+        "maxX": -30,
+        "minZ": -1709,
+        "maxZ": -1659
+      },
+      {
+        "minX": -123,
+        "maxX": -73,
+        "minZ": -1573,
+        "maxZ": -1523
+      },
+      {
+        "minX": -200,
+        "maxX": -150,
+        "minZ": -1406,
+        "maxZ": -1356
+      },
+      {
+        "minX": 192,
+        "maxX": 242,
+        "minZ": -1510,
+        "maxZ": -1460
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 192,
@@ -8239,6 +14505,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -962,
       "maxZ": -820
     },
+    "spawnNodes": [
+      {
+        "minX": -521,
+        "maxX": -503,
+        "minZ": -898,
+        "maxZ": -880
+      },
+      {
+        "minX": -505,
+        "maxX": -465,
+        "minZ": -870,
+        "maxZ": -830
+      },
+      {
+        "minX": -658,
+        "maxX": -614,
+        "minZ": -948,
+        "maxZ": -904
+      },
+      {
+        "minX": -600,
+        "maxX": -576,
+        "minZ": -936,
+        "maxZ": -912
+      },
+      {
+        "minX": -558,
+        "maxX": -534,
+        "minZ": -936,
+        "maxZ": -912
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -658,
@@ -8275,6 +14573,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3256,
       "maxZ": -3156
     },
+    "spawnNodes": [
+      {
+        "minX": -640,
+        "maxX": -624,
+        "minZ": -3216,
+        "maxZ": -3200
+      },
+      {
+        "minX": -638,
+        "maxX": -622,
+        "minZ": -3201,
+        "maxZ": -3185
+      },
+      {
+        "minX": -641,
+        "maxX": -625,
+        "minZ": -3215,
+        "maxZ": -3199
+      },
+      {
+        "minX": -698,
+        "maxX": -682,
+        "minZ": -3214,
+        "maxZ": -3198
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -698,
@@ -8314,6 +14638,86 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1476,
       "maxZ": -1211
     },
+    "spawnNodes": [
+      {
+        "minX": 1034,
+        "maxX": 1064,
+        "minZ": -1384,
+        "maxZ": -1354
+      },
+      {
+        "minX": 1058,
+        "maxX": 1078,
+        "minZ": -1312,
+        "maxZ": -1292
+      },
+      {
+        "minX": 1096,
+        "maxX": 1116,
+        "minZ": -1290,
+        "maxZ": -1270
+      },
+      {
+        "minX": 1063,
+        "maxX": 1099,
+        "minZ": -1299,
+        "maxZ": -1263
+      },
+      {
+        "minX": 1063,
+        "maxX": 1099,
+        "minZ": -1299,
+        "maxZ": -1263
+      },
+      {
+        "minX": 1048,
+        "maxX": 1068,
+        "minZ": -1266,
+        "maxZ": -1246
+      },
+      {
+        "minX": 1068,
+        "maxX": 1088,
+        "minZ": -1252,
+        "maxZ": -1232
+      },
+      {
+        "minX": 1025,
+        "maxX": 1045,
+        "minZ": -1261,
+        "maxZ": -1241
+      },
+      {
+        "minX": 978,
+        "maxX": 1018,
+        "minZ": -1269,
+        "maxZ": -1229
+      },
+      {
+        "minX": 1420,
+        "maxX": 1440,
+        "minZ": -1279,
+        "maxZ": -1259
+      },
+      {
+        "minX": 1459,
+        "maxX": 1483,
+        "minZ": -1422,
+        "maxZ": -1398
+      },
+      {
+        "minX": 1465,
+        "maxX": 1489,
+        "minZ": -1438,
+        "maxZ": -1414
+      },
+      {
+        "minX": 1457,
+        "maxX": 1481,
+        "minZ": -1462,
+        "maxZ": -1438
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 978,
@@ -8363,6 +14767,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1788,
       "maxZ": -1474
     },
+    "spawnNodes": [
+      {
+        "minX": 41,
+        "maxX": 57,
+        "minZ": -1673,
+        "maxZ": -1657
+      },
+      {
+        "minX": 30,
+        "maxX": 46,
+        "minZ": -1778,
+        "maxZ": -1762
+      },
+      {
+        "minX": 221,
+        "maxX": 237,
+        "minZ": -1717,
+        "maxZ": -1701
+      },
+      {
+        "minX": 290,
+        "maxX": 306,
+        "minZ": -1685,
+        "maxZ": -1669
+      },
+      {
+        "minX": 300,
+        "maxX": 316,
+        "minZ": -1572,
+        "maxZ": -1556
+      },
+      {
+        "minX": 248,
+        "maxX": 264,
+        "minZ": -1722,
+        "maxZ": -1706
+      },
+      {
+        "minX": 222,
+        "maxX": 238,
+        "minZ": -1530,
+        "maxZ": -1514
+      },
+      {
+        "minX": 155,
+        "maxX": 171,
+        "minZ": -1511,
+        "maxZ": -1495
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 221,
@@ -8422,6 +14876,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3999,
       "maxZ": -3859
     },
+    "spawnNodes": [
+      {
+        "minX": 797,
+        "maxX": 917,
+        "minZ": -3989,
+        "maxZ": -3869
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 797,
@@ -8462,6 +14924,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5445,
       "maxZ": -5125
     },
+    "spawnNodes": [
+      {
+        "minX": -1777,
+        "maxX": -1477,
+        "minZ": -5435,
+        "maxZ": -5135
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1777,
@@ -8497,6 +14967,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2188,
       "maxZ": -2067
     },
+    "spawnNodes": [
+      {
+        "minX": 1133,
+        "maxX": 1165,
+        "minZ": -2178,
+        "maxZ": -2146
+      },
+      {
+        "minX": 1160,
+        "maxX": 1184,
+        "minZ": -2161,
+        "maxZ": -2137
+      },
+      {
+        "minX": 1182,
+        "maxX": 1206,
+        "minZ": -2151,
+        "maxZ": -2127
+      },
+      {
+        "minX": 1203,
+        "maxX": 1223,
+        "minZ": -2165,
+        "maxZ": -2145
+      },
+      {
+        "minX": 1178,
+        "maxX": 1194,
+        "minZ": -2172,
+        "maxZ": -2156
+      },
+      {
+        "minX": 1095,
+        "maxX": 1111,
+        "minZ": -2107,
+        "maxZ": -2091
+      },
+      {
+        "minX": 1086,
+        "maxX": 1106,
+        "minZ": -2128,
+        "maxZ": -2108
+      },
+      {
+        "minX": 1080,
+        "maxX": 1096,
+        "minZ": -2099,
+        "maxZ": -2083
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1065,
@@ -8534,6 +15054,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5483,
       "maxZ": -5284
     },
+    "spawnNodes": [
+      {
+        "minX": -542,
+        "maxX": -478,
+        "minZ": -5473,
+        "maxZ": -5409
+      },
+      {
+        "minX": -596,
+        "maxX": -496,
+        "minZ": -5394,
+        "maxZ": -5294
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -596,
@@ -8573,6 +15107,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4002,
       "maxZ": -3889
     },
+    "spawnNodes": [
+      {
+        "minX": 967,
+        "maxX": 1017,
+        "minZ": -3949,
+        "maxZ": -3899
+      },
+      {
+        "minX": 718,
+        "maxX": 768,
+        "minZ": -3992,
+        "maxZ": -3942
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 718,
@@ -8615,6 +15163,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3874,
       "maxZ": -3774
     },
+    "spawnNodes": [
+      {
+        "minX": -869,
+        "maxX": -853,
+        "minZ": -3840,
+        "maxZ": -3824
+      },
+      {
+        "minX": -893,
+        "maxX": -873,
+        "minZ": -3829,
+        "maxZ": -3809
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -901,
@@ -8654,6 +15216,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2019,
       "maxZ": -1579
     },
+    "spawnNodes": [
+      {
+        "minX": -695,
+        "maxX": -595,
+        "minZ": -1786,
+        "maxZ": -1686
+      },
+      {
+        "minX": -932,
+        "maxX": -812,
+        "minZ": -1980,
+        "maxZ": -1860
+      },
+      {
+        "minX": -731,
+        "maxX": -311,
+        "minZ": -2009,
+        "maxZ": -1589
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -731,
@@ -8695,6 +15277,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2398,
       "maxZ": -2261
     },
+    "spawnNodes": [
+      {
+        "minX": 1113,
+        "maxX": 1153,
+        "minZ": -2388,
+        "maxZ": -2348
+      },
+      {
+        "minX": 1146,
+        "maxX": 1186,
+        "minZ": -2311,
+        "maxZ": -2271
+      },
+      {
+        "minX": 1144,
+        "maxX": 1176,
+        "minZ": -2339,
+        "maxZ": -2307
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1113,
@@ -8731,6 +15333,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3878,
       "maxZ": -2906
     },
+    "spawnNodes": [
+      {
+        "minX": 772,
+        "maxX": 972,
+        "minZ": -3116,
+        "maxZ": -2916
+      },
+      {
+        "minX": 352,
+        "maxX": 552,
+        "minZ": -3868,
+        "maxZ": -3668
+      },
+      {
+        "minX": 27,
+        "maxX": 227,
+        "minZ": -3671,
+        "maxZ": -3471
+      },
+      {
+        "minX": -393,
+        "maxX": -193,
+        "minZ": -3375,
+        "maxZ": -3175
+      },
+      {
+        "minX": 353,
+        "maxX": 553,
+        "minZ": -3868,
+        "maxZ": -3668
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 352,
@@ -8784,6 +15418,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3999,
       "maxZ": -3859
     },
+    "spawnNodes": [
+      {
+        "minX": 797,
+        "maxX": 917,
+        "minZ": -3989,
+        "maxZ": -3869
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 797,
@@ -8820,6 +15462,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1094,
       "maxZ": -608
     },
+    "spawnNodes": [
+      {
+        "minX": 637,
+        "maxX": 693,
+        "minZ": -1084,
+        "maxZ": -1028
+      },
+      {
+        "minX": 632,
+        "maxX": 688,
+        "minZ": -1021,
+        "maxZ": -965
+      },
+      {
+        "minX": 621,
+        "maxX": 677,
+        "minZ": -1040,
+        "maxZ": -984
+      },
+      {
+        "minX": 477,
+        "maxX": 553,
+        "minZ": -863,
+        "maxZ": -787
+      },
+      {
+        "minX": 639,
+        "maxX": 715,
+        "minZ": -847,
+        "maxZ": -771
+      },
+      {
+        "minX": 692,
+        "maxX": 852,
+        "minZ": -900,
+        "maxZ": -740
+      },
+      {
+        "minX": 662,
+        "maxX": 822,
+        "minZ": -778,
+        "maxZ": -618
+      },
+      {
+        "minX": 662,
+        "maxX": 742,
+        "minZ": -912,
+        "maxZ": -832
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 639,
@@ -8867,6 +15559,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2158,
       "maxZ": -1660
     },
+    "spawnNodes": [
+      {
+        "minX": 1179,
+        "maxX": 1195,
+        "minZ": -2148,
+        "maxZ": -2132
+      },
+      {
+        "minX": 1102,
+        "maxX": 1118,
+        "minZ": -2112,
+        "maxZ": -2096
+      },
+      {
+        "minX": 960,
+        "maxX": 976,
+        "minZ": -1713,
+        "maxZ": -1697
+      },
+      {
+        "minX": 959,
+        "maxX": 975,
+        "minZ": -1686,
+        "maxZ": -1670
+      },
+      {
+        "minX": 968,
+        "maxX": 984,
+        "minZ": -1742,
+        "maxZ": -1726
+      },
+      {
+        "minX": 969,
+        "maxX": 1001,
+        "minZ": -1793,
+        "maxZ": -1761
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 957,
@@ -8915,6 +15645,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2207,
       "maxZ": -1714
     },
+    "spawnNodes": [
+      {
+        "minX": 1444,
+        "maxX": 1504,
+        "minZ": -2197,
+        "maxZ": -2137
+      },
+      {
+        "minX": 994,
+        "maxX": 1024,
+        "minZ": -1754,
+        "maxZ": -1724
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1444,
@@ -8958,6 +15702,116 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5578,
       "maxZ": -5167
     },
+    "spawnNodes": [
+      {
+        "minX": 1202,
+        "maxX": 1232,
+        "minZ": -5426,
+        "maxZ": -5396
+      },
+      {
+        "minX": 1191,
+        "maxX": 1209,
+        "minZ": -5520,
+        "maxZ": -5502
+      },
+      {
+        "minX": 1295,
+        "maxX": 1345,
+        "minZ": -5430,
+        "maxZ": -5380
+      },
+      {
+        "minX": 1318,
+        "maxX": 1368,
+        "minZ": -5413,
+        "maxZ": -5363
+      },
+      {
+        "minX": 1343,
+        "maxX": 1383,
+        "minZ": -5401,
+        "maxZ": -5361
+      },
+      {
+        "minX": 1339,
+        "maxX": 1369,
+        "minZ": -5441,
+        "maxZ": -5411
+      },
+      {
+        "minX": 1390,
+        "maxX": 1414,
+        "minZ": -5462,
+        "maxZ": -5438
+      },
+      {
+        "minX": 1515,
+        "maxX": 1531,
+        "minZ": -5460,
+        "maxZ": -5444
+      },
+      {
+        "minX": 1336,
+        "maxX": 1352,
+        "minZ": -5460,
+        "maxZ": -5444
+      },
+      {
+        "minX": 1470,
+        "maxX": 1490,
+        "minZ": -5531,
+        "maxZ": -5511
+      },
+      {
+        "minX": 1431,
+        "maxX": 1461,
+        "minZ": -5207,
+        "maxZ": -5177
+      },
+      {
+        "minX": 1135,
+        "maxX": 1151,
+        "minZ": -5461,
+        "maxZ": -5445
+      },
+      {
+        "minX": 1123,
+        "maxX": 1139,
+        "minZ": -5503,
+        "maxZ": -5487
+      },
+      {
+        "minX": 1085,
+        "maxX": 1101,
+        "minZ": -5506,
+        "maxZ": -5490
+      },
+      {
+        "minX": 1086,
+        "maxX": 1102,
+        "minZ": -5479,
+        "maxZ": -5463
+      },
+      {
+        "minX": 1077,
+        "maxX": 1097,
+        "minZ": -5531,
+        "maxZ": -5511
+      },
+      {
+        "minX": 1104,
+        "maxX": 1120,
+        "minZ": -5534,
+        "maxZ": -5518
+      },
+      {
+        "minX": 1130,
+        "maxX": 1146,
+        "minZ": -5563,
+        "maxZ": -5547
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1077,
@@ -9013,6 +15867,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5586,
       "maxZ": -5107
     },
+    "spawnNodes": [
+      {
+        "minX": -1384,
+        "maxX": -1264,
+        "minZ": -5576,
+        "maxZ": -5456
+      },
+      {
+        "minX": -1310,
+        "maxX": -1238,
+        "minZ": -5454,
+        "maxZ": -5382
+      },
+      {
+        "minX": -1212,
+        "maxX": -1112,
+        "minZ": -5376,
+        "maxZ": -5276
+      },
+      {
+        "minX": -1290,
+        "maxX": -1226,
+        "minZ": -5181,
+        "maxZ": -5117
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1384,
@@ -9056,6 +15936,116 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5578,
       "maxZ": -5167
     },
+    "spawnNodes": [
+      {
+        "minX": 1202,
+        "maxX": 1232,
+        "minZ": -5426,
+        "maxZ": -5396
+      },
+      {
+        "minX": 1191,
+        "maxX": 1209,
+        "minZ": -5520,
+        "maxZ": -5502
+      },
+      {
+        "minX": 1295,
+        "maxX": 1345,
+        "minZ": -5430,
+        "maxZ": -5380
+      },
+      {
+        "minX": 1318,
+        "maxX": 1368,
+        "minZ": -5413,
+        "maxZ": -5363
+      },
+      {
+        "minX": 1343,
+        "maxX": 1383,
+        "minZ": -5401,
+        "maxZ": -5361
+      },
+      {
+        "minX": 1339,
+        "maxX": 1369,
+        "minZ": -5441,
+        "maxZ": -5411
+      },
+      {
+        "minX": 1390,
+        "maxX": 1414,
+        "minZ": -5462,
+        "maxZ": -5438
+      },
+      {
+        "minX": 1515,
+        "maxX": 1531,
+        "minZ": -5460,
+        "maxZ": -5444
+      },
+      {
+        "minX": 1336,
+        "maxX": 1352,
+        "minZ": -5460,
+        "maxZ": -5444
+      },
+      {
+        "minX": 1470,
+        "maxX": 1490,
+        "minZ": -5531,
+        "maxZ": -5511
+      },
+      {
+        "minX": 1431,
+        "maxX": 1461,
+        "minZ": -5207,
+        "maxZ": -5177
+      },
+      {
+        "minX": 1135,
+        "maxX": 1151,
+        "minZ": -5461,
+        "maxZ": -5445
+      },
+      {
+        "minX": 1123,
+        "maxX": 1139,
+        "minZ": -5503,
+        "maxZ": -5487
+      },
+      {
+        "minX": 1085,
+        "maxX": 1101,
+        "minZ": -5506,
+        "maxZ": -5490
+      },
+      {
+        "minX": 1086,
+        "maxX": 1102,
+        "minZ": -5479,
+        "maxZ": -5463
+      },
+      {
+        "minX": 1077,
+        "maxX": 1097,
+        "minZ": -5531,
+        "maxZ": -5511
+      },
+      {
+        "minX": 1104,
+        "maxX": 1120,
+        "minZ": -5534,
+        "maxZ": -5518
+      },
+      {
+        "minX": 1130,
+        "maxX": 1146,
+        "minZ": -5563,
+        "maxZ": -5547
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1077,
@@ -9111,6 +16101,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -471,
       "maxZ": -319
     },
+    "spawnNodes": [
+      {
+        "minX": -305,
+        "maxX": -225,
+        "minZ": -426,
+        "maxZ": -346
+      },
+      {
+        "minX": -276,
+        "maxX": -196,
+        "minZ": -440,
+        "maxZ": -360
+      },
+      {
+        "minX": -228,
+        "maxX": -148,
+        "minZ": -409,
+        "maxZ": -329
+      },
+      {
+        "minX": -229,
+        "maxX": -149,
+        "minZ": -461,
+        "maxZ": -381
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -305,
@@ -9147,6 +16163,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2219,
       "maxZ": -2119
     },
+    "spawnNodes": [
+      {
+        "minX": 1129,
+        "maxX": 1145,
+        "minZ": -2204,
+        "maxZ": -2188
+      },
+      {
+        "minX": 1440,
+        "maxX": 1456,
+        "minZ": -2151,
+        "maxZ": -2135
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1440,
@@ -9190,6 +16220,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -378,
       "maxZ": -179
     },
+    "spawnNodes": [
+      {
+        "minX": -57,
+        "maxX": -41,
+        "minZ": -368,
+        "maxZ": -352
+      },
+      {
+        "minX": -64,
+        "maxX": -34,
+        "minZ": -338,
+        "maxZ": -308
+      },
+      {
+        "minX": -45,
+        "maxX": -29,
+        "minZ": -313,
+        "maxZ": -297
+      },
+      {
+        "minX": -20,
+        "maxX": 0,
+        "minZ": -284,
+        "maxZ": -264
+      },
+      {
+        "minX": -16,
+        "maxX": 0,
+        "minZ": -262,
+        "maxZ": -246
+      },
+      {
+        "minX": -60,
+        "maxX": -30,
+        "minZ": -271,
+        "maxZ": -241
+      },
+      {
+        "minX": -34,
+        "maxX": -14,
+        "minZ": -228,
+        "maxZ": -208
+      },
+      {
+        "minX": -50,
+        "maxX": -30,
+        "minZ": -227,
+        "maxZ": -207
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -64,
@@ -9230,6 +16310,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1629,
       "maxZ": -1253
     },
+    "spawnNodes": [
+      {
+        "minX": 1405,
+        "maxX": 1445,
+        "minZ": -1445,
+        "maxZ": -1405
+      },
+      {
+        "minX": 1418,
+        "maxX": 1458,
+        "minZ": -1487,
+        "maxZ": -1447
+      },
+      {
+        "minX": 1349,
+        "maxX": 1399,
+        "minZ": -1544,
+        "maxZ": -1494
+      },
+      {
+        "minX": 1310,
+        "maxX": 1350,
+        "minZ": -1560,
+        "maxZ": -1520
+      },
+      {
+        "minX": 1165,
+        "maxX": 1215,
+        "minZ": -1619,
+        "maxZ": -1569
+      },
+      {
+        "minX": 1083,
+        "maxX": 1123,
+        "minZ": -1558,
+        "maxZ": -1518
+      },
+      {
+        "minX": 1034,
+        "maxX": 1074,
+        "minZ": -1535,
+        "maxZ": -1495
+      },
+      {
+        "minX": 1056,
+        "maxX": 1146,
+        "minZ": -1353,
+        "maxZ": -1263
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1310,
@@ -9277,6 +16407,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5617,
       "maxZ": -5517
     },
+    "spawnNodes": [
+      {
+        "minX": 1435,
+        "maxX": 1451,
+        "minZ": -5544,
+        "maxZ": -5528
+      },
+      {
+        "minX": 1474,
+        "maxX": 1490,
+        "minZ": -5548,
+        "maxZ": -5532
+      },
+      {
+        "minX": 1456,
+        "maxX": 1472,
+        "minZ": -5560,
+        "maxZ": -5544
+      },
+      {
+        "minX": 1456,
+        "maxX": 1474,
+        "minZ": -5603,
+        "maxZ": -5585
+      },
+      {
+        "minX": 1469,
+        "maxX": 1487,
+        "minZ": -5581,
+        "maxZ": -5563
+      },
+      {
+        "minX": 1489,
+        "maxX": 1527,
+        "minZ": -5597,
+        "maxZ": -5559
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1435,
@@ -9312,6 +16480,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5617,
       "maxZ": -5517
     },
+    "spawnNodes": [
+      {
+        "minX": 1435,
+        "maxX": 1451,
+        "minZ": -5544,
+        "maxZ": -5528
+      },
+      {
+        "minX": 1474,
+        "maxX": 1490,
+        "minZ": -5548,
+        "maxZ": -5532
+      },
+      {
+        "minX": 1456,
+        "maxX": 1472,
+        "minZ": -5560,
+        "maxZ": -5544
+      },
+      {
+        "minX": 1456,
+        "maxX": 1474,
+        "minZ": -5603,
+        "maxZ": -5585
+      },
+      {
+        "minX": 1469,
+        "maxX": 1487,
+        "minZ": -5581,
+        "maxZ": -5563
+      },
+      {
+        "minX": 1489,
+        "maxX": 1527,
+        "minZ": -5597,
+        "maxZ": -5559
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1435,
@@ -9349,6 +16555,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1767,
       "maxZ": -1667
     },
+    "spawnNodes": [
+      {
+        "minX": -572,
+        "maxX": -556,
+        "minZ": -1737,
+        "maxZ": -1721
+      },
+      {
+        "minX": -572,
+        "maxX": -556,
+        "minZ": -1737,
+        "maxZ": -1721
+      },
+      {
+        "minX": -572,
+        "maxX": -556,
+        "minZ": -1713,
+        "maxZ": -1697
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -592,
@@ -9386,6 +16612,86 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3430,
       "maxZ": -3012
     },
+    "spawnNodes": [
+      {
+        "minX": -225,
+        "maxX": -195,
+        "minZ": -3420,
+        "maxZ": -3390
+      },
+      {
+        "minX": -228,
+        "maxX": -198,
+        "minZ": -3387,
+        "maxZ": -3357
+      },
+      {
+        "minX": -225,
+        "maxX": -195,
+        "minZ": -3341,
+        "maxZ": -3311
+      },
+      {
+        "minX": -191,
+        "maxX": -161,
+        "minZ": -3298,
+        "maxZ": -3268
+      },
+      {
+        "minX": -156,
+        "maxX": -126,
+        "minZ": -3268,
+        "maxZ": -3238
+      },
+      {
+        "minX": -124,
+        "maxX": -94,
+        "minZ": -3232,
+        "maxZ": -3202
+      },
+      {
+        "minX": -125,
+        "maxX": -95,
+        "minZ": -3205,
+        "maxZ": -3175
+      },
+      {
+        "minX": -157,
+        "maxX": -127,
+        "minZ": -3138,
+        "maxZ": -3108
+      },
+      {
+        "minX": -207,
+        "maxX": -177,
+        "minZ": -3139,
+        "maxZ": -3109
+      },
+      {
+        "minX": -208,
+        "maxX": -178,
+        "minZ": -3109,
+        "maxZ": -3079
+      },
+      {
+        "minX": -185,
+        "maxX": -155,
+        "minZ": -3061,
+        "maxZ": -3031
+      },
+      {
+        "minX": -146,
+        "maxX": -86,
+        "minZ": -3082,
+        "maxZ": -3022
+      },
+      {
+        "minX": -114,
+        "maxX": -54,
+        "minZ": -3283,
+        "maxZ": -3223
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -228,
@@ -9422,6 +16728,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1687,
       "maxZ": -1587
     },
+    "spawnNodes": [
+      {
+        "minX": 608,
+        "maxX": 624,
+        "minZ": -1645,
+        "maxZ": -1629
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 608,
@@ -9457,6 +16771,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1728,
       "maxZ": -1628
     },
+    "spawnNodes": [
+      {
+        "minX": 1307,
+        "maxX": 1323,
+        "minZ": -1686,
+        "maxZ": -1670
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1307,
@@ -9492,6 +16814,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2157,
       "maxZ": -2057
     },
+    "spawnNodes": [
+      {
+        "minX": 468,
+        "maxX": 500,
+        "minZ": -2123,
+        "maxZ": -2091
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 468,
@@ -9528,6 +16858,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1494,
       "maxZ": -1394
     },
+    "spawnNodes": [
+      {
+        "minX": -1204,
+        "maxX": -1188,
+        "minZ": -1422,
+        "maxZ": -1406
+      },
+      {
+        "minX": -1074,
+        "maxX": -1058,
+        "minZ": -1459,
+        "maxZ": -1443
+      },
+      {
+        "minX": -1070,
+        "maxX": -1054,
+        "minZ": -1466,
+        "maxZ": -1450
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1092,
@@ -9569,6 +16919,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1988,
       "maxZ": -1848
     },
+    "spawnNodes": [
+      {
+        "minX": 1245,
+        "maxX": 1365,
+        "minZ": -1978,
+        "maxZ": -1858
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1245,
@@ -9605,6 +16963,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5676,
       "maxZ": -5576
     },
+    "spawnNodes": [
+      {
+        "minX": -1167,
+        "maxX": -1151,
+        "minZ": -5653,
+        "maxZ": -5637
+      },
+      {
+        "minX": -1135,
+        "maxX": -1119,
+        "minZ": -5616,
+        "maxZ": -5600
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1171,
@@ -9640,6 +17012,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2943,
       "maxZ": -2843
     },
+    "spawnNodes": [
+      {
+        "minX": 465,
+        "maxX": 481,
+        "minZ": -2901,
+        "maxZ": -2885
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 465,
@@ -9676,6 +17056,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2984,
       "maxZ": -2790
     },
+    "spawnNodes": [
+      {
+        "minX": 499,
+        "maxX": 529,
+        "minZ": -2830,
+        "maxZ": -2800
+      },
+      {
+        "minX": 549,
+        "maxX": 579,
+        "minZ": -2974,
+        "maxZ": -2944
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 549,
@@ -9718,6 +17112,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -650,
       "maxZ": -430
     },
+    "spawnNodes": [
+      {
+        "minX": 737,
+        "maxX": 937,
+        "minZ": -640,
+        "maxZ": -440
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 737,
@@ -9754,6 +17156,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -650,
       "maxZ": -430
     },
+    "spawnNodes": [
+      {
+        "minX": 737,
+        "maxX": 937,
+        "minZ": -640,
+        "maxZ": -440
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 737,
@@ -9790,6 +17200,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4928,
       "maxZ": -4828
     },
+    "spawnNodes": [
+      {
+        "minX": 1103,
+        "maxX": 1143,
+        "minZ": -4898,
+        "maxZ": -4858
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1103,
@@ -9825,6 +17243,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4814,
       "maxZ": -4714
     },
+    "spawnNodes": [
+      {
+        "minX": 653,
+        "maxX": 669,
+        "minZ": -4765,
+        "maxZ": -4749
+      },
+      {
+        "minX": 658,
+        "maxX": 674,
+        "minZ": -4780,
+        "maxZ": -4764
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 636,
@@ -9860,6 +17292,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4700,
       "maxZ": -4600
     },
+    "spawnNodes": [
+      {
+        "minX": -1378,
+        "maxX": -1362,
+        "minZ": -4658,
+        "maxZ": -4642
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1378,
@@ -9895,6 +17335,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4455,
       "maxZ": -4352
     },
+    "spawnNodes": [
+      {
+        "minX": -1110,
+        "maxX": -1050,
+        "minZ": -4445,
+        "maxZ": -4385
+      },
+      {
+        "minX": -1018,
+        "maxX": -958,
+        "minZ": -4422,
+        "maxZ": -4362
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1110,
@@ -9935,6 +17389,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4771,
       "maxZ": -4671
     },
+    "spawnNodes": [
+      {
+        "minX": -1923,
+        "maxX": -1907,
+        "minZ": -4729,
+        "maxZ": -4713
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1923,
@@ -9975,6 +17437,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4817,
       "maxZ": -4717
     },
+    "spawnNodes": [
+      {
+        "minX": -1940,
+        "maxX": -1924,
+        "minZ": -4775,
+        "maxZ": -4759
+      },
+      {
+        "minX": -1923,
+        "maxX": -1907,
+        "minZ": -4775,
+        "maxZ": -4759
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1951,
@@ -10012,6 +17488,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -579,
       "maxZ": -479
     },
+    "spawnNodes": [
+      {
+        "minX": -703,
+        "maxX": -673,
+        "minZ": -544,
+        "maxZ": -514
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -703,
@@ -10050,6 +17534,80 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4878,
       "maxZ": -4537
     },
+    "spawnNodes": [
+      {
+        "minX": 364,
+        "maxX": 380,
+        "minZ": -4563,
+        "maxZ": -4547
+      },
+      {
+        "minX": 351,
+        "maxX": 371,
+        "minZ": -4588,
+        "maxZ": -4568
+      },
+      {
+        "minX": 344,
+        "maxX": 360,
+        "minZ": -4600,
+        "maxZ": -4584
+      },
+      {
+        "minX": 339,
+        "maxX": 359,
+        "minZ": -4618,
+        "maxZ": -4598
+      },
+      {
+        "minX": 349,
+        "maxX": 365,
+        "minZ": -4633,
+        "maxZ": -4617
+      },
+      {
+        "minX": 352,
+        "maxX": 368,
+        "minZ": -4656,
+        "maxZ": -4640
+      },
+      {
+        "minX": 345,
+        "maxX": 361,
+        "minZ": -4675,
+        "maxZ": -4659
+      },
+      {
+        "minX": 344,
+        "maxX": 360,
+        "minZ": -4696,
+        "maxZ": -4680
+      },
+      {
+        "minX": 329,
+        "maxX": 349,
+        "minZ": -4711,
+        "maxZ": -4691
+      },
+      {
+        "minX": 325,
+        "maxX": 345,
+        "minZ": -4758,
+        "maxZ": -4738
+      },
+      {
+        "minX": 356,
+        "maxX": 372,
+        "minZ": -4835,
+        "maxZ": -4819
+      },
+      {
+        "minX": 370,
+        "maxX": 386,
+        "minZ": -4861,
+        "maxZ": -4845
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 309,
@@ -10094,6 +17652,80 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4878,
       "maxZ": -4537
     },
+    "spawnNodes": [
+      {
+        "minX": 364,
+        "maxX": 380,
+        "minZ": -4563,
+        "maxZ": -4547
+      },
+      {
+        "minX": 351,
+        "maxX": 371,
+        "minZ": -4588,
+        "maxZ": -4568
+      },
+      {
+        "minX": 344,
+        "maxX": 360,
+        "minZ": -4600,
+        "maxZ": -4584
+      },
+      {
+        "minX": 339,
+        "maxX": 359,
+        "minZ": -4618,
+        "maxZ": -4598
+      },
+      {
+        "minX": 349,
+        "maxX": 365,
+        "minZ": -4633,
+        "maxZ": -4617
+      },
+      {
+        "minX": 352,
+        "maxX": 368,
+        "minZ": -4656,
+        "maxZ": -4640
+      },
+      {
+        "minX": 345,
+        "maxX": 361,
+        "minZ": -4675,
+        "maxZ": -4659
+      },
+      {
+        "minX": 344,
+        "maxX": 360,
+        "minZ": -4696,
+        "maxZ": -4680
+      },
+      {
+        "minX": 329,
+        "maxX": 349,
+        "minZ": -4711,
+        "maxZ": -4691
+      },
+      {
+        "minX": 325,
+        "maxX": 345,
+        "minZ": -4758,
+        "maxZ": -4738
+      },
+      {
+        "minX": 356,
+        "maxX": 372,
+        "minZ": -4835,
+        "maxZ": -4819
+      },
+      {
+        "minX": 370,
+        "maxX": 386,
+        "minZ": -4861,
+        "maxZ": -4845
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 309,
@@ -10135,6 +17767,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5339,
       "maxZ": -5239
     },
+    "spawnNodes": [
+      {
+        "minX": -1055,
+        "maxX": -1023,
+        "minZ": -5305,
+        "maxZ": -5273
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1055,
@@ -10171,6 +17811,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5417,
       "maxZ": -5317
     },
+    "spawnNodes": [
+      {
+        "minX": -123,
+        "maxX": -107,
+        "minZ": -5403,
+        "maxZ": -5387
+      },
+      {
+        "minX": -101,
+        "maxX": -71,
+        "minZ": -5390,
+        "maxZ": -5360
+      },
+      {
+        "minX": -48,
+        "maxX": -18,
+        "minZ": -5361,
+        "maxZ": -5331
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -123,
@@ -10208,6 +17868,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4455,
       "maxZ": -4324
     },
+    "spawnNodes": [
+      {
+        "minX": 1224,
+        "maxX": 1254,
+        "minZ": -4364,
+        "maxZ": -4334
+      },
+      {
+        "minX": 1235,
+        "maxX": 1267,
+        "minZ": -4402,
+        "maxZ": -4370
+      },
+      {
+        "minX": 1222,
+        "maxX": 1262,
+        "minZ": -4445,
+        "maxZ": -4405
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1217,
@@ -10243,6 +17923,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1719,
       "maxZ": -1619
     },
+    "spawnNodes": [
+      {
+        "minX": 1423,
+        "maxX": 1439,
+        "minZ": -1681,
+        "maxZ": -1665
+      },
+      {
+        "minX": 1430,
+        "maxX": 1446,
+        "minZ": -1674,
+        "maxZ": -1658
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1407,
@@ -10279,6 +17973,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1094,
       "maxZ": -608
     },
+    "spawnNodes": [
+      {
+        "minX": 637,
+        "maxX": 693,
+        "minZ": -1084,
+        "maxZ": -1028
+      },
+      {
+        "minX": 632,
+        "maxX": 688,
+        "minZ": -1021,
+        "maxZ": -965
+      },
+      {
+        "minX": 621,
+        "maxX": 677,
+        "minZ": -1040,
+        "maxZ": -984
+      },
+      {
+        "minX": 477,
+        "maxX": 553,
+        "minZ": -863,
+        "maxZ": -787
+      },
+      {
+        "minX": 639,
+        "maxX": 715,
+        "minZ": -847,
+        "maxZ": -771
+      },
+      {
+        "minX": 692,
+        "maxX": 852,
+        "minZ": -900,
+        "maxZ": -740
+      },
+      {
+        "minX": 662,
+        "maxX": 822,
+        "minZ": -778,
+        "maxZ": -618
+      },
+      {
+        "minX": 662,
+        "maxX": 742,
+        "minZ": -912,
+        "maxZ": -832
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 639,
@@ -10326,6 +18070,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4455,
       "maxZ": -4352
     },
+    "spawnNodes": [
+      {
+        "minX": -1110,
+        "maxX": -1050,
+        "minZ": -4445,
+        "maxZ": -4385
+      },
+      {
+        "minX": -1018,
+        "maxX": -958,
+        "minZ": -4422,
+        "maxZ": -4362
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1110,
@@ -10361,6 +18119,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1260,
       "maxZ": -1160
     },
+    "spawnNodes": [
+      {
+        "minX": 1312,
+        "maxX": 1372,
+        "minZ": -1240,
+        "maxZ": -1180
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1312,
@@ -10400,6 +18166,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1508,
       "maxZ": -1388
     },
+    "spawnNodes": [
+      {
+        "minX": 96,
+        "maxX": 196,
+        "minZ": -1498,
+        "maxZ": -1398
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 96,
@@ -10437,6 +18211,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5209,
       "maxZ": -5094
     },
+    "spawnNodes": [
+      {
+        "minX": 479,
+        "maxX": 495,
+        "minZ": -5199,
+        "maxZ": -5183
+      },
+      {
+        "minX": 453,
+        "maxX": 469,
+        "minZ": -5138,
+        "maxZ": -5122
+      },
+      {
+        "minX": 450,
+        "maxX": 466,
+        "minZ": -5120,
+        "maxZ": -5104
+      },
+      {
+        "minX": 464,
+        "maxX": 480,
+        "minZ": -5150,
+        "maxZ": -5134
+      },
+      {
+        "minX": 469,
+        "maxX": 485,
+        "minZ": -5167,
+        "maxZ": -5151
+      },
+      {
+        "minX": 442,
+        "maxX": 458,
+        "minZ": -5171,
+        "maxZ": -5155
+      },
+      {
+        "minX": 443,
+        "maxX": 459,
+        "minZ": -5152,
+        "maxZ": -5136
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 423,
@@ -10473,6 +18291,104 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -980,
       "maxZ": -660
     },
+    "spawnNodes": [
+      {
+        "minX": -81,
+        "maxX": -65,
+        "minZ": -768,
+        "maxZ": -752
+      },
+      {
+        "minX": -97,
+        "maxX": -81,
+        "minZ": -887,
+        "maxZ": -871
+      },
+      {
+        "minX": -153,
+        "maxX": -137,
+        "minZ": -919,
+        "maxZ": -903
+      },
+      {
+        "minX": -153,
+        "maxX": -137,
+        "minZ": -859,
+        "maxZ": -843
+      },
+      {
+        "minX": -8,
+        "maxX": 8,
+        "minZ": -853,
+        "maxZ": -837
+      },
+      {
+        "minX": -25,
+        "maxX": -9,
+        "minZ": -911,
+        "maxZ": -895
+      },
+      {
+        "minX": 34,
+        "maxX": 50,
+        "minZ": -916,
+        "maxZ": -900
+      },
+      {
+        "minX": 58,
+        "maxX": 74,
+        "minZ": -833,
+        "maxZ": -817
+      },
+      {
+        "minX": 56,
+        "maxX": 72,
+        "minZ": -739,
+        "maxZ": -723
+      },
+      {
+        "minX": 7,
+        "maxX": 23,
+        "minZ": -686,
+        "maxZ": -670
+      },
+      {
+        "minX": 116,
+        "maxX": 132,
+        "minZ": -713,
+        "maxZ": -697
+      },
+      {
+        "minX": 183,
+        "maxX": 199,
+        "minZ": -743,
+        "maxZ": -727
+      },
+      {
+        "minX": 208,
+        "maxX": 224,
+        "minZ": -837,
+        "maxZ": -821
+      },
+      {
+        "minX": 196,
+        "maxX": 212,
+        "minZ": -956,
+        "maxZ": -940
+      },
+      {
+        "minX": 127,
+        "maxX": 143,
+        "minZ": -970,
+        "maxZ": -954
+      },
+      {
+        "minX": 97,
+        "maxX": 113,
+        "minZ": -911,
+        "maxZ": -895
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -153,
@@ -10510,6 +18426,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4751,
       "maxZ": -4651
     },
+    "spawnNodes": [
+      {
+        "minX": -964,
+        "maxX": -910,
+        "minZ": -4728,
+        "maxZ": -4674
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -964,
@@ -10546,6 +18470,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5343,
       "maxZ": -5243
     },
+    "spawnNodes": [
+      {
+        "minX": -532,
+        "maxX": -472,
+        "minZ": -5323,
+        "maxZ": -5263
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -532,
@@ -10582,6 +18514,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -650,
       "maxZ": -430
     },
+    "spawnNodes": [
+      {
+        "minX": 737,
+        "maxX": 937,
+        "minZ": -640,
+        "maxZ": -440
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 737,
@@ -10622,6 +18562,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -650,
       "maxZ": -430
     },
+    "spawnNodes": [
+      {
+        "minX": 737,
+        "maxX": 937,
+        "minZ": -640,
+        "maxZ": -440
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 737,
@@ -10657,6 +18605,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1197,
       "maxZ": -1068
     },
+    "spawnNodes": [
+      {
+        "minX": -746,
+        "maxX": -710,
+        "minZ": -1153,
+        "maxZ": -1117
+      },
+      {
+        "minX": -780,
+        "maxX": -750,
+        "minZ": -1187,
+        "maxZ": -1157
+      },
+      {
+        "minX": -793,
+        "maxX": -773,
+        "minZ": -1098,
+        "maxZ": -1078
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -793,
@@ -10692,6 +18660,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5334,
       "maxZ": -5225
     },
+    "spawnNodes": [
+      {
+        "minX": -1776,
+        "maxX": -1744,
+        "minZ": -5324,
+        "maxZ": -5292
+      },
+      {
+        "minX": -1527,
+        "maxX": -1497,
+        "minZ": -5272,
+        "maxZ": -5242
+      },
+      {
+        "minX": -1540,
+        "maxX": -1492,
+        "minZ": -5287,
+        "maxZ": -5239
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1544,
@@ -10733,6 +18721,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5104,
       "maxZ": -4603
     },
+    "spawnNodes": [
+      {
+        "minX": -241,
+        "maxX": -201,
+        "minZ": -4766,
+        "maxZ": -4726
+      },
+      {
+        "minX": -151,
+        "maxX": -103,
+        "minZ": -4902,
+        "maxZ": -4854
+      },
+      {
+        "minX": -122,
+        "maxX": -74,
+        "minZ": -4964,
+        "maxZ": -4916
+      },
+      {
+        "minX": -71,
+        "maxX": -23,
+        "minZ": -5094,
+        "maxZ": -5046
+      },
+      {
+        "minX": -93,
+        "maxX": -13,
+        "minZ": -4693,
+        "maxZ": -4613
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -151,
@@ -10786,6 +18806,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5104,
       "maxZ": -4603
     },
+    "spawnNodes": [
+      {
+        "minX": -241,
+        "maxX": -201,
+        "minZ": -4766,
+        "maxZ": -4726
+      },
+      {
+        "minX": -151,
+        "maxX": -103,
+        "minZ": -4902,
+        "maxZ": -4854
+      },
+      {
+        "minX": -122,
+        "maxX": -74,
+        "minZ": -4964,
+        "maxZ": -4916
+      },
+      {
+        "minX": -71,
+        "maxX": -23,
+        "minZ": -5094,
+        "maxZ": -5046
+      },
+      {
+        "minX": -93,
+        "maxX": -13,
+        "minZ": -4693,
+        "maxZ": -4613
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -151,
@@ -10842,6 +18894,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4044,
       "maxZ": -3944
     },
+    "spawnNodes": [
+      {
+        "minX": 147,
+        "maxX": 163,
+        "minZ": -3981,
+        "maxZ": -3965
+      },
+      {
+        "minX": 147,
+        "maxX": 163,
+        "minZ": -3972,
+        "maxZ": -3956
+      },
+      {
+        "minX": 144,
+        "maxX": 160,
+        "minZ": -4032,
+        "maxZ": -4016
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 126,
@@ -10881,6 +18953,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5414,
       "maxZ": -5164
     },
+    "spawnNodes": [
+      {
+        "minX": -1900,
+        "maxX": -1700,
+        "minZ": -5374,
+        "maxZ": -5174
+      },
+      {
+        "minX": -1700,
+        "maxX": -1600,
+        "minZ": -5324,
+        "maxZ": -5224
+      },
+      {
+        "minX": -1680,
+        "maxX": -1620,
+        "minZ": -5404,
+        "maxZ": -5344
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1900,
@@ -10918,6 +19010,164 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5028,
       "maxZ": -4389
     },
+    "spawnNodes": [
+      {
+        "minX": -1401,
+        "maxX": -1385,
+        "minZ": -4415,
+        "maxZ": -4399
+      },
+      {
+        "minX": -1435,
+        "maxX": -1419,
+        "minZ": -4453,
+        "maxZ": -4437
+      },
+      {
+        "minX": -1466,
+        "maxX": -1450,
+        "minZ": -4527,
+        "maxZ": -4511
+      },
+      {
+        "minX": -1500,
+        "maxX": -1484,
+        "minZ": -4589,
+        "maxZ": -4573
+      },
+      {
+        "minX": -1346,
+        "maxX": -1330,
+        "minZ": -4517,
+        "maxZ": -4501
+      },
+      {
+        "minX": -1296,
+        "maxX": -1280,
+        "minZ": -4524,
+        "maxZ": -4508
+      },
+      {
+        "minX": -1301,
+        "maxX": -1285,
+        "minZ": -4558,
+        "maxZ": -4542
+      },
+      {
+        "minX": -1339,
+        "maxX": -1323,
+        "minZ": -4571,
+        "maxZ": -4555
+      },
+      {
+        "minX": -1294,
+        "maxX": -1278,
+        "minZ": -4606,
+        "maxZ": -4590
+      },
+      {
+        "minX": -1281,
+        "maxX": -1265,
+        "minZ": -4601,
+        "maxZ": -4585
+      },
+      {
+        "minX": -1244,
+        "maxX": -1228,
+        "minZ": -4618,
+        "maxZ": -4602
+      },
+      {
+        "minX": -1235,
+        "maxX": -1219,
+        "minZ": -4611,
+        "maxZ": -4595
+      },
+      {
+        "minX": -1368,
+        "maxX": -1352,
+        "minZ": -4650,
+        "maxZ": -4634
+      },
+      {
+        "minX": -1392,
+        "maxX": -1376,
+        "minZ": -4661,
+        "maxZ": -4645
+      },
+      {
+        "minX": -1254,
+        "maxX": -1238,
+        "minZ": -4664,
+        "maxZ": -4648
+      },
+      {
+        "minX": -1328,
+        "maxX": -1312,
+        "minZ": -4687,
+        "maxZ": -4671
+      },
+      {
+        "minX": -1350,
+        "maxX": -1334,
+        "minZ": -4712,
+        "maxZ": -4696
+      },
+      {
+        "minX": -1299,
+        "maxX": -1283,
+        "minZ": -4754,
+        "maxZ": -4738
+      },
+      {
+        "minX": -1320,
+        "maxX": -1304,
+        "minZ": -4757,
+        "maxZ": -4741
+      },
+      {
+        "minX": -1366,
+        "maxX": -1350,
+        "minZ": -4752,
+        "maxZ": -4736
+      },
+      {
+        "minX": -1381,
+        "maxX": -1365,
+        "minZ": -4769,
+        "maxZ": -4753
+      },
+      {
+        "minX": -1400,
+        "maxX": -1384,
+        "minZ": -4774,
+        "maxZ": -4758
+      },
+      {
+        "minX": -1286,
+        "maxX": -1270,
+        "minZ": -4873,
+        "maxZ": -4857
+      },
+      {
+        "minX": -1291,
+        "maxX": -1275,
+        "minZ": -4979,
+        "maxZ": -4963
+      },
+      {
+        "minX": -1303,
+        "maxX": -1287,
+        "minZ": -4997,
+        "maxZ": -4981
+      },
+      {
+        "minX": -1317,
+        "maxX": -1301,
+        "minZ": -5000,
+        "maxZ": -4984
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1500,
@@ -10967,6 +19217,140 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5522,
       "maxZ": -5088
     },
+    "spawnNodes": [
+      {
+        "minX": 1173,
+        "maxX": 1233,
+        "minZ": -5416,
+        "maxZ": -5356
+      },
+      {
+        "minX": 1204,
+        "maxX": 1264,
+        "minZ": -5400,
+        "maxZ": -5340
+      },
+      {
+        "minX": 1291,
+        "maxX": 1321,
+        "minZ": -5343,
+        "maxZ": -5313
+      },
+      {
+        "minX": 1290,
+        "maxX": 1320,
+        "minZ": -5495,
+        "maxZ": -5465
+      },
+      {
+        "minX": 1287,
+        "maxX": 1337,
+        "minZ": -5482,
+        "maxZ": -5432
+      },
+      {
+        "minX": 1292,
+        "maxX": 1342,
+        "minZ": -5438,
+        "maxZ": -5388
+      },
+      {
+        "minX": 1288,
+        "maxX": 1338,
+        "minZ": -5402,
+        "maxZ": -5352
+      },
+      {
+        "minX": 1304,
+        "maxX": 1354,
+        "minZ": -5367,
+        "maxZ": -5317
+      },
+      {
+        "minX": 1293,
+        "maxX": 1333,
+        "minZ": -5315,
+        "maxZ": -5275
+      },
+      {
+        "minX": 1322,
+        "maxX": 1362,
+        "minZ": -5286,
+        "maxZ": -5246
+      },
+      {
+        "minX": 1336,
+        "maxX": 1376,
+        "minZ": -5310,
+        "maxZ": -5270
+      },
+      {
+        "minX": 1363,
+        "maxX": 1403,
+        "minZ": -5322,
+        "maxZ": -5282
+      },
+      {
+        "minX": 1358,
+        "maxX": 1408,
+        "minZ": -5361,
+        "maxZ": -5311
+      },
+      {
+        "minX": 1386,
+        "maxX": 1436,
+        "minZ": -5404,
+        "maxZ": -5354
+      },
+      {
+        "minX": 1351,
+        "maxX": 1411,
+        "minZ": -5438,
+        "maxZ": -5378
+      },
+      {
+        "minX": 1387,
+        "maxX": 1427,
+        "minZ": -5459,
+        "maxZ": -5419
+      },
+      {
+        "minX": 1361,
+        "maxX": 1401,
+        "minZ": -5512,
+        "maxZ": -5472
+      },
+      {
+        "minX": 1352,
+        "maxX": 1402,
+        "minZ": -5279,
+        "maxZ": -5229
+      },
+      {
+        "minX": 1352,
+        "maxX": 1392,
+        "minZ": -5234,
+        "maxZ": -5194
+      },
+      {
+        "minX": 1329,
+        "maxX": 1369,
+        "minZ": -5210,
+        "maxZ": -5170
+      },
+      {
+        "minX": 1332,
+        "maxX": 1372,
+        "minZ": -5177,
+        "maxZ": -5137
+      },
+      {
+        "minX": 1342,
+        "maxX": 1392,
+        "minZ": -5148,
+        "maxZ": -5098
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1173,
@@ -11003,6 +19387,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5343,
       "maxZ": -5024
     },
+    "spawnNodes": [
+      {
+        "minX": -206,
+        "maxX": -166,
+        "minZ": -5144,
+        "maxZ": -5104
+      },
+      {
+        "minX": -88,
+        "maxX": -58,
+        "minZ": -5064,
+        "maxZ": -5034
+      },
+      {
+        "minX": -41,
+        "maxX": 9,
+        "minZ": -5108,
+        "maxZ": -5058
+      },
+      {
+        "minX": -45,
+        "maxX": 31,
+        "minZ": -5178,
+        "maxZ": -5102
+      },
+      {
+        "minX": -47,
+        "maxX": -17,
+        "minZ": -5211,
+        "maxZ": -5181
+      },
+      {
+        "minX": -3,
+        "maxX": 27,
+        "minZ": -5244,
+        "maxZ": -5214
+      },
+      {
+        "minX": -7,
+        "maxX": 23,
+        "minZ": -5325,
+        "maxZ": -5295
+      },
+      {
+        "minX": -275,
+        "maxX": -235,
+        "minZ": -5333,
+        "maxZ": -5293
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -88,
@@ -11050,6 +19484,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2004,
       "maxZ": -1861
     },
+    "spawnNodes": [
+      {
+        "minX": 78,
+        "maxX": 94,
+        "minZ": -1994,
+        "maxZ": -1978
+      },
+      {
+        "minX": 9,
+        "maxX": 25,
+        "minZ": -1887,
+        "maxZ": -1871
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 9,
@@ -11094,6 +19542,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1599,
       "maxZ": -1499
     },
+    "spawnNodes": [
+      {
+        "minX": -619,
+        "maxX": -603,
+        "minZ": -1557,
+        "maxZ": -1541
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -619,
@@ -11130,6 +19586,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5586,
       "maxZ": -5107
     },
+    "spawnNodes": [
+      {
+        "minX": -1384,
+        "maxX": -1264,
+        "minZ": -5576,
+        "maxZ": -5456
+      },
+      {
+        "minX": -1310,
+        "maxX": -1238,
+        "minZ": -5454,
+        "maxZ": -5382
+      },
+      {
+        "minX": -1212,
+        "maxX": -1112,
+        "minZ": -5376,
+        "maxZ": -5276
+      },
+      {
+        "minX": -1290,
+        "maxX": -1226,
+        "minZ": -5181,
+        "maxZ": -5117
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1384,
@@ -11171,6 +19653,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5459,
       "maxZ": -5359
     },
+    "spawnNodes": [
+      {
+        "minX": 1217,
+        "maxX": 1237,
+        "minZ": -5409,
+        "maxZ": -5389
+      },
+      {
+        "minX": 1326,
+        "maxX": 1366,
+        "minZ": -5430,
+        "maxZ": -5390
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1326,
@@ -11214,6 +19710,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4751,
       "maxZ": -4651
     },
+    "spawnNodes": [
+      {
+        "minX": -964,
+        "maxX": -910,
+        "minZ": -4728,
+        "maxZ": -4674
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -964,
@@ -11249,6 +19753,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5139,
       "maxZ": -5039
     },
+    "spawnNodes": [
+      {
+        "minX": 1417,
+        "maxX": 1441,
+        "minZ": -5101,
+        "maxZ": -5077
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1417,
@@ -11284,6 +19796,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -802,
       "maxZ": -592
     },
+    "spawnNodes": [
+      {
+        "minX": -583,
+        "maxX": -515,
+        "minZ": -728,
+        "maxZ": -660
+      },
+      {
+        "minX": -645,
+        "maxX": -569,
+        "minZ": -678,
+        "maxZ": -602
+      },
+      {
+        "minX": -556,
+        "maxX": -494,
+        "minZ": -673,
+        "maxZ": -611
+      },
+      {
+        "minX": -539,
+        "maxX": -489,
+        "minZ": -791,
+        "maxZ": -741
+      },
+      {
+        "minX": -655,
+        "maxX": -583,
+        "minZ": -792,
+        "maxZ": -720
+      },
+      {
+        "minX": -731,
+        "maxX": -667,
+        "minZ": -761,
+        "maxZ": -697
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -731,
@@ -11319,6 +19869,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4571,
       "maxZ": -4471
     },
+    "spawnNodes": [
+      {
+        "minX": -1861,
+        "maxX": -1845,
+        "minZ": -4529,
+        "maxZ": -4513
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1861,
@@ -11354,6 +19912,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1675,
       "maxZ": -1575
     },
+    "spawnNodes": [
+      {
+        "minX": -338,
+        "maxX": -318,
+        "minZ": -1635,
+        "maxZ": -1615
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -338,
@@ -11390,6 +19956,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5033,
       "maxZ": -4933
     },
+    "spawnNodes": [
+      {
+        "minX": -1107,
+        "maxX": -1091,
+        "minZ": -4991,
+        "maxZ": -4975
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1107,
@@ -11426,6 +20000,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4279,
       "maxZ": -4179
     },
+    "spawnNodes": [
+      {
+        "minX": -859,
+        "maxX": -843,
+        "minZ": -4264,
+        "maxZ": -4248
+      },
+      {
+        "minX": -895,
+        "maxX": -879,
+        "minZ": -4210,
+        "maxZ": -4194
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -897,
@@ -11461,6 +20049,62 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1459,
       "maxZ": -1063
     },
+    "spawnNodes": [
+      {
+        "minX": -1962,
+        "maxX": -1946,
+        "minZ": -1301,
+        "maxZ": -1285
+      },
+      {
+        "minX": -1942,
+        "maxX": -1926,
+        "minZ": -1412,
+        "maxZ": -1396
+      },
+      {
+        "minX": -1913,
+        "maxX": -1897,
+        "minZ": -1285,
+        "maxZ": -1269
+      },
+      {
+        "minX": -1831,
+        "maxX": -1815,
+        "minZ": -1143,
+        "maxZ": -1127
+      },
+      {
+        "minX": -1648,
+        "maxX": -1632,
+        "minZ": -1184,
+        "maxZ": -1168
+      },
+      {
+        "minX": -1674,
+        "maxX": -1658,
+        "minZ": -1125,
+        "maxZ": -1109
+      },
+      {
+        "minX": -1739,
+        "maxX": -1723,
+        "minZ": -1089,
+        "maxZ": -1073
+      },
+      {
+        "minX": -1781,
+        "maxX": -1765,
+        "minZ": -1138,
+        "maxZ": -1122
+      },
+      {
+        "minX": -1885,
+        "maxX": -1869,
+        "minZ": -1447,
+        "maxZ": -1431
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1831,
@@ -11508,6 +20152,80 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5591,
       "maxZ": -5130
     },
+    "spawnNodes": [
+      {
+        "minX": 1335,
+        "maxX": 1351,
+        "minZ": -5218,
+        "maxZ": -5202
+      },
+      {
+        "minX": 1378,
+        "maxX": 1394,
+        "minZ": -5204,
+        "maxZ": -5188
+      },
+      {
+        "minX": 1319,
+        "maxX": 1335,
+        "minZ": -5389,
+        "maxZ": -5373
+      },
+      {
+        "minX": 1377,
+        "maxX": 1393,
+        "minZ": -5441,
+        "maxZ": -5425
+      },
+      {
+        "minX": 1476,
+        "maxX": 1492,
+        "minZ": -5527,
+        "maxZ": -5511
+      },
+      {
+        "minX": 1463,
+        "maxX": 1479,
+        "minZ": -5546,
+        "maxZ": -5530
+      },
+      {
+        "minX": 1427,
+        "maxX": 1443,
+        "minZ": -5538,
+        "maxZ": -5522
+      },
+      {
+        "minX": 1329,
+        "maxX": 1345,
+        "minZ": -5156,
+        "maxZ": -5140
+      },
+      {
+        "minX": 1315,
+        "maxX": 1331,
+        "minZ": -5161,
+        "maxZ": -5145
+      },
+      {
+        "minX": 1304,
+        "maxX": 1324,
+        "minZ": -5255,
+        "maxZ": -5235
+      },
+      {
+        "minX": 1415,
+        "maxX": 1435,
+        "minZ": -5211,
+        "maxZ": -5191
+      },
+      {
+        "minX": 1466,
+        "maxX": 1486,
+        "minZ": -5581,
+        "maxZ": -5561
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1304,
@@ -11556,6 +20274,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4382,
       "maxZ": -4282
     },
+    "spawnNodes": [
+      {
+        "minX": -1376,
+        "maxX": -1360,
+        "minZ": -4340,
+        "maxZ": -4324
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1376,
@@ -11592,6 +20318,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4382,
       "maxZ": -4282
     },
+    "spawnNodes": [
+      {
+        "minX": -1376,
+        "maxX": -1360,
+        "minZ": -4340,
+        "maxZ": -4324
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1376,
@@ -11629,6 +20363,68 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3554,
       "maxZ": -3276
     },
+    "spawnNodes": [
+      {
+        "minX": 847,
+        "maxX": 863,
+        "minZ": -3544,
+        "maxZ": -3528
+      },
+      {
+        "minX": 1077,
+        "maxX": 1093,
+        "minZ": -3418,
+        "maxZ": -3402
+      },
+      {
+        "minX": 1090,
+        "maxX": 1106,
+        "minZ": -3430,
+        "maxZ": -3414
+      },
+      {
+        "minX": 1066,
+        "maxX": 1082,
+        "minZ": -3431,
+        "maxZ": -3415
+      },
+      {
+        "minX": 1075,
+        "maxX": 1091,
+        "minZ": -3306,
+        "maxZ": -3290
+      },
+      {
+        "minX": 1075,
+        "maxX": 1091,
+        "minZ": -3306,
+        "maxZ": -3290
+      },
+      {
+        "minX": 1071,
+        "maxX": 1095,
+        "minZ": -3310,
+        "maxZ": -3286
+      },
+      {
+        "minX": 1117,
+        "maxX": 1137,
+        "minZ": -3376,
+        "maxZ": -3356
+      },
+      {
+        "minX": 1115,
+        "maxX": 1135,
+        "minZ": -3403,
+        "maxZ": -3383
+      },
+      {
+        "minX": 1132,
+        "maxX": 1156,
+        "minZ": -3392,
+        "maxZ": -3368
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1066,
@@ -11672,6 +20468,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -785,
       "maxZ": -263
     },
+    "spawnNodes": [
+      {
+        "minX": -438,
+        "maxX": -338,
+        "minZ": -373,
+        "maxZ": -273
+      },
+      {
+        "minX": -314,
+        "maxX": -214,
+        "minZ": -392,
+        "maxZ": -292
+      },
+      {
+        "minX": -216,
+        "maxX": -76,
+        "minZ": -466,
+        "maxZ": -326
+      },
+      {
+        "minX": -52,
+        "maxX": -32,
+        "minZ": -718,
+        "maxZ": -698
+      },
+      {
+        "minX": -76,
+        "maxX": -56,
+        "minZ": -775,
+        "maxZ": -755
+      },
+      {
+        "minX": -19,
+        "maxX": 41,
+        "minZ": -720,
+        "maxZ": -660
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -438,
@@ -11713,6 +20547,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1480,
       "maxZ": -1253
     },
+    "spawnNodes": [
+      {
+        "minX": -2187,
+        "maxX": -2157,
+        "minZ": -1470,
+        "maxZ": -1440
+      },
+      {
+        "minX": -2130,
+        "maxX": -2100,
+        "minZ": -1386,
+        "maxZ": -1356
+      },
+      {
+        "minX": -2208,
+        "maxX": -2178,
+        "minZ": -1309,
+        "maxZ": -1279
+      },
+      {
+        "minX": -2266,
+        "maxX": -2250,
+        "minZ": -1290,
+        "maxZ": -1274
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2266,
@@ -11754,6 +20614,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -476,
       "maxZ": -332
     },
+    "spawnNodes": [
+      {
+        "minX": -371,
+        "maxX": -355,
+        "minZ": -358,
+        "maxZ": -342
+      },
+      {
+        "minX": -336,
+        "maxX": -320,
+        "minZ": -363,
+        "maxZ": -347
+      },
+      {
+        "minX": -314,
+        "maxX": -298,
+        "minZ": -377,
+        "maxZ": -361
+      },
+      {
+        "minX": -313,
+        "maxX": -297,
+        "minZ": -417,
+        "maxZ": -401
+      },
+      {
+        "minX": -340,
+        "maxX": -324,
+        "minZ": -446,
+        "maxZ": -430
+      },
+      {
+        "minX": -370,
+        "maxX": -354,
+        "minZ": -451,
+        "maxZ": -435
+      },
+      {
+        "minX": -390,
+        "maxX": -374,
+        "minZ": -441,
+        "maxZ": -425
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -400,
@@ -11792,6 +20696,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5417,
       "maxZ": -5317
     },
+    "spawnNodes": [
+      {
+        "minX": -123,
+        "maxX": -107,
+        "minZ": -5403,
+        "maxZ": -5387
+      },
+      {
+        "minX": -101,
+        "maxX": -71,
+        "minZ": -5390,
+        "maxZ": -5360
+      },
+      {
+        "minX": -48,
+        "maxX": -18,
+        "minZ": -5361,
+        "maxZ": -5331
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -123,
@@ -11829,6 +20753,68 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1011,
       "maxZ": -662
     },
+    "spawnNodes": [
+      {
+        "minX": -28,
+        "maxX": 12,
+        "minZ": -870,
+        "maxZ": -830
+      },
+      {
+        "minX": 207,
+        "maxX": 237,
+        "minZ": -801,
+        "maxZ": -771
+      },
+      {
+        "minX": 132,
+        "maxX": 162,
+        "minZ": -1001,
+        "maxZ": -971
+      },
+      {
+        "minX": 111,
+        "maxX": 141,
+        "minZ": -936,
+        "maxZ": -906
+      },
+      {
+        "minX": -16,
+        "maxX": 14,
+        "minZ": -955,
+        "maxZ": -925
+      },
+      {
+        "minX": -35,
+        "maxX": 15,
+        "minZ": -748,
+        "maxZ": -698
+      },
+      {
+        "minX": 206,
+        "maxX": 230,
+        "minZ": -748,
+        "maxZ": -724
+      },
+      {
+        "minX": -104,
+        "maxX": -80,
+        "minZ": -873,
+        "maxZ": -849
+      },
+      {
+        "minX": -100,
+        "maxX": -84,
+        "minZ": -688,
+        "maxZ": -672
+      },
+      {
+        "minX": 52,
+        "maxX": 68,
+        "minZ": -967,
+        "maxZ": -951
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -104,
@@ -11866,6 +20852,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5486,
       "maxZ": -5339
     },
+    "spawnNodes": [
+      {
+        "minX": 1468,
+        "maxX": 1488,
+        "minZ": -5383,
+        "maxZ": -5363
+      },
+      {
+        "minX": 1487,
+        "maxX": 1507,
+        "minZ": -5383,
+        "maxZ": -5363
+      },
+      {
+        "minX": 1477,
+        "maxX": 1507,
+        "minZ": -5410,
+        "maxZ": -5380
+      },
+      {
+        "minX": 1490,
+        "maxX": 1520,
+        "minZ": -5423,
+        "maxZ": -5393
+      },
+      {
+        "minX": 1517,
+        "maxX": 1557,
+        "minZ": -5397,
+        "maxZ": -5357
+      },
+      {
+        "minX": 1474,
+        "maxX": 1534,
+        "minZ": -5449,
+        "maxZ": -5389
+      },
+      {
+        "minX": 1498,
+        "maxX": 1528,
+        "minZ": -5379,
+        "maxZ": -5349
+      },
+      {
+        "minX": 1549,
+        "maxX": 1609,
+        "minZ": -5476,
+        "maxZ": -5416
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1468,
@@ -11903,6 +20939,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3419,
       "maxZ": -3319
     },
+    "spawnNodes": [
+      {
+        "minX": 1069,
+        "maxX": 1085,
+        "minZ": -3377,
+        "maxZ": -3361
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1069,
@@ -11940,6 +20984,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -850,
       "maxZ": -750
     },
+    "spawnNodes": [
+      {
+        "minX": -61,
+        "maxX": -45,
+        "minZ": -787,
+        "maxZ": -771
+      },
+      {
+        "minX": -37,
+        "maxX": -21,
+        "minZ": -830,
+        "maxZ": -814
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -69,
@@ -11978,6 +21036,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -584,
       "maxZ": -484
     },
+    "spawnNodes": [
+      {
+        "minX": 28,
+        "maxX": 68,
+        "minZ": -554,
+        "maxZ": -514
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 28,
@@ -12016,6 +21082,62 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3408,
       "maxZ": -3308
     },
+    "spawnNodes": [
+      {
+        "minX": 1070,
+        "maxX": 1086,
+        "minZ": -3339,
+        "maxZ": -3323
+      },
+      {
+        "minX": 1069,
+        "maxX": 1085,
+        "minZ": -3340,
+        "maxZ": -3324
+      },
+      {
+        "minX": 1085,
+        "maxX": 1101,
+        "minZ": -3349,
+        "maxZ": -3333
+      },
+      {
+        "minX": 1100,
+        "maxX": 1118,
+        "minZ": -3346,
+        "maxZ": -3328
+      },
+      {
+        "minX": 1100,
+        "maxX": 1116,
+        "minZ": -3365,
+        "maxZ": -3349
+      },
+      {
+        "minX": 1075,
+        "maxX": 1091,
+        "minZ": -3382,
+        "maxZ": -3366
+      },
+      {
+        "minX": 1058,
+        "maxX": 1074,
+        "minZ": -3385,
+        "maxZ": -3369
+      },
+      {
+        "minX": 1046,
+        "maxX": 1062,
+        "minZ": -3373,
+        "maxZ": -3357
+      },
+      {
+        "minX": 1069,
+        "maxX": 1085,
+        "minZ": -3376,
+        "maxZ": -3360
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1038,
@@ -12052,6 +21174,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -671,
       "maxZ": -571
     },
+    "spawnNodes": [
+      {
+        "minX": -773,
+        "maxX": -757,
+        "minZ": -612,
+        "maxZ": -596
+      },
+      {
+        "minX": -765,
+        "maxX": -749,
+        "minZ": -608,
+        "maxZ": -592
+      },
+      {
+        "minX": -760,
+        "maxX": -744,
+        "minZ": -613,
+        "maxZ": -597
+      },
+      {
+        "minX": -765,
+        "maxX": -749,
+        "minZ": -627,
+        "maxZ": -611
+      },
+      {
+        "minX": -778,
+        "maxX": -762,
+        "minZ": -635,
+        "maxZ": -619
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -791,
@@ -12087,6 +21241,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -452,
       "maxZ": -352
     },
+    "spawnNodes": [
+      {
+        "minX": -542,
+        "maxX": -526,
+        "minZ": -398,
+        "maxZ": -382
+      },
+      {
+        "minX": -539,
+        "maxX": -523,
+        "minZ": -423,
+        "maxZ": -407
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -560,
@@ -12122,6 +21290,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1225,
       "maxZ": -1125
     },
+    "spawnNodes": [
+      {
+        "minX": 697,
+        "maxX": 723,
+        "minZ": -1188,
+        "maxZ": -1162
+      },
+      {
+        "minX": 708,
+        "maxX": 728,
+        "minZ": -1188,
+        "maxZ": -1168
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 685,
@@ -12158,6 +21340,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1632,
       "maxZ": -1511
     },
+    "spawnNodes": [
+      {
+        "minX": 711,
+        "maxX": 751,
+        "minZ": -1622,
+        "maxZ": -1582
+      },
+      {
+        "minX": 745,
+        "maxX": 785,
+        "minZ": -1583,
+        "maxZ": -1543
+      },
+      {
+        "minX": 679,
+        "maxX": 719,
+        "minZ": -1606,
+        "maxZ": -1566
+      },
+      {
+        "minX": 710,
+        "maxX": 750,
+        "minZ": -1561,
+        "maxZ": -1521
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 679,
@@ -12196,6 +21404,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1699,
       "maxZ": -1489
     },
+    "spawnNodes": [
+      {
+        "minX": -207,
+        "maxX": -167,
+        "minZ": -1539,
+        "maxZ": -1499
+      },
+      {
+        "minX": -340,
+        "maxX": -320,
+        "minZ": -1525,
+        "maxZ": -1505
+      },
+      {
+        "minX": -328,
+        "maxX": -308,
+        "minZ": -1689,
+        "maxZ": -1669
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -207,
@@ -12243,6 +21471,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -464,
       "maxZ": -308
     },
+    "spawnNodes": [
+      {
+        "minX": -635,
+        "maxX": -619,
+        "minZ": -454,
+        "maxZ": -438
+      },
+      {
+        "minX": -615,
+        "maxX": -599,
+        "minZ": -374,
+        "maxZ": -358
+      },
+      {
+        "minX": -581,
+        "maxX": -565,
+        "minZ": -335,
+        "maxZ": -319
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -618,
@@ -12286,6 +21534,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4455,
       "maxZ": -4324
     },
+    "spawnNodes": [
+      {
+        "minX": 1224,
+        "maxX": 1254,
+        "minZ": -4364,
+        "maxZ": -4334
+      },
+      {
+        "minX": 1235,
+        "maxX": 1267,
+        "minZ": -4402,
+        "maxZ": -4370
+      },
+      {
+        "minX": 1222,
+        "maxX": 1262,
+        "minZ": -4445,
+        "maxZ": -4405
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1217,
@@ -12321,6 +21589,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4279,
       "maxZ": -4179
     },
+    "spawnNodes": [
+      {
+        "minX": -897,
+        "maxX": -881,
+        "minZ": -4250,
+        "maxZ": -4234
+      },
+      {
+        "minX": -925,
+        "maxX": -909,
+        "minZ": -4226,
+        "maxZ": -4210
+      },
+      {
+        "minX": -882,
+        "maxX": -866,
+        "minZ": -4232,
+        "maxZ": -4216
+      },
+      {
+        "minX": -914,
+        "maxX": -898,
+        "minZ": -4243,
+        "maxZ": -4227
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -925,
@@ -12358,6 +21652,80 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3826,
       "maxZ": -3535
     },
+    "spawnNodes": [
+      {
+        "minX": -1044,
+        "maxX": -1024,
+        "minZ": -3729,
+        "maxZ": -3709
+      },
+      {
+        "minX": -1031,
+        "maxX": -1011,
+        "minZ": -3741,
+        "maxZ": -3721
+      },
+      {
+        "minX": -997,
+        "maxX": -981,
+        "minZ": -3789,
+        "maxZ": -3773
+      },
+      {
+        "minX": -968,
+        "maxX": -952,
+        "minZ": -3676,
+        "maxZ": -3660
+      },
+      {
+        "minX": -948,
+        "maxX": -932,
+        "minZ": -3561,
+        "maxZ": -3545
+      },
+      {
+        "minX": -935,
+        "maxX": -919,
+        "minZ": -3816,
+        "maxZ": -3800
+      },
+      {
+        "minX": -810,
+        "maxX": -794,
+        "minZ": -3808,
+        "maxZ": -3792
+      },
+      {
+        "minX": -827,
+        "maxX": -797,
+        "minZ": -3750,
+        "maxZ": -3720
+      },
+      {
+        "minX": -886,
+        "maxX": -870,
+        "minZ": -3617,
+        "maxZ": -3601
+      },
+      {
+        "minX": -869,
+        "maxX": -853,
+        "minZ": -3637,
+        "maxZ": -3621
+      },
+      {
+        "minX": -880,
+        "maxX": -864,
+        "minZ": -3703,
+        "maxZ": -3687
+      },
+      {
+        "minX": -1050,
+        "maxX": -1034,
+        "minZ": -3629,
+        "maxZ": -3613
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1044,
@@ -12400,6 +21768,74 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4511,
       "maxZ": -4374
     },
+    "spawnNodes": [
+      {
+        "minX": 517,
+        "maxX": 537,
+        "minZ": -4457,
+        "maxZ": -4437
+      },
+      {
+        "minX": 499,
+        "maxX": 515,
+        "minZ": -4432,
+        "maxZ": -4416
+      },
+      {
+        "minX": 487,
+        "maxX": 503,
+        "minZ": -4414,
+        "maxZ": -4398
+      },
+      {
+        "minX": 462,
+        "maxX": 478,
+        "minZ": -4421,
+        "maxZ": -4405
+      },
+      {
+        "minX": 546,
+        "maxX": 566,
+        "minZ": -4455,
+        "maxZ": -4435
+      },
+      {
+        "minX": 572,
+        "maxX": 592,
+        "minZ": -4455,
+        "maxZ": -4435
+      },
+      {
+        "minX": 603,
+        "maxX": 619,
+        "minZ": -4456,
+        "maxZ": -4440
+      },
+      {
+        "minX": 621,
+        "maxX": 641,
+        "minZ": -4483,
+        "maxZ": -4463
+      },
+      {
+        "minX": 615,
+        "maxX": 635,
+        "minZ": -4501,
+        "maxZ": -4481
+      },
+      {
+        "minX": 600,
+        "maxX": 620,
+        "minZ": -4485,
+        "maxZ": -4465
+      },
+      {
+        "minX": 603,
+        "maxX": 623,
+        "minZ": -4404,
+        "maxZ": -4384
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 462,
@@ -12436,6 +21872,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -915,
       "maxZ": -740
     },
+    "spawnNodes": [
+      {
+        "minX": -1751,
+        "maxX": -1735,
+        "minZ": -905,
+        "maxZ": -889
+      },
+      {
+        "minX": -1673,
+        "maxX": -1657,
+        "minZ": -798,
+        "maxZ": -782
+      },
+      {
+        "minX": -1523,
+        "maxX": -1507,
+        "minZ": -766,
+        "maxZ": -750
+      },
+      {
+        "minX": -1633,
+        "maxX": -1617,
+        "minZ": -786,
+        "maxZ": -770
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1673,
@@ -12483,6 +21945,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5323,
       "maxZ": -5223
     },
+    "spawnNodes": [
+      {
+        "minX": -508,
+        "maxX": -492,
+        "minZ": -5281,
+        "maxZ": -5265
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -508,
@@ -12521,6 +21991,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3408,
       "maxZ": -3308
     },
+    "spawnNodes": [
+      {
+        "minX": 1045,
+        "maxX": 1105,
+        "minZ": -3388,
+        "maxZ": -3328
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1045,
@@ -12558,6 +22036,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -968,
       "maxZ": -806
     },
+    "spawnNodes": [
+      {
+        "minX": -1770,
+        "maxX": -1738,
+        "minZ": -848,
+        "maxZ": -816
+      },
+      {
+        "minX": -1673,
+        "maxX": -1653,
+        "minZ": -958,
+        "maxZ": -938
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1770,
@@ -12602,6 +22094,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -975,
       "maxZ": -796
     },
+    "spawnNodes": [
+      {
+        "minX": -1704,
+        "maxX": -1684,
+        "minZ": -826,
+        "maxZ": -806
+      },
+      {
+        "minX": -1640,
+        "maxX": -1620,
+        "minZ": -965,
+        "maxZ": -945
+      },
+      {
+        "minX": -1572,
+        "maxX": -1556,
+        "minZ": -874,
+        "maxZ": -858
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1640,
@@ -12649,6 +22161,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1036,
       "maxZ": -936
     },
+    "spawnNodes": [
+      {
+        "minX": -1715,
+        "maxX": -1699,
+        "minZ": -994,
+        "maxZ": -978
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1715,
@@ -12684,6 +22204,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2393,
       "maxZ": -2293
     },
+    "spawnNodes": [
+      {
+        "minX": 658,
+        "maxX": 674,
+        "minZ": -2368,
+        "maxZ": -2352
+      },
+      {
+        "minX": 659,
+        "maxX": 675,
+        "minZ": -2373,
+        "maxZ": -2357
+      },
+      {
+        "minX": 657,
+        "maxX": 673,
+        "minZ": -2351,
+        "maxZ": -2335
+      },
+      {
+        "minX": 661,
+        "maxX": 677,
+        "minZ": -2353,
+        "maxZ": -2337
+      },
+      {
+        "minX": 660,
+        "maxX": 676,
+        "minZ": -2351,
+        "maxZ": -2335
+      },
+      {
+        "minX": 666,
+        "maxX": 682,
+        "minZ": -2349,
+        "maxZ": -2333
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 643,
@@ -12722,6 +22280,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5551,
       "maxZ": -5451
     },
+    "spawnNodes": [
+      {
+        "minX": -273,
+        "maxX": -257,
+        "minZ": -5509,
+        "maxZ": -5493
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -273,
@@ -12762,6 +22328,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2158,
       "maxZ": -1958
     },
+    "spawnNodes": [
+      {
+        "minX": 233,
+        "maxX": 413,
+        "minZ": -2148,
+        "maxZ": -1968
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 233,
@@ -12797,6 +22371,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -789,
       "maxZ": -689
     },
+    "spawnNodes": [
+      {
+        "minX": -195,
+        "maxX": -179,
+        "minZ": -747,
+        "maxZ": -731
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -195,
@@ -12832,6 +22414,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4691,
       "maxZ": -4570
     },
+    "spawnNodes": [
+      {
+        "minX": -797,
+        "maxX": -765,
+        "minZ": -4652,
+        "maxZ": -4620
+      },
+      {
+        "minX": -795,
+        "maxX": -763,
+        "minZ": -4681,
+        "maxZ": -4649
+      },
+      {
+        "minX": -744,
+        "maxX": -712,
+        "minZ": -4681,
+        "maxZ": -4649
+      },
+      {
+        "minX": -744,
+        "maxX": -712,
+        "minZ": -4667,
+        "maxZ": -4635
+      },
+      {
+        "minX": -780,
+        "maxX": -748,
+        "minZ": -4612,
+        "maxZ": -4580
+      },
+      {
+        "minX": -767,
+        "maxX": -735,
+        "minZ": -4640,
+        "maxZ": -4608
+      },
+      {
+        "minX": -729,
+        "maxX": -697,
+        "minZ": -4622,
+        "maxZ": -4590
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -797,
@@ -12872,6 +22498,164 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4591,
       "maxZ": -4312
     },
+    "spawnNodes": [
+      {
+        "minX": 198,
+        "maxX": 218,
+        "minZ": -4413,
+        "maxZ": -4393
+      },
+      {
+        "minX": 185,
+        "maxX": 215,
+        "minZ": -4396,
+        "maxZ": -4366
+      },
+      {
+        "minX": 193,
+        "maxX": 233,
+        "minZ": -4363,
+        "maxZ": -4323
+      },
+      {
+        "minX": 141,
+        "maxX": 181,
+        "minZ": -4374,
+        "maxZ": -4334
+      },
+      {
+        "minX": 105,
+        "maxX": 125,
+        "minZ": -4372,
+        "maxZ": -4352
+      },
+      {
+        "minX": 79,
+        "maxX": 109,
+        "minZ": -4360,
+        "maxZ": -4330
+      },
+      {
+        "minX": 47,
+        "maxX": 77,
+        "minZ": -4364,
+        "maxZ": -4334
+      },
+      {
+        "minX": 30,
+        "maxX": 50,
+        "minZ": -4377,
+        "maxZ": -4357
+      },
+      {
+        "minX": 3,
+        "maxX": 23,
+        "minZ": -4369,
+        "maxZ": -4349
+      },
+      {
+        "minX": -43,
+        "maxX": -13,
+        "minZ": -4357,
+        "maxZ": -4327
+      },
+      {
+        "minX": -95,
+        "maxX": -65,
+        "minZ": -4352,
+        "maxZ": -4322
+      },
+      {
+        "minX": -103,
+        "maxX": -73,
+        "minZ": -4402,
+        "maxZ": -4372
+      },
+      {
+        "minX": 159,
+        "maxX": 179,
+        "minZ": -4420,
+        "maxZ": -4400
+      },
+      {
+        "minX": 125,
+        "maxX": 155,
+        "minZ": -4407,
+        "maxZ": -4377
+      },
+      {
+        "minX": -57,
+        "maxX": -37,
+        "minZ": -4391,
+        "maxZ": -4371
+      },
+      {
+        "minX": -10,
+        "maxX": 10,
+        "minZ": -4424,
+        "maxZ": -4404
+      },
+      {
+        "minX": -20,
+        "maxX": 0,
+        "minZ": -4388,
+        "maxZ": -4368
+      },
+      {
+        "minX": 0,
+        "maxX": 20,
+        "minZ": -4401,
+        "maxZ": -4381
+      },
+      {
+        "minX": 35,
+        "maxX": 95,
+        "minZ": -4455,
+        "maxZ": -4395
+      },
+      {
+        "minX": 37,
+        "maxX": 77,
+        "minZ": -4407,
+        "maxZ": -4367
+      },
+      {
+        "minX": 74,
+        "maxX": 114,
+        "minZ": -4405,
+        "maxZ": -4365
+      },
+      {
+        "minX": 106,
+        "maxX": 146,
+        "minZ": -4439,
+        "maxZ": -4399
+      },
+      {
+        "minX": 34,
+        "maxX": 94,
+        "minZ": -4532,
+        "maxZ": -4472
+      },
+      {
+        "minX": 88,
+        "maxX": 118,
+        "minZ": -4540,
+        "maxZ": -4510
+      },
+      {
+        "minX": 41,
+        "maxX": 71,
+        "minZ": -4562,
+        "maxZ": -4532
+      },
+      {
+        "minX": 71,
+        "maxX": 91,
+        "minZ": -4575,
+        "maxZ": -4555
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -103,
@@ -12907,6 +22691,176 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -909,
       "maxZ": -491
     },
+    "spawnNodes": [
+      {
+        "minX": -1175,
+        "maxX": -1159,
+        "minZ": -530,
+        "maxZ": -514
+      },
+      {
+        "minX": -1171,
+        "maxX": -1155,
+        "minZ": -545,
+        "maxZ": -529
+      },
+      {
+        "minX": -1502,
+        "maxX": -1486,
+        "minZ": -757,
+        "maxZ": -741
+      },
+      {
+        "minX": -1587,
+        "maxX": -1571,
+        "minZ": -785,
+        "maxZ": -769
+      },
+      {
+        "minX": -1469,
+        "maxX": -1453,
+        "minZ": -818,
+        "maxZ": -802
+      },
+      {
+        "minX": -1461,
+        "maxX": -1445,
+        "minZ": -824,
+        "maxZ": -808
+      },
+      {
+        "minX": -1470,
+        "maxX": -1454,
+        "minZ": -818,
+        "maxZ": -802
+      },
+      {
+        "minX": -1502,
+        "maxX": -1486,
+        "minZ": -748,
+        "maxZ": -732
+      },
+      {
+        "minX": -1625,
+        "maxX": -1609,
+        "minZ": -693,
+        "maxZ": -677
+      },
+      {
+        "minX": -1633,
+        "maxX": -1617,
+        "minZ": -695,
+        "maxZ": -679
+      },
+      {
+        "minX": -1629,
+        "maxX": -1613,
+        "minZ": -683,
+        "maxZ": -667
+      },
+      {
+        "minX": -1644,
+        "maxX": -1628,
+        "minZ": -704,
+        "maxZ": -688
+      },
+      {
+        "minX": -1644,
+        "maxX": -1628,
+        "minZ": -569,
+        "maxZ": -553
+      },
+      {
+        "minX": -1643,
+        "maxX": -1627,
+        "minZ": -658,
+        "maxZ": -642
+      },
+      {
+        "minX": -1642,
+        "maxX": -1626,
+        "minZ": -657,
+        "maxZ": -641
+      },
+      {
+        "minX": -1400,
+        "maxX": -1384,
+        "minZ": -750,
+        "maxZ": -734
+      },
+      {
+        "minX": -1193,
+        "maxX": -1177,
+        "minZ": -684,
+        "maxZ": -668
+      },
+      {
+        "minX": -1419,
+        "maxX": -1403,
+        "minZ": -756,
+        "maxZ": -740
+      },
+      {
+        "minX": -1364,
+        "maxX": -1348,
+        "minZ": -703,
+        "maxZ": -687
+      },
+      {
+        "minX": -1520,
+        "maxX": -1504,
+        "minZ": -617,
+        "maxZ": -601
+      },
+      {
+        "minX": -1069,
+        "maxX": -1053,
+        "minZ": -899,
+        "maxZ": -883
+      },
+      {
+        "minX": -1082,
+        "maxX": -1066,
+        "minZ": -820,
+        "maxZ": -804
+      },
+      {
+        "minX": -1074,
+        "maxX": -1058,
+        "minZ": -812,
+        "maxZ": -796
+      },
+      {
+        "minX": -1520,
+        "maxX": -1504,
+        "minZ": -707,
+        "maxZ": -691
+      },
+      {
+        "minX": -1579,
+        "maxX": -1563,
+        "minZ": -672,
+        "maxZ": -656
+      },
+      {
+        "minX": -1427,
+        "maxX": -1411,
+        "minZ": -580,
+        "maxZ": -564
+      },
+      {
+        "minX": -1451,
+        "maxX": -1435,
+        "minZ": -575,
+        "maxZ": -559
+      },
+      {
+        "minX": -1051,
+        "maxX": -1035,
+        "minZ": -826,
+        "maxZ": -810
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1644,
@@ -12964,6 +22918,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3973,
       "maxZ": -1889
     },
+    "spawnNodes": [
+      {
+        "minX": -64,
+        "maxX": -24,
+        "minZ": -3364,
+        "maxZ": -3324
+      },
+      {
+        "minX": 165,
+        "maxX": 205,
+        "minZ": -3700,
+        "maxZ": -3660
+      },
+      {
+        "minX": 598,
+        "maxX": 638,
+        "minZ": -3963,
+        "maxZ": -3923
+      },
+      {
+        "minX": 1059,
+        "maxX": 1099,
+        "minZ": -3946,
+        "maxZ": -3906
+      },
+      {
+        "minX": 1373,
+        "maxX": 1389,
+        "minZ": -3938,
+        "maxZ": -3922
+      },
+      {
+        "minX": -844,
+        "maxX": -824,
+        "minZ": -2450,
+        "maxZ": -2430
+      },
+      {
+        "minX": -1197,
+        "maxX": -1157,
+        "minZ": -1939,
+        "maxZ": -1899
+      },
+      {
+        "minX": -2088,
+        "maxX": -2048,
+        "minZ": -2382,
+        "maxZ": -2342
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2088,
@@ -13042,6 +23046,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1415,
       "maxZ": -1315
     },
+    "spawnNodes": [
+      {
+        "minX": 931,
+        "maxX": 947,
+        "minZ": -1352,
+        "maxZ": -1336
+      },
+      {
+        "minX": 977,
+        "maxX": 993,
+        "minZ": -1388,
+        "maxZ": -1372
+      },
+      {
+        "minX": 1008,
+        "maxX": 1024,
+        "minZ": -1374,
+        "maxZ": -1358
+      },
+      {
+        "minX": 1008,
+        "maxX": 1024,
+        "minZ": -1374,
+        "maxZ": -1358
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 931,
@@ -13077,6 +23107,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -476,
       "maxZ": -332
     },
+    "spawnNodes": [
+      {
+        "minX": -371,
+        "maxX": -355,
+        "minZ": -358,
+        "maxZ": -342
+      },
+      {
+        "minX": -336,
+        "maxX": -320,
+        "minZ": -363,
+        "maxZ": -347
+      },
+      {
+        "minX": -314,
+        "maxX": -298,
+        "minZ": -377,
+        "maxZ": -361
+      },
+      {
+        "minX": -313,
+        "maxX": -297,
+        "minZ": -417,
+        "maxZ": -401
+      },
+      {
+        "minX": -340,
+        "maxX": -324,
+        "minZ": -446,
+        "maxZ": -430
+      },
+      {
+        "minX": -370,
+        "maxX": -354,
+        "minZ": -451,
+        "maxZ": -435
+      },
+      {
+        "minX": -390,
+        "maxX": -374,
+        "minZ": -441,
+        "maxZ": -425
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -400,
@@ -13112,6 +23186,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1473,
       "maxZ": -1373
     },
+    "spawnNodes": [
+      {
+        "minX": 110,
+        "maxX": 160,
+        "minZ": -1448,
+        "maxZ": -1398
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 110,
@@ -13150,6 +23232,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4963,
       "maxZ": -4841
     },
+    "spawnNodes": [
+      {
+        "minX": -1896,
+        "maxX": -1880,
+        "minZ": -4904,
+        "maxZ": -4888
+      },
+      {
+        "minX": -1845,
+        "maxX": -1829,
+        "minZ": -4883,
+        "maxZ": -4867
+      },
+      {
+        "minX": -1796,
+        "maxX": -1780,
+        "minZ": -4910,
+        "maxZ": -4894
+      },
+      {
+        "minX": -1682,
+        "maxX": -1666,
+        "minZ": -4895,
+        "maxZ": -4879
+      },
+      {
+        "minX": -1714,
+        "maxX": -1698,
+        "minZ": -4867,
+        "maxZ": -4851
+      },
+      {
+        "minX": -1716,
+        "maxX": -1700,
+        "minZ": -4899,
+        "maxZ": -4883
+      },
+      {
+        "minX": -1645,
+        "maxX": -1629,
+        "minZ": -4933,
+        "maxZ": -4917
+      },
+      {
+        "minX": -1645,
+        "maxX": -1629,
+        "minZ": -4933,
+        "maxZ": -4917
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1716,
@@ -13196,6 +23328,62 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5070,
       "maxZ": -4572
     },
+    "spawnNodes": [
+      {
+        "minX": -1703,
+        "maxX": -1663,
+        "minZ": -4956,
+        "maxZ": -4916
+      },
+      {
+        "minX": -1585,
+        "maxX": -1515,
+        "minZ": -5060,
+        "maxZ": -4990
+      },
+      {
+        "minX": -1683,
+        "maxX": -1603,
+        "minZ": -4855,
+        "maxZ": -4775
+      },
+      {
+        "minX": -1565,
+        "maxX": -1505,
+        "minZ": -4642,
+        "maxZ": -4582
+      },
+      {
+        "minX": -1766,
+        "maxX": -1686,
+        "minZ": -4706,
+        "maxZ": -4626
+      },
+      {
+        "minX": -1877,
+        "maxX": -1817,
+        "minZ": -4736,
+        "maxZ": -4676
+      },
+      {
+        "minX": -1862,
+        "maxX": -1832,
+        "minZ": -4721,
+        "maxZ": -4691
+      },
+      {
+        "minX": -1943,
+        "maxX": -1903,
+        "minZ": -4680,
+        "maxZ": -4640
+      },
+      {
+        "minX": -1917,
+        "maxX": -1887,
+        "minZ": -4691,
+        "maxZ": -4661
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1943,
@@ -13247,6 +23435,62 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5070,
       "maxZ": -4572
     },
+    "spawnNodes": [
+      {
+        "minX": -1703,
+        "maxX": -1663,
+        "minZ": -4956,
+        "maxZ": -4916
+      },
+      {
+        "minX": -1585,
+        "maxX": -1515,
+        "minZ": -5060,
+        "maxZ": -4990
+      },
+      {
+        "minX": -1683,
+        "maxX": -1603,
+        "minZ": -4855,
+        "maxZ": -4775
+      },
+      {
+        "minX": -1565,
+        "maxX": -1505,
+        "minZ": -4642,
+        "maxZ": -4582
+      },
+      {
+        "minX": -1766,
+        "maxX": -1686,
+        "minZ": -4706,
+        "maxZ": -4626
+      },
+      {
+        "minX": -1877,
+        "maxX": -1817,
+        "minZ": -4736,
+        "maxZ": -4676
+      },
+      {
+        "minX": -1862,
+        "maxX": -1832,
+        "minZ": -4721,
+        "maxZ": -4691
+      },
+      {
+        "minX": -1943,
+        "maxX": -1903,
+        "minZ": -4680,
+        "maxZ": -4640
+      },
+      {
+        "minX": -1917,
+        "maxX": -1887,
+        "minZ": -4691,
+        "maxZ": -4661
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1943,
@@ -13298,6 +23542,62 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5070,
       "maxZ": -4572
     },
+    "spawnNodes": [
+      {
+        "minX": -1703,
+        "maxX": -1663,
+        "minZ": -4956,
+        "maxZ": -4916
+      },
+      {
+        "minX": -1585,
+        "maxX": -1515,
+        "minZ": -5060,
+        "maxZ": -4990
+      },
+      {
+        "minX": -1683,
+        "maxX": -1603,
+        "minZ": -4855,
+        "maxZ": -4775
+      },
+      {
+        "minX": -1565,
+        "maxX": -1505,
+        "minZ": -4642,
+        "maxZ": -4582
+      },
+      {
+        "minX": -1766,
+        "maxX": -1686,
+        "minZ": -4706,
+        "maxZ": -4626
+      },
+      {
+        "minX": -1877,
+        "maxX": -1817,
+        "minZ": -4736,
+        "maxZ": -4676
+      },
+      {
+        "minX": -1862,
+        "maxX": -1832,
+        "minZ": -4721,
+        "maxZ": -4691
+      },
+      {
+        "minX": -1943,
+        "maxX": -1903,
+        "minZ": -4680,
+        "maxZ": -4640
+      },
+      {
+        "minX": -1917,
+        "maxX": -1887,
+        "minZ": -4691,
+        "maxZ": -4661
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1943,
@@ -13350,6 +23650,62 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5070,
       "maxZ": -4572
     },
+    "spawnNodes": [
+      {
+        "minX": -1703,
+        "maxX": -1663,
+        "minZ": -4956,
+        "maxZ": -4916
+      },
+      {
+        "minX": -1585,
+        "maxX": -1515,
+        "minZ": -5060,
+        "maxZ": -4990
+      },
+      {
+        "minX": -1683,
+        "maxX": -1603,
+        "minZ": -4855,
+        "maxZ": -4775
+      },
+      {
+        "minX": -1565,
+        "maxX": -1505,
+        "minZ": -4642,
+        "maxZ": -4582
+      },
+      {
+        "minX": -1766,
+        "maxX": -1686,
+        "minZ": -4706,
+        "maxZ": -4626
+      },
+      {
+        "minX": -1877,
+        "maxX": -1817,
+        "minZ": -4736,
+        "maxZ": -4676
+      },
+      {
+        "minX": -1862,
+        "maxX": -1832,
+        "minZ": -4721,
+        "maxZ": -4691
+      },
+      {
+        "minX": -1943,
+        "maxX": -1903,
+        "minZ": -4680,
+        "maxZ": -4640
+      },
+      {
+        "minX": -1917,
+        "maxX": -1887,
+        "minZ": -4691,
+        "maxZ": -4661
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1943,
@@ -13397,6 +23753,242 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3341,
       "maxZ": -2171
     },
+    "spawnNodes": [
+      {
+        "minX": -1714,
+        "maxX": -1698,
+        "minZ": -2732,
+        "maxZ": -2716
+      },
+      {
+        "minX": -1779,
+        "maxX": -1763,
+        "minZ": -2677,
+        "maxZ": -2661
+      },
+      {
+        "minX": -1744,
+        "maxX": -1728,
+        "minZ": -2667,
+        "maxZ": -2651
+      },
+      {
+        "minX": -1728,
+        "maxX": -1712,
+        "minZ": -2608,
+        "maxZ": -2592
+      },
+      {
+        "minX": -1850,
+        "maxX": -1834,
+        "minZ": -2568,
+        "maxZ": -2552
+      },
+      {
+        "minX": -1803,
+        "maxX": -1787,
+        "minZ": -2545,
+        "maxZ": -2529
+      },
+      {
+        "minX": -1736,
+        "maxX": -1720,
+        "minZ": -2517,
+        "maxZ": -2501
+      },
+      {
+        "minX": -1694,
+        "maxX": -1678,
+        "minZ": -2531,
+        "maxZ": -2515
+      },
+      {
+        "minX": -1708,
+        "maxX": -1692,
+        "minZ": -2483,
+        "maxZ": -2467
+      },
+      {
+        "minX": -1806,
+        "maxX": -1790,
+        "minZ": -2463,
+        "maxZ": -2447
+      },
+      {
+        "minX": -1763,
+        "maxX": -1747,
+        "minZ": -2400,
+        "maxZ": -2384
+      },
+      {
+        "minX": -1653,
+        "maxX": -1637,
+        "minZ": -2249,
+        "maxZ": -2233
+      },
+      {
+        "minX": -1560,
+        "maxX": -1544,
+        "minZ": -2250,
+        "maxZ": -2234
+      },
+      {
+        "minX": -1507,
+        "maxX": -1491,
+        "minZ": -2237,
+        "maxZ": -2221
+      },
+      {
+        "minX": -1444,
+        "maxX": -1428,
+        "minZ": -2361,
+        "maxZ": -2345
+      },
+      {
+        "minX": -1438,
+        "maxX": -1422,
+        "minZ": -2408,
+        "maxZ": -2392
+      },
+      {
+        "minX": -1473,
+        "maxX": -1457,
+        "minZ": -2505,
+        "maxZ": -2489
+      },
+      {
+        "minX": -1528,
+        "maxX": -1512,
+        "minZ": -2576,
+        "maxZ": -2560
+      },
+      {
+        "minX": -1538,
+        "maxX": -1522,
+        "minZ": -2494,
+        "maxZ": -2478
+      },
+      {
+        "minX": -1488,
+        "maxX": -1472,
+        "minZ": -2681,
+        "maxZ": -2665
+      },
+      {
+        "minX": -1592,
+        "maxX": -1576,
+        "minZ": -2746,
+        "maxZ": -2730
+      },
+      {
+        "minX": -1649,
+        "maxX": -1633,
+        "minZ": -2754,
+        "maxZ": -2738
+      },
+      {
+        "minX": -1493,
+        "maxX": -1477,
+        "minZ": -2750,
+        "maxZ": -2734
+      },
+      {
+        "minX": -1400,
+        "maxX": -1384,
+        "minZ": -2769,
+        "maxZ": -2753
+      },
+      {
+        "minX": -1505,
+        "maxX": -1489,
+        "minZ": -2197,
+        "maxZ": -2181
+      },
+      {
+        "minX": -1240,
+        "maxX": -1224,
+        "minZ": -3288,
+        "maxZ": -3272
+      },
+      {
+        "minX": -1320,
+        "maxX": -1304,
+        "minZ": -3001,
+        "maxZ": -2985
+      },
+      {
+        "minX": -1356,
+        "maxX": -1340,
+        "minZ": -3095,
+        "maxZ": -3079
+      },
+      {
+        "minX": -1297,
+        "maxX": -1281,
+        "minZ": -3182,
+        "maxZ": -3166
+      },
+      {
+        "minX": -1355,
+        "maxX": -1339,
+        "minZ": -3209,
+        "maxZ": -3193
+      },
+      {
+        "minX": -1279,
+        "maxX": -1263,
+        "minZ": -3279,
+        "maxZ": -3263
+      },
+      {
+        "minX": -1311,
+        "maxX": -1295,
+        "minZ": -3331,
+        "maxZ": -3315
+      },
+      {
+        "minX": -1344,
+        "maxX": -1328,
+        "minZ": -3298,
+        "maxZ": -3282
+      },
+      {
+        "minX": -1439,
+        "maxX": -1423,
+        "minZ": -3296,
+        "maxZ": -3280
+      },
+      {
+        "minX": -1372,
+        "maxX": -1356,
+        "minZ": -3253,
+        "maxZ": -3237
+      },
+      {
+        "minX": -1452,
+        "maxX": -1436,
+        "minZ": -3190,
+        "maxZ": -3174
+      },
+      {
+        "minX": -1621,
+        "maxX": -1605,
+        "minZ": -3184,
+        "maxZ": -3168
+      },
+      {
+        "minX": -1683,
+        "maxX": -1667,
+        "minZ": -3207,
+        "maxZ": -3191
+      },
+      {
+        "minX": -1746,
+        "maxX": -1730,
+        "minZ": -2199,
+        "maxZ": -2183
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1850,
@@ -13494,6 +24086,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4703,
       "maxZ": -4603
     },
+    "spawnNodes": [
+      {
+        "minX": -1300,
+        "maxX": -1284,
+        "minZ": -4661,
+        "maxZ": -4645
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1300,
@@ -13529,6 +24129,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4555,
       "maxZ": -4455
     },
+    "spawnNodes": [
+      {
+        "minX": -751,
+        "maxX": -735,
+        "minZ": -4513,
+        "maxZ": -4497
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -751,
@@ -13567,6 +24175,254 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1253,
       "maxZ": -511
     },
+    "spawnNodes": [
+      {
+        "minX": -2215,
+        "maxX": -2199,
+        "minZ": -678,
+        "maxZ": -662
+      },
+      {
+        "minX": -2270,
+        "maxX": -2254,
+        "minZ": -662,
+        "maxZ": -646
+      },
+      {
+        "minX": -2152,
+        "maxX": -2136,
+        "minZ": -623,
+        "maxZ": -607
+      },
+      {
+        "minX": -2035,
+        "maxX": -2019,
+        "minZ": -537,
+        "maxZ": -521
+      },
+      {
+        "minX": -1965,
+        "maxX": -1949,
+        "minZ": -553,
+        "maxZ": -537
+      },
+      {
+        "minX": -1812,
+        "maxX": -1796,
+        "minZ": -712,
+        "maxZ": -696
+      },
+      {
+        "minX": -1844,
+        "maxX": -1828,
+        "minZ": -804,
+        "maxZ": -788
+      },
+      {
+        "minX": -1830,
+        "maxX": -1814,
+        "minZ": -854,
+        "maxZ": -838
+      },
+      {
+        "minX": -1890,
+        "maxX": -1874,
+        "minZ": -867,
+        "maxZ": -851
+      },
+      {
+        "minX": -1974,
+        "maxX": -1958,
+        "minZ": -896,
+        "maxZ": -880
+      },
+      {
+        "minX": -2056,
+        "maxX": -2040,
+        "minZ": -861,
+        "maxZ": -845
+      },
+      {
+        "minX": -2132,
+        "maxX": -2116,
+        "minZ": -907,
+        "maxZ": -891
+      },
+      {
+        "minX": -2238,
+        "maxX": -2222,
+        "minZ": -733,
+        "maxZ": -717
+      },
+      {
+        "minX": -2187,
+        "maxX": -2171,
+        "minZ": -610,
+        "maxZ": -594
+      },
+      {
+        "minX": -1802,
+        "maxX": -1786,
+        "minZ": -571,
+        "maxZ": -555
+      },
+      {
+        "minX": -1751,
+        "maxX": -1735,
+        "minZ": -591,
+        "maxZ": -575
+      },
+      {
+        "minX": -1680,
+        "maxX": -1664,
+        "minZ": -537,
+        "maxZ": -521
+      },
+      {
+        "minX": -1696,
+        "maxX": -1680,
+        "minZ": -592,
+        "maxZ": -576
+      },
+      {
+        "minX": -1757,
+        "maxX": -1741,
+        "minZ": -667,
+        "maxZ": -651
+      },
+      {
+        "minX": -1941,
+        "maxX": -1925,
+        "minZ": -620,
+        "maxZ": -604
+      },
+      {
+        "minX": -2016,
+        "maxX": -2000,
+        "minZ": -686,
+        "maxZ": -670
+      },
+      {
+        "minX": -2067,
+        "maxX": -2051,
+        "minZ": -735,
+        "maxZ": -719
+      },
+      {
+        "minX": -1988,
+        "maxX": -1972,
+        "minZ": -812,
+        "maxZ": -796
+      },
+      {
+        "minX": -2020,
+        "maxX": -2004,
+        "minZ": -852,
+        "maxZ": -836
+      },
+      {
+        "minX": -2001,
+        "maxX": -1985,
+        "minZ": -880,
+        "maxZ": -864
+      },
+      {
+        "minX": -2090,
+        "maxX": -2074,
+        "minZ": -916,
+        "maxZ": -900
+      },
+      {
+        "minX": -2168,
+        "maxX": -2152,
+        "minZ": -943,
+        "maxZ": -927
+      },
+      {
+        "minX": -2219,
+        "maxX": -2203,
+        "minZ": -828,
+        "maxZ": -812
+      },
+      {
+        "minX": -2233,
+        "maxX": -2217,
+        "minZ": -820,
+        "maxZ": -804
+      },
+      {
+        "minX": -2143,
+        "maxX": -2127,
+        "minZ": -733,
+        "maxZ": -717
+      },
+      {
+        "minX": -2063,
+        "maxX": -2047,
+        "minZ": -676,
+        "maxZ": -660
+      },
+      {
+        "minX": -1885,
+        "maxX": -1869,
+        "minZ": -809,
+        "maxZ": -793
+      },
+      {
+        "minX": -1845,
+        "maxX": -1829,
+        "minZ": -860,
+        "maxZ": -844
+      },
+      {
+        "minX": -2014,
+        "maxX": -1998,
+        "minZ": -760,
+        "maxZ": -744
+      },
+      {
+        "minX": -1515,
+        "maxX": -1499,
+        "minZ": -1051,
+        "maxZ": -1035
+      },
+      {
+        "minX": -1299,
+        "maxX": -1283,
+        "minZ": -1203,
+        "maxZ": -1187
+      },
+      {
+        "minX": -1366,
+        "maxX": -1350,
+        "minZ": -1243,
+        "maxZ": -1227
+      },
+      {
+        "minX": -1744,
+        "maxX": -1728,
+        "minZ": -801,
+        "maxZ": -785
+      },
+      {
+        "minX": -1690,
+        "maxX": -1674,
+        "minZ": -796,
+        "maxZ": -780
+      },
+      {
+        "minX": -1586,
+        "maxX": -1570,
+        "minZ": -788,
+        "maxZ": -772
+      },
+      {
+        "minX": -1525,
+        "maxX": -1509,
+        "minZ": -914,
+        "maxZ": -898
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2270,
@@ -13626,6 +24482,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1197,
       "maxZ": -1068
     },
+    "spawnNodes": [
+      {
+        "minX": -746,
+        "maxX": -710,
+        "minZ": -1153,
+        "maxZ": -1117
+      },
+      {
+        "minX": -780,
+        "maxX": -750,
+        "minZ": -1187,
+        "maxZ": -1157
+      },
+      {
+        "minX": -793,
+        "maxX": -773,
+        "minZ": -1098,
+        "maxZ": -1078
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -793,
@@ -13661,6 +24537,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5066,
       "maxZ": -4946
     },
+    "spawnNodes": [
+      {
+        "minX": -49,
+        "maxX": 51,
+        "minZ": -5056,
+        "maxZ": -4956
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -49,
@@ -13698,6 +24582,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2034,
       "maxZ": -1934
     },
+    "spawnNodes": [
+      {
+        "minX": -747,
+        "maxX": -731,
+        "minZ": -1992,
+        "maxZ": -1976
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -747,
@@ -13735,6 +24627,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1053,
       "maxZ": -875
     },
+    "spawnNodes": [
+      {
+        "minX": 848,
+        "maxX": 988,
+        "minZ": -1025,
+        "maxZ": -885
+      },
+      {
+        "minX": 992,
+        "maxX": 1132,
+        "minZ": -1043,
+        "maxZ": -903
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 848,
@@ -13770,6 +24676,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2052,
       "maxZ": -1952
     },
+    "spawnNodes": [
+      {
+        "minX": 1381,
+        "maxX": 1397,
+        "minZ": -2010,
+        "maxZ": -1994
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1381,
@@ -13806,6 +24720,92 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5023,
       "maxZ": -1559
     },
+    "spawnNodes": [
+      {
+        "minX": 490,
+        "maxX": 516,
+        "minZ": -1595,
+        "maxZ": -1569
+      },
+      {
+        "minX": 470,
+        "maxX": 486,
+        "minZ": -1628,
+        "maxZ": -1612
+      },
+      {
+        "minX": -614,
+        "maxX": -598,
+        "minZ": -5013,
+        "maxZ": -4997
+      },
+      {
+        "minX": -636,
+        "maxX": -620,
+        "minZ": -4999,
+        "maxZ": -4983
+      },
+      {
+        "minX": -637,
+        "maxX": -621,
+        "minZ": -4980,
+        "maxZ": -4964
+      },
+      {
+        "minX": -277,
+        "maxX": -261,
+        "minZ": -4784,
+        "maxZ": -4768
+      },
+      {
+        "minX": -296,
+        "maxX": -280,
+        "minZ": -4784,
+        "maxZ": -4768
+      },
+      {
+        "minX": -188,
+        "maxX": -172,
+        "minZ": -4673,
+        "maxZ": -4657
+      },
+      {
+        "minX": -174,
+        "maxX": -158,
+        "minZ": -4671,
+        "maxZ": -4655
+      },
+      {
+        "minX": -333,
+        "maxX": -317,
+        "minZ": -4456,
+        "maxZ": -4440
+      },
+      {
+        "minX": -323,
+        "maxX": -307,
+        "minZ": -4426,
+        "maxZ": -4410
+      },
+      {
+        "minX": -305,
+        "maxX": -289,
+        "minZ": -4421,
+        "maxZ": -4405
+      },
+      {
+        "minX": -289,
+        "maxX": -273,
+        "minZ": -4378,
+        "maxZ": -4362
+      },
+      {
+        "minX": -197,
+        "maxX": -181,
+        "minZ": -4390,
+        "maxZ": -4374
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -333,
@@ -13871,6 +24871,74 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1719,
       "maxZ": -1470
     },
+    "spawnNodes": [
+      {
+        "minX": -1756,
+        "maxX": -1740,
+        "minZ": -1499,
+        "maxZ": -1483
+      },
+      {
+        "minX": -1688,
+        "maxX": -1672,
+        "minZ": -1549,
+        "maxZ": -1533
+      },
+      {
+        "minX": -1823,
+        "maxX": -1807,
+        "minZ": -1632,
+        "maxZ": -1616
+      },
+      {
+        "minX": -1862,
+        "maxX": -1838,
+        "minZ": -1566,
+        "maxZ": -1542
+      },
+      {
+        "minX": -1823,
+        "maxX": -1807,
+        "minZ": -1510,
+        "maxZ": -1494
+      },
+      {
+        "minX": -1956,
+        "maxX": -1940,
+        "minZ": -1524,
+        "maxZ": -1508
+      },
+      {
+        "minX": -2026,
+        "maxX": -2010,
+        "minZ": -1560,
+        "maxZ": -1544
+      },
+      {
+        "minX": -1986,
+        "maxX": -1970,
+        "minZ": -1552,
+        "maxZ": -1536
+      },
+      {
+        "minX": -1870,
+        "maxX": -1854,
+        "minZ": -1522,
+        "maxZ": -1506
+      },
+      {
+        "minX": -1691,
+        "maxX": -1675,
+        "minZ": -1700,
+        "maxZ": -1684
+      },
+      {
+        "minX": -1668,
+        "maxX": -1652,
+        "minZ": -1679,
+        "maxZ": -1663
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1870,
@@ -13918,6 +24986,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1412,
       "maxZ": -1312
     },
+    "spawnNodes": [
+      {
+        "minX": 964,
+        "maxX": 980,
+        "minZ": -1339,
+        "maxZ": -1323
+      },
+      {
+        "minX": 990,
+        "maxX": 1006,
+        "minZ": -1401,
+        "maxZ": -1385
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 957,
@@ -13957,6 +25039,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5440,
       "maxZ": -5100
     },
+    "spawnNodes": [
+      {
+        "minX": -316,
+        "maxX": 4,
+        "minZ": -5430,
+        "maxZ": -5110
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -316,
@@ -13993,6 +25083,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3431,
       "maxZ": -2237
     },
+    "spawnNodes": [
+      {
+        "minX": -1557,
+        "maxX": -1473,
+        "minZ": -2331,
+        "maxZ": -2247
+      },
+      {
+        "minX": -1557,
+        "maxX": -1473,
+        "minZ": -2331,
+        "maxZ": -2247
+      },
+      {
+        "minX": -1557,
+        "maxX": -1473,
+        "minZ": -2331,
+        "maxZ": -2247
+      },
+      {
+        "minX": -1557,
+        "maxX": -1473,
+        "minZ": -2331,
+        "maxZ": -2247
+      },
+      {
+        "minX": -1530,
+        "maxX": -1480,
+        "minZ": -3406,
+        "maxZ": -3356
+      },
+      {
+        "minX": -1463,
+        "maxX": -1413,
+        "minZ": -3421,
+        "maxZ": -3371
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1530,
@@ -14035,6 +25163,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3431,
       "maxZ": -2237
     },
+    "spawnNodes": [
+      {
+        "minX": -1557,
+        "maxX": -1473,
+        "minZ": -2331,
+        "maxZ": -2247
+      },
+      {
+        "minX": -1557,
+        "maxX": -1473,
+        "minZ": -2331,
+        "maxZ": -2247
+      },
+      {
+        "minX": -1557,
+        "maxX": -1473,
+        "minZ": -2331,
+        "maxZ": -2247
+      },
+      {
+        "minX": -1557,
+        "maxX": -1473,
+        "minZ": -2331,
+        "maxZ": -2247
+      },
+      {
+        "minX": -1530,
+        "maxX": -1480,
+        "minZ": -3406,
+        "maxZ": -3356
+      },
+      {
+        "minX": -1463,
+        "maxX": -1413,
+        "minZ": -3421,
+        "maxZ": -3371
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1530,
@@ -14077,6 +25243,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3260,
       "maxZ": -3090
     },
+    "spawnNodes": [
+      {
+        "minX": -1647,
+        "maxX": -1497,
+        "minZ": -3250,
+        "maxZ": -3100
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1647,
@@ -14115,6 +25289,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3591,
       "maxZ": -2366
     },
+    "spawnNodes": [
+      {
+        "minX": 742,
+        "maxX": 772,
+        "minZ": -2453,
+        "maxZ": -2423
+      },
+      {
+        "minX": 644,
+        "maxX": 674,
+        "minZ": -2519,
+        "maxZ": -2489
+      },
+      {
+        "minX": 565,
+        "maxX": 595,
+        "minZ": -2406,
+        "maxZ": -2376
+      },
+      {
+        "minX": 422,
+        "maxX": 442,
+        "minZ": -2618,
+        "maxZ": -2598
+      },
+      {
+        "minX": 862,
+        "maxX": 882,
+        "minZ": -3026,
+        "maxZ": -3006
+      },
+      {
+        "minX": 117,
+        "maxX": 137,
+        "minZ": -3581,
+        "maxZ": -3561
+      },
+      {
+        "minX": -303,
+        "maxX": -283,
+        "minZ": -3285,
+        "maxZ": -3265
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 565,
@@ -14188,6 +25406,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4404,
       "maxZ": -4304
     },
+    "spawnNodes": [
+      {
+        "minX": -1451,
+        "maxX": -1411,
+        "minZ": -4374,
+        "maxZ": -4334
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1451,
@@ -14225,6 +25451,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4434,
       "maxZ": -4334
     },
+    "spawnNodes": [
+      {
+        "minX": -1516,
+        "maxX": -1500,
+        "minZ": -4392,
+        "maxZ": -4376
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1516,
@@ -14262,6 +25496,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4404,
       "maxZ": -4304
     },
+    "spawnNodes": [
+      {
+        "minX": -1451,
+        "maxX": -1411,
+        "minZ": -4374,
+        "maxZ": -4334
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1451,
@@ -14299,6 +25541,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4434,
       "maxZ": -4334
     },
+    "spawnNodes": [
+      {
+        "minX": -1516,
+        "maxX": -1500,
+        "minZ": -4392,
+        "maxZ": -4376
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1516,
@@ -14336,6 +25586,80 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4511,
       "maxZ": -4361
     },
+    "spawnNodes": [
+      {
+        "minX": -1494,
+        "maxX": -1478,
+        "minZ": -4419,
+        "maxZ": -4403
+      },
+      {
+        "minX": -1494,
+        "maxX": -1478,
+        "minZ": -4415,
+        "maxZ": -4399
+      },
+      {
+        "minX": -1494,
+        "maxX": -1478,
+        "minZ": -4406,
+        "maxZ": -4390
+      },
+      {
+        "minX": -1494,
+        "maxX": -1478,
+        "minZ": -4400,
+        "maxZ": -4384
+      },
+      {
+        "minX": -1494,
+        "maxX": -1478,
+        "minZ": -4392,
+        "maxZ": -4376
+      },
+      {
+        "minX": -1495,
+        "maxX": -1479,
+        "minZ": -4427,
+        "maxZ": -4411
+      },
+      {
+        "minX": -1494,
+        "maxX": -1478,
+        "minZ": -4419,
+        "maxZ": -4403
+      },
+      {
+        "minX": -1494,
+        "maxX": -1478,
+        "minZ": -4412,
+        "maxZ": -4396
+      },
+      {
+        "minX": -1494,
+        "maxX": -1478,
+        "minZ": -4405,
+        "maxZ": -4389
+      },
+      {
+        "minX": -1494,
+        "maxX": -1478,
+        "minZ": -4392,
+        "maxZ": -4376
+      },
+      {
+        "minX": -1516,
+        "maxX": -1500,
+        "minZ": -4501,
+        "maxZ": -4485
+      },
+      {
+        "minX": -1556,
+        "maxX": -1540,
+        "minZ": -4423,
+        "maxZ": -4407
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1556,
@@ -14377,6 +25701,296 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5416,
       "maxZ": -5140
     },
+    "spawnNodes": [
+      {
+        "minX": 585,
+        "maxX": 601,
+        "minZ": -5204,
+        "maxZ": -5188
+      },
+      {
+        "minX": 599,
+        "maxX": 619,
+        "minZ": -5237,
+        "maxZ": -5217
+      },
+      {
+        "minX": 574,
+        "maxX": 590,
+        "minZ": -5259,
+        "maxZ": -5243
+      },
+      {
+        "minX": 584,
+        "maxX": 600,
+        "minZ": -5294,
+        "maxZ": -5278
+      },
+      {
+        "minX": 572,
+        "maxX": 588,
+        "minZ": -5325,
+        "maxZ": -5309
+      },
+      {
+        "minX": 553,
+        "maxX": 569,
+        "minZ": -5300,
+        "maxZ": -5284
+      },
+      {
+        "minX": 556,
+        "maxX": 572,
+        "minZ": -5286,
+        "maxZ": -5270
+      },
+      {
+        "minX": 616,
+        "maxX": 632,
+        "minZ": -5166,
+        "maxZ": -5150
+      },
+      {
+        "minX": 558,
+        "maxX": 574,
+        "minZ": -5196,
+        "maxZ": -5180
+      },
+      {
+        "minX": 547,
+        "maxX": 563,
+        "minZ": -5210,
+        "maxZ": -5194
+      },
+      {
+        "minX": 538,
+        "maxX": 554,
+        "minZ": -5224,
+        "maxZ": -5208
+      },
+      {
+        "minX": 532,
+        "maxX": 548,
+        "minZ": -5243,
+        "maxZ": -5227
+      },
+      {
+        "minX": 528,
+        "maxX": 544,
+        "minZ": -5249,
+        "maxZ": -5233
+      },
+      {
+        "minX": 521,
+        "maxX": 537,
+        "minZ": -5261,
+        "maxZ": -5245
+      },
+      {
+        "minX": 514,
+        "maxX": 530,
+        "minZ": -5274,
+        "maxZ": -5258
+      },
+      {
+        "minX": 512,
+        "maxX": 528,
+        "minZ": -5287,
+        "maxZ": -5271
+      },
+      {
+        "minX": 537,
+        "maxX": 553,
+        "minZ": -5341,
+        "maxZ": -5325
+      },
+      {
+        "minX": 551,
+        "maxX": 567,
+        "minZ": -5350,
+        "maxZ": -5334
+      },
+      {
+        "minX": 576,
+        "maxX": 592,
+        "minZ": -5372,
+        "maxZ": -5356
+      },
+      {
+        "minX": 592,
+        "maxX": 608,
+        "minZ": -5376,
+        "maxZ": -5360
+      },
+      {
+        "minX": 602,
+        "maxX": 618,
+        "minZ": -5382,
+        "maxZ": -5366
+      },
+      {
+        "minX": 615,
+        "maxX": 631,
+        "minZ": -5384,
+        "maxZ": -5368
+      },
+      {
+        "minX": 628,
+        "maxX": 644,
+        "minZ": -5382,
+        "maxZ": -5366
+      },
+      {
+        "minX": 641,
+        "maxX": 657,
+        "minZ": -5374,
+        "maxZ": -5358
+      },
+      {
+        "minX": 638,
+        "maxX": 654,
+        "minZ": -5395,
+        "maxZ": -5379
+      },
+      {
+        "minX": 651,
+        "maxX": 667,
+        "minZ": -5403,
+        "maxZ": -5387
+      },
+      {
+        "minX": 662,
+        "maxX": 678,
+        "minZ": -5395,
+        "maxZ": -5379
+      },
+      {
+        "minX": 664,
+        "maxX": 680,
+        "minZ": -5380,
+        "maxZ": -5364
+      },
+      {
+        "minX": 663,
+        "maxX": 679,
+        "minZ": -5365,
+        "maxZ": -5349
+      },
+      {
+        "minX": 679,
+        "maxX": 695,
+        "minZ": -5367,
+        "maxZ": -5351
+      },
+      {
+        "minX": 681,
+        "maxX": 697,
+        "minZ": -5380,
+        "maxZ": -5364
+      },
+      {
+        "minX": 681,
+        "maxX": 697,
+        "minZ": -5399,
+        "maxZ": -5383
+      },
+      {
+        "minX": 694,
+        "maxX": 710,
+        "minZ": -5406,
+        "maxZ": -5390
+      },
+      {
+        "minX": 700,
+        "maxX": 716,
+        "minZ": -5387,
+        "maxZ": -5371
+      },
+      {
+        "minX": 700,
+        "maxX": 716,
+        "minZ": -5372,
+        "maxZ": -5356
+      },
+      {
+        "minX": 714,
+        "maxX": 730,
+        "minZ": -5367,
+        "maxZ": -5351
+      },
+      {
+        "minX": 718,
+        "maxX": 734,
+        "minZ": -5384,
+        "maxZ": -5368
+      },
+      {
+        "minX": 722,
+        "maxX": 738,
+        "minZ": -5399,
+        "maxZ": -5383
+      },
+      {
+        "minX": 627,
+        "maxX": 643,
+        "minZ": -5301,
+        "maxZ": -5285
+      },
+      {
+        "minX": 634,
+        "maxX": 650,
+        "minZ": -5304,
+        "maxZ": -5288
+      },
+      {
+        "minX": 620,
+        "maxX": 636,
+        "minZ": -5329,
+        "maxZ": -5313
+      },
+      {
+        "minX": 606,
+        "maxX": 622,
+        "minZ": -5354,
+        "maxZ": -5338
+      },
+      {
+        "minX": 615,
+        "maxX": 631,
+        "minZ": -5382,
+        "maxZ": -5366
+      },
+      {
+        "minX": 616,
+        "maxX": 632,
+        "minZ": -5356,
+        "maxZ": -5340
+      },
+      {
+        "minX": 619,
+        "maxX": 635,
+        "minZ": -5328,
+        "maxZ": -5312
+      },
+      {
+        "minX": 625,
+        "maxX": 641,
+        "minZ": -5335,
+        "maxZ": -5319
+      },
+      {
+        "minX": 648,
+        "maxX": 664,
+        "minZ": -5334,
+        "maxZ": -5318
+      },
+      {
+        "minX": 628,
+        "maxX": 644,
+        "minZ": -5333,
+        "maxZ": -5317
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 512,
@@ -14413,6 +26027,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5348,
       "maxZ": -5248
     },
+    "spawnNodes": [
+      {
+        "minX": 630,
+        "maxX": 646,
+        "minZ": -5306,
+        "maxZ": -5290
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 630,
@@ -14450,6 +26072,188 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5030,
       "maxZ": -4415
     },
+    "spawnNodes": [
+      {
+        "minX": 341,
+        "maxX": 357,
+        "minZ": -4441,
+        "maxZ": -4425
+      },
+      {
+        "minX": 351,
+        "maxX": 371,
+        "minZ": -4457,
+        "maxZ": -4437
+      },
+      {
+        "minX": 375,
+        "maxX": 391,
+        "minZ": -4513,
+        "maxZ": -4497
+      },
+      {
+        "minX": 373,
+        "maxX": 389,
+        "minZ": -4497,
+        "maxZ": -4481
+      },
+      {
+        "minX": 337,
+        "maxX": 353,
+        "minZ": -4534,
+        "maxZ": -4518
+      },
+      {
+        "minX": 356,
+        "maxX": 372,
+        "minZ": -4535,
+        "maxZ": -4519
+      },
+      {
+        "minX": 367,
+        "maxX": 383,
+        "minZ": -4518,
+        "maxZ": -4502
+      },
+      {
+        "minX": 361,
+        "maxX": 379,
+        "minZ": -4494,
+        "maxZ": -4476
+      },
+      {
+        "minX": 366,
+        "maxX": 382,
+        "minZ": -4927,
+        "maxZ": -4911
+      },
+      {
+        "minX": 385,
+        "maxX": 401,
+        "minZ": -4948,
+        "maxZ": -4932
+      },
+      {
+        "minX": 400,
+        "maxX": 416,
+        "minZ": -4963,
+        "maxZ": -4947
+      },
+      {
+        "minX": 411,
+        "maxX": 427,
+        "minZ": -4977,
+        "maxZ": -4961
+      },
+      {
+        "minX": 421,
+        "maxX": 437,
+        "minZ": -5009,
+        "maxZ": -4993
+      },
+      {
+        "minX": 408,
+        "maxX": 424,
+        "minZ": -4997,
+        "maxZ": -4981
+      },
+      {
+        "minX": 384,
+        "maxX": 400,
+        "minZ": -5007,
+        "maxZ": -4991
+      },
+      {
+        "minX": 369,
+        "maxX": 385,
+        "minZ": -5020,
+        "maxZ": -5004
+      },
+      {
+        "minX": 324,
+        "maxX": 340,
+        "minZ": -4664,
+        "maxZ": -4648
+      },
+      {
+        "minX": 314,
+        "maxX": 330,
+        "minZ": -4686,
+        "maxZ": -4670
+      },
+      {
+        "minX": 309,
+        "maxX": 325,
+        "minZ": -4706,
+        "maxZ": -4690
+      },
+      {
+        "minX": 290,
+        "maxX": 306,
+        "minZ": -4740,
+        "maxZ": -4724
+      },
+      {
+        "minX": 270,
+        "maxX": 286,
+        "minZ": -4770,
+        "maxZ": -4754
+      },
+      {
+        "minX": 254,
+        "maxX": 270,
+        "minZ": -4786,
+        "maxZ": -4770
+      },
+      {
+        "minX": 225,
+        "maxX": 241,
+        "minZ": -4786,
+        "maxZ": -4770
+      },
+      {
+        "minX": 275,
+        "maxX": 291,
+        "minZ": -4813,
+        "maxZ": -4797
+      },
+      {
+        "minX": 289,
+        "maxX": 305,
+        "minZ": -4818,
+        "maxZ": -4802
+      },
+      {
+        "minX": 299,
+        "maxX": 315,
+        "minZ": -4834,
+        "maxZ": -4818
+      },
+      {
+        "minX": 300,
+        "maxX": 316,
+        "minZ": -4855,
+        "maxZ": -4839
+      },
+      {
+        "minX": 308,
+        "maxX": 324,
+        "minZ": -4868,
+        "maxZ": -4852
+      },
+      {
+        "minX": 315,
+        "maxX": 331,
+        "minZ": -4891,
+        "maxZ": -4875
+      },
+      {
+        "minX": 323,
+        "maxX": 339,
+        "minZ": -4913,
+        "maxZ": -4897
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 225,
@@ -14492,6 +26296,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5409,
       "maxZ": -5295
     },
+    "spawnNodes": [
+      {
+        "minX": 628,
+        "maxX": 644,
+        "minZ": -5321,
+        "maxZ": -5305
+      },
+      {
+        "minX": 618,
+        "maxX": 634,
+        "minZ": -5337,
+        "maxZ": -5321
+      },
+      {
+        "minX": 617,
+        "maxX": 633,
+        "minZ": -5387,
+        "maxZ": -5371
+      },
+      {
+        "minX": 605,
+        "maxX": 621,
+        "minZ": -5371,
+        "maxZ": -5355
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 591,
@@ -14527,6 +26357,128 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4946,
       "maxZ": -4228
     },
+    "spawnNodes": [
+      {
+        "minX": 781,
+        "maxX": 797,
+        "minZ": -4421,
+        "maxZ": -4405
+      },
+      {
+        "minX": 802,
+        "maxX": 818,
+        "minZ": -4410,
+        "maxZ": -4394
+      },
+      {
+        "minX": 810,
+        "maxX": 826,
+        "minZ": -4402,
+        "maxZ": -4386
+      },
+      {
+        "minX": 844,
+        "maxX": 864,
+        "minZ": -4522,
+        "maxZ": -4502
+      },
+      {
+        "minX": 1053,
+        "maxX": 1093,
+        "minZ": -4469,
+        "maxZ": -4429
+      },
+      {
+        "minX": 1481,
+        "maxX": 1497,
+        "minZ": -4586,
+        "maxZ": -4570
+      },
+      {
+        "minX": 1463,
+        "maxX": 1479,
+        "minZ": -4610,
+        "maxZ": -4594
+      },
+      {
+        "minX": 1466,
+        "maxX": 1482,
+        "minZ": -4601,
+        "maxZ": -4585
+      },
+      {
+        "minX": 1066,
+        "maxX": 1082,
+        "minZ": -4936,
+        "maxZ": -4920
+      },
+      {
+        "minX": 997,
+        "maxX": 1013,
+        "minZ": -4929,
+        "maxZ": -4913
+      },
+      {
+        "minX": 781,
+        "maxX": 797,
+        "minZ": -4834,
+        "maxZ": -4818
+      },
+      {
+        "minX": 1094,
+        "maxX": 1110,
+        "minZ": -4291,
+        "maxZ": -4275
+      },
+      {
+        "minX": 1403,
+        "maxX": 1419,
+        "minZ": -4310,
+        "maxZ": -4294
+      },
+      {
+        "minX": 1480,
+        "maxX": 1496,
+        "minZ": -4306,
+        "maxZ": -4290
+      },
+      {
+        "minX": 1446,
+        "maxX": 1462,
+        "minZ": -4294,
+        "maxZ": -4278
+      },
+      {
+        "minX": 1498,
+        "maxX": 1514,
+        "minZ": -4292,
+        "maxZ": -4276
+      },
+      {
+        "minX": 1461,
+        "maxX": 1477,
+        "minZ": -4274,
+        "maxZ": -4258
+      },
+      {
+        "minX": 1471,
+        "maxX": 1491,
+        "minZ": -4276,
+        "maxZ": -4256
+      },
+      {
+        "minX": 1471,
+        "maxX": 1487,
+        "minZ": -4405,
+        "maxZ": -4389
+      },
+      {
+        "minX": 1462,
+        "maxX": 1478,
+        "minZ": -4457,
+        "maxZ": -4441
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1403,
@@ -14616,6 +26568,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -263,
       "maxZ": -163
     },
+    "spawnNodes": [
+      {
+        "minX": -44,
+        "maxX": -28,
+        "minZ": -221,
+        "maxZ": -205
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -44,
@@ -14652,6 +26612,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -904,
       "maxZ": -416
     },
+    "spawnNodes": [
+      {
+        "minX": -1822,
+        "maxX": -1806,
+        "minZ": -894,
+        "maxZ": -878
+      },
+      {
+        "minX": -1775,
+        "maxX": -1759,
+        "minZ": -699,
+        "maxZ": -683
+      },
+      {
+        "minX": -1789,
+        "maxX": -1773,
+        "minZ": -442,
+        "maxZ": -426
+      },
+      {
+        "minX": -1934,
+        "maxX": -1918,
+        "minZ": -550,
+        "maxZ": -534
+      },
+      {
+        "minX": -1961,
+        "maxX": -1945,
+        "minZ": -591,
+        "maxZ": -575
+      },
+      {
+        "minX": -2276,
+        "maxX": -2260,
+        "minZ": -617,
+        "maxZ": -601
+      },
+      {
+        "minX": -2250,
+        "maxX": -2234,
+        "minZ": -806,
+        "maxZ": -790
+      },
+      {
+        "minX": -1955,
+        "maxX": -1939,
+        "minZ": -764,
+        "maxZ": -748
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1967,
@@ -14723,6 +26733,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5559,
       "maxZ": -5105
     },
+    "spawnNodes": [
+      {
+        "minX": 1363,
+        "maxX": 1393,
+        "minZ": -5424,
+        "maxZ": -5394
+      },
+      {
+        "minX": 1340,
+        "maxX": 1370,
+        "minZ": -5549,
+        "maxZ": -5519
+      },
+      {
+        "minX": 1363,
+        "maxX": 1413,
+        "minZ": -5165,
+        "maxZ": -5115
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1363,
@@ -14772,6 +26802,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1329,
       "maxZ": -1229
     },
+    "spawnNodes": [
+      {
+        "minX": 216,
+        "maxX": 286,
+        "minZ": -1314,
+        "maxZ": -1244
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 216,
@@ -14807,6 +26845,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5305,
       "maxZ": -5195
     },
+    "spawnNodes": [
+      {
+        "minX": 1492,
+        "maxX": 1518,
+        "minZ": -5231,
+        "maxZ": -5205
+      },
+      {
+        "minX": 1421,
+        "maxX": 1441,
+        "minZ": -5247,
+        "maxZ": -5227
+      },
+      {
+        "minX": 1426,
+        "maxX": 1456,
+        "minZ": -5290,
+        "maxZ": -5260
+      },
+      {
+        "minX": 1461,
+        "maxX": 1481,
+        "minZ": -5264,
+        "maxZ": -5244
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1421,
@@ -14843,6 +26907,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -863,
       "maxZ": -565
     },
+    "spawnNodes": [
+      {
+        "minX": -598,
+        "maxX": -582,
+        "minZ": -591,
+        "maxZ": -575
+      },
+      {
+        "minX": -491,
+        "maxX": -461,
+        "minZ": -853,
+        "maxZ": -823
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -491,
@@ -14884,6 +26962,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5464,
       "maxZ": -5354
     },
+    "spawnNodes": [
+      {
+        "minX": 807,
+        "maxX": 823,
+        "minZ": -5380,
+        "maxZ": -5364
+      },
+      {
+        "minX": 760,
+        "maxX": 776,
+        "minZ": -5423,
+        "maxZ": -5407
+      },
+      {
+        "minX": 741,
+        "maxX": 757,
+        "minZ": -5445,
+        "maxZ": -5429
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 731,
@@ -14920,6 +27018,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -988,
       "maxZ": -888
     },
+    "spawnNodes": [
+      {
+        "minX": -1403,
+        "maxX": -1371,
+        "minZ": -954,
+        "maxZ": -922
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1403,
@@ -14956,6 +27062,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1366,
       "maxZ": -977
     },
+    "spawnNodes": [
+      {
+        "minX": -1115,
+        "maxX": -1095,
+        "minZ": -1007,
+        "maxZ": -987
+      },
+      {
+        "minX": -1196,
+        "maxX": -1176,
+        "minZ": -1356,
+        "maxZ": -1336
+      },
+      {
+        "minX": -1217,
+        "maxX": -1177,
+        "minZ": -1063,
+        "maxZ": -1023
+      },
+      {
+        "minX": -1167,
+        "maxX": -1127,
+        "minZ": -1286,
+        "maxZ": -1246
+      },
+      {
+        "minX": -1090,
+        "maxX": -1040,
+        "minZ": -1228,
+        "maxZ": -1178
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1196,
@@ -15005,6 +27143,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1240,
       "maxZ": -988
     },
+    "spawnNodes": [
+      {
+        "minX": -1121,
+        "maxX": -1021,
+        "minZ": -1230,
+        "maxZ": -1130
+      },
+      {
+        "minX": -1366,
+        "maxX": -1326,
+        "minZ": -1038,
+        "maxZ": -998
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1121,
@@ -15048,6 +27200,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1131,
       "maxZ": -926
     },
+    "spawnNodes": [
+      {
+        "minX": -1143,
+        "maxX": -1127,
+        "minZ": -1121,
+        "maxZ": -1105
+      },
+      {
+        "minX": -1223,
+        "maxX": -1207,
+        "minZ": -996,
+        "maxZ": -980
+      },
+      {
+        "minX": -1391,
+        "maxX": -1375,
+        "minZ": -952,
+        "maxZ": -936
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1391,
@@ -15096,6 +27268,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1088,
       "maxZ": -988
     },
+    "spawnNodes": [
+      {
+        "minX": -1262,
+        "maxX": -1246,
+        "minZ": -1040,
+        "maxZ": -1024
+      },
+      {
+        "minX": -1292,
+        "maxX": -1276,
+        "minZ": -1046,
+        "maxZ": -1030
+      },
+      {
+        "minX": -1251,
+        "maxX": -1235,
+        "minZ": -1024,
+        "maxZ": -1008
+      },
+      {
+        "minX": -1274,
+        "maxX": -1258,
+        "minZ": -1046,
+        "maxZ": -1030
+      },
+      {
+        "minX": -1295,
+        "maxX": -1279,
+        "minZ": -1050,
+        "maxZ": -1034
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1304,
@@ -15132,6 +27336,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -988,
       "maxZ": -888
     },
+    "spawnNodes": [
+      {
+        "minX": -1403,
+        "maxX": -1371,
+        "minZ": -954,
+        "maxZ": -922
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1403,
@@ -15168,6 +27380,104 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2020,
       "maxZ": -1718
     },
+    "spawnNodes": [
+      {
+        "minX": 715,
+        "maxX": 731,
+        "minZ": -1744,
+        "maxZ": -1728
+      },
+      {
+        "minX": 726,
+        "maxX": 742,
+        "minZ": -1768,
+        "maxZ": -1752
+      },
+      {
+        "minX": 725,
+        "maxX": 741,
+        "minZ": -1798,
+        "maxZ": -1782
+      },
+      {
+        "minX": 724,
+        "maxX": 740,
+        "minZ": -1820,
+        "maxZ": -1804
+      },
+      {
+        "minX": 702,
+        "maxX": 718,
+        "minZ": -1872,
+        "maxZ": -1856
+      },
+      {
+        "minX": 695,
+        "maxX": 711,
+        "minZ": -1895,
+        "maxZ": -1879
+      },
+      {
+        "minX": 697,
+        "maxX": 713,
+        "minZ": -1920,
+        "maxZ": -1904
+      },
+      {
+        "minX": 696,
+        "maxX": 712,
+        "minZ": -1934,
+        "maxZ": -1918
+      },
+      {
+        "minX": 662,
+        "maxX": 678,
+        "minZ": -1988,
+        "maxZ": -1972
+      },
+      {
+        "minX": 667,
+        "maxX": 683,
+        "minZ": -2010,
+        "maxZ": -1994
+      },
+      {
+        "minX": 640,
+        "maxX": 656,
+        "minZ": -1970,
+        "maxZ": -1954
+      },
+      {
+        "minX": 613,
+        "maxX": 629,
+        "minZ": -1985,
+        "maxZ": -1969
+      },
+      {
+        "minX": 717,
+        "maxX": 733,
+        "minZ": -1963,
+        "maxZ": -1947
+      },
+      {
+        "minX": 773,
+        "maxX": 789,
+        "minZ": -1966,
+        "maxZ": -1950
+      },
+      {
+        "minX": 807,
+        "maxX": 823,
+        "minZ": -1966,
+        "maxZ": -1950
+      },
+      {
+        "minX": 764,
+        "maxX": 780,
+        "minZ": -2005,
+        "maxZ": -1989
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 613,
@@ -15207,6 +27517,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1936,
       "maxZ": -1836
     },
+    "spawnNodes": [
+      {
+        "minX": 681,
+        "maxX": 721,
+        "minZ": -1906,
+        "maxZ": -1866
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 681,
@@ -15243,6 +27561,62 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5543,
       "maxZ": -4282
     },
+    "spawnNodes": [
+      {
+        "minX": -90,
+        "maxX": -74,
+        "minZ": -4308,
+        "maxZ": -4292
+      },
+      {
+        "minX": -62,
+        "maxX": -46,
+        "minZ": -4308,
+        "maxZ": -4292
+      },
+      {
+        "minX": -46,
+        "maxX": -30,
+        "minZ": -4321,
+        "maxZ": -4305
+      },
+      {
+        "minX": 68,
+        "maxX": 84,
+        "minZ": -4353,
+        "maxZ": -4337
+      },
+      {
+        "minX": 28,
+        "maxX": 44,
+        "minZ": -4370,
+        "maxZ": -4354
+      },
+      {
+        "minX": -17,
+        "maxX": -1,
+        "minZ": -4353,
+        "maxZ": -4337
+      },
+      {
+        "minX": 646,
+        "maxX": 662,
+        "minZ": -5454,
+        "maxZ": -5438
+      },
+      {
+        "minX": 583,
+        "maxX": 599,
+        "minZ": -5482,
+        "maxZ": -5466
+      },
+      {
+        "minX": 594,
+        "maxX": 610,
+        "minZ": -5533,
+        "maxZ": -5517
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -90,
@@ -15285,6 +27659,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5502,
       "maxZ": -4286
     },
+    "spawnNodes": [
+      {
+        "minX": -62,
+        "maxX": -46,
+        "minZ": -4331,
+        "maxZ": -4315
+      },
+      {
+        "minX": -91,
+        "maxX": -75,
+        "minZ": -4312,
+        "maxZ": -4296
+      },
+      {
+        "minX": 54,
+        "maxX": 70,
+        "minZ": -4364,
+        "maxZ": -4348
+      },
+      {
+        "minX": -40,
+        "maxX": -24,
+        "minZ": -4349,
+        "maxZ": -4333
+      },
+      {
+        "minX": 1,
+        "maxX": 17,
+        "minZ": -4364,
+        "maxZ": -4348
+      },
+      {
+        "minX": 590,
+        "maxX": 606,
+        "minZ": -5458,
+        "maxZ": -5442
+      },
+      {
+        "minX": 589,
+        "maxX": 605,
+        "minZ": -5487,
+        "maxZ": -5471
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -91,
@@ -15326,6 +27744,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4940,
       "maxZ": -4840
     },
+    "spawnNodes": [
+      {
+        "minX": 335,
+        "maxX": 351,
+        "minZ": -4898,
+        "maxZ": -4882
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 335,
@@ -15362,6 +27788,146 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5568,
       "maxZ": -4304
     },
+    "spawnNodes": [
+      {
+        "minX": 77,
+        "maxX": 93,
+        "minZ": -4350,
+        "maxZ": -4334
+      },
+      {
+        "minX": 94,
+        "maxX": 110,
+        "minZ": -4352,
+        "maxZ": -4336
+      },
+      {
+        "minX": 57,
+        "maxX": 73,
+        "minZ": -4348,
+        "maxZ": -4332
+      },
+      {
+        "minX": 618,
+        "maxX": 634,
+        "minZ": -5471,
+        "maxZ": -5455
+      },
+      {
+        "minX": 624,
+        "maxX": 640,
+        "minZ": -5469,
+        "maxZ": -5453
+      },
+      {
+        "minX": 635,
+        "maxX": 651,
+        "minZ": -5479,
+        "maxZ": -5463
+      },
+      {
+        "minX": 598,
+        "maxX": 614,
+        "minZ": -5558,
+        "maxZ": -5542
+      },
+      {
+        "minX": 612,
+        "maxX": 628,
+        "minZ": -5553,
+        "maxZ": -5537
+      },
+      {
+        "minX": 622,
+        "maxX": 638,
+        "minZ": -5546,
+        "maxZ": -5530
+      },
+      {
+        "minX": 629,
+        "maxX": 645,
+        "minZ": -5536,
+        "maxZ": -5520
+      },
+      {
+        "minX": 643,
+        "maxX": 659,
+        "minZ": -5518,
+        "maxZ": -5502
+      },
+      {
+        "minX": 610,
+        "maxX": 626,
+        "minZ": -5492,
+        "maxZ": -5476
+      },
+      {
+        "minX": 607,
+        "maxX": 623,
+        "minZ": -5499,
+        "maxZ": -5483
+      },
+      {
+        "minX": 602,
+        "maxX": 618,
+        "minZ": -5511,
+        "maxZ": -5495
+      },
+      {
+        "minX": 592,
+        "maxX": 608,
+        "minZ": -5501,
+        "maxZ": -5485
+      },
+      {
+        "minX": 612,
+        "maxX": 628,
+        "minZ": -5523,
+        "maxZ": -5507
+      },
+      {
+        "minX": 597,
+        "maxX": 613,
+        "minZ": -5482,
+        "maxZ": -5466
+      },
+      {
+        "minX": 633,
+        "maxX": 649,
+        "minZ": -5452,
+        "maxZ": -5436
+      },
+      {
+        "minX": 633,
+        "maxX": 649,
+        "minZ": -5468,
+        "maxZ": -5452
+      },
+      {
+        "minX": 644,
+        "maxX": 660,
+        "minZ": -5499,
+        "maxZ": -5483
+      },
+      {
+        "minX": 618,
+        "maxX": 634,
+        "minZ": -5529,
+        "maxZ": -5513
+      },
+      {
+        "minX": 589,
+        "maxX": 605,
+        "minZ": -5487,
+        "maxZ": -5471
+      },
+      {
+        "minX": 607,
+        "maxX": 627,
+        "minZ": -5555,
+        "maxZ": -5535
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 580,
@@ -15408,6 +27974,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4768,
       "maxZ": -4668
     },
+    "spawnNodes": [
+      {
+        "minX": -1757,
+        "maxX": -1741,
+        "minZ": -4729,
+        "maxZ": -4713
+      },
+      {
+        "minX": -1726,
+        "maxX": -1710,
+        "minZ": -4724,
+        "maxZ": -4708
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1761,
@@ -15448,6 +28028,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4764,
       "maxZ": -4633
     },
+    "spawnNodes": [
+      {
+        "minX": -1712,
+        "maxX": -1696,
+        "minZ": -4754,
+        "maxZ": -4738
+      },
+      {
+        "minX": -1723,
+        "maxX": -1707,
+        "minZ": -4754,
+        "maxZ": -4738
+      },
+      {
+        "minX": -1738,
+        "maxX": -1722,
+        "minZ": -4694,
+        "maxZ": -4678
+      },
+      {
+        "minX": -1729,
+        "maxX": -1713,
+        "minZ": -4682,
+        "maxZ": -4666
+      },
+      {
+        "minX": -1730,
+        "maxX": -1714,
+        "minZ": -4672,
+        "maxZ": -4656
+      },
+      {
+        "minX": -1740,
+        "maxX": -1724,
+        "minZ": -4674,
+        "maxZ": -4658
+      },
+      {
+        "minX": -1742,
+        "maxX": -1726,
+        "minZ": -4684,
+        "maxZ": -4668
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1761,
@@ -15488,6 +28112,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4797,
       "maxZ": -4697
     },
+    "spawnNodes": [
+      {
+        "minX": -1720,
+        "maxX": -1704,
+        "minZ": -4755,
+        "maxZ": -4739
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1720,
@@ -15524,6 +28156,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4387,
       "maxZ": -4287
     },
+    "spawnNodes": [
+      {
+        "minX": -964,
+        "maxX": -936,
+        "minZ": -4351,
+        "maxZ": -4323
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -964,
@@ -15559,6 +28199,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -995,
       "maxZ": -895
     },
+    "spawnNodes": [
+      {
+        "minX": -864,
+        "maxX": -848,
+        "minZ": -953,
+        "maxZ": -937
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -864,
@@ -15594,6 +28242,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1416,
       "maxZ": -1316
     },
+    "spawnNodes": [
+      {
+        "minX": 977,
+        "maxX": 993,
+        "minZ": -1374,
+        "maxZ": -1358
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 977,
@@ -15629,6 +28285,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1475,
       "maxZ": -1375
     },
+    "spawnNodes": [
+      {
+        "minX": 981,
+        "maxX": 997,
+        "minZ": -1433,
+        "maxZ": -1417
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 981,
@@ -15666,6 +28330,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -400,
       "maxZ": -282
     },
+    "spawnNodes": [
+      {
+        "minX": 122,
+        "maxX": 138,
+        "minZ": -387,
+        "maxZ": -371
+      },
+      {
+        "minX": 91,
+        "maxX": 107,
+        "minZ": -388,
+        "maxZ": -372
+      },
+      {
+        "minX": 56,
+        "maxX": 76,
+        "minZ": -345,
+        "maxZ": -325
+      },
+      {
+        "minX": 60,
+        "maxX": 80,
+        "minZ": -378,
+        "maxZ": -358
+      },
+      {
+        "minX": 72,
+        "maxX": 92,
+        "minZ": -390,
+        "maxZ": -370
+      },
+      {
+        "minX": 71,
+        "maxX": 91,
+        "minZ": -344,
+        "maxZ": -324
+      },
+      {
+        "minX": 80,
+        "maxX": 100,
+        "minZ": -317,
+        "maxZ": -297
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 56,
@@ -15701,6 +28409,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5511,
       "maxZ": -5411
     },
+    "spawnNodes": [
+      {
+        "minX": 1216,
+        "maxX": 1232,
+        "minZ": -5457,
+        "maxZ": -5441
+      },
+      {
+        "minX": 1191,
+        "maxX": 1207,
+        "minZ": -5482,
+        "maxZ": -5466
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1184,
@@ -15741,6 +28463,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1034,
       "maxZ": -684
     },
+    "spawnNodes": [
+      {
+        "minX": -81,
+        "maxX": 29,
+        "minZ": -965,
+        "maxZ": -855
+      },
+      {
+        "minX": 81,
+        "maxX": 211,
+        "minZ": -1024,
+        "maxZ": -894
+      },
+      {
+        "minX": 147,
+        "maxX": 277,
+        "minZ": -824,
+        "maxZ": -694
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -81,
@@ -15782,6 +28524,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -687,
       "maxZ": -587
     },
+    "spawnNodes": [
+      {
+        "minX": 257,
+        "maxX": 287,
+        "minZ": -652,
+        "maxZ": -622
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 257,
@@ -15819,6 +28569,86 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3430,
       "maxZ": -3012
     },
+    "spawnNodes": [
+      {
+        "minX": -225,
+        "maxX": -195,
+        "minZ": -3420,
+        "maxZ": -3390
+      },
+      {
+        "minX": -228,
+        "maxX": -198,
+        "minZ": -3387,
+        "maxZ": -3357
+      },
+      {
+        "minX": -225,
+        "maxX": -195,
+        "minZ": -3341,
+        "maxZ": -3311
+      },
+      {
+        "minX": -191,
+        "maxX": -161,
+        "minZ": -3298,
+        "maxZ": -3268
+      },
+      {
+        "minX": -156,
+        "maxX": -126,
+        "minZ": -3268,
+        "maxZ": -3238
+      },
+      {
+        "minX": -124,
+        "maxX": -94,
+        "minZ": -3232,
+        "maxZ": -3202
+      },
+      {
+        "minX": -125,
+        "maxX": -95,
+        "minZ": -3205,
+        "maxZ": -3175
+      },
+      {
+        "minX": -157,
+        "maxX": -127,
+        "minZ": -3138,
+        "maxZ": -3108
+      },
+      {
+        "minX": -207,
+        "maxX": -177,
+        "minZ": -3139,
+        "maxZ": -3109
+      },
+      {
+        "minX": -208,
+        "maxX": -178,
+        "minZ": -3109,
+        "maxZ": -3079
+      },
+      {
+        "minX": -185,
+        "maxX": -155,
+        "minZ": -3061,
+        "maxZ": -3031
+      },
+      {
+        "minX": -146,
+        "maxX": -86,
+        "minZ": -3082,
+        "maxZ": -3022
+      },
+      {
+        "minX": -114,
+        "maxX": -54,
+        "minZ": -3283,
+        "maxZ": -3223
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -228,
@@ -15854,6 +28684,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -952,
       "maxZ": -768
     },
+    "spawnNodes": [
+      {
+        "minX": -1700,
+        "maxX": -1684,
+        "minZ": -919,
+        "maxZ": -903
+      },
+      {
+        "minX": -1717,
+        "maxX": -1701,
+        "minZ": -889,
+        "maxZ": -873
+      },
+      {
+        "minX": -1736,
+        "maxX": -1720,
+        "minZ": -870,
+        "maxZ": -854
+      },
+      {
+        "minX": -1734,
+        "maxX": -1718,
+        "minZ": -825,
+        "maxZ": -809
+      },
+      {
+        "minX": -1718,
+        "maxX": -1702,
+        "minZ": -803,
+        "maxZ": -787
+      },
+      {
+        "minX": -1586,
+        "maxX": -1570,
+        "minZ": -915,
+        "maxZ": -899
+      },
+      {
+        "minX": -1626,
+        "maxX": -1610,
+        "minZ": -930,
+        "maxZ": -914
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1746,
@@ -15896,6 +28770,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -802,
       "maxZ": -592
     },
+    "spawnNodes": [
+      {
+        "minX": -583,
+        "maxX": -515,
+        "minZ": -728,
+        "maxZ": -660
+      },
+      {
+        "minX": -645,
+        "maxX": -569,
+        "minZ": -678,
+        "maxZ": -602
+      },
+      {
+        "minX": -556,
+        "maxX": -494,
+        "minZ": -673,
+        "maxZ": -611
+      },
+      {
+        "minX": -539,
+        "maxX": -489,
+        "minZ": -791,
+        "maxZ": -741
+      },
+      {
+        "minX": -655,
+        "maxX": -583,
+        "minZ": -792,
+        "maxZ": -720
+      },
+      {
+        "minX": -731,
+        "maxX": -667,
+        "minZ": -761,
+        "maxZ": -697
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -731,
@@ -15932,6 +28844,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1492,
       "maxZ": -1392
     },
+    "spawnNodes": [
+      {
+        "minX": -1028,
+        "maxX": -1012,
+        "minZ": -1450,
+        "maxZ": -1434
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1028,
@@ -15970,6 +28890,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -471,
       "maxZ": -319
     },
+    "spawnNodes": [
+      {
+        "minX": -305,
+        "maxX": -225,
+        "minZ": -426,
+        "maxZ": -346
+      },
+      {
+        "minX": -276,
+        "maxX": -196,
+        "minZ": -440,
+        "maxZ": -360
+      },
+      {
+        "minX": -228,
+        "maxX": -148,
+        "minZ": -409,
+        "maxZ": -329
+      },
+      {
+        "minX": -229,
+        "maxX": -149,
+        "minZ": -461,
+        "maxZ": -381
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -305,
@@ -16005,6 +28951,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5206,
       "maxZ": -5106
     },
+    "spawnNodes": [
+      {
+        "minX": 909,
+        "maxX": 925,
+        "minZ": -5184,
+        "maxZ": -5168
+      },
+      {
+        "minX": 926,
+        "maxX": 942,
+        "minZ": -5190,
+        "maxZ": -5174
+      },
+      {
+        "minX": 903,
+        "maxX": 919,
+        "minZ": -5169,
+        "maxZ": -5153
+      },
+      {
+        "minX": 904,
+        "maxX": 920,
+        "minZ": -5149,
+        "maxZ": -5133
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 884,
@@ -16042,6 +29014,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3384,
       "maxZ": -3284
     },
+    "spawnNodes": [
+      {
+        "minX": 1122,
+        "maxX": 1138,
+        "minZ": -3342,
+        "maxZ": -3326
+      },
+      {
+        "minX": 1114,
+        "maxX": 1130,
+        "minZ": -3343,
+        "maxZ": -3327
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1098,
@@ -16078,6 +29064,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -304,
       "maxZ": -204
     },
+    "spawnNodes": [
+      {
+        "minX": -683,
+        "maxX": -667,
+        "minZ": -249,
+        "maxZ": -233
+      },
+      {
+        "minX": -673,
+        "maxX": -657,
+        "minZ": -276,
+        "maxZ": -260
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -698,
@@ -16114,6 +29114,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5596,
       "maxZ": -5175
     },
+    "spawnNodes": [
+      {
+        "minX": 1343,
+        "maxX": 1363,
+        "minZ": -5579,
+        "maxZ": -5559
+      },
+      {
+        "minX": 1298,
+        "maxX": 1318,
+        "minZ": -5530,
+        "maxZ": -5510
+      },
+      {
+        "minX": 1293,
+        "maxX": 1313,
+        "minZ": -5586,
+        "maxZ": -5566
+      },
+      {
+        "minX": 1448,
+        "maxX": 1488,
+        "minZ": -5225,
+        "maxZ": -5185
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1278,
@@ -16156,6 +29182,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -435,
       "maxZ": -335
     },
+    "spawnNodes": [
+      {
+        "minX": -489,
+        "maxX": -473,
+        "minZ": -419,
+        "maxZ": -403
+      },
+      {
+        "minX": -488,
+        "maxX": -472,
+        "minZ": -377,
+        "maxZ": -361
+      },
+      {
+        "minX": -490,
+        "maxX": -474,
+        "minZ": -385,
+        "maxZ": -369
+      },
+      {
+        "minX": -515,
+        "maxX": -499,
+        "minZ": -376,
+        "maxZ": -360
+      },
+      {
+        "minX": -550,
+        "maxX": -534,
+        "minZ": -398,
+        "maxZ": -382
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -552,
@@ -16196,6 +29254,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -946,
       "maxZ": -581
     },
+    "spawnNodes": [
+      {
+        "minX": -630,
+        "maxX": -490,
+        "minZ": -731,
+        "maxZ": -591
+      },
+      {
+        "minX": -662,
+        "maxX": -522,
+        "minZ": -846,
+        "maxZ": -706
+      },
+      {
+        "minX": -606,
+        "maxX": -496,
+        "minZ": -936,
+        "maxZ": -826
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -662,
@@ -16231,6 +29309,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -537,
       "maxZ": -437
     },
+    "spawnNodes": [
+      {
+        "minX": -585,
+        "maxX": -565,
+        "minZ": -497,
+        "maxZ": -477
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -585,
@@ -16267,6 +29353,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1958,
       "maxZ": -1858
     },
+    "spawnNodes": [
+      {
+        "minX": -629,
+        "maxX": -613,
+        "minZ": -1916,
+        "maxZ": -1900
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -629,
@@ -16303,6 +29397,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1836,
       "maxZ": -1736
     },
+    "spawnNodes": [
+      {
+        "minX": -635,
+        "maxX": -619,
+        "minZ": -1794,
+        "maxZ": -1778
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -635,
@@ -16339,6 +29441,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2029,
       "maxZ": -1929
     },
+    "spawnNodes": [
+      {
+        "minX": -625,
+        "maxX": -609,
+        "minZ": -1987,
+        "maxZ": -1971
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -625,
@@ -16379,6 +29489,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5587,
       "maxZ": -5184
     },
+    "spawnNodes": [
+      {
+        "minX": -1379,
+        "maxX": -1159,
+        "minZ": -5414,
+        "maxZ": -5194
+      },
+      {
+        "minX": -1389,
+        "maxX": -1197,
+        "minZ": -5577,
+        "maxZ": -5385
+      },
+      {
+        "minX": -1169,
+        "maxX": -961,
+        "minZ": -5562,
+        "maxZ": -5354
+      },
+      {
+        "minX": -1312,
+        "maxX": -1252,
+        "minZ": -5455,
+        "maxZ": -5395
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1389,
@@ -16414,6 +29550,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1385,
       "maxZ": -1285
     },
+    "spawnNodes": [
+      {
+        "minX": 374,
+        "maxX": 390,
+        "minZ": -1343,
+        "maxZ": -1327
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 374,
@@ -16451,6 +29595,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5417,
       "maxZ": -5317
     },
+    "spawnNodes": [
+      {
+        "minX": -123,
+        "maxX": -107,
+        "minZ": -5403,
+        "maxZ": -5387
+      },
+      {
+        "minX": -101,
+        "maxX": -71,
+        "minZ": -5390,
+        "maxZ": -5360
+      },
+      {
+        "minX": -48,
+        "maxX": -18,
+        "minZ": -5361,
+        "maxZ": -5331
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -123,
@@ -16486,6 +29650,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1244,
       "maxZ": -1031
     },
+    "spawnNodes": [
+      {
+        "minX": -570,
+        "maxX": -540,
+        "minZ": -1234,
+        "maxZ": -1204
+      },
+      {
+        "minX": -529,
+        "maxX": -489,
+        "minZ": -1123,
+        "maxZ": -1083
+      },
+      {
+        "minX": -450,
+        "maxX": -390,
+        "minZ": -1101,
+        "maxZ": -1041
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -529,
@@ -16527,6 +29711,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -334,
       "maxZ": -234
     },
+    "spawnNodes": [
+      {
+        "minX": -559,
+        "maxX": -543,
+        "minZ": -301,
+        "maxZ": -285
+      },
+      {
+        "minX": -601,
+        "maxX": -585,
+        "minZ": -283,
+        "maxZ": -267
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -601,
@@ -16566,6 +29764,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3806,
       "maxZ": -2996
     },
+    "spawnNodes": [
+      {
+        "minX": 862,
+        "maxX": 882,
+        "minZ": -3026,
+        "maxZ": -3006
+      },
+      {
+        "minX": 442,
+        "maxX": 462,
+        "minZ": -3778,
+        "maxZ": -3758
+      },
+      {
+        "minX": 117,
+        "maxX": 137,
+        "minZ": -3581,
+        "maxZ": -3561
+      },
+      {
+        "minX": -303,
+        "maxX": -283,
+        "minZ": -3285,
+        "maxZ": -3265
+      },
+      {
+        "minX": 443,
+        "maxX": 463,
+        "minZ": -3778,
+        "maxZ": -3758
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 425,
@@ -16621,6 +29851,74 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5119,
       "maxZ": -4418
     },
+    "spawnNodes": [
+      {
+        "minX": -894,
+        "maxX": -878,
+        "minZ": -4731,
+        "maxZ": -4715
+      },
+      {
+        "minX": -928,
+        "maxX": -912,
+        "minZ": -4697,
+        "maxZ": -4681
+      },
+      {
+        "minX": -987,
+        "maxX": -971,
+        "minZ": -4691,
+        "maxZ": -4675
+      },
+      {
+        "minX": -1082,
+        "maxX": -1066,
+        "minZ": -4515,
+        "maxZ": -4499
+      },
+      {
+        "minX": -1025,
+        "maxX": -1009,
+        "minZ": -4489,
+        "maxZ": -4473
+      },
+      {
+        "minX": -1087,
+        "maxX": -1071,
+        "minZ": -4444,
+        "maxZ": -4428
+      },
+      {
+        "minX": -1032,
+        "maxX": -1016,
+        "minZ": -4849,
+        "maxZ": -4833
+      },
+      {
+        "minX": -1039,
+        "maxX": -1023,
+        "minZ": -4866,
+        "maxZ": -4850
+      },
+      {
+        "minX": -1135,
+        "maxX": -1119,
+        "minZ": -5064,
+        "maxZ": -5048
+      },
+      {
+        "minX": -1189,
+        "maxX": -1173,
+        "minZ": -5109,
+        "maxZ": -5093
+      },
+      {
+        "minX": -1241,
+        "maxX": -1225,
+        "minZ": -4908,
+        "maxZ": -4892
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -987,
@@ -16681,6 +29979,104 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4093,
       "maxZ": -3909
     },
+    "spawnNodes": [
+      {
+        "minX": 197,
+        "maxX": 213,
+        "minZ": -4010,
+        "maxZ": -3994
+      },
+      {
+        "minX": 225,
+        "maxX": 241,
+        "minZ": -4023,
+        "maxZ": -4007
+      },
+      {
+        "minX": 238,
+        "maxX": 254,
+        "minZ": -4015,
+        "maxZ": -3999
+      },
+      {
+        "minX": 251,
+        "maxX": 267,
+        "minZ": -4007,
+        "maxZ": -3991
+      },
+      {
+        "minX": 243,
+        "maxX": 259,
+        "minZ": -4022,
+        "maxZ": -4006
+      },
+      {
+        "minX": 233,
+        "maxX": 249,
+        "minZ": -4017,
+        "maxZ": -4001
+      },
+      {
+        "minX": 244,
+        "maxX": 260,
+        "minZ": -4007,
+        "maxZ": -3991
+      },
+      {
+        "minX": 249,
+        "maxX": 265,
+        "minZ": -4019,
+        "maxZ": -4003
+      },
+      {
+        "minX": 239,
+        "maxX": 255,
+        "minZ": -4024,
+        "maxZ": -4008
+      },
+      {
+        "minX": 231,
+        "maxX": 247,
+        "minZ": -4083,
+        "maxZ": -4067
+      },
+      {
+        "minX": 239,
+        "maxX": 255,
+        "minZ": -4044,
+        "maxZ": -4028
+      },
+      {
+        "minX": 232,
+        "maxX": 248,
+        "minZ": -4066,
+        "maxZ": -4050
+      },
+      {
+        "minX": 142,
+        "maxX": 158,
+        "minZ": -4048,
+        "maxZ": -4032
+      },
+      {
+        "minX": 145,
+        "maxX": 161,
+        "minZ": -3983,
+        "maxZ": -3967
+      },
+      {
+        "minX": 98,
+        "maxX": 114,
+        "minZ": -3953,
+        "maxZ": -3937
+      },
+      {
+        "minX": 119,
+        "maxX": 135,
+        "minZ": -3958,
+        "maxZ": -3942
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 89,
@@ -16717,6 +30113,68 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4955,
       "maxZ": -4412
     },
+    "spawnNodes": [
+      {
+        "minX": 553,
+        "maxX": 583,
+        "minZ": -4945,
+        "maxZ": -4915
+      },
+      {
+        "minX": 463,
+        "maxX": 493,
+        "minZ": -4910,
+        "maxZ": -4880
+      },
+      {
+        "minX": 563,
+        "maxX": 593,
+        "minZ": -4869,
+        "maxZ": -4839
+      },
+      {
+        "minX": 585,
+        "maxX": 615,
+        "minZ": -4803,
+        "maxZ": -4773
+      },
+      {
+        "minX": 621,
+        "maxX": 651,
+        "minZ": -4786,
+        "maxZ": -4756
+      },
+      {
+        "minX": 622,
+        "maxX": 652,
+        "minZ": -4746,
+        "maxZ": -4716
+      },
+      {
+        "minX": 450,
+        "maxX": 470,
+        "minZ": -4560,
+        "maxZ": -4540
+      },
+      {
+        "minX": 422,
+        "maxX": 452,
+        "minZ": -4535,
+        "maxZ": -4505
+      },
+      {
+        "minX": 447,
+        "maxX": 477,
+        "minZ": -4472,
+        "maxZ": -4442
+      },
+      {
+        "minX": 377,
+        "maxX": 407,
+        "minZ": -4459,
+        "maxZ": -4429
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 553,
@@ -16766,6 +30224,68 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4955,
       "maxZ": -4412
     },
+    "spawnNodes": [
+      {
+        "minX": 553,
+        "maxX": 583,
+        "minZ": -4945,
+        "maxZ": -4915
+      },
+      {
+        "minX": 463,
+        "maxX": 493,
+        "minZ": -4910,
+        "maxZ": -4880
+      },
+      {
+        "minX": 563,
+        "maxX": 593,
+        "minZ": -4869,
+        "maxZ": -4839
+      },
+      {
+        "minX": 585,
+        "maxX": 615,
+        "minZ": -4803,
+        "maxZ": -4773
+      },
+      {
+        "minX": 621,
+        "maxX": 651,
+        "minZ": -4786,
+        "maxZ": -4756
+      },
+      {
+        "minX": 622,
+        "maxX": 652,
+        "minZ": -4746,
+        "maxZ": -4716
+      },
+      {
+        "minX": 450,
+        "maxX": 470,
+        "minZ": -4560,
+        "maxZ": -4540
+      },
+      {
+        "minX": 422,
+        "maxX": 452,
+        "minZ": -4535,
+        "maxZ": -4505
+      },
+      {
+        "minX": 447,
+        "maxX": 477,
+        "minZ": -4472,
+        "maxZ": -4442
+      },
+      {
+        "minX": 377,
+        "maxX": 407,
+        "minZ": -4459,
+        "maxZ": -4429
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 553,
@@ -16813,6 +30333,62 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5047,
       "maxZ": -4543
     },
+    "spawnNodes": [
+      {
+        "minX": 475,
+        "maxX": 525,
+        "minZ": -5037,
+        "maxZ": -4987
+      },
+      {
+        "minX": 443,
+        "maxX": 483,
+        "minZ": -4986,
+        "maxZ": -4946
+      },
+      {
+        "minX": 561,
+        "maxX": 641,
+        "minZ": -4977,
+        "maxZ": -4897
+      },
+      {
+        "minX": 601,
+        "maxX": 651,
+        "minZ": -4885,
+        "maxZ": -4835
+      },
+      {
+        "minX": 567,
+        "maxX": 617,
+        "minZ": -4712,
+        "maxZ": -4662
+      },
+      {
+        "minX": 516,
+        "maxX": 576,
+        "minZ": -4658,
+        "maxZ": -4598
+      },
+      {
+        "minX": 470,
+        "maxX": 530,
+        "minZ": -4613,
+        "maxZ": -4553
+      },
+      {
+        "minX": 336,
+        "maxX": 376,
+        "minZ": -4797,
+        "maxZ": -4757
+      },
+      {
+        "minX": 444,
+        "maxX": 460,
+        "minZ": -4599,
+        "maxZ": -4583
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 443,
@@ -16863,6 +30439,62 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5047,
       "maxZ": -4543
     },
+    "spawnNodes": [
+      {
+        "minX": 475,
+        "maxX": 525,
+        "minZ": -5037,
+        "maxZ": -4987
+      },
+      {
+        "minX": 443,
+        "maxX": 483,
+        "minZ": -4986,
+        "maxZ": -4946
+      },
+      {
+        "minX": 561,
+        "maxX": 641,
+        "minZ": -4977,
+        "maxZ": -4897
+      },
+      {
+        "minX": 601,
+        "maxX": 651,
+        "minZ": -4885,
+        "maxZ": -4835
+      },
+      {
+        "minX": 567,
+        "maxX": 617,
+        "minZ": -4712,
+        "maxZ": -4662
+      },
+      {
+        "minX": 516,
+        "maxX": 576,
+        "minZ": -4658,
+        "maxZ": -4598
+      },
+      {
+        "minX": 470,
+        "maxX": 530,
+        "minZ": -4613,
+        "maxZ": -4553
+      },
+      {
+        "minX": 336,
+        "maxX": 376,
+        "minZ": -4797,
+        "maxZ": -4757
+      },
+      {
+        "minX": 444,
+        "maxX": 460,
+        "minZ": -4599,
+        "maxZ": -4583
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 443,
@@ -16912,6 +30544,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -948,
       "maxZ": -778
     },
+    "spawnNodes": [
+      {
+        "minX": -689,
+        "maxX": -635,
+        "minZ": -842,
+        "maxZ": -788
+      },
+      {
+        "minX": -601,
+        "maxX": -525,
+        "minZ": -938,
+        "maxZ": -862
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -689,
@@ -16949,6 +30595,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -802,
       "maxZ": -571
     },
+    "spawnNodes": [
+      {
+        "minX": -502,
+        "maxX": -486,
+        "minZ": -597,
+        "maxZ": -581
+      },
+      {
+        "minX": -583,
+        "maxX": -515,
+        "minZ": -728,
+        "maxZ": -660
+      },
+      {
+        "minX": -645,
+        "maxX": -569,
+        "minZ": -678,
+        "maxZ": -602
+      },
+      {
+        "minX": -556,
+        "maxX": -494,
+        "minZ": -673,
+        "maxZ": -611
+      },
+      {
+        "minX": -539,
+        "maxX": -489,
+        "minZ": -791,
+        "maxZ": -741
+      },
+      {
+        "minX": -655,
+        "maxX": -583,
+        "minZ": -792,
+        "maxZ": -720
+      },
+      {
+        "minX": -731,
+        "maxX": -667,
+        "minZ": -761,
+        "maxZ": -697
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -731,
@@ -16985,6 +30675,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -546,
       "maxZ": -284
     },
+    "spawnNodes": [
+      {
+        "minX": -776,
+        "maxX": -760,
+        "minZ": -468,
+        "maxZ": -452
+      },
+      {
+        "minX": -778,
+        "maxX": -762,
+        "minZ": -455,
+        "maxZ": -439
+      },
+      {
+        "minX": -767,
+        "maxX": -751,
+        "minZ": -475,
+        "maxZ": -459
+      },
+      {
+        "minX": -800,
+        "maxX": -784,
+        "minZ": -478,
+        "maxZ": -462
+      },
+      {
+        "minX": -603,
+        "maxX": -583,
+        "minZ": -314,
+        "maxZ": -294
+      },
+      {
+        "minX": -699,
+        "maxX": -683,
+        "minZ": -536,
+        "maxZ": -520
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -800,
@@ -17027,6 +30755,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4743,
       "maxZ": -4643
     },
+    "spawnNodes": [
+      {
+        "minX": 1079,
+        "maxX": 1095,
+        "minZ": -4701,
+        "maxZ": -4685
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1079,
@@ -17062,6 +30798,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4743,
       "maxZ": -4643
     },
+    "spawnNodes": [
+      {
+        "minX": 1058,
+        "maxX": 1074,
+        "minZ": -4701,
+        "maxZ": -4685
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1058,
@@ -17097,6 +30841,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4730,
       "maxZ": -4630
     },
+    "spawnNodes": [
+      {
+        "minX": 1079,
+        "maxX": 1095,
+        "minZ": -4688,
+        "maxZ": -4672
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1079,
@@ -17132,6 +30884,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5604,
       "maxZ": -5504
     },
+    "spawnNodes": [
+      {
+        "minX": -953,
+        "maxX": -905,
+        "minZ": -5578,
+        "maxZ": -5530
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -953,
@@ -17171,6 +30931,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5587,
       "maxZ": -5184
     },
+    "spawnNodes": [
+      {
+        "minX": -1379,
+        "maxX": -1159,
+        "minZ": -5414,
+        "maxZ": -5194
+      },
+      {
+        "minX": -1389,
+        "maxX": -1197,
+        "minZ": -5577,
+        "maxZ": -5385
+      },
+      {
+        "minX": -1169,
+        "maxX": -961,
+        "minZ": -5562,
+        "maxZ": -5354
+      },
+      {
+        "minX": -1312,
+        "maxX": -1252,
+        "minZ": -5455,
+        "maxZ": -5395
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1389,
@@ -17206,6 +30992,74 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3470,
       "maxZ": -2235
     },
+    "spawnNodes": [
+      {
+        "minX": -1201,
+        "maxX": -1185,
+        "minZ": -3247,
+        "maxZ": -3231
+      },
+      {
+        "minX": -1177,
+        "maxX": -1157,
+        "minZ": -3292,
+        "maxZ": -3272
+      },
+      {
+        "minX": -1171,
+        "maxX": -1151,
+        "minZ": -3322,
+        "maxZ": -3302
+      },
+      {
+        "minX": -1398,
+        "maxX": -1380,
+        "minZ": -3410,
+        "maxZ": -3392
+      },
+      {
+        "minX": -1432,
+        "maxX": -1414,
+        "minZ": -3418,
+        "maxZ": -3400
+      },
+      {
+        "minX": -1487,
+        "maxX": -1469,
+        "minZ": -3421,
+        "maxZ": -3403
+      },
+      {
+        "minX": -1525,
+        "maxX": -1507,
+        "minZ": -3424,
+        "maxZ": -3406
+      },
+      {
+        "minX": -1549,
+        "maxX": -1531,
+        "minZ": -3459,
+        "maxZ": -3441
+      },
+      {
+        "minX": -1288,
+        "maxX": -1270,
+        "minZ": -2288,
+        "maxZ": -2270
+      },
+      {
+        "minX": -1302,
+        "maxX": -1284,
+        "minZ": -2325,
+        "maxZ": -2307
+      },
+      {
+        "minX": -1306,
+        "maxX": -1288,
+        "minZ": -2263,
+        "maxZ": -2245
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1556,
@@ -17254,6 +31108,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -835,
       "maxZ": -735
     },
+    "spawnNodes": [
+      {
+        "minX": -1485,
+        "maxX": -1469,
+        "minZ": -811,
+        "maxZ": -795
+      },
+      {
+        "minX": -1767,
+        "maxX": -1743,
+        "minZ": -825,
+        "maxZ": -801
+      },
+      {
+        "minX": -1639,
+        "maxX": -1609,
+        "minZ": -788,
+        "maxZ": -758
+      },
+      {
+        "minX": -1649,
+        "maxX": -1599,
+        "minZ": -798,
+        "maxZ": -748
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1652,
@@ -17302,6 +31182,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -835,
       "maxZ": -735
     },
+    "spawnNodes": [
+      {
+        "minX": -1485,
+        "maxX": -1469,
+        "minZ": -811,
+        "maxZ": -795
+      },
+      {
+        "minX": -1767,
+        "maxX": -1743,
+        "minZ": -825,
+        "maxZ": -801
+      },
+      {
+        "minX": -1639,
+        "maxX": -1609,
+        "minZ": -788,
+        "maxZ": -758
+      },
+      {
+        "minX": -1649,
+        "maxX": -1599,
+        "minZ": -798,
+        "maxZ": -748
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1652,
@@ -17350,6 +31256,68 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -965,
       "maxZ": -745
     },
+    "spawnNodes": [
+      {
+        "minX": -1506,
+        "maxX": -1490,
+        "minZ": -846,
+        "maxZ": -830
+      },
+      {
+        "minX": -1514,
+        "maxX": -1498,
+        "minZ": -846,
+        "maxZ": -830
+      },
+      {
+        "minX": -1762,
+        "maxX": -1746,
+        "minZ": -780,
+        "maxZ": -764
+      },
+      {
+        "minX": -1745,
+        "maxX": -1729,
+        "minZ": -781,
+        "maxZ": -765
+      },
+      {
+        "minX": -1736,
+        "maxX": -1720,
+        "minZ": -913,
+        "maxZ": -897
+      },
+      {
+        "minX": -1741,
+        "maxX": -1725,
+        "minZ": -918,
+        "maxZ": -902
+      },
+      {
+        "minX": -1723,
+        "maxX": -1707,
+        "minZ": -939,
+        "maxZ": -923
+      },
+      {
+        "minX": -1715,
+        "maxX": -1699,
+        "minZ": -931,
+        "maxZ": -915
+      },
+      {
+        "minX": -1673,
+        "maxX": -1657,
+        "minZ": -794,
+        "maxZ": -778
+      },
+      {
+        "minX": -1678,
+        "maxX": -1662,
+        "minZ": -789,
+        "maxZ": -773
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1762,
@@ -17399,6 +31367,80 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -986,
       "maxZ": -688
     },
+    "spawnNodes": [
+      {
+        "minX": -1485,
+        "maxX": -1469,
+        "minZ": -811,
+        "maxZ": -795
+      },
+      {
+        "minX": -1767,
+        "maxX": -1743,
+        "minZ": -825,
+        "maxZ": -801
+      },
+      {
+        "minX": -1639,
+        "maxX": -1609,
+        "minZ": -788,
+        "maxZ": -758
+      },
+      {
+        "minX": -1649,
+        "maxX": -1599,
+        "minZ": -798,
+        "maxZ": -748
+      },
+      {
+        "minX": -1525,
+        "maxX": -1495,
+        "minZ": -778,
+        "maxZ": -748
+      },
+      {
+        "minX": -1559,
+        "maxX": -1539,
+        "minZ": -718,
+        "maxZ": -698
+      },
+      {
+        "minX": -1656,
+        "maxX": -1596,
+        "minZ": -813,
+        "maxZ": -753
+      },
+      {
+        "minX": -1713,
+        "maxX": -1663,
+        "minZ": -885,
+        "maxZ": -835
+      },
+      {
+        "minX": -1719,
+        "maxX": -1659,
+        "minZ": -976,
+        "maxZ": -916
+      },
+      {
+        "minX": -1597,
+        "maxX": -1577,
+        "minZ": -898,
+        "maxZ": -878
+      },
+      {
+        "minX": -1666,
+        "maxX": -1650,
+        "minZ": -886,
+        "maxZ": -870
+      },
+      {
+        "minX": -1760,
+        "maxX": -1740,
+        "minZ": -789,
+        "maxZ": -769
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1767,
@@ -17434,6 +31476,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -616,
       "maxZ": -516
     },
+    "spawnNodes": [
+      {
+        "minX": -1355,
+        "maxX": -1335,
+        "minZ": -549,
+        "maxZ": -529
+      },
+      {
+        "minX": -1525,
+        "maxX": -1501,
+        "minZ": -586,
+        "maxZ": -562
+      },
+      {
+        "minX": -1207,
+        "maxX": -1187,
+        "minZ": -604,
+        "maxZ": -584
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1525,
@@ -17486,6 +31548,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -673,
       "maxZ": -266
     },
+    "spawnNodes": [
+      {
+        "minX": -802,
+        "maxX": -654,
+        "minZ": -424,
+        "maxZ": -276
+      },
+      {
+        "minX": -960,
+        "maxX": -800,
+        "minZ": -439,
+        "maxZ": -279
+      },
+      {
+        "minX": -992,
+        "maxX": -812,
+        "minZ": -663,
+        "maxZ": -483
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -992,
@@ -17522,6 +31604,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2670,
       "maxZ": -2218
     },
+    "spawnNodes": [
+      {
+        "minX": -1658,
+        "maxX": -1618,
+        "minZ": -2268,
+        "maxZ": -2228
+      },
+      {
+        "minX": -1726,
+        "maxX": -1686,
+        "minZ": -2536,
+        "maxZ": -2496
+      },
+      {
+        "minX": -1741,
+        "maxX": -1701,
+        "minZ": -2580,
+        "maxZ": -2540
+      },
+      {
+        "minX": -1779,
+        "maxX": -1739,
+        "minZ": -2583,
+        "maxZ": -2543
+      },
+      {
+        "minX": -1807,
+        "maxX": -1727,
+        "minZ": -2660,
+        "maxZ": -2580
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1807,
@@ -17564,6 +31678,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2670,
       "maxZ": -2218
     },
+    "spawnNodes": [
+      {
+        "minX": -1658,
+        "maxX": -1618,
+        "minZ": -2268,
+        "maxZ": -2228
+      },
+      {
+        "minX": -1726,
+        "maxX": -1686,
+        "minZ": -2536,
+        "maxZ": -2496
+      },
+      {
+        "minX": -1741,
+        "maxX": -1701,
+        "minZ": -2580,
+        "maxZ": -2540
+      },
+      {
+        "minX": -1779,
+        "maxX": -1739,
+        "minZ": -2583,
+        "maxZ": -2543
+      },
+      {
+        "minX": -1807,
+        "maxX": -1727,
+        "minZ": -2660,
+        "maxZ": -2580
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1807,
@@ -17608,6 +31754,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1053,
       "maxZ": -875
     },
+    "spawnNodes": [
+      {
+        "minX": 848,
+        "maxX": 988,
+        "minZ": -1025,
+        "maxZ": -885
+      },
+      {
+        "minX": 992,
+        "maxX": 1132,
+        "minZ": -1043,
+        "maxZ": -903
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 848,
@@ -17643,6 +31803,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1672,
       "maxZ": -1572
     },
+    "spawnNodes": [
+      {
+        "minX": 1267,
+        "maxX": 1283,
+        "minZ": -1615,
+        "maxZ": -1599
+      },
+      {
+        "minX": 1273,
+        "maxX": 1289,
+        "minZ": -1641,
+        "maxZ": -1625
+      },
+      {
+        "minX": 1286,
+        "maxX": 1310,
+        "minZ": -1628,
+        "maxZ": -1604
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1264,
@@ -17678,6 +31858,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1258,
       "maxZ": -1158
     },
+    "spawnNodes": [
+      {
+        "minX": 324,
+        "maxX": 340,
+        "minZ": -1216,
+        "maxZ": -1200
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 324,
@@ -17714,6 +31902,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1260,
       "maxZ": -1160
     },
+    "spawnNodes": [
+      {
+        "minX": 1312,
+        "maxX": 1372,
+        "minZ": -1240,
+        "maxZ": -1180
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1312,
@@ -17754,6 +31950,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5195,
       "maxZ": -5065
     },
+    "spawnNodes": [
+      {
+        "minX": 1367,
+        "maxX": 1477,
+        "minZ": -5185,
+        "maxZ": -5075
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1367,
@@ -17789,6 +31993,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4910,
       "maxZ": -4797
     },
+    "spawnNodes": [
+      {
+        "minX": -1263,
+        "maxX": -1247,
+        "minZ": -4900,
+        "maxZ": -4884
+      },
+      {
+        "minX": -1270,
+        "maxX": -1254,
+        "minZ": -4882,
+        "maxZ": -4866
+      },
+      {
+        "minX": -1255,
+        "maxX": -1239,
+        "minZ": -4831,
+        "maxZ": -4815
+      },
+      {
+        "minX": -1239,
+        "maxX": -1223,
+        "minZ": -4841,
+        "maxZ": -4825
+      },
+      {
+        "minX": -1218,
+        "maxX": -1202,
+        "minZ": -4845,
+        "maxZ": -4829
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1270,
@@ -17824,6 +32060,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4881,
       "maxZ": -4781
     },
+    "spawnNodes": [
+      {
+        "minX": -1240,
+        "maxX": -1200,
+        "minZ": -4853,
+        "maxZ": -4813
+      },
+      {
+        "minX": -1243,
+        "maxX": -1203,
+        "minZ": -4849,
+        "maxZ": -4809
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1249,
@@ -17859,6 +32109,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4923,
       "maxZ": -4788
     },
+    "spawnNodes": [
+      {
+        "minX": -1225,
+        "maxX": -1203,
+        "minZ": -4820,
+        "maxZ": -4798
+      },
+      {
+        "minX": -1280,
+        "maxX": -1258,
+        "minZ": -4887,
+        "maxZ": -4865
+      },
+      {
+        "minX": -1264,
+        "maxX": -1242,
+        "minZ": -4905,
+        "maxZ": -4883
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1289,
@@ -17895,6 +32165,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4912,
       "maxZ": -4812
     },
+    "spawnNodes": [
+      {
+        "minX": -1227,
+        "maxX": -1211,
+        "minZ": -4870,
+        "maxZ": -4854
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1227,
@@ -17934,6 +32212,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1058,
       "maxZ": -958
     },
+    "spawnNodes": [
+      {
+        "minX": 1352,
+        "maxX": 1412,
+        "minZ": -1038,
+        "maxZ": -978
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1352,
@@ -17970,6 +32256,98 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5410,
       "maxZ": -5082
     },
+    "spawnNodes": [
+      {
+        "minX": 111,
+        "maxX": 191,
+        "minZ": -5221,
+        "maxZ": -5141
+      },
+      {
+        "minX": 222,
+        "maxX": 252,
+        "minZ": -5187,
+        "maxZ": -5157
+      },
+      {
+        "minX": 253,
+        "maxX": 269,
+        "minZ": -5108,
+        "maxZ": -5092
+      },
+      {
+        "minX": 61,
+        "maxX": 91,
+        "minZ": -5165,
+        "maxZ": -5135
+      },
+      {
+        "minX": 60,
+        "maxX": 90,
+        "minZ": -5203,
+        "maxZ": -5173
+      },
+      {
+        "minX": 58,
+        "maxX": 98,
+        "minZ": -5253,
+        "maxZ": -5213
+      },
+      {
+        "minX": 152,
+        "maxX": 182,
+        "minZ": -5280,
+        "maxZ": -5250
+      },
+      {
+        "minX": 220,
+        "maxX": 240,
+        "minZ": -5128,
+        "maxZ": -5108
+      },
+      {
+        "minX": 198,
+        "maxX": 238,
+        "minZ": -5236,
+        "maxZ": -5196
+      },
+      {
+        "minX": 235,
+        "maxX": 255,
+        "minZ": -5396,
+        "maxZ": -5376
+      },
+      {
+        "minX": 265,
+        "maxX": 281,
+        "minZ": -5365,
+        "maxZ": -5349
+      },
+      {
+        "minX": 387,
+        "maxX": 417,
+        "minZ": -5232,
+        "maxZ": -5202
+      },
+      {
+        "minX": 372,
+        "maxX": 392,
+        "minZ": -5175,
+        "maxZ": -5155
+      },
+      {
+        "minX": 328,
+        "maxX": 378,
+        "minZ": -5167,
+        "maxZ": -5117
+      },
+      {
+        "minX": 299,
+        "maxX": 329,
+        "minZ": -5137,
+        "maxZ": -5107
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 58,
@@ -18011,6 +32389,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -549,
       "maxZ": -384
     },
+    "spawnNodes": [
+      {
+        "minX": 972,
+        "maxX": 994,
+        "minZ": -453,
+        "maxZ": -431
+      },
+      {
+        "minX": 973,
+        "maxX": 989,
+        "minZ": -424,
+        "maxZ": -408
+      },
+      {
+        "minX": 930,
+        "maxX": 946,
+        "minZ": -477,
+        "maxZ": -461
+      },
+      {
+        "minX": 1036,
+        "maxX": 1052,
+        "minZ": -471,
+        "maxZ": -455
+      },
+      {
+        "minX": 1026,
+        "maxX": 1056,
+        "minZ": -424,
+        "maxZ": -394
+      },
+      {
+        "minX": 924,
+        "maxX": 954,
+        "minZ": -539,
+        "maxZ": -509
+      },
+      {
+        "minX": 1029,
+        "maxX": 1059,
+        "minZ": -527,
+        "maxZ": -497
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 924,
@@ -18047,6 +32469,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1127,
       "maxZ": -1027
     },
+    "spawnNodes": [
+      {
+        "minX": 1475,
+        "maxX": 1505,
+        "minZ": -1092,
+        "maxZ": -1062
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1475,
@@ -18082,6 +32512,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1153,
       "maxZ": -1053
     },
+    "spawnNodes": [
+      {
+        "minX": -1422,
+        "maxX": -1406,
+        "minZ": -1111,
+        "maxZ": -1095
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1422,
@@ -18119,6 +32557,140 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5111,
       "maxZ": -4495
     },
+    "spawnNodes": [
+      {
+        "minX": -1040,
+        "maxX": -1024,
+        "minZ": -4735,
+        "maxZ": -4719
+      },
+      {
+        "minX": -1140,
+        "maxX": -1124,
+        "minZ": -4718,
+        "maxZ": -4702
+      },
+      {
+        "minX": -1134,
+        "maxX": -1118,
+        "minZ": -4571,
+        "maxZ": -4555
+      },
+      {
+        "minX": -988,
+        "maxX": -972,
+        "minZ": -4566,
+        "maxZ": -4550
+      },
+      {
+        "minX": -869,
+        "maxX": -849,
+        "minZ": -4618,
+        "maxZ": -4598
+      },
+      {
+        "minX": -871,
+        "maxX": -847,
+        "minZ": -4620,
+        "maxZ": -4596
+      },
+      {
+        "minX": -883,
+        "maxX": -867,
+        "minZ": -4639,
+        "maxZ": -4623
+      },
+      {
+        "minX": -818,
+        "maxX": -802,
+        "minZ": -4602,
+        "maxZ": -4586
+      },
+      {
+        "minX": -818,
+        "maxX": -802,
+        "minZ": -4602,
+        "maxZ": -4586
+      },
+      {
+        "minX": -859,
+        "maxX": -843,
+        "minZ": -4666,
+        "maxZ": -4650
+      },
+      {
+        "minX": -878,
+        "maxX": -854,
+        "minZ": -4789,
+        "maxZ": -4765
+      },
+      {
+        "minX": -876,
+        "maxX": -856,
+        "minZ": -4787,
+        "maxZ": -4767
+      },
+      {
+        "minX": -942,
+        "maxX": -926,
+        "minZ": -4790,
+        "maxZ": -4774
+      },
+      {
+        "minX": -936,
+        "maxX": -920,
+        "minZ": -4809,
+        "maxZ": -4793
+      },
+      {
+        "minX": -941,
+        "maxX": -925,
+        "minZ": -4801,
+        "maxZ": -4785
+      },
+      {
+        "minX": -1045,
+        "maxX": -1029,
+        "minZ": -4521,
+        "maxZ": -4505
+      },
+      {
+        "minX": -908,
+        "maxX": -892,
+        "minZ": -4627,
+        "maxZ": -4611
+      },
+      {
+        "minX": -886,
+        "maxX": -870,
+        "minZ": -4574,
+        "maxZ": -4558
+      },
+      {
+        "minX": -913,
+        "maxX": -897,
+        "minZ": -4993,
+        "maxZ": -4977
+      },
+      {
+        "minX": -1216,
+        "maxX": -1200,
+        "minZ": -5101,
+        "maxZ": -5085
+      },
+      {
+        "minX": -1144,
+        "maxX": -1128,
+        "minZ": -4867,
+        "maxZ": -4851
+      },
+      {
+        "minX": -1021,
+        "maxX": -1005,
+        "minZ": -4642,
+        "maxZ": -4626
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -917,
@@ -18208,6 +32780,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4712,
       "maxZ": -4612
     },
+    "spawnNodes": [
+      {
+        "minX": -1391,
+        "maxX": -1375,
+        "minZ": -4670,
+        "maxZ": -4654
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1391,
@@ -18243,6 +32823,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4279,
       "maxZ": -4179
     },
+    "spawnNodes": [
+      {
+        "minX": -859,
+        "maxX": -843,
+        "minZ": -4264,
+        "maxZ": -4248
+      },
+      {
+        "minX": -895,
+        "maxX": -879,
+        "minZ": -4210,
+        "maxZ": -4194
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -897,
@@ -18281,6 +32875,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1436,
       "maxZ": -1095
     },
+    "spawnNodes": [
+      {
+        "minX": -2194,
+        "maxX": -2178,
+        "minZ": -1426,
+        "maxZ": -1410
+      },
+      {
+        "minX": -2219,
+        "maxX": -2195,
+        "minZ": -1341,
+        "maxZ": -1317
+      },
+      {
+        "minX": -2160,
+        "maxX": -2144,
+        "minZ": -1243,
+        "maxZ": -1227
+      },
+      {
+        "minX": -2157,
+        "maxX": -2141,
+        "minZ": -1141,
+        "maxZ": -1125
+      },
+      {
+        "minX": -2161,
+        "maxX": -2137,
+        "minZ": -1145,
+        "maxZ": -1121
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2177,
@@ -18339,6 +32965,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2170,
       "maxZ": -1928
     },
+    "spawnNodes": [
+      {
+        "minX": 1308,
+        "maxX": 1352,
+        "minZ": -1982,
+        "maxZ": -1938
+      },
+      {
+        "minX": 1290,
+        "maxX": 1390,
+        "minZ": -2160,
+        "maxZ": -2060
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1290,
@@ -18380,6 +33020,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2334,
       "maxZ": -2234
     },
+    "spawnNodes": [
+      {
+        "minX": 806,
+        "maxX": 822,
+        "minZ": -2292,
+        "maxZ": -2276
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 806,
@@ -18415,6 +33063,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2342,
       "maxZ": -2242
     },
+    "spawnNodes": [
+      {
+        "minX": 720,
+        "maxX": 736,
+        "minZ": -2274,
+        "maxZ": -2258
+      },
+      {
+        "minX": 793,
+        "maxX": 809,
+        "minZ": -2294,
+        "maxZ": -2278
+      },
+      {
+        "minX": 732,
+        "maxX": 748,
+        "minZ": -2305,
+        "maxZ": -2289
+      },
+      {
+        "minX": 749,
+        "maxX": 765,
+        "minZ": -2307,
+        "maxZ": -2291
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 720,
@@ -18451,6 +33125,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5046,
       "maxZ": -4946
     },
+    "spawnNodes": [
+      {
+        "minX": -1378,
+        "maxX": -1362,
+        "minZ": -5004,
+        "maxZ": -4988
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1378,
@@ -18489,6 +33171,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5416,
       "maxZ": -5090
     },
+    "spawnNodes": [
+      {
+        "minX": -1732,
+        "maxX": -1716,
+        "minZ": -5212,
+        "maxZ": -5196
+      },
+      {
+        "minX": -2009,
+        "maxX": -1985,
+        "minZ": -5406,
+        "maxZ": -5382
+      },
+      {
+        "minX": -1982,
+        "maxX": -1966,
+        "minZ": -5326,
+        "maxZ": -5310
+      },
+      {
+        "minX": -2130,
+        "maxX": -2114,
+        "minZ": -5327,
+        "maxZ": -5311
+      },
+      {
+        "minX": -1854,
+        "maxX": -1814,
+        "minZ": -5140,
+        "maxZ": -5100
+      },
+      {
+        "minX": -1959,
+        "maxX": -1899,
+        "minZ": -5224,
+        "maxZ": -5164
+      },
+      {
+        "minX": -1853,
+        "maxX": -1813,
+        "minZ": -5282,
+        "maxZ": -5242
+      },
+      {
+        "minX": -1607,
+        "maxX": -1547,
+        "minZ": -5400,
+        "maxZ": -5340
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1982,
@@ -18551,6 +33283,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5416,
       "maxZ": -5090
     },
+    "spawnNodes": [
+      {
+        "minX": -1732,
+        "maxX": -1716,
+        "minZ": -5212,
+        "maxZ": -5196
+      },
+      {
+        "minX": -2009,
+        "maxX": -1985,
+        "minZ": -5406,
+        "maxZ": -5382
+      },
+      {
+        "minX": -1982,
+        "maxX": -1966,
+        "minZ": -5326,
+        "maxZ": -5310
+      },
+      {
+        "minX": -2130,
+        "maxX": -2114,
+        "minZ": -5327,
+        "maxZ": -5311
+      },
+      {
+        "minX": -1854,
+        "maxX": -1814,
+        "minZ": -5140,
+        "maxZ": -5100
+      },
+      {
+        "minX": -1959,
+        "maxX": -1899,
+        "minZ": -5224,
+        "maxZ": -5164
+      },
+      {
+        "minX": -1853,
+        "maxX": -1813,
+        "minZ": -5282,
+        "maxZ": -5242
+      },
+      {
+        "minX": -1607,
+        "maxX": -1547,
+        "minZ": -5400,
+        "maxZ": -5340
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1982,
@@ -18612,6 +33394,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4795,
       "maxZ": -4695
     },
+    "spawnNodes": [
+      {
+        "minX": -1706,
+        "maxX": -1690,
+        "minZ": -4753,
+        "maxZ": -4737
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1706,
@@ -18649,6 +33439,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4795,
       "maxZ": -4695
     },
+    "spawnNodes": [
+      {
+        "minX": -1706,
+        "maxX": -1690,
+        "minZ": -4753,
+        "maxZ": -4737
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1706,
@@ -18684,6 +33482,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1874,
       "maxZ": -1774
     },
+    "spawnNodes": [
+      {
+        "minX": 571,
+        "maxX": 587,
+        "minZ": -1832,
+        "maxZ": -1816
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 571,
@@ -18721,6 +33527,200 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -709,
       "maxZ": -265
     },
+    "spawnNodes": [
+      {
+        "minX": -751,
+        "maxX": -711,
+        "minZ": -503,
+        "maxZ": -463
+      },
+      {
+        "minX": -775,
+        "maxX": -717,
+        "minZ": -465,
+        "maxZ": -407
+      },
+      {
+        "minX": -781,
+        "maxX": -741,
+        "minZ": -436,
+        "maxZ": -396
+      },
+      {
+        "minX": -768,
+        "maxX": -728,
+        "minZ": -412,
+        "maxZ": -372
+      },
+      {
+        "minX": -784,
+        "maxX": -744,
+        "minZ": -325,
+        "maxZ": -285
+      },
+      {
+        "minX": -762,
+        "maxX": -722,
+        "minZ": -343,
+        "maxZ": -303
+      },
+      {
+        "minX": -712,
+        "maxX": -672,
+        "minZ": -415,
+        "maxZ": -375
+      },
+      {
+        "minX": -704,
+        "maxX": -664,
+        "minZ": -432,
+        "maxZ": -392
+      },
+      {
+        "minX": -786,
+        "maxX": -746,
+        "minZ": -368,
+        "maxZ": -328
+      },
+      {
+        "minX": -812,
+        "maxX": -772,
+        "minZ": -315,
+        "maxZ": -275
+      },
+      {
+        "minX": -808,
+        "maxX": -768,
+        "minZ": -343,
+        "maxZ": -303
+      },
+      {
+        "minX": -837,
+        "maxX": -797,
+        "minZ": -352,
+        "maxZ": -312
+      },
+      {
+        "minX": -868,
+        "maxX": -828,
+        "minZ": -336,
+        "maxZ": -296
+      },
+      {
+        "minX": -883,
+        "maxX": -843,
+        "minZ": -390,
+        "maxZ": -350
+      },
+      {
+        "minX": -919,
+        "maxX": -879,
+        "minZ": -376,
+        "maxZ": -336
+      },
+      {
+        "minX": -929,
+        "maxX": -889,
+        "minZ": -463,
+        "maxZ": -423
+      },
+      {
+        "minX": -900,
+        "maxX": -860,
+        "minZ": -501,
+        "maxZ": -461
+      },
+      {
+        "minX": -898,
+        "maxX": -858,
+        "minZ": -533,
+        "maxZ": -493
+      },
+      {
+        "minX": -921,
+        "maxX": -881,
+        "minZ": -546,
+        "maxZ": -506
+      },
+      {
+        "minX": -909,
+        "maxX": -869,
+        "minZ": -562,
+        "maxZ": -522
+      },
+      {
+        "minX": -879,
+        "maxX": -839,
+        "minZ": -555,
+        "maxZ": -515
+      },
+      {
+        "minX": -861,
+        "maxX": -821,
+        "minZ": -585,
+        "maxZ": -545
+      },
+      {
+        "minX": -899,
+        "maxX": -859,
+        "minZ": -588,
+        "maxZ": -548
+      },
+      {
+        "minX": -878,
+        "maxX": -838,
+        "minZ": -601,
+        "maxZ": -561
+      },
+      {
+        "minX": -919,
+        "maxX": -879,
+        "minZ": -642,
+        "maxZ": -602
+      },
+      {
+        "minX": -937,
+        "maxX": -897,
+        "minZ": -648,
+        "maxZ": -608
+      },
+      {
+        "minX": -892,
+        "maxX": -852,
+        "minZ": -699,
+        "maxZ": -659
+      },
+      {
+        "minX": -933,
+        "maxX": -893,
+        "minZ": -693,
+        "maxZ": -653
+      },
+      {
+        "minX": -886,
+        "maxX": -846,
+        "minZ": -655,
+        "maxZ": -615
+      },
+      {
+        "minX": -838,
+        "maxX": -798,
+        "minZ": -585,
+        "maxZ": -545
+      },
+      {
+        "minX": -719,
+        "maxX": -679,
+        "minZ": -520,
+        "maxZ": -480
+      },
+      {
+        "minX": -839,
+        "maxX": -799,
+        "minZ": -466,
+        "maxZ": -426
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -937,
@@ -18758,6 +33758,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1197,
       "maxZ": -1068
     },
+    "spawnNodes": [
+      {
+        "minX": -746,
+        "maxX": -710,
+        "minZ": -1153,
+        "maxZ": -1117
+      },
+      {
+        "minX": -780,
+        "maxX": -750,
+        "minZ": -1187,
+        "maxZ": -1157
+      },
+      {
+        "minX": -793,
+        "maxX": -773,
+        "minZ": -1098,
+        "maxZ": -1078
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -793,
@@ -18794,6 +33814,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1197,
       "maxZ": -1068
     },
+    "spawnNodes": [
+      {
+        "minX": -746,
+        "maxX": -710,
+        "minZ": -1153,
+        "maxZ": -1117
+      },
+      {
+        "minX": -780,
+        "maxX": -750,
+        "minZ": -1187,
+        "maxZ": -1157
+      },
+      {
+        "minX": -793,
+        "maxX": -773,
+        "minZ": -1098,
+        "maxZ": -1078
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -793,
@@ -18829,6 +33869,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1510,
       "maxZ": -1410
     },
+    "spawnNodes": [
+      {
+        "minX": -1151,
+        "maxX": -1135,
+        "minZ": -1468,
+        "maxZ": -1452
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1151,
@@ -18864,6 +33912,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -687,
       "maxZ": -587
     },
+    "spawnNodes": [
+      {
+        "minX": 257,
+        "maxX": 287,
+        "minZ": -652,
+        "maxZ": -622
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 257,
@@ -18902,6 +33958,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2619,
       "maxZ": -2451
     },
+    "spawnNodes": [
+      {
+        "minX": 853,
+        "maxX": 869,
+        "minZ": -2609,
+        "maxZ": -2593
+      },
+      {
+        "minX": 996,
+        "maxX": 1012,
+        "minZ": -2588,
+        "maxZ": -2572
+      },
+      {
+        "minX": 961,
+        "maxX": 977,
+        "minZ": -2477,
+        "maxZ": -2461
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 961,
@@ -18951,6 +34027,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2671,
       "maxZ": -2571
     },
+    "spawnNodes": [
+      {
+        "minX": 933,
+        "maxX": 949,
+        "minZ": -2620,
+        "maxZ": -2604
+      },
+      {
+        "minX": 960,
+        "maxX": 976,
+        "minZ": -2647,
+        "maxZ": -2631
+      },
+      {
+        "minX": 1006,
+        "maxX": 1022,
+        "minZ": -2657,
+        "maxZ": -2641
+      },
+      {
+        "minX": 992,
+        "maxX": 1008,
+        "minZ": -2602,
+        "maxZ": -2586
+      },
+      {
+        "minX": 1018,
+        "maxX": 1034,
+        "minZ": -2609,
+        "maxZ": -2593
+      },
+      {
+        "minX": 1057,
+        "maxX": 1073,
+        "minZ": -2644,
+        "maxZ": -2628
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 933,
@@ -18989,6 +34103,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2639,
       "maxZ": -2537
     },
+    "spawnNodes": [
+      {
+        "minX": 994,
+        "maxX": 1010,
+        "minZ": -2563,
+        "maxZ": -2547
+      },
+      {
+        "minX": 917,
+        "maxX": 933,
+        "minZ": -2598,
+        "maxZ": -2582
+      },
+      {
+        "minX": 854,
+        "maxX": 870,
+        "minZ": -2617,
+        "maxZ": -2601
+      },
+      {
+        "minX": 1041,
+        "maxX": 1057,
+        "minZ": -2629,
+        "maxZ": -2613
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 994,
@@ -19034,6 +34174,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2662,
       "maxZ": -2464
     },
+    "spawnNodes": [
+      {
+        "minX": 1009,
+        "maxX": 1037,
+        "minZ": -2613,
+        "maxZ": -2585
+      },
+      {
+        "minX": 969,
+        "maxX": 989,
+        "minZ": -2621,
+        "maxZ": -2601
+      },
+      {
+        "minX": 953,
+        "maxX": 969,
+        "minZ": -2519,
+        "maxZ": -2503
+      },
+      {
+        "minX": 951,
+        "maxX": 967,
+        "minZ": -2601,
+        "maxZ": -2585
+      },
+      {
+        "minX": 986,
+        "maxX": 1002,
+        "minZ": -2652,
+        "maxZ": -2636
+      },
+      {
+        "minX": 986,
+        "maxX": 1006,
+        "minZ": -2613,
+        "maxZ": -2593
+      },
+      {
+        "minX": 1040,
+        "maxX": 1056,
+        "minZ": -2629,
+        "maxZ": -2613
+      },
+      {
+        "minX": 959,
+        "maxX": 975,
+        "minZ": -2501,
+        "maxZ": -2485
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 951,
@@ -19078,6 +34268,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2705,
       "maxZ": -2605
     },
+    "spawnNodes": [
+      {
+        "minX": 1037,
+        "maxX": 1053,
+        "minZ": -2663,
+        "maxZ": -2647
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1037,
@@ -19115,6 +34313,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2705,
       "maxZ": -2605
     },
+    "spawnNodes": [
+      {
+        "minX": 1037,
+        "maxX": 1053,
+        "minZ": -2663,
+        "maxZ": -2647
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1037,
@@ -19154,6 +34360,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2681,
       "maxZ": -2521
     },
+    "spawnNodes": [
+      {
+        "minX": 860,
+        "maxX": 920,
+        "minZ": -2591,
+        "maxZ": -2531
+      },
+      {
+        "minX": 816,
+        "maxX": 876,
+        "minZ": -2671,
+        "maxZ": -2611
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 816,
@@ -19189,6 +34409,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2407,
       "maxZ": -2307
     },
+    "spawnNodes": [
+      {
+        "minX": 648,
+        "maxX": 664,
+        "minZ": -2375,
+        "maxZ": -2359
+      },
+      {
+        "minX": 670,
+        "maxX": 686,
+        "minZ": -2380,
+        "maxZ": -2364
+      },
+      {
+        "minX": 673,
+        "maxX": 689,
+        "minZ": -2351,
+        "maxZ": -2335
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 648,
@@ -19225,6 +34465,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3441,
       "maxZ": -3188
     },
+    "spawnNodes": [
+      {
+        "minX": -1595,
+        "maxX": -1575,
+        "minZ": -3431,
+        "maxZ": -3411
+      },
+      {
+        "minX": -1556,
+        "maxX": -1536,
+        "minZ": -3314,
+        "maxZ": -3294
+      },
+      {
+        "minX": -1241,
+        "maxX": -1191,
+        "minZ": -3277,
+        "maxZ": -3227
+      },
+      {
+        "minX": -1271,
+        "maxX": -1221,
+        "minZ": -3265,
+        "maxZ": -3215
+      },
+      {
+        "minX": -1318,
+        "maxX": -1268,
+        "minZ": -3248,
+        "maxZ": -3198
+      },
+      {
+        "minX": -1618,
+        "maxX": -1568,
+        "minZ": -3284,
+        "maxZ": -3234
+      },
+      {
+        "minX": -1603,
+        "maxX": -1553,
+        "minZ": -3316,
+        "maxZ": -3266
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1318,
@@ -19273,6 +34557,116 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5139,
       "maxZ": -4505
     },
+    "spawnNodes": [
+      {
+        "minX": -1195,
+        "maxX": -1105,
+        "minZ": -5098,
+        "maxZ": -5008
+      },
+      {
+        "minX": -1097,
+        "maxX": -1007,
+        "minZ": -5129,
+        "maxZ": -5039
+      },
+      {
+        "minX": -972,
+        "maxX": -882,
+        "minZ": -5056,
+        "maxZ": -4966
+      },
+      {
+        "minX": -972,
+        "maxX": -882,
+        "minZ": -4970,
+        "maxZ": -4880
+      },
+      {
+        "minX": -1059,
+        "maxX": -969,
+        "minZ": -4964,
+        "maxZ": -4874
+      },
+      {
+        "minX": -1151,
+        "maxX": -1061,
+        "minZ": -4968,
+        "maxZ": -4878
+      },
+      {
+        "minX": -1153,
+        "maxX": -1063,
+        "minZ": -4605,
+        "maxZ": -4515
+      },
+      {
+        "minX": -790,
+        "maxX": -700,
+        "minZ": -4663,
+        "maxZ": -4573
+      },
+      {
+        "minX": -868,
+        "maxX": -778,
+        "minZ": -4767,
+        "maxZ": -4677
+      },
+      {
+        "minX": -650,
+        "maxX": -560,
+        "minZ": -4765,
+        "maxZ": -4675
+      },
+      {
+        "minX": -762,
+        "maxX": -672,
+        "minZ": -4840,
+        "maxZ": -4750
+      },
+      {
+        "minX": -1308,
+        "maxX": -1218,
+        "minZ": -5082,
+        "maxZ": -4992
+      },
+      {
+        "minX": -950,
+        "maxX": -860,
+        "minZ": -4699,
+        "maxZ": -4609
+      },
+      {
+        "minX": -736,
+        "maxX": -646,
+        "minZ": -4732,
+        "maxZ": -4642
+      },
+      {
+        "minX": -907,
+        "maxX": -817,
+        "minZ": -4831,
+        "maxZ": -4741
+      },
+      {
+        "minX": -1004,
+        "maxX": -914,
+        "minZ": -4854,
+        "maxZ": -4764
+      },
+      {
+        "minX": -1078,
+        "maxX": -988,
+        "minZ": -4763,
+        "maxZ": -4673
+      },
+      {
+        "minX": -1176,
+        "maxX": -1086,
+        "minZ": -4753,
+        "maxZ": -4663
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1308,
@@ -19311,6 +34705,116 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5139,
       "maxZ": -4505
     },
+    "spawnNodes": [
+      {
+        "minX": -1195,
+        "maxX": -1105,
+        "minZ": -5098,
+        "maxZ": -5008
+      },
+      {
+        "minX": -1097,
+        "maxX": -1007,
+        "minZ": -5129,
+        "maxZ": -5039
+      },
+      {
+        "minX": -972,
+        "maxX": -882,
+        "minZ": -5056,
+        "maxZ": -4966
+      },
+      {
+        "minX": -972,
+        "maxX": -882,
+        "minZ": -4970,
+        "maxZ": -4880
+      },
+      {
+        "minX": -1059,
+        "maxX": -969,
+        "minZ": -4964,
+        "maxZ": -4874
+      },
+      {
+        "minX": -1151,
+        "maxX": -1061,
+        "minZ": -4968,
+        "maxZ": -4878
+      },
+      {
+        "minX": -1153,
+        "maxX": -1063,
+        "minZ": -4605,
+        "maxZ": -4515
+      },
+      {
+        "minX": -790,
+        "maxX": -700,
+        "minZ": -4663,
+        "maxZ": -4573
+      },
+      {
+        "minX": -868,
+        "maxX": -778,
+        "minZ": -4767,
+        "maxZ": -4677
+      },
+      {
+        "minX": -650,
+        "maxX": -560,
+        "minZ": -4765,
+        "maxZ": -4675
+      },
+      {
+        "minX": -762,
+        "maxX": -672,
+        "minZ": -4840,
+        "maxZ": -4750
+      },
+      {
+        "minX": -1308,
+        "maxX": -1218,
+        "minZ": -5082,
+        "maxZ": -4992
+      },
+      {
+        "minX": -950,
+        "maxX": -860,
+        "minZ": -4699,
+        "maxZ": -4609
+      },
+      {
+        "minX": -736,
+        "maxX": -646,
+        "minZ": -4732,
+        "maxZ": -4642
+      },
+      {
+        "minX": -907,
+        "maxX": -817,
+        "minZ": -4831,
+        "maxZ": -4741
+      },
+      {
+        "minX": -1004,
+        "maxX": -914,
+        "minZ": -4854,
+        "maxZ": -4764
+      },
+      {
+        "minX": -1078,
+        "maxX": -988,
+        "minZ": -4763,
+        "maxZ": -4673
+      },
+      {
+        "minX": -1176,
+        "maxX": -1086,
+        "minZ": -4753,
+        "maxZ": -4663
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1308,
@@ -19346,6 +34850,122 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4923,
       "maxZ": -4342
     },
+    "spawnNodes": [
+      {
+        "minX": 135,
+        "maxX": 151,
+        "minZ": -4605,
+        "maxZ": -4589
+      },
+      {
+        "minX": 166,
+        "maxX": 190,
+        "minZ": -4571,
+        "maxZ": -4547
+      },
+      {
+        "minX": 146,
+        "maxX": 162,
+        "minZ": -4564,
+        "maxZ": -4548
+      },
+      {
+        "minX": 149,
+        "maxX": 165,
+        "minZ": -4484,
+        "maxZ": -4468
+      },
+      {
+        "minX": 207,
+        "maxX": 237,
+        "minZ": -4527,
+        "maxZ": -4497
+      },
+      {
+        "minX": 233,
+        "maxX": 249,
+        "minZ": -4522,
+        "maxZ": -4506
+      },
+      {
+        "minX": 198,
+        "maxX": 226,
+        "minZ": -4633,
+        "maxZ": -4605
+      },
+      {
+        "minX": 218,
+        "maxX": 248,
+        "minZ": -4601,
+        "maxZ": -4571
+      },
+      {
+        "minX": 235,
+        "maxX": 265,
+        "minZ": -4557,
+        "maxZ": -4527
+      },
+      {
+        "minX": 49,
+        "maxX": 73,
+        "minZ": -4706,
+        "maxZ": -4682
+      },
+      {
+        "minX": 63,
+        "maxX": 87,
+        "minZ": -4736,
+        "maxZ": -4712
+      },
+      {
+        "minX": 49,
+        "maxX": 69,
+        "minZ": -4761,
+        "maxZ": -4741
+      },
+      {
+        "minX": -108,
+        "maxX": -78,
+        "minZ": -4913,
+        "maxZ": -4883
+      },
+      {
+        "minX": -110,
+        "maxX": -94,
+        "minZ": -4368,
+        "maxZ": -4352
+      },
+      {
+        "minX": -95,
+        "maxX": -71,
+        "minZ": -4434,
+        "maxZ": -4410
+      },
+      {
+        "minX": -80,
+        "maxX": -64,
+        "minZ": -4459,
+        "maxZ": -4443
+      },
+      {
+        "minX": -71,
+        "maxX": -47,
+        "minZ": -4516,
+        "maxZ": -4492
+      },
+      {
+        "minX": -35,
+        "maxX": -19,
+        "minZ": -4548,
+        "maxZ": -4532
+      },
+      {
+        "minX": 4,
+        "maxX": 24,
+        "minZ": -4579,
+        "maxZ": -4559
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -110,
@@ -19400,6 +35020,62 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5293,
       "maxZ": -5193
     },
+    "spawnNodes": [
+      {
+        "minX": 792,
+        "maxX": 808,
+        "minZ": -5236,
+        "maxZ": -5220
+      },
+      {
+        "minX": 770,
+        "maxX": 786,
+        "minZ": -5253,
+        "maxZ": -5237
+      },
+      {
+        "minX": 807,
+        "maxX": 823,
+        "minZ": -5264,
+        "maxZ": -5248
+      },
+      {
+        "minX": 816,
+        "maxX": 832,
+        "minZ": -5259,
+        "maxZ": -5243
+      },
+      {
+        "minX": 824,
+        "maxX": 840,
+        "minZ": -5253,
+        "maxZ": -5237
+      },
+      {
+        "minX": 833,
+        "maxX": 849,
+        "minZ": -5244,
+        "maxZ": -5228
+      },
+      {
+        "minX": 842,
+        "maxX": 858,
+        "minZ": -5241,
+        "maxZ": -5225
+      },
+      {
+        "minX": 855,
+        "maxX": 871,
+        "minZ": -5248,
+        "maxZ": -5232
+      },
+      {
+        "minX": 861,
+        "maxX": 877,
+        "minZ": -5255,
+        "maxZ": -5239
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 770,
@@ -19437,6 +35113,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5269,
       "maxZ": -5169
     },
+    "spawnNodes": [
+      {
+        "minX": 799,
+        "maxX": 819,
+        "minZ": -5220,
+        "maxZ": -5200
+      },
+      {
+        "minX": 773,
+        "maxX": 799,
+        "minZ": -5237,
+        "maxZ": -5211
+      },
+      {
+        "minX": 858,
+        "maxX": 878,
+        "minZ": -5239,
+        "maxZ": -5219
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 773,
@@ -19472,6 +35168,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2051,
       "maxZ": -1951
     },
+    "spawnNodes": [
+      {
+        "minX": -1079,
+        "maxX": -1059,
+        "minZ": -2011,
+        "maxZ": -1991
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1079,
@@ -19507,6 +35211,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1649,
       "maxZ": -1509
     },
+    "spawnNodes": [
+      {
+        "minX": 260,
+        "maxX": 380,
+        "minZ": -1639,
+        "maxZ": -1519
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 260,
@@ -19542,6 +35254,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1102,
       "maxZ": -1002
     },
+    "spawnNodes": [
+      {
+        "minX": -740,
+        "maxX": -720,
+        "minZ": -1062,
+        "maxZ": -1042
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -740,
@@ -19577,6 +35297,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -639,
       "maxZ": -539
     },
+    "spawnNodes": [
+      {
+        "minX": -502,
+        "maxX": -486,
+        "minZ": -597,
+        "maxZ": -581
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -502,
@@ -19613,6 +35341,140 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5522,
       "maxZ": -5088
     },
+    "spawnNodes": [
+      {
+        "minX": 1173,
+        "maxX": 1233,
+        "minZ": -5416,
+        "maxZ": -5356
+      },
+      {
+        "minX": 1204,
+        "maxX": 1264,
+        "minZ": -5400,
+        "maxZ": -5340
+      },
+      {
+        "minX": 1291,
+        "maxX": 1321,
+        "minZ": -5343,
+        "maxZ": -5313
+      },
+      {
+        "minX": 1290,
+        "maxX": 1320,
+        "minZ": -5495,
+        "maxZ": -5465
+      },
+      {
+        "minX": 1287,
+        "maxX": 1337,
+        "minZ": -5482,
+        "maxZ": -5432
+      },
+      {
+        "minX": 1292,
+        "maxX": 1342,
+        "minZ": -5438,
+        "maxZ": -5388
+      },
+      {
+        "minX": 1288,
+        "maxX": 1338,
+        "minZ": -5402,
+        "maxZ": -5352
+      },
+      {
+        "minX": 1304,
+        "maxX": 1354,
+        "minZ": -5367,
+        "maxZ": -5317
+      },
+      {
+        "minX": 1293,
+        "maxX": 1333,
+        "minZ": -5315,
+        "maxZ": -5275
+      },
+      {
+        "minX": 1322,
+        "maxX": 1362,
+        "minZ": -5286,
+        "maxZ": -5246
+      },
+      {
+        "minX": 1336,
+        "maxX": 1376,
+        "minZ": -5310,
+        "maxZ": -5270
+      },
+      {
+        "minX": 1363,
+        "maxX": 1403,
+        "minZ": -5322,
+        "maxZ": -5282
+      },
+      {
+        "minX": 1358,
+        "maxX": 1408,
+        "minZ": -5361,
+        "maxZ": -5311
+      },
+      {
+        "minX": 1386,
+        "maxX": 1436,
+        "minZ": -5404,
+        "maxZ": -5354
+      },
+      {
+        "minX": 1351,
+        "maxX": 1411,
+        "minZ": -5438,
+        "maxZ": -5378
+      },
+      {
+        "minX": 1387,
+        "maxX": 1427,
+        "minZ": -5459,
+        "maxZ": -5419
+      },
+      {
+        "minX": 1361,
+        "maxX": 1401,
+        "minZ": -5512,
+        "maxZ": -5472
+      },
+      {
+        "minX": 1352,
+        "maxX": 1402,
+        "minZ": -5279,
+        "maxZ": -5229
+      },
+      {
+        "minX": 1352,
+        "maxX": 1392,
+        "minZ": -5234,
+        "maxZ": -5194
+      },
+      {
+        "minX": 1329,
+        "maxX": 1369,
+        "minZ": -5210,
+        "maxZ": -5170
+      },
+      {
+        "minX": 1332,
+        "maxX": 1372,
+        "minZ": -5177,
+        "maxZ": -5137
+      },
+      {
+        "minX": 1342,
+        "maxX": 1392,
+        "minZ": -5148,
+        "maxZ": -5098
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1173,
@@ -19650,6 +35512,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3734,
       "maxZ": -3590
     },
+    "spawnNodes": [
+      {
+        "minX": -885,
+        "maxX": -765,
+        "minZ": -3720,
+        "maxZ": -3600
+      },
+      {
+        "minX": -1091,
+        "maxX": -971,
+        "minZ": -3724,
+        "maxZ": -3604
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1091,
@@ -19691,6 +35567,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5319,
       "maxZ": -5147
     },
+    "spawnNodes": [
+      {
+        "minX": 234,
+        "maxX": 250,
+        "minZ": -5173,
+        "maxZ": -5157
+      },
+      {
+        "minX": 198,
+        "maxX": 238,
+        "minZ": -5236,
+        "maxZ": -5196
+      },
+      {
+        "minX": 390,
+        "maxX": 406,
+        "minZ": -5252,
+        "maxZ": -5236
+      },
+      {
+        "minX": 383,
+        "maxX": 399,
+        "minZ": -5273,
+        "maxZ": -5257
+      },
+      {
+        "minX": 358,
+        "maxX": 374,
+        "minZ": -5309,
+        "maxZ": -5293
+      },
+      {
+        "minX": 353,
+        "maxX": 369,
+        "minZ": -5289,
+        "maxZ": -5273
+      },
+      {
+        "minX": 360,
+        "maxX": 376,
+        "minZ": -5266,
+        "maxZ": -5250
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 337,
@@ -19734,6 +35654,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5417,
       "maxZ": -5317
     },
+    "spawnNodes": [
+      {
+        "minX": -123,
+        "maxX": -107,
+        "minZ": -5403,
+        "maxZ": -5387
+      },
+      {
+        "minX": -101,
+        "maxX": -71,
+        "minZ": -5390,
+        "maxZ": -5360
+      },
+      {
+        "minX": -48,
+        "maxX": -18,
+        "minZ": -5361,
+        "maxZ": -5331
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -123,
@@ -19773,6 +35713,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -581,
       "maxZ": -362
     },
+    "spawnNodes": [
+      {
+        "minX": -632,
+        "maxX": -548,
+        "minZ": -456,
+        "maxZ": -372
+      },
+      {
+        "minX": -577,
+        "maxX": -525,
+        "minZ": -521,
+        "maxZ": -469
+      },
+      {
+        "minX": -605,
+        "maxX": -555,
+        "minZ": -571,
+        "maxZ": -521
+      },
+      {
+        "minX": -663,
+        "maxX": -621,
+        "minZ": -483,
+        "maxZ": -441
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -663,
@@ -19808,6 +35774,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5431,
       "maxZ": -5311
     },
+    "spawnNodes": [
+      {
+        "minX": 56,
+        "maxX": 156,
+        "minZ": -5421,
+        "maxZ": -5321
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 56,
@@ -19844,6 +35818,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5425,
       "maxZ": -5115
     },
+    "spawnNodes": [
+      {
+        "minX": -1787,
+        "maxX": -1497,
+        "minZ": -5415,
+        "maxZ": -5125
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1787,
@@ -19879,6 +35861,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1916,
       "maxZ": -715
     },
+    "spawnNodes": [
+      {
+        "minX": 321,
+        "maxX": 361,
+        "minZ": -1727,
+        "maxZ": -1687
+      },
+      {
+        "minX": -166,
+        "maxX": -126,
+        "minZ": -1591,
+        "maxZ": -1551
+      },
+      {
+        "minX": 18,
+        "maxX": 58,
+        "minZ": -765,
+        "maxZ": -725
+      },
+      {
+        "minX": 995,
+        "maxX": 1035,
+        "minZ": -1906,
+        "maxZ": -1866
+      },
+      {
+        "minX": -675,
+        "maxX": -635,
+        "minZ": -800,
+        "maxZ": -760
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -675,
@@ -19940,6 +35954,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4656,
       "maxZ": -4556
     },
+    "spawnNodes": [
+      {
+        "minX": -1353,
+        "maxX": -1303,
+        "minZ": -4637,
+        "maxZ": -4587
+      },
+      {
+        "minX": -1281,
+        "maxX": -1231,
+        "minZ": -4626,
+        "maxZ": -4576
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1353,
@@ -19975,6 +36003,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -548,
       "maxZ": -448
     },
+    "spawnNodes": [
+      {
+        "minX": -985,
+        "maxX": -967,
+        "minZ": -507,
+        "maxZ": -489
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -985,
@@ -20010,6 +36046,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4731,
       "maxZ": -4631
     },
+    "spawnNodes": [
+      {
+        "minX": -1285,
+        "maxX": -1269,
+        "minZ": -4689,
+        "maxZ": -4673
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1285,
@@ -20046,6 +36090,86 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3464,
       "maxZ": -2524
     },
+    "spawnNodes": [
+      {
+        "minX": -1276,
+        "maxX": -1260,
+        "minZ": -3378,
+        "maxZ": -3362
+      },
+      {
+        "minX": -1345,
+        "maxX": -1329,
+        "minZ": -3373,
+        "maxZ": -3357
+      },
+      {
+        "minX": -1583,
+        "maxX": -1567,
+        "minZ": -3454,
+        "maxZ": -3438
+      },
+      {
+        "minX": -1604,
+        "maxX": -1588,
+        "minZ": -3327,
+        "maxZ": -3311
+      },
+      {
+        "minX": -1676,
+        "maxX": -1660,
+        "minZ": -3143,
+        "maxZ": -3127
+      },
+      {
+        "minX": -1718,
+        "maxX": -1702,
+        "minZ": -2709,
+        "maxZ": -2693
+      },
+      {
+        "minX": -1776,
+        "maxX": -1760,
+        "minZ": -2550,
+        "maxZ": -2534
+      },
+      {
+        "minX": -1371,
+        "maxX": -1355,
+        "minZ": -2633,
+        "maxZ": -2617
+      },
+      {
+        "minX": -1879,
+        "maxX": -1863,
+        "minZ": -2810,
+        "maxZ": -2794
+      },
+      {
+        "minX": -1803,
+        "maxX": -1787,
+        "minZ": -2735,
+        "maxZ": -2719
+      },
+      {
+        "minX": -1483,
+        "maxX": -1467,
+        "minZ": -2637,
+        "maxZ": -2621
+      },
+      {
+        "minX": -1353,
+        "maxX": -1337,
+        "minZ": -2753,
+        "maxZ": -2737
+      },
+      {
+        "minX": -1314,
+        "maxX": -1298,
+        "minZ": -2670,
+        "maxZ": -2654
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1371,
@@ -20148,6 +36272,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -831,
       "maxZ": -628
     },
+    "spawnNodes": [
+      {
+        "minX": -1192,
+        "maxX": -1132,
+        "minZ": -783,
+        "maxZ": -723
+      },
+      {
+        "minX": -1436,
+        "maxX": -1386,
+        "minZ": -821,
+        "maxZ": -771
+      },
+      {
+        "minX": -1487,
+        "maxX": -1437,
+        "minZ": -734,
+        "maxZ": -684
+      },
+      {
+        "minX": -1560,
+        "maxX": -1510,
+        "minZ": -688,
+        "maxZ": -638
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1560,
@@ -20190,6 +36340,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -831,
       "maxZ": -628
     },
+    "spawnNodes": [
+      {
+        "minX": -1192,
+        "maxX": -1132,
+        "minZ": -783,
+        "maxZ": -723
+      },
+      {
+        "minX": -1436,
+        "maxX": -1386,
+        "minZ": -821,
+        "maxZ": -771
+      },
+      {
+        "minX": -1487,
+        "maxX": -1437,
+        "minZ": -734,
+        "maxZ": -684
+      },
+      {
+        "minX": -1560,
+        "maxX": -1510,
+        "minZ": -688,
+        "maxZ": -638
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1560,
@@ -20231,6 +36407,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1629,
       "maxZ": -1529
     },
+    "spawnNodes": [
+      {
+        "minX": 1290,
+        "maxX": 1306,
+        "minZ": -1557,
+        "maxZ": -1541
+      },
+      {
+        "minX": 1303,
+        "maxX": 1319,
+        "minZ": -1612,
+        "maxZ": -1596
+      },
+      {
+        "minX": 1315,
+        "maxX": 1331,
+        "minZ": -1584,
+        "maxZ": -1568
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1289,
@@ -20266,6 +36462,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5343,
       "maxZ": -5243
     },
+    "spawnNodes": [
+      {
+        "minX": -532,
+        "maxX": -472,
+        "minZ": -5323,
+        "maxZ": -5263
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -532,
@@ -20301,6 +36505,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1933,
       "maxZ": -1833
     },
+    "spawnNodes": [
+      {
+        "minX": 60,
+        "maxX": 76,
+        "minZ": -1891,
+        "maxZ": -1875
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 60,
@@ -20338,6 +36550,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5409,
       "maxZ": -5090
     },
+    "spawnNodes": [
+      {
+        "minX": -256,
+        "maxX": -240,
+        "minZ": -5253,
+        "maxZ": -5237
+      },
+      {
+        "minX": -126,
+        "maxX": -110,
+        "minZ": -5125,
+        "maxZ": -5109
+      },
+      {
+        "minX": -100,
+        "maxX": -84,
+        "minZ": -5128,
+        "maxZ": -5112
+      },
+      {
+        "minX": -78,
+        "maxX": -58,
+        "minZ": -5144,
+        "maxZ": -5124
+      },
+      {
+        "minX": -60,
+        "maxX": -44,
+        "minZ": -5245,
+        "maxZ": -5229
+      },
+      {
+        "minX": -33,
+        "maxX": -17,
+        "minZ": -5273,
+        "maxZ": -5257
+      },
+      {
+        "minX": -187,
+        "maxX": -171,
+        "minZ": -5399,
+        "maxZ": -5383
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -126,
@@ -20391,6 +36647,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1728,
       "maxZ": -1628
     },
+    "spawnNodes": [
+      {
+        "minX": 1307,
+        "maxX": 1323,
+        "minZ": -1686,
+        "maxZ": -1670
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1307,
@@ -20426,6 +36690,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5607,
       "maxZ": -5507
     },
+    "spawnNodes": [
+      {
+        "minX": -1316,
+        "maxX": -1276,
+        "minZ": -5577,
+        "maxZ": -5537
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1316,
@@ -20461,6 +36733,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5090,
       "maxZ": -4990
     },
+    "spawnNodes": [
+      {
+        "minX": -796,
+        "maxX": -780,
+        "minZ": -5037,
+        "maxZ": -5021
+      },
+      {
+        "minX": -790,
+        "maxX": -774,
+        "minZ": -5036,
+        "maxZ": -5020
+      },
+      {
+        "minX": -795,
+        "maxX": -779,
+        "minZ": -5043,
+        "maxZ": -5027
+      },
+      {
+        "minX": -789,
+        "maxX": -773,
+        "minZ": -5053,
+        "maxZ": -5037
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -812,
@@ -20496,6 +36794,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5098,
       "maxZ": -4892
     },
+    "spawnNodes": [
+      {
+        "minX": -1266,
+        "maxX": -1250,
+        "minZ": -4934,
+        "maxZ": -4918
+      },
+      {
+        "minX": -1258,
+        "maxX": -1242,
+        "minZ": -4942,
+        "maxZ": -4926
+      },
+      {
+        "minX": -1291,
+        "maxX": -1275,
+        "minZ": -5080,
+        "maxZ": -5064
+      },
+      {
+        "minX": -1281,
+        "maxX": -1265,
+        "minZ": -5086,
+        "maxZ": -5070
+      },
+      {
+        "minX": -1283,
+        "maxX": -1267,
+        "minZ": -5088,
+        "maxZ": -5072
+      },
+      {
+        "minX": -1290,
+        "maxX": -1274,
+        "minZ": -5081,
+        "maxZ": -5065
+      },
+      {
+        "minX": -1298,
+        "maxX": -1282,
+        "minZ": -5051,
+        "maxZ": -5035
+      },
+      {
+        "minX": -1303,
+        "maxX": -1287,
+        "minZ": -5048,
+        "maxZ": -5032
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1320,
@@ -20537,6 +36885,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1260,
       "maxZ": -1117
     },
+    "spawnNodes": [
+      {
+        "minX": 804,
+        "maxX": 820,
+        "minZ": -1250,
+        "maxZ": -1234
+      },
+      {
+        "minX": 796,
+        "maxX": 812,
+        "minZ": -1225,
+        "maxZ": -1209
+      },
+      {
+        "minX": 752,
+        "maxX": 768,
+        "minZ": -1186,
+        "maxZ": -1170
+      },
+      {
+        "minX": 775,
+        "maxX": 791,
+        "minZ": -1191,
+        "maxZ": -1175
+      },
+      {
+        "minX": 787,
+        "maxX": 803,
+        "minZ": -1171,
+        "maxZ": -1155
+      },
+      {
+        "minX": 797,
+        "maxX": 813,
+        "minZ": -1149,
+        "maxZ": -1133
+      },
+      {
+        "minX": 806,
+        "maxX": 822,
+        "minZ": -1177,
+        "maxZ": -1161
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 752,
@@ -20572,6 +36964,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1501,
       "maxZ": -1401
     },
+    "spawnNodes": [
+      {
+        "minX": -21,
+        "maxX": -5,
+        "minZ": -1459,
+        "maxZ": -1443
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -21,
@@ -20607,6 +37007,74 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1805,
       "maxZ": -1704
     },
+    "spawnNodes": [
+      {
+        "minX": 98,
+        "maxX": 114,
+        "minZ": -1795,
+        "maxZ": -1779
+      },
+      {
+        "minX": 42,
+        "maxX": 62,
+        "minZ": -1737,
+        "maxZ": -1717
+      },
+      {
+        "minX": 82,
+        "maxX": 98,
+        "minZ": -1743,
+        "maxZ": -1727
+      },
+      {
+        "minX": 72,
+        "maxX": 96,
+        "minZ": -1794,
+        "maxZ": -1770
+      },
+      {
+        "minX": 138,
+        "maxX": 154,
+        "minZ": -1737,
+        "maxZ": -1721
+      },
+      {
+        "minX": 139,
+        "maxX": 155,
+        "minZ": -1768,
+        "maxZ": -1752
+      },
+      {
+        "minX": 114,
+        "maxX": 138,
+        "minZ": -1771,
+        "maxZ": -1747
+      },
+      {
+        "minX": 42,
+        "maxX": 62,
+        "minZ": -1737,
+        "maxZ": -1717
+      },
+      {
+        "minX": 101,
+        "maxX": 117,
+        "minZ": -1743,
+        "maxZ": -1727
+      },
+      {
+        "minX": 141,
+        "maxX": 157,
+        "minZ": -1754,
+        "maxZ": -1738
+      },
+      {
+        "minX": 127,
+        "maxX": 143,
+        "minZ": -1747,
+        "maxZ": -1731
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 42,
@@ -20642,6 +37110,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1789,
       "maxZ": -1689
     },
+    "spawnNodes": [
+      {
+        "minX": 127,
+        "maxX": 143,
+        "minZ": -1747,
+        "maxZ": -1731
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 127,
@@ -20681,6 +37157,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4754,
       "maxZ": -4351
     },
+    "spawnNodes": [
+      {
+        "minX": 1181,
+        "maxX": 1321,
+        "minZ": -4630,
+        "maxZ": -4490
+      },
+      {
+        "minX": 1088,
+        "maxX": 1228,
+        "minZ": -4501,
+        "maxZ": -4361
+      },
+      {
+        "minX": 844,
+        "maxX": 954,
+        "minZ": -4744,
+        "maxZ": -4634
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1088,
@@ -20722,6 +37218,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5113,
       "maxZ": -5013
     },
+    "spawnNodes": [
+      {
+        "minX": -962,
+        "maxX": -946,
+        "minZ": -5071,
+        "maxZ": -5055
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -962,
@@ -20757,6 +37261,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5120,
       "maxZ": -5020
     },
+    "spawnNodes": [
+      {
+        "minX": -958,
+        "maxX": -942,
+        "minZ": -5054,
+        "maxZ": -5038
+      },
+      {
+        "minX": -949,
+        "maxX": -933,
+        "minZ": -5074,
+        "maxZ": -5058
+      },
+      {
+        "minX": -972,
+        "maxX": -956,
+        "minZ": -5093,
+        "maxZ": -5077
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -980,
@@ -20793,6 +37317,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5648,
       "maxZ": -5548
     },
+    "spawnNodes": [
+      {
+        "minX": -964,
+        "maxX": -914,
+        "minZ": -5623,
+        "maxZ": -5573
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -964,
@@ -20828,6 +37360,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5619,
       "maxZ": -5519
     },
+    "spawnNodes": [
+      {
+        "minX": -2100,
+        "maxX": -2080,
+        "minZ": -5579,
+        "maxZ": -5559
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2100,
@@ -20866,6 +37406,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4895,
       "maxZ": -4795
     },
+    "spawnNodes": [
+      {
+        "minX": -1556,
+        "maxX": -1540,
+        "minZ": -4853,
+        "maxZ": -4837
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1556,
@@ -20904,6 +37452,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4895,
       "maxZ": -4795
     },
+    "spawnNodes": [
+      {
+        "minX": -1556,
+        "maxX": -1540,
+        "minZ": -4853,
+        "maxZ": -4837
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1556,
@@ -20942,6 +37498,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4984,
       "maxZ": -4884
     },
+    "spawnNodes": [
+      {
+        "minX": -1723,
+        "maxX": -1699,
+        "minZ": -4946,
+        "maxZ": -4922
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1723,
@@ -20980,6 +37544,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4895,
       "maxZ": -4795
     },
+    "spawnNodes": [
+      {
+        "minX": -1556,
+        "maxX": -1540,
+        "minZ": -4853,
+        "maxZ": -4837
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1556,
@@ -21017,6 +37589,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -797,
       "maxZ": -529
     },
+    "spawnNodes": [
+      {
+        "minX": -1337,
+        "maxX": -1321,
+        "minZ": -787,
+        "maxZ": -771
+      },
+      {
+        "minX": -1413,
+        "maxX": -1397,
+        "minZ": -728,
+        "maxZ": -712
+      },
+      {
+        "minX": -1457,
+        "maxX": -1441,
+        "minZ": -590,
+        "maxZ": -574
+      },
+      {
+        "minX": -1399,
+        "maxX": -1383,
+        "minZ": -560,
+        "maxZ": -544
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1457,
@@ -21067,6 +37665,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2768,
       "maxZ": -2134
     },
+    "spawnNodes": [
+      {
+        "minX": -1617,
+        "maxX": -1317,
+        "minZ": -2758,
+        "maxZ": -2458
+      },
+      {
+        "minX": -1655,
+        "maxX": -1515,
+        "minZ": -2284,
+        "maxZ": -2144
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1617,
@@ -21109,6 +37721,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5654,
       "maxZ": -5554
     },
+    "spawnNodes": [
+      {
+        "minX": 1397,
+        "maxX": 1447,
+        "minZ": -5629,
+        "maxZ": -5579
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1397,
@@ -21145,6 +37765,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5654,
       "maxZ": -5554
     },
+    "spawnNodes": [
+      {
+        "minX": 1397,
+        "maxX": 1447,
+        "minZ": -5629,
+        "maxZ": -5579
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1397,
@@ -21181,6 +37809,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5654,
       "maxZ": -5554
     },
+    "spawnNodes": [
+      {
+        "minX": 1397,
+        "maxX": 1447,
+        "minZ": -5629,
+        "maxZ": -5579
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1397,
@@ -21217,6 +37853,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5685,
       "maxZ": -5575
     },
+    "spawnNodes": [
+      {
+        "minX": 1333,
+        "maxX": 1351,
+        "minZ": -5625,
+        "maxZ": -5607
+      },
+      {
+        "minX": 1363,
+        "maxX": 1381,
+        "minZ": -5603,
+        "maxZ": -5585
+      },
+      {
+        "minX": 1389,
+        "maxX": 1419,
+        "minZ": -5617,
+        "maxZ": -5587
+      },
+      {
+        "minX": 1381,
+        "maxX": 1431,
+        "minZ": -5675,
+        "maxZ": -5625
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1333,
@@ -21253,6 +37915,68 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5447,
       "maxZ": -5245
     },
+    "spawnNodes": [
+      {
+        "minX": 887,
+        "maxX": 907,
+        "minZ": -5355,
+        "maxZ": -5335
+      },
+      {
+        "minX": 881,
+        "maxX": 901,
+        "minZ": -5300,
+        "maxZ": -5280
+      },
+      {
+        "minX": 879,
+        "maxX": 895,
+        "minZ": -5327,
+        "maxZ": -5311
+      },
+      {
+        "minX": 914,
+        "maxX": 930,
+        "minZ": -5426,
+        "maxZ": -5410
+      },
+      {
+        "minX": 924,
+        "maxX": 940,
+        "minZ": -5414,
+        "maxZ": -5398
+      },
+      {
+        "minX": 966,
+        "maxX": 982,
+        "minZ": -5414,
+        "maxZ": -5398
+      },
+      {
+        "minX": 978,
+        "maxX": 994,
+        "minZ": -5421,
+        "maxZ": -5405
+      },
+      {
+        "minX": 989,
+        "maxX": 1005,
+        "minZ": -5317,
+        "maxZ": -5301
+      },
+      {
+        "minX": 1041,
+        "maxX": 1057,
+        "minZ": -5271,
+        "maxZ": -5255
+      },
+      {
+        "minX": 1070,
+        "maxX": 1086,
+        "minZ": -5319,
+        "maxZ": -5303
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 879,
@@ -21294,6 +38018,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5394,
       "maxZ": -5294
     },
+    "spawnNodes": [
+      {
+        "minX": -942,
+        "maxX": -926,
+        "minZ": -5352,
+        "maxZ": -5336
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -942,
@@ -21329,6 +38061,68 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1434,
       "maxZ": -151
     },
+    "spawnNodes": [
+      {
+        "minX": -1380,
+        "maxX": -1360,
+        "minZ": -1384,
+        "maxZ": -1364
+      },
+      {
+        "minX": -1241,
+        "maxX": -1211,
+        "minZ": -1223,
+        "maxZ": -1193
+      },
+      {
+        "minX": -1135,
+        "maxX": -1115,
+        "minZ": -1030,
+        "maxZ": -1010
+      },
+      {
+        "minX": -1308,
+        "maxX": -1264,
+        "minZ": -973,
+        "maxZ": -929
+      },
+      {
+        "minX": -1482,
+        "maxX": -1424,
+        "minZ": -937,
+        "maxZ": -879
+      },
+      {
+        "minX": -1443,
+        "maxX": -1413,
+        "minZ": -191,
+        "maxZ": -161
+      },
+      {
+        "minX": -1240,
+        "maxX": -1182,
+        "minZ": -1188,
+        "maxZ": -1130
+      },
+      {
+        "minX": -1097,
+        "maxX": -1039,
+        "minZ": -1383,
+        "maxZ": -1325
+      },
+      {
+        "minX": -1100,
+        "maxX": -1066,
+        "minZ": -1274,
+        "maxZ": -1240
+      },
+      {
+        "minX": -1239,
+        "maxX": -1181,
+        "minZ": -1424,
+        "maxZ": -1366
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1100,
@@ -21407,6 +38201,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1519,
       "maxZ": -1059
     },
+    "spawnNodes": [
+      {
+        "minX": -1933,
+        "maxX": -1853,
+        "minZ": -1271,
+        "maxZ": -1191
+      },
+      {
+        "minX": -1914,
+        "maxX": -1834,
+        "minZ": -1396,
+        "maxZ": -1316
+      },
+      {
+        "minX": -1842,
+        "maxX": -1762,
+        "minZ": -1464,
+        "maxZ": -1384
+      },
+      {
+        "minX": -2045,
+        "maxX": -1965,
+        "minZ": -1509,
+        "maxZ": -1429
+      },
+      {
+        "minX": -2058,
+        "maxX": -1978,
+        "minZ": -1440,
+        "maxZ": -1360
+      },
+      {
+        "minX": -1837,
+        "maxX": -1757,
+        "minZ": -1149,
+        "maxZ": -1069
+      },
+      {
+        "minX": -1782,
+        "maxX": -1702,
+        "minZ": -1249,
+        "maxZ": -1169
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2058,
@@ -21442,6 +38280,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -668,
       "maxZ": -310
     },
+    "spawnNodes": [
+      {
+        "minX": -700,
+        "maxX": -684,
+        "minZ": -439,
+        "maxZ": -423
+      },
+      {
+        "minX": -694,
+        "maxX": -678,
+        "minZ": -427,
+        "maxZ": -411
+      },
+      {
+        "minX": -878,
+        "maxX": -862,
+        "minZ": -336,
+        "maxZ": -320
+      },
+      {
+        "minX": -839,
+        "maxX": -823,
+        "minZ": -573,
+        "maxZ": -557
+      },
+      {
+        "minX": -815,
+        "maxX": -799,
+        "minZ": -643,
+        "maxZ": -627
+      },
+      {
+        "minX": -841,
+        "maxX": -825,
+        "minZ": -645,
+        "maxZ": -629
+      },
+      {
+        "minX": -849,
+        "maxX": -833,
+        "minZ": -632,
+        "maxZ": -616
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -865,
@@ -21490,6 +38372,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -737,
       "maxZ": -637
     },
+    "spawnNodes": [
+      {
+        "minX": -816,
+        "maxX": -800,
+        "minZ": -695,
+        "maxZ": -679
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -816,
@@ -21525,6 +38415,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5400,
       "maxZ": -5300
     },
+    "spawnNodes": [
+      {
+        "minX": 615,
+        "maxX": 631,
+        "minZ": -5370,
+        "maxZ": -5354
+      },
+      {
+        "minX": 614,
+        "maxX": 630,
+        "minZ": -5347,
+        "maxZ": -5331
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 595,
@@ -21562,6 +38466,86 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4068,
       "maxZ": -3835
     },
+    "spawnNodes": [
+      {
+        "minX": 166,
+        "maxX": 182,
+        "minZ": -3879,
+        "maxZ": -3863
+      },
+      {
+        "minX": 265,
+        "maxX": 281,
+        "minZ": -3877,
+        "maxZ": -3861
+      },
+      {
+        "minX": 318,
+        "maxX": 334,
+        "minZ": -3939,
+        "maxZ": -3923
+      },
+      {
+        "minX": 313,
+        "maxX": 329,
+        "minZ": -3948,
+        "maxZ": -3932
+      },
+      {
+        "minX": 71,
+        "maxX": 87,
+        "minZ": -3861,
+        "maxZ": -3845
+      },
+      {
+        "minX": 238,
+        "maxX": 254,
+        "minZ": -3909,
+        "maxZ": -3893
+      },
+      {
+        "minX": 357,
+        "maxX": 373,
+        "minZ": -3984,
+        "maxZ": -3968
+      },
+      {
+        "minX": 148,
+        "maxX": 164,
+        "minZ": -3953,
+        "maxZ": -3937
+      },
+      {
+        "minX": 156,
+        "maxX": 172,
+        "minZ": -3980,
+        "maxZ": -3964
+      },
+      {
+        "minX": 312,
+        "maxX": 328,
+        "minZ": -3938,
+        "maxZ": -3922
+      },
+      {
+        "minX": 358,
+        "maxX": 374,
+        "minZ": -4058,
+        "maxZ": -4042
+      },
+      {
+        "minX": 229,
+        "maxX": 245,
+        "minZ": -4022,
+        "maxZ": -4006
+      },
+      {
+        "minX": 237,
+        "maxX": 253,
+        "minZ": -4029,
+        "maxZ": -4013
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 148,
@@ -21604,6 +38588,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -351,
       "maxZ": -251
     },
+    "spawnNodes": [
+      {
+        "minX": -140,
+        "maxX": -124,
+        "minZ": -309,
+        "maxZ": -293
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -140,
@@ -21639,6 +38631,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -687,
       "maxZ": -587
     },
+    "spawnNodes": [
+      {
+        "minX": 257,
+        "maxX": 287,
+        "minZ": -652,
+        "maxZ": -622
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 257,
@@ -21677,6 +38677,74 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1456,
       "maxZ": -1308
     },
+    "spawnNodes": [
+      {
+        "minX": -2161,
+        "maxX": -2145,
+        "minZ": -1366,
+        "maxZ": -1350
+      },
+      {
+        "minX": -2197,
+        "maxX": -2181,
+        "minZ": -1353,
+        "maxZ": -1337
+      },
+      {
+        "minX": -2218,
+        "maxX": -2202,
+        "minZ": -1428,
+        "maxZ": -1412
+      },
+      {
+        "minX": -2187,
+        "maxX": -2171,
+        "minZ": -1445,
+        "maxZ": -1429
+      },
+      {
+        "minX": -2179,
+        "maxX": -2163,
+        "minZ": -1412,
+        "maxZ": -1396
+      },
+      {
+        "minX": -2152,
+        "maxX": -2136,
+        "minZ": -1356,
+        "maxZ": -1340
+      },
+      {
+        "minX": -2122,
+        "maxX": -2106,
+        "minZ": -1380,
+        "maxZ": -1364
+      },
+      {
+        "minX": -2172,
+        "maxX": -2156,
+        "minZ": -1446,
+        "maxZ": -1430
+      },
+      {
+        "minX": -2118,
+        "maxX": -2102,
+        "minZ": -1366,
+        "maxZ": -1350
+      },
+      {
+        "minX": -2132,
+        "maxX": -2116,
+        "minZ": -1365,
+        "maxZ": -1349
+      },
+      {
+        "minX": -2197,
+        "maxX": -2181,
+        "minZ": -1344,
+        "maxZ": -1328
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2218,
@@ -21712,6 +38780,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2133,
       "maxZ": -2033
     },
+    "spawnNodes": [
+      {
+        "minX": -189,
+        "maxX": -157,
+        "minZ": -2099,
+        "maxZ": -2067
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -189,
@@ -21748,6 +38824,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5362,
       "maxZ": -5262
     },
+    "spawnNodes": [
+      {
+        "minX": -542,
+        "maxX": -526,
+        "minZ": -5296,
+        "maxZ": -5280
+      },
+      {
+        "minX": -542,
+        "maxX": -526,
+        "minZ": -5296,
+        "maxZ": -5280
+      },
+      {
+        "minX": -490,
+        "maxX": -474,
+        "minZ": -5323,
+        "maxZ": -5307
+      },
+      {
+        "minX": -498,
+        "maxX": -482,
+        "minZ": -5322,
+        "maxZ": -5306
+      },
+      {
+        "minX": -493,
+        "maxX": -477,
+        "minZ": -5329,
+        "maxZ": -5313
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -542,
@@ -21783,6 +38891,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1956,
       "maxZ": -1844
     },
+    "spawnNodes": [
+      {
+        "minX": 93,
+        "maxX": 133,
+        "minZ": -1894,
+        "maxZ": -1854
+      },
+      {
+        "minX": 80,
+        "maxX": 130,
+        "minZ": -1943,
+        "maxZ": -1893
+      },
+      {
+        "minX": 92,
+        "maxX": 108,
+        "minZ": -1929,
+        "maxZ": -1913
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 77,
@@ -21818,6 +38946,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1905,
       "maxZ": -1759
     },
+    "spawnNodes": [
+      {
+        "minX": 126,
+        "maxX": 142,
+        "minZ": -1895,
+        "maxZ": -1879
+      },
+      {
+        "minX": 270,
+        "maxX": 286,
+        "minZ": -1832,
+        "maxZ": -1816
+      },
+      {
+        "minX": 272,
+        "maxX": 288,
+        "minZ": -1823,
+        "maxZ": -1807
+      },
+      {
+        "minX": 269,
+        "maxX": 285,
+        "minZ": -1787,
+        "maxZ": -1771
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 251,
@@ -21863,6 +39017,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5069,
       "maxZ": -4969
     },
+    "spawnNodes": [
+      {
+        "minX": -2002,
+        "maxX": -1986,
+        "minZ": -5027,
+        "maxZ": -5011
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2002,
@@ -21902,6 +39064,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5069,
       "maxZ": -4969
     },
+    "spawnNodes": [
+      {
+        "minX": -2002,
+        "maxX": -1986,
+        "minZ": -5027,
+        "maxZ": -5011
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2002,
@@ -21941,6 +39111,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5069,
       "maxZ": -4969
     },
+    "spawnNodes": [
+      {
+        "minX": -2002,
+        "maxX": -1986,
+        "minZ": -5027,
+        "maxZ": -5011
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2002,
@@ -21978,6 +39156,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1445,
       "maxZ": -1101
     },
+    "spawnNodes": [
+      {
+        "minX": -1546,
+        "maxX": -1506,
+        "minZ": -1151,
+        "maxZ": -1111
+      },
+      {
+        "minX": -1538,
+        "maxX": -1508,
+        "minZ": -1435,
+        "maxZ": -1405
+      },
+      {
+        "minX": -1488,
+        "maxX": -1458,
+        "minZ": -1336,
+        "maxZ": -1306
+      },
+      {
+        "minX": -1272,
+        "maxX": -1256,
+        "minZ": -1307,
+        "maxZ": -1291
+      },
+      {
+        "minX": -1259,
+        "maxX": -1243,
+        "minZ": -1259,
+        "maxZ": -1243
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1285,
@@ -22031,6 +39241,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5134,
       "maxZ": -5034
     },
+    "spawnNodes": [
+      {
+        "minX": -1156,
+        "maxX": -1116,
+        "minZ": -5104,
+        "maxZ": -5064
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1156,
@@ -22067,6 +39285,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1519,
       "maxZ": -1059
     },
+    "spawnNodes": [
+      {
+        "minX": -1933,
+        "maxX": -1853,
+        "minZ": -1271,
+        "maxZ": -1191
+      },
+      {
+        "minX": -1914,
+        "maxX": -1834,
+        "minZ": -1396,
+        "maxZ": -1316
+      },
+      {
+        "minX": -1842,
+        "maxX": -1762,
+        "minZ": -1464,
+        "maxZ": -1384
+      },
+      {
+        "minX": -2045,
+        "maxX": -1965,
+        "minZ": -1509,
+        "maxZ": -1429
+      },
+      {
+        "minX": -2058,
+        "maxX": -1978,
+        "minZ": -1440,
+        "maxZ": -1360
+      },
+      {
+        "minX": -1837,
+        "maxX": -1757,
+        "minZ": -1149,
+        "maxZ": -1069
+      },
+      {
+        "minX": -1782,
+        "maxX": -1702,
+        "minZ": -1249,
+        "maxZ": -1169
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2058,
@@ -22102,6 +39364,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -914,
       "maxZ": -617
     },
+    "spawnNodes": [
+      {
+        "minX": -1360,
+        "maxX": -1344,
+        "minZ": -643,
+        "maxZ": -627
+      },
+      {
+        "minX": -1441,
+        "maxX": -1425,
+        "minZ": -713,
+        "maxZ": -697
+      },
+      {
+        "minX": -1267,
+        "maxX": -1251,
+        "minZ": -854,
+        "maxZ": -838
+      },
+      {
+        "minX": -1174,
+        "maxX": -1158,
+        "minZ": -829,
+        "maxZ": -813
+      },
+      {
+        "minX": -1092,
+        "maxX": -1076,
+        "minZ": -904,
+        "maxZ": -888
+      },
+      {
+        "minX": -1166,
+        "maxX": -1150,
+        "minZ": -676,
+        "maxZ": -660
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1166,
@@ -22169,6 +39469,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1053,
       "maxZ": -875
     },
+    "spawnNodes": [
+      {
+        "minX": 848,
+        "maxX": 988,
+        "minZ": -1025,
+        "maxZ": -885
+      },
+      {
+        "minX": 992,
+        "maxX": 1132,
+        "minZ": -1043,
+        "maxZ": -903
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 848,
@@ -22205,6 +39519,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2090,
       "maxZ": -1990
     },
+    "spawnNodes": [
+      {
+        "minX": 587,
+        "maxX": 607,
+        "minZ": -2030,
+        "maxZ": -2010
+      },
+      {
+        "minX": 447,
+        "maxX": 467,
+        "minZ": -2031,
+        "maxZ": -2011
+      },
+      {
+        "minX": 438,
+        "maxX": 454,
+        "minZ": -2071,
+        "maxZ": -2055
+      },
+      {
+        "minX": 421,
+        "maxX": 441,
+        "minZ": -2032,
+        "maxZ": -2012
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 410,
@@ -22247,6 +39587,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4374,
       "maxZ": -4274
     },
+    "spawnNodes": [
+      {
+        "minX": 991,
+        "maxX": 1033,
+        "minZ": -4345,
+        "maxZ": -4303
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 991,
@@ -22283,6 +39631,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5609,
       "maxZ": -5156
     },
+    "spawnNodes": [
+      {
+        "minX": -2075,
+        "maxX": -1985,
+        "minZ": -5357,
+        "maxZ": -5267
+      },
+      {
+        "minX": -1852,
+        "maxX": -1812,
+        "minZ": -5324,
+        "maxZ": -5284
+      },
+      {
+        "minX": -1654,
+        "maxX": -1584,
+        "minZ": -5236,
+        "maxZ": -5166
+      },
+      {
+        "minX": -1654,
+        "maxX": -1584,
+        "minZ": -5236,
+        "maxZ": -5166
+      },
+      {
+        "minX": -2171,
+        "maxX": -2081,
+        "minZ": -5508,
+        "maxZ": -5418
+      },
+      {
+        "minX": -2087,
+        "maxX": -1977,
+        "minZ": -5582,
+        "maxZ": -5472
+      },
+      {
+        "minX": -2036,
+        "maxX": -1916,
+        "minZ": -5599,
+        "maxZ": -5479
+      },
+      {
+        "minX": -1960,
+        "maxX": -1920,
+        "minZ": -5384,
+        "maxZ": -5344
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2171,
@@ -22330,6 +39728,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5609,
       "maxZ": -5156
     },
+    "spawnNodes": [
+      {
+        "minX": -2075,
+        "maxX": -1985,
+        "minZ": -5357,
+        "maxZ": -5267
+      },
+      {
+        "minX": -1852,
+        "maxX": -1812,
+        "minZ": -5324,
+        "maxZ": -5284
+      },
+      {
+        "minX": -1654,
+        "maxX": -1584,
+        "minZ": -5236,
+        "maxZ": -5166
+      },
+      {
+        "minX": -1654,
+        "maxX": -1584,
+        "minZ": -5236,
+        "maxZ": -5166
+      },
+      {
+        "minX": -2171,
+        "maxX": -2081,
+        "minZ": -5508,
+        "maxZ": -5418
+      },
+      {
+        "minX": -2087,
+        "maxX": -1977,
+        "minZ": -5582,
+        "maxZ": -5472
+      },
+      {
+        "minX": -2036,
+        "maxX": -1916,
+        "minZ": -5599,
+        "maxZ": -5479
+      },
+      {
+        "minX": -1960,
+        "maxX": -1920,
+        "minZ": -5384,
+        "maxZ": -5344
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2171,
@@ -22382,6 +39830,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1790,
       "maxZ": -1425
     },
+    "spawnNodes": [
+      {
+        "minX": -277,
+        "maxX": -217,
+        "minZ": -1623,
+        "maxZ": -1563
+      },
+      {
+        "minX": -198,
+        "maxX": -88,
+        "minZ": -1556,
+        "maxZ": -1446
+      },
+      {
+        "minX": -252,
+        "maxX": -192,
+        "minZ": -1495,
+        "maxZ": -1435
+      },
+      {
+        "minX": -203,
+        "maxX": -103,
+        "minZ": -1780,
+        "maxZ": -1680
+      },
+      {
+        "minX": -121,
+        "maxX": -61,
+        "minZ": -1654,
+        "maxZ": -1594
+      },
+      {
+        "minX": -183,
+        "maxX": -133,
+        "minZ": -1537,
+        "maxZ": -1487
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -277,
@@ -22417,6 +39903,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1679,
       "maxZ": -1579
     },
+    "spawnNodes": [
+      {
+        "minX": 458,
+        "maxX": 474,
+        "minZ": -1637,
+        "maxZ": -1621
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 458,
@@ -22454,6 +39948,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5613,
       "maxZ": -5179
     },
+    "spawnNodes": [
+      {
+        "minX": -1096,
+        "maxX": -1026,
+        "minZ": -5569,
+        "maxZ": -5499
+      },
+      {
+        "minX": -1065,
+        "maxX": -1005,
+        "minZ": -5603,
+        "maxZ": -5543
+      },
+      {
+        "minX": -1301,
+        "maxX": -1251,
+        "minZ": -5239,
+        "maxZ": -5189
+      },
+      {
+        "minX": -1307,
+        "maxX": -1257,
+        "minZ": -5286,
+        "maxZ": -5236
+      },
+      {
+        "minX": -1279,
+        "maxX": -1229,
+        "minZ": -5327,
+        "maxZ": -5277
+      },
+      {
+        "minX": -1265,
+        "maxX": -1215,
+        "minZ": -5379,
+        "maxZ": -5329
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1307,
@@ -22496,6 +40028,152 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5457,
       "maxZ": -4696
     },
+    "spawnNodes": [
+      {
+        "minX": -417,
+        "maxX": -397,
+        "minZ": -5236,
+        "maxZ": -5216
+      },
+      {
+        "minX": -321,
+        "maxX": -305,
+        "minZ": -5447,
+        "maxZ": -5431
+      },
+      {
+        "minX": -420,
+        "maxX": -404,
+        "minZ": -5136,
+        "maxZ": -5120
+      },
+      {
+        "minX": -382,
+        "maxX": -366,
+        "minZ": -5167,
+        "maxZ": -5151
+      },
+      {
+        "minX": -372,
+        "maxX": -352,
+        "minZ": -5122,
+        "maxZ": -5102
+      },
+      {
+        "minX": -352,
+        "maxX": -332,
+        "minZ": -5179,
+        "maxZ": -5159
+      },
+      {
+        "minX": -317,
+        "maxX": -301,
+        "minZ": -5163,
+        "maxZ": -5147
+      },
+      {
+        "minX": -301,
+        "maxX": -285,
+        "minZ": -5237,
+        "maxZ": -5221
+      },
+      {
+        "minX": -280,
+        "maxX": -264,
+        "minZ": -5130,
+        "maxZ": -5114
+      },
+      {
+        "minX": -198,
+        "maxX": -182,
+        "minZ": -5115,
+        "maxZ": -5099
+      },
+      {
+        "minX": -222,
+        "maxX": -206,
+        "minZ": -5068,
+        "maxZ": -5052
+      },
+      {
+        "minX": -195,
+        "maxX": -179,
+        "minZ": -5033,
+        "maxZ": -5017
+      },
+      {
+        "minX": -166,
+        "maxX": -150,
+        "minZ": -5053,
+        "maxZ": -5037
+      },
+      {
+        "minX": -176,
+        "maxX": -160,
+        "minZ": -4989,
+        "maxZ": -4973
+      },
+      {
+        "minX": -352,
+        "maxX": -336,
+        "minZ": -4986,
+        "maxZ": -4970
+      },
+      {
+        "minX": -136,
+        "maxX": -120,
+        "minZ": -4758,
+        "maxZ": -4742
+      },
+      {
+        "minX": -174,
+        "maxX": -158,
+        "minZ": -4851,
+        "maxZ": -4835
+      },
+      {
+        "minX": -457,
+        "maxX": -441,
+        "minZ": -4722,
+        "maxZ": -4706
+      },
+      {
+        "minX": -427,
+        "maxX": -411,
+        "minZ": -4750,
+        "maxZ": -4734
+      },
+      {
+        "minX": -390,
+        "maxX": -370,
+        "minZ": -4771,
+        "maxZ": -4751
+      },
+      {
+        "minX": -363,
+        "maxX": -347,
+        "minZ": -4787,
+        "maxZ": -4771
+      },
+      {
+        "minX": -375,
+        "maxX": -359,
+        "minZ": -4734,
+        "maxZ": -4718
+      },
+      {
+        "minX": -344,
+        "maxX": -320,
+        "minZ": -4754,
+        "maxZ": -4730
+      },
+      {
+        "minX": -331,
+        "maxX": -311,
+        "minZ": -4781,
+        "maxZ": -4761
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -420,
@@ -22566,6 +40244,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1737,
       "maxZ": -1412
     },
+    "spawnNodes": [
+      {
+        "minX": -276,
+        "maxX": -196,
+        "minZ": -1607,
+        "maxZ": -1527
+      },
+      {
+        "minX": -270,
+        "maxX": -230,
+        "minZ": -1694,
+        "maxZ": -1654
+      },
+      {
+        "minX": -135,
+        "maxX": -75,
+        "minZ": -1727,
+        "maxZ": -1667
+      },
+      {
+        "minX": -286,
+        "maxX": -226,
+        "minZ": -1482,
+        "maxZ": -1422
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -286,
@@ -22607,6 +40311,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1253,
       "maxZ": -913
     },
+    "spawnNodes": [
+      {
+        "minX": -1241,
+        "maxX": -1131,
+        "minZ": -1243,
+        "maxZ": -1133
+      },
+      {
+        "minX": -1317,
+        "maxX": -1251,
+        "minZ": -989,
+        "maxZ": -923
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1241,
@@ -22648,6 +40366,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2552,
       "maxZ": -2452
     },
+    "spawnNodes": [
+      {
+        "minX": -96,
+        "maxX": -66,
+        "minZ": -2517,
+        "maxZ": -2487
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -96,
@@ -22683,6 +40409,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4660,
       "maxZ": -4560
     },
+    "spawnNodes": [
+      {
+        "minX": 263,
+        "maxX": 279,
+        "minZ": -4618,
+        "maxZ": -4602
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 263,
@@ -22718,6 +40452,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2143,
       "maxZ": -1668
     },
+    "spawnNodes": [
+      {
+        "minX": 870,
+        "maxX": 890,
+        "minZ": -2133,
+        "maxZ": -2113
+      },
+      {
+        "minX": 973,
+        "maxX": 989,
+        "minZ": -1694,
+        "maxZ": -1678
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 870,
@@ -22764,6 +40512,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5517,
       "maxZ": -5417
     },
+    "spawnNodes": [
+      {
+        "minX": -838,
+        "maxX": -758,
+        "minZ": -5507,
+        "maxZ": -5427
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -838,
@@ -22800,6 +40556,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4775,
       "maxZ": -4559
     },
+    "spawnNodes": [
+      {
+        "minX": -32,
+        "maxX": -8,
+        "minZ": -4682,
+        "maxZ": -4658
+      },
+      {
+        "minX": -40,
+        "maxX": 0,
+        "minZ": -4690,
+        "maxZ": -4650
+      },
+      {
+        "minX": -56,
+        "maxX": -32,
+        "minZ": -4601,
+        "maxZ": -4577
+      },
+      {
+        "minX": -64,
+        "maxX": -24,
+        "minZ": -4609,
+        "maxZ": -4569
+      },
+      {
+        "minX": -190,
+        "maxX": -174,
+        "minZ": -4765,
+        "maxZ": -4749
+      },
+      {
+        "minX": -127,
+        "maxX": -97,
+        "minZ": -4690,
+        "maxZ": -4660
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -127,
@@ -22842,6 +40636,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -904,
       "maxZ": -416
     },
+    "spawnNodes": [
+      {
+        "minX": -1822,
+        "maxX": -1806,
+        "minZ": -894,
+        "maxZ": -878
+      },
+      {
+        "minX": -1775,
+        "maxX": -1759,
+        "minZ": -699,
+        "maxZ": -683
+      },
+      {
+        "minX": -1789,
+        "maxX": -1773,
+        "minZ": -442,
+        "maxZ": -426
+      },
+      {
+        "minX": -1934,
+        "maxX": -1918,
+        "minZ": -550,
+        "maxZ": -534
+      },
+      {
+        "minX": -1961,
+        "maxX": -1945,
+        "minZ": -591,
+        "maxZ": -575
+      },
+      {
+        "minX": -2276,
+        "maxX": -2260,
+        "minZ": -617,
+        "maxZ": -601
+      },
+      {
+        "minX": -2250,
+        "maxX": -2234,
+        "minZ": -806,
+        "maxZ": -790
+      },
+      {
+        "minX": -1955,
+        "maxX": -1939,
+        "minZ": -764,
+        "maxZ": -748
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1967,
@@ -22914,6 +40758,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2753,
       "maxZ": -2653
     },
+    "spawnNodes": [
+      {
+        "minX": -269,
+        "maxX": -239,
+        "minZ": -2718,
+        "maxZ": -2688
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -269,
@@ -22951,6 +40803,98 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5086,
       "maxZ": -4637
     },
+    "spawnNodes": [
+      {
+        "minX": -2137,
+        "maxX": -2107,
+        "minZ": -4711,
+        "maxZ": -4681
+      },
+      {
+        "minX": -2134,
+        "maxX": -2044,
+        "minZ": -4853,
+        "maxZ": -4763
+      },
+      {
+        "minX": -2047,
+        "maxX": -2007,
+        "minZ": -4908,
+        "maxZ": -4868
+      },
+      {
+        "minX": -2048,
+        "maxX": -1978,
+        "minZ": -5006,
+        "maxZ": -4936
+      },
+      {
+        "minX": -1896,
+        "maxX": -1806,
+        "minZ": -4825,
+        "maxZ": -4735
+      },
+      {
+        "minX": -1803,
+        "maxX": -1763,
+        "minZ": -4802,
+        "maxZ": -4762
+      },
+      {
+        "minX": -1754,
+        "maxX": -1704,
+        "minZ": -4887,
+        "maxZ": -4837
+      },
+      {
+        "minX": -1691,
+        "maxX": -1651,
+        "minZ": -4796,
+        "maxZ": -4756
+      },
+      {
+        "minX": -1704,
+        "maxX": -1664,
+        "minZ": -4956,
+        "maxZ": -4916
+      },
+      {
+        "minX": -1696,
+        "maxX": -1636,
+        "minZ": -5076,
+        "maxZ": -5016
+      },
+      {
+        "minX": -1762,
+        "maxX": -1712,
+        "minZ": -4730,
+        "maxZ": -4680
+      },
+      {
+        "minX": -1640,
+        "maxX": -1600,
+        "minZ": -4800,
+        "maxZ": -4760
+      },
+      {
+        "minX": -1551,
+        "maxX": -1521,
+        "minZ": -4792,
+        "maxZ": -4762
+      },
+      {
+        "minX": -1602,
+        "maxX": -1562,
+        "minZ": -4703,
+        "maxZ": -4663
+      },
+      {
+        "minX": -2097,
+        "maxX": -2057,
+        "minZ": -4687,
+        "maxZ": -4647
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1896,
@@ -23008,6 +40952,98 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5086,
       "maxZ": -4637
     },
+    "spawnNodes": [
+      {
+        "minX": -2137,
+        "maxX": -2107,
+        "minZ": -4711,
+        "maxZ": -4681
+      },
+      {
+        "minX": -2134,
+        "maxX": -2044,
+        "minZ": -4853,
+        "maxZ": -4763
+      },
+      {
+        "minX": -2047,
+        "maxX": -2007,
+        "minZ": -4908,
+        "maxZ": -4868
+      },
+      {
+        "minX": -2048,
+        "maxX": -1978,
+        "minZ": -5006,
+        "maxZ": -4936
+      },
+      {
+        "minX": -1896,
+        "maxX": -1806,
+        "minZ": -4825,
+        "maxZ": -4735
+      },
+      {
+        "minX": -1803,
+        "maxX": -1763,
+        "minZ": -4802,
+        "maxZ": -4762
+      },
+      {
+        "minX": -1754,
+        "maxX": -1704,
+        "minZ": -4887,
+        "maxZ": -4837
+      },
+      {
+        "minX": -1691,
+        "maxX": -1651,
+        "minZ": -4796,
+        "maxZ": -4756
+      },
+      {
+        "minX": -1704,
+        "maxX": -1664,
+        "minZ": -4956,
+        "maxZ": -4916
+      },
+      {
+        "minX": -1696,
+        "maxX": -1636,
+        "minZ": -5076,
+        "maxZ": -5016
+      },
+      {
+        "minX": -1762,
+        "maxX": -1712,
+        "minZ": -4730,
+        "maxZ": -4680
+      },
+      {
+        "minX": -1640,
+        "maxX": -1600,
+        "minZ": -4800,
+        "maxZ": -4760
+      },
+      {
+        "minX": -1551,
+        "maxX": -1521,
+        "minZ": -4792,
+        "maxZ": -4762
+      },
+      {
+        "minX": -1602,
+        "maxX": -1562,
+        "minZ": -4703,
+        "maxZ": -4663
+      },
+      {
+        "minX": -2097,
+        "maxX": -2057,
+        "minZ": -4687,
+        "maxZ": -4647
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1896,
@@ -23062,6 +41098,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5154,
       "maxZ": -4634
     },
+    "spawnNodes": [
+      {
+        "minX": -1906,
+        "maxX": -1406,
+        "minZ": -5144,
+        "maxZ": -4644
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1906,
@@ -23098,6 +41142,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1661,
       "maxZ": -1561
     },
+    "spawnNodes": [
+      {
+        "minX": 252,
+        "maxX": 292,
+        "minZ": -1631,
+        "maxZ": -1591
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 252,
@@ -23133,6 +41185,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1443,
       "maxZ": -914
     },
+    "spawnNodes": [
+      {
+        "minX": -1532,
+        "maxX": -1516,
+        "minZ": -1425,
+        "maxZ": -1409
+      },
+      {
+        "minX": -1258,
+        "maxX": -1242,
+        "minZ": -1433,
+        "maxZ": -1417
+      },
+      {
+        "minX": -1118,
+        "maxX": -1102,
+        "minZ": -1367,
+        "maxZ": -1351
+      },
+      {
+        "minX": -1477,
+        "maxX": -1461,
+        "minZ": -940,
+        "maxZ": -924
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1477,
@@ -23189,6 +41267,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5483,
       "maxZ": -5284
     },
+    "spawnNodes": [
+      {
+        "minX": -542,
+        "maxX": -478,
+        "minZ": -5473,
+        "maxZ": -5409
+      },
+      {
+        "minX": -596,
+        "maxX": -496,
+        "minZ": -5394,
+        "maxZ": -5294
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -596,
@@ -23224,6 +41316,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1488,
       "maxZ": -1388
     },
+    "spawnNodes": [
+      {
+        "minX": -1046,
+        "maxX": -1030,
+        "minZ": -1450,
+        "maxZ": -1434
+      },
+      {
+        "minX": -1081,
+        "maxX": -1065,
+        "minZ": -1443,
+        "maxZ": -1427
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1083,
@@ -23259,6 +41365,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1466,
       "maxZ": -1366
     },
+    "spawnNodes": [
+      {
+        "minX": -1045,
+        "maxX": -1029,
+        "minZ": -1438,
+        "maxZ": -1422
+      },
+      {
+        "minX": -1051,
+        "maxX": -1035,
+        "minZ": -1414,
+        "maxZ": -1398
+      },
+      {
+        "minX": -1158,
+        "maxX": -1142,
+        "minZ": -1425,
+        "maxZ": -1409
+      },
+      {
+        "minX": -1182,
+        "maxX": -1166,
+        "minZ": -1419,
+        "maxZ": -1403
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1190,
@@ -23301,6 +41433,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4775,
       "maxZ": -4559
     },
+    "spawnNodes": [
+      {
+        "minX": -32,
+        "maxX": -8,
+        "minZ": -4682,
+        "maxZ": -4658
+      },
+      {
+        "minX": -40,
+        "maxX": 0,
+        "minZ": -4690,
+        "maxZ": -4650
+      },
+      {
+        "minX": -56,
+        "maxX": -32,
+        "minZ": -4601,
+        "maxZ": -4577
+      },
+      {
+        "minX": -64,
+        "maxX": -24,
+        "minZ": -4609,
+        "maxZ": -4569
+      },
+      {
+        "minX": -190,
+        "maxX": -174,
+        "minZ": -4765,
+        "maxZ": -4749
+      },
+      {
+        "minX": -127,
+        "maxX": -97,
+        "minZ": -4690,
+        "maxZ": -4660
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -127,
@@ -23344,6 +41514,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2928,
       "maxZ": -2828
     },
+    "spawnNodes": [
+      {
+        "minX": -446,
+        "maxX": -430,
+        "minZ": -2886,
+        "maxZ": -2870
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -446,
@@ -23381,6 +41559,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5417,
       "maxZ": -5317
     },
+    "spawnNodes": [
+      {
+        "minX": -123,
+        "maxX": -107,
+        "minZ": -5403,
+        "maxZ": -5387
+      },
+      {
+        "minX": -101,
+        "maxX": -71,
+        "minZ": -5390,
+        "maxZ": -5360
+      },
+      {
+        "minX": -48,
+        "maxX": -18,
+        "minZ": -5361,
+        "maxZ": -5331
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -123,
@@ -23417,6 +41615,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3374,
       "maxZ": -3054
     },
+    "spawnNodes": [
+      {
+        "minX": -1584,
+        "maxX": -1284,
+        "minZ": -3364,
+        "maxZ": -3064
+      },
+      {
+        "minX": -1534,
+        "maxX": -1334,
+        "minZ": -3314,
+        "maxZ": -3114
+      },
+      {
+        "minX": -1713,
+        "maxX": -1563,
+        "minZ": -3215,
+        "maxZ": -3065
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1713,
@@ -23454,6 +41672,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1053,
       "maxZ": -875
     },
+    "spawnNodes": [
+      {
+        "minX": 848,
+        "maxX": 988,
+        "minZ": -1025,
+        "maxZ": -885
+      },
+      {
+        "minX": 992,
+        "maxX": 1132,
+        "minZ": -1043,
+        "maxZ": -903
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 848,
@@ -23494,6 +41726,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1219,
       "maxZ": -1119
     },
+    "spawnNodes": [
+      {
+        "minX": -1910,
+        "maxX": -1894,
+        "minZ": -1177,
+        "maxZ": -1161
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1910,
@@ -23530,6 +41770,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -946,
       "maxZ": -584
     },
+    "spawnNodes": [
+      {
+        "minX": -2123,
+        "maxX": -2107,
+        "minZ": -936,
+        "maxZ": -920
+      },
+      {
+        "minX": -1851,
+        "maxX": -1835,
+        "minZ": -610,
+        "maxZ": -594
+      },
+      {
+        "minX": -2013,
+        "maxX": -1997,
+        "minZ": -830,
+        "maxZ": -814
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2013,
@@ -23578,6 +41838,98 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1503,
       "maxZ": -1034
     },
+    "spawnNodes": [
+      {
+        "minX": -2028,
+        "maxX": -2008,
+        "minZ": -1412,
+        "maxZ": -1392
+      },
+      {
+        "minX": -2203,
+        "maxX": -2183,
+        "minZ": -1166,
+        "maxZ": -1146
+      },
+      {
+        "minX": -1942,
+        "maxX": -1922,
+        "minZ": -1064,
+        "maxZ": -1044
+      },
+      {
+        "minX": -1795,
+        "maxX": -1775,
+        "minZ": -1141,
+        "maxZ": -1121
+      },
+      {
+        "minX": -1869,
+        "maxX": -1849,
+        "minZ": -1370,
+        "maxZ": -1350
+      },
+      {
+        "minX": -1717,
+        "maxX": -1697,
+        "minZ": -1368,
+        "maxZ": -1348
+      },
+      {
+        "minX": -1882,
+        "maxX": -1862,
+        "minZ": -1422,
+        "maxZ": -1402
+      },
+      {
+        "minX": -1893,
+        "maxX": -1873,
+        "minZ": -1270,
+        "maxZ": -1250
+      },
+      {
+        "minX": -1793,
+        "maxX": -1773,
+        "minZ": -1348,
+        "maxZ": -1328
+      },
+      {
+        "minX": -1864,
+        "maxX": -1844,
+        "minZ": -1493,
+        "maxZ": -1473
+      },
+      {
+        "minX": -1914,
+        "maxX": -1894,
+        "minZ": -1493,
+        "maxZ": -1473
+      },
+      {
+        "minX": -1985,
+        "maxX": -1965,
+        "minZ": -1491,
+        "maxZ": -1471
+      },
+      {
+        "minX": -2040,
+        "maxX": -2020,
+        "minZ": -1446,
+        "maxZ": -1426
+      },
+      {
+        "minX": -2015,
+        "maxX": -1995,
+        "minZ": -1297,
+        "maxZ": -1277
+      },
+      {
+        "minX": -1998,
+        "maxX": -1982,
+        "minZ": -1399,
+        "maxZ": -1383
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2040,
@@ -23637,6 +41989,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1253,
       "maxZ": -913
     },
+    "spawnNodes": [
+      {
+        "minX": -1241,
+        "maxX": -1131,
+        "minZ": -1243,
+        "maxZ": -1133
+      },
+      {
+        "minX": -1317,
+        "maxX": -1251,
+        "minZ": -989,
+        "maxZ": -923
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1241,
@@ -23680,6 +42046,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5483,
       "maxZ": -5284
     },
+    "spawnNodes": [
+      {
+        "minX": -542,
+        "maxX": -478,
+        "minZ": -5473,
+        "maxZ": -5409
+      },
+      {
+        "minX": -596,
+        "maxX": -496,
+        "minZ": -5394,
+        "maxZ": -5294
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -596,
@@ -23719,6 +42099,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4915,
       "maxZ": -4411
     },
+    "spawnNodes": [
+      {
+        "minX": 960,
+        "maxX": 1070,
+        "minZ": -4905,
+        "maxZ": -4795
+      },
+      {
+        "minX": 866,
+        "maxX": 976,
+        "minZ": -4844,
+        "maxZ": -4734
+      },
+      {
+        "minX": 1247,
+        "maxX": 1357,
+        "minZ": -4531,
+        "maxZ": -4421
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 866,
@@ -23762,6 +42162,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -970,
       "maxZ": -691
     },
+    "spawnNodes": [
+      {
+        "minX": -29,
+        "maxX": 11,
+        "minZ": -870,
+        "maxZ": -830
+      },
+      {
+        "minX": -22,
+        "maxX": 18,
+        "minZ": -960,
+        "maxZ": -920
+      },
+      {
+        "minX": -33,
+        "maxX": 11,
+        "minZ": -745,
+        "maxZ": -701
+      },
+      {
+        "minX": -115,
+        "maxX": -71,
+        "minZ": -883,
+        "maxZ": -839
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -115,
@@ -23803,6 +42229,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -908,
       "maxZ": -808
     },
+    "spawnNodes": [
+      {
+        "minX": -635,
+        "maxX": -619,
+        "minZ": -866,
+        "maxZ": -850
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -635,
@@ -23838,6 +42272,98 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3324,
       "maxZ": -2119
     },
+    "spawnNodes": [
+      {
+        "minX": -1700,
+        "maxX": -1672,
+        "minZ": -2157,
+        "maxZ": -2129
+      },
+      {
+        "minX": -1711,
+        "maxX": -1683,
+        "minZ": -2224,
+        "maxZ": -2196
+      },
+      {
+        "minX": -1634,
+        "maxX": -1606,
+        "minZ": -2198,
+        "maxZ": -2170
+      },
+      {
+        "minX": -1568,
+        "maxX": -1540,
+        "minZ": -2206,
+        "maxZ": -2178
+      },
+      {
+        "minX": -1510,
+        "maxX": -1482,
+        "minZ": -2235,
+        "maxZ": -2207
+      },
+      {
+        "minX": -1475,
+        "maxX": -1447,
+        "minZ": -2377,
+        "maxZ": -2349
+      },
+      {
+        "minX": -1573,
+        "maxX": -1545,
+        "minZ": -2311,
+        "maxZ": -2283
+      },
+      {
+        "minX": -1769,
+        "maxX": -1741,
+        "minZ": -2408,
+        "maxZ": -2380
+      },
+      {
+        "minX": -1787,
+        "maxX": -1759,
+        "minZ": -2426,
+        "maxZ": -2398
+      },
+      {
+        "minX": -1715,
+        "maxX": -1687,
+        "minZ": -2471,
+        "maxZ": -2443
+      },
+      {
+        "minX": -1836,
+        "maxX": -1808,
+        "minZ": -2541,
+        "maxZ": -2513
+      },
+      {
+        "minX": -1598,
+        "maxX": -1570,
+        "minZ": -2346,
+        "maxZ": -2318
+      },
+      {
+        "minX": -1482,
+        "maxX": -1454,
+        "minZ": -2366,
+        "maxZ": -2338
+      },
+      {
+        "minX": -1756,
+        "maxX": -1726,
+        "minZ": -2392,
+        "maxZ": -2362
+      },
+      {
+        "minX": -1534,
+        "maxX": -1334,
+        "minZ": -3314,
+        "maxZ": -3114
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1711,
@@ -23891,6 +42417,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5507,
       "maxZ": -5407
     },
+    "spawnNodes": [
+      {
+        "minX": -1355,
+        "maxX": -1335,
+        "minZ": -5467,
+        "maxZ": -5447
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1355,
@@ -23928,6 +42462,86 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -427,
       "maxZ": -314
     },
+    "spawnNodes": [
+      {
+        "minX": 55,
+        "maxX": 71,
+        "minZ": -359,
+        "maxZ": -343
+      },
+      {
+        "minX": 84,
+        "maxX": 100,
+        "minZ": -367,
+        "maxZ": -351
+      },
+      {
+        "minX": 95,
+        "maxX": 111,
+        "minZ": -414,
+        "maxZ": -398
+      },
+      {
+        "minX": 129,
+        "maxX": 153,
+        "minZ": -417,
+        "maxZ": -393
+      },
+      {
+        "minX": 132,
+        "maxX": 152,
+        "minZ": -358,
+        "maxZ": -338
+      },
+      {
+        "minX": 104,
+        "maxX": 120,
+        "minZ": -346,
+        "maxZ": -330
+      },
+      {
+        "minX": 106,
+        "maxX": 122,
+        "minZ": -367,
+        "maxZ": -351
+      },
+      {
+        "minX": 106,
+        "maxX": 122,
+        "minZ": -381,
+        "maxZ": -365
+      },
+      {
+        "minX": 105,
+        "maxX": 121,
+        "minZ": -400,
+        "maxZ": -384
+      },
+      {
+        "minX": 101,
+        "maxX": 117,
+        "minZ": -389,
+        "maxZ": -373
+      },
+      {
+        "minX": 108,
+        "maxX": 124,
+        "minZ": -367,
+        "maxZ": -351
+      },
+      {
+        "minX": 101,
+        "maxX": 117,
+        "minZ": -349,
+        "maxZ": -333
+      },
+      {
+        "minX": 110,
+        "maxX": 128,
+        "minZ": -372,
+        "maxZ": -354
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 55,
@@ -23964,6 +42578,116 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5139,
       "maxZ": -4505
     },
+    "spawnNodes": [
+      {
+        "minX": -1195,
+        "maxX": -1105,
+        "minZ": -5098,
+        "maxZ": -5008
+      },
+      {
+        "minX": -1097,
+        "maxX": -1007,
+        "minZ": -5129,
+        "maxZ": -5039
+      },
+      {
+        "minX": -972,
+        "maxX": -882,
+        "minZ": -5056,
+        "maxZ": -4966
+      },
+      {
+        "minX": -972,
+        "maxX": -882,
+        "minZ": -4970,
+        "maxZ": -4880
+      },
+      {
+        "minX": -1059,
+        "maxX": -969,
+        "minZ": -4964,
+        "maxZ": -4874
+      },
+      {
+        "minX": -1151,
+        "maxX": -1061,
+        "minZ": -4968,
+        "maxZ": -4878
+      },
+      {
+        "minX": -1153,
+        "maxX": -1063,
+        "minZ": -4605,
+        "maxZ": -4515
+      },
+      {
+        "minX": -790,
+        "maxX": -700,
+        "minZ": -4663,
+        "maxZ": -4573
+      },
+      {
+        "minX": -868,
+        "maxX": -778,
+        "minZ": -4767,
+        "maxZ": -4677
+      },
+      {
+        "minX": -650,
+        "maxX": -560,
+        "minZ": -4765,
+        "maxZ": -4675
+      },
+      {
+        "minX": -762,
+        "maxX": -672,
+        "minZ": -4840,
+        "maxZ": -4750
+      },
+      {
+        "minX": -1308,
+        "maxX": -1218,
+        "minZ": -5082,
+        "maxZ": -4992
+      },
+      {
+        "minX": -950,
+        "maxX": -860,
+        "minZ": -4699,
+        "maxZ": -4609
+      },
+      {
+        "minX": -736,
+        "maxX": -646,
+        "minZ": -4732,
+        "maxZ": -4642
+      },
+      {
+        "minX": -907,
+        "maxX": -817,
+        "minZ": -4831,
+        "maxZ": -4741
+      },
+      {
+        "minX": -1004,
+        "maxX": -914,
+        "minZ": -4854,
+        "maxZ": -4764
+      },
+      {
+        "minX": -1078,
+        "maxX": -988,
+        "minZ": -4763,
+        "maxZ": -4673
+      },
+      {
+        "minX": -1176,
+        "maxX": -1086,
+        "minZ": -4753,
+        "maxZ": -4663
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1308,
@@ -24001,6 +42725,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4657,
       "maxZ": -4557
     },
+    "spawnNodes": [
+      {
+        "minX": -1352,
+        "maxX": -1304,
+        "minZ": -4636,
+        "maxZ": -4588
+      },
+      {
+        "minX": -1444,
+        "maxX": -1404,
+        "minZ": -4618,
+        "maxZ": -4578
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1444,
@@ -24037,6 +42775,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1423,
       "maxZ": -1164
     },
+    "spawnNodes": [
+      {
+        "minX": -891,
+        "maxX": -875,
+        "minZ": -1413,
+        "maxZ": -1397
+      },
+      {
+        "minX": -846,
+        "maxX": -826,
+        "minZ": -1195,
+        "maxZ": -1175
+      },
+      {
+        "minX": -830,
+        "maxX": -810,
+        "minZ": -1194,
+        "maxZ": -1174
+      },
+      {
+        "minX": -814,
+        "maxX": -794,
+        "minZ": -1195,
+        "maxZ": -1175
+      },
+      {
+        "minX": -793,
+        "maxX": -753,
+        "minZ": -1235,
+        "maxZ": -1195
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -846,
@@ -24079,6 +42849,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1254,
       "maxZ": -1154
     },
+    "spawnNodes": [
+      {
+        "minX": -846,
+        "maxX": -826,
+        "minZ": -1195,
+        "maxZ": -1175
+      },
+      {
+        "minX": -830,
+        "maxX": -810,
+        "minZ": -1194,
+        "maxZ": -1174
+      },
+      {
+        "minX": -814,
+        "maxX": -794,
+        "minZ": -1195,
+        "maxZ": -1175
+      },
+      {
+        "minX": -793,
+        "maxX": -753,
+        "minZ": -1235,
+        "maxZ": -1195
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -846,
@@ -24115,6 +42911,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1254,
       "maxZ": -1154
     },
+    "spawnNodes": [
+      {
+        "minX": -846,
+        "maxX": -826,
+        "minZ": -1195,
+        "maxZ": -1175
+      },
+      {
+        "minX": -830,
+        "maxX": -810,
+        "minZ": -1194,
+        "maxZ": -1174
+      },
+      {
+        "minX": -814,
+        "maxX": -794,
+        "minZ": -1195,
+        "maxZ": -1175
+      },
+      {
+        "minX": -793,
+        "maxX": -753,
+        "minZ": -1235,
+        "maxZ": -1195
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -846,
@@ -24155,6 +42977,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5445,
       "maxZ": -5125
     },
+    "spawnNodes": [
+      {
+        "minX": -1777,
+        "maxX": -1477,
+        "minZ": -5435,
+        "maxZ": -5135
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1777,
@@ -24195,6 +43025,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5445,
       "maxZ": -5125
     },
+    "spawnNodes": [
+      {
+        "minX": -1777,
+        "maxX": -1477,
+        "minZ": -5435,
+        "maxZ": -5135
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1777,
@@ -24230,6 +43068,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1652,
       "maxZ": -1552
     },
+    "spawnNodes": [
+      {
+        "minX": 357,
+        "maxX": 377,
+        "minZ": -1612,
+        "maxZ": -1592
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 357,
@@ -24266,6 +43112,104 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3318,
       "maxZ": -3028
     },
+    "spawnNodes": [
+      {
+        "minX": -1230,
+        "maxX": -1214,
+        "minZ": -3290,
+        "maxZ": -3274
+      },
+      {
+        "minX": -1238,
+        "maxX": -1218,
+        "minZ": -3286,
+        "maxZ": -3266
+      },
+      {
+        "minX": -1250,
+        "maxX": -1234,
+        "minZ": -3285,
+        "maxZ": -3269
+      },
+      {
+        "minX": -1250,
+        "maxX": -1234,
+        "minZ": -3291,
+        "maxZ": -3275
+      },
+      {
+        "minX": -640,
+        "maxX": -620,
+        "minZ": -3150,
+        "maxZ": -3130
+      },
+      {
+        "minX": -652,
+        "maxX": -636,
+        "minZ": -3124,
+        "maxZ": -3108
+      },
+      {
+        "minX": -707,
+        "maxX": -691,
+        "minZ": -3089,
+        "maxZ": -3073
+      },
+      {
+        "minX": -659,
+        "maxX": -643,
+        "minZ": -3069,
+        "maxZ": -3053
+      },
+      {
+        "minX": -630,
+        "maxX": -614,
+        "minZ": -3083,
+        "maxZ": -3067
+      },
+      {
+        "minX": -708,
+        "maxX": -692,
+        "minZ": -3085,
+        "maxZ": -3069
+      },
+      {
+        "minX": -683,
+        "maxX": -667,
+        "minZ": -3089,
+        "maxZ": -3073
+      },
+      {
+        "minX": -657,
+        "maxX": -641,
+        "minZ": -3082,
+        "maxZ": -3066
+      },
+      {
+        "minX": -672,
+        "maxX": -656,
+        "minZ": -3055,
+        "maxZ": -3039
+      },
+      {
+        "minX": -648,
+        "maxX": -632,
+        "minZ": -3054,
+        "maxZ": -3038
+      },
+      {
+        "minX": -631,
+        "maxX": -615,
+        "minZ": -3081,
+        "maxZ": -3065
+      },
+      {
+        "minX": -659,
+        "maxX": -643,
+        "minZ": -3080,
+        "maxZ": -3064
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -708,
@@ -24307,6 +43251,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3357,
       "maxZ": -3257
     },
+    "spawnNodes": [
+      {
+        "minX": -1224,
+        "maxX": -1208,
+        "minZ": -3315,
+        "maxZ": -3299
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1224,
@@ -24342,6 +43294,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5154,
       "maxZ": -5054
     },
+    "spawnNodes": [
+      {
+        "minX": 403,
+        "maxX": 419,
+        "minZ": -5119,
+        "maxZ": -5103
+      },
+      {
+        "minX": 414,
+        "maxX": 430,
+        "minZ": -5105,
+        "maxZ": -5089
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 389,
@@ -24377,6 +43343,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5143,
       "maxZ": -5043
     },
+    "spawnNodes": [
+      {
+        "minX": 403,
+        "maxX": 419,
+        "minZ": -5119,
+        "maxZ": -5103
+      },
+      {
+        "minX": 406,
+        "maxX": 422,
+        "minZ": -5101,
+        "maxZ": -5085
+      },
+      {
+        "minX": 426,
+        "maxX": 442,
+        "minZ": -5102,
+        "maxZ": -5086
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 396,
@@ -24413,6 +43399,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1548,
       "maxZ": -1448
     },
+    "spawnNodes": [
+      {
+        "minX": 1281,
+        "maxX": 1297,
+        "minZ": -1501,
+        "maxZ": -1485
+      },
+      {
+        "minX": 1215,
+        "maxX": 1231,
+        "minZ": -1517,
+        "maxZ": -1501
+      },
+      {
+        "minX": 1127,
+        "maxX": 1143,
+        "minZ": -1483,
+        "maxZ": -1467
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1215,
@@ -24455,6 +43461,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -804,
       "maxZ": -527
     },
+    "spawnNodes": [
+      {
+        "minX": -1835,
+        "maxX": -1819,
+        "minZ": -794,
+        "maxZ": -778
+      },
+      {
+        "minX": -2011,
+        "maxX": -1995,
+        "minZ": -723,
+        "maxZ": -707
+      },
+      {
+        "minX": -1949,
+        "maxX": -1933,
+        "minZ": -553,
+        "maxZ": -537
+      },
+      {
+        "minX": -2268,
+        "maxX": -2252,
+        "minZ": -612,
+        "maxZ": -596
+      },
+      {
+        "minX": -2283,
+        "maxX": -2267,
+        "minZ": -663,
+        "maxZ": -647
+      },
+      {
+        "minX": -2084,
+        "maxX": -2068,
+        "minZ": -627,
+        "maxZ": -611
+      },
+      {
+        "minX": -1983,
+        "maxX": -1967,
+        "minZ": -663,
+        "maxZ": -647
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2084,
@@ -24510,6 +43560,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1029,
       "maxZ": -929
     },
+    "spawnNodes": [
+      {
+        "minX": 907,
+        "maxX": 967,
+        "minZ": -1009,
+        "maxZ": -949
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 907,
@@ -24550,6 +43608,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4455,
       "maxZ": -4352
     },
+    "spawnNodes": [
+      {
+        "minX": -1110,
+        "maxX": -1050,
+        "minZ": -4445,
+        "maxZ": -4385
+      },
+      {
+        "minX": -1018,
+        "maxX": -958,
+        "minZ": -4422,
+        "maxZ": -4362
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1110,
@@ -24587,6 +43659,140 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5111,
       "maxZ": -4495
     },
+    "spawnNodes": [
+      {
+        "minX": -1040,
+        "maxX": -1024,
+        "minZ": -4735,
+        "maxZ": -4719
+      },
+      {
+        "minX": -1140,
+        "maxX": -1124,
+        "minZ": -4718,
+        "maxZ": -4702
+      },
+      {
+        "minX": -1134,
+        "maxX": -1118,
+        "minZ": -4571,
+        "maxZ": -4555
+      },
+      {
+        "minX": -988,
+        "maxX": -972,
+        "minZ": -4566,
+        "maxZ": -4550
+      },
+      {
+        "minX": -869,
+        "maxX": -849,
+        "minZ": -4618,
+        "maxZ": -4598
+      },
+      {
+        "minX": -871,
+        "maxX": -847,
+        "minZ": -4620,
+        "maxZ": -4596
+      },
+      {
+        "minX": -883,
+        "maxX": -867,
+        "minZ": -4639,
+        "maxZ": -4623
+      },
+      {
+        "minX": -818,
+        "maxX": -802,
+        "minZ": -4602,
+        "maxZ": -4586
+      },
+      {
+        "minX": -818,
+        "maxX": -802,
+        "minZ": -4602,
+        "maxZ": -4586
+      },
+      {
+        "minX": -859,
+        "maxX": -843,
+        "minZ": -4666,
+        "maxZ": -4650
+      },
+      {
+        "minX": -878,
+        "maxX": -854,
+        "minZ": -4789,
+        "maxZ": -4765
+      },
+      {
+        "minX": -876,
+        "maxX": -856,
+        "minZ": -4787,
+        "maxZ": -4767
+      },
+      {
+        "minX": -942,
+        "maxX": -926,
+        "minZ": -4790,
+        "maxZ": -4774
+      },
+      {
+        "minX": -936,
+        "maxX": -920,
+        "minZ": -4809,
+        "maxZ": -4793
+      },
+      {
+        "minX": -941,
+        "maxX": -925,
+        "minZ": -4801,
+        "maxZ": -4785
+      },
+      {
+        "minX": -1045,
+        "maxX": -1029,
+        "minZ": -4521,
+        "maxZ": -4505
+      },
+      {
+        "minX": -908,
+        "maxX": -892,
+        "minZ": -4627,
+        "maxZ": -4611
+      },
+      {
+        "minX": -886,
+        "maxX": -870,
+        "minZ": -4574,
+        "maxZ": -4558
+      },
+      {
+        "minX": -913,
+        "maxX": -897,
+        "minZ": -4993,
+        "maxZ": -4977
+      },
+      {
+        "minX": -1216,
+        "maxX": -1200,
+        "minZ": -5101,
+        "maxZ": -5085
+      },
+      {
+        "minX": -1144,
+        "maxX": -1128,
+        "minZ": -4867,
+        "maxZ": -4851
+      },
+      {
+        "minX": -1021,
+        "maxX": -1005,
+        "minZ": -4642,
+        "maxZ": -4626
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -917,
@@ -24681,6 +43887,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -425,
       "maxZ": -205
     },
+    "spawnNodes": [
+      {
+        "minX": -117,
+        "maxX": 83,
+        "minZ": -415,
+        "maxZ": -215
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -117,
@@ -24716,6 +43930,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5670,
       "maxZ": -5570
     },
+    "spawnNodes": [
+      {
+        "minX": -1136,
+        "maxX": -1118,
+        "minZ": -5629,
+        "maxZ": -5611
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1136,
@@ -24752,6 +43974,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2139,
       "maxZ": -2039
     },
+    "spawnNodes": [
+      {
+        "minX": 895,
+        "maxX": 911,
+        "minZ": -2097,
+        "maxZ": -2081
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 895,
@@ -24788,6 +44018,74 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1409,
       "maxZ": -1195
     },
+    "spawnNodes": [
+      {
+        "minX": -1676,
+        "maxX": -1660,
+        "minZ": -1271,
+        "maxZ": -1255
+      },
+      {
+        "minX": -1686,
+        "maxX": -1670,
+        "minZ": -1254,
+        "maxZ": -1238
+      },
+      {
+        "minX": -1720,
+        "maxX": -1704,
+        "minZ": -1221,
+        "maxZ": -1205
+      },
+      {
+        "minX": -1633,
+        "maxX": -1617,
+        "minZ": -1303,
+        "maxZ": -1287
+      },
+      {
+        "minX": -1998,
+        "maxX": -1982,
+        "minZ": -1399,
+        "maxZ": -1383
+      },
+      {
+        "minX": -1799,
+        "maxX": -1783,
+        "minZ": -1230,
+        "maxZ": -1214
+      },
+      {
+        "minX": -1744,
+        "maxX": -1728,
+        "minZ": -1229,
+        "maxZ": -1213
+      },
+      {
+        "minX": -1889,
+        "maxX": -1873,
+        "minZ": -1279,
+        "maxZ": -1263
+      },
+      {
+        "minX": -1883,
+        "maxX": -1867,
+        "minZ": -1279,
+        "maxZ": -1263
+      },
+      {
+        "minX": -1864,
+        "maxX": -1848,
+        "minZ": -1355,
+        "maxZ": -1339
+      },
+      {
+        "minX": -1870,
+        "maxX": -1854,
+        "minZ": -1355,
+        "maxZ": -1339
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1889,
@@ -24830,6 +44128,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3317,
       "maxZ": -3217
     },
+    "spawnNodes": [
+      {
+        "minX": -435,
+        "maxX": -419,
+        "minZ": -3275,
+        "maxZ": -3259
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -435,
@@ -24865,6 +44171,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1102,
       "maxZ": -1002
     },
+    "spawnNodes": [
+      {
+        "minX": -740,
+        "maxX": -720,
+        "minZ": -1062,
+        "maxZ": -1042
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -740,
@@ -24901,6 +44215,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2219,
       "maxZ": -2119
     },
+    "spawnNodes": [
+      {
+        "minX": 1129,
+        "maxX": 1145,
+        "minZ": -2204,
+        "maxZ": -2188
+      },
+      {
+        "minX": 1440,
+        "maxX": 1456,
+        "minZ": -2151,
+        "maxZ": -2135
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1440,
@@ -24942,6 +44270,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2373,
       "maxZ": -2273
     },
+    "spawnNodes": [
+      {
+        "minX": 892,
+        "maxX": 908,
+        "minZ": -2331,
+        "maxZ": -2315
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 892,
@@ -24978,6 +44314,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4279,
       "maxZ": -4179
     },
+    "spawnNodes": [
+      {
+        "minX": -859,
+        "maxX": -843,
+        "minZ": -4264,
+        "maxZ": -4248
+      },
+      {
+        "minX": -895,
+        "maxX": -879,
+        "minZ": -4210,
+        "maxZ": -4194
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -897,
@@ -25015,6 +44365,104 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5135,
       "maxZ": -4954
     },
+    "spawnNodes": [
+      {
+        "minX": 504,
+        "maxX": 520,
+        "minZ": -5087,
+        "maxZ": -5071
+      },
+      {
+        "minX": 491,
+        "maxX": 507,
+        "minZ": -5066,
+        "maxZ": -5050
+      },
+      {
+        "minX": 476,
+        "maxX": 492,
+        "minZ": -5045,
+        "maxZ": -5029
+      },
+      {
+        "minX": 464,
+        "maxX": 480,
+        "minZ": -5021,
+        "maxZ": -5005
+      },
+      {
+        "minX": 402,
+        "maxX": 418,
+        "minZ": -5078,
+        "maxZ": -5062
+      },
+      {
+        "minX": 390,
+        "maxX": 406,
+        "minZ": -5053,
+        "maxZ": -5037
+      },
+      {
+        "minX": 383,
+        "maxX": 399,
+        "minZ": -5081,
+        "maxZ": -5065
+      },
+      {
+        "minX": 333,
+        "maxX": 349,
+        "minZ": -5081,
+        "maxZ": -5065
+      },
+      {
+        "minX": 313,
+        "maxX": 329,
+        "minZ": -5070,
+        "maxZ": -5054
+      },
+      {
+        "minX": 296,
+        "maxX": 312,
+        "minZ": -5055,
+        "maxZ": -5039
+      },
+      {
+        "minX": 284,
+        "maxX": 300,
+        "minZ": -5043,
+        "maxZ": -5027
+      },
+      {
+        "minX": 271,
+        "maxX": 287,
+        "minZ": -5029,
+        "maxZ": -5013
+      },
+      {
+        "minX": 257,
+        "maxX": 273,
+        "minZ": -5015,
+        "maxZ": -4999
+      },
+      {
+        "minX": 228,
+        "maxX": 244,
+        "minZ": -5023,
+        "maxZ": -5007
+      },
+      {
+        "minX": 259,
+        "maxX": 275,
+        "minZ": -4980,
+        "maxZ": -4964
+      },
+      {
+        "minX": 393,
+        "maxX": 419,
+        "minZ": -5125,
+        "maxZ": -5099
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 228,
@@ -25050,6 +44498,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -824,
       "maxZ": -724
     },
+    "spawnNodes": [
+      {
+        "minX": -1787,
+        "maxX": -1771,
+        "minZ": -782,
+        "maxZ": -766
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1787,
@@ -25085,6 +44541,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1443,
       "maxZ": -914
     },
+    "spawnNodes": [
+      {
+        "minX": -1532,
+        "maxX": -1516,
+        "minZ": -1425,
+        "maxZ": -1409
+      },
+      {
+        "minX": -1258,
+        "maxX": -1242,
+        "minZ": -1433,
+        "maxZ": -1417
+      },
+      {
+        "minX": -1118,
+        "maxX": -1102,
+        "minZ": -1367,
+        "maxZ": -1351
+      },
+      {
+        "minX": -1477,
+        "maxX": -1461,
+        "minZ": -940,
+        "maxZ": -924
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1477,
@@ -25138,6 +44620,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3223,
       "maxZ": -2566
     },
+    "spawnNodes": [
+      {
+        "minX": -1474,
+        "maxX": -1390,
+        "minZ": -3213,
+        "maxZ": -3129
+      },
+      {
+        "minX": -1803,
+        "maxX": -1719,
+        "minZ": -2660,
+        "maxZ": -2576
+      },
+      {
+        "minX": -1441,
+        "maxX": -1357,
+        "minZ": -2889,
+        "maxZ": -2805
+      },
+      {
+        "minX": -1744,
+        "maxX": -1660,
+        "minZ": -2801,
+        "maxZ": -2717
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1744,
@@ -25191,6 +44699,62 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5352,
       "maxZ": -5251
     },
+    "spawnNodes": [
+      {
+        "minX": 1217,
+        "maxX": 1233,
+        "minZ": -5308,
+        "maxZ": -5292
+      },
+      {
+        "minX": 1201,
+        "maxX": 1217,
+        "minZ": -5321,
+        "maxZ": -5305
+      },
+      {
+        "minX": 1199,
+        "maxX": 1215,
+        "minZ": -5304,
+        "maxZ": -5288
+      },
+      {
+        "minX": 1199,
+        "maxX": 1215,
+        "minZ": -5331,
+        "maxZ": -5315
+      },
+      {
+        "minX": 1204,
+        "maxX": 1220,
+        "minZ": -5342,
+        "maxZ": -5326
+      },
+      {
+        "minX": 1236,
+        "maxX": 1252,
+        "minZ": -5308,
+        "maxZ": -5292
+      },
+      {
+        "minX": 1246,
+        "maxX": 1262,
+        "minZ": -5307,
+        "maxZ": -5291
+      },
+      {
+        "minX": 1268,
+        "maxX": 1284,
+        "minZ": -5298,
+        "maxZ": -5282
+      },
+      {
+        "minX": 1203,
+        "maxX": 1219,
+        "minZ": -5296,
+        "maxZ": -5280
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1199,
@@ -25226,6 +44790,62 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5352,
       "maxZ": -5251
     },
+    "spawnNodes": [
+      {
+        "minX": 1217,
+        "maxX": 1233,
+        "minZ": -5308,
+        "maxZ": -5292
+      },
+      {
+        "minX": 1201,
+        "maxX": 1217,
+        "minZ": -5321,
+        "maxZ": -5305
+      },
+      {
+        "minX": 1199,
+        "maxX": 1215,
+        "minZ": -5304,
+        "maxZ": -5288
+      },
+      {
+        "minX": 1199,
+        "maxX": 1215,
+        "minZ": -5331,
+        "maxZ": -5315
+      },
+      {
+        "minX": 1204,
+        "maxX": 1220,
+        "minZ": -5342,
+        "maxZ": -5326
+      },
+      {
+        "minX": 1236,
+        "maxX": 1252,
+        "minZ": -5308,
+        "maxZ": -5292
+      },
+      {
+        "minX": 1246,
+        "maxX": 1262,
+        "minZ": -5307,
+        "maxZ": -5291
+      },
+      {
+        "minX": 1268,
+        "maxX": 1284,
+        "minZ": -5298,
+        "maxZ": -5282
+      },
+      {
+        "minX": 1203,
+        "maxX": 1219,
+        "minZ": -5296,
+        "maxZ": -5280
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1199,
@@ -25263,6 +44883,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5511,
       "maxZ": -5411
     },
+    "spawnNodes": [
+      {
+        "minX": 1206,
+        "maxX": 1242,
+        "minZ": -5479,
+        "maxZ": -5443
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1206,
@@ -25299,6 +44927,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3840,
       "maxZ": -3568
     },
+    "spawnNodes": [
+      {
+        "minX": -981,
+        "maxX": -965,
+        "minZ": -3594,
+        "maxZ": -3578
+      },
+      {
+        "minX": -1140,
+        "maxX": -1124,
+        "minZ": -3614,
+        "maxZ": -3598
+      },
+      {
+        "minX": -936,
+        "maxX": -920,
+        "minZ": -3814,
+        "maxZ": -3798
+      },
+      {
+        "minX": -823,
+        "maxX": -807,
+        "minZ": -3776,
+        "maxZ": -3760
+      },
+      {
+        "minX": -799,
+        "maxX": -783,
+        "minZ": -3665,
+        "maxZ": -3649
+      },
+      {
+        "minX": -832,
+        "maxX": -816,
+        "minZ": -3639,
+        "maxZ": -3623
+      },
+      {
+        "minX": -892,
+        "maxX": -872,
+        "minZ": -3667,
+        "maxZ": -3647
+      },
+      {
+        "minX": -899,
+        "maxX": -883,
+        "minZ": -3807,
+        "maxZ": -3791
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -892,
@@ -25359,6 +45037,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3840,
       "maxZ": -3568
     },
+    "spawnNodes": [
+      {
+        "minX": -981,
+        "maxX": -965,
+        "minZ": -3594,
+        "maxZ": -3578
+      },
+      {
+        "minX": -1140,
+        "maxX": -1124,
+        "minZ": -3614,
+        "maxZ": -3598
+      },
+      {
+        "minX": -936,
+        "maxX": -920,
+        "minZ": -3814,
+        "maxZ": -3798
+      },
+      {
+        "minX": -823,
+        "maxX": -807,
+        "minZ": -3776,
+        "maxZ": -3760
+      },
+      {
+        "minX": -799,
+        "maxX": -783,
+        "minZ": -3665,
+        "maxZ": -3649
+      },
+      {
+        "minX": -832,
+        "maxX": -816,
+        "minZ": -3639,
+        "maxZ": -3623
+      },
+      {
+        "minX": -892,
+        "maxX": -872,
+        "minZ": -3667,
+        "maxZ": -3647
+      },
+      {
+        "minX": -899,
+        "maxX": -883,
+        "minZ": -3807,
+        "maxZ": -3791
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -892,
@@ -25420,6 +45148,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4540,
       "maxZ": -4440
     },
+    "spawnNodes": [
+      {
+        "minX": -1779,
+        "maxX": -1763,
+        "minZ": -4484,
+        "maxZ": -4468
+      },
+      {
+        "minX": -1796,
+        "maxX": -1780,
+        "minZ": -4512,
+        "maxZ": -4496
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1807,
@@ -25457,6 +45199,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4538,
       "maxZ": -4438
     },
+    "spawnNodes": [
+      {
+        "minX": -1785,
+        "maxX": -1769,
+        "minZ": -4496,
+        "maxZ": -4480
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1785,
@@ -25494,6 +45244,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -761,
       "maxZ": -661
     },
+    "spawnNodes": [
+      {
+        "minX": -827,
+        "maxX": -811,
+        "minZ": -719,
+        "maxZ": -703
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -827,
@@ -25529,6 +45287,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -275,
       "maxZ": -175
     },
+    "spawnNodes": [
+      {
+        "minX": -694,
+        "maxX": -678,
+        "minZ": -233,
+        "maxZ": -217
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -694,
@@ -25566,6 +45332,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -955,
       "maxZ": -627
     },
+    "spawnNodes": [
+      {
+        "minX": -1837,
+        "maxX": -1821,
+        "minZ": -863,
+        "maxZ": -847
+      },
+      {
+        "minX": -1037,
+        "maxX": -1021,
+        "minZ": -847,
+        "maxZ": -831
+      },
+      {
+        "minX": -2061,
+        "maxX": -2045,
+        "minZ": -653,
+        "maxZ": -637
+      },
+      {
+        "minX": -2247,
+        "maxX": -2231,
+        "minZ": -676,
+        "maxZ": -660
+      },
+      {
+        "minX": -2249,
+        "maxX": -2233,
+        "minZ": -717,
+        "maxZ": -701
+      },
+      {
+        "minX": -2242,
+        "maxX": -2226,
+        "minZ": -802,
+        "maxZ": -786
+      },
+      {
+        "minX": -2219,
+        "maxX": -2203,
+        "minZ": -945,
+        "maxZ": -929
+      },
+      {
+        "minX": -1978,
+        "maxX": -1962,
+        "minZ": -832,
+        "maxZ": -816
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2268,
@@ -25637,6 +45453,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1578,
       "maxZ": -1478
     },
+    "spawnNodes": [
+      {
+        "minX": -253,
+        "maxX": -237,
+        "minZ": -1536,
+        "maxZ": -1520
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -253,
@@ -25672,6 +45496,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4795,
       "maxZ": -4695
     },
+    "spawnNodes": [
+      {
+        "minX": 769,
+        "maxX": 789,
+        "minZ": -4746,
+        "maxZ": -4726
+      },
+      {
+        "minX": 755,
+        "maxX": 771,
+        "minZ": -4738,
+        "maxZ": -4722
+      },
+      {
+        "minX": 752,
+        "maxX": 768,
+        "minZ": -4768,
+        "maxZ": -4752
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 734,
@@ -25709,6 +45553,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -610,
       "maxZ": -360
     },
+    "spawnNodes": [
+      {
+        "minX": -630,
+        "maxX": -570,
+        "minZ": -465,
+        "maxZ": -405
+      },
+      {
+        "minX": -640,
+        "maxX": -580,
+        "minZ": -430,
+        "maxZ": -370
+      },
+      {
+        "minX": -595,
+        "maxX": -545,
+        "minZ": -560,
+        "maxZ": -510
+      },
+      {
+        "minX": -605,
+        "maxX": -555,
+        "minZ": -590,
+        "maxZ": -540
+      },
+      {
+        "minX": -615,
+        "maxX": -545,
+        "minZ": -600,
+        "maxZ": -530
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -640,
@@ -25747,6 +45623,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4004,
       "maxZ": -3904
     },
+    "spawnNodes": [
+      {
+        "minX": 184,
+        "maxX": 200,
+        "minZ": -3958,
+        "maxZ": -3942
+      },
+      {
+        "minX": 229,
+        "maxX": 249,
+        "minZ": -3967,
+        "maxZ": -3947
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 184,
@@ -25785,6 +45675,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4004,
       "maxZ": -3904
     },
+    "spawnNodes": [
+      {
+        "minX": 184,
+        "maxX": 200,
+        "minZ": -3958,
+        "maxZ": -3942
+      },
+      {
+        "minX": 229,
+        "maxX": 249,
+        "minZ": -3967,
+        "maxZ": -3947
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 184,
@@ -25820,6 +45724,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -687,
       "maxZ": -587
     },
+    "spawnNodes": [
+      {
+        "minX": 257,
+        "maxX": 287,
+        "minZ": -652,
+        "maxZ": -622
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 257,
@@ -25856,6 +45768,80 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1734,
       "maxZ": -1338
     },
+    "spawnNodes": [
+      {
+        "minX": 1174,
+        "maxX": 1214,
+        "minZ": -1449,
+        "maxZ": -1409
+      },
+      {
+        "minX": 1128,
+        "maxX": 1168,
+        "minZ": -1422,
+        "maxZ": -1382
+      },
+      {
+        "minX": 1072,
+        "maxX": 1112,
+        "minZ": -1435,
+        "maxZ": -1395
+      },
+      {
+        "minX": 1099,
+        "maxX": 1139,
+        "minZ": -1388,
+        "maxZ": -1348
+      },
+      {
+        "minX": 1098,
+        "maxX": 1138,
+        "minZ": -1429,
+        "maxZ": -1389
+      },
+      {
+        "minX": 1106,
+        "maxX": 1146,
+        "minZ": -1399,
+        "maxZ": -1359
+      },
+      {
+        "minX": 1062,
+        "maxX": 1102,
+        "minZ": -1422,
+        "maxZ": -1382
+      },
+      {
+        "minX": 1075,
+        "maxX": 1095,
+        "minZ": -1433,
+        "maxZ": -1413
+      },
+      {
+        "minX": 1296,
+        "maxX": 1376,
+        "minZ": -1510,
+        "maxZ": -1430
+      },
+      {
+        "minX": 1398,
+        "maxX": 1418,
+        "minZ": -1712,
+        "maxZ": -1692
+      },
+      {
+        "minX": 1105,
+        "maxX": 1125,
+        "minZ": -1586,
+        "maxZ": -1566
+      },
+      {
+        "minX": 1345,
+        "maxX": 1375,
+        "minZ": -1710,
+        "maxZ": -1680
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1054,
@@ -25910,6 +45896,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1381,
       "maxZ": -1161
     },
+    "spawnNodes": [
+      {
+        "minX": -858,
+        "maxX": -778,
+        "minZ": -1299,
+        "maxZ": -1219
+      },
+      {
+        "minX": -780,
+        "maxX": -700,
+        "minZ": -1352,
+        "maxZ": -1272
+      },
+      {
+        "minX": -869,
+        "maxX": -669,
+        "minZ": -1371,
+        "maxZ": -1171
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -869,
@@ -25947,6 +45953,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1170,
       "maxZ": -1070
     },
+    "spawnNodes": [
+      {
+        "minX": 1156,
+        "maxX": 1236,
+        "minZ": -1160,
+        "maxZ": -1080
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1156,
@@ -25982,6 +45996,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1949,
       "maxZ": -1589
     },
+    "spawnNodes": [
+      {
+        "minX": -833,
+        "maxX": -773,
+        "minZ": -1939,
+        "maxZ": -1879
+      },
+      {
+        "minX": 915,
+        "maxX": 931,
+        "minZ": -1624,
+        "maxZ": -1608
+      },
+      {
+        "minX": 912,
+        "maxX": 928,
+        "minZ": -1627,
+        "maxZ": -1611
+      },
+      {
+        "minX": 903,
+        "maxX": 919,
+        "minZ": -1615,
+        "maxZ": -1599
+      },
+      {
+        "minX": 938,
+        "maxX": 954,
+        "minZ": -1625,
+        "maxZ": -1609
+      },
+      {
+        "minX": 960,
+        "maxX": 976,
+        "minZ": -1635,
+        "maxZ": -1619
+      },
+      {
+        "minX": 965,
+        "maxX": 981,
+        "minZ": -1632,
+        "maxZ": -1616
+      },
+      {
+        "minX": 997,
+        "maxX": 1013,
+        "minZ": -1656,
+        "maxZ": -1640
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 903,
@@ -26023,6 +46087,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4906,
       "maxZ": -4806
     },
+    "spawnNodes": [
+      {
+        "minX": -745,
+        "maxX": -729,
+        "minZ": -4873,
+        "maxZ": -4857
+      },
+      {
+        "minX": -724,
+        "maxX": -708,
+        "minZ": -4863,
+        "maxZ": -4847
+      },
+      {
+        "minX": -714,
+        "maxX": -698,
+        "minZ": -4855,
+        "maxZ": -4839
+      },
+      {
+        "minX": -697,
+        "maxX": -681,
+        "minZ": -4856,
+        "maxZ": -4840
+      },
+      {
+        "minX": -676,
+        "maxX": -660,
+        "minZ": -4872,
+        "maxZ": -4856
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -745,
@@ -26058,6 +46154,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5207,
       "maxZ": -5107
     },
+    "spawnNodes": [
+      {
+        "minX": -1039,
+        "maxX": -1019,
+        "minZ": -5173,
+        "maxZ": -5153
+      },
+      {
+        "minX": -1034,
+        "maxX": -1014,
+        "minZ": -5164,
+        "maxZ": -5144
+      },
+      {
+        "minX": -1056,
+        "maxX": -1036,
+        "minZ": -5170,
+        "maxZ": -5150
+      },
+      {
+        "minX": -1046,
+        "maxX": -1002,
+        "minZ": -5179,
+        "maxZ": -5135
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1057,
@@ -26097,6 +46219,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5417,
       "maxZ": -5317
     },
+    "spawnNodes": [
+      {
+        "minX": -123,
+        "maxX": -107,
+        "minZ": -5403,
+        "maxZ": -5387
+      },
+      {
+        "minX": -101,
+        "maxX": -71,
+        "minZ": -5390,
+        "maxZ": -5360
+      },
+      {
+        "minX": -48,
+        "maxX": -18,
+        "minZ": -5361,
+        "maxZ": -5331
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -123,
@@ -26134,6 +46276,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1641,
       "maxZ": -1221
     },
+    "spawnNodes": [
+      {
+        "minX": 1036,
+        "maxX": 1436,
+        "minZ": -1631,
+        "maxZ": -1231
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1036,
@@ -26171,6 +46321,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5113,
       "maxZ": -5013
     },
+    "spawnNodes": [
+      {
+        "minX": -1355,
+        "maxX": -1339,
+        "minZ": -5065,
+        "maxZ": -5049
+      },
+      {
+        "minX": -1366,
+        "maxX": -1350,
+        "minZ": -5078,
+        "maxZ": -5062
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1380,
@@ -26207,6 +46371,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5531,
       "maxZ": -5429
     },
+    "spawnNodes": [
+      {
+        "minX": -772,
+        "maxX": -732,
+        "minZ": -5494,
+        "maxZ": -5454
+      },
+      {
+        "minX": -787,
+        "maxX": -717,
+        "minZ": -5509,
+        "maxZ": -5439
+      },
+      {
+        "minX": -744,
+        "maxX": -704,
+        "minZ": -5521,
+        "maxZ": -5481
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -787,
@@ -26244,6 +46428,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1170,
       "maxZ": -1070
     },
+    "spawnNodes": [
+      {
+        "minX": 1156,
+        "maxX": 1236,
+        "minZ": -1160,
+        "maxZ": -1080
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1156,
@@ -26281,6 +46473,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -360,
       "maxZ": -213
     },
+    "spawnNodes": [
+      {
+        "minX": -38,
+        "maxX": -22,
+        "minZ": -350,
+        "maxZ": -334
+      },
+      {
+        "minX": -2,
+        "maxX": 14,
+        "minZ": -306,
+        "maxZ": -290
+      },
+      {
+        "minX": 9,
+        "maxX": 25,
+        "minZ": -298,
+        "maxZ": -282
+      },
+      {
+        "minX": -32,
+        "maxX": -16,
+        "minZ": -275,
+        "maxZ": -259
+      },
+      {
+        "minX": -30,
+        "maxX": -14,
+        "minZ": -256,
+        "maxZ": -240
+      },
+      {
+        "minX": -47,
+        "maxX": -27,
+        "minZ": -252,
+        "maxZ": -232
+      },
+      {
+        "minX": -67,
+        "maxX": -51,
+        "minZ": -256,
+        "maxZ": -240
+      },
+      {
+        "minX": -70,
+        "maxX": -54,
+        "minZ": -263,
+        "maxZ": -247
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -88,
@@ -26318,6 +46560,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -564,
       "maxZ": -267
     },
+    "spawnNodes": [
+      {
+        "minX": -756,
+        "maxX": -740,
+        "minZ": -554,
+        "maxZ": -538
+      },
+      {
+        "minX": -830,
+        "maxX": -814,
+        "minZ": -293,
+        "maxZ": -277
+      },
+      {
+        "minX": -602,
+        "maxX": -586,
+        "minZ": -397,
+        "maxZ": -381
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -602,
@@ -26365,6 +46627,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1905,
       "maxZ": -1805
     },
+    "spawnNodes": [
+      {
+        "minX": 495,
+        "maxX": 515,
+        "minZ": -1865,
+        "maxZ": -1845
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 495,
@@ -26401,6 +46671,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4387,
       "maxZ": -4287
     },
+    "spawnNodes": [
+      {
+        "minX": -964,
+        "maxX": -936,
+        "minZ": -4351,
+        "maxZ": -4323
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -964,
@@ -26437,6 +46715,134 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1379,
       "maxZ": -1004
     },
+    "spawnNodes": [
+      {
+        "minX": -2252,
+        "maxX": -2236,
+        "minZ": -1079,
+        "maxZ": -1063
+      },
+      {
+        "minX": -2277,
+        "maxX": -2261,
+        "minZ": -1030,
+        "maxZ": -1014
+      },
+      {
+        "minX": -2103,
+        "maxX": -2087,
+        "minZ": -1206,
+        "maxZ": -1190
+      },
+      {
+        "minX": -2093,
+        "maxX": -2077,
+        "minZ": -1331,
+        "maxZ": -1315
+      },
+      {
+        "minX": -1965,
+        "maxX": -1949,
+        "minZ": -1357,
+        "maxZ": -1341
+      },
+      {
+        "minX": -1929,
+        "maxX": -1913,
+        "minZ": -1354,
+        "maxZ": -1338
+      },
+      {
+        "minX": -1916,
+        "maxX": -1900,
+        "minZ": -1327,
+        "maxZ": -1311
+      },
+      {
+        "minX": -1880,
+        "maxX": -1864,
+        "minZ": -1316,
+        "maxZ": -1300
+      },
+      {
+        "minX": -1836,
+        "maxX": -1820,
+        "minZ": -1308,
+        "maxZ": -1292
+      },
+      {
+        "minX": -1817,
+        "maxX": -1801,
+        "minZ": -1284,
+        "maxZ": -1268
+      },
+      {
+        "minX": -1797,
+        "maxX": -1781,
+        "minZ": -1299,
+        "maxZ": -1283
+      },
+      {
+        "minX": -1736,
+        "maxX": -1720,
+        "minZ": -1256,
+        "maxZ": -1240
+      },
+      {
+        "minX": -1728,
+        "maxX": -1712,
+        "minZ": -1284,
+        "maxZ": -1268
+      },
+      {
+        "minX": -1702,
+        "maxX": -1686,
+        "minZ": -1287,
+        "maxZ": -1271
+      },
+      {
+        "minX": -1788,
+        "maxX": -1772,
+        "minZ": -1199,
+        "maxZ": -1183
+      },
+      {
+        "minX": -1761,
+        "maxX": -1745,
+        "minZ": -1170,
+        "maxZ": -1154
+      },
+      {
+        "minX": -1707,
+        "maxX": -1691,
+        "minZ": -1191,
+        "maxZ": -1175
+      },
+      {
+        "minX": -1688,
+        "maxX": -1672,
+        "minZ": -1200,
+        "maxZ": -1184
+      },
+      {
+        "minX": -1650,
+        "maxX": -1630,
+        "minZ": -1284,
+        "maxZ": -1264
+      },
+      {
+        "minX": -1639,
+        "maxX": -1619,
+        "minZ": -1261,
+        "maxZ": -1241
+      },
+      {
+        "minX": -2005,
+        "maxX": -1989,
+        "minZ": -1342,
+        "maxZ": -1326
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2005,
@@ -26490,6 +46896,74 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2131,
       "maxZ": -1701
     },
+    "spawnNodes": [
+      {
+        "minX": 1213,
+        "maxX": 1229,
+        "minZ": -2021,
+        "maxZ": -2005
+      },
+      {
+        "minX": 1220,
+        "maxX": 1236,
+        "minZ": -1956,
+        "maxZ": -1940
+      },
+      {
+        "minX": 1207,
+        "maxX": 1223,
+        "minZ": -1787,
+        "maxZ": -1771
+      },
+      {
+        "minX": 1221,
+        "maxX": 1237,
+        "minZ": -1809,
+        "maxZ": -1793
+      },
+      {
+        "minX": 1259,
+        "maxX": 1275,
+        "minZ": -1727,
+        "maxZ": -1711
+      },
+      {
+        "minX": 1251,
+        "maxX": 1267,
+        "minZ": -1829,
+        "maxZ": -1813
+      },
+      {
+        "minX": 1265,
+        "maxX": 1281,
+        "minZ": -1814,
+        "maxZ": -1798
+      },
+      {
+        "minX": 1258,
+        "maxX": 1274,
+        "minZ": -1796,
+        "maxZ": -1780
+      },
+      {
+        "minX": 1248,
+        "maxX": 1264,
+        "minZ": -1911,
+        "maxZ": -1895
+      },
+      {
+        "minX": 1255,
+        "maxX": 1271,
+        "minZ": -2038,
+        "maxZ": -2022
+      },
+      {
+        "minX": 1241,
+        "maxX": 1257,
+        "minZ": -2121,
+        "maxZ": -2105
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1207,
@@ -26542,6 +47016,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4850,
       "maxZ": -4750
     },
+    "spawnNodes": [
+      {
+        "minX": -1494,
+        "maxX": -1478,
+        "minZ": -4808,
+        "maxZ": -4792
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1494,
@@ -26581,6 +47063,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4864,
       "maxZ": -4764
     },
+    "spawnNodes": [
+      {
+        "minX": -1499,
+        "maxX": -1483,
+        "minZ": -4822,
+        "maxZ": -4806
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1499,
@@ -26621,6 +47111,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5030,
       "maxZ": -4930
     },
+    "spawnNodes": [
+      {
+        "minX": -1717,
+        "maxX": -1693,
+        "minZ": -4992,
+        "maxZ": -4968
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1717,
@@ -26661,6 +47159,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4850,
       "maxZ": -4750
     },
+    "spawnNodes": [
+      {
+        "minX": -1494,
+        "maxX": -1478,
+        "minZ": -4808,
+        "maxZ": -4792
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1494,
@@ -26697,6 +47203,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4944,
       "maxZ": -4844
     },
+    "spawnNodes": [
+      {
+        "minX": -83,
+        "maxX": -23,
+        "minZ": -4924,
+        "maxZ": -4864
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -83,
@@ -26733,6 +47247,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2034,
       "maxZ": -1914
     },
+    "spawnNodes": [
+      {
+        "minX": 270,
+        "maxX": 370,
+        "minZ": -2024,
+        "maxZ": -1924
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 270,
@@ -26770,6 +47292,74 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2089,
       "maxZ": -1812
     },
+    "spawnNodes": [
+      {
+        "minX": 499,
+        "maxX": 515,
+        "minZ": -1939,
+        "maxZ": -1923
+      },
+      {
+        "minX": 301,
+        "maxX": 317,
+        "minZ": -1838,
+        "maxZ": -1822
+      },
+      {
+        "minX": 278,
+        "maxX": 294,
+        "minZ": -1919,
+        "maxZ": -1903
+      },
+      {
+        "minX": 50,
+        "maxX": 66,
+        "minZ": -1874,
+        "maxZ": -1858
+      },
+      {
+        "minX": 152,
+        "maxX": 168,
+        "minZ": -1982,
+        "maxZ": -1966
+      },
+      {
+        "minX": 56,
+        "maxX": 72,
+        "minZ": -2073,
+        "maxZ": -2057
+      },
+      {
+        "minX": -10,
+        "maxX": 6,
+        "minZ": -2035,
+        "maxZ": -2019
+      },
+      {
+        "minX": 365,
+        "maxX": 381,
+        "minZ": -1979,
+        "maxZ": -1963
+      },
+      {
+        "minX": 398,
+        "maxX": 414,
+        "minZ": -2031,
+        "maxZ": -2015
+      },
+      {
+        "minX": 287,
+        "maxX": 303,
+        "minZ": -1983,
+        "maxZ": -1967
+      },
+      {
+        "minX": 163,
+        "maxX": 179,
+        "minZ": -2079,
+        "maxZ": -2063
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 263,
@@ -26841,6 +47431,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4827,
       "maxZ": -4689
     },
+    "spawnNodes": [
+      {
+        "minX": 676,
+        "maxX": 692,
+        "minZ": -4715,
+        "maxZ": -4699
+      },
+      {
+        "minX": 673,
+        "maxX": 689,
+        "minZ": -4720,
+        "maxZ": -4704
+      },
+      {
+        "minX": 655,
+        "maxX": 671,
+        "minZ": -4787,
+        "maxZ": -4771
+      },
+      {
+        "minX": 653,
+        "maxX": 669,
+        "minZ": -4797,
+        "maxZ": -4781
+      },
+      {
+        "minX": 655,
+        "maxX": 671,
+        "minZ": -4797,
+        "maxZ": -4781
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 634,
@@ -26876,6 +47498,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5089,
       "maxZ": -4989
     },
+    "spawnNodes": [
+      {
+        "minX": 1035,
+        "maxX": 1051,
+        "minZ": -5047,
+        "maxZ": -5031
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1035,
@@ -26914,6 +47544,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -982,
       "maxZ": -649
     },
+    "spawnNodes": [
+      {
+        "minX": -105,
+        "maxX": 35,
+        "minZ": -799,
+        "maxZ": -659
+      },
+      {
+        "minX": -61,
+        "maxX": 79,
+        "minZ": -972,
+        "maxZ": -832
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -105,
@@ -26949,6 +47593,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1432,
       "maxZ": -1332
     },
+    "spawnNodes": [
+      {
+        "minX": 360,
+        "maxX": 376,
+        "minZ": -1386,
+        "maxZ": -1370
+      },
+      {
+        "minX": 352,
+        "maxX": 368,
+        "minZ": -1395,
+        "maxZ": -1379
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 336,
@@ -26984,6 +47642,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1417,
       "maxZ": -1317
     },
+    "spawnNodes": [
+      {
+        "minX": 370,
+        "maxX": 390,
+        "minZ": -1389,
+        "maxZ": -1369
+      },
+      {
+        "minX": 374,
+        "maxX": 390,
+        "minZ": -1361,
+        "maxZ": -1345
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 352,
@@ -27024,6 +47696,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4984,
       "maxZ": -4884
     },
+    "spawnNodes": [
+      {
+        "minX": -1723,
+        "maxX": -1699,
+        "minZ": -4946,
+        "maxZ": -4922
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1723,
@@ -27064,6 +47744,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4984,
       "maxZ": -4884
     },
+    "spawnNodes": [
+      {
+        "minX": -1723,
+        "maxX": -1699,
+        "minZ": -4946,
+        "maxZ": -4922
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1723,
@@ -27104,6 +47792,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4984,
       "maxZ": -4884
     },
+    "spawnNodes": [
+      {
+        "minX": -1723,
+        "maxX": -1699,
+        "minZ": -4946,
+        "maxZ": -4922
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1723,
@@ -27144,6 +47840,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4993,
       "maxZ": -4893
     },
+    "spawnNodes": [
+      {
+        "minX": -1775,
+        "maxX": -1759,
+        "minZ": -4951,
+        "maxZ": -4935
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1775,
@@ -27180,6 +47884,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5013,
       "maxZ": -4910
     },
+    "spawnNodes": [
+      {
+        "minX": -1689,
+        "maxX": -1673,
+        "minZ": -4961,
+        "maxZ": -4945
+      },
+      {
+        "minX": -1741,
+        "maxX": -1725,
+        "minZ": -4968,
+        "maxZ": -4952
+      },
+      {
+        "minX": -1744,
+        "maxX": -1728,
+        "minZ": -5003,
+        "maxZ": -4987
+      },
+      {
+        "minX": -1762,
+        "maxX": -1746,
+        "minZ": -4981,
+        "maxZ": -4965
+      },
+      {
+        "minX": -1744,
+        "maxX": -1728,
+        "minZ": -4936,
+        "maxZ": -4920
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1773,
@@ -27220,6 +47956,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4977,
       "maxZ": -4877
     },
+    "spawnNodes": [
+      {
+        "minX": -1776,
+        "maxX": -1760,
+        "minZ": -4935,
+        "maxZ": -4919
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1776,
@@ -27260,6 +48004,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4984,
       "maxZ": -4884
     },
+    "spawnNodes": [
+      {
+        "minX": -1723,
+        "maxX": -1699,
+        "minZ": -4946,
+        "maxZ": -4922
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1723,
@@ -27295,6 +48047,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1065,
       "maxZ": -965
     },
+    "spawnNodes": [
+      {
+        "minX": 153,
+        "maxX": 169,
+        "minZ": -1023,
+        "maxZ": -1007
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 153,
@@ -27330,6 +48090,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5586,
       "maxZ": -5107
     },
+    "spawnNodes": [
+      {
+        "minX": -1384,
+        "maxX": -1264,
+        "minZ": -5576,
+        "maxZ": -5456
+      },
+      {
+        "minX": -1310,
+        "maxX": -1238,
+        "minZ": -5454,
+        "maxZ": -5382
+      },
+      {
+        "minX": -1212,
+        "maxX": -1112,
+        "minZ": -5376,
+        "maxZ": -5276
+      },
+      {
+        "minX": -1290,
+        "maxX": -1226,
+        "minZ": -5181,
+        "maxZ": -5117
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1384,
@@ -27371,6 +48157,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -326,
       "maxZ": -226
     },
+    "spawnNodes": [
+      {
+        "minX": -622,
+        "maxX": -606,
+        "minZ": -284,
+        "maxZ": -268
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -622,
@@ -27406,6 +48200,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1095,
       "maxZ": -995
     },
+    "spawnNodes": [
+      {
+        "minX": -558,
+        "maxX": -542,
+        "minZ": -1038,
+        "maxZ": -1022
+      },
+      {
+        "minX": -578,
+        "maxX": -562,
+        "minZ": -1043,
+        "maxZ": -1027
+      },
+      {
+        "minX": -587,
+        "maxX": -571,
+        "minZ": -1025,
+        "maxZ": -1009
+      },
+      {
+        "minX": -616,
+        "maxX": -600,
+        "minZ": -1059,
+        "maxZ": -1043
+      },
+      {
+        "minX": -616,
+        "maxX": -600,
+        "minZ": -1063,
+        "maxZ": -1047
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -636,
@@ -27445,6 +48271,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -962,
       "maxZ": -862
     },
+    "spawnNodes": [
+      {
+        "minX": -211,
+        "maxX": -171,
+        "minZ": -932,
+        "maxZ": -892
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -211,
@@ -27482,6 +48316,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -771,
       "maxZ": -575
     },
+    "spawnNodes": [
+      {
+        "minX": -564,
+        "maxX": -544,
+        "minZ": -605,
+        "maxZ": -585
+      },
+      {
+        "minX": -640,
+        "maxX": -600,
+        "minZ": -695,
+        "maxZ": -655
+      },
+      {
+        "minX": -675,
+        "maxX": -655,
+        "minZ": -735,
+        "maxZ": -715
+      },
+      {
+        "minX": -611,
+        "maxX": -595,
+        "minZ": -752,
+        "maxZ": -736
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -675,
@@ -27518,6 +48378,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5596,
       "maxZ": -5078
     },
+    "spawnNodes": [
+      {
+        "minX": -1427,
+        "maxX": -1327,
+        "minZ": -5188,
+        "maxZ": -5088
+      },
+      {
+        "minX": -1370,
+        "maxX": -1246,
+        "minZ": -5386,
+        "maxZ": -5262
+      },
+      {
+        "minX": -1215,
+        "maxX": -1105,
+        "minZ": -5481,
+        "maxZ": -5371
+      },
+      {
+        "minX": -1382,
+        "maxX": -1272,
+        "minZ": -5281,
+        "maxZ": -5171
+      },
+      {
+        "minX": -1119,
+        "maxX": -1009,
+        "minZ": -5499,
+        "maxZ": -5389
+      },
+      {
+        "minX": -1283,
+        "maxX": -1173,
+        "minZ": -5586,
+        "maxZ": -5476
+      },
+      {
+        "minX": -1205,
+        "maxX": -1143,
+        "minZ": -5315,
+        "maxZ": -5253
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1427,
@@ -27555,6 +48459,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5464,
       "maxZ": -5238
     },
+    "spawnNodes": [
+      {
+        "minX": -441,
+        "maxX": -425,
+        "minZ": -5264,
+        "maxZ": -5248
+      },
+      {
+        "minX": -504,
+        "maxX": -482,
+        "minZ": -5397,
+        "maxZ": -5375
+      },
+      {
+        "minX": -681,
+        "maxX": -665,
+        "minZ": -5454,
+        "maxZ": -5438
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -504,
@@ -27602,6 +48526,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4779,
       "maxZ": -4679
     },
+    "spawnNodes": [
+      {
+        "minX": -654,
+        "maxX": -638,
+        "minZ": -4737,
+        "maxZ": -4721
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -654,
@@ -27637,6 +48569,104 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -921,
       "maxZ": -500
     },
+    "spawnNodes": [
+      {
+        "minX": -1398,
+        "maxX": -1338,
+        "minZ": -784,
+        "maxZ": -724
+      },
+      {
+        "minX": -1391,
+        "maxX": -1371,
+        "minZ": -687,
+        "maxZ": -667
+      },
+      {
+        "minX": -1425,
+        "maxX": -1365,
+        "minZ": -655,
+        "maxZ": -595
+      },
+      {
+        "minX": -1418,
+        "maxX": -1378,
+        "minZ": -597,
+        "maxZ": -557
+      },
+      {
+        "minX": -1484,
+        "maxX": -1444,
+        "minZ": -580,
+        "maxZ": -540
+      },
+      {
+        "minX": -1509,
+        "maxX": -1489,
+        "minZ": -530,
+        "maxZ": -510
+      },
+      {
+        "minX": -1517,
+        "maxX": -1477,
+        "minZ": -633,
+        "maxZ": -593
+      },
+      {
+        "minX": -1420,
+        "maxX": -1400,
+        "minZ": -624,
+        "maxZ": -604
+      },
+      {
+        "minX": -1122,
+        "maxX": -1102,
+        "minZ": -893,
+        "maxZ": -873
+      },
+      {
+        "minX": -1186,
+        "maxX": -1158,
+        "minZ": -897,
+        "maxZ": -869
+      },
+      {
+        "minX": -1363,
+        "maxX": -1343,
+        "minZ": -583,
+        "maxZ": -563
+      },
+      {
+        "minX": -1189,
+        "maxX": -1145,
+        "minZ": -653,
+        "maxZ": -609
+      },
+      {
+        "minX": -1363,
+        "maxX": -1347,
+        "minZ": -623,
+        "maxZ": -607
+      },
+      {
+        "minX": -1428,
+        "maxX": -1412,
+        "minZ": -645,
+        "maxZ": -629
+      },
+      {
+        "minX": -1348,
+        "maxX": -1332,
+        "minZ": -617,
+        "maxZ": -601
+      },
+      {
+        "minX": -1416,
+        "maxX": -1400,
+        "minZ": -640,
+        "maxZ": -624
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1517,
@@ -27688,6 +48718,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4768,
       "maxZ": -4619
     },
+    "spawnNodes": [
+      {
+        "minX": 974,
+        "maxX": 1054,
+        "minZ": -4758,
+        "maxZ": -4678
+      },
+      {
+        "minX": 1060,
+        "maxX": 1120,
+        "minZ": -4689,
+        "maxZ": -4629
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 974,
@@ -27724,6 +48768,62 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1370,
       "maxZ": -1234
     },
+    "spawnNodes": [
+      {
+        "minX": 1257,
+        "maxX": 1273,
+        "minZ": -1288,
+        "maxZ": -1272
+      },
+      {
+        "minX": 1288,
+        "maxX": 1304,
+        "minZ": -1260,
+        "maxZ": -1244
+      },
+      {
+        "minX": 1288,
+        "maxX": 1304,
+        "minZ": -1276,
+        "maxZ": -1260
+      },
+      {
+        "minX": 1293,
+        "maxX": 1313,
+        "minZ": -1321,
+        "maxZ": -1301
+      },
+      {
+        "minX": 1337,
+        "maxX": 1353,
+        "minZ": -1323,
+        "maxZ": -1307
+      },
+      {
+        "minX": 1324,
+        "maxX": 1340,
+        "minZ": -1344,
+        "maxZ": -1328
+      },
+      {
+        "minX": 1303,
+        "maxX": 1319,
+        "minZ": -1355,
+        "maxZ": -1339
+      },
+      {
+        "minX": 1265,
+        "maxX": 1281,
+        "minZ": -1335,
+        "maxZ": -1319
+      },
+      {
+        "minX": 1232,
+        "maxX": 1248,
+        "minZ": -1346,
+        "maxZ": -1330
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1229,
@@ -27760,6 +48860,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3379,
       "maxZ": -2446
     },
+    "spawnNodes": [
+      {
+        "minX": -1583,
+        "maxX": -1567,
+        "minZ": -2472,
+        "maxZ": -2456
+      },
+      {
+        "minX": -1473,
+        "maxX": -1363,
+        "minZ": -3369,
+        "maxZ": -3259
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1473,
@@ -27805,6 +48919,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4962,
       "maxZ": -4862
     },
+    "spawnNodes": [
+      {
+        "minX": -1741,
+        "maxX": -1721,
+        "minZ": -4922,
+        "maxZ": -4902
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1741,
@@ -27844,6 +48966,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4962,
       "maxZ": -4862
     },
+    "spawnNodes": [
+      {
+        "minX": -1741,
+        "maxX": -1721,
+        "minZ": -4922,
+        "maxZ": -4902
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1741,
@@ -27879,6 +49009,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -813,
       "maxZ": -516
     },
+    "spawnNodes": [
+      {
+        "minX": -1566,
+        "maxX": -1550,
+        "minZ": -625,
+        "maxZ": -609
+      },
+      {
+        "minX": -1621,
+        "maxX": -1605,
+        "minZ": -542,
+        "maxZ": -526
+      },
+      {
+        "minX": -1480,
+        "maxX": -1464,
+        "minZ": -579,
+        "maxZ": -563
+      },
+      {
+        "minX": -1318,
+        "maxX": -1302,
+        "minZ": -643,
+        "maxZ": -627
+      },
+      {
+        "minX": -1262,
+        "maxX": -1246,
+        "minZ": -803,
+        "maxZ": -787
+      },
+      {
+        "minX": -1492,
+        "maxX": -1476,
+        "minZ": -759,
+        "maxZ": -743
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1492,
@@ -27944,6 +49112,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5511,
       "maxZ": -5411
     },
+    "spawnNodes": [
+      {
+        "minX": 1216,
+        "maxX": 1232,
+        "minZ": -5457,
+        "maxZ": -5441
+      },
+      {
+        "minX": 1191,
+        "maxX": 1207,
+        "minZ": -5482,
+        "maxZ": -5466
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1184,
@@ -27980,6 +49162,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1375,
       "maxZ": -1275
     },
+    "spawnNodes": [
+      {
+        "minX": -1343,
+        "maxX": -1327,
+        "minZ": -1340,
+        "maxZ": -1324
+      },
+      {
+        "minX": -1377,
+        "maxX": -1361,
+        "minZ": -1347,
+        "maxZ": -1331
+      },
+      {
+        "minX": -1356,
+        "maxX": -1340,
+        "minZ": -1338,
+        "maxZ": -1322
+      },
+      {
+        "minX": -1348,
+        "maxX": -1332,
+        "minZ": -1356,
+        "maxZ": -1340
+      },
+      {
+        "minX": -1324,
+        "maxX": -1308,
+        "minZ": -1345,
+        "maxZ": -1329
+      },
+      {
+        "minX": -1319,
+        "maxX": -1303,
+        "minZ": -1315,
+        "maxZ": -1299
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1377,
@@ -28016,6 +49236,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1988,
       "maxZ": -1848
     },
+    "spawnNodes": [
+      {
+        "minX": 1245,
+        "maxX": 1365,
+        "minZ": -1978,
+        "maxZ": -1858
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1245,
@@ -28052,6 +49280,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2260,
       "maxZ": -1715
     },
+    "spawnNodes": [
+      {
+        "minX": 1245,
+        "maxX": 1365,
+        "minZ": -1978,
+        "maxZ": -1858
+      },
+      {
+        "minX": 959,
+        "maxX": 975,
+        "minZ": -2250,
+        "maxZ": -2234
+      },
+      {
+        "minX": 1082,
+        "maxX": 1098,
+        "minZ": -2193,
+        "maxZ": -2177
+      },
+      {
+        "minX": 1114,
+        "maxX": 1130,
+        "minZ": -2138,
+        "maxZ": -2122
+      },
+      {
+        "minX": 1182,
+        "maxX": 1198,
+        "minZ": -2095,
+        "maxZ": -2079
+      },
+      {
+        "minX": 1192,
+        "maxX": 1208,
+        "minZ": -1795,
+        "maxZ": -1779
+      },
+      {
+        "minX": 1039,
+        "maxX": 1055,
+        "minZ": -1741,
+        "maxZ": -1725
+      },
+      {
+        "minX": 911,
+        "maxX": 927,
+        "minZ": -1781,
+        "maxZ": -1765
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1245,
@@ -28117,6 +49395,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2130,
       "maxZ": -1795
     },
+    "spawnNodes": [
+      {
+        "minX": 1032,
+        "maxX": 1096,
+        "minZ": -2120,
+        "maxZ": -2056
+      },
+      {
+        "minX": 1002,
+        "maxX": 1022,
+        "minZ": -1825,
+        "maxZ": -1805
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1032,
@@ -28160,6 +49452,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2047,
       "maxZ": -1947
     },
+    "spawnNodes": [
+      {
+        "minX": 1375,
+        "maxX": 1391,
+        "minZ": -2005,
+        "maxZ": -1989
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1375,
@@ -28195,6 +49495,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2088,
       "maxZ": -1988
     },
+    "spawnNodes": [
+      {
+        "minX": 916,
+        "maxX": 932,
+        "minZ": -2046,
+        "maxZ": -2030
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 916,
@@ -28231,6 +49539,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1988,
       "maxZ": -1675
     },
+    "spawnNodes": [
+      {
+        "minX": 1245,
+        "maxX": 1365,
+        "minZ": -1978,
+        "maxZ": -1858
+      },
+      {
+        "minX": 961,
+        "maxX": 1041,
+        "minZ": -1765,
+        "maxZ": -1685
+      },
+      {
+        "minX": 1253,
+        "maxX": 1353,
+        "minZ": -1822,
+        "maxZ": -1722
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1245,
@@ -28273,6 +49601,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1832,
       "maxZ": -1675
     },
+    "spawnNodes": [
+      {
+        "minX": 961,
+        "maxX": 1041,
+        "minZ": -1765,
+        "maxZ": -1685
+      },
+      {
+        "minX": 1253,
+        "maxX": 1353,
+        "minZ": -1822,
+        "maxZ": -1722
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1253,
@@ -28315,6 +49657,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5202,
       "maxZ": -5102
     },
+    "spawnNodes": [
+      {
+        "minX": 1317,
+        "maxX": 1357,
+        "minZ": -5172,
+        "maxZ": -5132
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1317,
@@ -28351,6 +49701,74 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2032,
       "maxZ": -1651
     },
+    "spawnNodes": [
+      {
+        "minX": 735,
+        "maxX": 751,
+        "minZ": -1745,
+        "maxZ": -1729
+      },
+      {
+        "minX": 724,
+        "maxX": 740,
+        "minZ": -1852,
+        "maxZ": -1836
+      },
+      {
+        "minX": 662,
+        "maxX": 678,
+        "minZ": -1933,
+        "maxZ": -1917
+      },
+      {
+        "minX": 775,
+        "maxX": 791,
+        "minZ": -2022,
+        "maxZ": -2006
+      },
+      {
+        "minX": 780,
+        "maxX": 796,
+        "minZ": -1965,
+        "maxZ": -1949
+      },
+      {
+        "minX": 805,
+        "maxX": 821,
+        "minZ": -1841,
+        "maxZ": -1825
+      },
+      {
+        "minX": 825,
+        "maxX": 841,
+        "minZ": -1727,
+        "maxZ": -1711
+      },
+      {
+        "minX": 717,
+        "maxX": 733,
+        "minZ": -1677,
+        "maxZ": -1661
+      },
+      {
+        "minX": 580,
+        "maxX": 620,
+        "minZ": -1818,
+        "maxZ": -1778
+      },
+      {
+        "minX": 784,
+        "maxX": 814,
+        "minZ": -2006,
+        "maxZ": -1976
+      },
+      {
+        "minX": 767,
+        "maxX": 807,
+        "minZ": -1947,
+        "maxZ": -1907
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 763,
@@ -28423,6 +49841,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2389,
       "maxZ": -2226
     },
+    "spawnNodes": [
+      {
+        "minX": 762,
+        "maxX": 782,
+        "minZ": -2342,
+        "maxZ": -2322
+      },
+      {
+        "minX": 733,
+        "maxX": 749,
+        "minZ": -2252,
+        "maxZ": -2236
+      },
+      {
+        "minX": 761,
+        "maxX": 777,
+        "minZ": -2307,
+        "maxZ": -2291
+      },
+      {
+        "minX": 793,
+        "maxX": 809,
+        "minZ": -2287,
+        "maxZ": -2271
+      },
+      {
+        "minX": 807,
+        "maxX": 823,
+        "minZ": -2355,
+        "maxZ": -2339
+      },
+      {
+        "minX": 825,
+        "maxX": 841,
+        "minZ": -2363,
+        "maxZ": -2347
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 733,
@@ -28458,6 +49914,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1509,
       "maxZ": -1409
     },
+    "spawnNodes": [
+      {
+        "minX": -163,
+        "maxX": -145,
+        "minZ": -1468,
+        "maxZ": -1450
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -163,
@@ -28494,6 +49958,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2260,
       "maxZ": -1715
     },
+    "spawnNodes": [
+      {
+        "minX": 959,
+        "maxX": 975,
+        "minZ": -2250,
+        "maxZ": -2234
+      },
+      {
+        "minX": 1082,
+        "maxX": 1098,
+        "minZ": -2193,
+        "maxZ": -2177
+      },
+      {
+        "minX": 1114,
+        "maxX": 1130,
+        "minZ": -2138,
+        "maxZ": -2122
+      },
+      {
+        "minX": 1182,
+        "maxX": 1198,
+        "minZ": -2095,
+        "maxZ": -2079
+      },
+      {
+        "minX": 1192,
+        "maxX": 1208,
+        "minZ": -1795,
+        "maxZ": -1779
+      },
+      {
+        "minX": 1039,
+        "maxX": 1055,
+        "minZ": -1741,
+        "maxZ": -1725
+      },
+      {
+        "minX": 911,
+        "maxX": 927,
+        "minZ": -1781,
+        "maxZ": -1765
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1082,
@@ -28555,6 +50063,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -653,
       "maxZ": -513
     },
+    "spawnNodes": [
+      {
+        "minX": 795,
+        "maxX": 915,
+        "minZ": -643,
+        "maxZ": -523
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 795,
@@ -28595,6 +50111,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5139,
       "maxZ": -4505
     },
+    "spawnNodes": [
+      {
+        "minX": -1097,
+        "maxX": -1007,
+        "minZ": -5129,
+        "maxZ": -5039
+      },
+      {
+        "minX": -1153,
+        "maxX": -1063,
+        "minZ": -4605,
+        "maxZ": -4515
+      },
+      {
+        "minX": -790,
+        "maxX": -700,
+        "minZ": -4663,
+        "maxZ": -4573
+      },
+      {
+        "minX": -868,
+        "maxX": -778,
+        "minZ": -4767,
+        "maxZ": -4677
+      },
+      {
+        "minX": -907,
+        "maxX": -817,
+        "minZ": -4831,
+        "maxZ": -4741
+      },
+      {
+        "minX": -1004,
+        "maxX": -914,
+        "minZ": -4854,
+        "maxZ": -4764
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1004,
@@ -28642,6 +50196,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4678,
       "maxZ": -4578
     },
+    "spawnNodes": [
+      {
+        "minX": 1295,
+        "maxX": 1355,
+        "minZ": -4658,
+        "maxZ": -4598
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1295,
@@ -28679,6 +50241,86 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4055,
       "maxZ": -3828
     },
+    "spawnNodes": [
+      {
+        "minX": 56,
+        "maxX": 72,
+        "minZ": -3854,
+        "maxZ": -3838
+      },
+      {
+        "minX": 33,
+        "maxX": 49,
+        "minZ": -3869,
+        "maxZ": -3853
+      },
+      {
+        "minX": 93,
+        "maxX": 109,
+        "minZ": -3978,
+        "maxZ": -3962
+      },
+      {
+        "minX": 112,
+        "maxX": 128,
+        "minZ": -3989,
+        "maxZ": -3973
+      },
+      {
+        "minX": 121,
+        "maxX": 137,
+        "minZ": -3926,
+        "maxZ": -3910
+      },
+      {
+        "minX": 137,
+        "maxX": 153,
+        "minZ": -3927,
+        "maxZ": -3911
+      },
+      {
+        "minX": 129,
+        "maxX": 145,
+        "minZ": -3912,
+        "maxZ": -3896
+      },
+      {
+        "minX": 244,
+        "maxX": 260,
+        "minZ": -3912,
+        "maxZ": -3896
+      },
+      {
+        "minX": 218,
+        "maxX": 234,
+        "minZ": -3929,
+        "maxZ": -3913
+      },
+      {
+        "minX": 347,
+        "maxX": 363,
+        "minZ": -4011,
+        "maxZ": -3995
+      },
+      {
+        "minX": 349,
+        "maxX": 365,
+        "minZ": -4021,
+        "maxZ": -4005
+      },
+      {
+        "minX": 338,
+        "maxX": 354,
+        "minZ": -4021,
+        "maxZ": -4005
+      },
+      {
+        "minX": 352,
+        "maxX": 368,
+        "minZ": -4030,
+        "maxZ": -4014
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 33,
@@ -28728,6 +50370,62 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4097,
       "maxZ": -3846
     },
+    "spawnNodes": [
+      {
+        "minX": 36,
+        "maxX": 52,
+        "minZ": -3892,
+        "maxZ": -3876
+      },
+      {
+        "minX": 39,
+        "maxX": 55,
+        "minZ": -3892,
+        "maxZ": -3876
+      },
+      {
+        "minX": 116,
+        "maxX": 132,
+        "minZ": -3956,
+        "maxZ": -3940
+      },
+      {
+        "minX": 234,
+        "maxX": 250,
+        "minZ": -3938,
+        "maxZ": -3922
+      },
+      {
+        "minX": 232,
+        "maxX": 248,
+        "minZ": -3936,
+        "maxZ": -3920
+      },
+      {
+        "minX": 338,
+        "maxX": 354,
+        "minZ": -3999,
+        "maxZ": -3983
+      },
+      {
+        "minX": 237,
+        "maxX": 253,
+        "minZ": -4044,
+        "maxZ": -4028
+      },
+      {
+        "minX": 192,
+        "maxX": 208,
+        "minZ": -4066,
+        "maxZ": -4050
+      },
+      {
+        "minX": 192,
+        "maxX": 208,
+        "minZ": -4069,
+        "maxZ": -4053
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 172,
@@ -28788,6 +50486,92 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1695,
       "maxZ": -1118
     },
+    "spawnNodes": [
+      {
+        "minX": 1029,
+        "maxX": 1045,
+        "minZ": -1597,
+        "maxZ": -1581
+      },
+      {
+        "minX": 1161,
+        "maxX": 1177,
+        "minZ": -1616,
+        "maxZ": -1600
+      },
+      {
+        "minX": 1341,
+        "maxX": 1357,
+        "minZ": -1685,
+        "maxZ": -1669
+      },
+      {
+        "minX": 1438,
+        "maxX": 1454,
+        "minZ": -1566,
+        "maxZ": -1550
+      },
+      {
+        "minX": 1353,
+        "maxX": 1369,
+        "minZ": -1144,
+        "maxZ": -1128
+      },
+      {
+        "minX": 1464,
+        "maxX": 1480,
+        "minZ": -1242,
+        "maxZ": -1226
+      },
+      {
+        "minX": 1493,
+        "maxX": 1509,
+        "minZ": -1337,
+        "maxZ": -1321
+      },
+      {
+        "minX": 1459,
+        "maxX": 1475,
+        "minZ": -1464,
+        "maxZ": -1448
+      },
+      {
+        "minX": 1146,
+        "maxX": 1162,
+        "minZ": -1551,
+        "maxZ": -1535
+      },
+      {
+        "minX": 1290,
+        "maxX": 1306,
+        "minZ": -1423,
+        "maxZ": -1407
+      },
+      {
+        "minX": 1422,
+        "maxX": 1438,
+        "minZ": -1526,
+        "maxZ": -1510
+      },
+      {
+        "minX": 1173,
+        "maxX": 1189,
+        "minZ": -1571,
+        "maxZ": -1555
+      },
+      {
+        "minX": 1026,
+        "maxX": 1042,
+        "minZ": -1440,
+        "maxZ": -1424
+      },
+      {
+        "minX": 1174,
+        "maxX": 1190,
+        "minZ": -1400,
+        "maxZ": -1384
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1421,
@@ -28877,6 +50661,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2319,
       "maxZ": -2219
     },
+    "spawnNodes": [
+      {
+        "minX": 922,
+        "maxX": 946,
+        "minZ": -2281,
+        "maxZ": -2257
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 922,
@@ -28912,6 +50704,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5013,
       "maxZ": -4913
     },
+    "spawnNodes": [
+      {
+        "minX": -501,
+        "maxX": -485,
+        "minZ": -4971,
+        "maxZ": -4955
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -501,
@@ -28947,6 +50747,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3215,
       "maxZ": -3115
     },
+    "spawnNodes": [
+      {
+        "minX": 99,
+        "maxX": 115,
+        "minZ": -3173,
+        "maxZ": -3157
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 99,
@@ -28987,6 +50795,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4940,
       "maxZ": -4840
     },
+    "spawnNodes": [
+      {
+        "minX": -1848,
+        "maxX": -1832,
+        "minZ": -4898,
+        "maxZ": -4882
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1848,
@@ -29022,6 +50838,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1649,
       "maxZ": -1549
     },
+    "spawnNodes": [
+      {
+        "minX": 714,
+        "maxX": 734,
+        "minZ": -1609,
+        "maxZ": -1589
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 714,
@@ -29058,6 +50882,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1523,
       "maxZ": -1423
     },
+    "spawnNodes": [
+      {
+        "minX": -1936,
+        "maxX": -1920,
+        "minZ": -1481,
+        "maxZ": -1465
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1936,
@@ -29095,6 +50927,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5483,
       "maxZ": -5284
     },
+    "spawnNodes": [
+      {
+        "minX": -542,
+        "maxX": -478,
+        "minZ": -5473,
+        "maxZ": -5409
+      },
+      {
+        "minX": -596,
+        "maxX": -496,
+        "minZ": -5394,
+        "maxZ": -5294
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -596,
@@ -29131,6 +50977,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1988,
       "maxZ": -1675
     },
+    "spawnNodes": [
+      {
+        "minX": 1245,
+        "maxX": 1365,
+        "minZ": -1978,
+        "maxZ": -1858
+      },
+      {
+        "minX": 961,
+        "maxX": 1041,
+        "minZ": -1765,
+        "maxZ": -1685
+      },
+      {
+        "minX": 1253,
+        "maxX": 1353,
+        "minZ": -1822,
+        "maxZ": -1722
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1245,
@@ -29172,6 +51038,98 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5075,
       "maxZ": -4975
     },
+    "spawnNodes": [
+      {
+        "minX": 658,
+        "maxX": 674,
+        "minZ": -5062,
+        "maxZ": -5046
+      },
+      {
+        "minX": 667,
+        "maxX": 683,
+        "minZ": -5057,
+        "maxZ": -5041
+      },
+      {
+        "minX": 666,
+        "maxX": 682,
+        "minZ": -5037,
+        "maxZ": -5021
+      },
+      {
+        "minX": 649,
+        "maxX": 665,
+        "minZ": -5036,
+        "maxZ": -5020
+      },
+      {
+        "minX": 649,
+        "maxX": 665,
+        "minZ": -5037,
+        "maxZ": -5021
+      },
+      {
+        "minX": 619,
+        "maxX": 635,
+        "minZ": -5033,
+        "maxZ": -5017
+      },
+      {
+        "minX": 619,
+        "maxX": 635,
+        "minZ": -5034,
+        "maxZ": -5018
+      },
+      {
+        "minX": 585,
+        "maxX": 601,
+        "minZ": -5037,
+        "maxZ": -5021
+      },
+      {
+        "minX": 590,
+        "maxX": 606,
+        "minZ": -5031,
+        "maxZ": -5015
+      },
+      {
+        "minX": 607,
+        "maxX": 623,
+        "minZ": -5014,
+        "maxZ": -4998
+      },
+      {
+        "minX": 607,
+        "maxX": 623,
+        "minZ": -5015,
+        "maxZ": -4999
+      },
+      {
+        "minX": 632,
+        "maxX": 648,
+        "minZ": -5004,
+        "maxZ": -4988
+      },
+      {
+        "minX": 632,
+        "maxX": 648,
+        "minZ": -5005,
+        "maxZ": -4989
+      },
+      {
+        "minX": 638,
+        "maxX": 654,
+        "minZ": -5029,
+        "maxZ": -5013
+      },
+      {
+        "minX": 646,
+        "maxX": 662,
+        "minZ": -5032,
+        "maxZ": -5016
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 585,
@@ -29212,6 +51170,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4685,
       "maxZ": -4585
     },
+    "spawnNodes": [
+      {
+        "minX": -1631,
+        "maxX": -1607,
+        "minZ": -4647,
+        "maxZ": -4623
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1631,
@@ -29252,6 +51218,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4685,
       "maxZ": -4585
     },
+    "spawnNodes": [
+      {
+        "minX": -1631,
+        "maxX": -1607,
+        "minZ": -4647,
+        "maxZ": -4623
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1631,
@@ -29292,6 +51266,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4685,
       "maxZ": -4585
     },
+    "spawnNodes": [
+      {
+        "minX": -1631,
+        "maxX": -1607,
+        "minZ": -4647,
+        "maxZ": -4623
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1631,
@@ -29327,6 +51309,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -877,
       "maxZ": -487
     },
+    "spawnNodes": [
+      {
+        "minX": -2229,
+        "maxX": -2213,
+        "minZ": -850,
+        "maxZ": -834
+      },
+      {
+        "minX": -1820,
+        "maxX": -1804,
+        "minZ": -849,
+        "maxZ": -833
+      },
+      {
+        "minX": -1798,
+        "maxX": -1782,
+        "minZ": -717,
+        "maxZ": -701
+      },
+      {
+        "minX": -1812,
+        "maxX": -1796,
+        "minZ": -616,
+        "maxZ": -600
+      },
+      {
+        "minX": -2108,
+        "maxX": -2092,
+        "minZ": -533,
+        "maxZ": -517
+      },
+      {
+        "minX": -2108,
+        "maxX": -2092,
+        "minZ": -533,
+        "maxZ": -517
+      },
+      {
+        "minX": -2234,
+        "maxX": -2218,
+        "minZ": -845,
+        "maxZ": -829
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2251,
@@ -29386,6 +51412,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2155,
       "maxZ": -2055
     },
+    "spawnNodes": [
+      {
+        "minX": 68,
+        "maxX": 84,
+        "minZ": -2113,
+        "maxZ": -2097
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 68,
@@ -29423,6 +51457,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5483,
       "maxZ": -5284
     },
+    "spawnNodes": [
+      {
+        "minX": -542,
+        "maxX": -478,
+        "minZ": -5473,
+        "maxZ": -5409
+      },
+      {
+        "minX": -596,
+        "maxX": -496,
+        "minZ": -5394,
+        "maxZ": -5294
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -596,
@@ -29461,6 +51509,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1508,
       "maxZ": -1336
     },
+    "spawnNodes": [
+      {
+        "minX": -2203,
+        "maxX": -2187,
+        "minZ": -1390,
+        "maxZ": -1374
+      },
+      {
+        "minX": -2175,
+        "maxX": -2159,
+        "minZ": -1438,
+        "maxZ": -1422
+      },
+      {
+        "minX": -2130,
+        "maxX": -2114,
+        "minZ": -1390,
+        "maxZ": -1374
+      },
+      {
+        "minX": -2247,
+        "maxX": -2231,
+        "minZ": -1498,
+        "maxZ": -1482
+      },
+      {
+        "minX": -2258,
+        "maxX": -2242,
+        "minZ": -1496,
+        "maxZ": -1480
+      },
+      {
+        "minX": -2238,
+        "maxX": -2222,
+        "minZ": -1490,
+        "maxZ": -1474
+      },
+      {
+        "minX": -2248,
+        "maxX": -2232,
+        "minZ": -1391,
+        "maxZ": -1375
+      },
+      {
+        "minX": -2246,
+        "maxX": -2230,
+        "minZ": -1374,
+        "maxZ": -1358
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2267,
@@ -29500,6 +51598,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2067,
       "maxZ": -1807
     },
+    "spawnNodes": [
+      {
+        "minX": 129,
+        "maxX": 369,
+        "minZ": -2057,
+        "maxZ": -1817
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 129,
@@ -29537,6 +51643,62 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3644,
       "maxZ": -3365
     },
+    "spawnNodes": [
+      {
+        "minX": 298,
+        "maxX": 314,
+        "minZ": -3531,
+        "maxZ": -3515
+      },
+      {
+        "minX": 341,
+        "maxX": 357,
+        "minZ": -3602,
+        "maxZ": -3586
+      },
+      {
+        "minX": 361,
+        "maxX": 377,
+        "minZ": -3618,
+        "maxZ": -3602
+      },
+      {
+        "minX": 385,
+        "maxX": 401,
+        "minZ": -3634,
+        "maxZ": -3618
+      },
+      {
+        "minX": 494,
+        "maxX": 510,
+        "minZ": -3601,
+        "maxZ": -3585
+      },
+      {
+        "minX": 405,
+        "maxX": 421,
+        "minZ": -3412,
+        "maxZ": -3396
+      },
+      {
+        "minX": 492,
+        "maxX": 508,
+        "minZ": -3500,
+        "maxZ": -3484
+      },
+      {
+        "minX": 406,
+        "maxX": 422,
+        "minZ": -3411,
+        "maxZ": -3395
+      },
+      {
+        "minX": 372,
+        "maxX": 388,
+        "minZ": -3582,
+        "maxZ": -3566
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 298,
@@ -29591,6 +51753,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3594,
       "maxZ": -3406
     },
+    "spawnNodes": [
+      {
+        "minX": 391,
+        "maxX": 407,
+        "minZ": -3582,
+        "maxZ": -3566
+      },
+      {
+        "minX": 365,
+        "maxX": 381,
+        "minZ": -3565,
+        "maxZ": -3549
+      },
+      {
+        "minX": 322,
+        "maxX": 338,
+        "minZ": -3574,
+        "maxZ": -3558
+      },
+      {
+        "minX": 440,
+        "maxX": 456,
+        "minZ": -3584,
+        "maxZ": -3568
+      },
+      {
+        "minX": 465,
+        "maxX": 489,
+        "minZ": -3510,
+        "maxZ": -3486
+      },
+      {
+        "minX": 431,
+        "maxX": 451,
+        "minZ": -3468,
+        "maxZ": -3448
+      },
+      {
+        "minX": 341,
+        "maxX": 361,
+        "minZ": -3436,
+        "maxZ": -3416
+      },
+      {
+        "minX": 397,
+        "maxX": 413,
+        "minZ": -3476,
+        "maxZ": -3460
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 322,
@@ -29628,6 +51840,62 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3572,
       "maxZ": -3442
     },
+    "spawnNodes": [
+      {
+        "minX": 458,
+        "maxX": 478,
+        "minZ": -3543,
+        "maxZ": -3523
+      },
+      {
+        "minX": 407,
+        "maxX": 437,
+        "minZ": -3532,
+        "maxZ": -3502
+      },
+      {
+        "minX": 383,
+        "maxX": 413,
+        "minZ": -3500,
+        "maxZ": -3470
+      },
+      {
+        "minX": 367,
+        "maxX": 397,
+        "minZ": -3495,
+        "maxZ": -3465
+      },
+      {
+        "minX": 333,
+        "maxX": 363,
+        "minZ": -3482,
+        "maxZ": -3452
+      },
+      {
+        "minX": 336,
+        "maxX": 366,
+        "minZ": -3511,
+        "maxZ": -3481
+      },
+      {
+        "minX": 377,
+        "maxX": 393,
+        "minZ": -3531,
+        "maxZ": -3515
+      },
+      {
+        "minX": 361,
+        "maxX": 377,
+        "minZ": -3533,
+        "maxZ": -3517
+      },
+      {
+        "minX": 355,
+        "maxX": 371,
+        "minZ": -3552,
+        "maxZ": -3536
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 333,
@@ -29664,6 +51932,80 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3578,
       "maxZ": -3419
     },
+    "spawnNodes": [
+      {
+        "minX": 378,
+        "maxX": 394,
+        "minZ": -3531,
+        "maxZ": -3515
+      },
+      {
+        "minX": 371,
+        "maxX": 387,
+        "minZ": -3548,
+        "maxZ": -3532
+      },
+      {
+        "minX": 359,
+        "maxX": 375,
+        "minZ": -3540,
+        "maxZ": -3524
+      },
+      {
+        "minX": 343,
+        "maxX": 359,
+        "minZ": -3525,
+        "maxZ": -3509
+      },
+      {
+        "minX": 330,
+        "maxX": 346,
+        "minZ": -3509,
+        "maxZ": -3493
+      },
+      {
+        "minX": 348,
+        "maxX": 364,
+        "minZ": -3503,
+        "maxZ": -3487
+      },
+      {
+        "minX": 426,
+        "maxX": 450,
+        "minZ": -3501,
+        "maxZ": -3477
+      },
+      {
+        "minX": 412,
+        "maxX": 432,
+        "minZ": -3479,
+        "maxZ": -3459
+      },
+      {
+        "minX": 394,
+        "maxX": 414,
+        "minZ": -3461,
+        "maxZ": -3441
+      },
+      {
+        "minX": 370,
+        "maxX": 394,
+        "minZ": -3453,
+        "maxZ": -3429
+      },
+      {
+        "minX": 404,
+        "maxX": 420,
+        "minZ": -3459,
+        "maxZ": -3443
+      },
+      {
+        "minX": 403,
+        "maxX": 423,
+        "minZ": -3568,
+        "maxZ": -3548
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 330,
@@ -29700,6 +52042,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3588,
       "maxZ": -3488
     },
+    "spawnNodes": [
+      {
+        "minX": 334,
+        "maxX": 352,
+        "minZ": -3547,
+        "maxZ": -3529
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 334,
@@ -29735,6 +52085,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3584,
       "maxZ": -3484
     },
+    "spawnNodes": [
+      {
+        "minX": 377,
+        "maxX": 393,
+        "minZ": -3531,
+        "maxZ": -3515
+      },
+      {
+        "minX": 361,
+        "maxX": 377,
+        "minZ": -3533,
+        "maxZ": -3517
+      },
+      {
+        "minX": 355,
+        "maxX": 371,
+        "minZ": -3552,
+        "maxZ": -3536
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 338,
@@ -29770,6 +52140,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3584,
       "maxZ": -3484
     },
+    "spawnNodes": [
+      {
+        "minX": 377,
+        "maxX": 393,
+        "minZ": -3531,
+        "maxZ": -3515
+      },
+      {
+        "minX": 361,
+        "maxX": 377,
+        "minZ": -3533,
+        "maxZ": -3517
+      },
+      {
+        "minX": 355,
+        "maxX": 371,
+        "minZ": -3552,
+        "maxZ": -3536
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 338,
@@ -29806,6 +52196,68 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3578,
       "maxZ": -3419
     },
+    "spawnNodes": [
+      {
+        "minX": 368,
+        "maxX": 388,
+        "minZ": -3533,
+        "maxZ": -3513
+      },
+      {
+        "minX": 373,
+        "maxX": 393,
+        "minZ": -3527,
+        "maxZ": -3507
+      },
+      {
+        "minX": 361,
+        "maxX": 381,
+        "minZ": -3539,
+        "maxZ": -3519
+      },
+      {
+        "minX": 375,
+        "maxX": 395,
+        "minZ": -3536,
+        "maxZ": -3516
+      },
+      {
+        "minX": 426,
+        "maxX": 450,
+        "minZ": -3501,
+        "maxZ": -3477
+      },
+      {
+        "minX": 412,
+        "maxX": 432,
+        "minZ": -3479,
+        "maxZ": -3459
+      },
+      {
+        "minX": 394,
+        "maxX": 414,
+        "minZ": -3461,
+        "maxZ": -3441
+      },
+      {
+        "minX": 370,
+        "maxX": 394,
+        "minZ": -3453,
+        "maxZ": -3429
+      },
+      {
+        "minX": 404,
+        "maxX": 420,
+        "minZ": -3459,
+        "maxZ": -3443
+      },
+      {
+        "minX": 403,
+        "maxX": 423,
+        "minZ": -3568,
+        "maxZ": -3548
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 361,
@@ -29841,6 +52293,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3584,
       "maxZ": -3484
     },
+    "spawnNodes": [
+      {
+        "minX": 377,
+        "maxX": 393,
+        "minZ": -3531,
+        "maxZ": -3515
+      },
+      {
+        "minX": 361,
+        "maxX": 377,
+        "minZ": -3533,
+        "maxZ": -3517
+      },
+      {
+        "minX": 355,
+        "maxX": 371,
+        "minZ": -3552,
+        "maxZ": -3536
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 338,
@@ -29878,6 +52350,62 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -918,
       "maxZ": -577
     },
+    "spawnNodes": [
+      {
+        "minX": -2216,
+        "maxX": -2200,
+        "minZ": -850,
+        "maxZ": -834
+      },
+      {
+        "minX": -2121,
+        "maxX": -2105,
+        "minZ": -879,
+        "maxZ": -863
+      },
+      {
+        "minX": -2050,
+        "maxX": -2034,
+        "minZ": -852,
+        "maxZ": -836
+      },
+      {
+        "minX": -2054,
+        "maxX": -2038,
+        "minZ": -716,
+        "maxZ": -700
+      },
+      {
+        "minX": -2063,
+        "maxX": -2047,
+        "minZ": -603,
+        "maxZ": -587
+      },
+      {
+        "minX": -1916,
+        "maxX": -1900,
+        "minZ": -636,
+        "maxZ": -620
+      },
+      {
+        "minX": -1819,
+        "maxX": -1803,
+        "minZ": -815,
+        "maxZ": -799
+      },
+      {
+        "minX": -1911,
+        "maxX": -1895,
+        "minZ": -908,
+        "maxZ": -892
+      },
+      {
+        "minX": -2024,
+        "maxX": -2008,
+        "minZ": -907,
+        "maxZ": -891
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2121,
@@ -29950,6 +52478,68 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4907,
       "maxZ": -4488
     },
+    "spawnNodes": [
+      {
+        "minX": 1175,
+        "maxX": 1215,
+        "minZ": -4546,
+        "maxZ": -4506
+      },
+      {
+        "minX": 1184,
+        "maxX": 1224,
+        "minZ": -4620,
+        "maxZ": -4580
+      },
+      {
+        "minX": 1183,
+        "maxX": 1223,
+        "minZ": -4704,
+        "maxZ": -4664
+      },
+      {
+        "minX": 1311,
+        "maxX": 1351,
+        "minZ": -4596,
+        "maxZ": -4556
+      },
+      {
+        "minX": 1360,
+        "maxX": 1420,
+        "minZ": -4558,
+        "maxZ": -4498
+      },
+      {
+        "minX": 1240,
+        "maxX": 1300,
+        "minZ": -4828,
+        "maxZ": -4768
+      },
+      {
+        "minX": 1176,
+        "maxX": 1236,
+        "minZ": -4887,
+        "maxZ": -4827
+      },
+      {
+        "minX": 1166,
+        "maxX": 1246,
+        "minZ": -4897,
+        "maxZ": -4817
+      },
+      {
+        "minX": 1378,
+        "maxX": 1418,
+        "minZ": -4636,
+        "maxZ": -4596
+      },
+      {
+        "minX": 1230,
+        "maxX": 1270,
+        "minZ": -4596,
+        "maxZ": -4556
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1175,
@@ -29993,6 +52583,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4455,
       "maxZ": -4324
     },
+    "spawnNodes": [
+      {
+        "minX": 1224,
+        "maxX": 1254,
+        "minZ": -4364,
+        "maxZ": -4334
+      },
+      {
+        "minX": 1235,
+        "maxX": 1267,
+        "minZ": -4402,
+        "maxZ": -4370
+      },
+      {
+        "minX": 1222,
+        "maxX": 1262,
+        "minZ": -4445,
+        "maxZ": -4405
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1217,
@@ -30028,6 +52638,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4894,
       "maxZ": -4794
     },
+    "spawnNodes": [
+      {
+        "minX": 961,
+        "maxX": 1031,
+        "minZ": -4879,
+        "maxZ": -4809
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 961,
@@ -30063,6 +52681,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4465,
       "maxZ": -4286
     },
+    "spawnNodes": [
+      {
+        "minX": 1431,
+        "maxX": 1447,
+        "minZ": -4316,
+        "maxZ": -4300
+      },
+      {
+        "minX": 1390,
+        "maxX": 1406,
+        "minZ": -4319,
+        "maxZ": -4303
+      },
+      {
+        "minX": 1471,
+        "maxX": 1487,
+        "minZ": -4312,
+        "maxZ": -4296
+      },
+      {
+        "minX": 1482,
+        "maxX": 1498,
+        "minZ": -4363,
+        "maxZ": -4347
+      },
+      {
+        "minX": 1463,
+        "maxX": 1479,
+        "minZ": -4421,
+        "maxZ": -4405
+      },
+      {
+        "minX": 1474,
+        "maxX": 1490,
+        "minZ": -4449,
+        "maxZ": -4433
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1390,
@@ -30098,6 +52754,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2155,
       "maxZ": -2055
     },
+    "spawnNodes": [
+      {
+        "minX": 68,
+        "maxX": 84,
+        "minZ": -2113,
+        "maxZ": -2097
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 68,
@@ -30134,6 +52798,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1832,
       "maxZ": -1675
     },
+    "spawnNodes": [
+      {
+        "minX": 961,
+        "maxX": 1041,
+        "minZ": -1765,
+        "maxZ": -1685
+      },
+      {
+        "minX": 1253,
+        "maxX": 1353,
+        "minZ": -1822,
+        "maxZ": -1722
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1253,
@@ -30176,6 +52854,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -804,
       "maxZ": -527
     },
+    "spawnNodes": [
+      {
+        "minX": -1835,
+        "maxX": -1819,
+        "minZ": -794,
+        "maxZ": -778
+      },
+      {
+        "minX": -2011,
+        "maxX": -1995,
+        "minZ": -723,
+        "maxZ": -707
+      },
+      {
+        "minX": -1949,
+        "maxX": -1933,
+        "minZ": -553,
+        "maxZ": -537
+      },
+      {
+        "minX": -2268,
+        "maxX": -2252,
+        "minZ": -612,
+        "maxZ": -596
+      },
+      {
+        "minX": -2283,
+        "maxX": -2267,
+        "minZ": -663,
+        "maxZ": -647
+      },
+      {
+        "minX": -2084,
+        "maxX": -2068,
+        "minZ": -627,
+        "maxZ": -611
+      },
+      {
+        "minX": -1983,
+        "maxX": -1967,
+        "minZ": -663,
+        "maxZ": -647
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2084,
@@ -30229,6 +52951,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5451,
       "maxZ": -5351
     },
+    "spawnNodes": [
+      {
+        "minX": 1224,
+        "maxX": 1240,
+        "minZ": -5416,
+        "maxZ": -5400
+      },
+      {
+        "minX": 1215,
+        "maxX": 1231,
+        "minZ": -5402,
+        "maxZ": -5386
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1200,
@@ -30265,6 +53001,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5511,
       "maxZ": -5411
     },
+    "spawnNodes": [
+      {
+        "minX": 1206,
+        "maxX": 1242,
+        "minZ": -5479,
+        "maxZ": -5443
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1206,
@@ -30301,6 +53045,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -982,
       "maxZ": -649
     },
+    "spawnNodes": [
+      {
+        "minX": -105,
+        "maxX": 35,
+        "minZ": -799,
+        "maxZ": -659
+      },
+      {
+        "minX": -61,
+        "maxX": 79,
+        "minZ": -972,
+        "maxZ": -832
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -105,
@@ -30338,6 +53096,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1016,
       "maxZ": -704
     },
+    "spawnNodes": [
+      {
+        "minX": 128,
+        "maxX": 168,
+        "minZ": -1006,
+        "maxZ": -966
+      },
+      {
+        "minX": 107,
+        "maxX": 147,
+        "minZ": -941,
+        "maxZ": -901
+      },
+      {
+        "minX": 197,
+        "maxX": 241,
+        "minZ": -758,
+        "maxZ": -714
+      },
+      {
+        "minX": 45,
+        "maxX": 77,
+        "minZ": -975,
+        "maxZ": -943
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 45,
@@ -30381,6 +53165,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -850,
       "maxZ": -750
     },
+    "spawnNodes": [
+      {
+        "minX": -61,
+        "maxX": -45,
+        "minZ": -787,
+        "maxZ": -771
+      },
+      {
+        "minX": -37,
+        "maxX": -21,
+        "minZ": -830,
+        "maxZ": -814
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -69,
@@ -30417,6 +53215,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -982,
       "maxZ": -649
     },
+    "spawnNodes": [
+      {
+        "minX": -105,
+        "maxX": 35,
+        "minZ": -799,
+        "maxZ": -659
+      },
+      {
+        "minX": -61,
+        "maxX": 79,
+        "minZ": -972,
+        "maxZ": -832
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -105,
@@ -30453,6 +53265,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -776,
       "maxZ": -676
     },
+    "spawnNodes": [
+      {
+        "minX": -666,
+        "maxX": -650,
+        "minZ": -734,
+        "maxZ": -718
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -666,
@@ -30489,6 +53309,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1365,
       "maxZ": -1179
     },
+    "spawnNodes": [
+      {
+        "minX": 224,
+        "maxX": 240,
+        "minZ": -1355,
+        "maxZ": -1339
+      },
+      {
+        "minX": 289,
+        "maxX": 305,
+        "minZ": -1205,
+        "maxZ": -1189
+      },
+      {
+        "minX": 291,
+        "maxX": 307,
+        "minZ": -1250,
+        "maxZ": -1234
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 270,
@@ -30532,6 +53372,188 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5030,
       "maxZ": -4415
     },
+    "spawnNodes": [
+      {
+        "minX": 341,
+        "maxX": 357,
+        "minZ": -4441,
+        "maxZ": -4425
+      },
+      {
+        "minX": 351,
+        "maxX": 371,
+        "minZ": -4457,
+        "maxZ": -4437
+      },
+      {
+        "minX": 375,
+        "maxX": 391,
+        "minZ": -4513,
+        "maxZ": -4497
+      },
+      {
+        "minX": 373,
+        "maxX": 389,
+        "minZ": -4497,
+        "maxZ": -4481
+      },
+      {
+        "minX": 337,
+        "maxX": 353,
+        "minZ": -4534,
+        "maxZ": -4518
+      },
+      {
+        "minX": 356,
+        "maxX": 372,
+        "minZ": -4535,
+        "maxZ": -4519
+      },
+      {
+        "minX": 367,
+        "maxX": 383,
+        "minZ": -4518,
+        "maxZ": -4502
+      },
+      {
+        "minX": 361,
+        "maxX": 379,
+        "minZ": -4494,
+        "maxZ": -4476
+      },
+      {
+        "minX": 366,
+        "maxX": 382,
+        "minZ": -4927,
+        "maxZ": -4911
+      },
+      {
+        "minX": 385,
+        "maxX": 401,
+        "minZ": -4948,
+        "maxZ": -4932
+      },
+      {
+        "minX": 400,
+        "maxX": 416,
+        "minZ": -4963,
+        "maxZ": -4947
+      },
+      {
+        "minX": 411,
+        "maxX": 427,
+        "minZ": -4977,
+        "maxZ": -4961
+      },
+      {
+        "minX": 421,
+        "maxX": 437,
+        "minZ": -5009,
+        "maxZ": -4993
+      },
+      {
+        "minX": 408,
+        "maxX": 424,
+        "minZ": -4997,
+        "maxZ": -4981
+      },
+      {
+        "minX": 384,
+        "maxX": 400,
+        "minZ": -5007,
+        "maxZ": -4991
+      },
+      {
+        "minX": 369,
+        "maxX": 385,
+        "minZ": -5020,
+        "maxZ": -5004
+      },
+      {
+        "minX": 324,
+        "maxX": 340,
+        "minZ": -4664,
+        "maxZ": -4648
+      },
+      {
+        "minX": 314,
+        "maxX": 330,
+        "minZ": -4686,
+        "maxZ": -4670
+      },
+      {
+        "minX": 309,
+        "maxX": 325,
+        "minZ": -4706,
+        "maxZ": -4690
+      },
+      {
+        "minX": 290,
+        "maxX": 306,
+        "minZ": -4740,
+        "maxZ": -4724
+      },
+      {
+        "minX": 270,
+        "maxX": 286,
+        "minZ": -4770,
+        "maxZ": -4754
+      },
+      {
+        "minX": 254,
+        "maxX": 270,
+        "minZ": -4786,
+        "maxZ": -4770
+      },
+      {
+        "minX": 225,
+        "maxX": 241,
+        "minZ": -4786,
+        "maxZ": -4770
+      },
+      {
+        "minX": 275,
+        "maxX": 291,
+        "minZ": -4813,
+        "maxZ": -4797
+      },
+      {
+        "minX": 289,
+        "maxX": 305,
+        "minZ": -4818,
+        "maxZ": -4802
+      },
+      {
+        "minX": 299,
+        "maxX": 315,
+        "minZ": -4834,
+        "maxZ": -4818
+      },
+      {
+        "minX": 300,
+        "maxX": 316,
+        "minZ": -4855,
+        "maxZ": -4839
+      },
+      {
+        "minX": 308,
+        "maxX": 324,
+        "minZ": -4868,
+        "maxZ": -4852
+      },
+      {
+        "minX": 315,
+        "maxX": 331,
+        "minZ": -4891,
+        "maxZ": -4875
+      },
+      {
+        "minX": 323,
+        "maxX": 339,
+        "minZ": -4913,
+        "maxZ": -4897
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 225,
@@ -30574,6 +53596,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4965,
       "maxZ": -4865
     },
+    "spawnNodes": [
+      {
+        "minX": -824,
+        "maxX": -794,
+        "minZ": -4930,
+        "maxZ": -4900
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -824,
@@ -30611,6 +53641,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1129,
       "maxZ": -830
     },
+    "spawnNodes": [
+      {
+        "minX": 1006,
+        "maxX": 1022,
+        "minZ": -895,
+        "maxZ": -879
+      },
+      {
+        "minX": 921,
+        "maxX": 937,
+        "minZ": -856,
+        "maxZ": -840
+      },
+      {
+        "minX": 1000,
+        "maxX": 1020,
+        "minZ": -1119,
+        "maxZ": -1099
+      },
+      {
+        "minX": 1092,
+        "maxX": 1108,
+        "minZ": -960,
+        "maxZ": -944
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1000,
@@ -30664,6 +53720,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4709,
       "maxZ": -4561
     },
+    "spawnNodes": [
+      {
+        "minX": 885,
+        "maxX": 901,
+        "minZ": -4699,
+        "maxZ": -4683
+      },
+      {
+        "minX": 882,
+        "maxX": 898,
+        "minZ": -4663,
+        "maxZ": -4647
+      },
+      {
+        "minX": 828,
+        "maxX": 844,
+        "minZ": -4607,
+        "maxZ": -4591
+      },
+      {
+        "minX": 860,
+        "maxX": 876,
+        "minZ": -4608,
+        "maxZ": -4592
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 824,
@@ -30699,6 +53781,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1509,
       "maxZ": -1409
     },
+    "spawnNodes": [
+      {
+        "minX": -163,
+        "maxX": -145,
+        "minZ": -1468,
+        "maxZ": -1450
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -163,
@@ -30734,6 +53824,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5318,
       "maxZ": -5218
     },
+    "spawnNodes": [
+      {
+        "minX": 659,
+        "maxX": 675,
+        "minZ": -5287,
+        "maxZ": -5271
+      },
+      {
+        "minX": 659,
+        "maxX": 675,
+        "minZ": -5283,
+        "maxZ": -5267
+      },
+      {
+        "minX": 659,
+        "maxX": 675,
+        "minZ": -5279,
+        "maxZ": -5263
+      },
+      {
+        "minX": 655,
+        "maxX": 671,
+        "minZ": -5274,
+        "maxZ": -5258
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 637,
@@ -30770,6 +53886,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1998,
       "maxZ": -1768
     },
+    "spawnNodes": [
+      {
+        "minX": -624,
+        "maxX": -608,
+        "minZ": -1988,
+        "maxZ": -1972
+      },
+      {
+        "minX": -634,
+        "maxX": -618,
+        "minZ": -1794,
+        "maxZ": -1778
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -634,
@@ -30811,6 +53941,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5515,
       "maxZ": -5415
     },
+    "spawnNodes": [
+      {
+        "minX": -592,
+        "maxX": -576,
+        "minZ": -5473,
+        "maxZ": -5457
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -592,
@@ -30846,6 +53984,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1244,
       "maxZ": -1031
     },
+    "spawnNodes": [
+      {
+        "minX": -570,
+        "maxX": -540,
+        "minZ": -1234,
+        "maxZ": -1204
+      },
+      {
+        "minX": -529,
+        "maxX": -489,
+        "minZ": -1123,
+        "maxZ": -1083
+      },
+      {
+        "minX": -450,
+        "maxX": -390,
+        "minZ": -1101,
+        "maxZ": -1041
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -529,
@@ -30887,6 +54045,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1632,
       "maxZ": -1511
     },
+    "spawnNodes": [
+      {
+        "minX": 711,
+        "maxX": 751,
+        "minZ": -1622,
+        "maxZ": -1582
+      },
+      {
+        "minX": 745,
+        "maxX": 785,
+        "minZ": -1583,
+        "maxZ": -1543
+      },
+      {
+        "minX": 679,
+        "maxX": 719,
+        "minZ": -1606,
+        "maxZ": -1566
+      },
+      {
+        "minX": 710,
+        "maxX": 750,
+        "minZ": -1561,
+        "maxZ": -1521
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 679,
@@ -30922,6 +54106,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5150,
       "maxZ": -5050
     },
+    "spawnNodes": [
+      {
+        "minX": -1163,
+        "maxX": -1147,
+        "minZ": -5101,
+        "maxZ": -5085
+      },
+      {
+        "minX": -1163,
+        "maxX": -1147,
+        "minZ": -5116,
+        "maxZ": -5100
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1183,
@@ -30960,6 +54158,146 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4297,
       "maxZ": -2149
     },
+    "spawnNodes": [
+      {
+        "minX": -1083,
+        "maxX": -1043,
+        "minZ": -2217,
+        "maxZ": -2177
+      },
+      {
+        "minX": 337,
+        "maxX": 377,
+        "minZ": -2258,
+        "maxZ": -2218
+      },
+      {
+        "minX": 373,
+        "maxX": 413,
+        "minZ": -2199,
+        "maxZ": -2159
+      },
+      {
+        "minX": 739,
+        "maxX": 779,
+        "minZ": -2490,
+        "maxZ": -2450
+      },
+      {
+        "minX": -2075,
+        "maxX": -2035,
+        "minZ": -4284,
+        "maxZ": -4244
+      },
+      {
+        "minX": -2155,
+        "maxX": -2115,
+        "minZ": -4275,
+        "maxZ": -4235
+      },
+      {
+        "minX": -1981,
+        "maxX": -1941,
+        "minZ": -4230,
+        "maxZ": -4190
+      },
+      {
+        "minX": -1384,
+        "maxX": -1344,
+        "minZ": -4241,
+        "maxZ": -4201
+      },
+      {
+        "minX": -1336,
+        "maxX": -1296,
+        "minZ": -4214,
+        "maxZ": -4174
+      },
+      {
+        "minX": -1252,
+        "maxX": -1212,
+        "minZ": -4230,
+        "maxZ": -4190
+      },
+      {
+        "minX": -957,
+        "maxX": -917,
+        "minZ": -4267,
+        "maxZ": -4227
+      },
+      {
+        "minX": -852,
+        "maxX": -812,
+        "minZ": -4225,
+        "maxZ": -4185
+      },
+      {
+        "minX": -277,
+        "maxX": -237,
+        "minZ": -4124,
+        "maxZ": -4084
+      },
+      {
+        "minX": -267,
+        "maxX": -227,
+        "minZ": -2982,
+        "maxZ": -2942
+      },
+      {
+        "minX": 1250,
+        "maxX": 1290,
+        "minZ": -4084,
+        "maxZ": -4044
+      },
+      {
+        "minX": 1230,
+        "maxX": 1270,
+        "minZ": -4023,
+        "maxZ": -3983
+      },
+      {
+        "minX": 1260,
+        "maxX": 1300,
+        "minZ": -3973,
+        "maxZ": -3933
+      },
+      {
+        "minX": 1349,
+        "maxX": 1389,
+        "minZ": -3987,
+        "maxZ": -3947
+      },
+      {
+        "minX": 1398,
+        "maxX": 1438,
+        "minZ": -4029,
+        "maxZ": -3989
+      },
+      {
+        "minX": 1437,
+        "maxX": 1457,
+        "minZ": -4067,
+        "maxZ": -4047
+      },
+      {
+        "minX": 1356,
+        "maxX": 1396,
+        "minZ": -3945,
+        "maxZ": -3905
+      },
+      {
+        "minX": 1334,
+        "maxX": 1374,
+        "minZ": -3895,
+        "maxZ": -3855
+      },
+      {
+        "minX": 1217,
+        "maxX": 1257,
+        "minZ": -4024,
+        "maxZ": -3984
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1217,
@@ -31058,6 +54396,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2965,
       "maxZ": -2745
     },
+    "spawnNodes": [
+      {
+        "minX": -1014,
+        "maxX": -814,
+        "minZ": -2955,
+        "maxZ": -2755
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1014,
@@ -31093,6 +54439,86 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1779,
       "maxZ": -1539
     },
+    "spawnNodes": [
+      {
+        "minX": -1733,
+        "maxX": -1717,
+        "minZ": -1721,
+        "maxZ": -1705
+      },
+      {
+        "minX": -1797,
+        "maxX": -1781,
+        "minZ": -1565,
+        "maxZ": -1549
+      },
+      {
+        "minX": -1669,
+        "maxX": -1653,
+        "minZ": -1632,
+        "maxZ": -1616
+      },
+      {
+        "minX": -1654,
+        "maxX": -1638,
+        "minZ": -1650,
+        "maxZ": -1634
+      },
+      {
+        "minX": -1632,
+        "maxX": -1616,
+        "minZ": -1730,
+        "maxZ": -1714
+      },
+      {
+        "minX": -2079,
+        "maxX": -2063,
+        "minZ": -1717,
+        "maxZ": -1701
+      },
+      {
+        "minX": -1659,
+        "maxX": -1643,
+        "minZ": -1627,
+        "maxZ": -1611
+      },
+      {
+        "minX": -1666,
+        "maxX": -1650,
+        "minZ": -1644,
+        "maxZ": -1628
+      },
+      {
+        "minX": -1671,
+        "maxX": -1655,
+        "minZ": -1608,
+        "maxZ": -1592
+      },
+      {
+        "minX": -1723,
+        "maxX": -1707,
+        "minZ": -1769,
+        "maxZ": -1753
+      },
+      {
+        "minX": -2036,
+        "maxX": -2020,
+        "minZ": -1634,
+        "maxZ": -1618
+      },
+      {
+        "minX": -2039,
+        "maxX": -2023,
+        "minZ": -1667,
+        "maxZ": -1651
+      },
+      {
+        "minX": -2048,
+        "maxX": -2032,
+        "minZ": -1667,
+        "maxZ": -1651
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2079,
@@ -31152,6 +54578,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1377,
       "maxZ": -1277
     },
+    "spawnNodes": [
+      {
+        "minX": -400,
+        "maxX": -384,
+        "minZ": -1335,
+        "maxZ": -1319
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -400,
@@ -31188,6 +54622,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4327,
       "maxZ": -4227
     },
+    "spawnNodes": [
+      {
+        "minX": -894,
+        "maxX": -878,
+        "minZ": -4294,
+        "maxZ": -4278
+      },
+      {
+        "minX": -897,
+        "maxX": -881,
+        "minZ": -4293,
+        "maxZ": -4277
+      },
+      {
+        "minX": -898,
+        "maxX": -882,
+        "minZ": -4290,
+        "maxZ": -4274
+      },
+      {
+        "minX": -899,
+        "maxX": -883,
+        "minZ": -4287,
+        "maxZ": -4271
+      },
+      {
+        "minX": -901,
+        "maxX": -885,
+        "minZ": -4284,
+        "maxZ": -4268
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -920,
@@ -31224,6 +54690,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2016,
       "maxZ": -1768
     },
+    "spawnNodes": [
+      {
+        "minX": 580,
+        "maxX": 620,
+        "minZ": -1818,
+        "maxZ": -1778
+      },
+      {
+        "minX": 784,
+        "maxX": 814,
+        "minZ": -2006,
+        "maxZ": -1976
+      },
+      {
+        "minX": 767,
+        "maxX": 807,
+        "minZ": -1947,
+        "maxZ": -1907
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 763,
@@ -31266,6 +54752,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5351,
       "maxZ": -5120
     },
+    "spawnNodes": [
+      {
+        "minX": -1935,
+        "maxX": -1919,
+        "minZ": -5302,
+        "maxZ": -5286
+      },
+      {
+        "minX": -2158,
+        "maxX": -2142,
+        "minZ": -5338,
+        "maxZ": -5322
+      },
+      {
+        "minX": -1752,
+        "maxX": -1736,
+        "minZ": -5146,
+        "maxZ": -5130
+      },
+      {
+        "minX": -1529,
+        "maxX": -1513,
+        "minZ": -5191,
+        "maxZ": -5175
+      },
+      {
+        "minX": -1464,
+        "maxX": -1448,
+        "minZ": -5341,
+        "maxZ": -5325
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1464,
@@ -31325,6 +54843,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -486,
       "maxZ": -386
     },
+    "spawnNodes": [
+      {
+        "minX": -498,
+        "maxX": -482,
+        "minZ": -444,
+        "maxZ": -428
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -498,
@@ -31360,6 +54886,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4775,
       "maxZ": -4559
     },
+    "spawnNodes": [
+      {
+        "minX": -32,
+        "maxX": -8,
+        "minZ": -4682,
+        "maxZ": -4658
+      },
+      {
+        "minX": -40,
+        "maxX": 0,
+        "minZ": -4690,
+        "maxZ": -4650
+      },
+      {
+        "minX": -56,
+        "maxX": -32,
+        "minZ": -4601,
+        "maxZ": -4577
+      },
+      {
+        "minX": -64,
+        "maxX": -24,
+        "minZ": -4609,
+        "maxZ": -4569
+      },
+      {
+        "minX": -190,
+        "maxX": -174,
+        "minZ": -4765,
+        "maxZ": -4749
+      },
+      {
+        "minX": -127,
+        "maxX": -97,
+        "minZ": -4690,
+        "maxZ": -4660
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -127,
@@ -31401,6 +54965,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -486,
       "maxZ": -386
     },
+    "spawnNodes": [
+      {
+        "minX": -498,
+        "maxX": -482,
+        "minZ": -444,
+        "maxZ": -428
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -498,
@@ -31441,6 +55013,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4978,
       "maxZ": -4878
     },
+    "spawnNodes": [
+      {
+        "minX": -2116,
+        "maxX": -2100,
+        "minZ": -4928,
+        "maxZ": -4912
+      },
+      {
+        "minX": -2115,
+        "maxX": -2099,
+        "minZ": -4945,
+        "maxZ": -4929
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2135,
@@ -31481,6 +55067,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4996,
       "maxZ": -4896
     },
+    "spawnNodes": [
+      {
+        "minX": -2084,
+        "maxX": -2068,
+        "minZ": -4954,
+        "maxZ": -4938
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2084,
@@ -31521,6 +55115,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4996,
       "maxZ": -4896
     },
+    "spawnNodes": [
+      {
+        "minX": -2084,
+        "maxX": -2068,
+        "minZ": -4954,
+        "maxZ": -4938
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2084,
@@ -31556,6 +55158,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2817,
       "maxZ": -2717
     },
+    "spawnNodes": [
+      {
+        "minX": -259,
+        "maxX": -243,
+        "minZ": -2775,
+        "maxZ": -2759
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -259,
@@ -31591,6 +55201,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3357,
       "maxZ": -3257
     },
+    "spawnNodes": [
+      {
+        "minX": -1224,
+        "maxX": -1208,
+        "minZ": -3315,
+        "maxZ": -3299
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1224,
@@ -31627,6 +55245,104 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4950,
       "maxZ": -4451
     },
+    "spawnNodes": [
+      {
+        "minX": 1222,
+        "maxX": 1252,
+        "minZ": -4775,
+        "maxZ": -4745
+      },
+      {
+        "minX": 1219,
+        "maxX": 1291,
+        "minZ": -4910,
+        "maxZ": -4838
+      },
+      {
+        "minX": 1358,
+        "maxX": 1384,
+        "minZ": -4889,
+        "maxZ": -4863
+      },
+      {
+        "minX": 1368,
+        "maxX": 1394,
+        "minZ": -4823,
+        "maxZ": -4797
+      },
+      {
+        "minX": 1292,
+        "maxX": 1318,
+        "minZ": -4487,
+        "maxZ": -4461
+      },
+      {
+        "minX": 1169,
+        "maxX": 1235,
+        "minZ": -4746,
+        "maxZ": -4680
+      },
+      {
+        "minX": 1157,
+        "maxX": 1187,
+        "minZ": -4724,
+        "maxZ": -4694
+      },
+      {
+        "minX": 1167,
+        "maxX": 1217,
+        "minZ": -4725,
+        "maxZ": -4675
+      },
+      {
+        "minX": 1141,
+        "maxX": 1161,
+        "minZ": -4657,
+        "maxZ": -4637
+      },
+      {
+        "minX": 1206,
+        "maxX": 1292,
+        "minZ": -4866,
+        "maxZ": -4780
+      },
+      {
+        "minX": 1200,
+        "maxX": 1246,
+        "minZ": -4748,
+        "maxZ": -4702
+      },
+      {
+        "minX": 1248,
+        "maxX": 1294,
+        "minZ": -4935,
+        "maxZ": -4889
+      },
+      {
+        "minX": 1285,
+        "maxX": 1351,
+        "minZ": -4919,
+        "maxZ": -4853
+      },
+      {
+        "minX": 1122,
+        "maxX": 1168,
+        "minZ": -4821,
+        "maxZ": -4775
+      },
+      {
+        "minX": 1204,
+        "maxX": 1224,
+        "minZ": -4915,
+        "maxZ": -4895
+      },
+      {
+        "minX": 952,
+        "maxX": 992,
+        "minZ": -4800,
+        "maxZ": -4760
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1122,
@@ -31675,6 +55391,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5531,
       "maxZ": -5429
     },
+    "spawnNodes": [
+      {
+        "minX": -772,
+        "maxX": -732,
+        "minZ": -5494,
+        "maxZ": -5454
+      },
+      {
+        "minX": -787,
+        "maxX": -717,
+        "minZ": -5509,
+        "maxZ": -5439
+      },
+      {
+        "minX": -744,
+        "maxX": -704,
+        "minZ": -5521,
+        "maxZ": -5481
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -787,
@@ -31710,6 +55446,68 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -864,
       "maxZ": -513
     },
+    "spawnNodes": [
+      {
+        "minX": -1920,
+        "maxX": -1900,
+        "minZ": -611,
+        "maxZ": -591
+      },
+      {
+        "minX": -1978,
+        "maxX": -1948,
+        "minZ": -615,
+        "maxZ": -585
+      },
+      {
+        "minX": -1988,
+        "maxX": -1938,
+        "minZ": -625,
+        "maxZ": -575
+      },
+      {
+        "minX": -2039,
+        "maxX": -2019,
+        "minZ": -543,
+        "maxZ": -523
+      },
+      {
+        "minX": -2081,
+        "maxX": -2065,
+        "minZ": -614,
+        "maxZ": -598
+      },
+      {
+        "minX": -2223,
+        "maxX": -2207,
+        "minZ": -683,
+        "maxZ": -667
+      },
+      {
+        "minX": -2258,
+        "maxX": -2242,
+        "minZ": -620,
+        "maxZ": -604
+      },
+      {
+        "minX": -2223,
+        "maxX": -2207,
+        "minZ": -794,
+        "maxZ": -778
+      },
+      {
+        "minX": -2240,
+        "maxX": -2210,
+        "minZ": -854,
+        "maxZ": -824
+      },
+      {
+        "minX": -1812,
+        "maxX": -1796,
+        "minZ": -616,
+        "maxZ": -600
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2039,
@@ -31769,6 +55567,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2036,
       "maxZ": -1516
     },
+    "spawnNodes": [
+      {
+        "minX": -803,
+        "maxX": -303,
+        "minZ": -2026,
+        "maxZ": -1526
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -803,
@@ -31807,6 +55613,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2782,
       "maxZ": -2658
     },
+    "spawnNodes": [
+      {
+        "minX": -218,
+        "maxX": -202,
+        "minZ": -2730,
+        "maxZ": -2714
+      },
+      {
+        "minX": -224,
+        "maxX": -208,
+        "minZ": -2749,
+        "maxZ": -2733
+      },
+      {
+        "minX": -250,
+        "maxX": -234,
+        "minZ": -2772,
+        "maxZ": -2756
+      },
+      {
+        "minX": -239,
+        "maxX": -223,
+        "minZ": -2759,
+        "maxZ": -2743
+      },
+      {
+        "minX": -231,
+        "maxX": -215,
+        "minZ": -2724,
+        "maxZ": -2708
+      },
+      {
+        "minX": -290,
+        "maxX": -274,
+        "minZ": -2684,
+        "maxZ": -2668
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -290,
@@ -31842,6 +55686,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1984,
       "maxZ": -1826
     },
+    "spawnNodes": [
+      {
+        "minX": 210,
+        "maxX": 270,
+        "minZ": -1896,
+        "maxZ": -1836
+      },
+      {
+        "minX": 144,
+        "maxX": 214,
+        "minZ": -1942,
+        "maxZ": -1872
+      },
+      {
+        "minX": 152,
+        "maxX": 202,
+        "minZ": -1974,
+        "maxZ": -1924
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 144,
@@ -31877,6 +55741,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5417,
       "maxZ": -5317
     },
+    "spawnNodes": [
+      {
+        "minX": -123,
+        "maxX": -107,
+        "minZ": -5403,
+        "maxZ": -5387
+      },
+      {
+        "minX": -101,
+        "maxX": -71,
+        "minZ": -5390,
+        "maxZ": -5360
+      },
+      {
+        "minX": -48,
+        "maxX": -18,
+        "minZ": -5361,
+        "maxZ": -5331
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -123,
@@ -31914,6 +55798,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5024,
       "maxZ": -4924
     },
+    "spawnNodes": [
+      {
+        "minX": -1915,
+        "maxX": -1899,
+        "minZ": -4982,
+        "maxZ": -4966
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1915,
@@ -31951,6 +55843,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5047,
       "maxZ": -4947
     },
+    "spawnNodes": [
+      {
+        "minX": -1919,
+        "maxX": -1901,
+        "minZ": -5006,
+        "maxZ": -4988
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1919,
@@ -31988,6 +55888,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5047,
       "maxZ": -4947
     },
+    "spawnNodes": [
+      {
+        "minX": -1919,
+        "maxX": -1901,
+        "minZ": -5006,
+        "maxZ": -4988
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1919,
@@ -32027,6 +55935,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4068,
       "maxZ": -3912
     },
+    "spawnNodes": [
+      {
+        "minX": 357,
+        "maxX": 373,
+        "minZ": -3984,
+        "maxZ": -3968
+      },
+      {
+        "minX": 148,
+        "maxX": 164,
+        "minZ": -3953,
+        "maxZ": -3937
+      },
+      {
+        "minX": 156,
+        "maxX": 172,
+        "minZ": -3980,
+        "maxZ": -3964
+      },
+      {
+        "minX": 312,
+        "maxX": 328,
+        "minZ": -3938,
+        "maxZ": -3922
+      },
+      {
+        "minX": 358,
+        "maxX": 374,
+        "minZ": -4058,
+        "maxZ": -4042
+      },
+      {
+        "minX": 229,
+        "maxX": 245,
+        "minZ": -4022,
+        "maxZ": -4006
+      },
+      {
+        "minX": 237,
+        "maxX": 253,
+        "minZ": -4029,
+        "maxZ": -4013
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 148,
@@ -32062,6 +56014,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5459,
       "maxZ": -5359
     },
+    "spawnNodes": [
+      {
+        "minX": -1628,
+        "maxX": -1612,
+        "minZ": -5416,
+        "maxZ": -5400
+      },
+      {
+        "minX": -1615,
+        "maxX": -1599,
+        "minZ": -5421,
+        "maxZ": -5405
+      },
+      {
+        "minX": -1607,
+        "maxX": -1591,
+        "minZ": -5413,
+        "maxZ": -5397
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1631,
@@ -32098,6 +56070,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5505,
       "maxZ": -5040
     },
+    "spawnNodes": [
+      {
+        "minX": -1828,
+        "maxX": -1456,
+        "minZ": -5422,
+        "maxZ": -5050
+      },
+      {
+        "minX": -1867,
+        "maxX": -1835,
+        "minZ": -5174,
+        "maxZ": -5142
+      },
+      {
+        "minX": -1970,
+        "maxX": -1950,
+        "minZ": -5495,
+        "maxZ": -5475
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1867,
@@ -32139,6 +56131,92 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4979,
       "maxZ": -4647
     },
+    "spawnNodes": [
+      {
+        "minX": -2039,
+        "maxX": -2023,
+        "minZ": -4774,
+        "maxZ": -4758
+      },
+      {
+        "minX": -2059,
+        "maxX": -2043,
+        "minZ": -4731,
+        "maxZ": -4715
+      },
+      {
+        "minX": -1951,
+        "maxX": -1935,
+        "minZ": -4673,
+        "maxZ": -4657
+      },
+      {
+        "minX": -2001,
+        "maxX": -1985,
+        "minZ": -4794,
+        "maxZ": -4778
+      },
+      {
+        "minX": -1625,
+        "maxX": -1609,
+        "minZ": -4917,
+        "maxZ": -4901
+      },
+      {
+        "minX": -1708,
+        "maxX": -1692,
+        "minZ": -4869,
+        "maxZ": -4853
+      },
+      {
+        "minX": -1907,
+        "maxX": -1891,
+        "minZ": -4898,
+        "maxZ": -4882
+      },
+      {
+        "minX": -2066,
+        "maxX": -2050,
+        "minZ": -4969,
+        "maxZ": -4953
+      },
+      {
+        "minX": -2000,
+        "maxX": -1984,
+        "minZ": -4902,
+        "maxZ": -4886
+      },
+      {
+        "minX": -2234,
+        "maxX": -2214,
+        "minZ": -4805,
+        "maxZ": -4785
+      },
+      {
+        "minX": -2239,
+        "maxX": -2209,
+        "minZ": -4810,
+        "maxZ": -4780
+      },
+      {
+        "minX": -2232,
+        "maxX": -2216,
+        "minZ": -4803,
+        "maxZ": -4787
+      },
+      {
+        "minX": -2224,
+        "maxX": -2204,
+        "minZ": -4825,
+        "maxZ": -4805
+      },
+      {
+        "minX": -2229,
+        "maxX": -2199,
+        "minZ": -4830,
+        "maxZ": -4800
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2059,
@@ -32206,6 +56284,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4755,
       "maxZ": -4655
     },
+    "spawnNodes": [
+      {
+        "minX": 1351,
+        "maxX": 1367,
+        "minZ": -4713,
+        "maxZ": -4697
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1351,
@@ -32242,6 +56328,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4755,
       "maxZ": -4655
     },
+    "spawnNodes": [
+      {
+        "minX": 1351,
+        "maxX": 1367,
+        "minZ": -4713,
+        "maxZ": -4697
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1351,
@@ -32282,6 +56376,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2842,
       "maxZ": -2322
     },
+    "spawnNodes": [
+      {
+        "minX": -1818,
+        "maxX": -1318,
+        "minZ": -2832,
+        "maxZ": -2332
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1818,
@@ -32317,6 +56419,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5483,
       "maxZ": -5284
     },
+    "spawnNodes": [
+      {
+        "minX": -542,
+        "maxX": -478,
+        "minZ": -5473,
+        "maxZ": -5409
+      },
+      {
+        "minX": -596,
+        "maxX": -496,
+        "minZ": -5394,
+        "maxZ": -5294
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -596,
@@ -32352,6 +56468,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1701,
       "maxZ": -1601
     },
+    "spawnNodes": [
+      {
+        "minX": 1063,
+        "maxX": 1079,
+        "minZ": -1659,
+        "maxZ": -1643
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1063,
@@ -32387,6 +56511,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -758,
       "maxZ": -658
     },
+    "spawnNodes": [
+      {
+        "minX": -1281,
+        "maxX": -1265,
+        "minZ": -684,
+        "maxZ": -668
+      },
+      {
+        "minX": -1330,
+        "maxX": -1314,
+        "minZ": -692,
+        "maxZ": -676
+      },
+      {
+        "minX": -1264,
+        "maxX": -1248,
+        "minZ": -694,
+        "maxZ": -678
+      },
+      {
+        "minX": -1332,
+        "maxX": -1316,
+        "minZ": -688,
+        "maxZ": -672
+      },
+      {
+        "minX": -1281,
+        "maxX": -1265,
+        "minZ": -732,
+        "maxZ": -716
+      },
+      {
+        "minX": -1278,
+        "maxX": -1262,
+        "minZ": -724,
+        "maxZ": -708
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1332,
@@ -32423,6 +56585,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5511,
       "maxZ": -5411
     },
+    "spawnNodes": [
+      {
+        "minX": -762,
+        "maxX": -746,
+        "minZ": -5469,
+        "maxZ": -5453
+      },
+      {
+        "minX": -744,
+        "maxX": -728,
+        "minZ": -5439,
+        "maxZ": -5423
+      },
+      {
+        "minX": -748,
+        "maxX": -732,
+        "minZ": -5500,
+        "maxZ": -5484
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -766,
@@ -32459,6 +56641,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1408,
       "maxZ": -1308
     },
+    "spawnNodes": [
+      {
+        "minX": -574,
+        "maxX": -558,
+        "minZ": -1366,
+        "maxZ": -1350
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -574,
@@ -32497,6 +56687,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1170,
       "maxZ": -1070
     },
+    "spawnNodes": [
+      {
+        "minX": 1156,
+        "maxX": 1236,
+        "minZ": -1160,
+        "maxZ": -1080
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1156,
@@ -32533,6 +56731,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5596,
       "maxZ": -5078
     },
+    "spawnNodes": [
+      {
+        "minX": -1427,
+        "maxX": -1327,
+        "minZ": -5188,
+        "maxZ": -5088
+      },
+      {
+        "minX": -1370,
+        "maxX": -1246,
+        "minZ": -5386,
+        "maxZ": -5262
+      },
+      {
+        "minX": -1215,
+        "maxX": -1105,
+        "minZ": -5481,
+        "maxZ": -5371
+      },
+      {
+        "minX": -1382,
+        "maxX": -1272,
+        "minZ": -5281,
+        "maxZ": -5171
+      },
+      {
+        "minX": -1119,
+        "maxX": -1009,
+        "minZ": -5499,
+        "maxZ": -5389
+      },
+      {
+        "minX": -1283,
+        "maxX": -1173,
+        "minZ": -5586,
+        "maxZ": -5476
+      },
+      {
+        "minX": -1205,
+        "maxX": -1143,
+        "minZ": -5315,
+        "maxZ": -5253
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1427,
@@ -32568,6 +56810,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2078,
       "maxZ": -1663
     },
+    "spawnNodes": [
+      {
+        "minX": 1278,
+        "maxX": 1302,
+        "minZ": -1714,
+        "maxZ": -1690
+      },
+      {
+        "minX": 1151,
+        "maxX": 1175,
+        "minZ": -1703,
+        "maxZ": -1679
+      },
+      {
+        "minX": 1139,
+        "maxX": 1163,
+        "minZ": -1723,
+        "maxZ": -1699
+      },
+      {
+        "minX": 1096,
+        "maxX": 1112,
+        "minZ": -2022,
+        "maxZ": -2006
+      },
+      {
+        "minX": 1115,
+        "maxX": 1131,
+        "minZ": -2068,
+        "maxZ": -2052
+      },
+      {
+        "minX": 1152,
+        "maxX": 1168,
+        "minZ": -2016,
+        "maxZ": -2000
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1096,
@@ -32615,6 +56895,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4731,
       "maxZ": -4631
     },
+    "spawnNodes": [
+      {
+        "minX": -1285,
+        "maxX": -1269,
+        "minZ": -4689,
+        "maxZ": -4673
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1285,
@@ -32650,6 +56938,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5445,
       "maxZ": -5315
     },
+    "spawnNodes": [
+      {
+        "minX": -304,
+        "maxX": -194,
+        "minZ": -5435,
+        "maxZ": -5325
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -304,
@@ -32687,6 +56983,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1652,
       "maxZ": -1552
     },
+    "spawnNodes": [
+      {
+        "minX": 357,
+        "maxX": 377,
+        "minZ": -1612,
+        "maxZ": -1592
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 357,
@@ -32724,6 +57028,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -584,
       "maxZ": -484
     },
+    "spawnNodes": [
+      {
+        "minX": 28,
+        "maxX": 68,
+        "minZ": -554,
+        "maxZ": -514
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 28,
@@ -32761,6 +57073,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -584,
       "maxZ": -484
     },
+    "spawnNodes": [
+      {
+        "minX": 28,
+        "maxX": 68,
+        "minZ": -554,
+        "maxZ": -514
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 28,
@@ -32801,6 +57121,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5034,
       "maxZ": -4217
     },
+    "spawnNodes": [
+      {
+        "minX": 535,
+        "maxX": 635,
+        "minZ": -5024,
+        "maxZ": -4924
+      },
+      {
+        "minX": 541,
+        "maxX": 681,
+        "minZ": -4916,
+        "maxZ": -4776
+      },
+      {
+        "minX": 502,
+        "maxX": 662,
+        "minZ": -4750,
+        "maxZ": -4590
+      },
+      {
+        "minX": 411,
+        "maxX": 611,
+        "minZ": -4700,
+        "maxZ": -4500
+      },
+      {
+        "minX": 248,
+        "maxX": 648,
+        "minZ": -4627,
+        "maxZ": -4227
+      },
+      {
+        "minX": 161,
+        "maxX": 421,
+        "minZ": -4925,
+        "maxZ": -4665
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 161,
@@ -32836,6 +57194,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5107,
       "maxZ": -5007
     },
+    "spawnNodes": [
+      {
+        "minX": 826,
+        "maxX": 856,
+        "minZ": -5072,
+        "maxZ": -5042
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 826,
@@ -32871,6 +57237,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1370,
       "maxZ": -938
     },
+    "spawnNodes": [
+      {
+        "minX": -1346,
+        "maxX": -1330,
+        "minZ": -964,
+        "maxZ": -948
+      },
+      {
+        "minX": -1313,
+        "maxX": -1297,
+        "minZ": -1177,
+        "maxZ": -1161
+      },
+      {
+        "minX": -1207,
+        "maxX": -1191,
+        "minZ": -1157,
+        "maxZ": -1141
+      },
+      {
+        "minX": -1187,
+        "maxX": -1171,
+        "minZ": -983,
+        "maxZ": -967
+      },
+      {
+        "minX": -1437,
+        "maxX": -1421,
+        "minZ": -1360,
+        "maxZ": -1344
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1437,
@@ -32932,6 +57330,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -867,
       "maxZ": -767
     },
+    "spawnNodes": [
+      {
+        "minX": -591,
+        "maxX": -575,
+        "minZ": -825,
+        "maxZ": -809
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -591,
@@ -32967,6 +57373,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4795,
       "maxZ": -4695
     },
+    "spawnNodes": [
+      {
+        "minX": 769,
+        "maxX": 789,
+        "minZ": -4746,
+        "maxZ": -4726
+      },
+      {
+        "minX": 755,
+        "maxX": 771,
+        "minZ": -4738,
+        "maxZ": -4722
+      },
+      {
+        "minX": 752,
+        "maxX": 768,
+        "minZ": -4768,
+        "maxZ": -4752
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 734,
@@ -33003,6 +57429,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2111,
       "maxZ": -2006
     },
+    "spawnNodes": [
+      {
+        "minX": -413,
+        "maxX": -397,
+        "minZ": -2101,
+        "maxZ": -2085
+      },
+      {
+        "minX": -433,
+        "maxX": -417,
+        "minZ": -2058,
+        "maxZ": -2042
+      },
+      {
+        "minX": -425,
+        "maxX": -409,
+        "minZ": -2054,
+        "maxZ": -2038
+      },
+      {
+        "minX": -434,
+        "maxX": -418,
+        "minZ": -2050,
+        "maxZ": -2034
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -449,
@@ -33039,6 +57491,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2721,
       "maxZ": -2621
     },
+    "spawnNodes": [
+      {
+        "minX": -269,
+        "maxX": -249,
+        "minZ": -2659,
+        "maxZ": -2639
+      },
+      {
+        "minX": -245,
+        "maxX": -225,
+        "minZ": -2676,
+        "maxZ": -2656
+      },
+      {
+        "minX": -218,
+        "maxX": -198,
+        "minZ": -2694,
+        "maxZ": -2674
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -269,
@@ -33078,6 +57550,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1414,
       "maxZ": -1294
     },
+    "spawnNodes": [
+      {
+        "minX": -584,
+        "maxX": -484,
+        "minZ": -1404,
+        "maxZ": -1304
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -584,
@@ -33118,6 +57598,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5030,
       "maxZ": -4930
     },
+    "spawnNodes": [
+      {
+        "minX": -1717,
+        "maxX": -1693,
+        "minZ": -4992,
+        "maxZ": -4968
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1717,
@@ -33158,6 +57646,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4854,
       "maxZ": -4754
     },
+    "spawnNodes": [
+      {
+        "minX": -1878,
+        "maxX": -1862,
+        "minZ": -4812,
+        "maxZ": -4796
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1878,
@@ -33198,6 +57694,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4854,
       "maxZ": -4754
     },
+    "spawnNodes": [
+      {
+        "minX": -1878,
+        "maxX": -1862,
+        "minZ": -4812,
+        "maxZ": -4796
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1878,
@@ -33238,6 +57742,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4854,
       "maxZ": -4754
     },
+    "spawnNodes": [
+      {
+        "minX": -1878,
+        "maxX": -1862,
+        "minZ": -4812,
+        "maxZ": -4796
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1878,
@@ -33274,6 +57786,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5603,
       "maxZ": -5336
     },
+    "spawnNodes": [
+      {
+        "minX": -514,
+        "maxX": -454,
+        "minZ": -5585,
+        "maxZ": -5525
+      },
+      {
+        "minX": -412,
+        "maxX": -376,
+        "minZ": -5593,
+        "maxZ": -5557
+      },
+      {
+        "minX": -360,
+        "maxX": -324,
+        "minZ": -5534,
+        "maxZ": -5498
+      },
+      {
+        "minX": -353,
+        "maxX": -333,
+        "minZ": -5477,
+        "maxZ": -5457
+      },
+      {
+        "minX": -362,
+        "maxX": -322,
+        "minZ": -5415,
+        "maxZ": -5375
+      },
+      {
+        "minX": -406,
+        "maxX": -376,
+        "minZ": -5418,
+        "maxZ": -5388
+      },
+      {
+        "minX": -448,
+        "maxX": -408,
+        "minZ": -5386,
+        "maxZ": -5346
+      },
+      {
+        "minX": -466,
+        "maxX": -430,
+        "minZ": -5429,
+        "maxZ": -5393
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -514,
@@ -33310,6 +57872,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5582,
       "maxZ": -5482
     },
+    "spawnNodes": [
+      {
+        "minX": -421,
+        "maxX": -405,
+        "minZ": -5540,
+        "maxZ": -5524
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -421,
@@ -33345,6 +57915,92 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -896,
       "maxZ": -483
     },
+    "spawnNodes": [
+      {
+        "minX": -1406,
+        "maxX": -1390,
+        "minZ": -639,
+        "maxZ": -623
+      },
+      {
+        "minX": -1389,
+        "maxX": -1373,
+        "minZ": -612,
+        "maxZ": -596
+      },
+      {
+        "minX": -1436,
+        "maxX": -1420,
+        "minZ": -568,
+        "maxZ": -552
+      },
+      {
+        "minX": -1499,
+        "maxX": -1483,
+        "minZ": -615,
+        "maxZ": -599
+      },
+      {
+        "minX": -1497,
+        "maxX": -1481,
+        "minZ": -582,
+        "maxZ": -566
+      },
+      {
+        "minX": -1504,
+        "maxX": -1488,
+        "minZ": -544,
+        "maxZ": -528
+      },
+      {
+        "minX": -1543,
+        "maxX": -1527,
+        "minZ": -518,
+        "maxZ": -502
+      },
+      {
+        "minX": -1597,
+        "maxX": -1581,
+        "minZ": -509,
+        "maxZ": -493
+      },
+      {
+        "minX": -1361,
+        "maxX": -1345,
+        "minZ": -581,
+        "maxZ": -565
+      },
+      {
+        "minX": -1173,
+        "maxX": -1157,
+        "minZ": -635,
+        "maxZ": -619
+      },
+      {
+        "minX": -1115,
+        "maxX": -1099,
+        "minZ": -886,
+        "maxZ": -870
+      },
+      {
+        "minX": -1387,
+        "maxX": -1371,
+        "minZ": -795,
+        "maxZ": -779
+      },
+      {
+        "minX": -1199,
+        "maxX": -1183,
+        "minZ": -768,
+        "maxZ": -752
+      },
+      {
+        "minX": -1151,
+        "maxX": -1135,
+        "minZ": -813,
+        "maxZ": -797
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1597,
@@ -33404,6 +58060,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1244,
       "maxZ": -1144
     },
+    "spawnNodes": [
+      {
+        "minX": 692,
+        "maxX": 708,
+        "minZ": -1200,
+        "maxZ": -1184
+      },
+      {
+        "minX": 803,
+        "maxX": 819,
+        "minZ": -1226,
+        "maxZ": -1210
+      },
+      {
+        "minX": 828,
+        "maxX": 844,
+        "minZ": -1198,
+        "maxZ": -1182
+      },
+      {
+        "minX": 828,
+        "maxX": 844,
+        "minZ": -1198,
+        "maxZ": -1182
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 803,
@@ -33446,6 +58128,68 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -915,
       "maxZ": -589
     },
+    "spawnNodes": [
+      {
+        "minX": -2145,
+        "maxX": -2129,
+        "minZ": -758,
+        "maxZ": -742
+      },
+      {
+        "minX": -2235,
+        "maxX": -2219,
+        "minZ": -687,
+        "maxZ": -671
+      },
+      {
+        "minX": -2266,
+        "maxX": -2250,
+        "minZ": -662,
+        "maxZ": -646
+      },
+      {
+        "minX": -2300,
+        "maxX": -2284,
+        "minZ": -635,
+        "maxZ": -619
+      },
+      {
+        "minX": -2300,
+        "maxX": -2284,
+        "minZ": -635,
+        "maxZ": -619
+      },
+      {
+        "minX": -2124,
+        "maxX": -2108,
+        "minZ": -624,
+        "maxZ": -608
+      },
+      {
+        "minX": -1931,
+        "maxX": -1915,
+        "minZ": -639,
+        "maxZ": -623
+      },
+      {
+        "minX": -1915,
+        "maxX": -1899,
+        "minZ": -813,
+        "maxZ": -797
+      },
+      {
+        "minX": -2002,
+        "maxX": -1986,
+        "minZ": -885,
+        "maxZ": -869
+      },
+      {
+        "minX": -2002,
+        "maxX": -1986,
+        "minZ": -885,
+        "maxZ": -869
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2022,
@@ -33507,6 +58251,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1053,
       "maxZ": -875
     },
+    "spawnNodes": [
+      {
+        "minX": 848,
+        "maxX": 988,
+        "minZ": -1025,
+        "maxZ": -885
+      },
+      {
+        "minX": 992,
+        "maxX": 1132,
+        "minZ": -1043,
+        "maxZ": -903
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 848,
@@ -33542,6 +58300,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2336,
       "maxZ": -2236
     },
+    "spawnNodes": [
+      {
+        "minX": 738,
+        "maxX": 754,
+        "minZ": -2310,
+        "maxZ": -2294
+      },
+      {
+        "minX": 809,
+        "maxX": 825,
+        "minZ": -2274,
+        "maxZ": -2258
+      },
+      {
+        "minX": 789,
+        "maxX": 805,
+        "minZ": -2315,
+        "maxZ": -2299
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 738,
@@ -33577,6 +58355,110 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -933,
       "maxZ": -581
     },
+    "spawnNodes": [
+      {
+        "minX": -1851,
+        "maxX": -1835,
+        "minZ": -824,
+        "maxZ": -808
+      },
+      {
+        "minX": -1998,
+        "maxX": -1982,
+        "minZ": -923,
+        "maxZ": -907
+      },
+      {
+        "minX": -1828,
+        "maxX": -1812,
+        "minZ": -736,
+        "maxZ": -720
+      },
+      {
+        "minX": -1783,
+        "maxX": -1767,
+        "minZ": -691,
+        "maxZ": -675
+      },
+      {
+        "minX": -1775,
+        "maxX": -1759,
+        "minZ": -725,
+        "maxZ": -709
+      },
+      {
+        "minX": -1729,
+        "maxX": -1713,
+        "minZ": -671,
+        "maxZ": -655
+      },
+      {
+        "minX": -1730,
+        "maxX": -1714,
+        "minZ": -643,
+        "maxZ": -627
+      },
+      {
+        "minX": -1986,
+        "maxX": -1970,
+        "minZ": -651,
+        "maxZ": -635
+      },
+      {
+        "minX": -2061,
+        "maxX": -2045,
+        "minZ": -612,
+        "maxZ": -596
+      },
+      {
+        "minX": -2167,
+        "maxX": -2151,
+        "minZ": -638,
+        "maxZ": -622
+      },
+      {
+        "minX": -2236,
+        "maxX": -2220,
+        "minZ": -688,
+        "maxZ": -672
+      },
+      {
+        "minX": -2233,
+        "maxX": -2217,
+        "minZ": -686,
+        "maxZ": -670
+      },
+      {
+        "minX": -2249,
+        "maxX": -2233,
+        "minZ": -664,
+        "maxZ": -648
+      },
+      {
+        "minX": -2278,
+        "maxX": -2262,
+        "minZ": -641,
+        "maxZ": -625
+      },
+      {
+        "minX": -2258,
+        "maxX": -2242,
+        "minZ": -721,
+        "maxZ": -705
+      },
+      {
+        "minX": -2076,
+        "maxX": -2060,
+        "minZ": -643,
+        "maxZ": -627
+      },
+      {
+        "minX": -1783,
+        "maxX": -1767,
+        "minZ": -853,
+        "maxZ": -837
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1828,
@@ -33641,6 +58523,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -972,
       "maxZ": -304
     },
+    "spawnNodes": [
+      {
+        "minX": -95,
+        "maxX": 25,
+        "minZ": -789,
+        "maxZ": -669
+      },
+      {
+        "minX": -51,
+        "maxX": 69,
+        "minZ": -962,
+        "maxZ": -842
+      },
+      {
+        "minX": 17,
+        "maxX": 137,
+        "minZ": -557,
+        "maxZ": -437
+      },
+      {
+        "minX": -295,
+        "maxX": -95,
+        "minZ": -514,
+        "maxZ": -314
+      },
+      {
+        "minX": 121,
+        "maxX": 241,
+        "minZ": -760,
+        "maxZ": -640
+      },
+      {
+        "minX": -24,
+        "maxX": 96,
+        "minZ": -733,
+        "maxZ": -613
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -95,
@@ -33699,6 +58619,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -972,
       "maxZ": -304
     },
+    "spawnNodes": [
+      {
+        "minX": -95,
+        "maxX": 25,
+        "minZ": -789,
+        "maxZ": -669
+      },
+      {
+        "minX": -51,
+        "maxX": 69,
+        "minZ": -962,
+        "maxZ": -842
+      },
+      {
+        "minX": 17,
+        "maxX": 137,
+        "minZ": -557,
+        "maxZ": -437
+      },
+      {
+        "minX": -295,
+        "maxX": -95,
+        "minZ": -514,
+        "maxZ": -314
+      },
+      {
+        "minX": 121,
+        "maxX": 241,
+        "minZ": -760,
+        "maxZ": -640
+      },
+      {
+        "minX": -24,
+        "maxX": 96,
+        "minZ": -733,
+        "maxZ": -613
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -95,
@@ -33754,6 +58712,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -559,
       "maxZ": -285
     },
+    "spawnNodes": [
+      {
+        "minX": -827,
+        "maxX": -807,
+        "minZ": -508,
+        "maxZ": -488
+      },
+      {
+        "minX": -781,
+        "maxX": -761,
+        "minZ": -549,
+        "maxZ": -529
+      },
+      {
+        "minX": -714,
+        "maxX": -694,
+        "minZ": -457,
+        "maxZ": -437
+      },
+      {
+        "minX": -734,
+        "maxX": -714,
+        "minZ": -341,
+        "maxZ": -321
+      },
+      {
+        "minX": -825,
+        "maxX": -805,
+        "minZ": -315,
+        "maxZ": -295
+      },
+      {
+        "minX": -922,
+        "maxX": -902,
+        "minZ": -397,
+        "maxZ": -377
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -827,
@@ -33814,6 +58810,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1563,
       "maxZ": -1463
     },
+    "spawnNodes": [
+      {
+        "minX": 1480,
+        "maxX": 1496,
+        "minZ": -1521,
+        "maxZ": -1505
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1480,
@@ -33853,6 +58857,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5513,
       "maxZ": -5393
     },
+    "spawnNodes": [
+      {
+        "minX": -233,
+        "maxX": -133,
+        "minZ": -5503,
+        "maxZ": -5403
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -233,
@@ -33890,6 +58902,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5570,
       "maxZ": -5470
     },
+    "spawnNodes": [
+      {
+        "minX": 1206,
+        "maxX": 1238,
+        "minZ": -5536,
+        "maxZ": -5504
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1206,
@@ -33927,6 +58947,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5629,
       "maxZ": -5529
     },
+    "spawnNodes": [
+      {
+        "minX": 1289,
+        "maxX": 1305,
+        "minZ": -5582,
+        "maxZ": -5566
+      },
+      {
+        "minX": 1275,
+        "maxX": 1299,
+        "minZ": -5613,
+        "maxZ": -5589
+      },
+      {
+        "minX": 1233,
+        "maxX": 1257,
+        "minZ": -5584,
+        "maxZ": -5560
+      },
+      {
+        "minX": 1213,
+        "maxX": 1237,
+        "minZ": -5586,
+        "maxZ": -5562
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1207,
@@ -33964,6 +59010,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5629,
       "maxZ": -5529
     },
+    "spawnNodes": [
+      {
+        "minX": 1289,
+        "maxX": 1305,
+        "minZ": -5582,
+        "maxZ": -5566
+      },
+      {
+        "minX": 1275,
+        "maxX": 1299,
+        "minZ": -5613,
+        "maxZ": -5589
+      },
+      {
+        "minX": 1233,
+        "maxX": 1257,
+        "minZ": -5584,
+        "maxZ": -5560
+      },
+      {
+        "minX": 1213,
+        "maxX": 1237,
+        "minZ": -5586,
+        "maxZ": -5562
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1207,
@@ -34001,6 +59073,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5629,
       "maxZ": -5529
     },
+    "spawnNodes": [
+      {
+        "minX": 1289,
+        "maxX": 1305,
+        "minZ": -5582,
+        "maxZ": -5566
+      },
+      {
+        "minX": 1275,
+        "maxX": 1299,
+        "minZ": -5613,
+        "maxZ": -5589
+      },
+      {
+        "minX": 1233,
+        "maxX": 1257,
+        "minZ": -5584,
+        "maxZ": -5560
+      },
+      {
+        "minX": 1213,
+        "maxX": 1237,
+        "minZ": -5586,
+        "maxZ": -5562
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1207,
@@ -34036,6 +59134,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5399,
       "maxZ": -5292
     },
+    "spawnNodes": [
+      {
+        "minX": 833,
+        "maxX": 849,
+        "minZ": -5384,
+        "maxZ": -5368
+      },
+      {
+        "minX": 836,
+        "maxX": 852,
+        "minZ": -5355,
+        "maxZ": -5339
+      },
+      {
+        "minX": 756,
+        "maxX": 772,
+        "minZ": -5321,
+        "maxZ": -5305
+      },
+      {
+        "minX": 744,
+        "maxX": 760,
+        "minZ": -5385,
+        "maxZ": -5369
+      },
+      {
+        "minX": 741,
+        "maxX": 757,
+        "minZ": -5360,
+        "maxZ": -5344
+      },
+      {
+        "minX": 736,
+        "maxX": 752,
+        "minZ": -5340,
+        "maxZ": -5324
+      },
+      {
+        "minX": 750,
+        "maxX": 766,
+        "minZ": -5336,
+        "maxZ": -5320
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 723,
@@ -34077,6 +59219,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4574,
       "maxZ": -4474
     },
+    "spawnNodes": [
+      {
+        "minX": 313,
+        "maxX": 329,
+        "minZ": -4532,
+        "maxZ": -4516
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 313,
@@ -34112,6 +59262,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5399,
       "maxZ": -5292
     },
+    "spawnNodes": [
+      {
+        "minX": 833,
+        "maxX": 849,
+        "minZ": -5384,
+        "maxZ": -5368
+      },
+      {
+        "minX": 836,
+        "maxX": 852,
+        "minZ": -5355,
+        "maxZ": -5339
+      },
+      {
+        "minX": 756,
+        "maxX": 772,
+        "minZ": -5321,
+        "maxZ": -5305
+      },
+      {
+        "minX": 744,
+        "maxX": 760,
+        "minZ": -5385,
+        "maxZ": -5369
+      },
+      {
+        "minX": 741,
+        "maxX": 757,
+        "minZ": -5360,
+        "maxZ": -5344
+      },
+      {
+        "minX": 736,
+        "maxX": 752,
+        "minZ": -5340,
+        "maxZ": -5324
+      },
+      {
+        "minX": 750,
+        "maxX": 766,
+        "minZ": -5336,
+        "maxZ": -5320
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 723,
@@ -34153,6 +59347,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -484,
       "maxZ": -384
     },
+    "spawnNodes": [
+      {
+        "minX": -984,
+        "maxX": -968,
+        "minZ": -442,
+        "maxZ": -426
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -984,
@@ -34193,6 +59395,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4950,
       "maxZ": -4850
     },
+    "spawnNodes": [
+      {
+        "minX": -2000,
+        "maxX": -1980,
+        "minZ": -4910,
+        "maxZ": -4890
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2000,
@@ -34233,6 +59443,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4953,
       "maxZ": -4853
     },
+    "spawnNodes": [
+      {
+        "minX": -2011,
+        "maxX": -1995,
+        "minZ": -4911,
+        "maxZ": -4895
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2011,
@@ -34273,6 +59491,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5030,
       "maxZ": -4930
     },
+    "spawnNodes": [
+      {
+        "minX": -1717,
+        "maxX": -1693,
+        "minZ": -4992,
+        "maxZ": -4968
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1717,
@@ -34312,6 +59538,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1516,
       "maxZ": -1389
     },
+    "spawnNodes": [
+      {
+        "minX": 1064,
+        "maxX": 1154,
+        "minZ": -1489,
+        "maxZ": -1399
+      },
+      {
+        "minX": 1303,
+        "maxX": 1363,
+        "minZ": -1498,
+        "maxZ": -1438
+      },
+      {
+        "minX": 1145,
+        "maxX": 1185,
+        "minZ": -1505,
+        "maxZ": -1465
+      },
+      {
+        "minX": 1104,
+        "maxX": 1144,
+        "minZ": -1492,
+        "maxZ": -1452
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1064,
@@ -34354,6 +59606,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1403,
       "maxZ": -1303
     },
+    "spawnNodes": [
+      {
+        "minX": -852,
+        "maxX": -836,
+        "minZ": -1361,
+        "maxZ": -1345
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -852,
@@ -34389,6 +59649,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1221,
       "maxZ": -1115
     },
+    "spawnNodes": [
+      {
+        "minX": 775,
+        "maxX": 791,
+        "minZ": -1211,
+        "maxZ": -1195
+      },
+      {
+        "minX": 742,
+        "maxX": 758,
+        "minZ": -1203,
+        "maxZ": -1187
+      },
+      {
+        "minX": 760,
+        "maxX": 776,
+        "minZ": -1167,
+        "maxZ": -1151
+      },
+      {
+        "minX": 775,
+        "maxX": 791,
+        "minZ": -1147,
+        "maxZ": -1131
+      },
+      {
+        "minX": 825,
+        "maxX": 841,
+        "minZ": -1175,
+        "maxZ": -1159
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 742,
@@ -34425,6 +59717,68 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2123,
       "maxZ": -1764
     },
+    "spawnNodes": [
+      {
+        "minX": 226,
+        "maxX": 242,
+        "minZ": -2113,
+        "maxZ": -2097
+      },
+      {
+        "minX": 142,
+        "maxX": 158,
+        "minZ": -2050,
+        "maxZ": -2034
+      },
+      {
+        "minX": 119,
+        "maxX": 135,
+        "minZ": -2065,
+        "maxZ": -2049
+      },
+      {
+        "minX": 24,
+        "maxX": 40,
+        "minZ": -1877,
+        "maxZ": -1861
+      },
+      {
+        "minX": 12,
+        "maxX": 28,
+        "minZ": -1862,
+        "maxZ": -1846
+      },
+      {
+        "minX": 1,
+        "maxX": 17,
+        "minZ": -1853,
+        "maxZ": -1837
+      },
+      {
+        "minX": 318,
+        "maxX": 334,
+        "minZ": -1821,
+        "maxZ": -1805
+      },
+      {
+        "minX": 303,
+        "maxX": 321,
+        "minZ": -1835,
+        "maxZ": -1817
+      },
+      {
+        "minX": 263,
+        "maxX": 279,
+        "minZ": -1828,
+        "maxZ": -1812
+      },
+      {
+        "minX": 276,
+        "maxX": 292,
+        "minZ": -1793,
+        "maxZ": -1777
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 250,
@@ -34482,6 +59836,62 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4979,
       "maxZ": -4647
     },
+    "spawnNodes": [
+      {
+        "minX": -2039,
+        "maxX": -2023,
+        "minZ": -4774,
+        "maxZ": -4758
+      },
+      {
+        "minX": -2059,
+        "maxX": -2043,
+        "minZ": -4731,
+        "maxZ": -4715
+      },
+      {
+        "minX": -1951,
+        "maxX": -1935,
+        "minZ": -4673,
+        "maxZ": -4657
+      },
+      {
+        "minX": -2001,
+        "maxX": -1985,
+        "minZ": -4794,
+        "maxZ": -4778
+      },
+      {
+        "minX": -1625,
+        "maxX": -1609,
+        "minZ": -4917,
+        "maxZ": -4901
+      },
+      {
+        "minX": -1708,
+        "maxX": -1692,
+        "minZ": -4869,
+        "maxZ": -4853
+      },
+      {
+        "minX": -1907,
+        "maxX": -1891,
+        "minZ": -4898,
+        "maxZ": -4882
+      },
+      {
+        "minX": -2066,
+        "maxX": -2050,
+        "minZ": -4969,
+        "maxZ": -4953
+      },
+      {
+        "minX": -2000,
+        "maxX": -1984,
+        "minZ": -4902,
+        "maxZ": -4886
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2059,
@@ -34542,6 +59952,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3410,
       "maxZ": -2420
     },
+    "spawnNodes": [
+      {
+        "minX": -2019,
+        "maxX": -1935,
+        "minZ": -3357,
+        "maxZ": -3273
+      },
+      {
+        "minX": -2019,
+        "maxX": -1935,
+        "minZ": -3357,
+        "maxZ": -3273
+      },
+      {
+        "minX": -1639,
+        "maxX": -1555,
+        "minZ": -3400,
+        "maxZ": -3316
+      },
+      {
+        "minX": -1639,
+        "maxX": -1555,
+        "minZ": -3400,
+        "maxZ": -3316
+      },
+      {
+        "minX": -1670,
+        "maxX": -1586,
+        "minZ": -3237,
+        "maxZ": -3153
+      },
+      {
+        "minX": -2083,
+        "maxX": -2043,
+        "minZ": -3330,
+        "maxZ": -3290
+      },
+      {
+        "minX": -1620,
+        "maxX": -1550,
+        "minZ": -3158,
+        "maxZ": -3088
+      },
+      {
+        "minX": -1645,
+        "maxX": -1585,
+        "minZ": -2490,
+        "maxZ": -2430
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1670,
@@ -34597,6 +60057,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3223,
       "maxZ": -2566
     },
+    "spawnNodes": [
+      {
+        "minX": -1474,
+        "maxX": -1390,
+        "minZ": -3213,
+        "maxZ": -3129
+      },
+      {
+        "minX": -1803,
+        "maxX": -1719,
+        "minZ": -2660,
+        "maxZ": -2576
+      },
+      {
+        "minX": -1441,
+        "maxX": -1357,
+        "minZ": -2889,
+        "maxZ": -2805
+      },
+      {
+        "minX": -1744,
+        "maxX": -1660,
+        "minZ": -2801,
+        "maxZ": -2717
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1744,
@@ -34651,6 +60137,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3223,
       "maxZ": -2566
     },
+    "spawnNodes": [
+      {
+        "minX": -1474,
+        "maxX": -1390,
+        "minZ": -3213,
+        "maxZ": -3129
+      },
+      {
+        "minX": -1803,
+        "maxX": -1719,
+        "minZ": -2660,
+        "maxZ": -2576
+      },
+      {
+        "minX": -1441,
+        "maxX": -1357,
+        "minZ": -2889,
+        "maxZ": -2805
+      },
+      {
+        "minX": -1744,
+        "maxX": -1660,
+        "minZ": -2801,
+        "maxZ": -2717
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1744,
@@ -34707,6 +60219,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2840,
       "maxZ": -2299
     },
+    "spawnNodes": [
+      {
+        "minX": -1917,
+        "maxX": -1557,
+        "minZ": -2830,
+        "maxZ": -2470
+      },
+      {
+        "minX": -1716,
+        "maxX": -1276,
+        "minZ": -2749,
+        "maxZ": -2309
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1917,
@@ -34743,6 +60269,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2907,
       "maxZ": -2678
     },
+    "spawnNodes": [
+      {
+        "minX": -1460,
+        "maxX": -1440,
+        "minZ": -2855,
+        "maxZ": -2835
+      },
+      {
+        "minX": -1444,
+        "maxX": -1406,
+        "minZ": -2864,
+        "maxZ": -2826
+      },
+      {
+        "minX": -1415,
+        "maxX": -1325,
+        "minZ": -2778,
+        "maxZ": -2688
+      },
+      {
+        "minX": -1528,
+        "maxX": -1508,
+        "minZ": -2866,
+        "maxZ": -2846
+      },
+      {
+        "minX": -1785,
+        "maxX": -1765,
+        "minZ": -2897,
+        "maxZ": -2877
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1528,
@@ -34784,6 +60342,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -687,
       "maxZ": -587
     },
+    "spawnNodes": [
+      {
+        "minX": 257,
+        "maxX": 287,
+        "minZ": -652,
+        "maxZ": -622
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 257,
@@ -34821,6 +60387,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5458,
       "maxZ": -5062
     },
+    "spawnNodes": [
+      {
+        "minX": -1252,
+        "maxX": -1236,
+        "minZ": -5345,
+        "maxZ": -5329
+      },
+      {
+        "minX": -1250,
+        "maxX": -1234,
+        "minZ": -5448,
+        "maxZ": -5432
+      },
+      {
+        "minX": -1164,
+        "maxX": -1148,
+        "minZ": -5125,
+        "maxZ": -5109
+      },
+      {
+        "minX": -1234,
+        "maxX": -1218,
+        "minZ": -5118,
+        "maxZ": -5102
+      },
+      {
+        "minX": -1284,
+        "maxX": -1268,
+        "minZ": -5108,
+        "maxZ": -5092
+      },
+      {
+        "minX": -1350,
+        "maxX": -1334,
+        "minZ": -5108,
+        "maxZ": -5092
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1350,
@@ -34875,6 +60479,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1094,
       "maxZ": -608
     },
+    "spawnNodes": [
+      {
+        "minX": 637,
+        "maxX": 693,
+        "minZ": -1084,
+        "maxZ": -1028
+      },
+      {
+        "minX": 632,
+        "maxX": 688,
+        "minZ": -1021,
+        "maxZ": -965
+      },
+      {
+        "minX": 621,
+        "maxX": 677,
+        "minZ": -1040,
+        "maxZ": -984
+      },
+      {
+        "minX": 477,
+        "maxX": 553,
+        "minZ": -863,
+        "maxZ": -787
+      },
+      {
+        "minX": 639,
+        "maxX": 715,
+        "minZ": -847,
+        "maxZ": -771
+      },
+      {
+        "minX": 692,
+        "maxX": 852,
+        "minZ": -900,
+        "maxZ": -740
+      },
+      {
+        "minX": 662,
+        "maxX": 822,
+        "minZ": -778,
+        "maxZ": -618
+      },
+      {
+        "minX": 662,
+        "maxX": 742,
+        "minZ": -912,
+        "maxZ": -832
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 639,
@@ -34923,6 +60577,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2034,
       "maxZ": -1914
     },
+    "spawnNodes": [
+      {
+        "minX": 270,
+        "maxX": 370,
+        "minZ": -2024,
+        "maxZ": -1924
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 270,
@@ -34958,6 +60620,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -601,
       "maxZ": -501
     },
+    "spawnNodes": [
+      {
+        "minX": -180,
+        "maxX": -164,
+        "minZ": -559,
+        "maxZ": -543
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -180,
@@ -34993,6 +60663,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2056,
       "maxZ": -1956
     },
+    "spawnNodes": [
+      {
+        "minX": -178,
+        "maxX": -162,
+        "minZ": -2042,
+        "maxZ": -2026
+      },
+      {
+        "minX": -207,
+        "maxX": -191,
+        "minZ": -1992,
+        "maxZ": -1976
+      },
+      {
+        "minX": -187,
+        "maxX": -171,
+        "minZ": -2003,
+        "maxZ": -1987
+      },
+      {
+        "minX": -175,
+        "maxX": -159,
+        "minZ": -2014,
+        "maxZ": -1998
+      },
+      {
+        "minX": -167,
+        "maxX": -151,
+        "minZ": -1999,
+        "maxZ": -1983
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -207,
@@ -35029,6 +60731,86 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1751,
       "maxZ": -1365
     },
+    "spawnNodes": [
+      {
+        "minX": 1270,
+        "maxX": 1286,
+        "minZ": -1518,
+        "maxZ": -1502
+      },
+      {
+        "minX": 1253,
+        "maxX": 1269,
+        "minZ": -1405,
+        "maxZ": -1389
+      },
+      {
+        "minX": 1220,
+        "maxX": 1236,
+        "minZ": -1426,
+        "maxZ": -1410
+      },
+      {
+        "minX": 1217,
+        "maxX": 1233,
+        "minZ": -1452,
+        "maxZ": -1436
+      },
+      {
+        "minX": 1273,
+        "maxX": 1289,
+        "minZ": -1391,
+        "maxZ": -1375
+      },
+      {
+        "minX": 1461,
+        "maxX": 1479,
+        "minZ": -1723,
+        "maxZ": -1705
+      },
+      {
+        "minX": 1484,
+        "maxX": 1508,
+        "minZ": -1721,
+        "maxZ": -1697
+      },
+      {
+        "minX": 1479,
+        "maxX": 1497,
+        "minZ": -1741,
+        "maxZ": -1723
+      },
+      {
+        "minX": 1502,
+        "maxX": 1526,
+        "minZ": -1728,
+        "maxZ": -1704
+      },
+      {
+        "minX": 1432,
+        "maxX": 1450,
+        "minZ": -1718,
+        "maxZ": -1700
+      },
+      {
+        "minX": 1435,
+        "maxX": 1453,
+        "minZ": -1707,
+        "maxZ": -1689
+      },
+      {
+        "minX": 1441,
+        "maxX": 1459,
+        "minZ": -1698,
+        "maxZ": -1680
+      },
+      {
+        "minX": 1448,
+        "maxX": 1464,
+        "minZ": -1689,
+        "maxZ": -1673
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1217,
@@ -35072,6 +60854,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1346,
       "maxZ": -1032
     },
+    "spawnNodes": [
+      {
+        "minX": -297,
+        "maxX": -237,
+        "minZ": -1336,
+        "maxZ": -1276
+      },
+      {
+        "minX": -238,
+        "maxX": -202,
+        "minZ": -1234,
+        "maxZ": -1198
+      },
+      {
+        "minX": -131,
+        "maxX": -71,
+        "minZ": -1102,
+        "maxZ": -1042
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -297,
@@ -35114,6 +60916,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -628,
       "maxZ": -528
     },
+    "spawnNodes": [
+      {
+        "minX": -800,
+        "maxX": -784,
+        "minZ": -618,
+        "maxZ": -602
+      },
+      {
+        "minX": -795,
+        "maxX": -779,
+        "minZ": -602,
+        "maxZ": -586
+      },
+      {
+        "minX": -790,
+        "maxX": -774,
+        "minZ": -588,
+        "maxZ": -572
+      },
+      {
+        "minX": -779,
+        "maxX": -763,
+        "minZ": -575,
+        "maxZ": -559
+      },
+      {
+        "minX": -762,
+        "maxX": -746,
+        "minZ": -576,
+        "maxZ": -560
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -800,
@@ -35151,6 +60985,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1124,
       "maxZ": -934
     },
+    "spawnNodes": [
+      {
+        "minX": 1113,
+        "maxX": 1283,
+        "minZ": -1114,
+        "maxZ": -944
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1113,
@@ -35187,6 +61029,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1170,
       "maxZ": -1070
     },
+    "spawnNodes": [
+      {
+        "minX": 1156,
+        "maxX": 1236,
+        "minZ": -1160,
+        "maxZ": -1080
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1156,
@@ -35224,6 +61074,98 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3826,
       "maxZ": -3599
     },
+    "spawnNodes": [
+      {
+        "minX": -1036,
+        "maxX": -1012,
+        "minZ": -3665,
+        "maxZ": -3641
+      },
+      {
+        "minX": -1032,
+        "maxX": -1008,
+        "minZ": -3707,
+        "maxZ": -3683
+      },
+      {
+        "minX": -990,
+        "maxX": -970,
+        "minZ": -3635,
+        "maxZ": -3615
+      },
+      {
+        "minX": -1071,
+        "maxX": -1055,
+        "minZ": -3639,
+        "maxZ": -3623
+      },
+      {
+        "minX": -912,
+        "maxX": -888,
+        "minZ": -3770,
+        "maxZ": -3746
+      },
+      {
+        "minX": -888,
+        "maxX": -858,
+        "minZ": -3816,
+        "maxZ": -3786
+      },
+      {
+        "minX": -846,
+        "maxX": -816,
+        "minZ": -3760,
+        "maxZ": -3730
+      },
+      {
+        "minX": -855,
+        "maxX": -825,
+        "minZ": -3720,
+        "maxZ": -3690
+      },
+      {
+        "minX": -823,
+        "maxX": -793,
+        "minZ": -3725,
+        "maxZ": -3695
+      },
+      {
+        "minX": -822,
+        "maxX": -782,
+        "minZ": -3702,
+        "maxZ": -3662
+      },
+      {
+        "minX": -793,
+        "maxX": -763,
+        "minZ": -3663,
+        "maxZ": -3633
+      },
+      {
+        "minX": -831,
+        "maxX": -791,
+        "minZ": -3664,
+        "maxZ": -3624
+      },
+      {
+        "minX": -876,
+        "maxX": -846,
+        "minZ": -3675,
+        "maxZ": -3645
+      },
+      {
+        "minX": -1033,
+        "maxX": -1017,
+        "minZ": -3638,
+        "maxZ": -3622
+      },
+      {
+        "minX": -1080,
+        "maxX": -1064,
+        "minZ": -3653,
+        "maxZ": -3637
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -912,
@@ -35265,6 +61207,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4980,
       "maxZ": -4880
     },
+    "spawnNodes": [
+      {
+        "minX": 645,
+        "maxX": 661,
+        "minZ": -4965,
+        "maxZ": -4949
+      },
+      {
+        "minX": 661,
+        "maxX": 677,
+        "minZ": -4933,
+        "maxZ": -4917
+      },
+      {
+        "minX": 663,
+        "maxX": 679,
+        "minZ": -4931,
+        "maxZ": -4915
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 642,
@@ -35305,6 +61267,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1058,
       "maxZ": -958
     },
+    "spawnNodes": [
+      {
+        "minX": 1352,
+        "maxX": 1412,
+        "minZ": -1038,
+        "maxZ": -978
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1352,
@@ -35342,6 +61312,80 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3826,
       "maxZ": -3535
     },
+    "spawnNodes": [
+      {
+        "minX": -1044,
+        "maxX": -1024,
+        "minZ": -3729,
+        "maxZ": -3709
+      },
+      {
+        "minX": -1031,
+        "maxX": -1011,
+        "minZ": -3741,
+        "maxZ": -3721
+      },
+      {
+        "minX": -997,
+        "maxX": -981,
+        "minZ": -3789,
+        "maxZ": -3773
+      },
+      {
+        "minX": -968,
+        "maxX": -952,
+        "minZ": -3676,
+        "maxZ": -3660
+      },
+      {
+        "minX": -948,
+        "maxX": -932,
+        "minZ": -3561,
+        "maxZ": -3545
+      },
+      {
+        "minX": -935,
+        "maxX": -919,
+        "minZ": -3816,
+        "maxZ": -3800
+      },
+      {
+        "minX": -810,
+        "maxX": -794,
+        "minZ": -3808,
+        "maxZ": -3792
+      },
+      {
+        "minX": -827,
+        "maxX": -797,
+        "minZ": -3750,
+        "maxZ": -3720
+      },
+      {
+        "minX": -886,
+        "maxX": -870,
+        "minZ": -3617,
+        "maxZ": -3601
+      },
+      {
+        "minX": -869,
+        "maxX": -853,
+        "minZ": -3637,
+        "maxZ": -3621
+      },
+      {
+        "minX": -880,
+        "maxX": -864,
+        "minZ": -3703,
+        "maxZ": -3687
+      },
+      {
+        "minX": -1050,
+        "maxX": -1034,
+        "minZ": -3629,
+        "maxZ": -3613
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1044,
@@ -35384,6 +61428,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5531,
       "maxZ": -5429
     },
+    "spawnNodes": [
+      {
+        "minX": -772,
+        "maxX": -732,
+        "minZ": -5494,
+        "maxZ": -5454
+      },
+      {
+        "minX": -787,
+        "maxX": -717,
+        "minZ": -5509,
+        "maxZ": -5439
+      },
+      {
+        "minX": -744,
+        "maxX": -704,
+        "minZ": -5521,
+        "maxZ": -5481
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -787,
@@ -35420,6 +61484,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -610,
       "maxZ": -360
     },
+    "spawnNodes": [
+      {
+        "minX": -630,
+        "maxX": -570,
+        "minZ": -465,
+        "maxZ": -405
+      },
+      {
+        "minX": -640,
+        "maxX": -580,
+        "minZ": -430,
+        "maxZ": -370
+      },
+      {
+        "minX": -595,
+        "maxX": -545,
+        "minZ": -560,
+        "maxZ": -510
+      },
+      {
+        "minX": -605,
+        "maxX": -555,
+        "minZ": -590,
+        "maxZ": -540
+      },
+      {
+        "minX": -615,
+        "maxX": -545,
+        "minZ": -600,
+        "maxZ": -530
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -640,
@@ -35456,6 +61552,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5588,
       "maxZ": -5488
     },
+    "spawnNodes": [
+      {
+        "minX": -1912,
+        "maxX": -1892,
+        "minZ": -5548,
+        "maxZ": -5528
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1912,
@@ -35492,6 +61596,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -982,
       "maxZ": -825
     },
+    "spawnNodes": [
+      {
+        "minX": -1615,
+        "maxX": -1599,
+        "minZ": -959,
+        "maxZ": -943
+      },
+      {
+        "minX": -1593,
+        "maxX": -1573,
+        "minZ": -873,
+        "maxZ": -853
+      },
+      {
+        "minX": -1623,
+        "maxX": -1603,
+        "minZ": -909,
+        "maxZ": -889
+      },
+      {
+        "minX": -1686,
+        "maxX": -1666,
+        "minZ": -855,
+        "maxZ": -835
+      },
+      {
+        "minX": -1774,
+        "maxX": -1754,
+        "minZ": -859,
+        "maxZ": -839
+      },
+      {
+        "minX": -1704,
+        "maxX": -1664,
+        "minZ": -972,
+        "maxZ": -932
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1774,
@@ -35528,6 +61670,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -982,
       "maxZ": -825
     },
+    "spawnNodes": [
+      {
+        "minX": -1615,
+        "maxX": -1599,
+        "minZ": -959,
+        "maxZ": -943
+      },
+      {
+        "minX": -1593,
+        "maxX": -1573,
+        "minZ": -873,
+        "maxZ": -853
+      },
+      {
+        "minX": -1623,
+        "maxX": -1603,
+        "minZ": -909,
+        "maxZ": -889
+      },
+      {
+        "minX": -1686,
+        "maxX": -1666,
+        "minZ": -855,
+        "maxZ": -835
+      },
+      {
+        "minX": -1774,
+        "maxX": -1754,
+        "minZ": -859,
+        "maxZ": -839
+      },
+      {
+        "minX": -1704,
+        "maxX": -1664,
+        "minZ": -972,
+        "maxZ": -932
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1774,
@@ -35565,6 +61745,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4963,
       "maxZ": -4863
     },
+    "spawnNodes": [
+      {
+        "minX": -1764,
+        "maxX": -1704,
+        "minZ": -4943,
+        "maxZ": -4883
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1764,
@@ -35600,6 +61788,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5359,
       "maxZ": -5259
     },
+    "spawnNodes": [
+      {
+        "minX": 1361,
+        "maxX": 1401,
+        "minZ": -5329,
+        "maxZ": -5289
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1361,
@@ -35640,6 +61836,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5483,
       "maxZ": -5284
     },
+    "spawnNodes": [
+      {
+        "minX": -542,
+        "maxX": -478,
+        "minZ": -5473,
+        "maxZ": -5409
+      },
+      {
+        "minX": -596,
+        "maxX": -496,
+        "minZ": -5394,
+        "maxZ": -5294
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -596,
@@ -35675,6 +61885,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -650,
       "maxZ": -430
     },
+    "spawnNodes": [
+      {
+        "minX": 737,
+        "maxX": 937,
+        "minZ": -640,
+        "maxZ": -440
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 737,
@@ -35710,6 +61928,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -797,
       "maxZ": -563
     },
+    "spawnNodes": [
+      {
+        "minX": -1987,
+        "maxX": -1971,
+        "minZ": -592,
+        "maxZ": -576
+      },
+      {
+        "minX": -1879,
+        "maxX": -1863,
+        "minZ": -589,
+        "maxZ": -573
+      },
+      {
+        "minX": -1847,
+        "maxX": -1831,
+        "minZ": -784,
+        "maxZ": -768
+      },
+      {
+        "minX": -1978,
+        "maxX": -1962,
+        "minZ": -697,
+        "maxZ": -681
+      },
+      {
+        "minX": -2254,
+        "maxX": -2238,
+        "minZ": -787,
+        "maxZ": -771
+      },
+      {
+        "minX": -2222,
+        "maxX": -2206,
+        "minZ": -608,
+        "maxZ": -592
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2222,
@@ -35775,6 +62031,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5062,
       "maxZ": -4962
     },
+    "spawnNodes": [
+      {
+        "minX": -1325,
+        "maxX": -1309,
+        "minZ": -5020,
+        "maxZ": -5004
+      },
+      {
+        "minX": -1325,
+        "maxX": -1309,
+        "minZ": -5020,
+        "maxZ": -5004
+      },
+      {
+        "minX": -1325,
+        "maxX": -1309,
+        "minZ": -5020,
+        "maxZ": -5004
+      },
+      {
+        "minX": -1325,
+        "maxX": -1309,
+        "minZ": -5020,
+        "maxZ": -5004
+      },
+      {
+        "minX": -1325,
+        "maxX": -1309,
+        "minZ": -5020,
+        "maxZ": -5004
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1345,
@@ -35811,6 +62099,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2134,
       "maxZ": -2034
     },
+    "spawnNodes": [
+      {
+        "minX": -421,
+        "maxX": -405,
+        "minZ": -2092,
+        "maxZ": -2076
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -421,
@@ -35850,6 +62146,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4984,
       "maxZ": -4884
     },
+    "spawnNodes": [
+      {
+        "minX": -1723,
+        "maxX": -1699,
+        "minZ": -4946,
+        "maxZ": -4922
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1723,
@@ -35889,6 +62193,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4982,
       "maxZ": -4882
     },
+    "spawnNodes": [
+      {
+        "minX": -1719,
+        "maxX": -1703,
+        "minZ": -4926,
+        "maxZ": -4910
+      },
+      {
+        "minX": -1710,
+        "maxX": -1694,
+        "minZ": -4934,
+        "maxZ": -4918
+      },
+      {
+        "minX": -1720,
+        "maxX": -1704,
+        "minZ": -4946,
+        "maxZ": -4930
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1735,
@@ -35928,6 +62252,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4996,
       "maxZ": -4896
     },
+    "spawnNodes": [
+      {
+        "minX": -1704,
+        "maxX": -1688,
+        "minZ": -4954,
+        "maxZ": -4938
+      },
+      {
+        "minX": -1726,
+        "maxX": -1710,
+        "minZ": -4951,
+        "maxZ": -4935
+      },
+      {
+        "minX": -1734,
+        "maxX": -1718,
+        "minZ": -4957,
+        "maxZ": -4941
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1750,
@@ -35967,6 +62311,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4996,
       "maxZ": -4896
     },
+    "spawnNodes": [
+      {
+        "minX": -1704,
+        "maxX": -1688,
+        "minZ": -4954,
+        "maxZ": -4938
+      },
+      {
+        "minX": -1726,
+        "maxX": -1710,
+        "minZ": -4951,
+        "maxZ": -4935
+      },
+      {
+        "minX": -1734,
+        "maxX": -1718,
+        "minZ": -4957,
+        "maxZ": -4941
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1750,
@@ -36007,6 +62371,74 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5589,
       "maxZ": -5432
     },
+    "spawnNodes": [
+      {
+        "minX": -1756,
+        "maxX": -1740,
+        "minZ": -5560,
+        "maxZ": -5544
+      },
+      {
+        "minX": -1720,
+        "maxX": -1704,
+        "minZ": -5479,
+        "maxZ": -5463
+      },
+      {
+        "minX": -1732,
+        "maxX": -1716,
+        "minZ": -5458,
+        "maxZ": -5442
+      },
+      {
+        "minX": -1771,
+        "maxX": -1755,
+        "minZ": -5486,
+        "maxZ": -5470
+      },
+      {
+        "minX": -1756,
+        "maxX": -1740,
+        "minZ": -5467,
+        "maxZ": -5451
+      },
+      {
+        "minX": -1787,
+        "maxX": -1771,
+        "minZ": -5579,
+        "maxZ": -5563
+      },
+      {
+        "minX": -1788,
+        "maxX": -1772,
+        "minZ": -5556,
+        "maxZ": -5540
+      },
+      {
+        "minX": -1725,
+        "maxX": -1709,
+        "minZ": -5467,
+        "maxZ": -5451
+      },
+      {
+        "minX": -1722,
+        "maxX": -1706,
+        "minZ": -5490,
+        "maxZ": -5474
+      },
+      {
+        "minX": -1765,
+        "maxX": -1749,
+        "minZ": -5498,
+        "maxZ": -5482
+      },
+      {
+        "minX": -1751,
+        "maxX": -1735,
+        "minZ": -5476,
+        "maxZ": -5460
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1788,
@@ -36043,6 +62475,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2753,
       "maxZ": -2653
     },
+    "spawnNodes": [
+      {
+        "minX": -269,
+        "maxX": -239,
+        "minZ": -2718,
+        "maxZ": -2688
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -269,
@@ -36078,6 +62518,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2771,
       "maxZ": -2671
     },
+    "spawnNodes": [
+      {
+        "minX": -259,
+        "maxX": -243,
+        "minZ": -2729,
+        "maxZ": -2713
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -259,
@@ -36115,6 +62563,200 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -709,
       "maxZ": -265
     },
+    "spawnNodes": [
+      {
+        "minX": -751,
+        "maxX": -711,
+        "minZ": -503,
+        "maxZ": -463
+      },
+      {
+        "minX": -775,
+        "maxX": -717,
+        "minZ": -465,
+        "maxZ": -407
+      },
+      {
+        "minX": -781,
+        "maxX": -741,
+        "minZ": -436,
+        "maxZ": -396
+      },
+      {
+        "minX": -768,
+        "maxX": -728,
+        "minZ": -412,
+        "maxZ": -372
+      },
+      {
+        "minX": -784,
+        "maxX": -744,
+        "minZ": -325,
+        "maxZ": -285
+      },
+      {
+        "minX": -762,
+        "maxX": -722,
+        "minZ": -343,
+        "maxZ": -303
+      },
+      {
+        "minX": -712,
+        "maxX": -672,
+        "minZ": -415,
+        "maxZ": -375
+      },
+      {
+        "minX": -704,
+        "maxX": -664,
+        "minZ": -432,
+        "maxZ": -392
+      },
+      {
+        "minX": -786,
+        "maxX": -746,
+        "minZ": -368,
+        "maxZ": -328
+      },
+      {
+        "minX": -812,
+        "maxX": -772,
+        "minZ": -315,
+        "maxZ": -275
+      },
+      {
+        "minX": -808,
+        "maxX": -768,
+        "minZ": -343,
+        "maxZ": -303
+      },
+      {
+        "minX": -837,
+        "maxX": -797,
+        "minZ": -352,
+        "maxZ": -312
+      },
+      {
+        "minX": -868,
+        "maxX": -828,
+        "minZ": -336,
+        "maxZ": -296
+      },
+      {
+        "minX": -883,
+        "maxX": -843,
+        "minZ": -390,
+        "maxZ": -350
+      },
+      {
+        "minX": -919,
+        "maxX": -879,
+        "minZ": -376,
+        "maxZ": -336
+      },
+      {
+        "minX": -929,
+        "maxX": -889,
+        "minZ": -463,
+        "maxZ": -423
+      },
+      {
+        "minX": -900,
+        "maxX": -860,
+        "minZ": -501,
+        "maxZ": -461
+      },
+      {
+        "minX": -898,
+        "maxX": -858,
+        "minZ": -533,
+        "maxZ": -493
+      },
+      {
+        "minX": -921,
+        "maxX": -881,
+        "minZ": -546,
+        "maxZ": -506
+      },
+      {
+        "minX": -909,
+        "maxX": -869,
+        "minZ": -562,
+        "maxZ": -522
+      },
+      {
+        "minX": -879,
+        "maxX": -839,
+        "minZ": -555,
+        "maxZ": -515
+      },
+      {
+        "minX": -861,
+        "maxX": -821,
+        "minZ": -585,
+        "maxZ": -545
+      },
+      {
+        "minX": -899,
+        "maxX": -859,
+        "minZ": -588,
+        "maxZ": -548
+      },
+      {
+        "minX": -878,
+        "maxX": -838,
+        "minZ": -601,
+        "maxZ": -561
+      },
+      {
+        "minX": -919,
+        "maxX": -879,
+        "minZ": -642,
+        "maxZ": -602
+      },
+      {
+        "minX": -937,
+        "maxX": -897,
+        "minZ": -648,
+        "maxZ": -608
+      },
+      {
+        "minX": -892,
+        "maxX": -852,
+        "minZ": -699,
+        "maxZ": -659
+      },
+      {
+        "minX": -933,
+        "maxX": -893,
+        "minZ": -693,
+        "maxZ": -653
+      },
+      {
+        "minX": -886,
+        "maxX": -846,
+        "minZ": -655,
+        "maxZ": -615
+      },
+      {
+        "minX": -838,
+        "maxX": -798,
+        "minZ": -585,
+        "maxZ": -545
+      },
+      {
+        "minX": -719,
+        "maxX": -679,
+        "minZ": -520,
+        "maxZ": -480
+      },
+      {
+        "minX": -839,
+        "maxX": -799,
+        "minZ": -466,
+        "maxZ": -426
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -937,
@@ -36155,6 +62797,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2230,
       "maxZ": -1908
     },
+    "spawnNodes": [
+      {
+        "minX": 1274,
+        "maxX": 1366,
+        "minZ": -2010,
+        "maxZ": -1918
+      },
+      {
+        "minX": 1252,
+        "maxX": 1432,
+        "minZ": -2220,
+        "maxZ": -2040
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1252,
@@ -36192,6 +62848,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2019,
       "maxZ": -1552
     },
+    "spawnNodes": [
+      {
+        "minX": -1018,
+        "maxX": -998,
+        "minZ": -1582,
+        "maxZ": -1562
+      },
+      {
+        "minX": -695,
+        "maxX": -595,
+        "minZ": -1786,
+        "maxZ": -1686
+      },
+      {
+        "minX": -932,
+        "maxX": -812,
+        "minZ": -1980,
+        "maxZ": -1860
+      },
+      {
+        "minX": -731,
+        "maxX": -311,
+        "minZ": -2009,
+        "maxZ": -1589
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -731,
@@ -36244,6 +62926,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5417,
       "maxZ": -5317
     },
+    "spawnNodes": [
+      {
+        "minX": -123,
+        "maxX": -107,
+        "minZ": -5403,
+        "maxZ": -5387
+      },
+      {
+        "minX": -101,
+        "maxX": -71,
+        "minZ": -5390,
+        "maxZ": -5360
+      },
+      {
+        "minX": -48,
+        "maxX": -18,
+        "minZ": -5361,
+        "maxZ": -5331
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -123,
@@ -36279,6 +62981,62 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5556,
       "maxZ": -5425
     },
+    "spawnNodes": [
+      {
+        "minX": 761,
+        "maxX": 777,
+        "minZ": -5489,
+        "maxZ": -5473
+      },
+      {
+        "minX": 770,
+        "maxX": 786,
+        "minZ": -5459,
+        "maxZ": -5443
+      },
+      {
+        "minX": 747,
+        "maxX": 763,
+        "minZ": -5470,
+        "maxZ": -5454
+      },
+      {
+        "minX": 723,
+        "maxX": 739,
+        "minZ": -5451,
+        "maxZ": -5435
+      },
+      {
+        "minX": 704,
+        "maxX": 720,
+        "minZ": -5477,
+        "maxZ": -5461
+      },
+      {
+        "minX": 719,
+        "maxX": 735,
+        "minZ": -5483,
+        "maxZ": -5467
+      },
+      {
+        "minX": 723,
+        "maxX": 739,
+        "minZ": -5503,
+        "maxZ": -5487
+      },
+      {
+        "minX": 735,
+        "maxX": 751,
+        "minZ": -5519,
+        "maxZ": -5503
+      },
+      {
+        "minX": 745,
+        "maxX": 761,
+        "minZ": -5534,
+        "maxZ": -5518
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 704,
@@ -36315,6 +63073,74 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5364,
       "maxZ": -5020
     },
+    "spawnNodes": [
+      {
+        "minX": -869,
+        "maxX": -829,
+        "minZ": -5297,
+        "maxZ": -5257
+      },
+      {
+        "minX": -856,
+        "maxX": -806,
+        "minZ": -5258,
+        "maxZ": -5208
+      },
+      {
+        "minX": -825,
+        "maxX": -785,
+        "minZ": -5221,
+        "maxZ": -5181
+      },
+      {
+        "minX": -809,
+        "maxX": -779,
+        "minZ": -5181,
+        "maxZ": -5151
+      },
+      {
+        "minX": -791,
+        "maxX": -751,
+        "minZ": -5129,
+        "maxZ": -5089
+      },
+      {
+        "minX": -751,
+        "maxX": -691,
+        "minZ": -5119,
+        "maxZ": -5059
+      },
+      {
+        "minX": -703,
+        "maxX": -653,
+        "minZ": -5080,
+        "maxZ": -5030
+      },
+      {
+        "minX": -777,
+        "maxX": -727,
+        "minZ": -5354,
+        "maxZ": -5304
+      },
+      {
+        "minX": -739,
+        "maxX": -699,
+        "minZ": -5328,
+        "maxZ": -5288
+      },
+      {
+        "minX": -574,
+        "maxX": -544,
+        "minZ": -5224,
+        "maxZ": -5194
+      },
+      {
+        "minX": -613,
+        "maxX": -573,
+        "minZ": -5270,
+        "maxZ": -5230
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -869,
@@ -36359,6 +63185,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5343,
       "maxZ": -5024
     },
+    "spawnNodes": [
+      {
+        "minX": -206,
+        "maxX": -166,
+        "minZ": -5144,
+        "maxZ": -5104
+      },
+      {
+        "minX": -88,
+        "maxX": -58,
+        "minZ": -5064,
+        "maxZ": -5034
+      },
+      {
+        "minX": -41,
+        "maxX": 9,
+        "minZ": -5108,
+        "maxZ": -5058
+      },
+      {
+        "minX": -45,
+        "maxX": 31,
+        "minZ": -5178,
+        "maxZ": -5102
+      },
+      {
+        "minX": -47,
+        "maxX": -17,
+        "minZ": -5211,
+        "maxZ": -5181
+      },
+      {
+        "minX": -3,
+        "maxX": 27,
+        "minZ": -5244,
+        "maxZ": -5214
+      },
+      {
+        "minX": -7,
+        "maxX": 23,
+        "minZ": -5325,
+        "maxZ": -5295
+      },
+      {
+        "minX": -275,
+        "maxX": -235,
+        "minZ": -5333,
+        "maxZ": -5293
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -88,
@@ -36407,6 +63283,134 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5139,
       "maxZ": -1032
     },
+    "spawnNodes": [
+      {
+        "minX": -1195,
+        "maxX": -1105,
+        "minZ": -5098,
+        "maxZ": -5008
+      },
+      {
+        "minX": -1097,
+        "maxX": -1007,
+        "minZ": -5129,
+        "maxZ": -5039
+      },
+      {
+        "minX": -972,
+        "maxX": -882,
+        "minZ": -5056,
+        "maxZ": -4966
+      },
+      {
+        "minX": -972,
+        "maxX": -882,
+        "minZ": -4970,
+        "maxZ": -4880
+      },
+      {
+        "minX": -1059,
+        "maxX": -969,
+        "minZ": -4964,
+        "maxZ": -4874
+      },
+      {
+        "minX": -1151,
+        "maxX": -1061,
+        "minZ": -4968,
+        "maxZ": -4878
+      },
+      {
+        "minX": -1153,
+        "maxX": -1063,
+        "minZ": -4605,
+        "maxZ": -4515
+      },
+      {
+        "minX": -790,
+        "maxX": -700,
+        "minZ": -4663,
+        "maxZ": -4573
+      },
+      {
+        "minX": -868,
+        "maxX": -778,
+        "minZ": -4767,
+        "maxZ": -4677
+      },
+      {
+        "minX": -650,
+        "maxX": -560,
+        "minZ": -4765,
+        "maxZ": -4675
+      },
+      {
+        "minX": -762,
+        "maxX": -672,
+        "minZ": -4840,
+        "maxZ": -4750
+      },
+      {
+        "minX": -1308,
+        "maxX": -1218,
+        "minZ": -5082,
+        "maxZ": -4992
+      },
+      {
+        "minX": -950,
+        "maxX": -860,
+        "minZ": -4699,
+        "maxZ": -4609
+      },
+      {
+        "minX": -736,
+        "maxX": -646,
+        "minZ": -4732,
+        "maxZ": -4642
+      },
+      {
+        "minX": -907,
+        "maxX": -817,
+        "minZ": -4831,
+        "maxZ": -4741
+      },
+      {
+        "minX": -1004,
+        "maxX": -914,
+        "minZ": -4854,
+        "maxZ": -4764
+      },
+      {
+        "minX": -1078,
+        "maxX": -988,
+        "minZ": -4763,
+        "maxZ": -4673
+      },
+      {
+        "minX": -1176,
+        "maxX": -1086,
+        "minZ": -4753,
+        "maxZ": -4663
+      },
+      {
+        "minX": -297,
+        "maxX": -237,
+        "minZ": -1336,
+        "maxZ": -1276
+      },
+      {
+        "minX": -238,
+        "maxX": -202,
+        "minZ": -1234,
+        "maxZ": -1198
+      },
+      {
+        "minX": -131,
+        "maxX": -71,
+        "minZ": -1102,
+        "maxZ": -1042
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1308,
@@ -36455,6 +63459,116 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5139,
       "maxZ": -4505
     },
+    "spawnNodes": [
+      {
+        "minX": -1195,
+        "maxX": -1105,
+        "minZ": -5098,
+        "maxZ": -5008
+      },
+      {
+        "minX": -1097,
+        "maxX": -1007,
+        "minZ": -5129,
+        "maxZ": -5039
+      },
+      {
+        "minX": -972,
+        "maxX": -882,
+        "minZ": -5056,
+        "maxZ": -4966
+      },
+      {
+        "minX": -972,
+        "maxX": -882,
+        "minZ": -4970,
+        "maxZ": -4880
+      },
+      {
+        "minX": -1059,
+        "maxX": -969,
+        "minZ": -4964,
+        "maxZ": -4874
+      },
+      {
+        "minX": -1151,
+        "maxX": -1061,
+        "minZ": -4968,
+        "maxZ": -4878
+      },
+      {
+        "minX": -1153,
+        "maxX": -1063,
+        "minZ": -4605,
+        "maxZ": -4515
+      },
+      {
+        "minX": -790,
+        "maxX": -700,
+        "minZ": -4663,
+        "maxZ": -4573
+      },
+      {
+        "minX": -868,
+        "maxX": -778,
+        "minZ": -4767,
+        "maxZ": -4677
+      },
+      {
+        "minX": -650,
+        "maxX": -560,
+        "minZ": -4765,
+        "maxZ": -4675
+      },
+      {
+        "minX": -762,
+        "maxX": -672,
+        "minZ": -4840,
+        "maxZ": -4750
+      },
+      {
+        "minX": -1308,
+        "maxX": -1218,
+        "minZ": -5082,
+        "maxZ": -4992
+      },
+      {
+        "minX": -950,
+        "maxX": -860,
+        "minZ": -4699,
+        "maxZ": -4609
+      },
+      {
+        "minX": -736,
+        "maxX": -646,
+        "minZ": -4732,
+        "maxZ": -4642
+      },
+      {
+        "minX": -907,
+        "maxX": -817,
+        "minZ": -4831,
+        "maxZ": -4741
+      },
+      {
+        "minX": -1004,
+        "maxX": -914,
+        "minZ": -4854,
+        "maxZ": -4764
+      },
+      {
+        "minX": -1078,
+        "maxX": -988,
+        "minZ": -4763,
+        "maxZ": -4673
+      },
+      {
+        "minX": -1176,
+        "maxX": -1086,
+        "minZ": -4753,
+        "maxZ": -4663
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1308,
@@ -36491,6 +63605,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5202,
       "maxZ": -5102
     },
+    "spawnNodes": [
+      {
+        "minX": 1317,
+        "maxX": 1357,
+        "minZ": -5172,
+        "maxZ": -5132
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1317,
@@ -36527,6 +63649,200 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -709,
       "maxZ": -265
     },
+    "spawnNodes": [
+      {
+        "minX": -751,
+        "maxX": -711,
+        "minZ": -503,
+        "maxZ": -463
+      },
+      {
+        "minX": -775,
+        "maxX": -717,
+        "minZ": -465,
+        "maxZ": -407
+      },
+      {
+        "minX": -781,
+        "maxX": -741,
+        "minZ": -436,
+        "maxZ": -396
+      },
+      {
+        "minX": -768,
+        "maxX": -728,
+        "minZ": -412,
+        "maxZ": -372
+      },
+      {
+        "minX": -784,
+        "maxX": -744,
+        "minZ": -325,
+        "maxZ": -285
+      },
+      {
+        "minX": -762,
+        "maxX": -722,
+        "minZ": -343,
+        "maxZ": -303
+      },
+      {
+        "minX": -712,
+        "maxX": -672,
+        "minZ": -415,
+        "maxZ": -375
+      },
+      {
+        "minX": -704,
+        "maxX": -664,
+        "minZ": -432,
+        "maxZ": -392
+      },
+      {
+        "minX": -786,
+        "maxX": -746,
+        "minZ": -368,
+        "maxZ": -328
+      },
+      {
+        "minX": -812,
+        "maxX": -772,
+        "minZ": -315,
+        "maxZ": -275
+      },
+      {
+        "minX": -808,
+        "maxX": -768,
+        "minZ": -343,
+        "maxZ": -303
+      },
+      {
+        "minX": -837,
+        "maxX": -797,
+        "minZ": -352,
+        "maxZ": -312
+      },
+      {
+        "minX": -868,
+        "maxX": -828,
+        "minZ": -336,
+        "maxZ": -296
+      },
+      {
+        "minX": -883,
+        "maxX": -843,
+        "minZ": -390,
+        "maxZ": -350
+      },
+      {
+        "minX": -919,
+        "maxX": -879,
+        "minZ": -376,
+        "maxZ": -336
+      },
+      {
+        "minX": -929,
+        "maxX": -889,
+        "minZ": -463,
+        "maxZ": -423
+      },
+      {
+        "minX": -900,
+        "maxX": -860,
+        "minZ": -501,
+        "maxZ": -461
+      },
+      {
+        "minX": -898,
+        "maxX": -858,
+        "minZ": -533,
+        "maxZ": -493
+      },
+      {
+        "minX": -921,
+        "maxX": -881,
+        "minZ": -546,
+        "maxZ": -506
+      },
+      {
+        "minX": -909,
+        "maxX": -869,
+        "minZ": -562,
+        "maxZ": -522
+      },
+      {
+        "minX": -879,
+        "maxX": -839,
+        "minZ": -555,
+        "maxZ": -515
+      },
+      {
+        "minX": -861,
+        "maxX": -821,
+        "minZ": -585,
+        "maxZ": -545
+      },
+      {
+        "minX": -899,
+        "maxX": -859,
+        "minZ": -588,
+        "maxZ": -548
+      },
+      {
+        "minX": -878,
+        "maxX": -838,
+        "minZ": -601,
+        "maxZ": -561
+      },
+      {
+        "minX": -919,
+        "maxX": -879,
+        "minZ": -642,
+        "maxZ": -602
+      },
+      {
+        "minX": -937,
+        "maxX": -897,
+        "minZ": -648,
+        "maxZ": -608
+      },
+      {
+        "minX": -892,
+        "maxX": -852,
+        "minZ": -699,
+        "maxZ": -659
+      },
+      {
+        "minX": -933,
+        "maxX": -893,
+        "minZ": -693,
+        "maxZ": -653
+      },
+      {
+        "minX": -886,
+        "maxX": -846,
+        "minZ": -655,
+        "maxZ": -615
+      },
+      {
+        "minX": -838,
+        "maxX": -798,
+        "minZ": -585,
+        "maxZ": -545
+      },
+      {
+        "minX": -719,
+        "maxX": -679,
+        "minZ": -520,
+        "maxZ": -480
+      },
+      {
+        "minX": -839,
+        "maxX": -799,
+        "minZ": -466,
+        "maxZ": -426
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -937,
@@ -36562,6 +63878,86 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2551,
       "maxZ": -2119
     },
+    "spawnNodes": [
+      {
+        "minX": -1700,
+        "maxX": -1672,
+        "minZ": -2157,
+        "maxZ": -2129
+      },
+      {
+        "minX": -1711,
+        "maxX": -1683,
+        "minZ": -2224,
+        "maxZ": -2196
+      },
+      {
+        "minX": -1634,
+        "maxX": -1606,
+        "minZ": -2198,
+        "maxZ": -2170
+      },
+      {
+        "minX": -1568,
+        "maxX": -1540,
+        "minZ": -2206,
+        "maxZ": -2178
+      },
+      {
+        "minX": -1510,
+        "maxX": -1482,
+        "minZ": -2235,
+        "maxZ": -2207
+      },
+      {
+        "minX": -1475,
+        "maxX": -1447,
+        "minZ": -2377,
+        "maxZ": -2349
+      },
+      {
+        "minX": -1573,
+        "maxX": -1545,
+        "minZ": -2311,
+        "maxZ": -2283
+      },
+      {
+        "minX": -1769,
+        "maxX": -1741,
+        "minZ": -2408,
+        "maxZ": -2380
+      },
+      {
+        "minX": -1787,
+        "maxX": -1759,
+        "minZ": -2426,
+        "maxZ": -2398
+      },
+      {
+        "minX": -1715,
+        "maxX": -1687,
+        "minZ": -2471,
+        "maxZ": -2443
+      },
+      {
+        "minX": -1836,
+        "maxX": -1808,
+        "minZ": -2541,
+        "maxZ": -2513
+      },
+      {
+        "minX": -1598,
+        "maxX": -1570,
+        "minZ": -2346,
+        "maxZ": -2318
+      },
+      {
+        "minX": -1482,
+        "maxX": -1454,
+        "minZ": -2366,
+        "maxZ": -2338
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1836,
@@ -36606,6 +64002,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1517,
       "maxZ": -1310
     },
+    "spawnNodes": [
+      {
+        "minX": 588,
+        "maxX": 628,
+        "minZ": -1360,
+        "maxZ": -1320
+      },
+      {
+        "minX": 843,
+        "maxX": 883,
+        "minZ": -1401,
+        "maxZ": -1361
+      },
+      {
+        "minX": 538,
+        "maxX": 578,
+        "minZ": -1507,
+        "maxZ": -1467
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 538,
@@ -36653,6 +64069,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4678,
       "maxZ": -4578
     },
+    "spawnNodes": [
+      {
+        "minX": 1295,
+        "maxX": 1355,
+        "minZ": -4658,
+        "maxZ": -4598
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1295,
@@ -36690,6 +64114,56 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1094,
       "maxZ": -608
     },
+    "spawnNodes": [
+      {
+        "minX": 637,
+        "maxX": 693,
+        "minZ": -1084,
+        "maxZ": -1028
+      },
+      {
+        "minX": 632,
+        "maxX": 688,
+        "minZ": -1021,
+        "maxZ": -965
+      },
+      {
+        "minX": 621,
+        "maxX": 677,
+        "minZ": -1040,
+        "maxZ": -984
+      },
+      {
+        "minX": 477,
+        "maxX": 553,
+        "minZ": -863,
+        "maxZ": -787
+      },
+      {
+        "minX": 639,
+        "maxX": 715,
+        "minZ": -847,
+        "maxZ": -771
+      },
+      {
+        "minX": 692,
+        "maxX": 852,
+        "minZ": -900,
+        "maxZ": -740
+      },
+      {
+        "minX": 662,
+        "maxX": 822,
+        "minZ": -778,
+        "maxZ": -618
+      },
+      {
+        "minX": 662,
+        "maxX": 742,
+        "minZ": -912,
+        "maxZ": -832
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 639,
@@ -36739,6 +64213,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1714,
       "maxZ": -1614
     },
+    "spawnNodes": [
+      {
+        "minX": -2184,
+        "maxX": -2168,
+        "minZ": -1672,
+        "maxZ": -1656
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2184,
@@ -36776,6 +64258,44 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1168,
       "maxZ": -435
     },
+    "spawnNodes": [
+      {
+        "minX": -1080,
+        "maxX": -1064,
+        "minZ": -1158,
+        "maxZ": -1142
+      },
+      {
+        "minX": -1410,
+        "maxX": -1394,
+        "minZ": -1045,
+        "maxZ": -1029
+      },
+      {
+        "minX": -1393,
+        "maxX": -1377,
+        "minZ": -1045,
+        "maxZ": -1029
+      },
+      {
+        "minX": -1438,
+        "maxX": -1422,
+        "minZ": -1004,
+        "maxZ": -988
+      },
+      {
+        "minX": -1438,
+        "maxX": -1422,
+        "minZ": -1021,
+        "maxZ": -1005
+      },
+      {
+        "minX": -2238,
+        "maxX": -2222,
+        "minZ": -461,
+        "maxZ": -445
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1458,
@@ -36824,6 +64344,68 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1702,
       "maxZ": -988
     },
+    "spawnNodes": [
+      {
+        "minX": -2158,
+        "maxX": -2142,
+        "minZ": -1667,
+        "maxZ": -1651
+      },
+      {
+        "minX": -2158,
+        "maxX": -2142,
+        "minZ": -1677,
+        "maxZ": -1661
+      },
+      {
+        "minX": -1088,
+        "maxX": -1072,
+        "minZ": -1150,
+        "maxZ": -1134
+      },
+      {
+        "minX": -1075,
+        "maxX": -1059,
+        "minZ": -1167,
+        "maxZ": -1151
+      },
+      {
+        "minX": -1403,
+        "maxX": -1387,
+        "minZ": -1014,
+        "maxZ": -998
+      },
+      {
+        "minX": -1414,
+        "maxX": -1398,
+        "minZ": -1025,
+        "maxZ": -1009
+      },
+      {
+        "minX": -1373,
+        "maxX": -1357,
+        "minZ": -1095,
+        "maxZ": -1079
+      },
+      {
+        "minX": -1380,
+        "maxX": -1364,
+        "minZ": -1095,
+        "maxZ": -1079
+      },
+      {
+        "minX": -1373,
+        "maxX": -1357,
+        "minZ": -1100,
+        "maxZ": -1084
+      },
+      {
+        "minX": -1380,
+        "maxX": -1364,
+        "minZ": -1100,
+        "maxZ": -1084
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1414,
@@ -36872,6 +64454,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1714,
       "maxZ": -1614
     },
+    "spawnNodes": [
+      {
+        "minX": -2134,
+        "maxX": -2118,
+        "minZ": -1677,
+        "maxZ": -1661
+      },
+      {
+        "minX": -2134,
+        "maxX": -2118,
+        "minZ": -1667,
+        "maxZ": -1651
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2154,
@@ -36908,6 +64504,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1709,
       "maxZ": -1609
     },
+    "spawnNodes": [
+      {
+        "minX": -2142,
+        "maxX": -2126,
+        "minZ": -1667,
+        "maxZ": -1651
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2142,
@@ -36947,6 +64551,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2160,
       "maxZ": -1720
     },
+    "spawnNodes": [
+      {
+        "minX": 964,
+        "maxX": 1064,
+        "minZ": -2150,
+        "maxZ": -2050
+      },
+      {
+        "minX": 1089,
+        "maxX": 1189,
+        "minZ": -1988,
+        "maxZ": -1888
+      },
+      {
+        "minX": 970,
+        "maxX": 1070,
+        "minZ": -1830,
+        "maxZ": -1730
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 970,
@@ -36994,6 +64618,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4685,
       "maxZ": -4585
     },
+    "spawnNodes": [
+      {
+        "minX": -1090,
+        "maxX": -1074,
+        "minZ": -4643,
+        "maxZ": -4627
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1090,
@@ -37030,6 +64662,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1411,
       "maxZ": -1019
     },
+    "spawnNodes": [
+      {
+        "minX": -1103,
+        "maxX": -1043,
+        "minZ": -1227,
+        "maxZ": -1167
+      },
+      {
+        "minX": -1368,
+        "maxX": -1352,
+        "minZ": -1401,
+        "maxZ": -1385
+      },
+      {
+        "minX": -1039,
+        "maxX": -1023,
+        "minZ": -1045,
+        "maxZ": -1029
+      },
+      {
+        "minX": -1005,
+        "maxX": -985,
+        "minZ": -1302,
+        "maxZ": -1282
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1103,
@@ -37083,6 +64741,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1260,
       "maxZ": -1160
     },
+    "spawnNodes": [
+      {
+        "minX": 1312,
+        "maxX": 1372,
+        "minZ": -1240,
+        "maxZ": -1180
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1312,
@@ -37118,6 +64784,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5543,
       "maxZ": -5423
     },
+    "spawnNodes": [
+      {
+        "minX": -1369,
+        "maxX": -1321,
+        "minZ": -5481,
+        "maxZ": -5433
+      },
+      {
+        "minX": -1379,
+        "maxX": -1331,
+        "minZ": -5533,
+        "maxZ": -5485
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1379,
@@ -37154,6 +64834,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -5531,
       "maxZ": -5429
     },
+    "spawnNodes": [
+      {
+        "minX": -772,
+        "maxX": -732,
+        "minZ": -5494,
+        "maxZ": -5454
+      },
+      {
+        "minX": -787,
+        "maxX": -717,
+        "minZ": -5509,
+        "maxZ": -5439
+      },
+      {
+        "minX": -744,
+        "maxX": -704,
+        "minZ": -5521,
+        "maxZ": -5481
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -787,
@@ -37191,6 +64891,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2768,
       "maxZ": -2134
     },
+    "spawnNodes": [
+      {
+        "minX": -1617,
+        "maxX": -1317,
+        "minZ": -2758,
+        "maxZ": -2458
+      },
+      {
+        "minX": -1655,
+        "maxX": -1515,
+        "minZ": -2284,
+        "maxZ": -2144
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1617,
@@ -37232,6 +64946,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2747,
       "maxZ": -2647
     },
+    "spawnNodes": [
+      {
+        "minX": -659,
+        "maxX": -643,
+        "minZ": -2703,
+        "maxZ": -2687
+      },
+      {
+        "minX": -668,
+        "maxX": -652,
+        "minZ": -2707,
+        "maxZ": -2691
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -683,
@@ -37267,6 +64995,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1699,
       "maxZ": -1599
     },
+    "spawnNodes": [
+      {
+        "minX": -1699,
+        "maxX": -1683,
+        "minZ": -1636,
+        "maxZ": -1620
+      },
+      {
+        "minX": -2034,
+        "maxX": -2018,
+        "minZ": -1641,
+        "maxZ": -1625
+      },
+      {
+        "minX": -2044,
+        "maxX": -2028,
+        "minZ": -1665,
+        "maxZ": -1649
+      },
+      {
+        "minX": -2037,
+        "maxX": -2021,
+        "minZ": -1654,
+        "maxZ": -1638
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -2060,
@@ -37308,6 +65062,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1517,
       "maxZ": -1310
     },
+    "spawnNodes": [
+      {
+        "minX": 588,
+        "maxX": 628,
+        "minZ": -1360,
+        "maxZ": -1320
+      },
+      {
+        "minX": 843,
+        "maxX": 883,
+        "minZ": -1401,
+        "maxZ": -1361
+      },
+      {
+        "minX": 538,
+        "maxX": 578,
+        "minZ": -1507,
+        "maxZ": -1467
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 538,
@@ -37358,6 +65132,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -716,
       "maxZ": -616
     },
+    "spawnNodes": [
+      {
+        "minX": -622,
+        "maxX": -606,
+        "minZ": -674,
+        "maxZ": -658
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -622,
@@ -37393,6 +65175,50 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1401,
       "maxZ": -892
     },
+    "spawnNodes": [
+      {
+        "minX": -1291,
+        "maxX": -1245,
+        "minZ": -977,
+        "maxZ": -931
+      },
+      {
+        "minX": -1103,
+        "maxX": -1067,
+        "minZ": -1035,
+        "maxZ": -999
+      },
+      {
+        "minX": -1102,
+        "maxX": -1056,
+        "minZ": -1095,
+        "maxZ": -1049
+      },
+      {
+        "minX": -1171,
+        "maxX": -1135,
+        "minZ": -1204,
+        "maxZ": -1168
+      },
+      {
+        "minX": -1131,
+        "maxX": -1095,
+        "minZ": -1345,
+        "maxZ": -1309
+      },
+      {
+        "minX": -1401,
+        "maxX": -1355,
+        "minZ": -1391,
+        "maxZ": -1345
+      },
+      {
+        "minX": -1449,
+        "maxX": -1403,
+        "minZ": -948,
+        "maxZ": -902
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1107,
@@ -37460,6 +65286,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4703,
       "maxZ": -4603
     },
+    "spawnNodes": [
+      {
+        "minX": -1300,
+        "maxX": -1284,
+        "minZ": -4661,
+        "maxZ": -4645
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1300,
@@ -37500,6 +65334,20 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -982,
       "maxZ": -649
     },
+    "spawnNodes": [
+      {
+        "minX": -105,
+        "maxX": 35,
+        "minZ": -799,
+        "maxZ": -659
+      },
+      {
+        "minX": -61,
+        "maxX": 79,
+        "minZ": -972,
+        "maxZ": -832
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -105,
@@ -37535,6 +65383,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -563,
       "maxZ": -463
     },
+    "spawnNodes": [
+      {
+        "minX": -370,
+        "maxX": -354,
+        "minZ": -521,
+        "maxZ": -505
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -370,
@@ -37570,6 +65426,62 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -3398,
       "maxZ": -3054
     },
+    "spawnNodes": [
+      {
+        "minX": -1828,
+        "maxX": -1804,
+        "minZ": -3088,
+        "maxZ": -3064
+      },
+      {
+        "minX": -1834,
+        "maxX": -1818,
+        "minZ": -3131,
+        "maxZ": -3115
+      },
+      {
+        "minX": -1895,
+        "maxX": -1875,
+        "minZ": -3189,
+        "maxZ": -3169
+      },
+      {
+        "minX": -1813,
+        "maxX": -1793,
+        "minZ": -3286,
+        "maxZ": -3266
+      },
+      {
+        "minX": -1963,
+        "maxX": -1943,
+        "minZ": -3265,
+        "maxZ": -3245
+      },
+      {
+        "minX": -1960,
+        "maxX": -1940,
+        "minZ": -3308,
+        "maxZ": -3288
+      },
+      {
+        "minX": -1897,
+        "maxX": -1877,
+        "minZ": -3363,
+        "maxZ": -3343
+      },
+      {
+        "minX": -1831,
+        "maxX": -1811,
+        "minZ": -3363,
+        "maxZ": -3343
+      },
+      {
+        "minX": -1757,
+        "maxX": -1737,
+        "minZ": -3388,
+        "maxZ": -3368
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -1963,
@@ -37621,6 +65533,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1650,
       "maxZ": -1550
     },
+    "spawnNodes": [
+      {
+        "minX": -264,
+        "maxX": -248,
+        "minZ": -1608,
+        "maxZ": -1592
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -264,
@@ -37656,6 +65576,32 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -4744,
       "maxZ": -4604
     },
+    "spawnNodes": [
+      {
+        "minX": 1074,
+        "maxX": 1092,
+        "minZ": -4669,
+        "maxZ": -4651
+      },
+      {
+        "minX": 1064,
+        "maxX": 1080,
+        "minZ": -4661,
+        "maxZ": -4645
+      },
+      {
+        "minX": 1413,
+        "maxX": 1447,
+        "minZ": -4648,
+        "maxZ": -4614
+      },
+      {
+        "minX": 1050,
+        "maxX": 1090,
+        "minZ": -4734,
+        "maxZ": -4694
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 1042,
@@ -37699,6 +65645,164 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2075,
       "maxZ": -1005
     },
+    "spawnNodes": [
+      {
+        "minX": -39,
+        "maxX": 31,
+        "minZ": -2065,
+        "maxZ": -1995
+      },
+      {
+        "minX": -315,
+        "maxX": -245,
+        "minZ": -1792,
+        "maxZ": -1722
+      },
+      {
+        "minX": 866,
+        "maxX": 936,
+        "minZ": -1574,
+        "maxZ": -1504
+      },
+      {
+        "minX": -695,
+        "maxX": -595,
+        "minZ": -1786,
+        "maxZ": -1686
+      },
+      {
+        "minX": -932,
+        "maxX": -812,
+        "minZ": -1980,
+        "maxZ": -1860
+      },
+      {
+        "minX": -731,
+        "maxX": -311,
+        "minZ": -2009,
+        "maxZ": -1589
+      },
+      {
+        "minX": -109,
+        "maxX": -49,
+        "minZ": -1491,
+        "maxZ": -1431
+      },
+      {
+        "minX": -89,
+        "maxX": -29,
+        "minZ": -1665,
+        "maxZ": -1605
+      },
+      {
+        "minX": 74,
+        "maxX": 90,
+        "minZ": -1826,
+        "maxZ": -1810
+      },
+      {
+        "minX": 354,
+        "maxX": 384,
+        "minZ": -1450,
+        "maxZ": -1420
+      },
+      {
+        "minX": 362,
+        "maxX": 392,
+        "minZ": -1472,
+        "maxZ": -1442
+      },
+      {
+        "minX": 449,
+        "maxX": 489,
+        "minZ": -1480,
+        "maxZ": -1440
+      },
+      {
+        "minX": 342,
+        "maxX": 382,
+        "minZ": -1378,
+        "maxZ": -1338
+      },
+      {
+        "minX": 104,
+        "maxX": 134,
+        "minZ": -1480,
+        "maxZ": -1450
+      },
+      {
+        "minX": 209,
+        "maxX": 249,
+        "minZ": -1421,
+        "maxZ": -1381
+      },
+      {
+        "minX": 264,
+        "maxX": 304,
+        "minZ": -1409,
+        "maxZ": -1369
+      },
+      {
+        "minX": -466,
+        "maxX": -426,
+        "minZ": -1727,
+        "maxZ": -1687
+      },
+      {
+        "minX": -423,
+        "maxX": -393,
+        "minZ": -1723,
+        "maxZ": -1693
+      },
+      {
+        "minX": -8,
+        "maxX": 132,
+        "minZ": -1876,
+        "maxZ": -1736
+      },
+      {
+        "minX": 560,
+        "maxX": 600,
+        "minZ": -1881,
+        "maxZ": -1841
+      },
+      {
+        "minX": 183,
+        "maxX": 323,
+        "minZ": -1155,
+        "maxZ": -1015
+      },
+      {
+        "minX": 366,
+        "maxX": 486,
+        "minZ": -1405,
+        "maxZ": -1285
+      },
+      {
+        "minX": 429,
+        "maxX": 629,
+        "minZ": -1430,
+        "maxZ": -1230
+      },
+      {
+        "minX": 249,
+        "maxX": 289,
+        "minZ": -1229,
+        "maxZ": -1189
+      },
+      {
+        "minX": 344,
+        "maxX": 404,
+        "minZ": -1364,
+        "maxZ": -1304
+      },
+      {
+        "minX": 68,
+        "maxX": 108,
+        "minZ": -1336,
+        "maxZ": -1296
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 104,
@@ -37788,6 +65892,80 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2008,
       "maxZ": -1433
     },
+    "spawnNodes": [
+      {
+        "minX": -572,
+        "maxX": -556,
+        "minZ": -1690,
+        "maxZ": -1674
+      },
+      {
+        "minX": -689,
+        "maxX": -673,
+        "minZ": -1689,
+        "maxZ": -1673
+      },
+      {
+        "minX": -633,
+        "maxX": -617,
+        "minZ": -1793,
+        "maxZ": -1777
+      },
+      {
+        "minX": -467,
+        "maxX": -451,
+        "minZ": -1740,
+        "maxZ": -1724
+      },
+      {
+        "minX": -484,
+        "maxX": -468,
+        "minZ": -1519,
+        "maxZ": -1503
+      },
+      {
+        "minX": -790,
+        "maxX": -774,
+        "minZ": -1459,
+        "maxZ": -1443
+      },
+      {
+        "minX": -914,
+        "maxX": -898,
+        "minZ": -1837,
+        "maxZ": -1821
+      },
+      {
+        "minX": -857,
+        "maxX": -841,
+        "minZ": -1998,
+        "maxZ": -1982
+      },
+      {
+        "minX": -701,
+        "maxX": -685,
+        "minZ": -1987,
+        "maxZ": -1971
+      },
+      {
+        "minX": -626,
+        "maxX": -610,
+        "minZ": -1986,
+        "maxZ": -1970
+      },
+      {
+        "minX": -437,
+        "maxX": -421,
+        "minZ": -1912,
+        "maxZ": -1896
+      },
+      {
+        "minX": -740,
+        "maxX": -724,
+        "minZ": -1760,
+        "maxZ": -1744
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -740,
@@ -37889,6 +66067,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1797,
       "maxZ": -1697
     },
+    "spawnNodes": [
+      {
+        "minX": -481,
+        "maxX": -401,
+        "minZ": -1787,
+        "maxZ": -1707
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -481,
@@ -37925,6 +66111,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1337,
       "maxZ": -1237
     },
+    "spawnNodes": [
+      {
+        "minX": -146,
+        "maxX": -122,
+        "minZ": -1299,
+        "maxZ": -1275
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -146,
@@ -37960,6 +66154,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1822,
       "maxZ": -1722
     },
+    "spawnNodes": [
+      {
+        "minX": 4,
+        "maxX": 24,
+        "minZ": -1782,
+        "maxZ": -1762
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 4,
@@ -37995,6 +66197,26 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -2019,
       "maxZ": -1579
     },
+    "spawnNodes": [
+      {
+        "minX": -695,
+        "maxX": -595,
+        "minZ": -1786,
+        "maxZ": -1686
+      },
+      {
+        "minX": -932,
+        "maxX": -812,
+        "minZ": -1980,
+        "maxZ": -1860
+      },
+      {
+        "minX": -731,
+        "maxX": -311,
+        "minZ": -2009,
+        "maxZ": -1589
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -731,
@@ -38037,6 +66259,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1624,
       "maxZ": -1524
     },
+    "spawnNodes": [
+      {
+        "minX": -881,
+        "maxX": -801,
+        "minZ": -1614,
+        "maxZ": -1534
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -881,
@@ -38072,6 +66302,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1457,
       "maxZ": -1357
     },
+    "spawnNodes": [
+      {
+        "minX": -20,
+        "maxX": -4,
+        "minZ": -1415,
+        "maxZ": -1399
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -20,
@@ -38108,6 +66346,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1601,
       "maxZ": -1501
     },
+    "spawnNodes": [
+      {
+        "minX": -604,
+        "maxX": -580,
+        "minZ": -1563,
+        "maxZ": -1539
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -604,
@@ -38144,6 +66390,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1337,
       "maxZ": -1237
     },
+    "spawnNodes": [
+      {
+        "minX": -142,
+        "maxX": -126,
+        "minZ": -1295,
+        "maxZ": -1279
+      }
+    ],
     "spawnRegions": [
       {
         "minX": -142,
@@ -38179,6 +66433,14 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1584,
       "maxZ": -1484
     },
+    "spawnNodes": [
+      {
+        "minX": 108,
+        "maxX": 124,
+        "minZ": -1542,
+        "maxZ": -1526
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 108,
@@ -38214,6 +66476,38 @@ export const GENERATED_MOB_MARKERS =
       "minZ": -1784,
       "maxZ": -1109
     },
+    "spawnNodes": [
+      {
+        "minX": 374,
+        "maxX": 454,
+        "minZ": -1734,
+        "maxZ": -1654
+      },
+      {
+        "minX": 266,
+        "maxX": 346,
+        "minZ": -1774,
+        "maxZ": -1694
+      },
+      {
+        "minX": 352,
+        "maxX": 396,
+        "minZ": -1163,
+        "maxZ": -1119
+      },
+      {
+        "minX": 544,
+        "maxX": 604,
+        "minZ": -1275,
+        "maxZ": -1215
+      },
+      {
+        "minX": 202,
+        "maxX": 232,
+        "minZ": -1500,
+        "maxZ": -1470
+      }
+    ],
     "spawnRegions": [
       {
         "minX": 266,

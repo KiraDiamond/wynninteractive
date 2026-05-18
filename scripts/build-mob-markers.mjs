@@ -367,6 +367,7 @@ function buildMarkerEntry(mob, territoryIndex) {
     tags: dedupe(["mob", "ingredient drops", region, ...mob.ingredients.slice(0, 6)]),
     position: { world: position },
     spawnBounds,
+    spawnNodes: pointBoxes,
     spawnRegions,
     spawnZoneApproximate: false,
     spawnPointCount: mob.points.length,
