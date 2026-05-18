@@ -2509,6 +2509,27 @@ function bindEvents() {
     }
   });
 
+  window.addEventListener("storage", (event) => {
+    if (event.key === STORAGE_KEYS.found) {
+      state.foundIds = loadFoundIds();
+      syncVisibleMarkers();
+      renderCategoryFilters();
+      renderDetailCard();
+      renderActiveAreaHighlight();
+      return;
+    }
+
+    if (event.key === STORAGE_KEYS.theme) {
+      applyTheme(event.newValue === "dark" ? "dark" : "light", { persist: false });
+      return;
+    }
+
+    if (event.key === STORAGE_KEYS.markerContent) {
+      state.markerContent = loadMarkerContent();
+      renderDetailCard();
+    }
+  });
+
   if (elements.cityEditorCopy) {
     elements.cityEditorCopy.addEventListener("click", async () => {
       try {
