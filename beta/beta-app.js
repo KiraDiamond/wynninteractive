@@ -1282,73 +1282,60 @@ function renderCategoryFilters() {
           : (state.search && matching ? `${matching} matching` : `${total} ${total === 1 ? "type" : "types"}`);
         const iconMarkup = genericIconMarkup(categoryId, "category-icon");
         return `
-          <button type="button" class="category-card ${active ? "active" : "inactive"} mob-family-card" data-mob-family="${categoryId}">
-            ${iconMarkup}
-            <span class="category-copy">
-              <strong>${escapeHtml(meta.label)}</strong>
-              <span class="category-meta">${metaText}</span>
-            </span>
-            <span class="category-count">${total}</span>
-          </button>
+          <div class="mob-family-stack ${active ? "active" : ""}">
+            <button type="button" class="category-card ${active ? "active" : "inactive"} mob-family-card" data-mob-family="${categoryId}">
+              ${iconMarkup}
+              <span class="category-copy">
+                <strong>${escapeHtml(meta.label)}</strong>
+                <span class="category-meta">${metaText}</span>
+              </span>
+              <span class="category-count">${total}</span>
+            </button>
+            ${active ? `
+              <section class="mob-browser-panel">
+                <div class="mob-browser-head">
+                  <div class="mob-browser-copy">
+                    <span class="mob-browser-kicker">Mob Browser</span>
+                    <strong>${escapeHtml(meta.label)}</strong>
+                  </div>
+                  <button type="button" class="mob-browser-close" data-close-mob-family="1" aria-label="Close mob family list">×</button>
+                </div>
+                <p class="mob-browser-note">Pick a mob and the map will outline every exact spawn node we have for it.</p>
+                <div class="mob-browser-list">
+                  ${activeMobFamilyMarkers().length
+                    ? activeMobFamilyMarkers().map((marker) => {
+                      const selected = marker.id === state.selectedMarkerId;
+                      const secondary = [
+                        marker.region || "World",
+                        `${marker.spawnPointCount || 0} ${marker.spawnPointCount === 1 ? "node" : "nodes"}`,
+                      ].join(" · ");
+                      const mobIconUrl = markerIconUrl(marker, "active");
+                      return `
+                        <button
+                          type="button"
+                          class="mob-list-item ${selected ? "active" : ""}"
+                          data-mob-marker="${marker.id}"
+                        >
+                          <span class="mob-list-icon-shell">
+                            ${mobIconUrl
+                              ? `<img class="mob-list-icon" src="${escapeAttribute(mobIconUrl)}" alt="" loading="lazy" referrerpolicy="no-referrer">`
+                              : genericIconMarkup(marker.category, "mob-list-icon generic-category-icon")}
+                          </span>
+                          <span class="mob-list-copy">
+                            <strong>${escapeHtml(marker.title)}</strong>
+                            <span>${escapeHtml(secondary)}</span>
+                          </span>
+                          <span class="mob-list-count">${marker.spawnPointCount || 0}</span>
+                        </button>
+                      `;
+                    }).join("")
+                    : `<div class="mob-browser-empty">No ${escapeHtml(meta.label.toLowerCase())} match the current search.</div>`}
+                </div>
+              </section>
+            ` : ""}
+          </div>
         `;
       }).join("");
-
-      const activeMeta = state.activeMobFamily ? CATEGORY_META[state.activeMobFamily] : null;
-      const activeMarkers = activeMobFamilyMarkers();
-      const browserMarkup = state.activeMobFamily
-        ? `
-          <section class="mob-browser-panel">
-            <div class="mob-browser-head">
-              <div class="mob-browser-copy">
-                <span class="mob-browser-kicker">Mob Browser</span>
-                <strong>${escapeHtml(activeMeta.label)}</strong>
-              </div>
-              <button type="button" class="mob-browser-close" data-close-mob-family="1" aria-label="Close mob family list">×</button>
-            </div>
-            <p class="mob-browser-note">Pick a mob and the map will outline every exact spawn node we have for it.</p>
-            <div class="mob-browser-list">
-              ${activeMarkers.length
-                ? activeMarkers.map((marker) => {
-                  const selected = marker.id === state.selectedMarkerId;
-                  const secondary = [
-                    marker.region || "World",
-                    `${marker.spawnPointCount || 0} ${marker.spawnPointCount === 1 ? "node" : "nodes"}`,
-                  ].join(" · ");
-                  const mobIconUrl = markerIconUrl(marker, "active");
-                  return `
-                    <button
-                      type="button"
-                      class="mob-list-item ${selected ? "active" : ""}"
-                      data-mob-marker="${marker.id}"
-                    >
-                      <span class="mob-list-icon-shell">
-                        ${mobIconUrl
-                          ? `<img class="mob-list-icon" src="${escapeAttribute(mobIconUrl)}" alt="" loading="lazy" referrerpolicy="no-referrer">`
-                          : genericIconMarkup(marker.category, "mob-list-icon generic-category-icon")}
-                      </span>
-                      <span class="mob-list-copy">
-                        <strong>${escapeHtml(marker.title)}</strong>
-                        <span>${escapeHtml(secondary)}</span>
-                      </span>
-                      <span class="mob-list-count">${marker.spawnPointCount || 0}</span>
-                    </button>
-                  `;
-                }).join("")
-                : `<div class="mob-browser-empty">No ${escapeHtml(activeMeta.label.toLowerCase())} match the current search.</div>`}
-            </div>
-          </section>
-        `
-        : `
-          <section class="mob-browser-panel empty">
-            <div class="mob-browser-head">
-              <div class="mob-browser-copy">
-                <span class="mob-browser-kicker">Mob Browser</span>
-                <strong>Choose a family</strong>
-              </div>
-            </div>
-            <p class="mob-browser-note">Open a mob family here, then pick a name from the list to map its exact spawn nodes.</p>
-          </section>
-        `;
 
       return `
         <section class="category-section">
@@ -1356,7 +1343,6 @@ function renderCategoryFilters() {
             <span>${escapeHtml(group.label)}</span>
           </div>
           <div class="category-grid mob-category-grid">${cards}</div>
-          ${browserMarkup}
         </section>
       `;
     }

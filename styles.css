@@ -447,6 +447,14 @@ input {
 
 .mob-category-grid {
   grid-template-columns: 1fr;
+  background: transparent;
+  gap: 8px;
+  padding: 0 8px;
+}
+
+.mob-family-stack {
+  display: grid;
+  gap: 8px;
 }
 
 .category-card {
@@ -534,7 +542,7 @@ input {
 }
 
 .mob-browser-panel {
-  margin: 10px 12px 0;
+  margin: 0;
   padding: 14px;
   border-radius: 18px;
   border: 1px solid #d9e0e8;
