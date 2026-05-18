@@ -1,8 +1,8 @@
-import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260518i";
-import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260518i";
-import { MARKER_CONTENT } from "./data/marker-content.js?v=20260518i";
-import { MOB_ICON_URLS } from "./data/mob-icon-urls.js?v=20260518i";
-import { REFERENCE_IMAGE_URLS } from "./data/reference-images.js?v=20260518i";
+import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260518j";
+import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260518j";
+import { MARKER_CONTENT } from "./data/marker-content.js?v=20260518j";
+import { MOB_ICON_URLS } from "./data/mob-icon-urls.js?v=20260518j";
+import { REFERENCE_IMAGE_URLS } from "./data/reference-images.js?v=20260518j";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
@@ -24,7 +24,20 @@ const STORAGE_KEYS = {
 };
 const CONTENT_BOOK_ROOT = new URL("./assets/content-book/", import.meta.url).href.replace(/\/$/, "");
 const CITY_ICON_URL = new URL("./assets/icon.png", import.meta.url).href;
-const MAP_IMAGE_URL = new URL("./assets/map/WynncraftMapFruma.png", import.meta.url).href;
+const MAP_AREAS = {
+  wynn: {
+    id: "wynn",
+    label: "Wynn",
+    buttonLabel: "Wynncraft Map",
+    imageUrl: new URL("./assets/map/WynncraftMapFruma.png", import.meta.url).href,
+  },
+  outer_void: {
+    id: "outer_void",
+    label: "Outer Void",
+    buttonLabel: "Outer Void",
+    imageUrl: new URL("./assets/map/OuterVoid.png", import.meta.url).href,
+  },
+};
 const query = new URLSearchParams(window.location.search);
 const CALIBRATION_MODE = query.get("calibrate") === "1";
 const USE_STORED_CALIBRATION = CALIBRATION_MODE || query.get("useCalibration") === "1";
@@ -131,6 +144,7 @@ const state = {
   markerContent: DEV_MODE ? { ...MARKER_CONTENT, ...loadMarkerContent() } : { ...MARKER_CONTENT },
   panelView: "markers",
   activeMobFamily: null,
+  currentArea: "wynn",
 };
 
 const elements = {
@@ -139,6 +153,8 @@ const elements = {
   panelToggle: document.querySelector("#panel-toggle"),
   panelTabs: document.querySelectorAll("[data-panel-view]"),
   panelViews: document.querySelectorAll("[data-panel-screen]"),
+  mapSelector: document.querySelector(".map-selector"),
+  mapSelectorLabel: document.querySelector(".map-selector span"),
   searchInput: document.querySelector("#search-input"),
   clearSearch: document.querySelector("#clear-search"),
   showCitiesToggle: document.querySelector("#show-cities-toggle"),
@@ -184,7 +200,7 @@ const map = L.map("map", {
   markerZoomAnimation: false,
 });
 
-L.imageOverlay(MAP_IMAGE_URL, MAP_BOUNDS).addTo(map);
+const baseMapOverlay = L.imageOverlay(MAP_AREAS.wynn.imageUrl, MAP_BOUNDS).addTo(map);
 map.fitBounds(MAP_BOUNDS, { padding: [24, 24] });
 
 function updatePinScale() {
@@ -348,12 +364,19 @@ function imageToWorld(x, y) {
   return defaultImageToWorld(x, y);
 }
 
+function markerArea(marker) {
+  return marker.area || "wynn";
+}
+
 function markerPoint(marker) {
   if (marker.fixed && state.cityEdits[marker.id]) {
     return {
       x: clamp(state.cityEdits[marker.id].x / MAP_WIDTH, 0, 1),
       y: clamp(state.cityEdits[marker.id].y / MAP_HEIGHT, 0, 1),
     };
+  }
+  if (marker.position?.image) {
+    return marker.position.image;
   }
   if (marker.position?.world) {
     return worldToImage(marker.position.world.x, marker.position.world.z);
@@ -1090,6 +1113,10 @@ function cityVisibleAtCurrentZoom(marker) {
 }
 
 function markerIsVisible(marker) {
+  if (markerArea(marker) !== state.currentArea) {
+    return false;
+  }
+
   if (marker.fixed) {
     if (!state.showCities) {
       return false;
@@ -1263,11 +1290,11 @@ function updateMarkerLayerPositions() {
 }
 
 function categoryCount(categoryId) {
-  return state.markers.filter((marker) => marker.category === categoryId && !marker.fixed).length;
+  return state.markers.filter((marker) => marker.category === categoryId && !marker.fixed && markerArea(marker) === state.currentArea).length;
 }
 
 function categoryVisibleCount(categoryId) {
-  return state.filteredMarkers.filter((marker) => marker.category === categoryId && !marker.fixed).length;
+  return state.filteredMarkers.filter((marker) => marker.category === categoryId && !marker.fixed && markerArea(marker) === state.currentArea).length;
 }
 
 function renderCategoryFilters() {
@@ -1676,6 +1703,39 @@ function setPanelCollapsed(collapsed) {
   }
 }
 
+function updateMapSelector() {
+  const area = MAP_AREAS[state.currentArea];
+  if (elements.mapSelectorLabel && area) {
+    elements.mapSelectorLabel.textContent = area.buttonLabel;
+  }
+}
+
+function setCurrentArea(areaId) {
+  if (!MAP_AREAS[areaId] || state.currentArea === areaId) {
+    updateMapSelector();
+    return;
+  }
+
+  state.currentArea = areaId;
+  baseMapOverlay.setUrl(MAP_AREAS[areaId].imageUrl);
+
+  const selected = state.markers.find((marker) => marker.id === state.selectedMarkerId);
+  if (selected && markerArea(selected) !== areaId) {
+    state.selectedMarkerId = null;
+    state.activeMobFamily = null;
+  }
+
+  map.fitBounds(MAP_BOUNDS, { padding: [24, 24], animate: false });
+  if (areaId === "outer_void" && map.getZoom() < MINOR_CITY_MIN_ZOOM) {
+    map.setZoom(MINOR_CITY_MIN_ZOOM, { animate: false });
+  }
+  updateMapSelector();
+  syncVisibleMarkers();
+  renderCategoryFilters();
+  renderDetailCard();
+  renderActiveAreaHighlight();
+}
+
 function worldBoundsToLatLng(bounds) {
   if (!bounds) {
     return null;
@@ -1866,6 +1926,12 @@ function bindEvents() {
     });
   });
 
+  if (elements.mapSelector) {
+    elements.mapSelector.addEventListener("click", () => {
+      setCurrentArea(state.currentArea === "wynn" ? "outer_void" : "wynn");
+    });
+  }
+
   map.on("click", (event) => {
     if (state.calibrationMode) {
       recordCalibrationSample(event.latlng);
@@ -2027,6 +2093,7 @@ state.cityTransform = USE_CITY_EDITS ? computeCityEditTransform() : null;
 bindEvents();
 setPanelCollapsed(state.panelCollapsed);
 setPanelView("markers");
+updateMapSelector();
 updatePinScale();
 renderCalibrationMarkers();
 syncVisibleMarkers();

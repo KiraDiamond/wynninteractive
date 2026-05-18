@@ -430,6 +430,34 @@ export const STARTER_MARKERS = [
     tags: ["city", "north"],
     position: { world: { x: -812, z: -898 } },
   },
+  {
+    id: "outer-void",
+    title: "Outer Void",
+    category: "city",
+    region: "Outer Void",
+    description: "Outer Void settlement in the void frontier.",
+    tags: ["city", "outer void", "void"],
+    minor: true,
+    area: "outer_void",
+    position: {
+      world: { x: 13823, z: -3405 },
+      image: { x: 0.646, y: 0.345 },
+    },
+  },
+  {
+    id: "void-village",
+    title: "Void Village",
+    category: "city",
+    region: "Outer Void",
+    description: "Blue city marker for the lower void village cluster.",
+    tags: ["city", "outer void", "void village"],
+    minor: true,
+    area: "outer_void",
+    position: {
+      world: { x: 14053, z: -4199 },
+      image: { x: 0.508, y: 0.823 },
+    },
+  },
 ];
 
 export const CURATED_MARKERS = [
