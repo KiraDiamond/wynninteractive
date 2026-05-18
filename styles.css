@@ -1388,6 +1388,22 @@ input {
   border: 0;
 }
 
+.area-offset-handle {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  border: 2px solid rgba(17, 24, 39, 0.9);
+  background: #f4ee74;
+  box-shadow:
+    0 0 0 3px rgba(255, 255, 255, 0.86),
+    0 8px 18px rgba(17, 24, 39, 0.24);
+}
+
+.area-offset-handle.minor {
+  background: #8fd3ff;
+}
+
 .city-tooltip-shell {
   margin: 0;
   padding: 0;

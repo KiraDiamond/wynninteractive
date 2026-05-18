@@ -20,6 +20,7 @@ const STORAGE_KEYS = {
   calibrationSamples: "wynninteractive-calibration-samples-v1",
   calibrationTransform: "wynninteractive-calibration-transform-v1",
   cityEdits: "wynninteractive-city-edits-v1",
+  areaOffsets: "wynninteractive-beta-area-offsets-v1",
   markerContent: "wynninteractive-marker-content-v1",
 };
 const CONTENT_BOOK_ROOT = new URL("../assets/content-book/", import.meta.url).href.replace(/\/$/, "");
@@ -146,6 +147,9 @@ const state = {
   activeMobFamily: null,
   currentArea: "wynn",
   mapSelectorOpen: false,
+  areaOffsets: loadAreaOffsets(),
+  areaOffsetMode: false,
+  areaOffsetDrag: null,
 };
 
 const elements = {
@@ -154,6 +158,7 @@ const elements = {
   panelToggle: document.querySelector("#panel-toggle"),
   panelTabs: document.querySelectorAll("[data-panel-view]"),
   panelViews: document.querySelectorAll("[data-panel-screen]"),
+  panelBanner: document.querySelector(".panel-banner"),
   mapSelector: document.querySelector(".map-selector"),
   mapSelectorLabel: document.querySelector(".map-selector span"),
   mapSelectorMenu: document.querySelector(".map-selector-menu"),
@@ -234,6 +239,27 @@ function loadMarkerContent() {
 
 function persistMarkerContent() {
   localStorage.setItem(STORAGE_KEYS.markerContent, JSON.stringify(state.markerContent));
+}
+
+function loadAreaOffsets() {
+  try {
+    const raw = JSON.parse(localStorage.getItem(STORAGE_KEYS.areaOffsets) || "{}");
+    return Object.fromEntries(
+      Object.entries(raw).map(([areaId, value]) => [
+        areaId,
+        {
+          x: Number.isFinite(Number(value?.x)) ? Number(value.x) : 0,
+          y: Number.isFinite(Number(value?.y)) ? Number(value.y) : 0,
+        },
+      ]),
+    );
+  } catch {
+    return {};
+  }
+}
+
+function persistAreaOffsets() {
+  localStorage.setItem(STORAGE_KEYS.areaOffsets, JSON.stringify(state.areaOffsets));
 }
 
 function loadCalibrationSamples() {
@@ -370,20 +396,33 @@ function markerArea(marker) {
   return marker.area || "wynn";
 }
 
+function areaOffset(areaId) {
+  return state.areaOffsets[areaId] || { x: 0, y: 0 };
+}
+
+function applyAreaOffsetToPoint(point, areaId) {
+  const offset = areaOffset(areaId);
+  return {
+    x: point.x + (offset.x / MAP_WIDTH),
+    y: point.y + (offset.y / MAP_HEIGHT),
+  };
+}
+
 function markerPoint(marker) {
+  let point;
   if (marker.fixed && state.cityEdits[marker.id]) {
-    return {
+    point = {
       x: clamp(state.cityEdits[marker.id].x / MAP_WIDTH, 0, 1),
       y: clamp(state.cityEdits[marker.id].y / MAP_HEIGHT, 0, 1),
     };
+  } else if (marker.position?.image) {
+    point = marker.position.image;
+  } else if (marker.position?.world) {
+    point = worldToImage(marker.position.world.x, marker.position.world.z);
+  } else {
+    point = marker.position;
   }
-  if (marker.position?.image) {
-    return marker.position.image;
-  }
-  if (marker.position?.world) {
-    return worldToImage(marker.position.world.x, marker.position.world.z);
-  }
-  return marker.position;
+  return applyAreaOffsetToPoint(point, markerArea(marker));
 }
 
 function markerLatLng(marker) {
@@ -916,7 +955,7 @@ function buildCityLabelHtml(marker, isFound, isSelected) {
   if (marker.minor) {
     classes.push("minor");
   }
-  if (state.editCities) {
+  if (state.editCities || state.areaOffsetMode) {
     classes.push("editable");
   }
   if (isFound) {
@@ -970,10 +1009,100 @@ function wireCityTooltip(layer, markerId) {
     event.stopPropagation();
     setSelectedMarker(id);
   });
+
+  if (element.dataset.dragBound === "1") {
+    return;
+  }
+
+  element.dataset.dragBound = "1";
+  const beginDrag = (event) => {
+    if (!state.areaOffsetMode) {
+      return;
+    }
+    const id = event.currentTarget?.dataset?.markerId;
+    const marker = state.markers.find((item) => item.id === id);
+    if (!marker) {
+      return;
+    }
+    event.preventDefault();
+    event.stopPropagation();
+    startAreaOffsetDrag(marker, map.mouseEventToLatLng(event));
+  };
+  element.addEventListener("pointerdown", beginDrag);
+  element.addEventListener("mousedown", beginDrag);
+}
+
+function wireMarkerAnchor(layer, markerId) {
+  const element = layer.getElement();
+  if (!element) {
+    return;
+  }
+
+  element.dataset.markerId = markerId;
+  if (element.dataset.dragBound === "1") {
+    return;
+  }
+
+  element.dataset.dragBound = "1";
+  const beginDrag = (event) => {
+    if (!state.areaOffsetMode) {
+      return;
+    }
+    const id = event.currentTarget?.dataset?.markerId;
+    const marker = state.markers.find((item) => item.id === id);
+    if (!marker) {
+      return;
+    }
+    event.preventDefault();
+    event.stopPropagation();
+    startAreaOffsetDrag(marker, map.mouseEventToLatLng(event));
+  };
+  element.addEventListener("pointerdown", beginDrag);
+  element.addEventListener("mousedown", beginDrag);
 }
 
 function activeCalibrationTarget() {
   return CALIBRATION_TARGETS[state.calibrationIndex] || CALIBRATION_TARGETS[0];
+}
+
+function startAreaOffsetDrag(marker, latlng) {
+  if (!state.areaOffsetMode) {
+    return;
+  }
+  state.areaOffsetDrag = {
+    areaId: markerArea(marker),
+    markerId: marker.id,
+    startLatLng: { lat: latlng.lat, lng: latlng.lng },
+    startOffset: { ...areaOffset(markerArea(marker)) },
+  };
+  setSelectedMarker(marker.id);
+  if (map.dragging?.enabled()) {
+    map.dragging.disable();
+  }
+}
+
+function updateAreaOffsetDrag(latlng) {
+  if (!state.areaOffsetDrag) {
+    return;
+  }
+  state.areaOffsets[state.areaOffsetDrag.areaId] = {
+    x: Math.round(state.areaOffsetDrag.startOffset.x + (latlng.lng - state.areaOffsetDrag.startLatLng.lng)),
+    y: Math.round(state.areaOffsetDrag.startOffset.y + (latlng.lat - state.areaOffsetDrag.startLatLng.lat)),
+  };
+  updateMarkerLayerPositions();
+  renderPanelBanner();
+  renderActiveAreaHighlight();
+}
+
+function finishAreaOffsetDrag() {
+  if (!state.areaOffsetDrag) {
+    return;
+  }
+  persistAreaOffsets();
+  state.areaOffsetDrag = null;
+  if (map.dragging && !map.dragging.enabled()) {
+    map.dragging.enable();
+  }
 }
 
 function solve3x3(matrix, vector) {
@@ -1156,6 +1285,14 @@ function markerIsVisible(marker) {
 function buildMarkerIcon(marker, isFound, isSelected) {
   const meta = CATEGORY_META[marker.category];
   if (marker.fixed) {
+    if (state.areaOffsetMode) {
+      return L.divIcon({
+        className: "map-pin-wrapper",
+        html: `<span class="area-offset-handle ${marker.minor ? "minor" : ""}"></span>`,
+        iconSize: [18, 18],
+        iconAnchor: [9, 9],
+      });
+    }
     return L.divIcon({
       className: "city-anchor-icon",
       html: "",
@@ -1198,10 +1335,21 @@ function createMarkerLayer(marker) {
   });
 
   layer.on("click", () => setSelectedMarker(marker.id));
+  layer.on("mousedown", (event) => {
+    if (!state.areaOffsetMode) {
+      return;
+    }
+    event.originalEvent?.preventDefault?.();
+    event.originalEvent?.stopPropagation?.();
+    startAreaOffsetDrag(marker, event.latlng);
+  });
   if (marker.fixed) {
     bindCityTooltip(layer, marker, markerIsFound(marker), false);
     layer.on("add", () => {
-      window.requestAnimationFrame(() => wireCityTooltip(layer, marker.id));
+      window.requestAnimationFrame(() => {
+        wireCityTooltip(layer, marker.id);
+        wireMarkerAnchor(layer, marker.id);
+      });
     });
     layer.on("tooltipopen", () => {
       wireCityTooltip(layer, marker.id);
@@ -1234,6 +1382,9 @@ function createMarkerLayer(marker) {
       offset: [0, -10],
       opacity: 0.94,
       sticky: true,
+    });
+    layer.on("add", () => {
+      window.requestAnimationFrame(() => wireMarkerAnchor(layer, marker.id));
     });
   }
   state.markerLayers.set(marker.id, layer);
@@ -1677,6 +1828,18 @@ function renderCityEditor() {
   elements.cityEditorOutput.textContent = JSON.stringify(cityEditExport(), null, 2);
 }
 
+function renderPanelBanner() {
+  if (!elements.panelBanner) {
+    return;
+  }
+  if (state.areaOffsetMode) {
+    const offset = areaOffset(state.currentArea);
+    elements.panelBanner.textContent = `Offset edit is on for ${MAP_AREAS[state.currentArea].buttonLabel}. Drag any visible marker to shift this area only. Ctrl+X exits. Current offset: ${offset.x}, ${offset.y}.`;
+    return;
+  }
+  elements.panelBanner.textContent = "Routes, rewards, discoveries, profession spots, and exact mob markers.";
+}
+
 function renderCalibrationPanel() {
   if (!elements.calibrationPanel) {
     return;
@@ -1774,6 +1937,7 @@ function setCurrentArea(areaId) {
   }
   state.mapSelectorOpen = false;
   updateMapSelector();
+  renderPanelBanner();
   syncVisibleMarkers();
   renderCategoryFilters();
   renderDetailCard();
@@ -1790,7 +1954,8 @@ function worldBoundsToLatLng(bounds) {
     worldToImage(bounds.minX, bounds.maxZ),
     worldToImage(bounds.maxX, bounds.minZ),
     worldToImage(bounds.maxX, bounds.maxZ),
-  ].map((point) => [point.y * MAP_HEIGHT, point.x * MAP_WIDTH]);
+  ].map((point) => applyAreaOffsetToPoint(point, state.currentArea))
+    .map((point) => [point.y * MAP_HEIGHT, point.x * MAP_WIDTH]);
 
   const lats = corners.map(([lat]) => lat);
   const lngs = corners.map(([, lng]) => lng);
@@ -1911,8 +2076,8 @@ function syncVisibleMarkers() {
     if (!visible && map.hasLayer(layer)) {
       map.removeLayer(layer);
     }
-    if (marker.fixed && layer.dragging) {
-      if (state.editCities) {
+    if (layer.dragging) {
+      if (marker.fixed && state.editCities && !state.areaOffsetMode) {
         layer.dragging.enable();
       } else {
         layer.dragging.disable();
@@ -1921,6 +2086,7 @@ function syncVisibleMarkers() {
     const isFound = markerIsFound(marker);
     const isSelected = marker.id === state.selectedMarkerId;
     layer.setIcon(buildMarkerIcon(marker, isFound, isSelected));
+    window.requestAnimationFrame(() => wireMarkerAnchor(layer, marker.id));
     if (marker.fixed) {
       bindCityTooltip(layer, marker, isFound, isSelected);
     }
@@ -1997,10 +2163,45 @@ function bindEvents() {
     setMapSelectorOpen(false);
   });
 
+  document.addEventListener("mouseup", () => {
+    finishAreaOffsetDrag();
+  });
+  document.addEventListener("mousemove", (event) => {
+    if (!state.areaOffsetDrag) {
+      return;
+    }
+    updateAreaOffsetDrag(map.mouseEventToLatLng(event));
+  });
+
+  document.addEventListener("keydown", (event) => {
+    const target = event.target;
+    const typingTarget = target instanceof HTMLElement && (
+      target.isContentEditable ||
+      target.tagName === "INPUT" ||
+      target.tagName === "TEXTAREA" ||
+      target.tagName === "SELECT"
+    );
+    if (typingTarget) {
+      return;
+    }
+    if (event.ctrlKey && !event.shiftKey && !event.altKey && event.key.toLowerCase() === "x") {
+      event.preventDefault();
+      state.areaOffsetMode = !state.areaOffsetMode;
+      renderPanelBanner();
+      syncVisibleMarkers();
+    }
+  });
+
   map.on("click", (event) => {
     if (state.calibrationMode) {
       recordCalibrationSample(event.latlng);
     }
+  });
+  map.on("mousemove", (event) => {
+    updateAreaOffsetDrag(event.latlng);
+  });
+  map.on("mouseup", () => {
+    finishAreaOffsetDrag();
   });
 
   elements.searchInput.addEventListener("input", (event) => {
@@ -2159,6 +2360,7 @@ bindEvents();
 setPanelCollapsed(state.panelCollapsed);
 setPanelView("markers");
 updateMapSelector();
+renderPanelBanner();
 updatePinScale();
 renderCalibrationMarkers();
 syncVisibleMarkers();
