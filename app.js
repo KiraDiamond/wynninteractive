@@ -21,6 +21,7 @@ const STORAGE_KEYS = {
   calibrationTransform: "wynninteractive-calibration-transform-v1",
   cityEdits: "wynninteractive-city-edits-v1",
   markerContent: "wynninteractive-marker-content-v1",
+  theme: "wynninteractive-theme-v1",
 };
 const CONTENT_BOOK_ROOT = new URL("./assets/content-book/", import.meta.url).href.replace(/\/$/, "");
 const CITY_ICON_URL = new URL("./assets/icon.png", import.meta.url).href;
@@ -62,6 +63,16 @@ function parseNumberParam(name, fallback) {
   }
   const value = Number(raw);
   return Number.isFinite(value) ? value : fallback;
+}
+
+function loadTheme() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEYS.theme);
+    if (raw === "dark" || raw === "light") {
+      return raw;
+    }
+  } catch {}
+  return document.documentElement.dataset.theme === "dark" ? "dark" : "light";
 }
 
 const URL_PROJECTION_CONFIG = {
@@ -143,6 +154,7 @@ const state = {
   cityEdits: USE_CITY_EDITS ? loadCityEdits() : {},
   cityTransform: null,
   markerContent: loadMarkerContent(),
+  theme: loadTheme(),
   panelView: "markers",
   activeMobFamily: null,
   currentArea: "wynn",
@@ -166,6 +178,7 @@ const elements = {
   categoryFilters: document.querySelector("#category-filters"),
   detailCard: document.querySelector("#info-card"),
   linkCard: document.querySelector("#link-card"),
+  appearanceCard: document.querySelector("#appearance-card"),
   studioCard: document.querySelector("#studio-card"),
   cityEditorStatus: document.querySelector("#city-editor-status"),
   cityEditorOutput: document.querySelector("#city-editor-output"),
@@ -191,6 +204,64 @@ const firstOpenCalibrationIndex = CALIBRATION_TARGETS.findIndex((target) => !sta
 if (firstOpenCalibrationIndex >= 0) {
   state.calibrationIndex = firstOpenCalibrationIndex;
 }
+
+function themeOptionHtml(themeId, label, copy) {
+  const active = state.theme === themeId;
+  return `
+    <button type="button" class="appearance-option${active ? " active" : ""}" data-theme-option="${themeId}" aria-pressed="${active ? "true" : "false"}">
+      <span class="appearance-option-swatch ${escapeAttribute(themeId)}" aria-hidden="true"></span>
+      <span class="appearance-copy">
+        <strong>${escapeHtml(label)}</strong>
+        <span>${escapeHtml(copy)}</span>
+      </span>
+    </button>
+  `;
+}
+
+function renderAppearanceCard() {
+  if (!elements.appearanceCard) {
+    return;
+  }
+
+  elements.appearanceCard.className = "detail-card appearance-card";
+  elements.appearanceCard.innerHTML = `
+    <div class="detail-topline compact">
+      <div>
+        <h2>Appearance</h2>
+        <p class="detail-kind">Theme</p>
+      </div>
+    </div>
+    <p class="appearance-intro">Choose how the atlas panel looks on this device. The same setting carries over to beta too.</p>
+    <div class="appearance-grid">
+      ${themeOptionHtml("light", "Light", "Clean paper panels with bright map contrast.")}
+      ${themeOptionHtml("dark", "Dark", "Dimmed chrome that keeps the map in front.")}
+    </div>
+    <div class="appearance-note">Saved automatically in this browser.</div>
+  `;
+
+  elements.appearanceCard.querySelectorAll("[data-theme-option]").forEach((button) => {
+    button.addEventListener("click", () => {
+      applyTheme(button.dataset.themeOption);
+    });
+  });
+}
+
+function applyTheme(theme, { persist = true } = {}) {
+  state.theme = theme === "dark" ? "dark" : "light";
+  if (state.theme === "dark") {
+    document.documentElement.dataset.theme = "dark";
+  } else {
+    delete document.documentElement.dataset.theme;
+  }
+  if (persist) {
+    try {
+      localStorage.setItem(STORAGE_KEYS.theme, state.theme);
+    } catch {}
+  }
+  renderAppearanceCard();
+}
+
+applyTheme(state.theme, { persist: false });
 
 const map = L.map("map", {
   crs: L.CRS.Simple,
@@ -592,7 +663,7 @@ function closeImageLightbox() {
   document.body.classList.remove("lightbox-open");
 }
 
-function youtubeEmbedUrl(url) {
+function youtubeEmbedMeta(url) {
   if (!url) {
     return null;
   }
@@ -601,22 +672,22 @@ function youtubeEmbedUrl(url) {
     const parsed = new URL(url);
     if (parsed.hostname.includes("youtu.be")) {
       const id = parsed.pathname.replaceAll("/", "");
-      return id ? `https://www.youtube.com/embed/${id}` : null;
+      return id ? { embedUrl: `https://www.youtube.com/embed/${id}`, isShort: false } : null;
     }
 
     if (parsed.hostname.includes("youtube.com")) {
       if (parsed.pathname === "/watch") {
         const id = parsed.searchParams.get("v");
-        return id ? `https://www.youtube.com/embed/${id}` : null;
+        return id ? { embedUrl: `https://www.youtube.com/embed/${id}`, isShort: false } : null;
       }
 
       if (parsed.pathname.startsWith("/shorts/")) {
         const id = parsed.pathname.split("/")[2];
-        return id ? `https://www.youtube.com/embed/${id}` : null;
+        return id ? { embedUrl: `https://www.youtube.com/embed/${id}`, isShort: true } : null;
       }
 
       if (parsed.pathname.startsWith("/embed/")) {
-        return url;
+        return { embedUrl: url, isShort: false };
       }
     }
   } catch {
@@ -725,12 +796,12 @@ function contentPreviewHtml(marker, entry) {
 
   if (tutorials.length && !markerSupportsVideoGuide(marker)) {
     const tutorialCards = tutorials.map((url) => {
-      const embed = youtubeEmbedUrl(url);
-      if (embed) {
+      const embed = youtubeEmbedMeta(url);
+      if (embed?.embedUrl) {
         return `
-          <div class="tutorial-card">
+          <div class="tutorial-card${embed.isShort ? " short" : ""}">
             <iframe
-              src="${escapeAttribute(embed)}"
+              src="${escapeAttribute(embed.embedUrl)}"
               title="${escapeAttribute(`${marker.title} tutorial video`)}"
               loading="lazy"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -793,12 +864,12 @@ function videoGuidePreviewHtml(marker, entry) {
     `;
   }
 
-  const embed = youtubeEmbedUrl(primaryVideo);
-  const body = embed
+  const embed = youtubeEmbedMeta(primaryVideo);
+  const body = embed?.embedUrl
     ? `
-      <div class="tutorial-card">
+      <div class="tutorial-card${embed.isShort ? " short" : ""}">
         <iframe
-          src="${escapeAttribute(embed)}"
+          src="${escapeAttribute(embed.embedUrl)}"
           title="${escapeAttribute(`${marker.title} tutorial video`)}"
           loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
