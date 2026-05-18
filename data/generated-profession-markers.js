@@ -401,6 +401,44 @@ export const GENERATED_PROFESSION_MARKERS = [
     }
   },
   {
+    "id": "profession-mining-cinnabar-manual-0-1665-450",
+    "title": "Cinnabar - Terr spot",
+    "category": "profession_mining",
+    "region": "Terr spot",
+    "description": "I use this mining spot for Cinnabar. Route note: Terr spot. Nodes: [13■]. Tick rate: 4 tick. Coordinates: -1665, 38, -450.",
+    "tags": [
+      "profession",
+      "mining",
+      "cinnabar",
+      "pickaxe"
+    ],
+    "position": {
+      "world": {
+        "x": -1665,
+        "z": -450
+      }
+    }
+  },
+  {
+    "id": "profession-mining-cinnabar-manual-3-2198-543",
+    "title": "Cinnabar - zero mob cluster",
+    "category": "profession_mining",
+    "region": "Zero mob cluster",
+    "description": "I use this mining spot for Cinnabar. Nodes: [13■]. Mob pressure: None. Coordinates: -2198, 38, -543.",
+    "tags": [
+      "profession",
+      "mining",
+      "cinnabar",
+      "pickaxe"
+    ],
+    "position": {
+      "world": {
+        "x": -2198,
+        "z": -543
+      }
+    }
+  },
+  {
     "id": "profession-mining-cobalt-0-180-3977",
     "title": "Cobalt - cluster of cobalt on the cliffside of the center is…",
     "category": "profession_mining",
@@ -1237,6 +1275,25 @@ export const GENERATED_PROFESSION_MARKERS = [
     }
   },
   {
+    "id": "profession-farming-heather-manual-4-1230-1450",
+    "title": "Heather - level 115 field",
+    "category": "profession_farming",
+    "region": "Level 115 field",
+    "description": "I use this farming spot for Heather. Level bracket: 115. Nodes: [8■]. Coordinates: -1230, -1450.",
+    "tags": [
+      "profession",
+      "farming",
+      "heather",
+      "crop"
+    ],
+    "position": {
+      "world": {
+        "x": -1230,
+        "z": -1450
+      }
+    }
+  },
+  {
     "id": "profession-farming-hemp-0-852-4452",
     "title": "Hemp - entrance to a cave which contains large amounts of…",
     "category": "profession_farming",
@@ -1917,6 +1974,25 @@ export const GENERATED_PROFESSION_MARKERS = [
       "world": {
         "x": -730,
         "z": -5040
+      }
+    }
+  },
+  {
+    "id": "profession-woodcutting-mistwood-manual-1-1140-840",
+    "title": "Mistwood - low mob count area",
+    "category": "profession_woodcutting",
+    "region": "Terr low mob count area",
+    "description": "I use this woodcutting spot for Mistwood. Route note: Terr low mob count area. Mob pressure: Relatively low. Coordinates: -1140, 59, -840.",
+    "tags": [
+      "profession",
+      "woodcutting",
+      "mistwood",
+      "axe"
+    ],
+    "position": {
+      "world": {
+        "x": -1140,
+        "z": -840
       }
     }
   },
@@ -2924,6 +3000,25 @@ export const GENERATED_PROFESSION_MARKERS = [
       "world": {
         "x": 1090,
         "z": -4415
+      }
+    }
+  },
+  {
+    "id": "profession-fishing-sturgeon-manual-2-2215-1005",
+    "title": "Sturgeon - zero mob lake",
+    "category": "profession_fishing",
+    "region": "Zero mob lake",
+    "description": "I use this fishing spot for Sturgeon. Nodes: [8■]. Mob pressure: None. Coordinates: -2215, 5, -1005.",
+    "tags": [
+      "profession",
+      "fishing",
+      "sturgeon",
+      "fish"
+    ],
+    "position": {
+      "world": {
+        "x": -2215,
+        "z": -1005
       }
     }
   },

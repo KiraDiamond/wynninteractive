@@ -40,6 +40,102 @@ const SECTION_NAMES = Object.keys(SECTION_CONFIG);
 const IGNORE_LINE = /^(Mob Legend|None -|Very Low -|Low -|Medium -|High -|Very High -|Material|Obtaining\/Nodes|Suggested Tool|Level|_+|\*Woodcutting)/i;
 const TOOL_LINE = /^T\d+\s+/;
 const LEVEL_RANGE_LINE = /^\d+\-\d+$/;
+const SUPPLEMENTAL_SPOTS = [
+  {
+    section: "Mining",
+    material: "Cinnabar",
+    title: "Cinnabar - Terr spot",
+    region: "Terr spot",
+    description: "I use this mining spot for Cinnabar. Route note: Terr spot. Nodes: [13■]. Tick rate: 4 tick. Coordinates: -1665, 38, -450.",
+    summary: "I use this mining spot for Cinnabar.",
+    explanation: [
+      "My Notes",
+      "• I farm Cinnabar here.",
+      "• I usually get [13■] nodes here.",
+      "• Tick rate: 4 tick.",
+      "• Coordinates: -1665, 38, -450.",
+      "• Route note: Terr spot.",
+    ].join("\n"),
+    iconTag: "pickaxe",
+    coord: { x: -1665, y: 38, z: -450 },
+    sourceUrl: "",
+  },
+  {
+    section: "Woodcutting",
+    material: "Mistwood",
+    title: "Mistwood - low mob count area",
+    region: "Terr low mob count area",
+    description: "I use this woodcutting spot for Mistwood. Route note: Terr low mob count area. Mob pressure: Relatively low. Coordinates: -1140, 59, -840.",
+    summary: "I use this woodcutting spot for Mistwood.",
+    explanation: [
+      "My Notes",
+      "• I farm Mistwood here.",
+      "• Mob pressure: Relatively low.",
+      "• Coordinates: -1140, 59, -840.",
+      "• Route note: Terr low mob count area.",
+    ].join("\n"),
+    iconTag: "axe",
+    coord: { x: -1140, y: 59, z: -840 },
+    sourceUrl: "",
+  },
+  {
+    section: "Fishing",
+    material: "Sturgeon",
+    title: "Sturgeon - zero mob lake",
+    region: "Zero mob lake",
+    description: "I use this fishing spot for Sturgeon. Nodes: [8■]. Mob pressure: None. Coordinates: -2215, 5, -1005.",
+    summary: "I use this fishing spot for Sturgeon.",
+    explanation: [
+      "My Notes",
+      "• I farm Sturgeon here.",
+      "• I usually get [8■] nodes here.",
+      "• Mob pressure: None.",
+      "• Coordinates: -2215, 5, -1005.",
+      "• Route note: zero mob lake.",
+    ].join("\n"),
+    iconTag: "fish",
+    coord: { x: -2215, y: 5, z: -1005 },
+    sourceUrl: "",
+  },
+  {
+    section: "Mining",
+    material: "Cinnabar",
+    title: "Cinnabar - zero mob cluster",
+    region: "Zero mob cluster",
+    description: "I use this mining spot for Cinnabar. Nodes: [13■]. Mob pressure: None. Coordinates: -2198, 38, -543.",
+    summary: "I use this mining spot for Cinnabar.",
+    explanation: [
+      "My Notes",
+      "• I farm Cinnabar here.",
+      "• I usually get [13■] nodes here.",
+      "• Mob pressure: None.",
+      "• Coordinates: -2198, 38, -543.",
+      "• Route note: zero mob cluster.",
+    ].join("\n"),
+    iconTag: "pickaxe",
+    coord: { x: -2198, y: 38, z: -543 },
+    sourceUrl: "",
+  },
+  {
+    section: "Farming",
+    material: "Heather",
+    title: "Heather - level 115 field",
+    region: "Level 115 field",
+    description: "I use this farming spot for Heather. Level bracket: 115. Nodes: [8■]. Coordinates: -1230, -1450.",
+    summary: "I use this farming spot for Heather.",
+    explanation: [
+      "My Notes",
+      "• I farm Heather here.",
+      "• Level bracket: 115.",
+      "• I usually get [8■] nodes here.",
+      "• Coordinates: -1230, -1450.",
+      "• Route note: level 115 Heather field.",
+    ].join("\n"),
+    iconTag: "crop",
+    coord: { x: -1230, z: -1450 },
+    sourceUrl: "",
+  },
+];
 
 function normalizeWhitespace(value) {
   return String(value ?? "").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
@@ -308,6 +404,36 @@ function buildOutputs(lines) {
         });
       }
     }
+  }
+
+  for (const [index, spot] of SUPPLEMENTAL_SPOTS.entries()) {
+    const config = SECTION_CONFIG[spot.section];
+    const id = `profession-${slugify(spot.section)}-${slugify(spot.material)}-manual-${index}-${slugify(`${spot.coord.x}-${spot.coord.z}`)}`;
+    markers.push({
+      id,
+      title: spot.title,
+      category: config.category,
+      region: spot.region,
+      description: spot.description,
+      tags: [
+        "profession",
+        slugify(spot.section),
+        slugify(spot.material),
+        spot.iconTag,
+      ],
+      position: {
+        world: { x: spot.coord.x, z: spot.coord.z },
+      },
+    });
+
+    content[id] = {
+      summary: spot.summary,
+      explanation: spot.explanation,
+      coverImage: "",
+      gallery: [],
+      sourceUrl: spot.sourceUrl,
+      tutorials: [],
+    };
   }
 
   markers.sort((a, b) => a.title.localeCompare(b.title) || a.id.localeCompare(b.id));

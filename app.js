@@ -1,6 +1,6 @@
-import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260518o";
+import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260518u";
 import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260518j";
-import { MARKER_CONTENT } from "./data/marker-content.js?v=20260518j";
+import { MARKER_CONTENT } from "./data/marker-content.js?v=20260518u";
 import { MOB_ICON_URLS } from "./data/mob-icon-urls.js?v=20260518j";
 import { REFERENCE_IMAGE_URLS } from "./data/reference-images.js?v=20260518j";
 
@@ -52,6 +52,7 @@ const LOW_VALUE_DESCRIPTION_PATTERNS = [
   /\bimported from the external wynncraft marker dataset\.?$/i,
   /\bcommunity-style preview\b/i,
 ];
+const VIDEO_GUIDE_CATEGORY_IDS = new Set(["quests", "mini_quests", "secret_discovery"]);
 const MOB_CATEGORY_IDS = CATEGORY_ORDER.filter((categoryId) => categoryId.startsWith("hostile_mobs"));
 
 function parseNumberParam(name, fallback) {
@@ -141,7 +142,7 @@ const state = {
   editCities: EDIT_CITY_QUERY_MODE,
   cityEdits: USE_CITY_EDITS ? loadCityEdits() : {},
   cityTransform: null,
-  markerContent: DEV_MODE ? { ...MARKER_CONTENT, ...loadMarkerContent() } : { ...MARKER_CONTENT },
+  markerContent: { ...MARKER_CONTENT, ...loadMarkerContent() },
   panelView: "markers",
   activeMobFamily: null,
   currentArea: "wynn",
@@ -164,6 +165,7 @@ const elements = {
   editCitiesToggle: document.querySelector("#edit-cities-toggle"),
   categoryFilters: document.querySelector("#category-filters"),
   detailCard: document.querySelector("#info-card"),
+  linkCard: document.querySelector("#link-card"),
   studioCard: document.querySelector("#studio-card"),
   cityEditorStatus: document.querySelector("#city-editor-status"),
   cityEditorOutput: document.querySelector("#city-editor-output"),
@@ -470,6 +472,10 @@ function markerContentEntry(marker) {
   };
 }
 
+function markerSupportsVideoGuide(marker) {
+  return VIDEO_GUIDE_CATEGORY_IDS.has(marker.category);
+}
+
 function contentExportEntry(marker) {
   const entry = markerContentEntry(marker);
   return {
@@ -701,7 +707,7 @@ function contentPreviewHtml(marker, entry) {
     `);
   }
 
-  if (tutorials.length) {
+  if (tutorials.length && !markerSupportsVideoGuide(marker)) {
     const tutorialCards = tutorials.map((url) => {
       const embed = youtubeEmbedUrl(url);
       if (embed) {
@@ -749,6 +755,54 @@ function contentPreviewHtml(marker, entry) {
   }
 
   return blocks.join("");
+}
+
+function videoGuidePreviewHtml(marker, entry) {
+  if (!markerSupportsVideoGuide(marker)) {
+    return `
+      <div class="content-empty">
+        <strong>No linked video here.</strong>
+        <span>Video guide links are only set up for quests, mini quests, and secret discoveries right now.</span>
+      </div>
+    `;
+  }
+
+  const primaryVideo = entry.tutorials[0] || "";
+  if (!primaryVideo) {
+    return `
+      <div class="content-empty video-guide-empty">
+        <strong>No linked video yet.</strong>
+        <span>a video guide for this isnt currently avalable</span>
+      </div>
+    `;
+  }
+
+  const embed = youtubeEmbedUrl(primaryVideo);
+  const body = embed
+    ? `
+      <div class="tutorial-card">
+        <iframe
+          src="${escapeAttribute(embed)}"
+          title="${escapeAttribute(`${marker.title} tutorial video`)}"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <a href="${escapeAttribute(primaryVideo)}" target="_blank" rel="noreferrer">Open linked video</a>
+      </div>
+    `
+    : `
+      <div class="tutorial-link">
+        <a href="${escapeAttribute(primaryVideo)}" target="_blank" rel="noreferrer">${escapeHtml(primaryVideo)}</a>
+      </div>
+    `;
+
+  return `
+    <section class="content-block">
+      <h3>Video Guide</h3>
+      <div class="tutorial-stack">${body}</div>
+    </section>
+  `;
 }
 
 function contentEditorHtml(marker, entry) {
@@ -873,7 +927,9 @@ function worldEventDetailsHtml(marker) {
 
 function updateMarkerContent(marker, field, rawValue) {
   const current = markerContentAuthorEntry(marker.id);
-  if (field === "gallery" || field === "tutorials") {
+  if (field === "videoGuide") {
+    current.tutorials = rawValue.trim() ? [rawValue.trim()] : [];
+  } else if (field === "gallery" || field === "tutorials") {
     current[field] = splitMultiline(rawValue);
   } else {
     current[field] = rawValue.trim();
@@ -1506,6 +1562,13 @@ function renderDetailCard() {
         <p>Select a marker to open its editor here.</p>
       `;
     }
+    if (elements.linkCard) {
+      elements.linkCard.className = "detail-card empty";
+      elements.linkCard.innerHTML = `
+        <h2>No marker selected</h2>
+        <p>Select a quest or secret discovery to view its linked video.</p>
+      `;
+    }
     return;
   }
 
@@ -1556,6 +1619,19 @@ function renderDetailCard() {
 
   elements.detailCard.className = "detail-card";
   elements.detailCard.innerHTML = infoBody;
+
+  if (elements.linkCard) {
+    elements.linkCard.className = "detail-card";
+    elements.linkCard.innerHTML = `
+      <div class="detail-topline compact">
+        <div>
+          <h2>${escapeHtml(marker.title)}</h2>
+          <p class="detail-kind">Linked Video</p>
+        </div>
+      </div>
+      ${videoGuidePreviewHtml(marker, content)}
+    `;
+  }
 
   if (elements.studioCard) {
     elements.studioCard.className = "detail-card";

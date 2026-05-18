@@ -1,5 +1,5 @@
 import { WORLD_EVENT_MARKERS } from "./world-events.js";
-import { GENERATED_PROFESSION_MARKERS } from "./generated-profession-markers.js";
+import { GENERATED_PROFESSION_MARKERS } from "./generated-profession-markers.js?v=20260518u";
 import { GENERATED_MOB_MARKERS } from "./generated-mob-markers.js?v=20260518i";
 
 const MOB_CATEGORY_META = {

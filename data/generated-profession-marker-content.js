@@ -1344,5 +1344,45 @@ export const GENERATED_PROFESSION_MARKER_CONTENT = {
     "gallery": [],
     "sourceUrl": "https://docs.google.com/document/d/1Wv5I296Cd5j7yWT2vgGFp1AFM_1R2Xw-M73TIoR56-M/edit?tab=t.0",
     "tutorials": []
+  },
+  "profession-mining-cinnabar-manual-0-1665-450": {
+    "summary": "I use this mining spot for Cinnabar.",
+    "explanation": "My Notes\n• I farm Cinnabar here.\n• I usually get [13■] nodes here.\n• Tick rate: 4 tick.\n• Coordinates: -1665, 38, -450.\n• Route note: Terr spot.",
+    "coverImage": "",
+    "gallery": [],
+    "sourceUrl": "",
+    "tutorials": []
+  },
+  "profession-woodcutting-mistwood-manual-1-1140-840": {
+    "summary": "I use this woodcutting spot for Mistwood.",
+    "explanation": "My Notes\n• I farm Mistwood here.\n• Mob pressure: Relatively low.\n• Coordinates: -1140, 59, -840.\n• Route note: Terr low mob count area.",
+    "coverImage": "",
+    "gallery": [],
+    "sourceUrl": "",
+    "tutorials": []
+  },
+  "profession-fishing-sturgeon-manual-2-2215-1005": {
+    "summary": "I use this fishing spot for Sturgeon.",
+    "explanation": "My Notes\n• I farm Sturgeon here.\n• I usually get [8■] nodes here.\n• Mob pressure: None.\n• Coordinates: -2215, 5, -1005.\n• Route note: zero mob lake.",
+    "coverImage": "",
+    "gallery": [],
+    "sourceUrl": "",
+    "tutorials": []
+  },
+  "profession-mining-cinnabar-manual-3-2198-543": {
+    "summary": "I use this mining spot for Cinnabar.",
+    "explanation": "My Notes\n• I farm Cinnabar here.\n• I usually get [13■] nodes here.\n• Mob pressure: None.\n• Coordinates: -2198, 38, -543.\n• Route note: zero mob cluster.",
+    "coverImage": "",
+    "gallery": [],
+    "sourceUrl": "",
+    "tutorials": []
+  },
+  "profession-farming-heather-manual-4-1230-1450": {
+    "summary": "I use this farming spot for Heather.",
+    "explanation": "My Notes\n• I farm Heather here.\n• Level bracket: 115.\n• I usually get [8■] nodes here.\n• Coordinates: -1230, -1450.\n• Route note: level 115 Heather field.",
+    "coverImage": "",
+    "gallery": [],
+    "sourceUrl": "",
+    "tutorials": []
   }
 };
