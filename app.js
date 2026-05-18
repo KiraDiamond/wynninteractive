@@ -1,7 +1,8 @@
-import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260517ac";
-import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260517ac";
-import { MARKER_CONTENT } from "./data/marker-content.js?v=20260517ac";
-import { REFERENCE_IMAGE_URLS } from "./data/reference-images.js?v=20260517ac";
+import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260518i";
+import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260518i";
+import { MARKER_CONTENT } from "./data/marker-content.js?v=20260518i";
+import { MOB_ICON_URLS } from "./data/mob-icon-urls.js?v=20260518i";
+import { REFERENCE_IMAGE_URLS } from "./data/reference-images.js?v=20260518i";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
@@ -38,6 +39,7 @@ const LOW_VALUE_DESCRIPTION_PATTERNS = [
   /\bimported from the external wynncraft marker dataset\.?$/i,
   /\bcommunity-style preview\b/i,
 ];
+const MOB_CATEGORY_IDS = CATEGORY_ORDER.filter((categoryId) => categoryId.startsWith("hostile_mobs"));
 
 function parseNumberParam(name, fallback) {
   const raw = query.get(name);
@@ -82,15 +84,28 @@ const CATEGORY_GROUPS = [
     label: "Professions",
     categories: ["profession_fishing", "profession_farming", "profession_mining", "profession_woodcutting"],
   },
+  {
+    id: "mobs",
+    label: "Mobs",
+    categories: MOB_CATEGORY_IDS,
+  },
 ];
 const PASSIVE_CATEGORIES = new Set([
+  ...MOB_CATEGORY_IDS,
+  "profession_fishing",
+  "profession_farming",
+  "profession_mining",
+  "profession_woodcutting",
+]);
+const DEFAULT_HIDDEN_CATEGORIES = new Set([
+  ...MOB_CATEGORY_IDS,
   "profession_fishing",
   "profession_farming",
   "profession_mining",
   "profession_woodcutting",
 ]);
 const DEFAULT_CATEGORY_FILTER = new Set(
-  CATEGORY_ORDER.filter((categoryId) => !PASSIVE_CATEGORIES.has(categoryId)),
+  CATEGORY_ORDER.filter((categoryId) => !DEFAULT_HIDDEN_CATEGORIES.has(categoryId)),
 );
 
 const state = {
@@ -103,6 +118,7 @@ const state = {
   showCities: true,
   panelCollapsed: false,
   markerLayers: new Map(),
+  areaHighlightLayer: null,
   categoryFilter: new Set(DEFAULT_CATEGORY_FILTER),
   calibrationMode: CALIBRATION_MODE,
   calibrationSamples: loadCalibrationSamples(),
@@ -114,6 +130,7 @@ const state = {
   cityTransform: null,
   markerContent: DEV_MODE ? { ...MARKER_CONTENT, ...loadMarkerContent() } : { ...MARKER_CONTENT },
   panelView: "markers",
+  activeMobFamily: null,
 };
 
 const elements = {
@@ -162,6 +179,9 @@ const map = L.map("map", {
   zoomSnap: 0.25,
   zoomControl: true,
   attributionControl: false,
+  zoomAnimation: false,
+  fadeAnimation: false,
+  markerZoomAnimation: false,
 });
 
 L.imageOverlay(MAP_IMAGE_URL, MAP_BOUNDS).addTo(map);
@@ -380,6 +400,24 @@ function markerSupportsFound(marker) {
   return !marker.fixed && !PASSIVE_CATEGORIES.has(marker.category);
 }
 
+function isMobCategory(categoryId) {
+  return MOB_CATEGORY_IDS.includes(categoryId);
+}
+
+function mobFamilyMarkers(categoryId) {
+  return state.markers
+    .filter((marker) => !marker.fixed && marker.category === categoryId)
+    .sort((left, right) => left.title.localeCompare(right.title) || left.region.localeCompare(right.region));
+}
+
+function filteredMobFamilyMarkers(categoryId) {
+  return mobFamilyMarkers(categoryId).filter(markerMatchesSearch);
+}
+
+function activeMobFamilyMarkers() {
+  return state.activeMobFamily ? filteredMobFamilyMarkers(state.activeMobFamily) : [];
+}
+
 function markerIsFound(marker) {
   return markerSupportsFound(marker) && state.foundIds.has(marker.id);
 }
@@ -464,6 +502,9 @@ function extractGoogleDriveId(url) {
 }
 
 function resolveImageUrl(url) {
+  if (MOB_ICON_URLS[url]) {
+    return MOB_ICON_URLS[url];
+  }
   if (REFERENCE_IMAGE_URLS[url]) {
     return REFERENCE_IMAGE_URLS[url];
   }
@@ -833,6 +874,18 @@ function categoryAssetUrl(categoryId, variant = "active") {
   return `${CONTENT_BOOK_ROOT}/${icon}_${variant}.png`;
 }
 
+function genericIconMarkup(categoryId, extraClass = "") {
+  const meta = CATEGORY_META[categoryId];
+  return `<span class="generic-category-icon ${extraClass}" style="--category-accent:${meta.color};"></span>`;
+}
+
+function markerIconUrl(marker, variant = "active") {
+  if (marker?.iconImage && MOB_ICON_URLS[marker.iconImage]) {
+    return MOB_ICON_URLS[marker.iconImage];
+  }
+  return categoryAssetUrl(marker?.category, variant);
+}
+
 function buildCityLabelHtml(marker, isFound, isSelected) {
   const classes = ["city-map-label"];
   if (marker.minor) {
@@ -1050,6 +1103,11 @@ function markerIsVisible(marker) {
     return markerMatchesSearch(marker);
   }
 
+  const matchesSearch = markerMatchesSearch(marker);
+  if (isMobCategory(marker.category)) {
+    return false;
+  }
+
   if (!contentMarkersVisibleAtCurrentZoom()) {
     return false;
   }
@@ -1059,7 +1117,7 @@ function markerIsVisible(marker) {
   if (state.hideFound && markerIsFound(marker)) {
     return false;
   }
-  return markerMatchesSearch(marker);
+  return matchesSearch;
 }
 
 function buildMarkerIcon(marker, isFound, isSelected) {
@@ -1074,8 +1132,11 @@ function buildMarkerIcon(marker, isFound, isSelected) {
   }
 
   const variant = isFound ? "locked" : "active";
-  const iconUrl = categoryAssetUrl(marker.category, variant);
+  const iconUrl = markerIconUrl(marker, variant);
   const classes = ["asset-pin"];
+  if (marker.iconImage && iconUrl) {
+    classes.push("mob-pin");
+  }
   if (isFound) {
     classes.push("found");
   }
@@ -1083,9 +1144,13 @@ function buildMarkerIcon(marker, isFound, isSelected) {
     classes.push("selected");
   }
 
+  const iconMarkup = iconUrl
+    ? `<img class="${classes.join(" ")}" src="${iconUrl}" alt="" draggable="false" style="--pin-glow:${meta.color};">`
+    : `<span class="generic-pin ${classes.join(" ")}" style="--pin-glow:${meta.color};--pin-fill:${meta.color};"></span>`;
+
   return L.divIcon({
     className: "map-pin-wrapper",
-    html: `<span class="asset-pin-shell"><img class="${classes.join(" ")}" src="${iconUrl}" alt="" draggable="false" style="--pin-glow:${meta.color};"></span>`,
+    html: `<span class="asset-pin-shell">${iconMarkup}</span>`,
     iconSize: [MAP_PIN_SIZE, MAP_PIN_SIZE],
     iconAnchor: [MAP_PIN_SIZE / 2, MAP_PIN_SIZE / 2],
   });
@@ -1207,18 +1272,97 @@ function categoryVisibleCount(categoryId) {
 
 function renderCategoryFilters() {
   elements.categoryFilters.innerHTML = CATEGORY_GROUPS.map((group) => {
+    if (group.id === "mobs") {
+      const cards = group.categories.map((categoryId) => {
+        const meta = CATEGORY_META[categoryId];
+        const total = categoryCount(categoryId);
+        const matching = filteredMobFamilyMarkers(categoryId).length;
+        const active = state.activeMobFamily === categoryId;
+        const metaText = active
+          ? `${matching} ${matching === 1 ? "mob" : "mobs"} listed`
+          : (state.search && matching ? `${matching} matching` : `${total} ${total === 1 ? "type" : "types"}`);
+        const iconMarkup = genericIconMarkup(categoryId, "category-icon");
+        return `
+          <div class="mob-family-stack ${active ? "active" : ""}">
+            <button type="button" class="category-card ${active ? "active" : "inactive"} mob-family-card" data-mob-family="${categoryId}">
+              ${iconMarkup}
+              <span class="category-copy">
+                <strong>${escapeHtml(meta.label)}</strong>
+                <span class="category-meta">${metaText}</span>
+              </span>
+              <span class="category-count">${total}</span>
+            </button>
+            ${active ? `
+              <section class="mob-browser-panel">
+                <div class="mob-browser-head">
+                  <div class="mob-browser-copy">
+                    <span class="mob-browser-kicker">Mob Browser</span>
+                    <strong>${escapeHtml(meta.label)}</strong>
+                  </div>
+                  <button type="button" class="mob-browser-close" data-close-mob-family="1" aria-label="Close mob family list">×</button>
+                </div>
+                <p class="mob-browser-note">Pick a mob and the map will outline every exact spawn node we have for it.</p>
+                <div class="mob-browser-list">
+                  ${activeMobFamilyMarkers().length
+                    ? activeMobFamilyMarkers().map((marker) => {
+                      const selected = marker.id === state.selectedMarkerId;
+                      const secondary = [
+                        marker.region || "World",
+                        `${marker.spawnPointCount || 0} ${marker.spawnPointCount === 1 ? "node" : "nodes"}`,
+                      ].join(" · ");
+                      const mobIconUrl = markerIconUrl(marker, "active");
+                      return `
+                        <button
+                          type="button"
+                          class="mob-list-item ${selected ? "active" : ""}"
+                          data-mob-marker="${marker.id}"
+                        >
+                          <span class="mob-list-icon-shell">
+                            ${mobIconUrl
+                              ? `<img class="mob-list-icon" src="${escapeAttribute(mobIconUrl)}" alt="" loading="lazy" referrerpolicy="no-referrer">`
+                              : genericIconMarkup(marker.category, "mob-list-icon generic-category-icon")}
+                          </span>
+                          <span class="mob-list-copy">
+                            <strong>${escapeHtml(marker.title)}</strong>
+                            <span>${escapeHtml(secondary)}</span>
+                          </span>
+                          <span class="mob-list-count">${marker.spawnPointCount || 0}</span>
+                        </button>
+                      `;
+                    }).join("")
+                    : `<div class="mob-browser-empty">No ${escapeHtml(meta.label.toLowerCase())} match the current search.</div>`}
+                </div>
+              </section>
+            ` : ""}
+          </div>
+        `;
+      }).join("");
+
+      return `
+        <section class="category-section">
+          <div class="section-head">
+            <span>${escapeHtml(group.label)}</span>
+          </div>
+          <div class="category-grid mob-category-grid">${cards}</div>
+        </section>
+      `;
+    }
+
     const cards = group.categories.map((categoryId) => {
       const meta = CATEGORY_META[categoryId];
       const active = state.categoryFilter.has(categoryId);
       const total = categoryCount(categoryId);
       const visible = categoryVisibleCount(categoryId);
       const iconUrl = categoryAssetUrl(categoryId, active ? "active" : "locked");
+      const iconMarkup = iconUrl
+        ? `<span class="category-icon asset-icon" style="--category-icon:url('${iconUrl}');--category-accent:${meta.color};"></span>`
+        : genericIconMarkup(categoryId, "category-icon");
       return `
         <button type="button" class="category-card ${active ? "active" : "inactive"}" data-category="${categoryId}">
-          <span class="category-icon asset-icon" style="--category-icon:url('${iconUrl}');--category-accent:${meta.color};"></span>
+          ${iconMarkup}
           <span class="category-copy">
             <strong>${escapeHtml(meta.label)}</strong>
-            <span class="category-meta">${active ? `${visible} shown` : "Hidden"}</span>
+            <span class="category-meta">${active ? `${visible} shown` : (state.search && visible ? `${visible} matching` : "Hidden")}</span>
           </span>
           <span class="category-count">${total}</span>
         </button>
@@ -1238,6 +1382,49 @@ function renderCategoryFilters() {
       </section>
     `;
   }).join("");
+
+  elements.categoryFilters.querySelectorAll("[data-mob-family]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const categoryId = button.dataset.mobFamily;
+      const nextFamily = state.activeMobFamily === categoryId ? null : categoryId;
+      const selected = state.markers.find((marker) => marker.id === state.selectedMarkerId);
+      state.activeMobFamily = nextFamily;
+      if (!nextFamily && selected && isMobCategory(selected.category)) {
+        state.selectedMarkerId = null;
+      }
+      if (nextFamily && selected && isMobCategory(selected.category) && selected.category !== nextFamily) {
+        state.selectedMarkerId = null;
+      }
+      syncVisibleMarkers();
+      renderCategoryFilters();
+      renderDetailCard();
+    });
+  });
+
+  elements.categoryFilters.querySelectorAll("[data-mob-marker]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const marker = state.markers.find((entry) => entry.id === button.dataset.mobMarker);
+      if (!marker) {
+        return;
+      }
+      state.activeMobFamily = marker.category;
+      flyToMarker(marker);
+      renderCategoryFilters();
+    });
+  });
+
+  elements.categoryFilters.querySelectorAll("[data-close-mob-family]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const selected = state.markers.find((marker) => marker.id === state.selectedMarkerId);
+      state.activeMobFamily = null;
+      if (selected && isMobCategory(selected.category)) {
+        state.selectedMarkerId = null;
+      }
+      syncVisibleMarkers();
+      renderCategoryFilters();
+      renderDetailCard();
+    });
+  });
 
   elements.categoryFilters.querySelectorAll("[data-category]").forEach((button) => {
     button.addEventListener("click", () => {
@@ -1295,7 +1482,12 @@ function renderDetailCard() {
   const isFound = markerIsFound(marker);
   const supportsFound = markerSupportsFound(marker);
   const meta = CATEGORY_META[marker.category];
-  const iconUrl = marker.fixed ? CITY_ICON_URL : categoryAssetUrl(marker.category, isFound ? "locked" : "active");
+  const iconUrl = marker.fixed ? CITY_ICON_URL : markerIconUrl(marker, isFound ? "locked" : "active");
+  const detailIcon = marker.fixed
+    ? `<span class="detail-icon city" style="--detail-icon:url('${iconUrl}');"></span>`
+    : (iconUrl
+      ? `<span class="detail-icon ${marker.iconImage ? "mob-detail-icon" : ""}" style="--detail-icon:url('${iconUrl}');--detail-accent:${meta.color};"></span>`
+      : genericIconMarkup(marker.category, "detail-icon generic-detail-icon"));
   const content = contentExportEntry(marker);
   const authoredContent = markerContentAuthorEntry(marker.id);
   const eventIntel = worldEventDetailsHtml(marker);
@@ -1309,7 +1501,7 @@ function renderDetailCard() {
   ].filter(Boolean).join("");
   const infoBody = `
     <div class="detail-topline">
-      <span class="detail-icon${marker.fixed ? " city" : ""}" style="${marker.fixed ? `--detail-icon:url('${iconUrl}');` : `--detail-icon:url('${iconUrl}');--detail-accent:${meta.color};`}"></span>
+      ${detailIcon}
       <div>
         <h2>${escapeHtml(marker.title)}</h2>
         <p class="detail-kind">${escapeHtml(meta.label)}</p>
@@ -1484,8 +1676,75 @@ function setPanelCollapsed(collapsed) {
   }
 }
 
+function worldBoundsToLatLng(bounds) {
+  if (!bounds) {
+    return null;
+  }
+
+  const corners = [
+    worldToImage(bounds.minX, bounds.minZ),
+    worldToImage(bounds.minX, bounds.maxZ),
+    worldToImage(bounds.maxX, bounds.minZ),
+    worldToImage(bounds.maxX, bounds.maxZ),
+  ].map((point) => [point.y * MAP_HEIGHT, point.x * MAP_WIDTH]);
+
+  const lats = corners.map(([lat]) => lat);
+  const lngs = corners.map(([, lng]) => lng);
+  return [
+    [Math.min(...lats), Math.min(...lngs)],
+    [Math.max(...lats), Math.max(...lngs)],
+  ];
+}
+
+function markerBoundsLatLngList(marker) {
+  const sourceBounds = Array.isArray(marker.spawnNodes) && marker.spawnNodes.length
+    ? marker.spawnNodes
+    : (Array.isArray(marker.spawnRegions) && marker.spawnRegions.length
+    ? marker.spawnRegions
+    : (marker.spawnBounds ? [marker.spawnBounds] : []));
+
+  return sourceBounds
+    .map((bounds) => worldBoundsToLatLng(bounds))
+    .filter(Boolean);
+}
+
+function renderActiveAreaHighlight() {
+  if (state.areaHighlightLayer) {
+    map.removeLayer(state.areaHighlightLayer);
+    state.areaHighlightLayer = null;
+  }
+
+  const marker = state.markers.find((item) => item.id === state.selectedMarkerId);
+  const boundsList = marker ? markerBoundsLatLngList(marker) : [];
+  const visible = marker
+    ? (isMobCategory(marker.category) || state.filteredMarkers.some((item) => item.id === marker.id))
+    : false;
+  if (!marker || !boundsList.length || !visible) {
+    return;
+  }
+
+  const meta = CATEGORY_META[marker.category];
+  const approximate = Boolean(marker.spawnZoneApproximate);
+  state.areaHighlightLayer = L.featureGroup(
+    boundsList.map((bounds) => L.rectangle(bounds, {
+      color: meta.color,
+      weight: approximate ? 2 : 3,
+      opacity: 0.9,
+      fillColor: meta.color,
+      fillOpacity: approximate ? 0.05 : 0.08,
+      dashArray: approximate ? "9 7" : "4 4",
+      interactive: false,
+    })),
+  ).addTo(map);
+  state.areaHighlightLayer.eachLayer((layer) => layer.bringToBack());
+}
+
 function setSelectedMarker(markerId) {
   state.selectedMarkerId = markerId;
+  const marker = state.markers.find((item) => item.id === markerId);
+  if (marker && isMobCategory(marker.category)) {
+    state.activeMobFamily = marker.category;
+  }
 
   for (const [id, layer] of state.markerLayers) {
     const marker = state.markers.find((item) => item.id === id);
@@ -1505,6 +1764,8 @@ function setSelectedMarker(markerId) {
 
   setPanelCollapsed(false);
   renderDetailCard();
+  renderActiveAreaHighlight();
+  renderCategoryFilters();
 }
 
 function flyToMarker(marker) {
@@ -1528,6 +1789,7 @@ function toggleFound(markerId) {
   syncVisibleMarkers();
   renderCategoryFilters();
   renderDetailCard();
+  renderActiveAreaHighlight();
 }
 
 function syncVisibleMarkers() {
@@ -1559,6 +1821,7 @@ function syncVisibleMarkers() {
       bindCityTooltip(layer, marker, isFound, isSelected);
     }
   }
+  renderActiveAreaHighlight();
 }
 
 function hydrateMarkerState() {
@@ -1627,6 +1890,7 @@ function bindEvents() {
     syncVisibleMarkers();
     renderCategoryFilters();
     renderDetailCard();
+    renderActiveAreaHighlight();
   });
 
   if (elements.editCitiesToggle) {
@@ -1642,6 +1906,7 @@ function bindEvents() {
       state.showCities = event.target.checked;
       syncVisibleMarkers();
       renderDetailCard();
+      renderActiveAreaHighlight();
     });
   }
 

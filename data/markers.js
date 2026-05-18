@@ -1,5 +1,30 @@
 import { WORLD_EVENT_MARKERS } from "./world-events.js";
 import { GENERATED_PROFESSION_MARKERS } from "./generated-profession-markers.js";
+import { GENERATED_MOB_MARKERS } from "./generated-mob-markers.js?v=20260518i";
+
+const MOB_CATEGORY_META = {
+  hostile_mobs_zombie: { label: "Zombies", color: "#c7644f", selectable: true, icon: null },
+  hostile_mobs_spider: { label: "Spiders", color: "#8d6549", selectable: true, icon: null },
+  hostile_mobs_skeleton: { label: "Skeletons", color: "#8a939d", selectable: true, icon: null },
+  hostile_mobs_humanoid: { label: "Humanoids", color: "#9e6a55", selectable: true, icon: null },
+  hostile_mobs_beast: { label: "Beasts", color: "#7f8f51", selectable: true, icon: null },
+  hostile_mobs_elemental: { label: "Elementals", color: "#5d8bb8", selectable: true, icon: null },
+  hostile_mobs_construct: { label: "Constructs", color: "#6c7787", selectable: true, icon: null },
+  hostile_mobs_aquatic: { label: "Aquatic", color: "#4e98a8", selectable: true, icon: null },
+  hostile_mobs_other: { label: "Other Mobs", color: "#b36f5c", selectable: true, icon: null },
+};
+
+const MOB_CATEGORY_ORDER = [
+  "hostile_mobs_zombie",
+  "hostile_mobs_spider",
+  "hostile_mobs_skeleton",
+  "hostile_mobs_humanoid",
+  "hostile_mobs_beast",
+  "hostile_mobs_elemental",
+  "hostile_mobs_construct",
+  "hostile_mobs_aquatic",
+  "hostile_mobs_other",
+];
 
 export const CATEGORY_META = {
   quests: { label: "Quests", color: "#6f9eea", selectable: true, icon: "quest" },
@@ -18,12 +43,14 @@ export const CATEGORY_META = {
   profession_mining: { label: "Mining Spots", color: "#98a4b3", selectable: true, icon: "profession_mining" },
   profession_woodcutting: { label: "Woodcutting Spots", color: "#b88853", selectable: true, icon: "profession_woodcutting" },
   city: { label: "City", color: "#d6b158", selectable: false, icon: null },
+  ...MOB_CATEGORY_META,
 };
 
 export const CATEGORY_ORDER = [
   "quests",
   "mini_quests",
   "world_events",
+  ...MOB_CATEGORY_ORDER,
   "secret_discovery",
   "world_discovery",
   "territorial_discovery",
@@ -408,6 +435,7 @@ export const STARTER_MARKERS = [
 export const CURATED_MARKERS = [
   ...WORLD_EVENT_MARKERS,
   ...GENERATED_PROFESSION_MARKERS,
+  ...GENERATED_MOB_MARKERS,
   {
     id: "atlas-raid-orphions-nexus-of-light--732--6412",
     title: "Orphion's Nexus of Light",

@@ -1,6 +1,7 @@
 import { GENERATED_QUEST_MARKER_CONTENT } from "./generated-quest-marker-content.js?v=20260517ac";
 import { GENERATED_PROFESSION_MARKER_CONTENT } from "./generated-profession-marker-content.js?v=20260517ac";
 import { GENERATED_SUPPLEMENTAL_MARKER_CONTENT } from "./generated-supplemental-marker-content.js?v=20260517ac";
+import { GENERATED_MOB_CONTENT } from "./generated-mob-content.js?v=20260518i";
 
 const MANUAL_MARKER_CONTENT = {
   "atlas-raid-orphions-nexus-of-light--732--6412": {
@@ -20,5 +21,6 @@ export const MARKER_CONTENT = {
   ...GENERATED_QUEST_MARKER_CONTENT,
   ...GENERATED_PROFESSION_MARKER_CONTENT,
   ...GENERATED_SUPPLEMENTAL_MARKER_CONTENT,
+  ...GENERATED_MOB_CONTENT,
   ...MANUAL_MARKER_CONTENT,
 };
