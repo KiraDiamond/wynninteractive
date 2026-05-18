@@ -441,7 +441,7 @@ export const STARTER_MARKERS = [
     area: "outer_void",
     position: {
       world: { x: 13823, z: -3405 },
-      image: { x: 0.646, y: 0.345 },
+      image: { x: 0.354, y: 0.345 },
     },
   },
   {
@@ -455,7 +455,7 @@ export const STARTER_MARKERS = [
     area: "outer_void",
     position: {
       world: { x: 14053, z: -4199 },
-      image: { x: 0.508, y: 0.823 },
+      image: { x: 0.492, y: 0.823 },
     },
   },
 ];
