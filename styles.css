@@ -601,7 +601,7 @@ input {
 
 .mob-list-item {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 46px 1fr auto;
   align-items: center;
   gap: 12px;
   width: 100%;
@@ -625,6 +625,26 @@ input {
   border-color: rgba(159, 53, 203, 0.4);
   box-shadow: inset 0 0 0 1px rgba(159, 53, 203, 0.15);
   background: linear-gradient(180deg, rgba(250, 245, 253, 0.98), rgba(243, 236, 248, 0.95));
+}
+
+.mob-list-icon-shell {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.98), rgba(228, 235, 244, 0.95));
+  border: 1px solid #d9e3ed;
+  overflow: hidden;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+.mob-list-icon {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 1px 2px rgba(20, 30, 43, 0.2));
 }
 
 .mob-list-copy {
@@ -717,6 +737,17 @@ input {
 .detail-icon.city {
   width: 28px;
   height: 28px;
+}
+
+.detail-icon.mob-detail-icon {
+  width: 42px;
+  height: 42px;
+  flex-basis: 42px;
+  border-radius: 14px;
+  background-color: rgba(243, 247, 252, 0.96);
+  border: 1px solid #dce5ee;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85);
+  background-size: 82%;
 }
 
 .detail-kind {
@@ -1354,6 +1385,20 @@ input {
   filter: drop-shadow(0 0 4px rgba(17, 24, 37, 0.28));
   user-select: none;
   -webkit-user-drag: none;
+}
+
+.asset-pin.mob-pin {
+  width: calc(var(--map-pin-size) - 6px);
+  height: calc(var(--map-pin-size) - 6px);
+  padding: 6px;
+  object-fit: contain;
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 30% 28%, rgba(255, 255, 255, 0.98), rgba(226, 233, 242, 0.96));
+  border: 1px solid rgba(216, 226, 238, 0.92);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.85),
+    0 4px 10px rgba(20, 30, 43, 0.14);
 }
 
 .asset-pin.selected {

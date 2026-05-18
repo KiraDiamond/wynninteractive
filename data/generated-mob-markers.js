@@ -7,6 +7,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Aaouu",
     "category": "hostile_mobs_other",
     "region": "Wolves' Den",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Aaouu.png/100px-Aaouu.png?f0c5d6",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -50,6 +51,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Aberrated Lutho Citizen",
     "category": "hostile_mobs_humanoid",
     "region": "Toxic Drip",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AberratedLuthoCitizen.png/100px-AberratedLuthoCitizen.png?d2db1b",
     "description": "3 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -101,6 +103,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Aberration",
     "category": "hostile_mobs_other",
     "region": "Viscera Pits",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Aberration.png/100px-Aberration.png?ee1fec",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -145,6 +148,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Abnormal Miner",
     "category": "hostile_mobs_other",
     "region": "Road to Elkurn",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AbnormalMiner.png/100px-AbnormalMiner.png?f53534",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -188,6 +192,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Acrobatics Trainer",
     "category": "hostile_mobs_other",
     "region": "Temple of Legends",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AcrobaticsTrainer.png/100px-AcrobaticsTrainer.png?72013b",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -231,6 +236,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Acromantula",
     "category": "hostile_mobs_other",
     "region": "Llevigar",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Acromantula%28Lv45%29.png/100px-Acromantula%28Lv45%29.png?219489",
     "description": "3 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -288,6 +294,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Adder",
     "category": "hostile_mobs_other",
     "region": "Fort Tericen",
+    "iconImage": "",
     "description": "1 ingredient drop across 17 mapped spawn points.",
     "tags": [
       "mob",
@@ -451,6 +458,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Adolfo",
     "category": "hostile_mobs_other",
     "region": "Wolves' Den",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Adolfo.png/100px-Adolfo.png?d010a4",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -494,6 +502,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Adventuring Skyraider",
     "category": "hostile_mobs_other",
     "region": "Jofash Tunnel",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AdventuringSkyraider.png/100px-AdventuringSkyraider.png?b9e756",
     "description": "2 ingredient drops across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -592,6 +601,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Aelumia Citizen",
     "category": "hostile_mobs_humanoid",
     "region": "Gates to Aelumia",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AelumiaCitizen.png/100px-AelumiaCitizen.png?2ec760",
     "description": "2 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -678,6 +688,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Affectionate Wybel",
     "category": "hostile_mobs_other",
     "region": "Wybel Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AffectionateWybel.png/100px-AffectionateWybel.png?9d6fa2",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -721,6 +732,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Agullos",
     "category": "hostile_mobs_other",
     "region": "Avos Temple",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Agullos.png/100px-Agullos.png?7596a1",
     "description": "1 ingredient drop across 11 mapped spawn points.",
     "tags": [
       "mob",
@@ -836,6 +848,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ailuropoda Shaman",
     "category": "hostile_mobs_humanoid",
     "region": "Eltom",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AiluropodaShaman.png/100px-AiluropodaShaman.png?fe414e",
     "description": "2 ingredient drops across 33 mapped spawn points.",
     "tags": [
       "mob",
@@ -1102,6 +1115,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ailuropoda Warrior",
     "category": "hostile_mobs_humanoid",
     "region": "Eltom",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AiluropodaWarrior.png/100px-AiluropodaWarrior.png?d5b322",
     "description": "2 ingredient drops across 33 mapped spawn points.",
     "tags": [
       "mob",
@@ -1368,6 +1382,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Aldor-Nix",
     "category": "hostile_mobs_other",
     "region": "Chasm Chokepoint",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Aldor-Nix.png/100px-Aldor-Nix.png?618eb6",
     "description": "4 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -1426,6 +1441,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Alraune On Fire",
     "category": "hostile_mobs_other",
     "region": "Fleris Trail",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AlrauneOnFire.png/100px-AlrauneOnFire.png?698ae9",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -1470,6 +1486,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Altitude Walker",
     "category": "hostile_mobs_zombie",
     "region": "Maro Peaks",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AltitudeWalker.png/100px-AltitudeWalker.png?4ad6cc",
     "description": "3 ingredient drops across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -1563,6 +1580,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Amoral Miner",
     "category": "hostile_mobs_other",
     "region": "Abandoned Mines",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AmoralMiner.png/100px-AmoralMiner.png?e441bb",
     "description": "1 ingredient drop across 12 mapped spawn points.",
     "tags": [
       "mob",
@@ -1672,6 +1690,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ancient Guardian",
     "category": "hostile_mobs_construct",
     "region": "Time Valley",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AncientGuardian.png/100px-AncientGuardian.png?7be4bc",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -1715,6 +1734,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ancient Iboju Shaman",
     "category": "hostile_mobs_humanoid",
     "region": "Herb Cave",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AncientIbojuShaman.png/100px-AncientIbojuShaman.png?685a4e",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -1758,6 +1778,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ancient Iboju Undead",
     "category": "hostile_mobs_zombie",
     "region": "Herb Cave",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AncientIbojuUndead%28Air%29.png/100px-AncientIbojuUndead%28Air%29.png?110815",
     "description": "2 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -1820,6 +1841,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ancient Idol",
     "category": "hostile_mobs_construct",
     "region": "Entamis Village",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AncientIdol.png/100px-AncientIdol.png?ab1c73",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -1864,6 +1886,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ancient Nemract Resident",
     "category": "hostile_mobs_other",
     "region": "Ancient Nemract",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AncientNemractResident%28Level12%29.png/100px-AncientNemractResident%28Level12%29.png?1777d4",
     "description": "2 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -1926,6 +1949,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ancient Nemract Scout",
     "category": "hostile_mobs_other",
     "region": "Ancient Nemract",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AncientNemractScout.png/100px-AncientNemractScout.png?65ad0d",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -1969,6 +1993,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ancient Nemract Soldier",
     "category": "hostile_mobs_humanoid",
     "region": "Ancient Nemract",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AncientNemractSoldier.png/100px-AncientNemractSoldier.png?75870d",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -2024,6 +2049,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ancient Resurrected Orc",
     "category": "hostile_mobs_humanoid",
     "region": "Bucie Waterfall",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AncientResurrectedOrc.png/100px-AncientResurrectedOrc.png?90adee",
     "description": "6 ingredient drops across 10 mapped spawn points.",
     "tags": [
       "mob",
@@ -2162,6 +2188,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Angel Of Battle",
     "category": "hostile_mobs_other",
     "region": "Angel Refuge",
+    "iconImage": "",
     "description": "4 ingredient drops across 13 mapped spawn points.",
     "tags": [
       "mob",
@@ -2286,6 +2313,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Angel Of Nature",
     "category": "hostile_mobs_other",
     "region": "Angel Refuge",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AngelOfNature.png/100px-AngelOfNature.png?f107e9",
     "description": "4 ingredient drops across 13 mapped spawn points.",
     "tags": [
       "mob",
@@ -2410,6 +2438,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Angel Of Wind",
     "category": "hostile_mobs_other",
     "region": "Angel Refuge",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AngelOfWind.png/100px-AngelOfWind.png?355597",
     "description": "6 ingredient drops across 13 mapped spawn points.",
     "tags": [
       "mob",
@@ -2536,6 +2565,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Anima Weird",
     "category": "hostile_mobs_other",
     "region": "Light Peninsula",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AnimaWeird.png/100px-AnimaWeird.png?2d8bd5",
     "description": "4 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -2582,6 +2612,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Apiary Hornet",
     "category": "hostile_mobs_other",
     "region": "Deforested Ecotone",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -2625,6 +2656,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Aquifer Silkworm",
     "category": "hostile_mobs_other",
     "region": "Olux",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -2668,6 +2700,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Aries Priest",
     "category": "hostile_mobs_humanoid",
     "region": "Maro Peaks",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AriesPriest.png/100px-AriesPriest.png?36c517",
     "description": "6 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -2716,6 +2749,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Armored Rebel Cow",
     "category": "hostile_mobs_beast",
     "region": "Owl Tribe",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -2759,6 +2793,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Astrochelys",
     "category": "hostile_mobs_other",
     "region": "Avos Territory",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Astrochelys.png/100px-Astrochelys.png?23b9d7",
     "description": "1 ingredient drop across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -2832,6 +2867,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Astrochelys Manis",
     "category": "hostile_mobs_beast",
     "region": "Ava's Workshop",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AstrochelysManis.png/100px-AstrochelysManis.png?cd18ff",
     "description": "2 ingredient drops across 29 mapped spawn points.",
     "tags": [
       "mob",
@@ -3062,6 +3098,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Atomic Gunk",
     "category": "hostile_mobs_other",
     "region": "Toxic Drip",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AtomicGunk.png/100px-AtomicGunk.png?de0062",
     "description": "7 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -3116,6 +3153,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Avos Guard",
     "category": "hostile_mobs_humanoid",
     "region": "Ava's Workshop",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AvosGuard%28Level95%29.png/100px-AvosGuard%28Level95%29.png?558ab6",
     "description": "2 ingredient drops across 9 mapped spawn points.",
     "tags": [
       "mob",
@@ -3220,6 +3258,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Avos Shaman",
     "category": "hostile_mobs_humanoid",
     "region": "Avos Territory",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AvosShaman.png/100px-AvosShaman.png?442fe0",
     "description": "2 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -3276,6 +3315,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Avos Warrior",
     "category": "hostile_mobs_humanoid",
     "region": "Ava's Workshop",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AvosWarrior.png/100px-AvosWarrior.png?c43d46",
     "description": "1 ingredient drop across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -3361,6 +3401,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ayri Drifter",
     "category": "hostile_mobs_other",
     "region": "Entamis Village",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AyriDrifter.png/100px-AyriDrifter.png?7cb0e2",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -3406,6 +3447,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ayri Whisperer",
     "category": "hostile_mobs_other",
     "region": "Fountain of Youth",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AyriWhisperer.png/100px-AyriWhisperer.png?c9ed06",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -3449,6 +3491,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ayri Wraith",
     "category": "hostile_mobs_zombie",
     "region": "Entamis Village",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AyriWraith.png/100px-AyriWraith.png?4a2a1b",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -3493,6 +3536,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Azer Foot Soldier",
     "category": "hostile_mobs_humanoid",
     "region": "Dogun Ritual Site",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AzerFootSoldier.png/100px-AzerFootSoldier.png?68118e",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -3537,6 +3581,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Azer Ironmage",
     "category": "hostile_mobs_other",
     "region": "Dogun Ritual Site",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AzerIronmage.png/100px-AzerIronmage.png?ebbd7c",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -3581,6 +3626,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Azer Taskmaster",
     "category": "hostile_mobs_other",
     "region": "Dogun Ritual Site",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AzerTaskmaster.png/100px-AzerTaskmaster.png?33f1d5",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -3625,6 +3671,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Azer Vanquisher",
     "category": "hostile_mobs_other",
     "region": "Dogun Ritual Site",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AzerVanquisher.png/100px-AzerVanquisher.png?d757e9",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -3669,6 +3716,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Azur Myconid",
     "category": "hostile_mobs_other",
     "region": "Dodegar's Forge",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/AzurMyconid.png/100px-AzurMyconid.png?3e2c7e",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -3714,6 +3762,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Baby Yeti",
     "category": "hostile_mobs_other",
     "region": "Lusuco",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BabyYeti.png/100px-BabyYeti.png?50f8b4",
     "description": "3 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -3831,6 +3880,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Bandit Alchemist",
     "category": "hostile_mobs_humanoid",
     "region": "Cinfras Outskirts",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BanditAlchemist%28CinfrasCounty%29.png/100px-BanditAlchemist%28CinfrasCounty%29.png?d88564",
     "description": "2 ingredient drops across 13 mapped spawn points.",
     "tags": [
       "mob",
@@ -3977,6 +4027,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Bandit Ambusher",
     "category": "hostile_mobs_humanoid",
     "region": "Bandit's Toll",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BanditAmbusher.png/100px-BanditAmbusher.png?bfe0b7",
     "description": "2 ingredient drops across 16 mapped spawn points.",
     "tags": [
       "mob",
@@ -4111,6 +4162,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Bandit Brawler",
     "category": "hostile_mobs_humanoid",
     "region": "Bandit's Toll",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BanditBrawler.png/100px-BanditBrawler.png?d93ed0",
     "description": "2 ingredient drops across 16 mapped spawn points.",
     "tags": [
       "mob",
@@ -4245,6 +4297,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Bandit Houndmaster",
     "category": "hostile_mobs_humanoid",
     "region": "Bandit's Toll",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BanditHoundmaster.png/100px-BanditHoundmaster.png?3f8a98",
     "description": "2 ingredient drops across 16 mapped spawn points.",
     "tags": [
       "mob",
@@ -4379,6 +4432,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Bandit Hunter",
     "category": "hostile_mobs_humanoid",
     "region": "Cinfras Outskirts",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BanditHunter%28CinfrasCounty%29.png/100px-BanditHunter%28CinfrasCounty%29.png?45caac",
     "description": "2 ingredient drops across 13 mapped spawn points.",
     "tags": [
       "mob",
@@ -4525,6 +4579,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Bandit Knife Juggler",
     "category": "hostile_mobs_humanoid",
     "region": "Cinfras Outskirts",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BanditKnifeJuggler%28LakeGylia%29.png/100px-BanditKnifeJuggler%28LakeGylia%29.png?4f7844",
     "description": "2 ingredient drops across 13 mapped spawn points.",
     "tags": [
       "mob",
@@ -4671,6 +4726,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Bandit Ranger",
     "category": "hostile_mobs_humanoid",
     "region": "Perilous Passage",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BanditRanger.png/100px-BanditRanger.png?34c795",
     "description": "2 ingredient drops across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -4739,6 +4795,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Bandit Tracker",
     "category": "hostile_mobs_humanoid",
     "region": "Cinfras Outskirts",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BanditTracker%28LakeGylia%29.png/100px-BanditTracker%28LakeGylia%29.png?ae8ee8",
     "description": "2 ingredient drops across 13 mapped spawn points.",
     "tags": [
       "mob",
@@ -4885,6 +4942,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Banshee Stag",
     "category": "hostile_mobs_beast",
     "region": "Alder Understory",
+    "iconImage": "",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -4940,6 +4998,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Bark Scuttler",
     "category": "hostile_mobs_spider",
     "region": "Festival Grounds",
+    "iconImage": "",
     "description": "2 ingredient drops across 9 mapped spawn points.",
     "tags": [
       "mob",
@@ -5038,6 +5097,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Basin Wight",
     "category": "hostile_mobs_other",
     "region": "Roots of Corruption",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BasinWight.png/100px-BasinWight.png?ae7eac",
     "description": "3 ingredient drops across 10 mapped spawn points.",
     "tags": [
       "mob",
@@ -5137,6 +5197,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Battered Warrior",
     "category": "hostile_mobs_humanoid",
     "region": "Ragni Countryside South",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BatteredWarrior%28Lv5%29.png/100px-BatteredWarrior%28Lv5%29.png?90ccdf",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -5180,6 +5241,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Beach Crab",
     "category": "hostile_mobs_aquatic",
     "region": "Cathedral Harbour",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BeachCrab.png/100px-BeachCrab.png?c44959",
     "description": "1 ingredient drop across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -5247,6 +5309,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Beach Hopper",
     "category": "hostile_mobs_other",
     "region": "Lion Lair",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BeachHopper.png/100px-BeachHopper.png?c397a6",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -5290,6 +5353,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Bedrock Buster",
     "category": "hostile_mobs_other",
     "region": "Maro Peaks",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BedrockBuster.png/100px-BedrockBuster.png?183179",
     "description": "3 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -5395,6 +5459,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Bee Hive",
     "category": "hostile_mobs_beast",
     "region": "Arachnid Woods",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BeeHive.png/100px-BeeHive.png?2b3777",
     "description": "6 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -5461,6 +5526,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Big Weevil",
     "category": "hostile_mobs_other",
     "region": "Forts in Fall",
+    "iconImage": "",
     "description": "2 ingredient drops across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -5541,6 +5607,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Biting Bug",
     "category": "hostile_mobs_beast",
     "region": "Mount Wynn Inn",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BitingBug.png/100px-BitingBug.png?9ceee1",
     "description": "1 ingredient drop across 10 mapped spawn points.",
     "tags": [
       "mob",
@@ -5644,6 +5711,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Bitter Avo Exile",
     "category": "hostile_mobs_other",
     "region": "Overrun Docks",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -5687,6 +5755,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Bitter Avo Shaman",
     "category": "hostile_mobs_humanoid",
     "region": "Overrun Docks",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -5730,6 +5799,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Bitter Avos Berserker",
     "category": "hostile_mobs_other",
     "region": "Overrun Docks",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -5773,6 +5843,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Black Bat",
     "category": "hostile_mobs_beast",
     "region": "Corrupted Tower",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BlackBat%28Lv20%29.png/100px-BlackBat%28Lv20%29.png?6c7736",
     "description": "2 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -5847,6 +5918,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Blackened Soul",
     "category": "hostile_mobs_other",
     "region": "Twisted Ridge",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BlackenedSoul.png/100px-BlackenedSoul.png?9019ca",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -5891,6 +5963,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Bladestorm Idol",
     "category": "hostile_mobs_construct",
     "region": "Fountain of Youth",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BladestormIdol.png/100px-BladestormIdol.png?fe29a9",
     "description": "5 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -5950,6 +6023,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Blast Chemist",
     "category": "hostile_mobs_other",
     "region": "Hyloch",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -5993,6 +6067,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Blazing Construct",
     "category": "hostile_mobs_construct",
     "region": "Roots of Corruption",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BlazingConstruct.png/100px-BlazingConstruct.png?31bb41",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -6037,6 +6112,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Blazing Host",
     "category": "hostile_mobs_other",
     "region": "Sunset Plateau",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BlazingHost.png/100px-BlazingHost.png?82f279",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -6081,6 +6157,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Blinder",
     "category": "hostile_mobs_other",
     "region": "Sinister Forest",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Blinder.png/100px-Blinder.png?bb7aab",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -6126,6 +6203,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Blinders",
     "category": "hostile_mobs_other",
     "region": "Sinister Forest",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Blinders.png/100px-Blinders.png?f75321",
     "description": "7 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -6174,6 +6252,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Blixen",
     "category": "hostile_mobs_other",
     "region": "Wolves' Den",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Blixen.png/100px-Blixen.png?e11e76",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -6217,6 +6296,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Bloodweb Spider Broody",
     "category": "hostile_mobs_spider",
     "region": "Brigand Outpost",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BloodwebSpiderBroody.png/100px-BloodwebSpiderBroody.png?5c3133",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -6261,6 +6341,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Blue Cyclone",
     "category": "hostile_mobs_other",
     "region": "Bloody Trail",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BlueCyclone.png/100px-BlueCyclone.png?961948",
     "description": "7 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -6309,6 +6390,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Bluebell",
     "category": "hostile_mobs_other",
     "region": "Ahmsord",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Bluebell.png/100px-Bluebell.png?6e2358",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -6352,6 +6434,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Boar",
     "category": "hostile_mobs_beast",
     "region": "Emerald Trail",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Boar.png/100px-Boar.png?d599b7",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -6396,6 +6479,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Bone Juggler",
     "category": "hostile_mobs_skeleton",
     "region": "Twisted Housing",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BoneJuggler.png/100px-BoneJuggler.png?4355c5",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -6439,6 +6523,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Bone Parasite",
     "category": "hostile_mobs_skeleton",
     "region": "Ancient Nemract",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BoneParasite.png/100px-BoneParasite.png?a010e4",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -6482,6 +6567,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Bonecrusher Spider",
     "category": "hostile_mobs_spider",
     "region": "Entamis Village",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BonecrusherSpider.png/100px-BonecrusherSpider.png?ba5982",
     "description": "1 ingredient drop across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -6543,6 +6629,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Bonesy",
     "category": "hostile_mobs_other",
     "region": "Blackstring Den",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Bonesy.png/100px-Bonesy.png?af16e0",
     "description": "5 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -6590,6 +6677,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Box Freak",
     "category": "hostile_mobs_other",
     "region": "Agricultural Sector",
+    "iconImage": "",
     "description": "1 ingredient drop across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -6693,6 +6781,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Breathless Weird",
     "category": "hostile_mobs_other",
     "region": "Gylia Watchtower",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BreathlessWeird.png/100px-BreathlessWeird.png?efd1c4",
     "description": "8 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -6753,6 +6842,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Bringer of Red Sands",
     "category": "hostile_mobs_other",
     "region": "Ancient Excavation",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BringerofRedSands.png/100px-BringerofRedSands.png?d62d41",
     "description": "1 ingredient drop across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -6838,6 +6928,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Bubbling Mud Pile",
     "category": "hostile_mobs_other",
     "region": "Nemract",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BubblingMudPile.png/100px-BubblingMudPile.png?ab356f",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -6881,6 +6972,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Burned Suburb Resident",
     "category": "hostile_mobs_other",
     "region": "Corrupted Tower",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BurnedSuburbResident.png/100px-BurnedSuburbResident.png?91ba68",
     "description": "4 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -6993,6 +7085,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Burning Bronco",
     "category": "hostile_mobs_other",
     "region": "Corrupted Road",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BurningBronco.png/100px-BurningBronco.png?f8535d",
     "description": "2 ingredient drops across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -7079,6 +7172,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Bush Zombie",
     "category": "hostile_mobs_zombie",
     "region": "Scorched Trail",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BushZombie.png/100px-BushZombie.png?12d478",
     "description": "1 ingredient drop across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -7158,6 +7252,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Bushpig",
     "category": "hostile_mobs_other",
     "region": "Corkus Forest",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Bushpig.png/100px-Bushpig.png?251569",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -7207,6 +7302,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Bushpig Matriarch",
     "category": "hostile_mobs_other",
     "region": "Lighthouse Lookout",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/BushpigMatriarch.png/100px-BushpigMatriarch.png?d3b983",
     "description": "5 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -7254,6 +7350,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Bushwhacker",
     "category": "hostile_mobs_other",
     "region": "Abandoned Pass",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Bushwhacker%28Lv15%29.png/100px-Bushwhacker%28Lv15%29.png?f8f235",
     "description": "2 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -7304,6 +7401,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Cadaverous Pirate",
     "category": "hostile_mobs_humanoid",
     "region": "Cathedral Harbour",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CadaverousPirate.png/100px-CadaverousPirate.png?7bae0b",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -7347,6 +7445,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Canopy Leopard",
     "category": "hostile_mobs_other",
     "region": "Entamis Village",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CanopyLeopard.png/100px-CanopyLeopard.png?4a8f2a",
     "description": "2 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -7415,6 +7514,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Canyon Bat",
     "category": "hostile_mobs_beast",
     "region": "Sunrise Plateau",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CanyonBat.png/100px-CanyonBat.png?fc65da",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -7470,6 +7570,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Canyon Condor",
     "category": "hostile_mobs_other",
     "region": "Katoa Ranch",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CanyonCondor.png/100px-CanyonCondor.png?17a2e4",
     "description": "2 ingredient drops across 11 mapped spawn points.",
     "tags": [
       "mob",
@@ -7592,6 +7693,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Canyon Fleris",
     "category": "hostile_mobs_other",
     "region": "Entrance to Molten Heights",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CanyonFleris.png/100px-CanyonFleris.png?75c54c",
     "description": "3 ingredient drops across 10 mapped spawn points.",
     "tags": [
       "mob",
@@ -7697,6 +7799,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Canyon Ooze",
     "category": "hostile_mobs_other",
     "region": "Cliffside Passage South",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CanyonOoze.png/100px-CanyonOoze.png?1520f0",
     "description": "3 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -7766,6 +7869,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Canyon Rooster",
     "category": "hostile_mobs_other",
     "region": "Rymek",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CanyonRooster.png/100px-CanyonRooster.png?4a0036",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -7809,6 +7913,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Canyon Thug",
     "category": "hostile_mobs_other",
     "region": "Parasitic Slime Mine",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CanyonThug.png/100px-CanyonThug.png?87bf30",
     "description": "2 ingredient drops across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -7883,6 +7988,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Capital Guard",
     "category": "hostile_mobs_humanoid",
     "region": "Contested District",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CapitalGuard.png/100px-CapitalGuard.png?4e2dd4",
     "description": "2 ingredient drops across 27 mapped spawn points.",
     "tags": [
       "mob",
@@ -8089,6 +8195,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Captain Nomor Beard",
     "category": "hostile_mobs_humanoid",
     "region": "Lion Lair",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CaptainNomorBeard.png/100px-CaptainNomorBeard.png?14c3d6",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -8132,6 +8239,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Cardboard Box",
     "category": "hostile_mobs_other",
     "region": "Industrial Sector",
+    "iconImage": "",
     "description": "2 ingredient drops across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -8224,6 +8332,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Carnagator",
     "category": "hostile_mobs_other",
     "region": "Troms Lake",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Carnagator.png/100px-Carnagator.png?319da6",
     "description": "2 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -8274,6 +8383,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Carrion Spider",
     "category": "hostile_mobs_spider",
     "region": "Crater Descent",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CarrionSpider.png/100px-CarrionSpider.png?c964b9",
     "description": "4 ingredient drops across 12 mapped spawn points.",
     "tags": [
       "mob",
@@ -8398,6 +8508,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Carver",
     "category": "hostile_mobs_other",
     "region": "Viscera Pits",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Carver.png/100px-Carver.png?59bd5a",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -8442,6 +8553,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Catapult Operator",
     "category": "hostile_mobs_other",
     "region": "Icy Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CatapultOperator.png/100px-CatapultOperator.png?7ff5ac",
     "description": "4 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -8494,6 +8606,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Catsith",
     "category": "hostile_mobs_other",
     "region": "Bucie Waterfall",
+    "iconImage": "",
     "description": "2 ingredient drops across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -8580,6 +8693,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Cavalry Specter",
     "category": "hostile_mobs_other",
     "region": "Twain Lake",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CavalrySpecter.png/100px-CavalrySpecter.png?696db8",
     "description": "2 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -8636,6 +8750,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Cave Bat",
     "category": "hostile_mobs_beast",
     "region": "Olux Lumberyard",
+    "iconImage": "",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -8691,6 +8806,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Cave Boar",
     "category": "hostile_mobs_beast",
     "region": "Jagged Foothills",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CaveBoar.png/100px-CaveBoar.png?ea5984",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -8746,6 +8862,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Cave Crab",
     "category": "hostile_mobs_aquatic",
     "region": "Maltic Coast",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CaveCrab.png/100px-CaveCrab.png?6bd3f3",
     "description": "2 ingredient drops across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -8814,6 +8931,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Chalky Kanter",
     "category": "hostile_mobs_other",
     "region": "Sinister Forest",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ChalkyKanter.png/100px-ChalkyKanter.png?74137e",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -8858,6 +8976,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Chalky Kantyri Calf",
     "category": "hostile_mobs_other",
     "region": "Sinister Forest",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ChalkyKantyriCalf.png/100px-ChalkyKantyriCalf.png?839828",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -8902,6 +9021,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Chamber Lurker",
     "category": "hostile_mobs_other",
     "region": "Plains Lake",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ChamberLurker.png/100px-ChamberLurker.png?754826",
     "description": "1 ingredient drop across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -8963,6 +9083,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Charging Minotaur",
     "category": "hostile_mobs_other",
     "region": "Wanderer's Way",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ChargingMinotaur.png/100px-ChargingMinotaur.png?99b1b6",
     "description": "3 ingredient drops across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -9044,6 +9165,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Charred Zombie",
     "category": "hostile_mobs_zombie",
     "region": "Emerald Trail",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CharredZombie.png/100px-CharredZombie.png?14e487",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -9089,6 +9211,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Charring Minotaur",
     "category": "hostile_mobs_other",
     "region": "Dogun Ritual Site",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CharringMinotaur.png/100px-CharringMinotaur.png?ea1396",
     "description": "2 ingredient drops across 13 mapped spawn points.",
     "tags": [
       "mob",
@@ -9205,6 +9328,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Chimneysweep",
     "category": "hostile_mobs_other",
     "region": "Industrial Sector",
+    "iconImage": "",
     "description": "1 ingredient drop across 9 mapped spawn points.",
     "tags": [
       "mob",
@@ -9314,6 +9438,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Cirrus Cloud",
     "category": "hostile_mobs_other",
     "region": "Dragonling Nests",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CirrusCloud.png/100px-CirrusCloud.png?51bf88",
     "description": "2 ingredient drops across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -9394,6 +9519,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Cirruskater",
     "category": "hostile_mobs_other",
     "region": "Guild Hall",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Cirruskater.png/100px-Cirruskater.png?9e04cd",
     "description": "2 ingredient drops across 24 mapped spawn points.",
     "tags": [
       "mob",
@@ -9606,6 +9732,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Cliffhearth Orc Chopper",
     "category": "hostile_mobs_humanoid",
     "region": "Cliffhearth Orc Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CliffhearthOrcChopper.png/100px-CliffhearthOrcChopper.png?42e3ae",
     "description": "7 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -9654,6 +9781,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Cliffhearth Orc Kindler",
     "category": "hostile_mobs_humanoid",
     "region": "Cliffhearth Orc Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CliffhearthOrcKindler.png/100px-CliffhearthOrcKindler.png?6f1d41",
     "description": "7 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -9702,6 +9830,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Cliffhearth Orc Smoker",
     "category": "hostile_mobs_humanoid",
     "region": "Cliffhearth Orc Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CliffhearthOrcSmoker.png/100px-CliffhearthOrcSmoker.png?84fdd7",
     "description": "7 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -9750,6 +9879,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Clipped-Wing Shimmer Moth",
     "category": "hostile_mobs_beast",
     "region": "Thesead Underpass",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Clipped-WingShimmerMoth.png/100px-Clipped-WingShimmerMoth.png?a893dd",
     "description": "1 ingredient drop across 15 mapped spawn points.",
     "tags": [
       "mob",
@@ -9877,6 +10007,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Clobber Captain",
     "category": "hostile_mobs_humanoid",
     "region": "Alder Understory",
+    "iconImage": "",
     "description": "2 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -9945,6 +10076,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Coast Lobster",
     "category": "hostile_mobs_beast",
     "region": "Bremminglar",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CoastLobster.png/100px-CoastLobster.png?8dfc5a",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -9989,6 +10121,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Cold Fang",
     "category": "hostile_mobs_other",
     "region": "Frozen Homestead",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ColdFang.png/100px-ColdFang.png?9dbd59",
     "description": "4 ingredient drops across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -10095,6 +10228,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Cold Shadow",
     "category": "hostile_mobs_other",
     "region": "Icy Descent",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ColdShadow.png/100px-ColdShadow.png?536714",
     "description": "3 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -10158,6 +10292,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Colossus Spawn",
     "category": "hostile_mobs_other",
     "region": "Illuminant Path",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ColossusSpawn.png/100px-ColossusSpawn.png?f3fef0",
     "description": "5 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -10217,6 +10352,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Confused Cow",
     "category": "hostile_mobs_beast",
     "region": "Cinfras",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -10260,6 +10396,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Confused Zombie",
     "category": "hostile_mobs_zombie",
     "region": "Abandoned Mines Entrance",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ConfusedZombie.png/100px-ConfusedZombie.png?8a8cb7",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -10303,6 +10440,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Congealed Blood",
     "category": "hostile_mobs_other",
     "region": "Cliffside Passage South",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CongealedBlood.png/100px-CongealedBlood.png?816707",
     "description": "3 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -10372,6 +10510,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Congestion",
     "category": "hostile_mobs_other",
     "region": "Industrial Sector",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Congestion.png/100px-Congestion.png?291536",
     "description": "1 ingredient drop across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -10493,6 +10632,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Constable Gatekeeper",
     "category": "hostile_mobs_other",
     "region": "Espren",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ConstableGatekeeper%28RoyalGate%29.png/100px-ConstableGatekeeper%28RoyalGate%29.png?eab3b0",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -10536,6 +10676,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Constable Guard",
     "category": "hostile_mobs_humanoid",
     "region": "Royal Dam",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ConstableGuard%28Lv106%29.png/100px-ConstableGuard%28Lv106%29.png?b7451a",
     "description": "3 ingredient drops across 30 mapped spawn points.",
     "tags": [
       "mob",
@@ -10803,6 +10944,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Controller",
     "category": "hostile_mobs_construct",
     "region": "Gates to Aelumia",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Controller.png/100px-Controller.png?97946f",
     "description": "1 ingredient drop across 11 mapped spawn points.",
     "tags": [
       "mob",
@@ -10912,6 +11054,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Corbys",
     "category": "hostile_mobs_other",
     "region": "Avos Temple",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Corbys.png/100px-Corbys.png?ffadbb",
     "description": "1 ingredient drop across 11 mapped spawn points.",
     "tags": [
       "mob",
@@ -11027,6 +11170,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Corktopus",
     "category": "hostile_mobs_other",
     "region": "Avos Temple",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Corktopus.png/100px-Corktopus.png?6ca376",
     "description": "1 ingredient drop across 11 mapped spawn points.",
     "tags": [
       "mob",
@@ -11142,6 +11286,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Corkus Bandit",
     "category": "hostile_mobs_humanoid",
     "region": "Balloon Airbase",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CorkusBandit%28a%29.png/100px-CorkusBandit%28a%29.png?b3c35f",
     "description": "2 ingredient drops across 27 mapped spawn points.",
     "tags": [
       "mob",
@@ -11378,6 +11523,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Corrupt Hex",
     "category": "hostile_mobs_other",
     "region": "Nomads' Refuge",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CorruptHex.png/100px-CorruptHex.png?46c496",
     "description": "1 ingredient drop across 9 mapped spawn points.",
     "tags": [
       "mob",
@@ -11517,6 +11663,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Corrupt Stone",
     "category": "hostile_mobs_other",
     "region": "Roots of Corruption",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CorruptStone.png/100px-CorruptStone.png?569d47",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -11562,6 +11709,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Corrupted Apple",
     "category": "hostile_mobs_other",
     "region": "Corrupted Orchard",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CorruptedApple.png/100px-CorruptedApple.png?878cb1",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -11606,6 +11754,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Corrupted Arbalest",
     "category": "hostile_mobs_other",
     "region": "Fountain of Youth",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CorruptedArbalest.png/100px-CorruptedArbalest.png?a76347",
     "description": "3 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -11657,6 +11806,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Corrupted Blade",
     "category": "hostile_mobs_other",
     "region": "Entamis Village",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CorruptedBlade.png/100px-CorruptedBlade.png?ef31dc",
     "description": "2 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -11725,6 +11875,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Corrupted Globule",
     "category": "hostile_mobs_other",
     "region": "Roots of Corruption",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CorruptedGlobule.png/100px-CorruptedGlobule.png?462366",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -11769,6 +11920,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Corrupted Idol",
     "category": "hostile_mobs_construct",
     "region": "Entamis Village",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CorruptedIdol.png/100px-CorruptedIdol.png?149bc7",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -11814,6 +11966,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Corrupted Keeper",
     "category": "hostile_mobs_other",
     "region": "Entamis Village",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CorruptedKeeper.png/100px-CorruptedKeeper.png?14e4f0",
     "description": "3 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -11877,6 +12030,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Corrupted Lookout",
     "category": "hostile_mobs_other",
     "region": "Delnar Manor",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CorruptedLookout.png/100px-CorruptedLookout.png?3d5466",
     "description": "3 ingredient drops across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -11952,6 +12106,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Corrupted Miner",
     "category": "hostile_mobs_other",
     "region": "Abandoned Mines",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CorruptedMiner.png/100px-CorruptedMiner.png?6a23c8",
     "description": "2 ingredient drops across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -12026,6 +12181,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Corrupted Scout",
     "category": "hostile_mobs_other",
     "region": "Delnar Manor",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CorruptedScout%28Lv70%29.png/100px-CorruptedScout%28Lv70%29.png?97f4d5",
     "description": "2 ingredient drops across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -12100,6 +12256,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Corrupted Sentinel",
     "category": "hostile_mobs_construct",
     "region": "Icy Descent",
+    "iconImage": "",
     "description": "3 ingredient drops across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -12193,6 +12350,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Corrupted Watcher",
     "category": "hostile_mobs_other",
     "region": "Temple of Legends",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CorruptedWatcher.png/100px-CorruptedWatcher.png?1b0b15",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -12236,6 +12394,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Cortrich",
     "category": "hostile_mobs_other",
     "region": "Corkus City Crossroads",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Cortrich.png/100px-Cortrich.png?14db00",
     "description": "1 ingredient drop across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -12309,6 +12468,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Cosmic Weird",
     "category": "hostile_mobs_other",
     "region": "Celestial Impact",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CosmicWeird%28Lv45%29.png/100px-CosmicWeird%28Lv45%29.png?cb307a",
     "description": "1 ingredient drop across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -12382,6 +12542,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Cow",
     "category": "hostile_mobs_beast",
     "region": "Olux Lumberyard",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Cow%28Lv1%29.png/100px-Cow%28Lv1%29.png?1e63e4",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -12425,6 +12586,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Crab Hiding in Sand",
     "category": "hostile_mobs_aquatic",
     "region": "Coastal Trail",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CrabHidinginSand.png/100px-CrabHidinginSand.png?cd6c05",
     "description": "2 ingredient drops across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -12511,6 +12673,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Cracked Husk",
     "category": "hostile_mobs_other",
     "region": "Rymek",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CrackedHusk.png/100px-CrackedHusk.png?8a6ed9",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -12554,6 +12717,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Crazed Donkey",
     "category": "hostile_mobs_other",
     "region": "Sunrise Plateau",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CrazedDonkey.png/100px-CrazedDonkey.png?b366f9",
     "description": "1 ingredient drop across 11 mapped spawn points.",
     "tags": [
       "mob",
@@ -12657,6 +12821,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Crazy Cat Lady",
     "category": "hostile_mobs_other",
     "region": "Lava Springs",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CrazyCatLady.png/100px-CrazyCatLady.png?91c6e7",
     "description": "5 ingredient drops across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -12740,6 +12905,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Crazy Wolf Tamer",
     "category": "hostile_mobs_beast",
     "region": "Wolves' Den",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CrazyWolfTamer.png/100px-CrazyWolfTamer.png?f0ae44",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -12784,6 +12950,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Cryostone Golem",
     "category": "hostile_mobs_construct",
     "region": "Freezing Heights",
+    "iconImage": "",
     "description": "3 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -12847,6 +13014,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Crypt Parasite",
     "category": "hostile_mobs_other",
     "region": "Scorched Trail",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CryptParasite.png/100px-CryptParasite.png?b47cd4",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -12890,6 +13058,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Crystal Fanatic Leader",
     "category": "hostile_mobs_other",
     "region": "Gloopy Cave",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CrystalFanaticLeader.png/100px-CrystalFanaticLeader.png?c461e0",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -12939,6 +13108,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Crystal of Insanity",
     "category": "hostile_mobs_other",
     "region": "Final Step",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CrystalofInsanity.png/100px-CrystalofInsanity.png?32e3f0",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -12984,6 +13154,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Crystalline Behemoth",
     "category": "hostile_mobs_other",
     "region": "Thesead Suburbs",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CrystallineBehemoth.png/100px-CrystallineBehemoth.png?dc74c9",
     "description": "5 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -13031,6 +13202,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Crystallized Flare",
     "category": "hostile_mobs_other",
     "region": "Volcanic Isles",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CrystallizedFlare.png/100px-CrystallizedFlare.png?8cf1d7",
     "description": "5 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -13084,6 +13256,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Crystallized Miner",
     "category": "hostile_mobs_other",
     "region": "Gloopy Cave",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -13127,6 +13300,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Crystallized Scarab",
     "category": "hostile_mobs_other",
     "region": "Almuj",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CrystallizedScarab.png/100px-CrystallizedScarab.png?1cb80e",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -13171,6 +13345,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Cuisine Trader",
     "category": "hostile_mobs_humanoid",
     "region": "Gates to Aelumia",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CuisineTrader.png/100px-CuisineTrader.png?4a5286",
     "description": "3 ingredient drops across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -13252,6 +13427,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Cultist",
     "category": "hostile_mobs_humanoid",
     "region": "Abandoned Mines Entrance",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Cultist.png/100px-Cultist.png?74f0fa",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -13296,6 +13472,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Curious Weird",
     "category": "hostile_mobs_other",
     "region": "Path to Light's Secret",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CuriousWeird.png/100px-CuriousWeird.png?fb97e8",
     "description": "2 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -13346,6 +13523,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Cursed Adventurer",
     "category": "hostile_mobs_other",
     "region": "Enchanted River",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CursedAdventurer.png/100px-CursedAdventurer.png?42e81a",
     "description": "3 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -13403,6 +13581,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Cursed Farmer",
     "category": "hostile_mobs_other",
     "region": "Enchanted River",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CursedFarmer.png/100px-CursedFarmer.png?b13983",
     "description": "2 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -13459,6 +13638,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Cursed Mutineer",
     "category": "hostile_mobs_other",
     "region": "Bremminglar",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CursedMutineer.png/100px-CursedMutineer.png?75d445",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -13503,6 +13683,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Cursed Pirate",
     "category": "hostile_mobs_humanoid",
     "region": "Lion Lair",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CursedPirate.png/100px-CursedPirate.png?643f65",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -13548,6 +13729,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Cursed Shrieker",
     "category": "hostile_mobs_other",
     "region": "Gateway to Nothing",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CursedShrieker.png/100px-CursedShrieker.png?f582ca",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -13593,6 +13775,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Cursed Silk Spider",
     "category": "hostile_mobs_spider",
     "region": "Lizardman Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CursedSilkSpider.png/100px-CursedSilkSpider.png?863df7",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -13638,6 +13821,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Cursed Silk Spiderling",
     "category": "hostile_mobs_other",
     "region": "Bloody Trail",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CursedSilkSpiderling.png/100px-CursedSilkSpiderling.png?af968e",
     "description": "2 ingredient drops across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -13724,6 +13908,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Cursed Villager",
     "category": "hostile_mobs_humanoid",
     "region": "Enchanted River",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/CursedVillager.png/100px-CursedVillager.png?fd81d8",
     "description": "2 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -13780,6 +13965,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Cyclops",
     "category": "hostile_mobs_other",
     "region": "Cyclospordial Hazard",
+    "iconImage": "",
     "description": "4 ingredient drops across 12 mapped spawn points.",
     "tags": [
       "mob",
@@ -13892,6 +14078,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Dark Cultist",
     "category": "hostile_mobs_humanoid",
     "region": "Tempo Town",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DarkCultist%28Lv20%29.png/100px-DarkCultist%28Lv20%29.png?b5f7a7",
     "description": "2 ingredient drops across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -13984,6 +14171,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Dark Executioner",
     "category": "hostile_mobs_other",
     "region": "Gelibord Watermill",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DarkExecutioner.png/100px-DarkExecutioner.png?8fe7cd",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -14029,6 +14217,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Dark Knight",
     "category": "hostile_mobs_humanoid",
     "region": "Gelibord Watermill",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DarkKnight.png/100px-DarkKnight.png?95a542",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -14074,6 +14263,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Dark Weird",
     "category": "hostile_mobs_other",
     "region": "Fungal Grove",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DarkWeird.png/100px-DarkWeird.png?5c4b31",
     "description": "2 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -14124,6 +14314,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Darkening Soul",
     "category": "hostile_mobs_other",
     "region": "Twisted Ridge",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DarkeningSoul.png/100px-DarkeningSoul.png?c284e1",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -14167,6 +14358,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Darkloid Beetle",
     "category": "hostile_mobs_beast",
     "region": "Fading Forest",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DarkloidBeetle.png/100px-DarkloidBeetle.png?5b66b8",
     "description": "2 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -14235,6 +14427,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Dead Cowboy",
     "category": "hostile_mobs_other",
     "region": "Sunset Plateau",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DeadCowboy.png/100px-DeadCowboy.png?760a7b",
     "description": "4 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -14299,6 +14492,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Dead Ice Cutter",
     "category": "hostile_mobs_other",
     "region": "Frigid Crossroads",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DeadIceCutter.png/100px-DeadIceCutter.png?27ccc3",
     "description": "5 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -14352,6 +14546,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Dead Island Bovemist",
     "category": "hostile_mobs_other",
     "region": "Disturbed Crypt",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DeadIslandBovemist.png/100px-DeadIslandBovemist.png?3c7a8a",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -14395,6 +14590,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Dead Lumberjack",
     "category": "hostile_mobs_humanoid",
     "region": "Blooming Boulders",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DeadLumberjack.png/100px-DeadLumberjack.png?e7e874",
     "description": "1 ingredient drop across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -14486,6 +14682,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Dead Miner",
     "category": "hostile_mobs_other",
     "region": "Herb Cave",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DeadMiner%28Lv54%29.png/100px-DeadMiner%28Lv54%29.png?10df96",
     "description": "1 ingredient drop across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -14553,6 +14750,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Dead Pirate Guard",
     "category": "hostile_mobs_humanoid",
     "region": "Pirate Town",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DeadPirateGuard.png/100px-DeadPirateGuard.png?e27f0a",
     "description": "2 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -14615,6 +14813,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Dead Prospector",
     "category": "hostile_mobs_other",
     "region": "Ruined Prospect",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DeadProspector.png/100px-DeadProspector.png?25e5a8",
     "description": "5 ingredient drops across 13 mapped spawn points.",
     "tags": [
       "mob",
@@ -14746,6 +14945,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Dead Suburb Resident",
     "category": "hostile_mobs_other",
     "region": "Corrupted Tower",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DeadSuburbResident.png/100px-DeadSuburbResident.png?aa72aa",
     "description": "3 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -14857,6 +15057,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Dead Villager",
     "category": "hostile_mobs_humanoid",
     "region": "Derelict Mansion",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DeadVillager.png/100px-DeadVillager.png?107d22",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -14900,6 +15101,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Death Whistle",
     "category": "hostile_mobs_other",
     "region": "Bloody Trail",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DeathWhistle.png/100px-DeathWhistle.png?5a846e",
     "description": "7 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -14948,6 +15150,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Death Worm",
     "category": "hostile_mobs_beast",
     "region": "Cascading Oasis",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DeathWorm.png/100px-DeathWorm.png?d0fb55",
     "description": "1 ingredient drop across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -15033,6 +15236,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Decay Weird",
     "category": "hostile_mobs_other",
     "region": "Fungal Grove",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DecayWeird.png/100px-DecayWeird.png?ef2f3d",
     "description": "3 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -15084,6 +15288,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Deep Blue Squid",
     "category": "hostile_mobs_aquatic",
     "region": "Lifeless Forest",
+    "iconImage": "",
     "description": "5 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -15143,6 +15348,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Deep Volcano Sludge",
     "category": "hostile_mobs_aquatic",
     "region": "Volcanic Isles",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DeepVolcanoSludge%28Level56%29.png/100px-DeepVolcanoSludge%28Level56%29.png?4e2b33",
     "description": "2 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -15193,6 +15399,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Defender of the Plains",
     "category": "hostile_mobs_other",
     "region": "Farmers Settlement",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DefenderofthePlains.png/100px-DefenderofthePlains.png?b5c1ca",
     "description": "5 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -15258,6 +15465,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Defiled Explorer",
     "category": "hostile_mobs_other",
     "region": "Mummy's Tomb",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DefiledExplorer.png/100px-DefiledExplorer.png?539083",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -15313,6 +15521,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Defishious",
     "category": "hostile_mobs_other",
     "region": "Skien's Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Defishious.png/100px-Defishious.png?72bd9c",
     "description": "2 ingredient drops across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -15399,6 +15608,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Dern Minion",
     "category": "hostile_mobs_other",
     "region": "Derelict Mansion",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DernMinion.png/100px-DernMinion.png?ae8027",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -15442,6 +15652,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Dernic Lurker",
     "category": "hostile_mobs_other",
     "region": "Broken Road",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DernicLurker.png/100px-DernicLurker.png?9f3c92",
     "description": "2 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -15540,6 +15751,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Desert Crawler",
     "category": "hostile_mobs_other",
     "region": "Almuj Slums",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DesertCrawler.png/100px-DesertCrawler.png?704a8e",
     "description": "1 ingredient drop across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -15625,6 +15837,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Desert Rattler",
     "category": "hostile_mobs_other",
     "region": "Almuj Slums",
+    "iconImage": "",
     "description": "2 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -15681,6 +15894,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Destrachan",
     "category": "hostile_mobs_other",
     "region": "Pyroclastic Flow",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Destrachan.png/100px-Destrachan.png?a00436",
     "description": "3 ingredient drops across 18 mapped spawn points.",
     "tags": [
       "mob",
@@ -15846,6 +16060,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Devourer",
     "category": "hostile_mobs_other",
     "region": "Fading Forest",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Devourer%28Lv67%29.png/100px-Devourer%28Lv67%29.png?19196f",
     "description": "3 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -15915,6 +16130,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Devouring Destrachan",
     "category": "hostile_mobs_other",
     "region": "Pyroclastic Flow",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DevouringDestrachan%28UpperMoltenHeights%29.png/100px-DevouringDestrachan%28UpperMoltenHeights%29.png?8adfc0",
     "description": "3 ingredient drops across 18 mapped spawn points.",
     "tags": [
       "mob",
@@ -16080,6 +16296,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Dire Fang",
     "category": "hostile_mobs_other",
     "region": "Icy Descent",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DireFang.png/100px-DireFang.png?aa1623",
     "description": "3 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -16143,6 +16360,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Dire Subaltern",
     "category": "hostile_mobs_other",
     "region": "Barren Sands",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DireSubaltern.png/100px-DireSubaltern.png?abbf9f",
     "description": "2 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -16199,6 +16417,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Disembodied Head",
     "category": "hostile_mobs_other",
     "region": "Lusuco",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DisembodiedHead.png/100px-DisembodiedHead.png?5b77cf",
     "description": "3 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -16286,6 +16505,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Diurnal Canyon Swooper",
     "category": "hostile_mobs_other",
     "region": "Owl Tribe",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DiurnalCanyonSwooper.png/100px-DiurnalCanyonSwooper.png?6c1ea0",
     "description": "7 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -16388,6 +16608,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Draconic Aspect",
     "category": "hostile_mobs_other",
     "region": "Dragonbone Graveyard",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DraconicAspect.png/100px-DraconicAspect.png?121c3a",
     "description": "1 ingredient drop across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -16461,6 +16682,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Draconic Spirit",
     "category": "hostile_mobs_other",
     "region": "Dragonbone Graveyard",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DraconicSpirit.png/100px-DraconicSpirit.png?eb024f",
     "description": "1 ingredient drop across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -16534,6 +16756,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Drenched Zombie",
     "category": "hostile_mobs_zombie",
     "region": "Farmers Settlement",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DrenchedZombie.png/100px-DrenchedZombie.png?e566dc",
     "description": "3 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -16591,6 +16814,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Drowned Sarnfic Citizen",
     "category": "hostile_mobs_humanoid",
     "region": "Selchar",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DrownedSarnficCitizen.png/100px-DrownedSarnficCitizen.png?818ec2",
     "description": "3 ingredient drops across 13 mapped spawn points.",
     "tags": [
       "mob",
@@ -16708,6 +16932,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Drssren",
     "category": "hostile_mobs_other",
     "region": "Essren's Hut",
+    "iconImage": "",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -16752,6 +16977,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Drunk Bandit",
     "category": "hostile_mobs_humanoid",
     "region": "Eagle Tribe",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -16795,6 +17021,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Drunk Captain",
     "category": "hostile_mobs_humanoid",
     "region": "Cathedral Harbour",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DrunkCaptain.png/100px-DrunkCaptain.png?499d9e",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -16838,6 +17065,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Drunken Guard",
     "category": "hostile_mobs_humanoid",
     "region": "Frosty Outpost",
+    "iconImage": "",
     "description": "2 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -16900,6 +17128,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Dry Zombie",
     "category": "hostile_mobs_zombie",
     "region": "Accursed Dunes",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DryZombie.png/100px-DryZombie.png?1fec3c",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -16943,6 +17172,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Dullahan's Gargoyle",
     "category": "hostile_mobs_other",
     "region": "Castle Dullahan",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Dullahan%27sGargoyle.png/100px-Dullahan%27sGargoyle.png?3da944",
     "description": "2 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -16993,6 +17223,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Durum Cow",
     "category": "hostile_mobs_beast",
     "region": "Durum Isles Barn",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DurumCow.png/100px-DurumCow.png?754124",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -17036,6 +17267,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Durum Scarecrow",
     "category": "hostile_mobs_other",
     "region": "Durum Barley Islet",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DurumScarecrow.png/100px-DurumScarecrow.png?ece204",
     "description": "2 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -17092,6 +17324,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Dusk Kanter",
     "category": "hostile_mobs_other",
     "region": "Sinister Forest",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DuskKanter.png/100px-DuskKanter.png?7117bb",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -17136,6 +17369,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Dusk Kantyr",
     "category": "hostile_mobs_other",
     "region": "Sinister Forest",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DuskKantyr.png/100px-DuskKantyr.png?430592",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -17180,6 +17414,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Dying Angel",
     "category": "hostile_mobs_other",
     "region": "Swamp Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/DyingAngel.png/100px-DyingAngel.png?4c2601",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -17224,6 +17459,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Earth Borer Beetle",
     "category": "hostile_mobs_beast",
     "region": "Cliffside Passage South",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/EarthBorerBeetle.png/100px-EarthBorerBeetle.png?f3ddfd",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -17273,6 +17509,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Earth Sprite",
     "category": "hostile_mobs_elemental",
     "region": "Road to Light Forest",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/EarthSprite.png/100px-EarthSprite.png?f472f9",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -17316,6 +17553,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Earth Weird",
     "category": "hostile_mobs_other",
     "region": "Path to Light's Secret",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/EarthWeird.png/100px-EarthWeird.png?d62e1c",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -17365,6 +17603,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Earthpit Orc Drummer",
     "category": "hostile_mobs_humanoid",
     "region": "Orc Road",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/EarthpitOrcDrummer.png/100px-EarthpitOrcDrummer.png?7a22e0",
     "description": "7 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -17413,6 +17652,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Earthpit Orc Reveler",
     "category": "hostile_mobs_humanoid",
     "region": "Orc Road",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/EarthpitOrcReveler.png/100px-EarthpitOrcReveler.png?818991",
     "description": "7 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -17467,6 +17707,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Earthsculpter Uraqi",
     "category": "hostile_mobs_other",
     "region": "Entamis Village",
+    "iconImage": "",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -17512,6 +17753,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Elefolk Hunter",
     "category": "hostile_mobs_humanoid",
     "region": "Elefolk Stomping Grounds",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ElefolkHunter.png/100px-ElefolkHunter.png?a2e40e",
     "description": "4 ingredient drops across 12 mapped spawn points.",
     "tags": [
       "mob",
@@ -17630,6 +17872,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Elefolk Warrior",
     "category": "hostile_mobs_humanoid",
     "region": "Elefolk Stomping Grounds",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ElefolkWarrior.png/100px-ElefolkWarrior.png?4f96d4",
     "description": "4 ingredient drops across 12 mapped spawn points.",
     "tags": [
       "mob",
@@ -17748,6 +17991,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Elemental Miasma",
     "category": "hostile_mobs_elemental",
     "region": "Gelibord",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ElementalMiasma.png/100px-ElementalMiasma.png?f6d0b2",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -17791,6 +18035,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Elemental Weird",
     "category": "hostile_mobs_elemental",
     "region": "Gylia Watchtower",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ElementalWeird.png/100px-ElementalWeird.png?45d319",
     "description": "2 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -17847,6 +18092,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Emerald Dragonling",
     "category": "hostile_mobs_other",
     "region": "Sky Island Ascent",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/EmeraldDragonling.png/100px-EmeraldDragonling.png?d67e4e",
     "description": "3 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -17904,6 +18150,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Emerald Knives Bandit",
     "category": "hostile_mobs_humanoid",
     "region": "Eagle Tribe",
+    "iconImage": "",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -17953,6 +18200,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Emerald-Enthralled",
     "category": "hostile_mobs_other",
     "region": "Broken Road",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Emerald-Enthralled.png/100px-Emerald-Enthralled.png?f34c5a",
     "description": "2 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -18051,6 +18299,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Energized Weird",
     "category": "hostile_mobs_other",
     "region": "Path to Light's Secret",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/EnergizedWeird.png/100px-EnergizedWeird.png?ce8892",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -18100,6 +18349,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Enflamed Lava Monster",
     "category": "hostile_mobs_other",
     "region": "Rymek",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/EnflamedLavaMonster.png/100px-EnflamedLavaMonster.png?4e251a",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -18143,6 +18393,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Enraged Corrupted Cow",
     "category": "hostile_mobs_beast",
     "region": "Corrupted Warfront",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/EnragedCorruptedCow.png/100px-EnragedCorruptedCow.png?68e534",
     "description": "5 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -18190,6 +18441,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Enraged Minotaur",
     "category": "hostile_mobs_other",
     "region": "Wanderer's Way",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/EnragedMinotaur.png/100px-EnragedMinotaur.png?d44769",
     "description": "3 ingredient drops across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -18271,6 +18523,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Enraged Snow-Bear",
     "category": "hostile_mobs_beast",
     "region": "Frigid Crossroads",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/EnragedSnow-Bear.png/100px-EnragedSnow-Bear.png?b97d67",
     "description": "2 ingredient drops across 16 mapped spawn points.",
     "tags": [
       "mob",
@@ -18405,6 +18658,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ethrela Myconid",
     "category": "hostile_mobs_other",
     "region": "Dodegar's Forge",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LesserEthrelaMyconid.png/100px-LesserEthrelaMyconid.png?99fab0",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -18450,6 +18704,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Explosive Weird",
     "category": "hostile_mobs_other",
     "region": "Fungal Grove",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ExplosiveWeird.png/100px-ExplosiveWeird.png?58f7fc",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -18494,6 +18749,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Eyebawl",
     "category": "hostile_mobs_other",
     "region": "Sinister Forest",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Eyebawl.png/100px-Eyebawl.png?168a30",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -18538,6 +18794,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Face of Fear",
     "category": "hostile_mobs_other",
     "region": "Sinister Forest",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FaceofFear.png/100px-FaceofFear.png?9abd03",
     "description": "6 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -18586,6 +18843,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Fat Firefly",
     "category": "hostile_mobs_other",
     "region": "Little Wood",
+    "iconImage": "",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -18641,6 +18899,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Feligember Frog",
     "category": "hostile_mobs_beast",
     "region": "Entrance to Olux",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FeligemberFrog.png/100px-FeligemberFrog.png?93fb29",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -18702,6 +18961,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Felroc",
     "category": "hostile_mobs_other",
     "region": "Celestial Impact",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Felroc.png/100px-Felroc.png?5c7b64",
     "description": "1 ingredient drop across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -18787,6 +19047,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Felroc Brutahealen",
     "category": "hostile_mobs_other",
     "region": "Celestial Impact",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FelrocBrutahealen.png/100px-FelrocBrutahealen.png?98eaa0",
     "description": "1 ingredient drop across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -18872,6 +19133,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ferrous Crushbeast",
     "category": "hostile_mobs_other",
     "region": "Maro Peaks",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FerrousCrushbeast.png/100px-FerrousCrushbeast.png?956ee0",
     "description": "4 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -18930,6 +19192,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Festering Fleshmass'",
     "category": "hostile_mobs_other",
     "region": "Entrance to Olux",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FesteringFleshmass.png/100px-FesteringFleshmass.png?d49fa0",
     "description": "5 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -18989,6 +19252,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Feyborne Alraune",
     "category": "hostile_mobs_other",
     "region": "Orc Battlegrounds",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FeyborneAlraune.png/100px-FeyborneAlraune.png?1a0581",
     "description": "3 ingredient drops across 26 mapped spawn points.",
     "tags": [
       "mob",
@@ -19196,6 +19460,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Fire Scarab",
     "category": "hostile_mobs_other",
     "region": "Lava Lakes",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FireScarab.png/100px-FireScarab.png?b2bf48",
     "description": "3 ingredient drops across 22 mapped spawn points.",
     "tags": [
       "mob",
@@ -19367,6 +19632,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Fire Weird",
     "category": "hostile_mobs_other",
     "region": "Cosmic Fissures",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FireWeird.png/100px-FireWeird.png?67b261",
     "description": "2 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -19465,6 +19731,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Fishy Zombie",
     "category": "hostile_mobs_zombie",
     "region": "Mount Wynn Inn",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FishyZombie.png/100px-FishyZombie.png?8a1f62",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -19520,6 +19787,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Flame Grilling Swine",
     "category": "hostile_mobs_other",
     "region": "Emerald Trail",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FlameGrillingSwine.png/100px-FlameGrillingSwine.png?3989bc",
     "description": "4 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -19566,6 +19834,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Flaming Skull",
     "category": "hostile_mobs_skeleton",
     "region": "Fading Forest",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FlamingSkull.png/100px-FlamingSkull.png?b851b8",
     "description": "2 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -19634,6 +19903,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Flaming Wisp",
     "category": "hostile_mobs_other",
     "region": "Pyroclastic Flow",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FlamingWisp.png/100px-FlamingWisp.png?e42b93",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -19689,6 +19959,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Flera Myconid",
     "category": "hostile_mobs_other",
     "region": "Dodegar's Forge",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FleraMyconid.png/100px-FleraMyconid.png?52c348",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -19734,6 +20005,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Fleris Matriarch",
     "category": "hostile_mobs_other",
     "region": "Dogun Ritual Site",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FlerisMatriarch.png/100px-FlerisMatriarch.png?608baa",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -19777,6 +20049,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Flicker Frog",
     "category": "hostile_mobs_beast",
     "region": "Apprentice Huts",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FlickerFrog.png/100px-FlickerFrog.png?401053",
     "description": "1 ingredient drop across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -19850,6 +20123,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Fluffy",
     "category": "hostile_mobs_other",
     "region": "Llevigar",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -19893,6 +20167,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Forest Cave Spider",
     "category": "hostile_mobs_spider",
     "region": "Entrance to Nivla Woods",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -19936,6 +20211,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Forest Grook",
     "category": "hostile_mobs_other",
     "region": "Efilim",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ForestGrook.png/100px-ForestGrook.png?851b9e",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -19980,6 +20256,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Formative Weird",
     "category": "hostile_mobs_other",
     "region": "Light Peninsula",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FormativeWeird.png/100px-FormativeWeird.png?159041",
     "description": "2 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -20030,6 +20307,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Foxhound",
     "category": "hostile_mobs_other",
     "region": "Forts in Fall",
+    "iconImage": "",
     "description": "1 ingredient drop across 9 mapped spawn points.",
     "tags": [
       "mob",
@@ -20133,6 +20411,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Fragmented Dragonbone",
     "category": "hostile_mobs_other",
     "region": "Crater Descent",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FragmentedDragonbone.png/100px-FragmentedDragonbone.png?5ee0e2",
     "description": "1 ingredient drop across 12 mapped spawn points.",
     "tags": [
       "mob",
@@ -20254,6 +20533,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Freelancer",
     "category": "hostile_mobs_other",
     "region": "Fleris Trail",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Freelancer.png/100px-Freelancer.png?ac1ff6",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -20298,6 +20578,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Freewheeler",
     "category": "hostile_mobs_other",
     "region": "Fleris Trail",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Freewheeler.png/100px-Freewheeler.png?ef9f15",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -20342,6 +20623,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Frigid Climber",
     "category": "hostile_mobs_other",
     "region": "Icy Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FrigidClimber.png/100px-FrigidClimber.png?e1ab5d",
     "description": "3 ingredient drops across 10 mapped spawn points.",
     "tags": [
       "mob",
@@ -20447,6 +20729,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Frigid Fang",
     "category": "hostile_mobs_other",
     "region": "Frigid Crossroads",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FrigidFang.png/100px-FrigidFang.png?eef434",
     "description": "3 ingredient drops across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -20528,6 +20811,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Frog",
     "category": "hostile_mobs_beast",
     "region": "The Frog Bog",
+    "iconImage": "",
     "description": "1 ingredient drop across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -20595,6 +20879,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Frost Golem",
     "category": "hostile_mobs_construct",
     "region": "Tower of Ascension",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FrostGolem.png/100px-FrostGolem.png?efea05",
     "description": "1 ingredient drop across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -20674,6 +20959,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Frost Weird",
     "category": "hostile_mobs_other",
     "region": "Gylia Watchtower",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FrostWeird.png/100px-FrostWeird.png?7e518f",
     "description": "4 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -20732,6 +21018,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Frostbite",
     "category": "hostile_mobs_other",
     "region": "Frozen Homestead",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Frostbite.png/100px-Frostbite.png?7098d0",
     "description": "3 ingredient drops across 10 mapped spawn points.",
     "tags": [
       "mob",
@@ -20831,6 +21118,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Frosted Guard",
     "category": "hostile_mobs_humanoid",
     "region": "Freezing Heights",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FrostedGuard.png/100px-FrostedGuard.png?956b93",
     "description": "3 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -20918,6 +21206,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Frosted Shaman",
     "category": "hostile_mobs_humanoid",
     "region": "Icy Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FrostedShaman.png/100px-FrostedShaman.png?3e03f1",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -20963,6 +21252,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Frozen Berserker",
     "category": "hostile_mobs_other",
     "region": "Frigid Crossroads",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FrozenBerserker.png/100px-FrozenBerserker.png?fbb6c4",
     "description": "3 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -21014,6 +21304,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Frozen Spirit",
     "category": "hostile_mobs_other",
     "region": "Twain Lake",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FrozenSpirit.png/100px-FrozenSpirit.png?441179",
     "description": "4 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -21060,6 +21351,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Frozen Warrior",
     "category": "hostile_mobs_humanoid",
     "region": "Icy Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FrozenWarrior.png/100px-FrozenWarrior.png?4bbf69",
     "description": "4 ingredient drops across 9 mapped spawn points.",
     "tags": [
       "mob",
@@ -21154,6 +21446,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Fruit Bat",
     "category": "hostile_mobs_beast",
     "region": "Iboju Village",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FruitBat.png/100px-FruitBat.png?d6675c",
     "description": "2 ingredient drops across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -21222,6 +21515,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Fulgurant Amatiti",
     "category": "hostile_mobs_other",
     "region": "Entamis Village",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FulgurantAmatiti.png/100px-FulgurantAmatiti.png?c7712a",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -21271,6 +21565,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Fuming Ferrite",
     "category": "hostile_mobs_other",
     "region": "Abandoned Mines",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FumingFerrite.png/100px-FumingFerrite.png?5c6a86",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -21320,6 +21615,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Fungal Knight",
     "category": "hostile_mobs_humanoid",
     "region": "Black Road",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FungalKnight.png/100px-FungalKnight.png?201e52",
     "description": "2 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -21382,6 +21678,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Fungal Parasite",
     "category": "hostile_mobs_other",
     "region": "Nomads' Refuge",
+    "iconImage": "",
     "description": "4 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -21452,6 +21749,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Furtive Uraqi",
     "category": "hostile_mobs_other",
     "region": "Entamis Village",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/FurtiveUraqi.png/100px-FurtiveUraqi.png?39c568",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -21513,6 +21811,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Gale Dragonling",
     "category": "hostile_mobs_other",
     "region": "Sky Island Ascent",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GaleDragonling.png/100px-GaleDragonling.png?1cde78",
     "description": "3 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -21570,6 +21869,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Galeforce Weird",
     "category": "hostile_mobs_other",
     "region": "Light Peninsula",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GaleforceWeird.png/100px-GaleforceWeird.png?4cfa67",
     "description": "1 ingredient drop across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -21631,6 +21931,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Galvambler",
     "category": "hostile_mobs_other",
     "region": "Volcanic Excavation",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Galvambler.png/100px-Galvambler.png?784bc0",
     "description": "3 ingredient drops across 12 mapped spawn points.",
     "tags": [
       "mob",
@@ -21748,6 +22049,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Gargoyle",
     "category": "hostile_mobs_other",
     "region": "Protector's Pathway",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Gargoyle.png/100px-Gargoyle.png?2a7a87",
     "description": "2 ingredient drops across 11 mapped spawn points.",
     "tags": [
       "mob",
@@ -21852,6 +22154,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Gatling Gun",
     "category": "hostile_mobs_other",
     "region": "Contested District",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GatlingGun.png/100px-GatlingGun.png?d721d6",
     "description": "2 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -21926,6 +22229,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Gel Weird",
     "category": "hostile_mobs_other",
     "region": "Cinfras Outskirts",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GelWeird.png/100px-GelWeird.png?2165f4",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -21969,6 +22273,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Gelid Commander",
     "category": "hostile_mobs_humanoid",
     "region": "Icy Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GelidCommander.png/100px-GelidCommander.png?f85537",
     "description": "4 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -22015,6 +22320,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Gendarme Kenshi",
     "category": "hostile_mobs_humanoid",
     "region": "Royal Barracks",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GendarmeKenshi.png/100px-GendarmeKenshi.png?5c7b03",
     "description": "3 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -22072,6 +22378,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Gendarme Knight",
     "category": "hostile_mobs_humanoid",
     "region": "Gates to Aelumia",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GendarmeKnight.png/100px-GendarmeKnight.png?7036d0",
     "description": "4 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -22142,6 +22449,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Gendarme Sentinel",
     "category": "hostile_mobs_construct",
     "region": "Royal Barracks",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GendarmeSentinel.png/100px-GendarmeSentinel.png?8d391b",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -22185,6 +22493,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Geodesic Cluster",
     "category": "hostile_mobs_other",
     "region": "Lion Lair",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GeodesicCluster.png/100px-GeodesicCluster.png?2c6eb8",
     "description": "1 ingredient drop across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -22258,6 +22567,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Gerten Hunter",
     "category": "hostile_mobs_humanoid",
     "region": "Mushroom Hill",
+    "iconImage": "",
     "description": "4 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -22304,6 +22614,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ghost Of Saints Row",
     "category": "hostile_mobs_other",
     "region": "Nemract Cathedral",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GhostOfSaintsRow.png/100px-GhostOfSaintsRow.png?37d96a",
     "description": "6 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -22352,6 +22663,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ghost The Direwolf",
     "category": "hostile_mobs_other",
     "region": "Icy Vigil",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GhostTheDirewolf.png/100px-GhostTheDirewolf.png?fa515b",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -22395,6 +22707,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Giant Crusher Mantis",
     "category": "hostile_mobs_other",
     "region": "Mantis Nest",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GiantCrusherMantis.png/100px-GiantCrusherMantis.png?d9b49d",
     "description": "1 ingredient drop across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -22474,6 +22787,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Giant Panda King",
     "category": "hostile_mobs_other",
     "region": "Timeworn Arch",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GiantPandaKing.png/100px-GiantPandaKing.png?d94c2c",
     "description": "6 ingredient drops across 26 mapped spawn points.",
     "tags": [
       "mob",
@@ -22672,6 +22986,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Giant Pipistrelle",
     "category": "hostile_mobs_other",
     "region": "Fort Hegea",
+    "iconImage": "",
     "description": "1 ingredient drop across 28 mapped spawn points.",
     "tags": [
       "mob",
@@ -22895,6 +23210,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Giant Squid",
     "category": "hostile_mobs_aquatic",
     "region": "Derelict Mansion",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GiantSquid.png/100px-GiantSquid.png?afdd5f",
     "description": "5 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -23026,6 +23342,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Giant Weevil",
     "category": "hostile_mobs_other",
     "region": "Abandoned Pass",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GiantWeevil%28Lv12%29.png/100px-GiantWeevil%28Lv12%29.png?390cab",
     "description": "2 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -23088,6 +23405,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Glacial Golem",
     "category": "hostile_mobs_construct",
     "region": "Tower of Ascension",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GlacialGolem.png/100px-GlacialGolem.png?9348ac",
     "description": "1 ingredient drop across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -23167,6 +23485,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Gnarled Cadaver",
     "category": "hostile_mobs_zombie",
     "region": "Corrupted Warfront",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GnarledCadaver.png/100px-GnarledCadaver.png?40bd86",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -23210,6 +23529,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Goblin Forager",
     "category": "hostile_mobs_other",
     "region": "Goblin Plains West",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GoblinForager.png/100px-GoblinForager.png?73a3a8",
     "description": "4 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -23304,6 +23624,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Goblin Pickpocket",
     "category": "hostile_mobs_other",
     "region": "Forgotten Path",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GoblinPickpocket.png/100px-GoblinPickpocket.png?c5ccdc",
     "description": "6 ingredient drops across 9 mapped spawn points.",
     "tags": [
       "mob",
@@ -23412,6 +23733,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Goblin Revenge Seeker",
     "category": "hostile_mobs_other",
     "region": "Forgotten Path",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GoblinRevengeSeeker.png/100px-GoblinRevengeSeeker.png?3ff655",
     "description": "5 ingredient drops across 9 mapped spawn points.",
     "tags": [
       "mob",
@@ -23519,6 +23841,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Goblin Traveller",
     "category": "hostile_mobs_other",
     "region": "Forgotten Path",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GoblinTraveller.png/100px-GoblinTraveller.png?f4a76e",
     "description": "5 ingredient drops across 9 mapped spawn points.",
     "tags": [
       "mob",
@@ -23626,6 +23949,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Goblin Wayfinder",
     "category": "hostile_mobs_other",
     "region": "Forgotten Path",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GoblinWayfinder.png/100px-GoblinWayfinder.png?1ac03b",
     "description": "7 ingredient drops across 9 mapped spawn points.",
     "tags": [
       "mob",
@@ -23734,6 +24058,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Golden Avia",
     "category": "hostile_mobs_other",
     "region": "Corkus Outskirts",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GoldenAvia.png/100px-GoldenAvia.png?6336e2",
     "description": "1 ingredient drop across 39 mapped spawn points.",
     "tags": [
       "mob",
@@ -24065,6 +24390,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Golden King of Yales",
     "category": "hostile_mobs_other",
     "region": "Road to Light Forest",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GoldenKingofYales.png/100px-GoldenKingofYales.png?343ef4",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -24110,6 +24436,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Gollier",
     "category": "hostile_mobs_other",
     "region": "Aldorei Valley Outskirts",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Gollier.png/100px-Gollier.png?b15f9d",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -24153,6 +24480,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Gooligan",
     "category": "hostile_mobs_other",
     "region": "Citadel's Shadow",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Gooligan.png/100px-Gooligan.png?5e9c33",
     "description": "4 ingredient drops across 41 mapped spawn points.",
     "tags": [
       "mob",
@@ -24463,6 +24791,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Grass Muncher",
     "category": "hostile_mobs_other",
     "region": "Little Wood",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GrassMuncher.png/100px-GrassMuncher.png?eeb54c",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -24518,6 +24847,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Gravitic Weird",
     "category": "hostile_mobs_other",
     "region": "Celestial Impact",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GraviticWeird.png/100px-GraviticWeird.png?693f64",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -24561,6 +24891,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Greedy Zombie",
     "category": "hostile_mobs_zombie",
     "region": "Coastal Trail",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GreedyZombie.png/100px-GreedyZombie.png?f77e6f",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -24606,6 +24937,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Green Foot",
     "category": "hostile_mobs_other",
     "region": "Toxic Drip",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GreenFoot.png/100px-GreenFoot.png?cd7e98",
     "description": "3 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -24657,6 +24989,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Gritty Zombie",
     "category": "hostile_mobs_zombie",
     "region": "Accursed Dunes",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GrittyZombie.png/100px-GrittyZombie.png?b85062",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -24700,6 +25033,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Grook",
     "category": "hostile_mobs_other",
     "region": "Cinfras's Small Farm",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Grook%28Lv75%29.png/100px-Grook%28Lv75%29.png?178145",
     "description": "2 ingredient drops across 14 mapped spawn points.",
     "tags": [
       "mob",
@@ -24852,6 +25186,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Grookiva",
     "category": "hostile_mobs_other",
     "region": "Xima Valley",
+    "iconImage": "",
     "description": "1 ingredient drop across 11 mapped spawn points.",
     "tags": [
       "mob",
@@ -24967,6 +25302,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Guzzler",
     "category": "hostile_mobs_other",
     "region": "Abandoned Pass",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Guzzler%28Lv14%29.png/100px-Guzzler%28Lv14%29.png?6c2326",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -25016,6 +25352,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Gylia Beast",
     "category": "hostile_mobs_beast",
     "region": "Gylia Research Cabin",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/GyliaBeast.png/100px-GyliaBeast.png?ab2733",
     "description": "5 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -25063,6 +25400,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "H-10ar Machine",
     "category": "hostile_mobs_construct",
     "region": "Avos Temple",
+    "iconImage": "",
     "description": "2 ingredient drops across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -25143,6 +25481,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "H-20ar Machine",
     "category": "hostile_mobs_construct",
     "region": "Avos Temple",
+    "iconImage": "",
     "description": "2 ingredient drops across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -25223,6 +25562,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "H-21ar Machine",
     "category": "hostile_mobs_construct",
     "region": "Retrofitted Manufactory",
+    "iconImage": "",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -25267,6 +25607,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Hangry Seagull",
     "category": "hostile_mobs_other",
     "region": "Lion Lair",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/HangrySeagull.png/100px-HangrySeagull.png?8f58a9",
     "description": "4 ingredient drops across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -25385,6 +25726,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Harnort Compound Grunt",
     "category": "hostile_mobs_other",
     "region": "Harnort Compound",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/HarnortCompoundGrunt.png/100px-HarnortCompoundGrunt.png?2d4103",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -25430,6 +25772,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Harnort Compound Matron",
     "category": "hostile_mobs_other",
     "region": "Harnort Compound",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/HarnortCompoundMatron.png/100px-HarnortCompoundMatron.png?b2e344",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -25475,6 +25818,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Harnort Compound Roughneck",
     "category": "hostile_mobs_other",
     "region": "Harnort Compound",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/HarnortCompoundRoughneck.png/100px-HarnortCompoundRoughneck.png?d87c1d",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -25520,6 +25864,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Harnort Compound Tally Checker",
     "category": "hostile_mobs_other",
     "region": "Harnort Compound",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/HarnortCompoundTallyChecker.png/100px-HarnortCompoundTallyChecker.png?fcc4cf",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -25565,6 +25910,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Harnort Compound Watch",
     "category": "hostile_mobs_other",
     "region": "Harnort Compound",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/HarnortCompoundWatch.png/100px-HarnortCompoundWatch.png?cfcce3",
     "description": "3 ingredient drops across 12 mapped spawn points.",
     "tags": [
       "mob",
@@ -25682,6 +26028,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Harpy",
     "category": "hostile_mobs_beast",
     "region": "Displaced Housing",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Harpy.png/100px-Harpy.png?932436",
     "description": "1 ingredient drop across 48 mapped spawn points.",
     "tags": [
       "mob",
@@ -26007,6 +26354,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Harpy Broodmother",
     "category": "hostile_mobs_beast",
     "region": "Displaced Housing",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/HarpyBroodmother.png/100px-HarpyBroodmother.png?230c0a",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -26051,6 +26399,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Harpy Ranger",
     "category": "hostile_mobs_beast",
     "region": "Featherfall Cliffs",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/HarpyRanger.png/100px-HarpyRanger.png?d10969",
     "description": "3 ingredient drops across 30 mapped spawn points.",
     "tags": [
       "mob",
@@ -26276,6 +26625,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Harpy Rockthrower",
     "category": "hostile_mobs_beast",
     "region": "Displaced Housing",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/HarpyRockthrower.png/100px-HarpyRockthrower.png?10ad48",
     "description": "2 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -26338,6 +26688,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Harvest Imp",
     "category": "hostile_mobs_other",
     "region": "Dragonling Nests",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/HarvestImp.png/100px-HarvestImp.png?f7876a",
     "description": "1 ingredient drop across 20 mapped spawn points.",
     "tags": [
       "mob",
@@ -26549,6 +26900,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Headless Horseman",
     "category": "hostile_mobs_other",
     "region": "Lusuco",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/HeadlessHorseman.png/100px-HeadlessHorseman.png?69c459",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -26592,6 +26944,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Hedoro",
     "category": "hostile_mobs_other",
     "region": "Industrial Sector",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Hedoro.png/100px-Hedoro.png?5c04c8",
     "description": "2 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -26714,6 +27067,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Hell Avem",
     "category": "hostile_mobs_other",
     "region": "Pyroclastic Flow",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/HellAvem.png/100px-HellAvem.png?d05282",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -26781,6 +27135,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Hellblaze God",
     "category": "hostile_mobs_other",
     "region": "Roots of Corruption",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/HellblazeGod.png/100px-HellblazeGod.png?15a75c",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -26826,6 +27181,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Hellkite",
     "category": "hostile_mobs_other",
     "region": "Dogun Ritual Site",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Hellkite.png/100px-Hellkite.png?5481f0",
     "description": "1 ingredient drop across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -26887,6 +27243,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Herb Spawn",
     "category": "hostile_mobs_other",
     "region": "Herb Cave",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/HerbSpawn%28Lv59%29.png/100px-HerbSpawn%28Lv59%29.png?528225",
     "description": "2 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -26943,6 +27300,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "High Fire Elemental",
     "category": "hostile_mobs_elemental",
     "region": "Ranol's Farm",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/HighFireElemental.png/100px-HighFireElemental.png?3c695c",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -26998,6 +27356,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Highlands Arbalist",
     "category": "hostile_mobs_other",
     "region": "Highlands Gate",
+    "iconImage": "",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -27042,6 +27401,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Highlands Captain",
     "category": "hostile_mobs_humanoid",
     "region": "Fort Tericen",
+    "iconImage": "",
     "description": "2 ingredient drops across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -27122,6 +27482,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Highlands Commander",
     "category": "hostile_mobs_humanoid",
     "region": "Citadel's Shadow",
+    "iconImage": "",
     "description": "3 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -27179,6 +27540,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Highlands Glaive Master",
     "category": "hostile_mobs_other",
     "region": "Feuding Houses",
+    "iconImage": "",
     "description": "3 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -27248,6 +27610,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Highlands Ranger",
     "category": "hostile_mobs_other",
     "region": "Fort Tericen",
+    "iconImage": "",
     "description": "2 ingredient drops across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -27316,6 +27679,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Highlands Soldier",
     "category": "hostile_mobs_humanoid",
     "region": "Highlands Gate",
+    "iconImage": "",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -27360,6 +27724,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Highway Bandit",
     "category": "hostile_mobs_humanoid",
     "region": "Savannah Plains",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/HighwayBandit.png/100px-HighwayBandit.png?d88539",
     "description": "2 ingredient drops across 16 mapped spawn points.",
     "tags": [
       "mob",
@@ -27494,6 +27859,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Highwayman",
     "category": "hostile_mobs_other",
     "region": "Savannah Plains",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Highwayman.png/100px-Highwayman.png?625bb3",
     "description": "5 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -27541,6 +27907,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Hobgoblin Caster",
     "category": "hostile_mobs_other",
     "region": "Cherry Blossom Grove",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/HobgoblinCaster.png/100px-HobgoblinCaster.png?95e93f",
     "description": "2 ingredient drops across 9 mapped spawn points.",
     "tags": [
       "mob",
@@ -27639,6 +28006,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Hobgoblin Commander",
     "category": "hostile_mobs_humanoid",
     "region": "Cherry Blossom Grove",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/HobgoblinCommander.png/100px-HobgoblinCommander.png?b09205",
     "description": "2 ingredient drops across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -27725,6 +28093,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Hobgoblin Farmer",
     "category": "hostile_mobs_other",
     "region": "Krolton's Cave",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -27768,6 +28137,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Hobgoblin Warrior",
     "category": "hostile_mobs_humanoid",
     "region": "Cherry Blossom Grove",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/HobgoblinWarrior.png/100px-HobgoblinWarrior.png?5d740c",
     "description": "2 ingredient drops across 23 mapped spawn points.",
     "tags": [
       "mob",
@@ -27950,6 +28320,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Holehold Orc Gofer",
     "category": "hostile_mobs_humanoid",
     "region": "Loamsprout Orc Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/HoleholdOrcGofer.png/100px-HoleholdOrcGofer.png?40533e",
     "description": "8 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -28004,6 +28375,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Holehold Orc Keeper",
     "category": "hostile_mobs_humanoid",
     "region": "Loamsprout Orc Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/HoleholdOrcKeeper.png/100px-HoleholdOrcKeeper.png?ec7d13",
     "description": "8 ingredient drops across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -28088,6 +28460,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Holehold Orc Marathon",
     "category": "hostile_mobs_humanoid",
     "region": "Loamsprout Orc Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/HoleholdOrcMarathon.png/100px-HoleholdOrcMarathon.png?14eb96",
     "description": "8 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -28136,6 +28509,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Hollow Weird",
     "category": "hostile_mobs_other",
     "region": "Light Peninsula",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/HollowWeird.png/100px-HollowWeird.png?169359",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -28180,6 +28554,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Honeydew",
     "category": "hostile_mobs_other",
     "region": "Troms",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -28223,6 +28598,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Host",
     "category": "hostile_mobs_other",
     "region": "Abandoned Pass",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Host.png/100px-Host.png?cb702b",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -28266,6 +28642,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Hothead",
     "category": "hostile_mobs_other",
     "region": "Sunset Plateau",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Hothead.png/100px-Hothead.png?ca2eb9",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -28309,6 +28686,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Howling Phantom",
     "category": "hostile_mobs_other",
     "region": "Twain Mansion",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/HowlingPhantom.png/100px-HowlingPhantom.png?bd67ba",
     "description": "3 ingredient drops across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -28390,6 +28768,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Howling Salamander",
     "category": "hostile_mobs_other",
     "region": "Pyroclastic Flow",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/HowlingSalamander.png/100px-HowlingSalamander.png?a5c566",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -28439,6 +28818,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Hungry Wendigo",
     "category": "hostile_mobs_other",
     "region": "Florist's Hut",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/HungryWendigo.png/100px-HungryWendigo.png?8259e9",
     "description": "8 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -28505,6 +28885,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Hunter",
     "category": "hostile_mobs_humanoid",
     "region": "Wolves' Den",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Hunter.png/100px-Hunter.png?2e9c8c",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -28548,6 +28929,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Hurricane",
     "category": "hostile_mobs_other",
     "region": "Selchar",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Hurricane.png/100px-Hurricane.png?fed590",
     "description": "3 ingredient drops across 13 mapped spawn points.",
     "tags": [
       "mob",
@@ -28665,6 +29047,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Hwacha Arrow",
     "category": "hostile_mobs_other",
     "region": "Gates to Aelumia",
+    "iconImage": "",
     "description": "1 ingredient drop across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -28750,6 +29133,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Iboju Exile",
     "category": "hostile_mobs_other",
     "region": "Apprentice Huts",
+    "iconImage": "",
     "description": "2 ingredient drops across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -28824,6 +29208,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ice",
     "category": "hostile_mobs_other",
     "region": "Frosty Outpost",
+    "iconImage": "",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -28868,6 +29253,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ice Elemental",
     "category": "hostile_mobs_elemental",
     "region": "Icy Descent",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/IceElemental.png/100px-IceElemental.png?c8a4e7",
     "description": "4 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -28932,6 +29318,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Icy Gorgon",
     "category": "hostile_mobs_other",
     "region": "Thesead",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/IcyGorgon.png/100px-IcyGorgon.png?6986fd",
     "description": "1 ingredient drop across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -28993,6 +29380,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Icy Ranger",
     "category": "hostile_mobs_other",
     "region": "Icy Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/IcyRanger.png/100px-IcyRanger.png?ca9aef",
     "description": "3 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -29044,6 +29432,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Idol Guardian",
     "category": "hostile_mobs_construct",
     "region": "Entamis Village",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/IdolGuardian.png/100px-IdolGuardian.png?b274be",
     "description": "2 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -29094,6 +29483,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ifrit",
     "category": "hostile_mobs_other",
     "region": "Dogun Ritual Site",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Ifrit.png/100px-Ifrit.png?18ba28",
     "description": "2 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -29162,6 +29552,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Igneous Paladin",
     "category": "hostile_mobs_other",
     "region": "Entamis Village",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/IgneousPaladin.png/100px-IgneousPaladin.png?c65ab4",
     "description": "2 ingredient drops across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -29230,6 +29621,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ijaba Molsk",
     "category": "hostile_mobs_other",
     "region": "Monte's Village",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/IjabaMolsk.png/100px-IjabaMolsk.png?84b2bd",
     "description": "7 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -29290,6 +29682,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Imphirnu",
     "category": "hostile_mobs_other",
     "region": "Entamis Village",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Imphirnu.png/100px-Imphirnu.png?aa375e",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -29333,6 +29726,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Infected Goo",
     "category": "hostile_mobs_other",
     "region": "Ragni Countryside North",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/InfectedGoo.png/100px-InfectedGoo.png?95cb18",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -29377,6 +29771,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Infected Gore",
     "category": "hostile_mobs_other",
     "region": "Ragni Countryside North",
+    "iconImage": "",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -29421,6 +29816,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Infected Gunk",
     "category": "hostile_mobs_other",
     "region": "Coastal Trail",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/InfectedGunk.png/100px-InfectedGunk.png?522b51",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -29465,6 +29861,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Infermyrial Stalker",
     "category": "hostile_mobs_other",
     "region": "Gelibord Watermill",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/InfermyrialStalker.png/100px-InfermyrialStalker.png?284a52",
     "description": "7 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -29531,6 +29928,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Infested Zombie",
     "category": "hostile_mobs_zombie",
     "region": "Plains Lake",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/InfestedZombie.png/100px-InfestedZombie.png?6307dd",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -29574,6 +29972,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Intense Weird",
     "category": "hostile_mobs_other",
     "region": "Gylia Watchtower",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/IntenseWeird.png/100px-IntenseWeird.png?373abd",
     "description": "3 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -29631,6 +30030,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Intermittenstallion",
     "category": "hostile_mobs_other",
     "region": "Time Valley",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Intermittenstallion.png/100px-Intermittenstallion.png?5e107c",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -29692,6 +30092,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ironwood Uraqi",
     "category": "hostile_mobs_other",
     "region": "Entamis Village",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/IronwoodUraqi.png/100px-IronwoodUraqi.png?5067ca",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -29741,6 +30142,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Island Crab",
     "category": "hostile_mobs_aquatic",
     "region": "Skien's Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/IslandCrab.png/100px-IslandCrab.png?a66620",
     "description": "5 ingredient drops across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -29830,6 +30232,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Jad'lr Myconid",
     "category": "hostile_mobs_other",
     "region": "Dodegar's Forge",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Jad%27lrMyconid.png/100px-Jad%27lrMyconid.png?3d51a7",
     "description": "3 ingredient drops across 11 mapped spawn points.",
     "tags": [
       "mob",
@@ -29959,6 +30362,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Jewel Scavenger",
     "category": "hostile_mobs_humanoid",
     "region": "Maro Peaks",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/JewelScavenger.png/100px-JewelScavenger.png?764fab",
     "description": "2 ingredient drops across 16 mapped spawn points.",
     "tags": [
       "mob",
@@ -30093,6 +30497,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Jinkito",
     "category": "hostile_mobs_other",
     "region": "Bantisu Approach",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Jinkito.png/100px-Jinkito.png?25630b",
     "description": "2 ingredient drops across 10 mapped spawn points.",
     "tags": [
       "mob",
@@ -30203,6 +30608,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Jinko Bandito",
     "category": "hostile_mobs_other",
     "region": "Bantisu Approach",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/JinkoBandito.png/100px-JinkoBandito.png?6ebe4c",
     "description": "3 ingredient drops across 10 mapped spawn points.",
     "tags": [
       "mob",
@@ -30314,6 +30720,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Jinko Loco Asesino",
     "category": "hostile_mobs_other",
     "region": "Bantisu Approach",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/JinkoLocoAsesino.png/100px-JinkoLocoAsesino.png?7d1372",
     "description": "1 ingredient drop across 9 mapped spawn points.",
     "tags": [
       "mob",
@@ -30417,6 +30824,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Jinko Shanker",
     "category": "hostile_mobs_other",
     "region": "Bantisu Approach",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/JinkoShanker.png/100px-JinkoShanker.png?309973",
     "description": "4 ingredient drops across 9 mapped spawn points.",
     "tags": [
       "mob",
@@ -30523,6 +30931,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Jungle Fetish",
     "category": "hostile_mobs_other",
     "region": "Troms Lake",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/JungleFetish%28Lv50%29.png/100px-JungleFetish%28Lv50%29.png?da7c56",
     "description": "3 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -30574,6 +30983,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Jungle Slime",
     "category": "hostile_mobs_beast",
     "region": "Apprentice Huts",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/JungleSlime%28Large%29.png/100px-JungleSlime%28Large%29.png?48543d",
     "description": "3 ingredient drops across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -30655,6 +31065,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Jungle Viper",
     "category": "hostile_mobs_other",
     "region": "Entamis Village",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/JungleViper.png/100px-JungleViper.png?434d10",
     "description": "2 ingredient drops across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -30735,6 +31146,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Kaian Observer",
     "category": "hostile_mobs_other",
     "region": "Temple Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/KaianObserver.png/100px-KaianObserver.png?f7ba1c",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -30779,6 +31191,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Kaian Sorcerer",
     "category": "hostile_mobs_other",
     "region": "Temple Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/KaianSorcerer.png/100px-KaianSorcerer.png?c93d42",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -30822,6 +31235,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Kaian Watcher",
     "category": "hostile_mobs_other",
     "region": "Temple Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/KaianWatcher.png/100px-KaianWatcher.png?baf656",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -30865,6 +31279,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Kandrekk Spiritbinder",
     "category": "hostile_mobs_other",
     "region": "Twisted Ridge",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/KandrekkSpiritbinder.png/100px-KandrekkSpiritbinder.png?4db9aa",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -30908,6 +31323,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Kerasot Toxifont",
     "category": "hostile_mobs_other",
     "region": "Gelibord Watermill",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/KerasotToxifont.png/100px-KerasotToxifont.png?ee80e7",
     "description": "5 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -30973,6 +31389,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "King Crab",
     "category": "hostile_mobs_aquatic",
     "region": "Avos Temple",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/KingCrab.png/100px-KingCrab.png?df76a4",
     "description": "1 ingredient drop across 11 mapped spawn points.",
     "tags": [
       "mob",
@@ -31088,6 +31505,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Kipchak Guard",
     "category": "hostile_mobs_humanoid",
     "region": "Contested District",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/KipchakGuard.png/100px-KipchakGuard.png?9eb9c4",
     "description": "2 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -31162,6 +31580,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Kipchak Runner",
     "category": "hostile_mobs_humanoid",
     "region": "Contested District",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/KipchakRunner.png/100px-KipchakRunner.png?534acb",
     "description": "2 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -31236,6 +31655,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Kipchak Sentry",
     "category": "hostile_mobs_humanoid",
     "region": "Gates to Aelumia",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/KipchakSentry.png/100px-KipchakSentry.png?e4cdd4",
     "description": "2 ingredient drops across 10 mapped spawn points.",
     "tags": [
       "mob",
@@ -31346,6 +31766,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Kipchak Swordancer",
     "category": "hostile_mobs_humanoid",
     "region": "Gates to Aelumia",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/KipchakSwordancer.png/100px-KipchakSwordancer.png?616023",
     "description": "3 ingredient drops across 12 mapped spawn points.",
     "tags": [
       "mob",
@@ -31457,6 +31878,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Kivaraptor",
     "category": "hostile_mobs_other",
     "region": "Deforested Ecotone",
+    "iconImage": "",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -31524,6 +31946,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Kobalscale Moth",
     "category": "hostile_mobs_beast",
     "region": "Fountain of Youth",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/KobalscaleMoth.png/100px-KobalscaleMoth.png?1680de",
     "description": "6 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -31584,6 +32007,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "L-2nforcer Drone",
     "category": "hostile_mobs_other",
     "region": "Industrial Clearing",
+    "iconImage": "",
     "description": "2 ingredient drops across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -31658,6 +32082,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "L-2unition Drone",
     "category": "hostile_mobs_other",
     "region": "Industrial Clearing",
+    "iconImage": "",
     "description": "2 ingredient drops across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -31732,6 +32157,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Larbonic Canker",
     "category": "hostile_mobs_other",
     "region": "Toxic Drip",
+    "iconImage": "",
     "description": "4 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -31784,6 +32210,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Lava Geyser",
     "category": "hostile_mobs_other",
     "region": "Eagle Tribe",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LavaGeyser.png/100px-LavaGeyser.png?eb4168",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -31839,6 +32266,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Lava Infused Miner",
     "category": "hostile_mobs_other",
     "region": "Desolate Valley",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LavaInfusedMiner.png/100px-LavaInfusedMiner.png?904e7c",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -31882,6 +32310,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Lava Monster",
     "category": "hostile_mobs_other",
     "region": "Rymek",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LavaMonster.png/100px-LavaMonster.png?a861e5",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -31926,6 +32355,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Lava Spitting Limus",
     "category": "hostile_mobs_other",
     "region": "Dogun Ritual Site",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LavaSpittingLimus.png/100px-LavaSpittingLimus.png?8ac779",
     "description": "6 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -31974,6 +32404,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ledant Broodmother",
     "category": "hostile_mobs_other",
     "region": "Centerworld Fortress",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LedantBroodmother.png/100px-LedantBroodmother.png?ca6a18",
     "description": "1 ingredient drop across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -32041,6 +32472,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ledant Droneling",
     "category": "hostile_mobs_other",
     "region": "Centerworld Fortress",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LedantDroneling.png/100px-LedantDroneling.png?eadcbb",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -32090,6 +32522,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ledant Grub",
     "category": "hostile_mobs_other",
     "region": "Centerworld Fortress",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LedantGrub.png/100px-LedantGrub.png?3567d2",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -32145,6 +32578,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ledant Queen",
     "category": "hostile_mobs_other",
     "region": "Centerworld Fortress",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LedantQueen.png/100px-LedantQueen.png?756608",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -32189,6 +32623,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Leg Eater",
     "category": "hostile_mobs_other",
     "region": "Final Step",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LegEater.png/100px-LegEater.png?5925de",
     "description": "5 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -32236,6 +32671,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Lesser Phoenix",
     "category": "hostile_mobs_other",
     "region": "Thanos Underpass",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LesserPhoenix.png/100px-LesserPhoenix.png?8623e1",
     "description": "2 ingredient drops across 15 mapped spawn points.",
     "tags": [
       "mob",
@@ -32370,6 +32806,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Leukocytic Growth",
     "category": "hostile_mobs_other",
     "region": "Forest of Eyes",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LeukocyticGrowth.png/100px-LeukocyticGrowth.png?ab6d2b",
     "description": "1 ingredient drop across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -32449,6 +32886,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Lichenous Alnamar",
     "category": "hostile_mobs_other",
     "region": "Final Step",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LichenousAlnamar.png/100px-LichenousAlnamar.png?1fa80f",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -32493,6 +32931,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Liftal Vanguard",
     "category": "hostile_mobs_other",
     "region": "Citadel's Shadow",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -32536,6 +32975,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Light Fairy",
     "category": "hostile_mobs_other",
     "region": "Guardian of the Forest",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LightFairy.png/100px-LightFairy.png?35c66c",
     "description": "3 ingredient drops across 22 mapped spawn points.",
     "tags": [
       "mob",
@@ -32761,6 +33201,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Light Sprite",
     "category": "hostile_mobs_elemental",
     "region": "Road to Light Forest",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LightSprite.png/100px-LightSprite.png?7f79aa",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -32804,6 +33245,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Light Weird",
     "category": "hostile_mobs_other",
     "region": "Light Peninsula",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LightWeird.png/100px-LightWeird.png?9527d7",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -32853,6 +33295,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Lilyfish",
     "category": "hostile_mobs_other",
     "region": "The Frog Bog",
+    "iconImage": "",
     "description": "4 ingredient drops across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -32941,6 +33384,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Limestone Machination",
     "category": "hostile_mobs_other",
     "region": "Accursed Dunes",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LimestoneMachination.png/100px-LimestoneMachination.png?7c6c9d",
     "description": "6 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -33001,6 +33445,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Lion Master",
     "category": "hostile_mobs_other",
     "region": "Lion Lair",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LionMaster.png/100px-LionMaster.png?fedc28",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -33044,6 +33489,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Lion Trainer",
     "category": "hostile_mobs_other",
     "region": "Lion Lair",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LionTrainer.png/100px-LionTrainer.png?814560",
     "description": "1 ingredient drop across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -33105,6 +33551,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Little Eater",
     "category": "hostile_mobs_other",
     "region": "Orc Battlegrounds",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LittleEater.png/100px-LittleEater.png?5455f4",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -33149,6 +33596,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Lizardman Bruiser",
     "category": "hostile_mobs_other",
     "region": "Forgotten Burrows",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LizardmanBruiser.png/100px-LizardmanBruiser.png?a83f7a",
     "description": "4 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -33261,6 +33709,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Lizardman Darter",
     "category": "hostile_mobs_other",
     "region": "Forgotten Burrows",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LizardmanDarter.png/100px-LizardmanDarter.png?666fb0",
     "description": "4 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -33373,6 +33822,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Loamsprout Orc Muckraker",
     "category": "hostile_mobs_humanoid",
     "region": "Loamsprout Orc Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LoamsproutOrcMuckraker.png/100px-LoamsproutOrcMuckraker.png?a3a340",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -33418,6 +33868,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Loamsprout Orc Rotflinger",
     "category": "hostile_mobs_humanoid",
     "region": "Loamsprout Orc Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LoamsproutOrcRotflinger.png/100px-LoamsproutOrcRotflinger.png?f26bc2",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -33463,6 +33914,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Lonely Spider",
     "category": "hostile_mobs_spider",
     "region": "Lava Springs",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LonelySpider.png/100px-LonelySpider.png?27f191",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -33506,6 +33958,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Lost Adventurer",
     "category": "hostile_mobs_other",
     "region": "Fountain of Youth",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LostAdventurer.png/100px-LostAdventurer.png?9b096b",
     "description": "3 ingredient drops across 32 mapped spawn points.",
     "tags": [
       "mob",
@@ -33737,6 +34190,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Luciola",
     "category": "hostile_mobs_other",
     "region": "Little Wood",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Luciola.png/100px-Luciola.png?2a8111",
     "description": "3 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -33794,6 +34248,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Luciola Larvae",
     "category": "hostile_mobs_other",
     "region": "Little Wood",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LuciolaLarvae.png/100px-LuciolaLarvae.png?7d7d1e",
     "description": "2 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -33850,6 +34305,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Lucy",
     "category": "hostile_mobs_other",
     "region": "Frosty Outpost",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -33893,6 +34349,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Luna",
     "category": "hostile_mobs_other",
     "region": "Wolves' Den",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Luna.png/100px-Luna.png?bb72a6",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -33936,6 +34393,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Lunar Effigy",
     "category": "hostile_mobs_other",
     "region": "Half Moon Island",
+    "iconImage": "",
     "description": "4 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -34006,6 +34464,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Lunar Parasite",
     "category": "hostile_mobs_other",
     "region": "Half Moon Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LunarParasite.png/100px-LunarParasite.png?248a77",
     "description": "3 ingredient drops across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -34081,6 +34540,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Lunar Possessed",
     "category": "hostile_mobs_other",
     "region": "Half Moon Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LunarPossessed.png/100px-LunarPossessed.png?3c8a61",
     "description": "4 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -34151,6 +34611,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Lunatic Devote",
     "category": "hostile_mobs_other",
     "region": "Half Moon Island",
+    "iconImage": "",
     "description": "5 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -34246,6 +34707,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Lunatic Interloper",
     "category": "hostile_mobs_other",
     "region": "Half Moon Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LunaticInterloper.png/100px-LunaticInterloper.png?dbdfa3",
     "description": "4 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -34292,6 +34754,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Lunatic Remnant",
     "category": "hostile_mobs_other",
     "region": "Half Moon Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LunaticRemnant.png/100px-LunaticRemnant.png?1cf670",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -34337,6 +34800,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Lunatic Squid",
     "category": "hostile_mobs_aquatic",
     "region": "Half Moon Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LunaticSquid.png/100px-LunaticSquid.png?836d4e",
     "description": "5 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -34390,6 +34854,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Lung Piranha",
     "category": "hostile_mobs_aquatic",
     "region": "Lion Lair",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LungPiranha.png/100px-LungPiranha.png?b70638",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -34445,6 +34910,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Luu Luu Snake",
     "category": "hostile_mobs_beast",
     "region": "Avos Temple",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LuuLuuSnake.png/100px-LuuLuuSnake.png?c32d11",
     "description": "2 ingredient drops across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -34537,6 +35003,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Luxroot Sapling",
     "category": "hostile_mobs_other",
     "region": "Unicorn Trail",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LuxrootSapling.png/100px-LuxrootSapling.png?45834d",
     "description": "2 ingredient drops across 18 mapped spawn points.",
     "tags": [
       "mob",
@@ -34683,6 +35150,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Luxroot Sentinel",
     "category": "hostile_mobs_construct",
     "region": "Unicorn Trail",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LuxrootSentinel.png/100px-LuxrootSentinel.png?9c480e",
     "description": "4 ingredient drops across 18 mapped spawn points.",
     "tags": [
       "mob",
@@ -34831,6 +35299,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Lyran Cub",
     "category": "hostile_mobs_other",
     "region": "Celestial Impact",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LyranCub.png/100px-LyranCub.png?5c8551",
     "description": "1 ingredient drop across 19 mapped spawn points.",
     "tags": [
       "mob",
@@ -35000,6 +35469,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Lyran Soldier",
     "category": "hostile_mobs_humanoid",
     "region": "Thesead Suburbs",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LyranSoldier.png/100px-LyranSoldier.png?97eb1b",
     "description": "2 ingredient drops across 9 mapped spawn points.",
     "tags": [
       "mob",
@@ -35092,6 +35562,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Lyran Veteran",
     "category": "hostile_mobs_other",
     "region": "Thesead Suburbs",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/LyranVeteran.png/100px-LyranVeteran.png?db6a55",
     "description": "3 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -35149,6 +35620,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Maddened Fisherman",
     "category": "hostile_mobs_other",
     "region": "Katoa Ranch",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -35192,6 +35664,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mage Zombie",
     "category": "hostile_mobs_zombie",
     "region": "Detlas Suburbs",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MageZombie.png/100px-MageZombie.png?f6eee6",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -35235,6 +35708,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Magic Trainer",
     "category": "hostile_mobs_other",
     "region": "Temple of Legends",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MagicTrainer.png/100px-MagicTrainer.png?1f62cb",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -35278,6 +35752,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Magical Flux",
     "category": "hostile_mobs_other",
     "region": "Jungle Entrance",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MagicalFlux.png/100px-MagicalFlux.png?e82627",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -35321,6 +35796,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Magma Entity",
     "category": "hostile_mobs_other",
     "region": "Lava Lakes",
+    "iconImage": "",
     "description": "2 ingredient drops across 22 mapped spawn points.",
     "tags": [
       "mob",
@@ -35491,6 +35967,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Magma Rock",
     "category": "hostile_mobs_other",
     "region": "Volcanic Excavation",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MagmaRock.png/100px-MagmaRock.png?e66747",
     "description": "3 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -35548,6 +36025,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Magmatic Shambler",
     "category": "hostile_mobs_other",
     "region": "Illuminant Path",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MagmaticShambler.png/100px-MagmaticShambler.png?de4fa0",
     "description": "1 ingredient drop across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -35633,6 +36111,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Magnetized Weird",
     "category": "hostile_mobs_other",
     "region": "Gylia Watchtower",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MagnetizedWeird.png/100px-MagnetizedWeird.png?b6b2a6",
     "description": "3 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -35690,6 +36169,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mahogany Colossus",
     "category": "hostile_mobs_other",
     "region": "Entamis Village",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MahoganyColossus.png/100px-MahoganyColossus.png?b305c5",
     "description": "5 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -35755,6 +36235,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Major",
     "category": "hostile_mobs_other",
     "region": "Kitrios Armory",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Major.png/100px-Major.png?e1fd31",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -35798,6 +36279,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Malevolent Mist",
     "category": "hostile_mobs_other",
     "region": "Entrance to Olux",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MalevolentMist.png/100px-MalevolentMist.png?24cdf1",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -35842,6 +36324,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mama Zomble",
     "category": "hostile_mobs_other",
     "region": "Alekin",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MamaZomble%28Level12%29.png/100px-MamaZomble%28Level12%29.png?b30b71",
     "description": "1 ingredient drop across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -35933,6 +36416,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mandragora",
     "category": "hostile_mobs_other",
     "region": "Road to Light Forest",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Mandragora.png/100px-Mandragora.png?1907bf",
     "description": "3 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -35984,6 +36468,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mandrake",
     "category": "hostile_mobs_other",
     "region": "Fountain of Youth",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Mandrake.png/100px-Mandrake.png?e9af53",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -36027,6 +36512,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Marinemite",
     "category": "hostile_mobs_other",
     "region": "Road to Light Forest",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Marinemite.png/100px-Marinemite.png?2d5b86",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -36070,6 +36556,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Marksman Drone",
     "category": "hostile_mobs_other",
     "region": "Bloody Beach",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MarksmanDrone.png/92px-MarksmanDrone.png?4bd093",
     "description": "2 ingredient drops across 13 mapped spawn points.",
     "tags": [
       "mob",
@@ -36252,6 +36739,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mauler",
     "category": "hostile_mobs_other",
     "region": "Contested District",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Mauler.png/100px-Mauler.png?b66a95",
     "description": "2 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -36320,6 +36808,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mauler Major",
     "category": "hostile_mobs_other",
     "region": "Contested District",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MaulerMajor.png/100px-MaulerMajor.png?4b129f",
     "description": "2 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -36388,6 +36877,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Melting Cowboy",
     "category": "hostile_mobs_other",
     "region": "Eagle Tribe",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MeltingCowboy.png/100px-MeltingCowboy.png?9de3ba",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -36443,6 +36933,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Melting Weird",
     "category": "hostile_mobs_other",
     "region": "Fungal Grove",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MeltingWeird.png/100px-MeltingWeird.png?8d79f5",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -36486,6 +36977,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Merlug",
     "category": "hostile_mobs_other",
     "region": "Mount Wynn Inn",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Merlug.png/100px-Merlug.png?c737d7",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -36529,6 +37021,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mermaid",
     "category": "hostile_mobs_other",
     "region": "Cosmic Fissures",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Mermaid.png/100px-Mermaid.png?f8e1d1",
     "description": "3 ingredient drops across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -36628,6 +37121,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mesa Outlaw",
     "category": "hostile_mobs_other",
     "region": "Eagle Tribe",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -36671,6 +37165,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Meskis",
     "category": "hostile_mobs_other",
     "region": "Fading Forest",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Meskis.png/100px-Meskis.png?fa1c1c",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -36714,6 +37209,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mesquis",
     "category": "hostile_mobs_other",
     "region": "Mesquis Tower",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Mesquis.png/100px-Mesquis.png?a2624a",
     "description": "1 ingredient drop across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -36775,6 +37271,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Middousagi",
     "category": "hostile_mobs_other",
     "region": "Mangled Lake",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Middousagi.png/100px-Middousagi.png?4186d9",
     "description": "1 ingredient drop across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -36866,6 +37363,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mine Crawler",
     "category": "hostile_mobs_other",
     "region": "Abandoned Mines",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MineCrawler.png/100px-MineCrawler.png?e49162",
     "description": "1 ingredient drop across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -36945,6 +37443,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Miner Chef",
     "category": "hostile_mobs_other",
     "region": "Road to Elkurn",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MinerChef.png/100px-MinerChef.png?ddcf53",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -36988,6 +37487,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Miner Zombie",
     "category": "hostile_mobs_zombie",
     "region": "Corrupted Tower",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MinerZombie%28Lv7%29.png/100px-MinerZombie%28Lv7%29.png?4b7c71",
     "description": "1 ingredient drop across 11 mapped spawn points.",
     "tags": [
       "mob",
@@ -37091,6 +37591,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Miner Zombie Patron",
     "category": "hostile_mobs_zombie",
     "region": "Corrupted Tower",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MinerZombiePatron.png/100px-MinerZombiePatron.png?bf4ad2",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -37134,6 +37635,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Minokawa",
     "category": "hostile_mobs_other",
     "region": "Sky Island Ascent",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Minokawa.png/100px-Minokawa.png?d8c0bd",
     "description": "5 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -37199,6 +37701,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Minotaurus Cook",
     "category": "hostile_mobs_other",
     "region": "Minotaur Barbecue",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MinotaurusCook.png/100px-MinotaurusCook.png?716f86",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -37242,6 +37745,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Minotaurus Lancer",
     "category": "hostile_mobs_other",
     "region": "Minotaur Barbecue",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MinotaurusLancer.png/100px-MinotaurusLancer.png?8a6f86",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -37297,6 +37801,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Misfit",
     "category": "hostile_mobs_other",
     "region": "Twisted Ridge",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Misfit.png/100px-Misfit.png?ee2c86",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -37341,6 +37846,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mistake",
     "category": "hostile_mobs_other",
     "region": "Secluded Workshop",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Mistake.png/100px-Mistake.png?6d7824",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -37384,6 +37890,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mistdawn Fogcatcher",
     "category": "hostile_mobs_other",
     "region": "Entrance to Bucie",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MistdawnFogcatcher.png/100px-MistdawnFogcatcher.png?35a62d",
     "description": "4 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -37430,6 +37937,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mistdawn Raindancer",
     "category": "hostile_mobs_other",
     "region": "Entrance to Bucie",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MistdawnRaindancer.png/100px-MistdawnRaindancer.png?d8b63e",
     "description": "4 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -37476,6 +37984,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mistdawn Speaker",
     "category": "hostile_mobs_other",
     "region": "Sablestone Orc Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MistdawnSpeaker.png/100px-MistdawnSpeaker.png?63d10a",
     "description": "4 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -37522,6 +38031,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mistdawn Windwhistler",
     "category": "hostile_mobs_other",
     "region": "Entrance to Bucie",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MistdawnWindwhistler.png/100px-MistdawnWindwhistler.png?979c3d",
     "description": "4 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -37568,6 +38078,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mistwoods Slug",
     "category": "hostile_mobs_beast",
     "region": "Aldwell",
+    "iconImage": "",
     "description": "3 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -37643,6 +38154,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "MM-0actical Unit",
     "category": "hostile_mobs_other",
     "region": "Balloon Airbase",
+    "iconImage": "",
     "description": "4 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -37701,6 +38213,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Molten Archer",
     "category": "hostile_mobs_humanoid",
     "region": "Dragonbone Graveyard",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MoltenArcher.png/100px-MoltenArcher.png?5c23c8",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -37745,6 +38258,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Molten Chevalier",
     "category": "hostile_mobs_other",
     "region": "Dragonbone Graveyard",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MoltenChevalier.png/100px-MoltenChevalier.png?4f2a9b",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -37789,6 +38303,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Molten Knight",
     "category": "hostile_mobs_humanoid",
     "region": "Dragonbone Graveyard",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MoltenKnight.png/100px-MoltenKnight.png?417ca7",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -37833,6 +38348,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Molten Madoshi",
     "category": "hostile_mobs_other",
     "region": "Dragonbone Graveyard",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MoltenMadoshi.png/100px-MoltenMadoshi.png?8f2eac",
     "description": "2 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -37895,6 +38411,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Molten Man",
     "category": "hostile_mobs_other",
     "region": "Entrance to Molten Heights",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MoltenMan.png/100px-MoltenMan.png?9395b8",
     "description": "2 ingredient drops across 10 mapped spawn points.",
     "tags": [
       "mob",
@@ -37999,6 +38516,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Moonlight Weird",
     "category": "hostile_mobs_other",
     "region": "Twisted Ridge",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MoonlightWeird.png/100px-MoonlightWeird.png?a145cd",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -38042,6 +38560,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Moorbadger",
     "category": "hostile_mobs_other",
     "region": "Fort Tericen",
+    "iconImage": "",
     "description": "1 ingredient drop across 10 mapped spawn points.",
     "tags": [
       "mob",
@@ -38181,6 +38700,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Moosebull Beetle",
     "category": "hostile_mobs_beast",
     "region": "Forts in Fall",
+    "iconImage": "",
     "description": "2 ingredient drops across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -38261,6 +38781,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mosquito Swarm",
     "category": "hostile_mobs_other",
     "region": "Entamis Village",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MosquitoSwarm.png/100px-MosquitoSwarm.png?e2e162",
     "description": "1 ingredient drop across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -38352,6 +38873,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mossy Golem",
     "category": "hostile_mobs_construct",
     "region": "Iboju Village",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MossyGolem.png/100px-MossyGolem.png?3eb473",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -38396,6 +38918,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mountain Harpy",
     "category": "hostile_mobs_beast",
     "region": "Displaced Housing",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MountainHarpy.png/100px-MountainHarpy.png?c47d84",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -38445,6 +38968,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mountain Ram",
     "category": "hostile_mobs_beast",
     "region": "Maro Peaks",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MountainRam%28Level56%29.png/100px-MountainRam%28Level56%29.png?e50934",
     "description": "3 ingredient drops across 13 mapped spawn points.",
     "tags": [
       "mob",
@@ -38568,6 +39092,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mountain Zombie",
     "category": "hostile_mobs_zombie",
     "region": "Lusuco",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MountainZombie.png/100px-MountainZombie.png?4d69d6",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -38612,6 +39137,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mousse",
     "category": "hostile_mobs_other",
     "region": "Wolves' Den",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -38655,6 +39181,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mucklurker",
     "category": "hostile_mobs_other",
     "region": "The Frog Bog",
+    "iconImage": "",
     "description": "4 ingredient drops across 11 mapped spawn points.",
     "tags": [
       "mob",
@@ -38761,6 +39288,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mud Spider",
     "category": "hostile_mobs_spider",
     "region": "Rocky Shore",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MudSpider%28Lv17%29.png/100px-MudSpider%28Lv17%29.png?260ccf",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -38804,6 +39332,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Muddled Weird",
     "category": "hostile_mobs_other",
     "region": "Fungal Grove",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MuddledWeird.png/100px-MuddledWeird.png?5b2d8d",
     "description": "2 ingredient drops across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -38872,6 +39401,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Muddy Zombie",
     "category": "hostile_mobs_zombie",
     "region": "Mount Wynn Inn",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MuddyZombie.png/100px-MuddyZombie.png?d334c8",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -38927,6 +39457,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mudslinger",
     "category": "hostile_mobs_other",
     "region": "Mount Wynn Inn",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Mudslinger.png/100px-Mudslinger.png?d386cf",
     "description": "1 ingredient drop across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -38994,6 +39525,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mudspring Orc Chemist",
     "category": "hostile_mobs_humanoid",
     "region": "Mudspring Orc Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MudspringOrcChemist.png/100px-MudspringOrcChemist.png?1d9cd2",
     "description": "5 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -39041,6 +39573,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mudspring Orc Pulper",
     "category": "hostile_mobs_humanoid",
     "region": "Mudspring Orc Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MudspringOrcPulper.png/100px-MudspringOrcPulper.png?7b2269",
     "description": "5 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -39088,6 +39621,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mudspring Orc Waterbearer",
     "category": "hostile_mobs_humanoid",
     "region": "Mudspring Orc Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MudspringOrcWaterbearer.png/100px-MudspringOrcWaterbearer.png?e2a3da",
     "description": "5 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -39135,6 +39669,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Murex Mollusk",
     "category": "hostile_mobs_beast",
     "region": "Lake Gitephe",
+    "iconImage": "",
     "description": "3 ingredient drops across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -39222,6 +39757,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mushroom Mite",
     "category": "hostile_mobs_other",
     "region": "Efilim",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -39265,6 +39801,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mustard Beetle",
     "category": "hostile_mobs_beast",
     "region": "Forts in Fall",
+    "iconImage": "",
     "description": "2 ingredient drops across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -39345,6 +39882,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mustedog",
     "category": "hostile_mobs_other",
     "region": "Alder Understory",
+    "iconImage": "",
     "description": "1 ingredient drop across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -39448,6 +39986,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mutated Lutho Citizen",
     "category": "hostile_mobs_humanoid",
     "region": "Toxic Drip",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/MutatedLuthoCitizen.png/100px-MutatedLuthoCitizen.png?bf7325",
     "description": "3 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -39499,6 +40038,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mutineer",
     "category": "hostile_mobs_other",
     "region": "Cathedral Harbour",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Mutineer.png/100px-Mutineer.png?876fd1",
     "description": "2 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -39567,6 +40107,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Mycolite",
     "category": "hostile_mobs_other",
     "region": "Sky Castle",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Mycolite%28Brown%29.png/100px-Mycolite%28Brown%29.png?3a3db6",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -39611,6 +40152,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Naga Commander",
     "category": "hostile_mobs_humanoid",
     "region": "Bloody Trail",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/NagaCommander.png/100px-NagaCommander.png?b35036",
     "description": "2 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -39709,6 +40251,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Naga Fighter",
     "category": "hostile_mobs_other",
     "region": "Bloody Trail",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/NagaFighter.png/100px-NagaFighter.png?59e6b9",
     "description": "1 ingredient drop across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -39806,6 +40349,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Nesting Spider",
     "category": "hostile_mobs_spider",
     "region": "Alekin",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/NestingSpider%28Lv8%29.png/100px-NestingSpider%28Lv8%29.png?7c02a0",
     "description": "6 ingredient drops across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -39884,6 +40428,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Nibbles",
     "category": "hostile_mobs_other",
     "region": "Detlas",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Nibbles.png/100px-Nibbles.png?86f062",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -39927,6 +40472,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Night Lurker",
     "category": "hostile_mobs_other",
     "region": "Castle Dullahan",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/NightLurker.png/100px-NightLurker.png?64c5ec",
     "description": "3 ingredient drops across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -40008,6 +40554,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Nimbuseeker",
     "category": "hostile_mobs_other",
     "region": "Guild Hall",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Nimbuseeker.png/100px-Nimbuseeker.png?5e0682",
     "description": "2 ingredient drops across 24 mapped spawn points.",
     "tags": [
       "mob",
@@ -40220,6 +40767,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Nivlan Beauty",
     "category": "hostile_mobs_other",
     "region": "Arachnid Woods",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/NivlanBeauty.png/100px-NivlanBeauty.png?8bd76b",
     "description": "7 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -40292,6 +40840,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Noble Peacock",
     "category": "hostile_mobs_other",
     "region": "Fort Tericen",
+    "iconImage": "",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -40347,6 +40896,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Nohno Wife",
     "category": "hostile_mobs_other",
     "region": "Rooster Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/NohnoWife.png/100px-NohnoWife.png?e4137c",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -40390,6 +40940,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Novice Fire Mage",
     "category": "hostile_mobs_humanoid",
     "region": "Troll Tower",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/NoviceFireMage.png/100px-NoviceFireMage.png?2e8561",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -40433,6 +40984,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Oasis Leech",
     "category": "hostile_mobs_other",
     "region": "Almuj Slums",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/OasisLeech.png/100px-OasisLeech.png?4f3a33",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -40488,6 +41040,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Obelisk Of Inversion",
     "category": "hostile_mobs_other",
     "region": "Path to the Penitentiary",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ObeliskOfInversion.png/100px-ObeliskOfInversion.png?802614",
     "description": "8 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -40536,6 +41089,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Obsidian Sentinel",
     "category": "hostile_mobs_construct",
     "region": "Cinfras's Small Farm",
+    "iconImage": "",
     "description": "2 ingredient drops across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -40616,6 +41170,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Obturate Sludge",
     "category": "hostile_mobs_aquatic",
     "region": "Industrial Sector",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ObturateSludge.png/100px-ObturateSludge.png?56167a",
     "description": "2 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -40738,6 +41293,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ocean Waker",
     "category": "hostile_mobs_other",
     "region": "Bear Zoo",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/OceanWaker.png/100px-OceanWaker.png?7ec9ac",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -40782,6 +41338,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Orc Fighter",
     "category": "hostile_mobs_humanoid",
     "region": "Iron Road",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/OrcFighter.png/100px-OrcFighter.png?628ee5",
     "description": "3 ingredient drops across 15 mapped spawn points.",
     "tags": [
       "mob",
@@ -40929,6 +41486,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Orc Lookout",
     "category": "hostile_mobs_humanoid",
     "region": "Iron Road",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/OrcLookout.png/100px-OrcLookout.png?90f9cf",
     "description": "5 ingredient drops across 15 mapped spawn points.",
     "tags": [
       "mob",
@@ -41078,6 +41636,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Orc Zealot",
     "category": "hostile_mobs_humanoid",
     "region": "Goblin Plains West",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/OrcZealot.png/100px-OrcZealot.png?2826d8",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -41122,6 +41681,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Orchard Owner",
     "category": "hostile_mobs_other",
     "region": "Corrupted Orchard",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/OrchardOwner.png/100px-OrchardOwner.png?62baee",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -41166,6 +41726,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Osprey Nest",
     "category": "hostile_mobs_other",
     "region": "Frosty Outpost",
+    "iconImage": "",
     "description": "1 ingredient drop across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -41245,6 +41806,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Outlandish Weird",
     "category": "hostile_mobs_other",
     "region": "Fungal Grove",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/OutlandishWeird.png/100px-OutlandishWeird.png?255686",
     "description": "4 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -41297,6 +41859,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Outpost Hunter",
     "category": "hostile_mobs_humanoid",
     "region": "Frosty Outpost",
+    "iconImage": "",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -41346,6 +41909,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Outpost Patrol",
     "category": "hostile_mobs_other",
     "region": "Frosty Outpost",
+    "iconImage": "",
     "description": "1 ingredient drop across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -41413,6 +41977,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Overgrown Sentinel",
     "category": "hostile_mobs_construct",
     "region": "Cinfras's Small Farm",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/OvergrownSentinel.png/100px-OvergrownSentinel.png?76b126",
     "description": "2 ingredient drops across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -41493,6 +42058,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Overgrown Zombie",
     "category": "hostile_mobs_zombie",
     "region": "Zhight Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/OvergrownZombie.png/100px-OvergrownZombie.png?76e412",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -41538,6 +42104,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ozone Weird",
     "category": "hostile_mobs_other",
     "region": "Gylia Watchtower",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/OzoneWeird.png/100px-OzoneWeird.png?75c400",
     "description": "3 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -41595,6 +42162,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "P-1ogue Patroller",
     "category": "hostile_mobs_humanoid",
     "region": "Corkus Outskirts",
+    "iconImage": "",
     "description": "2 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -41651,6 +42219,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Pathogenesis",
     "category": "hostile_mobs_other",
     "region": "Toxic Drip",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Pathogenesis.png/100px-Pathogenesis.png?f34041",
     "description": "3 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -41702,6 +42271,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Patrolling Cavalier",
     "category": "hostile_mobs_humanoid",
     "region": "Forts in Fall",
+    "iconImage": "",
     "description": "6 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -41750,6 +42320,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Patrolling Constable",
     "category": "hostile_mobs_humanoid",
     "region": "Agricultural Sector",
+    "iconImage": "",
     "description": "2 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -41818,6 +42389,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Patrolling Guard",
     "category": "hostile_mobs_humanoid",
     "region": "The Lumbermill",
+    "iconImage": "",
     "description": "2 ingredient drops across 15 mapped spawn points.",
     "tags": [
       "mob",
@@ -41970,6 +42542,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Peacock",
     "category": "hostile_mobs_other",
     "region": "Fort Tericen",
+    "iconImage": "",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -42025,6 +42598,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Peculiar Weird",
     "category": "hostile_mobs_other",
     "region": "Fungal Grove",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/PeculiarWeird.png/100px-PeculiarWeird.png?1c61fa",
     "description": "3 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -42076,6 +42650,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Pegasus",
     "category": "hostile_mobs_other",
     "region": "Sky Island Ascent",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Pegasus.png/100px-Pegasus.png?1548a0",
     "description": "5 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -42141,6 +42716,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Penguin",
     "category": "hostile_mobs_other",
     "region": "Frigid Crossroads",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Penguin.png/100px-Penguin.png?b374fe",
     "description": "3 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -42210,6 +42786,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Peppered Ghost",
     "category": "hostile_mobs_other",
     "region": "Troms Lake",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -42253,6 +42830,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Pernix Monkey",
     "category": "hostile_mobs_other",
     "region": "Balloon Airbase",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/PernixMonkey%28Lv88%29.png/100px-PernixMonkey%28Lv88%29.png?47aa9e",
     "description": "1 ingredient drop across 15 mapped spawn points.",
     "tags": [
       "mob",
@@ -42398,6 +42976,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Phantasm",
     "category": "hostile_mobs_other",
     "region": "Fading Forest",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Phantasm.png/100px-Phantasm.png?84e31c",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -42441,6 +43020,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Phantom",
     "category": "hostile_mobs_other",
     "region": "Twain Mansion",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Phantom.png/100px-Phantom.png?97f5b8",
     "description": "3 ingredient drops across 13 mapped spawn points.",
     "tags": [
       "mob",
@@ -42558,6 +43138,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Phrumkin Gangster",
     "category": "hostile_mobs_other",
     "region": "Unicorn Trail",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/PhrumkinGangster.png/100px-PhrumkinGangster.png?974256",
     "description": "2 ingredient drops across 18 mapped spawn points.",
     "tags": [
       "mob",
@@ -42704,6 +43285,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Phrumkin Prankster",
     "category": "hostile_mobs_other",
     "region": "Road to Light Forest",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/PhrumkinPrankster.png/100px-PhrumkinPrankster.png?a12de6",
     "description": "3 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -42755,6 +43337,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Pigman Raider",
     "category": "hostile_mobs_humanoid",
     "region": "Ragni South Entrance",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/PigmanRaider%28Lv15%29.png/100px-PigmanRaider%28Lv15%29.png?d2cc82",
     "description": "2 ingredient drops across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -42829,6 +43412,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Pigman Runner",
     "category": "hostile_mobs_humanoid",
     "region": "Sulphuric Hollow",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/PigmanRunner.png/100px-PigmanRunner.png?1247d6",
     "description": "2 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -42891,6 +43475,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Pigman Striker",
     "category": "hostile_mobs_other",
     "region": "Sulphuric Hollow",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/PigmanStriker.png/100px-PigmanStriker.png?edc689",
     "description": "2 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -42953,6 +43538,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Pink Pelulite",
     "category": "hostile_mobs_other",
     "region": "Bloody Trail",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/PinkPelulite.png/100px-PinkPelulite.png?d5b340",
     "description": "7 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -43001,6 +43587,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Pink Pelute",
     "category": "hostile_mobs_other",
     "region": "Bloody Trail",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/PinkPelute.png/100px-PinkPelute.png?6540fa",
     "description": "7 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -43049,6 +43636,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Pink Sheep of Greatness",
     "category": "hostile_mobs_other",
     "region": "Detlas Suburbs",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/PinkSheepofGreatness.png/100px-PinkSheepofGreatness.png?be7353",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -43092,6 +43680,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Pirate",
     "category": "hostile_mobs_humanoid",
     "region": "Bloody Beach",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/%22Pirate%22.png/100px-%22Pirate%22.png?161370",
     "description": "2 ingredient drops across 16 mapped spawn points.",
     "tags": [
       "mob",
@@ -43232,6 +43821,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Pirate Captain",
     "category": "hostile_mobs_humanoid",
     "region": "Bloody Beach",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/PirateCaptain%28a%29.png/100px-PirateCaptain%28a%29.png?e51b8f",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -43275,6 +43865,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Plasmatic Shambler",
     "category": "hostile_mobs_other",
     "region": "Bandit's Toll",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/PlasmaticShambler.png/100px-PlasmaticShambler.png?3bba9c",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -43324,6 +43915,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Plasmatic Shellwalker",
     "category": "hostile_mobs_other",
     "region": "Bandit's Toll",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/PlasmaticShellwalker.png/100px-PlasmaticShellwalker.png?566124",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -43379,6 +43971,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Plateau Coyote",
     "category": "hostile_mobs_other",
     "region": "Sunrise Plateau",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/PlateauCoyote.png/100px-PlateauCoyote.png?ec4de3",
     "description": "2 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -43441,6 +44034,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Plumber",
     "category": "hostile_mobs_other",
     "region": "Industrial Sector",
+    "iconImage": "",
     "description": "2 ingredient drops across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -43539,6 +44133,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Poison Tendril",
     "category": "hostile_mobs_other",
     "region": "Toxic Drip",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/PoisonTendril.png/100px-PoisonTendril.png?22161a",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -43584,6 +44179,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Polar Weird",
     "category": "hostile_mobs_other",
     "region": "Path to Light's Secret",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/PolarWeird.png/100px-PolarWeird.png?492607",
     "description": "8 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -43638,6 +44234,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Pond Nymph",
     "category": "hostile_mobs_other",
     "region": "Guardian of the Forest",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/PondNymph.png/100px-PondNymph.png?5f3179",
     "description": "3 ingredient drops across 22 mapped spawn points.",
     "tags": [
       "mob",
@@ -43863,6 +44460,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Possessed Armor Stand",
     "category": "hostile_mobs_other",
     "region": "Twain Lake",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/PossessedArmorStand.png/100px-PossessedArmorStand.png?339230",
     "description": "6 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -43911,6 +44509,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Possessed Oelnethite",
     "category": "hostile_mobs_other",
     "region": "Castle Dullahan",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -43954,6 +44553,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Possessive Militarist",
     "category": "hostile_mobs_other",
     "region": "Almuj",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/PossessiveMilitarist.png/100px-PossessiveMilitarist.png?562f5e",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -43998,6 +44598,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Posted Guard",
     "category": "hostile_mobs_humanoid",
     "region": "Forts in Fall",
+    "iconImage": "",
     "description": "2 ingredient drops across 11 mapped spawn points.",
     "tags": [
       "mob",
@@ -44108,6 +44709,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Potato Imp",
     "category": "hostile_mobs_other",
     "region": "Lost Atoll",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/PotatoImp.png/100px-PotatoImp.png?a3c244",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -44152,6 +44754,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Power Trainer",
     "category": "hostile_mobs_other",
     "region": "Temple of Legends",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/PowerTrainer.png/100px-PowerTrainer.png?1f0772",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -44195,6 +44798,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Presocietal Stonewalker",
     "category": "hostile_mobs_other",
     "region": "Barren Sands",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/PresocietalStonewalker.png/100px-PresocietalStonewalker.png?e85f71",
     "description": "2 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -44251,6 +44855,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Pride Male Lion",
     "category": "hostile_mobs_other",
     "region": "Lion Lair",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/PrideMaleLion.png/100px-PrideMaleLion.png?96a1a4",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -44294,6 +44899,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Prismatic Weird",
     "category": "hostile_mobs_other",
     "region": "Light Peninsula",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/PrismaticWeird.png/100px-PrismaticWeird.png?a4d95c",
     "description": "2 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -44344,6 +44950,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "projectile",
     "category": "hostile_mobs_other",
     "region": "Bandit's Toll",
+    "iconImage": "",
     "description": "3 ingredient drops across 16 mapped spawn points.",
     "tags": [
       "mob",
@@ -44479,6 +45086,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Propagandist",
     "category": "hostile_mobs_other",
     "region": "University Campus",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Propagandist.png/100px-Propagandist.png?297015",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -44522,6 +45130,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Protective Osprey",
     "category": "hostile_mobs_other",
     "region": "Frosty Outpost",
+    "iconImage": "",
     "description": "1 ingredient drop across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -44601,6 +45210,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "PU-0iner Patroller",
     "category": "hostile_mobs_humanoid",
     "region": "Corkus Forest",
+    "iconImage": "",
     "description": "1 ingredient drop across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -44680,6 +45290,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Pyreant Soldier",
     "category": "hostile_mobs_humanoid",
     "region": "Lava Lakes",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/PyreantSoldier.png/100px-PyreantSoldier.png?fedd3b",
     "description": "1 ingredient drop across 9 mapped spawn points.",
     "tags": [
       "mob",
@@ -44771,6 +45382,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Pyreant Worker",
     "category": "hostile_mobs_other",
     "region": "Lava Lakes",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/PyreantWorker.png/100px-PyreantWorker.png?b01104",
     "description": "1 ingredient drop across 9 mapped spawn points.",
     "tags": [
       "mob",
@@ -44862,6 +45474,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Pyret",
     "category": "hostile_mobs_other",
     "region": "Pyroclastic Flow",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Pyret.png/100px-Pyret.png?a54399",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -44907,6 +45520,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Pyrocobalt Screech",
     "category": "hostile_mobs_other",
     "region": "Volcanic Isles",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/PyrocobaltScreech.png/100px-PyrocobaltScreech.png?c2d435",
     "description": "2 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -45017,6 +45631,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Pyrosilver Spitter",
     "category": "hostile_mobs_other",
     "region": "Volcanic Isles",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/PyrosilverSpitter.png/100px-PyrosilverSpitter.png?40a513",
     "description": "2 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -45127,6 +45742,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Quartz Bandit",
     "category": "hostile_mobs_humanoid",
     "region": "Karoc Quarry",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/QuartzBandit.png/100px-QuartzBandit.png?f6b3bb",
     "description": "3 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -45178,6 +45794,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Quartz Ranger",
     "category": "hostile_mobs_other",
     "region": "Karoc Quarry",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/QuartzRanger.png/100px-QuartzRanger.png?dcd444",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -45223,6 +45840,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Queen Slime",
     "category": "hostile_mobs_beast",
     "region": "Iboju Village",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/QueenSlime.png/100px-QueenSlime.png?680a04",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -45268,6 +45886,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Qunbos Boa",
     "category": "hostile_mobs_other",
     "region": "Entamis Village",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/QunbosBoa.png/100px-QunbosBoa.png?76f0ce",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -45311,6 +45930,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Raccoon",
     "category": "hostile_mobs_other",
     "region": "Residence Sector",
+    "iconImage": "",
     "description": "3 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -45434,6 +46054,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ragni Soldier",
     "category": "hostile_mobs_humanoid",
     "region": "Nivla Woods",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RagniSoldier.png/100px-RagniSoldier.png?5af716",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -45477,6 +46098,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Rain Cloud Ram",
     "category": "hostile_mobs_beast",
     "region": "Kandon Ridge",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RainCloudRam.png/100px-RainCloudRam.png?2fa2b9",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -45532,6 +46154,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Raincloud Uma",
     "category": "hostile_mobs_other",
     "region": "Entamis Village",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RaincloudUma.png/100px-RaincloudUma.png?202585",
     "description": "3 ingredient drops across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -45601,6 +46224,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ramhead Charger",
     "category": "hostile_mobs_other",
     "region": "Maro Peaks",
+    "iconImage": "",
     "description": "4 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -45653,6 +46277,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ramhead Worshipper",
     "category": "hostile_mobs_other",
     "region": "Maro Peaks",
+    "iconImage": "",
     "description": "4 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -45705,6 +46330,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Raul",
     "category": "hostile_mobs_other",
     "region": "Wolves' Den",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Raul.png/100px-Raul.png?1db4bc",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -45748,6 +46374,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ravenous Coyote",
     "category": "hostile_mobs_other",
     "region": "Eagle Tribe",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RavenousCoyote.png/100px-RavenousCoyote.png?1a98a6",
     "description": "2 ingredient drops across 12 mapped spawn points.",
     "tags": [
       "mob",
@@ -45876,6 +46503,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ravine Pigman",
     "category": "hostile_mobs_other",
     "region": "Sulphuric Hollow",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RavinePigman%28Lv14%29.png/100px-RavinePigman%28Lv14%29.png?382532",
     "description": "2 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -45932,6 +46560,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Reality Swimmer",
     "category": "hostile_mobs_other",
     "region": "Void Valley",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RealitySwimmer.png/100px-RealitySwimmer.png?c3828a",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -45977,6 +46606,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Rebel Cow",
     "category": "hostile_mobs_beast",
     "region": "Katoa Ranch",
+    "iconImage": "",
     "description": "1 ingredient drop across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -46068,6 +46698,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Recluse Spider",
     "category": "hostile_mobs_spider",
     "region": "Chasm Chokepoint",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RecluseSpider%28KanderForest%29.png/100px-RecluseSpider%28KanderForest%29.png?272e20",
     "description": "1 ingredient drop across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -46135,6 +46766,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Red Scale Spider",
     "category": "hostile_mobs_spider",
     "region": "Enchanted River",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RedScaleSpider.png/100px-RedScaleSpider.png?2234f2",
     "description": "1 ingredient drop across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -46196,6 +46828,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Redline Weird",
     "category": "hostile_mobs_other",
     "region": "Gylia Watchtower",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RedlineWeird.png/100px-RedlineWeird.png?ed5b7c",
     "description": "5 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -46255,6 +46888,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Reggie",
     "category": "hostile_mobs_other",
     "region": "Sunrise Plateau",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Reggie.png/100px-Reggie.png?bede82",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -46300,6 +46934,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Regurgitator",
     "category": "hostile_mobs_other",
     "region": "Mangled Lake",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Regurgitator.png/100px-Regurgitator.png?2de03b",
     "description": "3 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -46351,6 +46986,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Rejuvenator",
     "category": "hostile_mobs_other",
     "region": "Viscera Pits",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Rejuvenator.png/100px-Rejuvenator.png?959d0f",
     "description": "2 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -46407,6 +47043,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Repurposed Host",
     "category": "hostile_mobs_other",
     "region": "Void Valley",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RepurposedHost.png/100px-RepurposedHost.png?8a5a17",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -46452,6 +47089,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Restless Armour",
     "category": "hostile_mobs_other",
     "region": "Lusuco",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RestlessArmour.png/100px-RestlessArmour.png?7dd41c",
     "description": "3 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -46539,6 +47177,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Risen Explorer",
     "category": "hostile_mobs_other",
     "region": "Entamis Village",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RisenExplorer.png/100px-RisenExplorer.png?ab2532",
     "description": "3 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -46608,6 +47247,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Risen Skeleton",
     "category": "hostile_mobs_skeleton",
     "region": "Scorched Trail",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RisenSkeleton.png/100px-RisenSkeleton.png?af4387",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -46651,6 +47291,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Rising Weird",
     "category": "hostile_mobs_other",
     "region": "Light Peninsula",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RisingWeird.png/100px-RisingWeird.png?3da204",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -46695,6 +47336,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "River Hog",
     "category": "hostile_mobs_other",
     "region": "Festival Grounds",
+    "iconImage": "",
     "description": "2 ingredient drops across 21 mapped spawn points.",
     "tags": [
       "mob",
@@ -46877,6 +47519,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "River Locust Swarm",
     "category": "hostile_mobs_other",
     "region": "Eagle Tribe",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RiverLocustSwarm.png/100px-RiverLocustSwarm.png?af8bd0",
     "description": "1 ingredient drop across 11 mapped spawn points.",
     "tags": [
       "mob",
@@ -46992,6 +47635,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Rivertunnel Bottler",
     "category": "hostile_mobs_other",
     "region": "Entrance to Bucie",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RivertunnelBottler.png/100px-RivertunnelBottler.png?692c6e",
     "description": "7 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -47040,6 +47684,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Rivertunnel Digger",
     "category": "hostile_mobs_other",
     "region": "Entrance to Bucie",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RivertunnelDigger.png/100px-RivertunnelDigger.png?57b36f",
     "description": "5 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -47087,6 +47732,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Rivertunnel Shiny Baron",
     "category": "hostile_mobs_other",
     "region": "Meteor Crater",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RivertunnelShinyBaron.png/100px-RivertunnelShinyBaron.png?a2e6a1",
     "description": "7 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -47135,6 +47781,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Rivertunnel Siever",
     "category": "hostile_mobs_other",
     "region": "Entrance to Bucie",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RivertunnelSiever.png/100px-RivertunnelSiever.png?16c452",
     "description": "7 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -47183,6 +47830,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Roaming Ancient",
     "category": "hostile_mobs_other",
     "region": "Silverbull Headquarters",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RoamingAncient.png/100px-RoamingAncient.png?2ce8c6",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -47227,6 +47875,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Roaming Skeleton",
     "category": "hostile_mobs_skeleton",
     "region": "Ancient Nemract",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RoamingSkeleton.png/100px-RoamingSkeleton.png?f241d4",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -47271,6 +47920,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Roaming Zombie",
     "category": "hostile_mobs_zombie",
     "region": "Ancient Nemract",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RoamingZombie.png/100px-RoamingZombie.png?754dc1",
     "description": "3 ingredient drops across 11 mapped spawn points.",
     "tags": [
       "mob",
@@ -47412,6 +48062,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Rock Bagworm",
     "category": "hostile_mobs_other",
     "region": "Cliffside Passage South",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RockBagworm.png/100px-RockBagworm.png?79a3b4",
     "description": "1 ingredient drop across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -47479,6 +48130,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Rocky",
     "category": "hostile_mobs_other",
     "region": "Dragonling Nests",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -47522,6 +48174,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Rogue Snowman",
     "category": "hostile_mobs_other",
     "region": "Frigid Crossroads",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RogueSnowman.png/100px-RogueSnowman.png?939e72",
     "description": "4 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -47574,6 +48227,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Root Infestation",
     "category": "hostile_mobs_other",
     "region": "Corrupted Warfront",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RootInfestation.png/100px-RootInfestation.png?e5a51f",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -47623,6 +48277,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Root Ingrainer",
     "category": "hostile_mobs_other",
     "region": "Corrupted Warfront",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RootIngrainer.png/100px-RootIngrainer.png?41a717",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -47672,6 +48327,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Roothome Chanter",
     "category": "hostile_mobs_other",
     "region": "Sablestone Orc Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RoothomeChanter.png/100px-RoothomeChanter.png?185d43",
     "description": "8 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -47720,6 +48376,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Roothome Dancer",
     "category": "hostile_mobs_other",
     "region": "Sablestone Orc Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RoothomeDancer.png/100px-RoothomeDancer.png?fcbe9d",
     "description": "8 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -47768,6 +48425,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Roothome Flutist",
     "category": "hostile_mobs_other",
     "region": "Sablestone Orc Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RoothomeFlutist.png/100px-RoothomeFlutist.png?2d0a3a",
     "description": "8 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -47816,6 +48474,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Roothome Grudgebearer",
     "category": "hostile_mobs_other",
     "region": "Sablestone Orc Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RoothomeGrudgebearer.png/100px-RoothomeGrudgebearer.png?1432d0",
     "description": "8 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -47864,6 +48523,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Roothome Orc Protector",
     "category": "hostile_mobs_humanoid",
     "region": "Sablestone Orc Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RoothomeOrcProtector.png/100px-RoothomeOrcProtector.png?f415e1",
     "description": "2 ingredient drops across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -47932,6 +48592,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Roothome Overseer",
     "category": "hostile_mobs_other",
     "region": "Sablestone Orc Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RoothomeOverseer.png/100px-RoothomeOverseer.png?22eb83",
     "description": "8 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -47980,6 +48641,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Roothome Scamp",
     "category": "hostile_mobs_other",
     "region": "Sablestone Orc Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RoothomeScamp.png/100px-RoothomeScamp.png?96d900",
     "description": "8 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -48028,6 +48690,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Rose Florist",
     "category": "hostile_mobs_other",
     "region": "Florist's Hut",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RoseFlorist.png/100px-RoseFlorist.png?54ff8a",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -48071,6 +48734,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Rot Wolf",
     "category": "hostile_mobs_beast",
     "region": "Fading Forest",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RotWolf.png/100px-RotWolf.png?ff0a6f",
     "description": "1 ingredient drop across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -48138,6 +48802,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Rot-Borer",
     "category": "hostile_mobs_other",
     "region": "Entamis Village",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Rot-Borer.png/100px-Rot-Borer.png?7f128b",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -48181,6 +48846,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Rotten Flamecaster",
     "category": "hostile_mobs_zombie",
     "region": "Temple of Legends",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RottenFlamecaster.png/100px-RottenFlamecaster.png?23b969",
     "description": "1 ingredient drop across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -48248,6 +48914,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Rotten Woodcutter",
     "category": "hostile_mobs_zombie",
     "region": "Abandoned Lumberyard",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RottenWoodcutter.png/100px-RottenWoodcutter.png?d667ec",
     "description": "5 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -48295,6 +48962,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Rotten Zombie",
     "category": "hostile_mobs_zombie",
     "region": "Apprentice Huts",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RottenZombie.png/100px-RottenZombie.png?e5d8fa",
     "description": "3 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -48358,6 +49026,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Rotting Luxroot",
     "category": "hostile_mobs_other",
     "region": "Gelibord Watermill",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RottingLuxroot.png/100px-RottingLuxroot.png?f71afd",
     "description": "2 ingredient drops across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -48438,6 +49107,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Rotting Myconid",
     "category": "hostile_mobs_other",
     "region": "Cinfras Outskirts",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RottingMyconid%28Brown%29.png/100px-RottingMyconid%28Brown%29.png?7b2c58",
     "description": "3 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -48507,6 +49177,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Royal Bug",
     "category": "hostile_mobs_beast",
     "region": "Chasm Chokepoint",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RoyalBug.png/100px-RoyalBug.png?9063c3",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -48550,6 +49221,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Rucktoad",
     "category": "hostile_mobs_other",
     "region": "Alder Understory",
+    "iconImage": "",
     "description": "1 ingredient drop across 16 mapped spawn points.",
     "tags": [
       "mob",
@@ -48695,6 +49367,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Rukh",
     "category": "hostile_mobs_other",
     "region": "Temple Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Rukh.png/100px-Rukh.png?35f188",
     "description": "5 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -48748,6 +49421,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Rymek Citizen",
     "category": "hostile_mobs_humanoid",
     "region": "Rymek",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/RymekCitizen%28Neutral%29.png/100px-RymekCitizen%28Neutral%29.png?c2beab",
     "description": "2 ingredient drops across 9 mapped spawn points.",
     "tags": [
       "mob",
@@ -48840,6 +49514,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "S-3tealth Bot",
     "category": "hostile_mobs_other",
     "region": "Avos Temple",
+    "iconImage": "",
     "description": "2 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -48896,6 +49571,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Sablestone Orc Basher",
     "category": "hostile_mobs_humanoid",
     "region": "Sablestone Orc Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SablestoneOrcBasher.png/100px-SablestoneOrcBasher.png?d80a25",
     "description": "5 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -48943,6 +49619,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Sablestone Orc Smasher",
     "category": "hostile_mobs_humanoid",
     "region": "Sablestone Orc Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SablestoneOrcSmasher.png/100px-SablestoneOrcSmasher.png?bb16d5",
     "description": "5 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -48990,6 +49667,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Sailsaur",
     "category": "hostile_mobs_other",
     "region": "Deforested Ecotone",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Sailsaur.png/100px-Sailsaur.png?48f3dc",
     "description": "1 ingredient drop across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -49093,6 +49771,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Salamander Painbringer",
     "category": "hostile_mobs_other",
     "region": "Pyroclastic Flow",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SalamanderPainbringer.png/100px-SalamanderPainbringer.png?e0d2a3",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -49142,6 +49821,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Saltpetre Miner",
     "category": "hostile_mobs_other",
     "region": "Hyloch",
+    "iconImage": "",
     "description": "2 ingredient drops across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -49216,6 +49896,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Salty Sandpile",
     "category": "hostile_mobs_other",
     "region": "Accursed Dunes",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SaltySandpile.png/100px-SaltySandpile.png?b246a7",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -49260,6 +49941,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Sand Crawler",
     "category": "hostile_mobs_other",
     "region": "Ancient Excavation",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SandCrawler.png/100px-SandCrawler.png?51f5d5",
     "description": "2 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -49376,6 +50058,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Sand Golem",
     "category": "hostile_mobs_construct",
     "region": "Almuj Slums",
+    "iconImage": "",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -49431,6 +50114,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Sandshorn Skeleton",
     "category": "hostile_mobs_skeleton",
     "region": "Accursed Dunes",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SandshornSkeleton.png/100px-SandshornSkeleton.png?e51d4a",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -49476,6 +50160,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Sandy",
     "category": "hostile_mobs_other",
     "region": "Almuj",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -49519,6 +50204,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Sandy Sandpile",
     "category": "hostile_mobs_other",
     "region": "Accursed Dunes",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SandySandpile.png/100px-SandySandpile.png?1f9fb1",
     "description": "2 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -49581,6 +50267,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Sandy Scarab",
     "category": "hostile_mobs_other",
     "region": "Almuj Slums",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SandyScarab.png/100px-SandyScarab.png?d9b509",
     "description": "2 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -49637,6 +50324,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Savage Hound",
     "category": "hostile_mobs_beast",
     "region": "Crater Descent",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SavageHound.png/100px-SavageHound.png?f697cc",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -49681,6 +50369,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Savannah Ocelot",
     "category": "hostile_mobs_other",
     "region": "Lava Springs",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SavannahOcelot%28Lv15%29.png/100px-SavannahOcelot%28Lv15%29.png?ca46c7",
     "description": "2 ingredient drops across 11 mapped spawn points.",
     "tags": [
       "mob",
@@ -49821,6 +50510,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Savannah Snake",
     "category": "hostile_mobs_beast",
     "region": "Lion Lair",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SavannahSnake.png/100px-SavannahSnake.png?22fadf",
     "description": "2 ingredient drops across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -49895,6 +50585,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Saw-tooth Spider",
     "category": "hostile_mobs_spider",
     "region": "Blooming Boulders",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Saw-toothSpider.png/100px-Saw-toothSpider.png?71cbe4",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -49938,6 +50629,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Scarab",
     "category": "hostile_mobs_other",
     "region": "Ancient Excavation",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Scarab.png/100px-Scarab.png?aedf60",
     "description": "2 ingredient drops across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -50042,6 +50734,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Scared Eye",
     "category": "hostile_mobs_other",
     "region": "Sinister Forest",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ScaredEye.png/100px-ScaredEye.png?c0001f",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -50087,6 +50780,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Scared Unicorn",
     "category": "hostile_mobs_other",
     "region": "Collapsed Bridge",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ScaredUnicorn.png/100px-ScaredUnicorn.png?45cdfc",
     "description": "6 ingredient drops across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -50177,6 +50871,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Scared Wybel",
     "category": "hostile_mobs_other",
     "region": "Wybel Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ScaredWybel.png/100px-ScaredWybel.png?e8f28f",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -50220,6 +50915,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Scavenger",
     "category": "hostile_mobs_humanoid",
     "region": "Maro Peaks",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Scavenger%28Level61%29.png/100px-Scavenger%28Level61%29.png?9a51cf",
     "description": "3 ingredient drops across 13 mapped spawn points.",
     "tags": [
       "mob",
@@ -50349,6 +51045,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Scavenger Sentry",
     "category": "hostile_mobs_humanoid",
     "region": "Maro Peaks",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ScavengerSentry.png/100px-ScavengerSentry.png?f38ab7",
     "description": "3 ingredient drops across 9 mapped spawn points.",
     "tags": [
       "mob",
@@ -50466,6 +51163,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Scorched Zombie",
     "category": "hostile_mobs_zombie",
     "region": "Owl Tribe",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ScorchedZombie.png/100px-ScorchedZombie.png?30c239",
     "description": "2 ingredient drops across 14 mapped spawn points.",
     "tags": [
       "mob",
@@ -50642,6 +51340,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Scorchskin",
     "category": "hostile_mobs_other",
     "region": "Dusty Pit",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Scorchskin.png/100px-Scorchskin.png?12cd0f",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -50685,6 +51384,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Scotch",
     "category": "hostile_mobs_other",
     "region": "Cinfras",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -50728,6 +51428,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Seafoam",
     "category": "hostile_mobs_other",
     "region": "Selchar",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Seafoam.png/100px-Seafoam.png?1edfe3",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -50771,6 +51472,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Secretcove Orc Sneak",
     "category": "hostile_mobs_humanoid",
     "region": "Orc Lake",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SecretcoveOrcSneak.png/100px-SecretcoveOrcSneak.png?a09dff",
     "description": "8 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -50819,6 +51521,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Sentient Polypore",
     "category": "hostile_mobs_other",
     "region": "Black Road",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SentientPolypore.png/100px-SentientPolypore.png?3cf82e",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -50862,6 +51565,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Sergeant at Arms",
     "category": "hostile_mobs_other",
     "region": "Forts in Fall",
+    "iconImage": "",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -50906,6 +51610,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Shadowy Weird",
     "category": "hostile_mobs_other",
     "region": "Fungal Grove",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ShadowyWeird.png/100px-ShadowyWeird.png?b3f0d4",
     "description": "3 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -50957,6 +51662,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Shifting Sandpile",
     "category": "hostile_mobs_other",
     "region": "Accursed Dunes",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ShiftingSandpile.png/100px-ShiftingSandpile.png?1063f8",
     "description": "2 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -51019,6 +51725,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Shimmerstalk",
     "category": "hostile_mobs_other",
     "region": "Thesead Underpass",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Shimmerstalk.png/100px-Shimmerstalk.png?28eda8",
     "description": "1 ingredient drop across 15 mapped spawn points.",
     "tags": [
       "mob",
@@ -51146,6 +51853,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Shineridge Orc Appraiser",
     "category": "hostile_mobs_humanoid",
     "region": "Shineridge Orc Camp",
+    "iconImage": "",
     "description": "6 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -51194,6 +51902,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Shineridge Orc Barterer",
     "category": "hostile_mobs_humanoid",
     "region": "Shineridge Orc Camp",
+    "iconImage": "",
     "description": "6 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -51242,6 +51951,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Shineridge Orc Jewelsetter",
     "category": "hostile_mobs_humanoid",
     "region": "Shineridge Orc Camp",
+    "iconImage": "",
     "description": "6 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -51290,6 +52000,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Shipment Scrounger",
     "category": "hostile_mobs_other",
     "region": "Agricultural Sector",
+    "iconImage": "",
     "description": "1 ingredient drop across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -51393,6 +52104,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Silt Formation",
     "category": "hostile_mobs_other",
     "region": "Nemract",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SiltFormation.png/100px-SiltFormation.png?502c1b",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -51436,6 +52148,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Sinking Weird",
     "category": "hostile_mobs_other",
     "region": "Fungal Grove",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SinkingWeird.png/100px-SinkingWeird.png?7f6d7b",
     "description": "3 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -51487,6 +52200,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Skeeter",
     "category": "hostile_mobs_other",
     "region": "The Frog Bog",
+    "iconImage": "",
     "description": "4 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -51575,6 +52289,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Skelemancer",
     "category": "hostile_mobs_other",
     "region": "Ancient Nemract",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Skelemancer.png/100px-Skelemancer.png?c0183f",
     "description": "5 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -51622,6 +52337,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Skien's Bomber",
     "category": "hostile_mobs_other",
     "region": "Skien's Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Skien%27sBomber.png/100px-Skien%27sBomber.png?a4aa37",
     "description": "3 ingredient drops across 9 mapped spawn points.",
     "tags": [
       "mob",
@@ -51733,6 +52449,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Skien's Bowman",
     "category": "hostile_mobs_other",
     "region": "Skien's Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Skien%27sBowman.png/100px-Skien%27sBowman.png?dbe9ed",
     "description": "2 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -51819,6 +52536,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Skien's Elite",
     "category": "hostile_mobs_other",
     "region": "Skien's Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Skien%27sElite.png/100px-Skien%27sElite.png?d07d46",
     "description": "3 ingredient drops across 9 mapped spawn points.",
     "tags": [
       "mob",
@@ -51912,6 +52630,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Skien's Footsoldier",
     "category": "hostile_mobs_other",
     "region": "Skien's Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Skien%27sFootsoldier.png/100px-Skien%27sFootsoldier.png?f29118",
     "description": "2 ingredient drops across 12 mapped spawn points.",
     "tags": [
       "mob",
@@ -52022,6 +52741,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Skien's Jailkeeper",
     "category": "hostile_mobs_other",
     "region": "Skien's Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Skien%27sJailkeeper.png/100px-Skien%27sJailkeeper.png?bb3063",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -52066,6 +52786,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Skien's Marksman",
     "category": "hostile_mobs_other",
     "region": "Skien's Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Skien%27sMarksman.png/100px-Skien%27sMarksman.png?627acf",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -52121,6 +52842,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Skien's Ravager",
     "category": "hostile_mobs_other",
     "region": "Skien's Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Skien%27sRavager.png/100px-Skien%27sRavager.png?ed9983",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -52176,6 +52898,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Skien's Scout",
     "category": "hostile_mobs_other",
     "region": "Skien's Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Skien%27sScout.png/100px-Skien%27sScout.png?ffd22d",
     "description": "2 ingredient drops across 10 mapped spawn points.",
     "tags": [
       "mob",
@@ -52274,6 +52997,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Skien's Vanguard",
     "category": "hostile_mobs_other",
     "region": "Skien's Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Skien%27sVanguard.png/100px-Skien%27sVanguard.png?44e097",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -52329,6 +53053,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Skulking Thief",
     "category": "hostile_mobs_humanoid",
     "region": "Industrial Sector",
+    "iconImage": "",
     "description": "3 ingredient drops across 9 mapped spawn points.",
     "tags": [
       "mob",
@@ -52458,6 +53183,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Sky Conure",
     "category": "hostile_mobs_other",
     "region": "Ahmsord Outskirts",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SkyConure.png/100px-SkyConure.png?803b5c",
     "description": "2 ingredient drops across 10 mapped spawn points.",
     "tags": [
       "mob",
@@ -52562,6 +53288,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Sky Dragonling",
     "category": "hostile_mobs_other",
     "region": "Sky Island Ascent",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SkyDragonling.png/100px-SkyDragonling.png?626640",
     "description": "3 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -52619,6 +53346,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Sky Snail",
     "category": "hostile_mobs_beast",
     "region": "Snail Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SkySnail.png/100px-SkySnail.png?6babf2",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -52662,6 +53390,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Skyraider",
     "category": "hostile_mobs_other",
     "region": "Raiders' Stronghold",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Skyraider%281%29.png/100px-Skyraider%281%29.png?4126c0",
     "description": "1 ingredient drop across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -52735,6 +53464,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Slimy Swamp Zombie",
     "category": "hostile_mobs_zombie",
     "region": "Nemract",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SlimySwampZombie.png/100px-SlimySwampZombie.png?a324a5",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -52778,6 +53508,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Sloughing Sandpile",
     "category": "hostile_mobs_other",
     "region": "Almuj Slums",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SloughingSandpile.png/100px-SloughingSandpile.png?eb4f9f",
     "description": "2 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -52834,6 +53565,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Sluice",
     "category": "hostile_mobs_other",
     "region": "Industrial Sector",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Sluice.png/100px-Sluice.png?112df0",
     "description": "2 ingredient drops across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -52932,6 +53664,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Smelted Soul",
     "category": "hostile_mobs_other",
     "region": "Pyroclastic Flow",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SmeltedSoul.png/100px-SmeltedSoul.png?788810",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -52981,6 +53714,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Smoke Serpent",
     "category": "hostile_mobs_beast",
     "region": "Pyroclastic Flow",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SmokeSerpent.png/100px-SmokeSerpent.png?4d4a9f",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -53025,6 +53759,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Snow Fang",
     "category": "hostile_mobs_other",
     "region": "Frigid Crossroads",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SnowFang.png/100px-SnowFang.png?73a16e",
     "description": "2 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -53075,6 +53810,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Snow Owl",
     "category": "hostile_mobs_other",
     "region": "Wolves' Den",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SnowOwl.png/100px-SnowOwl.png?b3b2d8",
     "description": "3 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -53144,6 +53880,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Snow Zombie",
     "category": "hostile_mobs_zombie",
     "region": "Frigid Crossroads",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SnowZombie.png/100px-SnowZombie.png?327d5c",
     "description": "3 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -53195,6 +53932,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Snow-Bear",
     "category": "hostile_mobs_beast",
     "region": "Frigid Crossroads",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Snow-Bear.png/100px-Snow-Bear.png?e7a325",
     "description": "2 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -53245,6 +53983,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Soaked Zombie",
     "category": "hostile_mobs_zombie",
     "region": "Apprentice Huts",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SoakedZombie.png/100px-SoakedZombie.png?23c502",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -53289,6 +54028,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Soul Corrupter",
     "category": "hostile_mobs_other",
     "region": "Corrupted River",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SoulCorrupter.png/100px-SoulCorrupter.png?f09d05",
     "description": "2 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -53351,6 +54091,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Soul Singer Harpy",
     "category": "hostile_mobs_beast",
     "region": "Featherfall Cliffs",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SoulSingerHarpy.png/100px-SoulSingerHarpy.png?8904e5",
     "description": "3 ingredient drops across 30 mapped spawn points.",
     "tags": [
       "mob",
@@ -53576,6 +54317,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Sparkling Weird",
     "category": "hostile_mobs_other",
     "region": "Path to Cinfras",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SparklingWeird.png/100px-SparklingWeird.png?bd0188",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -53620,6 +54362,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Spewer",
     "category": "hostile_mobs_other",
     "region": "Paths of Sludge",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Spewer.png/100px-Spewer.png?b7bdbb",
     "description": "3 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -53701,6 +54444,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Spined Devil",
     "category": "hostile_mobs_other",
     "region": "Aerial Descent",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SpinedDevil.png/100px-SpinedDevil.png?daea16",
     "description": "1 ingredient drop across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -53762,6 +54506,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Spinwarp Spider",
     "category": "hostile_mobs_spider",
     "region": "Blooming Boulders",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SpinwarpSpider.png/100px-SpinwarpSpider.png?3718b9",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -53805,6 +54550,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Spirit of the Lost",
     "category": "hostile_mobs_other",
     "region": "Displaced Housing",
+    "iconImage": "",
     "description": "1 ingredient drop across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -53866,6 +54612,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Spitting Zombie",
     "category": "hostile_mobs_zombie",
     "region": "Coastal Trail",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SpittingZombie.png/100px-SpittingZombie.png?38deb9",
     "description": "2 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -53922,6 +54669,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Spooky",
     "category": "hostile_mobs_other",
     "region": "Lexdale",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Spooky.png/100px-Spooky.png?aa94e3",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -53965,6 +54713,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Sporadicavalry",
     "category": "hostile_mobs_other",
     "region": "Time Valley",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Sporadicavalry.png/100px-Sporadicavalry.png?316aa9",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -54026,6 +54775,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Spore Launcher",
     "category": "hostile_mobs_other",
     "region": "Black Road",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SporeLauncher.png/100px-SporeLauncher.png?69df03",
     "description": "1 ingredient drop across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -54087,6 +54837,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Spore Shooter",
     "category": "hostile_mobs_other",
     "region": "Caritat Mansion",
+    "iconImage": "",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -54136,6 +54887,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Squid",
     "category": "hostile_mobs_aquatic",
     "region": "Light Peninsula",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Squid%28Mob%29.png/100px-Squid%28Mob%29.png?7d0035",
     "description": "4 ingredient drops across 23 mapped spawn points.",
     "tags": [
       "mob",
@@ -54374,6 +55126,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Squid Vicious",
     "category": "hostile_mobs_aquatic",
     "region": "Zhight Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SquidVicious.png/100px-SquidVicious.png?1392f8",
     "description": "4 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -54420,6 +55173,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Stackpeak Hawk",
     "category": "hostile_mobs_beast",
     "region": "Xima Valley",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/StackpeakHawk.png/100px-StackpeakHawk.png?ca279f",
     "description": "1 ingredient drop across 13 mapped spawn points.",
     "tags": [
       "mob",
@@ -54559,6 +55313,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Stalker Spider",
     "category": "hostile_mobs_spider",
     "region": "Abandoned Farm",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/StalkerSpider.png/100px-StalkerSpider.png?cd76cc",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -54602,6 +55357,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Steam Weird",
     "category": "hostile_mobs_other",
     "region": "Light Peninsula",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SteamWeird.png/100px-SteamWeird.png?4a7f71",
     "description": "2 ingredient drops across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -54670,6 +55426,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Steppe-Lurker",
     "category": "hostile_mobs_other",
     "region": "Entrance to Almuj",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SteppeLurker.png/100px-SteppeLurker.png?e1ae07",
     "description": "2 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -54732,6 +55489,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Stirge",
     "category": "hostile_mobs_other",
     "region": "Bloody Trail",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Stirge.png/100px-Stirge.png?778a2c",
     "description": "2 ingredient drops across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -54824,6 +55582,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Stone Paladin",
     "category": "hostile_mobs_other",
     "region": "Entamis Village",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/StonePaladin.png/100px-StonePaladin.png?63cb73",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -54867,6 +55626,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Stone Sentinel",
     "category": "hostile_mobs_construct",
     "region": "Cinfras's Small Farm",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/StoneSentinel.png/100px-StoneSentinel.png?cbf9d9",
     "description": "1 ingredient drop across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -54946,6 +55706,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Stone Soldier",
     "category": "hostile_mobs_humanoid",
     "region": "Entamis Village",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/StoneSoldier.png/100px-StoneSoldier.png?524b14",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -54989,6 +55750,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Stonecave Orc Assayer",
     "category": "hostile_mobs_humanoid",
     "region": "Brigand Outpost",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/StonecaveOrcAssayer.png/100px-StonecaveOrcAssayer.png?5824cd",
     "description": "6 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -55043,6 +55805,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Stonecave Orc Metalworker",
     "category": "hostile_mobs_humanoid",
     "region": "Brigand Outpost",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/StonecaveOrcMetalworker.png/100px-StonecaveOrcMetalworker.png?a98991",
     "description": "6 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -55091,6 +55854,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Stonecave Orc Rockwrecker",
     "category": "hostile_mobs_humanoid",
     "region": "Brigand Outpost",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/StonecaveOrcRockwrecker.png/100px-StonecaveOrcRockwrecker.png?387e00",
     "description": "6 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -55139,6 +55903,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Storm Shaker",
     "category": "hostile_mobs_other",
     "region": "Bear Zoo",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/StormShaker.png/100px-StormShaker.png?cc0756",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -55182,6 +55947,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Stormcaller Garrison Commander",
     "category": "hostile_mobs_humanoid",
     "region": "Bloody Beach",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -55225,6 +55991,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Stormscarred Miner",
     "category": "hostile_mobs_other",
     "region": "Ahmsord Outskirts",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/StormscarredMiner%28Melee%29.png/100px-StormscarredMiner%28Melee%29.png?9bfb53",
     "description": "2 ingredient drops across 16 mapped spawn points.",
     "tags": [
       "mob",
@@ -55371,6 +56138,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Straggler",
     "category": "hostile_mobs_other",
     "region": "Viscera Pits",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Straggler.png/100px-Straggler.png?f8756f",
     "description": "2 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -55427,6 +56195,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Streetsweeper",
     "category": "hostile_mobs_other",
     "region": "Industrial Sector",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Streetsweeper.png/100px-Streetsweeper.png?f3db63",
     "description": "1 ingredient drop across 10 mapped spawn points.",
     "tags": [
       "mob",
@@ -55548,6 +56317,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Strong Zombie",
     "category": "hostile_mobs_zombie",
     "region": "Farmers Settlement",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/StrongZombie.png/100px-StrongZombie.png?39b1f7",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -55591,6 +56361,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Sturdy Crab",
     "category": "hostile_mobs_aquatic",
     "region": "Bear Zoo",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SturdyCrab.png/100px-SturdyCrab.png?a88275",
     "description": "4 ingredient drops across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -55667,6 +56438,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Sun Effigy",
     "category": "hostile_mobs_other",
     "region": "Ancient Nemract",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SunEffigy.png/100px-SunEffigy.png?d86ffd",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -55722,6 +56494,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Sunlight Weird",
     "category": "hostile_mobs_other",
     "region": "Gylia Watchtower",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SunlightWeird.png/100px-SunlightWeird.png?2df39a",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -55777,6 +56550,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Sunspark Orc Altarkris",
     "category": "hostile_mobs_humanoid",
     "region": "Sunspark Orc Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SunsparkOrcAltarkris.png/100px-SunsparkOrcAltarkris.png?65b1d0",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -55822,6 +56596,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Sunspark Orc Skyrollicker",
     "category": "hostile_mobs_humanoid",
     "region": "Sunspark Orc Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SunsparkOrcSkyrollicker.png/100px-SunsparkOrcSkyrollicker.png?e3ee36",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -55867,6 +56642,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Sunspark Orc Tomewriter",
     "category": "hostile_mobs_humanoid",
     "region": "Sunspark Orc Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SunsparkOrcTomewriter.png/100px-SunsparkOrcTomewriter.png?1cdea5",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -55912,6 +56688,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Sunstone Ram",
     "category": "hostile_mobs_beast",
     "region": "Maro Peaks",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SunstoneRam.png/100px-SunstoneRam.png?97fd76",
     "description": "5 ingredient drops across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -55995,6 +56772,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Swamp Naga",
     "category": "hostile_mobs_other",
     "region": "Lizardman Lake",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SwampNaga.png/100px-SwampNaga.png?afe7f2",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -56050,6 +56828,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Swamp Ogre",
     "category": "hostile_mobs_other",
     "region": "Lizardman Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SwampOgre.png/100px-SwampOgre.png?47fbe7",
     "description": "2 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -56112,6 +56891,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Sweet Fairy",
     "category": "hostile_mobs_other",
     "region": "Goblin Plains West",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SweetFairy.png/100px-SweetFairy.png?e0bac1",
     "description": "1 ingredient drop across 14 mapped spawn points.",
     "tags": [
       "mob",
@@ -56263,6 +57043,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Sylphid Ghost",
     "category": "hostile_mobs_other",
     "region": "Wybel Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SylphidGhost.png/100px-SylphidGhost.png?4b87d6",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -56308,6 +57089,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Sylphid Servant",
     "category": "hostile_mobs_other",
     "region": "Wybel Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/SylphidServant.png/100px-SylphidServant.png?695101",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -56352,6 +57134,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "T-5lusive Surveillance Camera",
     "category": "hostile_mobs_other",
     "region": "Corkus Sea Cove",
+    "iconImage": "",
     "description": "6 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -56400,6 +57183,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Taga Soihf A Lin",
     "category": "hostile_mobs_other",
     "region": "Fungal Grove",
+    "iconImage": "",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -56449,6 +57233,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Tamed Hyena",
     "category": "hostile_mobs_other",
     "region": "Owl Tribe",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -56492,6 +57277,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Tamed Mustedog",
     "category": "hostile_mobs_other",
     "region": "Aldwell",
+    "iconImage": "",
     "description": "1 ingredient drop across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -56565,6 +57351,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Taskmaster",
     "category": "hostile_mobs_other",
     "region": "Viscera Pits",
+    "iconImage": "",
     "description": "2 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -56621,6 +57408,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Temporal Rift",
     "category": "hostile_mobs_other",
     "region": "Abandoned Farm",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TemporalRift.png/100px-TemporalRift.png?e700a3",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -56665,6 +57453,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Tenebrous Alnamar",
     "category": "hostile_mobs_other",
     "region": "Void Valley",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TenebrousAlnamar.png/100px-TenebrousAlnamar.png?467f3a",
     "description": "4 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -56711,6 +57500,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Tenebrous Infantry",
     "category": "hostile_mobs_other",
     "region": "Gelibord Watermill",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TenebrousInfantry.png/100px-TenebrousInfantry.png?df298f",
     "description": "2 ingredient drops across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -56791,6 +57581,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Terracotta Soldier",
     "category": "hostile_mobs_humanoid",
     "region": "Ancient Excavation",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TerracottaSoldier.png/100px-TerracottaSoldier.png?ec9cd2",
     "description": "1 ingredient drop across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -56876,6 +57667,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Terramite",
     "category": "hostile_mobs_other",
     "region": "Road to Light Forest",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Terramite.png/100px-Terramite.png?9fbb29",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -56919,6 +57711,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Terrified Pig",
     "category": "hostile_mobs_beast",
     "region": "Gylia Lakehouse",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TerrifiedPig.png/100px-TerrifiedPig.png?b3f3a9",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -56962,6 +57755,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "TestMob",
     "category": "hostile_mobs_other",
     "region": "Detlas Suburbs",
+    "iconImage": "",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -57007,6 +57801,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Thawing Ice Zombie",
     "category": "hostile_mobs_zombie",
     "region": "Twain Lake",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ThawingIceZombie.png/100px-ThawingIceZombie.png?e37ade",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -57052,6 +57847,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Thawing Snow Zombie",
     "category": "hostile_mobs_zombie",
     "region": "Twain Lake",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ThawingSnowZombie.png/100px-ThawingSnowZombie.png?32068b",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -57097,6 +57893,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "The Elephelk",
     "category": "hostile_mobs_other",
     "region": "Elefolk Stomping Grounds",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TheElephelk.png/100px-TheElephelk.png?80c147",
     "description": "8 ingredient drops across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -57175,6 +57972,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Thesead Marshal",
     "category": "hostile_mobs_other",
     "region": "Thesead",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TheseadMarshal.png/100px-TheseadMarshal.png?a3bc5a",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -57218,6 +58016,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Thorn Bloom",
     "category": "hostile_mobs_other",
     "region": "Fort Tericen",
+    "iconImage": "",
     "description": "1 ingredient drop across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -57309,6 +58108,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Thunder Grub",
     "category": "hostile_mobs_other",
     "region": "Troms Lake",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ThunderGrub.png/100px-ThunderGrub.png?c4d903",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -57354,6 +58154,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Thunder-Charged Goat",
     "category": "hostile_mobs_beast",
     "region": "Kandon Ridge",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Thunder-ChargedGoat.png/100px-Thunder-ChargedGoat.png?3aff3c",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -57409,6 +58210,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Tidepool Spitter",
     "category": "hostile_mobs_other",
     "region": "Maltic Coast",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TidepoolSpitter.png/100px-TidepoolSpitter.png?a65761",
     "description": "2 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -57471,6 +58273,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Tiderider Squid",
     "category": "hostile_mobs_aquatic",
     "region": "Bear Zoo",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TideriderSquid.png/100px-TideriderSquid.png?a26a8d",
     "description": "2 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -57527,6 +58330,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Time Anomaly",
     "category": "hostile_mobs_other",
     "region": "Abandoned Farm",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TimeAnomaly.png/100px-TimeAnomaly.png?a7e9a2",
     "description": "5 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -57574,6 +58378,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Tinkernook Exhibitioner",
     "category": "hostile_mobs_other",
     "region": "Meteor Crater",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TinkernookExhibitioner.png/100px-TinkernookExhibitioner.png?3654ce",
     "description": "7 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -57622,6 +58427,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Tinkernook Knapper",
     "category": "hostile_mobs_other",
     "region": "Orc Road",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TinkernookKnapper.png/100px-TinkernookKnapper.png?5b3fd9",
     "description": "9 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -57670,6 +58476,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Tinkernook Smelter",
     "category": "hostile_mobs_other",
     "region": "Orc Road",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TinkernookSmelter.png/100px-TinkernookSmelter.png?2e9932",
     "description": "9 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -57718,6 +58525,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Tinkernook Whittler",
     "category": "hostile_mobs_other",
     "region": "Orc Road",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TinkernookWhittler.png/100px-TinkernookWhittler.png?b624ba",
     "description": "9 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -57766,6 +58574,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Tiontaith Beast",
     "category": "hostile_mobs_beast",
     "region": "Mushroom Hill",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TiontaithBeast.png/100px-TiontaithBeast.png?2e3872",
     "description": "2 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -57852,6 +58661,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Tiontaith Hunter",
     "category": "hostile_mobs_humanoid",
     "region": "Mushroom Hill",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TiontaithHunter.png/100px-TiontaithHunter.png?d09006",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -57896,6 +58706,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Titan Salamander",
     "category": "hostile_mobs_other",
     "region": "Fort Hegea",
+    "iconImage": "",
     "description": "1 ingredient drop across 14 mapped spawn points.",
     "tags": [
       "mob",
@@ -58041,6 +58852,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "TNT Minecart",
     "category": "hostile_mobs_other",
     "region": "Abandoned Mines",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TNTMinecart.png/100px-TNTMinecart.png?1f7c25",
     "description": "1 ingredient drop across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -58108,6 +58920,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Tosspot",
     "category": "hostile_mobs_other",
     "region": "Water Processing Sector",
+    "iconImage": "",
     "description": "2 ingredient drops across 10 mapped spawn points.",
     "tags": [
       "mob",
@@ -58230,6 +59043,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Toxxulous Ripper",
     "category": "hostile_mobs_other",
     "region": "Toxic Drip",
+    "iconImage": "",
     "description": "3 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -58281,6 +59095,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Trained Lion Cub",
     "category": "hostile_mobs_other",
     "region": "Lion Lair",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TrainedLionCub%28Lv30%29.png/100px-TrainedLionCub%28Lv30%29.png?dee810",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -58336,6 +59151,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Trash Scarab",
     "category": "hostile_mobs_other",
     "region": "Agricultural Sector",
+    "iconImage": "",
     "description": "1 ingredient drop across 17 mapped spawn points.",
     "tags": [
       "mob",
@@ -58499,6 +59315,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Treant Archer",
     "category": "hostile_mobs_humanoid",
     "region": "Frozen Homestead",
+    "iconImage": "",
     "description": "8 ingredient drops across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -58595,6 +59412,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Treant Basher",
     "category": "hostile_mobs_other",
     "region": "Frozen Homestead",
+    "iconImage": "",
     "description": "8 ingredient drops across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -58691,6 +59509,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Tree Spider",
     "category": "hostile_mobs_spider",
     "region": "Fountain of Youth",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TreeSpider.png/100px-TreeSpider.png?e42146",
     "description": "3 ingredient drops across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -58790,6 +59609,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Tribal Exile",
     "category": "hostile_mobs_other",
     "region": "Sunrise Plateau",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TribalExile%28Lv35%29.png/100px-TribalExile%28Lv35%29.png?3e94af",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -58834,6 +59654,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Troggo The Pigsbane",
     "category": "hostile_mobs_other",
     "region": "Jitak's Farm",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TroggoThePigsbane.png/100px-TroggoThePigsbane.png?9cbc2d",
     "description": "5 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -58881,6 +59702,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Troglodyte Champion",
     "category": "hostile_mobs_other",
     "region": "Pyroclastic Flow",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TroglodyteChampion.png/100px-TroglodyteChampion.png?585a32",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -58926,6 +59748,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Troglodyte Mauler",
     "category": "hostile_mobs_other",
     "region": "Dragonbone Graveyard",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TroglodyteMauler.png/100px-TroglodyteMauler.png?fde359",
     "description": "3 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -58989,6 +59812,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Troglodyte Runt",
     "category": "hostile_mobs_other",
     "region": "Dragonbone Graveyard",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TroglodyteRunt.png/100px-TroglodyteRunt.png?206f81",
     "description": "3 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -59052,6 +59876,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Troglodyte Scourge",
     "category": "hostile_mobs_other",
     "region": "Dragonbone Graveyard",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TroglodyteScourge.png/100px-TroglodyteScourge.png?f4bfbf",
     "description": "3 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -59115,6 +59940,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Troll Brute",
     "category": "hostile_mobs_other",
     "region": "Thesead Suburbs",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TrollBrute.png/100px-TrollBrute.png?916e15",
     "description": "1 ingredient drop across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -59200,6 +60026,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Troll Keeper",
     "category": "hostile_mobs_other",
     "region": "Troll Tower",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -59243,6 +60070,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Troll Splinterbone",
     "category": "hostile_mobs_other",
     "region": "Thesead Suburbs",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TrollSplinterbone.png/100px-TrollSplinterbone.png?365c4d",
     "description": "1 ingredient drop across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -59328,6 +60156,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Tropical Necromancer",
     "category": "hostile_mobs_other",
     "region": "Fountain of Youth",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TropicalNecromancer.png/100px-TropicalNecromancer.png?c70840",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -59371,6 +60200,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Trunkstump Foot Biter",
     "category": "hostile_mobs_other",
     "region": "Trunkstump Goblin Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TrunkstumpFootBiter.png/100px-TrunkstumpFootBiter.png?ba5f33",
     "description": "7 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -59419,6 +60249,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Trunkstump Pebbleflinger",
     "category": "hostile_mobs_other",
     "region": "Trunkstump Goblin Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TrunkstumpPebbleflinger.png/100px-TrunkstumpPebbleflinger.png?3e6b3d",
     "description": "7 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -59467,6 +60298,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Trunkstump Piker",
     "category": "hostile_mobs_other",
     "region": "Meteor Crater",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TrunkstumpPiker.png/100px-TrunkstumpPiker.png?c06088",
     "description": "7 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -59515,6 +60347,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Tumbleweed",
     "category": "hostile_mobs_other",
     "region": "Sunrise Plateau",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Tumbleweed.png/100px-Tumbleweed.png?60811c",
     "description": "5 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -59586,6 +60419,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Tunnel Pigman",
     "category": "hostile_mobs_other",
     "region": "Ragni South Entrance",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TunnelPigman.png/100px-TunnelPigman.png?d996c5",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -59630,6 +60464,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Tunnel Spider",
     "category": "hostile_mobs_spider",
     "region": "Abandoned Mines",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TunnelSpider.png/100px-TunnelSpider.png?351f29",
     "description": "1 ingredient drop across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -59697,6 +60532,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Turtle",
     "category": "hostile_mobs_beast",
     "region": "Mount Wynn Inn",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Turtle.png/100px-Turtle.png?4cd44e",
     "description": "2 ingredient drops across 10 mapped spawn points.",
     "tags": [
       "mob",
@@ -59813,6 +60649,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Twisted Fairy Devourer",
     "category": "hostile_mobs_other",
     "region": "Goblin Plains West",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/TwistedFairyDevourer.png/100px-TwistedFairyDevourer.png?e44aa8",
     "description": "5 ingredient drops across 9 mapped spawn points.",
     "tags": [
       "mob",
@@ -59932,6 +60769,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "U-0ervant Bot",
     "category": "hostile_mobs_other",
     "region": "Relos",
+    "iconImage": "",
     "description": "2 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -60036,6 +60874,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "U-0iner Bot",
     "category": "hostile_mobs_other",
     "region": "Corkus Forest",
+    "iconImage": "",
     "description": "3 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -60117,6 +60956,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "U-0lockBot",
     "category": "hostile_mobs_other",
     "region": "Corkus Forest",
+    "iconImage": "",
     "description": "2 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -60197,6 +61037,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "U-45tabot",
     "category": "hostile_mobs_other",
     "region": "Fallen Factory",
+    "iconImage": "",
     "description": "4 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -60249,6 +61090,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "U-4epaired Bot",
     "category": "hostile_mobs_other",
     "region": "Corkus City Mine",
+    "iconImage": "",
     "description": "2 ingredient drops across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -60323,6 +61165,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ulric",
     "category": "hostile_mobs_other",
     "region": "Wolves' Den",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Ulric.png/100px-Ulric.png?1bcb4a",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -60366,6 +61209,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Umbral Arbalist",
     "category": "hostile_mobs_other",
     "region": "Caritat Mansion",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/UmbralArbalist.png/100px-UmbralArbalist.png?2ab281",
     "description": "3 ingredient drops across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -60459,6 +61303,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Umbral Sentinel",
     "category": "hostile_mobs_construct",
     "region": "Broken Road",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/UmbralSentinel.png/100px-UmbralSentinel.png?132ed8",
     "description": "2 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -60557,6 +61402,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Undead Commander",
     "category": "hostile_mobs_zombie",
     "region": "Ancient Nemract",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/UndeadCommander.png/100px-UndeadCommander.png?a16bf8",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -60601,6 +61447,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Undead Cragsman",
     "category": "hostile_mobs_zombie",
     "region": "Icy Descent",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/UndeadCragsman.png/100px-UndeadCragsman.png?35b7d6",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -60644,6 +61491,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Undead Explorer",
     "category": "hostile_mobs_zombie",
     "region": "Blackstring Den",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/UndeadExplorer.png/100px-UndeadExplorer.png?501715",
     "description": "1 ingredient drop across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -60711,6 +61559,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Undead Miner",
     "category": "hostile_mobs_zombie",
     "region": "Eagle Tribe",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/UndeadMiner%28Level27%29.png/100px-UndeadMiner%28Level27%29.png?ccf26f",
     "description": "2 ingredient drops across 13 mapped spawn points.",
     "tags": [
       "mob",
@@ -60833,6 +61682,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Valley Wanderer",
     "category": "hostile_mobs_other",
     "region": "Tempo Town",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ValleyWanderer.png/100px-ValleyWanderer.png?97c306",
     "description": "3 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -60896,6 +61746,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Vampire Bat",
     "category": "hostile_mobs_beast",
     "region": "Iboju Village",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/VampireBat.png/100px-VampireBat.png?f00fcc",
     "description": "2 ingredient drops across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -60964,6 +61815,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Void Hole?",
     "category": "hostile_mobs_other",
     "region": "Gateway to Nothing",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/VoidHole%28Fake%29.png/100px-VoidHole%28Fake%29.png?4b4c85",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -61009,6 +61861,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Void Soul Roamer",
     "category": "hostile_mobs_other",
     "region": "Void Valley",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/VoidSoulRoamer.png/100px-VoidSoulRoamer.png?f31118",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -61053,6 +61906,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Volcano Sludge",
     "category": "hostile_mobs_aquatic",
     "region": "Volcanic Excavation",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/VolcanoSludge%28Level54%29.png/100px-VolcanoSludge%28Level54%29.png?50f587",
     "description": "3 ingredient drops across 15 mapped spawn points.",
     "tags": [
       "mob",
@@ -61188,6 +62042,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Voltaic Animant",
     "category": "hostile_mobs_other",
     "region": "Cliffside Passage North",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/VoltaicAnimant%28Lv81%29.png/100px-VoltaicAnimant%28Lv81%29.png?3e8ca1",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -61243,6 +62098,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Vortexian Voidgap",
     "category": "hostile_mobs_other",
     "region": "Final Step",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/VortexianVoidgap.png/100px-VortexianVoidgap.png?bb27b6",
     "description": "7 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -61291,6 +62147,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Vulcantern",
     "category": "hostile_mobs_other",
     "region": "Volcanic Excavation",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Vulcantern.png/100px-Vulcantern.png?39c7b3",
     "description": "3 ingredient drops across 12 mapped spawn points.",
     "tags": [
       "mob",
@@ -61408,6 +62265,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Wanderer",
     "category": "hostile_mobs_other",
     "region": "Viscera Pits",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Wanderer.png/100px-Wanderer.png?31ef32",
     "description": "2 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -61464,6 +62322,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Wandering Skeleton",
     "category": "hostile_mobs_skeleton",
     "region": "Entamis Village",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WanderingSkeleton.png/100px-WanderingSkeleton.png?d38a7f",
     "description": "2 ingredient drops across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -61532,6 +62391,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Wannabe Assassin",
     "category": "hostile_mobs_humanoid",
     "region": "Path to the Grootslangs",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WannabeAssassin.png/100px-WannabeAssassin.png?357371",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -61576,6 +62436,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Warden",
     "category": "hostile_mobs_humanoid",
     "region": "Royal Barracks",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Warden.png/100px-Warden.png?377fdb",
     "description": "2 ingredient drops across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -61650,6 +62511,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Warder",
     "category": "hostile_mobs_humanoid",
     "region": "Royal Barracks",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Warder.png/100px-Warder.png?a2bacf",
     "description": "2 ingredient drops across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -61724,6 +62586,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Warg",
     "category": "hostile_mobs_other",
     "region": "Sablestone Orc Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Warg.png/100px-Warg.png?95dca6",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -61769,6 +62632,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Warm Fleris",
     "category": "hostile_mobs_other",
     "region": "Lava Lakes",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WarmFleris%28Mob%29.png/100px-WarmFleris%28Mob%29.png?eb70e3",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -61812,6 +62676,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Wasteful Weird",
     "category": "hostile_mobs_other",
     "region": "Fungal Grove",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WastefulWeird.png/100px-WastefulWeird.png?46057b",
     "description": "6 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -61866,6 +62731,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Watchers",
     "category": "hostile_mobs_other",
     "region": "Sinister Forest",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Watchers.png/100px-Watchers.png?ccbac8",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -61909,6 +62775,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Water Collector",
     "category": "hostile_mobs_other",
     "region": "Industrial Sector",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WaterCollector.png/100px-WaterCollector.png?2cf0db",
     "description": "1 ingredient drop across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -62012,6 +62879,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Water Sprite",
     "category": "hostile_mobs_elemental",
     "region": "Orc Battlegrounds",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WaterSprite.png/100px-WaterSprite.png?98ba0c",
     "description": "1 ingredient drop across 5 mapped spawn points.",
     "tags": [
       "mob",
@@ -62079,6 +62947,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Waterlogged Zombie",
     "category": "hostile_mobs_zombie",
     "region": "Maltic Coast",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WaterloggedZombie.png/100px-WaterloggedZombie.png?c2e2eb",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -62123,6 +62992,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Waterway Bootlegger",
     "category": "hostile_mobs_other",
     "region": "Sablestone Orc Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WaterwayBootlegger.png/100px-WaterwayBootlegger.png?a9fa21",
     "description": "5 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -62170,6 +63040,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Waterway Bucket Brigade",
     "category": "hostile_mobs_other",
     "region": "Sablestone Orc Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WaterwayBucketBrigade.png/100px-WaterwayBucketBrigade.png?cc1320",
     "description": "5 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -62229,6 +63100,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Waterway Fermenter",
     "category": "hostile_mobs_other",
     "region": "Sablestone Orc Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WaterwayFermenter.png/100px-WaterwayFermenter.png?ac9ff8",
     "description": "5 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -62288,6 +63160,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Waterway Moonshiner",
     "category": "hostile_mobs_other",
     "region": "Sablestone Orc Camp",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WaterwayMoonshiner.png/100px-WaterwayMoonshiner.png?5cd99a",
     "description": "5 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -62347,6 +63220,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Watery Sludge",
     "category": "hostile_mobs_aquatic",
     "region": "Olux",
+    "iconImage": "",
     "description": "8 ingredient drops across 11 mapped spawn points.",
     "tags": [
       "mob",
@@ -62455,6 +63329,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Wave Cult Initiate",
     "category": "hostile_mobs_other",
     "region": "Bear Zoo",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WaveCultInitiate.png/100px-WaveCultInitiate.png?389c84",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -62499,6 +63374,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Wave Raiser",
     "category": "hostile_mobs_other",
     "region": "Bear Zoo",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WaveRaiser.png/100px-WaveRaiser.png?c3f641",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -62542,6 +63418,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Wayward Idol",
     "category": "hostile_mobs_construct",
     "region": "Fountain of Youth",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WaywardIdol.png/100px-WaywardIdol.png?c9dd50",
     "description": "3 ingredient drops across 32 mapped spawn points.",
     "tags": [
       "mob",
@@ -62773,6 +63650,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Wayward Vagabond",
     "category": "hostile_mobs_other",
     "region": "Barren Sands",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WaywardVagabond.png/100px-WaywardVagabond.png?cb7e08",
     "description": "9 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -62827,6 +63705,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Weak Zombie",
     "category": "hostile_mobs_zombie",
     "region": "Farmers Settlement",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WeakZombie%28EmeraldTrail%29.png/100px-WeakZombie%28EmeraldTrail%29.png?1d86d4",
     "description": "3 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -62902,6 +63781,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Weather Weird",
     "category": "hostile_mobs_other",
     "region": "Gylia Watchtower",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WeatherWeird.png/100px-WeatherWeird.png?73cde3",
     "description": "7 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -62962,6 +63842,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Werecat",
     "category": "hostile_mobs_other",
     "region": "Ranol's Farm",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Werecat.png/100px-Werecat.png?6914c5",
     "description": "1 ingredient drop across 9 mapped spawn points.",
     "tags": [
       "mob",
@@ -63053,6 +63934,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Werewolf",
     "category": "hostile_mobs_other",
     "region": "Kander Mines",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Werewolf%28Lv70%29.png/100px-Werewolf%28Lv70%29.png?458f18",
     "description": "2 ingredient drops across 11 mapped spawn points.",
     "tags": [
       "mob",
@@ -63163,6 +64045,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Whirl Weird",
     "category": "hostile_mobs_other",
     "region": "Cosmic Fissures",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WhirlWeird.png/100px-WhirlWeird.png?7c6a82",
     "description": "4 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -63263,6 +64146,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Wild Boar",
     "category": "hostile_mobs_beast",
     "region": "Tempo Town",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WildBoar%28LightForest%29.png/100px-WildBoar%28LightForest%29.png?652dea",
     "description": "2 ingredient drops across 21 mapped spawn points.",
     "tags": [
       "mob",
@@ -63439,6 +64323,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Wild Grook",
     "category": "hostile_mobs_other",
     "region": "Unicorn Trail",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WildGrook.png/100px-WildGrook.png?445f4b",
     "description": "2 ingredient drops across 18 mapped spawn points.",
     "tags": [
       "mob",
@@ -63585,6 +64470,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Wild Hound",
     "category": "hostile_mobs_beast",
     "region": "Crater Descent",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WildHound.png/100px-WildHound.png?2581b8",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -63629,6 +64515,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Wild Leopard",
     "category": "hostile_mobs_other",
     "region": "Fountain of Youth",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WildLeopard.png/100px-WildLeopard.png?31b3b8",
     "description": "2 ingredient drops across 32 mapped spawn points.",
     "tags": [
       "mob",
@@ -63859,6 +64746,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Wild Marsufosa",
     "category": "hostile_mobs_other",
     "region": "Relos",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WildMarsufosa.png/100px-WildMarsufosa.png?c12116",
     "description": "1 ingredient drop across 13 mapped spawn points.",
     "tags": [
       "mob",
@@ -63980,6 +64868,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Wild Mooshroom",
     "category": "hostile_mobs_other",
     "region": "Abandoned Mines Entrance",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WildMooshroom%28Lv12%29.png/100px-WildMooshroom%28Lv12%29.png?f822c4",
     "description": "4 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -64050,6 +64939,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Wild Wybel",
     "category": "hostile_mobs_other",
     "region": "Wybel Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WildWybel.png/100px-WildWybel.png?f23dc8",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -64093,6 +64983,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Wildered Miner",
     "category": "hostile_mobs_other",
     "region": "Broken Road",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WilderedMiner.png/100px-WilderedMiner.png?9b4e7f",
     "description": "3 ingredient drops across 8 mapped spawn points.",
     "tags": [
       "mob",
@@ -64192,6 +65083,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Wings Commander",
     "category": "hostile_mobs_humanoid",
     "region": "Wellspring of Eternity",
+    "iconImage": "",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -64237,6 +65129,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Wings Knight",
     "category": "hostile_mobs_humanoid",
     "region": "Citadel's Shadow",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WingsKnight%28Lv125%29.png/100px-WingsKnight%28Lv125%29.png?995b3b",
     "description": "3 ingredient drops across 6 mapped spawn points.",
     "tags": [
       "mob",
@@ -64324,6 +65217,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Wings Sentinel",
     "category": "hostile_mobs_construct",
     "region": "Citadel's Shadow",
+    "iconImage": "",
     "description": "2 ingredient drops across 10 mapped spawn points.",
     "tags": [
       "mob",
@@ -64434,6 +65328,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Wings Suppressor",
     "category": "hostile_mobs_other",
     "region": "Wellspring of Eternity",
+    "iconImage": "",
     "description": "2 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -64484,6 +65379,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Wings Vanguard",
     "category": "hostile_mobs_other",
     "region": "Wellspring of Eternity",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WingsVanguard%28Lv155%29.png/100px-WingsVanguard%28Lv155%29.png?6448b1",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -64528,6 +65424,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Withered Quasinobility",
     "category": "hostile_mobs_other",
     "region": "Almuj Slums",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WitheredQuasinobility.png/100px-WitheredQuasinobility.png?b4c078",
     "description": "5 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -64599,6 +65496,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Wood Sprite",
     "category": "hostile_mobs_elemental",
     "region": "Wood Sprite Hideaway",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -64642,6 +65540,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Woolly Rhino",
     "category": "hostile_mobs_beast",
     "region": "Feuding Houses",
+    "iconImage": "",
     "description": "2 ingredient drops across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -64722,6 +65621,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Wracked Husk",
     "category": "hostile_mobs_other",
     "region": "Rymek",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WrackedHusk.png/100px-WrackedHusk.png?aabe86",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -64765,6 +65665,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Wraith",
     "category": "hostile_mobs_zombie",
     "region": "Fading Forest",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Wraith.png/100px-Wraith.png?5e6bda",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -64814,6 +65715,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Writher",
     "category": "hostile_mobs_other",
     "region": "Viscera Pits",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Writher.png/100px-Writher.png?a124c9",
     "description": "2 ingredient drops across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -64870,6 +65772,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "WW-10avager Automaton",
     "category": "hostile_mobs_construct",
     "region": "Balloon Airbase",
+    "iconImage": "",
     "description": "3 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -64927,6 +65830,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Wynnic Sailor",
     "category": "hostile_mobs_other",
     "region": "Zhight Island",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/WynnicSailor.png/100px-WynnicSailor.png?1c1912",
     "description": "1 ingredient drop across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -64976,6 +65880,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Ximole",
     "category": "hostile_mobs_other",
     "region": "Wellspring of Eternity",
+    "iconImage": "",
     "description": "1 ingredient drop across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -65043,6 +65948,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Yahya Apprentice",
     "category": "hostile_mobs_other",
     "region": "Abandoned Mines Entrance",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/YahyaApprentice.png/100px-YahyaApprentice.png?7a3ee6",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -65110,6 +66016,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Yahya`s Apprentice",
     "category": "hostile_mobs_other",
     "region": "Apprentice Huts",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Yahya%27sApprentice%28Lv55%29.png/100px-Yahya%27sApprentice%28Lv55%29.png?495fd0",
     "description": "4 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -65156,6 +66063,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Yak",
     "category": "hostile_mobs_other",
     "region": "Feuding Houses",
+    "iconImage": "",
     "description": "1 ingredient drop across 7 mapped spawn points.",
     "tags": [
       "mob",
@@ -65265,6 +66173,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Yale Rampager",
     "category": "hostile_mobs_other",
     "region": "Road to Light Forest",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/YaleRampager.png/100px-YaleRampager.png?795c14",
     "description": "3 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -65310,6 +66219,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Yeti",
     "category": "hostile_mobs_other",
     "region": "Frigid Crossroads",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Yeti.png/100px-Yeti.png?e642c4",
     "description": "6 ingredient drops across 2 mapped spawn points.",
     "tags": [
       "mob",
@@ -65364,6 +66274,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Yeti Poacher",
     "category": "hostile_mobs_humanoid",
     "region": "Tower of Ascension",
+    "iconImage": "",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -65407,6 +66318,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Young Avos Soldier",
     "category": "hostile_mobs_humanoid",
     "region": "Ava's Workshop",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/YoungAvosSoldier.png/100px-YoungAvosSoldier.png?5e9703",
     "description": "1 ingredient drop across 9 mapped spawn points.",
     "tags": [
       "mob",
@@ -65510,6 +66422,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Young Forest Spider",
     "category": "hostile_mobs_spider",
     "region": "Nivla Woods",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/YoungForestSpider.png/100px-YoungForestSpider.png?ee6b01",
     "description": "5 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -65557,6 +66470,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Youthful Angel",
     "category": "hostile_mobs_other",
     "region": "Sky Falls",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/YouthfulAngel%28Melee%29.png/100px-YouthfulAngel%28Melee%29.png?b28c8e",
     "description": "1 ingredient drop across 4 mapped spawn points.",
     "tags": [
       "mob",
@@ -65624,6 +66538,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Zombie",
     "category": "hostile_mobs_zombie",
     "region": "Blackstring Den",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/Zombie%28Lv10%29.png/100px-Zombie%28Lv10%29.png?726950",
     "description": "3 ingredient drops across 26 mapped spawn points.",
     "tags": [
       "mob",
@@ -65873,6 +66788,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Zombie Archer",
     "category": "hostile_mobs_zombie",
     "region": "Coastal Trail",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ZombieArcher%28Lv4%29.png/100px-ZombieArcher%28Lv4%29.png?771824",
     "description": "1 ingredient drop across 12 mapped spawn points.",
     "tags": [
       "mob",
@@ -66048,6 +66964,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Zombie Assassin",
     "category": "hostile_mobs_zombie",
     "region": "Farmers Settlement",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ZombieAssassin.png/100px-ZombieAssassin.png?3b5ef8",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -66091,6 +67008,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Zombie Berserker",
     "category": "hostile_mobs_zombie",
     "region": "Tempo Town",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ZombieBerserker.png/100px-ZombieBerserker.png?3b395c",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -66135,6 +67053,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Zombie Fisher",
     "category": "hostile_mobs_zombie",
     "region": "Razed Inn",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ZombieFisher.png/100px-ZombieFisher.png?985365",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -66178,6 +67097,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Zombie Grook",
     "category": "hostile_mobs_zombie",
     "region": "Farmers Settlement",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ZombieGrook.png/100px-ZombieGrook.png?866cb1",
     "description": "1 ingredient drop across 3 mapped spawn points.",
     "tags": [
       "mob",
@@ -66239,6 +67159,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Zombie Militia",
     "category": "hostile_mobs_zombie",
     "region": "Ragni",
+    "iconImage": "",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -66283,6 +67204,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Zombie Miner",
     "category": "hostile_mobs_zombie",
     "region": "Road to Elkurn",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ZombieMiner.png/100px-ZombieMiner.png?76fa6d",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -66326,6 +67248,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Zombie Pigman",
     "category": "hostile_mobs_zombie",
     "region": "Emerald Trail",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ZombiePigman.png/100px-ZombiePigman.png?c42b28",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -66370,6 +67293,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Zombie Soldier",
     "category": "hostile_mobs_zombie",
     "region": "Tempo Town",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ZombieSoldier.png/100px-ZombieSoldier.png?aa0add",
     "description": "2 ingredient drops across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -66414,6 +67338,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Zombified Guard",
     "category": "hostile_mobs_humanoid",
     "region": "Akias Ruins",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ZombifiedGuard.png/100px-ZombifiedGuard.png?bc6395",
     "description": "1 ingredient drop across 1 mapped spawn point.",
     "tags": [
       "mob",
@@ -66457,6 +67382,7 @@ export const GENERATED_MOB_MARKERS =
     "title": "Zombified Sheep",
     "category": "hostile_mobs_other",
     "region": "Corrupted Warfront",
+    "iconImage": "https://wynncraft.wiki.gg/images/thumb/ZombifiedSheep.png/100px-ZombifiedSheep.png?958758",
     "description": "1 ingredient drop across 5 mapped spawn points.",
     "tags": [
       "mob",

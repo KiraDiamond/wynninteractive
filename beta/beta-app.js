@@ -1,7 +1,8 @@
-import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260518f";
-import { WIKI_MAP_MARKERS } from "../data/wiki-map-markers.js?v=20260518f";
-import { MARKER_CONTENT } from "./data/marker-content.js?v=20260518f";
-import { REFERENCE_IMAGE_URLS } from "../data/reference-images.js?v=20260518f";
+import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260518g";
+import { WIKI_MAP_MARKERS } from "../data/wiki-map-markers.js?v=20260518g";
+import { MARKER_CONTENT } from "./data/marker-content.js?v=20260518g";
+import { MOB_ICON_URLS } from "../data/mob-icon-urls.js?v=20260518g";
+import { REFERENCE_IMAGE_URLS } from "../data/reference-images.js?v=20260518g";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
@@ -498,6 +499,9 @@ function extractGoogleDriveId(url) {
 }
 
 function resolveImageUrl(url) {
+  if (MOB_ICON_URLS[url]) {
+    return MOB_ICON_URLS[url];
+  }
   if (REFERENCE_IMAGE_URLS[url]) {
     return REFERENCE_IMAGE_URLS[url];
   }
@@ -867,6 +871,13 @@ function categoryAssetUrl(categoryId, variant = "active") {
   return `${CONTENT_BOOK_ROOT}/${icon}_${variant}.png`;
 }
 
+function markerIconUrl(marker, variant = "active") {
+  if (marker?.iconImage && MOB_ICON_URLS[marker.iconImage]) {
+    return MOB_ICON_URLS[marker.iconImage];
+  }
+  return categoryAssetUrl(marker?.category, variant);
+}
+
 function genericIconMarkup(categoryId, extraClass = "") {
   const meta = CATEGORY_META[categoryId];
   return `<span class="generic-category-icon ${extraClass}" style="--category-accent:${meta.color};"></span>`;
@@ -1125,8 +1136,11 @@ function buildMarkerIcon(marker, isFound, isSelected) {
   }
 
   const variant = isFound ? "locked" : "active";
-  const iconUrl = categoryAssetUrl(marker.category, variant);
+  const iconUrl = markerIconUrl(marker, variant);
   const classes = ["asset-pin"];
+  if (marker.iconImage && iconUrl) {
+    classes.push("mob-pin");
+  }
   if (isFound) {
     classes.push("found");
   }
@@ -1306,12 +1320,18 @@ function renderCategoryFilters() {
                     marker.region || "World",
                     `${marker.spawnPointCount || 0} ${marker.spawnPointCount === 1 ? "node" : "nodes"}`,
                   ].join(" · ");
+                  const mobIconUrl = markerIconUrl(marker, "active");
                   return `
                     <button
                       type="button"
                       class="mob-list-item ${selected ? "active" : ""}"
                       data-mob-marker="${marker.id}"
                     >
+                      <span class="mob-list-icon-shell">
+                        ${mobIconUrl
+                          ? `<img class="mob-list-icon" src="${escapeAttribute(mobIconUrl)}" alt="" loading="lazy" referrerpolicy="no-referrer">`
+                          : genericIconMarkup(marker.category, "mob-list-icon generic-category-icon")}
+                      </span>
                       <span class="mob-list-copy">
                         <strong>${escapeHtml(marker.title)}</strong>
                         <span>${escapeHtml(secondary)}</span>
@@ -1484,11 +1504,11 @@ function renderDetailCard() {
   const isFound = markerIsFound(marker);
   const supportsFound = markerSupportsFound(marker);
   const meta = CATEGORY_META[marker.category];
-  const iconUrl = marker.fixed ? CITY_ICON_URL : categoryAssetUrl(marker.category, isFound ? "locked" : "active");
+  const iconUrl = marker.fixed ? CITY_ICON_URL : markerIconUrl(marker, isFound ? "locked" : "active");
   const detailIcon = marker.fixed
     ? `<span class="detail-icon city" style="--detail-icon:url('${iconUrl}');"></span>`
     : (iconUrl
-      ? `<span class="detail-icon" style="--detail-icon:url('${iconUrl}');--detail-accent:${meta.color};"></span>`
+      ? `<span class="detail-icon ${marker.iconImage ? "mob-detail-icon" : ""}" style="--detail-icon:url('${iconUrl}');--detail-accent:${meta.color};"></span>`
       : genericIconMarkup(marker.category, "detail-icon generic-detail-icon"));
   const content = contentExportEntry(marker);
   const authoredContent = markerContentAuthorEntry(marker.id);

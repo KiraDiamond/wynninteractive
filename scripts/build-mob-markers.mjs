@@ -11,6 +11,7 @@ const TERRITORY_URL = "https://api.wynncraft.com/v3/guild/list/territory";
 const OUTPUT_ROOT = path.join(ROOT, "data", "wiki-scrape", "mob-drops");
 const ITEM_SNAPSHOT_PATH = path.join(OUTPUT_ROOT, "items.json");
 const TERRITORY_SNAPSHOT_PATH = path.join(OUTPUT_ROOT, "territories.json");
+const MOB_PAGES_PATH = path.join(ROOT, "data", "wiki-scrape", "mob-areas", "mob-pages.json");
 const SUMMARY_PATH = path.join(OUTPUT_ROOT, "summary.md");
 const MARKERS_OUTPUT_PATH = path.join(ROOT, "data", "generated-mob-markers.js");
 const CONTENT_OUTPUT_PATH = path.join(ROOT, "data", "generated-mob-content.js");
@@ -46,6 +47,13 @@ function titleKey(value) {
 
 function slugify(value) {
   return titleKey(value).replace(/\s+/g, "-");
+}
+
+function simplifiedMobKey(value) {
+  return titleKey(value)
+    .replace(/\blv\s*\d+\b/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function dedupe(values) {
@@ -223,6 +231,50 @@ async function writeJson(filePath, value) {
   await fs.writeFile(filePath, JSON.stringify(value, null, 2) + "\n", "utf8");
 }
 
+function buildMobImageIndex(mobPages) {
+  const exact = new Map();
+  const simplified = new Map();
+
+  function remember(map, key, image) {
+    if (!key || !image) {
+      return;
+    }
+    if (!map.has(key)) {
+      map.set(key, new Map());
+    }
+    const counts = map.get(key);
+    counts.set(image, (counts.get(image) || 0) + 1);
+  }
+
+  for (const page of mobPages) {
+    for (const section of page.sections || []) {
+      for (const mob of section.mobs || []) {
+        const image = normalizeWhitespace(mob.image);
+        const name = normalizeWhitespace(stripFormattingCodes(mob.name));
+        if (!image || !name) {
+          continue;
+        }
+        remember(exact, titleKey(name), image);
+        remember(simplified, simplifiedMobKey(name), image);
+      }
+    }
+  }
+
+  function bestImage(counts) {
+    if (!counts) {
+      return "";
+    }
+    return [...counts.entries()]
+      .sort((left, right) => right[1] - left[1] || left[0].localeCompare(right[0]))[0]?.[0] || "";
+  }
+
+  return {
+    resolve(name) {
+      return bestImage(exact.get(titleKey(name))) || bestImage(simplified.get(simplifiedMobKey(name))) || "";
+    },
+  };
+}
+
 async function fetchJsonWithCache(url, cachePath) {
   try {
     const response = await fetch(url);
@@ -342,7 +394,7 @@ function buildMobMap(items) {
     .sort((left, right) => left.name.localeCompare(right.name));
 }
 
-function buildMarkerEntry(mob, territoryIndex) {
+function buildMarkerEntry(mob, territoryIndex, mobImageIndex) {
   if (!mob.points.length) {
     return null;
   }
@@ -363,6 +415,7 @@ function buildMarkerEntry(mob, territoryIndex) {
     title: mob.name,
     category: classifyMobFamily(mob.name),
     region,
+    iconImage: mobImageIndex.resolve(mob.name),
     description: `${mob.ingredients.length} ingredient drop${mob.ingredients.length === 1 ? "" : "s"} across ${mob.points.length} mapped spawn point${mob.points.length === 1 ? "" : "s"}.`,
     tags: dedupe(["mob", "ingredient drops", region, ...mob.ingredients.slice(0, 6)]),
     position: { world: position },
@@ -401,7 +454,7 @@ function buildContentEntry(mob, marker) {
     {
       summary: `${mob.name} drops ${mob.ingredients.length} ingredient${mob.ingredients.length === 1 ? "" : "s"} across ${mob.points.length} mapped spawn point${mob.points.length === 1 ? "" : "s"}.`,
       explanation,
-      coverImage: "",
+      coverImage: marker.iconImage || "",
       gallery: [],
       sourceUrl,
       tutorials: [],
@@ -461,14 +514,16 @@ async function main() {
 
   const items = await fetchJsonWithCache(ITEM_DATABASE_URL, ITEM_SNAPSHOT_PATH);
   const territoryData = await fetchJsonWithCache(TERRITORY_URL, TERRITORY_SNAPSHOT_PATH);
+  const mobPages = await readJson(MOB_PAGES_PATH, []);
   const territoryIndex = buildTerritoryIndex(territoryData);
+  const mobImageIndex = buildMobImageIndex(mobPages);
 
   const mobs = buildMobMap(items);
   const markers = [];
   const contentEntries = [];
 
   for (const mob of mobs) {
-    const marker = buildMarkerEntry(mob, territoryIndex);
+    const marker = buildMarkerEntry(mob, territoryIndex, mobImageIndex);
     if (!marker) {
       continue;
     }
