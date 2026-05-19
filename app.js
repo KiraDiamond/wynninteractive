@@ -1684,7 +1684,10 @@ function renderCategoryFilters() {
                 </div>
                 ${state.trackedIngredient ? `
                   <div class="mob-tracking-strip">
-                    <span>Tracking ${escapeHtml(state.trackedIngredient)}</span>
+                    <div class="mob-tracking-copy">
+                      <span>Tracking ${escapeHtml(state.trackedIngredient)}</span>
+                      <small>Clear the search bar to reveal all markers.</small>
+                    </div>
                     <button type="button" class="text-action" data-clear-ingredient-tracking="1">Cancel tracking</button>
                   </div>
                 ` : ""}

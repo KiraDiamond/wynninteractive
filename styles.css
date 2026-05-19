@@ -725,6 +725,18 @@ input {
   color: #36506c;
 }
 
+.mob-tracking-copy {
+  min-width: 0;
+  display: grid;
+  gap: 2px;
+}
+
+.mob-tracking-copy small {
+  font-size: 0.74rem;
+  line-height: 1.35;
+  color: #58708d;
+}
+
 .mob-browser-list {
   display: grid;
   gap: 8px;
@@ -1906,6 +1918,10 @@ input {
 
 :root[data-theme="dark"] .mob-tracking-strip span {
   color: #dce8f6;
+}
+
+:root[data-theme="dark"] .mob-tracking-copy small {
+  color: #95a9c0;
 }
 
 :root[data-theme="dark"] .mob-browser-copy strong,
