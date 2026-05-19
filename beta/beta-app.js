@@ -1630,7 +1630,8 @@ function markerIsVisible(marker) {
 
 function buildMarkerIcon(marker, isFound, isSelected) {
   const meta = CATEGORY_META[marker.category];
-  const pinSize = MAP_PIN_SIZE;
+  const isTravelMarker = marker.category === "fast_travel" || marker.category === "seaskipper";
+  const pinSize = isTravelMarker ? MAP_PIN_SIZE * 2 : MAP_PIN_SIZE;
   const artSize = pinSize;
   if (marker.fixed) {
     if (state.areaOffsetMode) {
