@@ -12,6 +12,7 @@
     "build:quest-video-links": "node scripts/build-quest-video-links.mjs",
     "build:supplemental-content": "node scripts/build-supplemental-marker-content.mjs",
     "build:fast-travel": "node scripts/build-fast-travel-markers.mjs",
+    "build:seaskippers": "node scripts/build-seaskipper-markers.mjs",
     "build:profession-spots": "node scripts/build-profession-spots.mjs",
     "build:reference-images": "node scripts/build-reference-images.mjs",
     "build:mob-areas": "node scripts/build-mob-areas.mjs",

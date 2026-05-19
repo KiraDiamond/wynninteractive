@@ -1,6 +1,6 @@
-import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260519c";
+import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260519d";
 import { WIKI_MAP_MARKERS } from "../data/wiki-map-markers.js?v=20260518j";
-import { MARKER_CONTENT } from "./data/marker-content.js?v=20260519b";
+import { MARKER_CONTENT } from "./data/marker-content.js?v=20260519d";
 import { MOB_ICON_URLS } from "../data/mob-icon-urls.js?v=20260518j";
 import { REFERENCE_IMAGE_URLS } from "../data/reference-images.js?v=20260518j";
 
@@ -103,7 +103,7 @@ const CATEGORY_GROUPS = [
   {
     id: "activities",
     label: "Activities",
-    categories: ["fast_travel", "caves", "dungeon", "raid", "boss_altar", "lootrun_camp"],
+    categories: ["fast_travel", "seaskipper", "caves", "dungeon", "raid", "boss_altar", "lootrun_camp"],
   },
   {
     id: "professions",
@@ -119,6 +119,7 @@ const CATEGORY_GROUPS = [
 const PASSIVE_CATEGORIES = new Set([
   ...MOB_CATEGORY_IDS,
   "fast_travel",
+  "seaskipper",
   "profession_fishing",
   "profession_farming",
   "profession_mining",
@@ -1558,6 +1559,7 @@ function markerIsVisible(marker) {
 
 function buildMarkerIcon(marker, isFound, isSelected) {
   const meta = CATEGORY_META[marker.category];
+  const pinSize = marker.category === "fast_travel" ? Math.round(MAP_PIN_SIZE / 2) : MAP_PIN_SIZE;
   if (marker.fixed) {
     if (state.areaOffsetMode) {
       return L.divIcon({
@@ -1595,8 +1597,8 @@ function buildMarkerIcon(marker, isFound, isSelected) {
   return L.divIcon({
     className: "map-pin-wrapper",
     html: `<span class="asset-pin-shell">${iconMarkup}</span>`,
-    iconSize: [MAP_PIN_SIZE, MAP_PIN_SIZE],
-    iconAnchor: [MAP_PIN_SIZE / 2, MAP_PIN_SIZE / 2],
+    iconSize: [pinSize, pinSize],
+    iconAnchor: [pinSize / 2, pinSize / 2],
   });
 }
 

@@ -1,6 +1,7 @@
 import { GENERATED_QUEST_MARKER_CONTENT } from "./generated-quest-marker-content.js?v=20260517ac";
 import { GENERATED_QUEST_VIDEO_LINKS } from "./generated-quest-video-links.js?v=20260518x";
 import { GENERATED_FAST_TRAVEL_CONTENT } from "./generated-fast-travel-content.js?v=20260519b";
+import { GENERATED_SEASKIPPER_CONTENT } from "./generated-seaskipper-content.js?v=20260519d";
 import { GENERATED_PROFESSION_MARKER_CONTENT } from "./generated-profession-marker-content.js?v=20260518u";
 import { GENERATED_SUPPLEMENTAL_MARKER_CONTENT } from "./generated-supplemental-marker-content.js?v=20260517ac";
 import { GENERATED_MOB_CONTENT } from "./generated-mob-content.js?v=20260518i";
@@ -8,6 +9,7 @@ import { GENERATED_MOB_CONTENT } from "./generated-mob-content.js?v=20260518i";
 const BASE_MARKER_CONTENT = {
   ...GENERATED_QUEST_MARKER_CONTENT,
   ...GENERATED_FAST_TRAVEL_CONTENT,
+  ...GENERATED_SEASKIPPER_CONTENT,
   ...GENERATED_PROFESSION_MARKER_CONTENT,
   ...GENERATED_SUPPLEMENTAL_MARKER_CONTENT,
   ...GENERATED_MOB_CONTENT,

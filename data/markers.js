@@ -1,5 +1,6 @@
 import { WORLD_EVENT_MARKERS } from "./world-events.js";
 import { GENERATED_FAST_TRAVEL_MARKERS } from "./generated-fast-travel-markers.js?v=20260519b";
+import { GENERATED_SEASKIPPER_MARKERS } from "./generated-seaskipper-markers.js?v=20260519d";
 import { GENERATED_PROFESSION_MARKERS } from "./generated-profession-markers.js?v=20260518u";
 import { GENERATED_MOB_MARKERS } from "./generated-mob-markers.js?v=20260518i";
 
@@ -32,6 +33,7 @@ export const CATEGORY_META = {
   mini_quests: { label: "Mini Quests", color: "#8dca6b", selectable: true, icon: "mini_quest" },
   world_events: { label: "World Events", color: "#f3b35f", selectable: true, icon: "world_event" },
   fast_travel: { label: "Fast Travel", color: "#56a9c8", selectable: true, icon: "fast_travel" },
+  seaskipper: { label: "Seaskippers", color: "#6e635c", selectable: true, icon: "seaskipper" },
   secret_discovery: { label: "Secret Discovery", color: "#c77af4", selectable: true, icon: "discovery" },
   world_discovery: { label: "World Discovery", color: "#59c7c7", selectable: true, icon: "discovery" },
   territorial_discovery: { label: "Territorial Discovery", color: "#e96e7f", selectable: true, icon: "discovery" },
@@ -53,6 +55,7 @@ export const CATEGORY_ORDER = [
   "mini_quests",
   "world_events",
   "fast_travel",
+  "seaskipper",
   ...MOB_CATEGORY_ORDER,
   "secret_discovery",
   "world_discovery",
@@ -554,6 +557,7 @@ const QIRA_HIVE_CONTEXT_MARKERS = [
 export const CURATED_MARKERS = [
   ...WORLD_EVENT_MARKERS,
   ...GENERATED_FAST_TRAVEL_MARKERS,
+  ...GENERATED_SEASKIPPER_MARKERS,
   ...GENERATED_PROFESSION_MARKERS,
   ...GENERATED_MOB_MARKERS,
   ...QIRA_HIVE_CONTEXT_MARKERS,
