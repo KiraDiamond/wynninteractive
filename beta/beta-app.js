@@ -1562,6 +1562,9 @@ function buildMarkerIcon(marker, isFound, isSelected) {
   const pinSize = marker.category === "fast_travel"
     ? Math.round(MAP_PIN_SIZE / 4)
     : (marker.category === "seaskipper" ? Math.round(MAP_PIN_SIZE / 2) : MAP_PIN_SIZE);
+  const artSize = marker.category === "fast_travel"
+    ? Math.max(9, Math.round(pinSize * 0.625))
+    : (marker.category === "seaskipper" ? Math.max(7, Math.round(pinSize / 2)) : pinSize);
   if (marker.fixed) {
     if (state.areaOffsetMode) {
       return L.divIcon({
@@ -1593,8 +1596,8 @@ function buildMarkerIcon(marker, isFound, isSelected) {
   }
 
   const iconMarkup = iconUrl
-    ? `<img class="${classes.join(" ")}" src="${iconUrl}" alt="" draggable="false" style="--pin-glow:${meta.color};width:${pinSize}px;height:${pinSize}px;">`
-    : `<span class="generic-pin ${classes.join(" ")}" style="--pin-glow:${meta.color};--pin-fill:${meta.color};width:${pinSize}px;height:${pinSize}px;"></span>`;
+    ? `<img class="${classes.join(" ")}" src="${iconUrl}" alt="" draggable="false" style="--pin-glow:${meta.color};width:${artSize}px;height:${artSize}px;">`
+    : `<span class="generic-pin ${classes.join(" ")}" style="--pin-glow:${meta.color};--pin-fill:${meta.color};width:${artSize}px;height:${artSize}px;"></span>`;
 
   return L.divIcon({
     className: "map-pin-wrapper",
