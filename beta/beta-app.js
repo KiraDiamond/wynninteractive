@@ -1559,7 +1559,9 @@ function markerIsVisible(marker) {
 
 function buildMarkerIcon(marker, isFound, isSelected) {
   const meta = CATEGORY_META[marker.category];
-  const pinSize = marker.category === "fast_travel" ? Math.round(MAP_PIN_SIZE / 2) : MAP_PIN_SIZE;
+  const pinSize = marker.category === "fast_travel"
+    ? Math.round(MAP_PIN_SIZE / 4)
+    : (marker.category === "seaskipper" ? Math.round(MAP_PIN_SIZE / 2) : MAP_PIN_SIZE);
   if (marker.fixed) {
     if (state.areaOffsetMode) {
       return L.divIcon({
