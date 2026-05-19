@@ -2287,6 +2287,21 @@ function renderPanelBanner() {
   elements.panelBanner.textContent = "Routes, rewards, discoveries, profession spots, and exact mob markers.";
 }
 
+function renderSearchButton() {
+  if (!elements.clearSearch) {
+    return;
+  }
+  const hasText = Boolean(state.search);
+  elements.clearSearch.setAttribute("aria-label", hasText ? "Clear search" : "Search");
+  elements.clearSearch.innerHTML = hasText
+    ? `<span class="icon-button-glyph">×</span>`
+    : `
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M10.5 4a6.5 6.5 0 0 1 5.2 10.4l4 4-1.4 1.4-4-4A6.5 6.5 0 1 1 10.5 4Zm0 2a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9Z"/>
+      </svg>
+    `;
+}
+
 function renderCalibrationPanel() {
   if (!elements.calibrationPanel) {
     return;
@@ -2670,6 +2685,7 @@ function bindEvents() {
 
   elements.searchInput.addEventListener("input", (event) => {
     state.search = event.target.value.trim().toLowerCase();
+    renderSearchButton();
     syncVisibleMarkers();
     renderCategoryFilters();
   });
@@ -2682,6 +2698,7 @@ function bindEvents() {
       state.ingredientNoteDismissed = false;
       state.activeMobFamily = null;
     }
+    renderSearchButton();
     syncVisibleMarkers();
     renderCategoryFilters();
     renderPanelBanner();
@@ -2852,6 +2869,7 @@ setPanelCollapsed(state.panelCollapsed);
 setPanelView("markers");
 updateMapSelector();
 renderPanelBanner();
+renderSearchButton();
 updatePinScale();
 renderCalibrationMarkers();
 syncVisibleMarkers();

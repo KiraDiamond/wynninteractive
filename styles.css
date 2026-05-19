@@ -465,6 +465,16 @@ input {
   fill: currentColor;
 }
 
+.icon-button-glyph {
+  display: grid;
+  place-items: center;
+  width: 19px;
+  height: 19px;
+  font-size: 1.2rem;
+  line-height: 1;
+  font-weight: 500;
+}
+
 .panel-controls {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
