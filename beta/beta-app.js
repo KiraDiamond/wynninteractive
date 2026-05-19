@@ -168,6 +168,7 @@ const state = {
   panelView: "markers",
   activeMobFamily: null,
   trackedIngredient: "",
+  ingredientNoteDismissed: false,
   currentArea: "wynn",
   mapSelectorOpen: false,
   areaOffsets: loadAreaOffsets(),
@@ -1868,7 +1869,6 @@ function renderCategoryFilters() {
                   <div class="mob-tracking-strip">
                     <div class="mob-tracking-copy">
                       <span>Tracking ${escapeHtml(state.trackedIngredient)}</span>
-                      <small>Clear the search bar to reveal all markers.</small>
                     </div>
                     <button type="button" class="text-action" data-clear-ingredient-tracking="1">Cancel tracking</button>
                   </div>
@@ -2269,11 +2269,21 @@ function renderPanelBanner() {
   if (!elements.panelBanner) {
     return;
   }
+  if (state.trackedIngredient && !state.ingredientNoteDismissed) {
+    elements.panelBanner.classList.add("panel-banner-info");
+    elements.panelBanner.innerHTML = `
+      <span>Clear the search bar to reveal all markers.</span>
+      <button type="button" class="panel-banner-close" data-dismiss-ingredient-note="1" aria-label="Dismiss tracking note">×</button>
+    `;
+    return;
+  }
   if (state.areaOffsetMode) {
+    elements.panelBanner.classList.add("panel-banner-info");
     const offset = areaOffset(state.currentArea);
     elements.panelBanner.textContent = `Offset edit is on for ${MAP_AREAS[state.currentArea].buttonLabel}. Drag any visible marker to shift this area only. Ctrl+X exits. Current offset: ${offset.x}, ${offset.y}.`;
     return;
   }
+  elements.panelBanner.classList.remove("panel-banner-info");
   elements.panelBanner.textContent = "Routes, rewards, discoveries, profession spots, and exact mob markers.";
 }
 
@@ -2596,6 +2606,17 @@ function bindEvents() {
     });
   }
 
+  if (elements.panelBanner) {
+    elements.panelBanner.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-dismiss-ingredient-note]");
+      if (!button) {
+        return;
+      }
+      state.ingredientNoteDismissed = true;
+      renderPanelBanner();
+    });
+  }
+
   document.addEventListener("click", (event) => {
     if (!state.mapSelectorOpen) {
       return;
@@ -2656,8 +2677,14 @@ function bindEvents() {
   elements.clearSearch.addEventListener("click", () => {
     elements.searchInput.value = "";
     state.search = "";
+    if (state.trackedIngredient) {
+      state.trackedIngredient = "";
+      state.ingredientNoteDismissed = false;
+      state.activeMobFamily = null;
+    }
     syncVisibleMarkers();
     renderCategoryFilters();
+    renderPanelBanner();
   });
 
   elements.hideFoundToggle.addEventListener("change", (event) => {

@@ -167,6 +167,7 @@ const state = {
   panelView: "markers",
   activeMobFamily: null,
   trackedIngredient: "",
+  ingredientNoteDismissed: false,
   currentArea: "wynn",
   mapSelectorOpen: false,
 };
@@ -177,6 +178,7 @@ const elements = {
   panelToggle: document.querySelector("#panel-toggle"),
   panelTabs: document.querySelectorAll("[data-panel-view]"),
   panelViews: document.querySelectorAll("[data-panel-screen]"),
+  panelBanner: document.querySelector(".panel-banner"),
   mapSelector: document.querySelector(".map-selector"),
   mapSelectorLabel: document.querySelector(".map-selector span"),
   mapSelectorMenu: document.querySelector(".map-selector-menu"),
@@ -254,6 +256,24 @@ function renderAppearanceCard() {
       applyTheme(button.dataset.themeOption);
     });
   });
+}
+
+function renderPanelBanner() {
+  if (!elements.panelBanner) {
+    return;
+  }
+
+  if (state.trackedIngredient && !state.ingredientNoteDismissed) {
+    elements.panelBanner.classList.add("panel-banner-info");
+    elements.panelBanner.innerHTML = `
+      <span>Clear the search bar to reveal all markers.</span>
+      <button type="button" class="panel-banner-close" data-dismiss-ingredient-note="1" aria-label="Dismiss tracking note">×</button>
+    `;
+    return;
+  }
+
+  elements.panelBanner.classList.remove("panel-banner-info");
+  elements.panelBanner.textContent = "Routes, rewards, discoveries, profession spots, and mobs.";
 }
 
 function applyTheme(theme, { persist = true } = {}) {
@@ -1405,6 +1425,7 @@ function focusIngredientMobs(ingredientName) {
   }
 
   state.trackedIngredient = ingredientName;
+  state.ingredientNoteDismissed = false;
   state.search = String(ingredientName || "").trim().toLowerCase();
   if (elements.searchInput) {
     elements.searchInput.value = ingredientName;
@@ -1414,6 +1435,7 @@ function focusIngredientMobs(ingredientName) {
   setPanelCollapsed(false);
   syncVisibleMarkers();
   renderCategoryFilters();
+  renderPanelBanner();
   setSelectedMarker(matches[0].id);
   setPanelView("markers");
   return true;
@@ -1422,6 +1444,7 @@ function focusIngredientMobs(ingredientName) {
 function clearIngredientTracking() {
   const selected = state.markers.find((marker) => marker.id === state.selectedMarkerId);
   state.trackedIngredient = "";
+  state.ingredientNoteDismissed = false;
   state.search = "";
   state.activeMobFamily = null;
   if (elements.searchInput) {
@@ -1432,6 +1455,7 @@ function clearIngredientTracking() {
   }
   syncVisibleMarkers();
   renderCategoryFilters();
+  renderPanelBanner();
   renderDetailCard();
   renderActiveAreaHighlight();
   setPanelView("markers");
@@ -1686,7 +1710,6 @@ function renderCategoryFilters() {
                   <div class="mob-tracking-strip">
                     <div class="mob-tracking-copy">
                       <span>Tracking ${escapeHtml(state.trackedIngredient)}</span>
-                      <small>Clear the search bar to reveal all markers.</small>
                     </div>
                     <button type="button" class="text-action" data-clear-ingredient-tracking="1">Cancel tracking</button>
                   </div>
@@ -2387,6 +2410,17 @@ function bindEvents() {
     });
   }
 
+  if (elements.panelBanner) {
+    elements.panelBanner.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-dismiss-ingredient-note]");
+      if (!button) {
+        return;
+      }
+      state.ingredientNoteDismissed = true;
+      renderPanelBanner();
+    });
+  }
+
   document.addEventListener("click", (event) => {
     if (!state.mapSelectorOpen) {
       return;
@@ -2412,8 +2446,14 @@ function bindEvents() {
   elements.clearSearch.addEventListener("click", () => {
     elements.searchInput.value = "";
     state.search = "";
+    if (state.trackedIngredient) {
+      state.trackedIngredient = "";
+      state.ingredientNoteDismissed = false;
+      state.activeMobFamily = null;
+    }
     syncVisibleMarkers();
     renderCategoryFilters();
+    renderPanelBanner();
   });
 
   elements.hideFoundToggle.addEventListener("change", (event) => {
@@ -2579,6 +2619,7 @@ state.cityTransform = USE_CITY_EDITS ? computeCityEditTransform() : null;
 bindEvents();
 setPanelCollapsed(state.panelCollapsed);
 setPanelView("markers");
+renderPanelBanner();
 updateMapSelector();
 updatePinScale();
 renderCalibrationMarkers();

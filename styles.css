@@ -281,7 +281,30 @@ input {
 }
 
 .panel-banner-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
   color: #56667a;
+}
+
+.panel-banner-close {
+  flex: 0 0 auto;
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(82, 102, 122, 0.12);
+  color: inherit;
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.panel-banner-close:hover {
+  background: rgba(82, 102, 122, 0.2);
 }
 
 .panel-toolbar {
@@ -1835,6 +1858,14 @@ input {
 
 :root[data-theme="dark"] .panel-banner-info {
   color: #90a2b8;
+}
+
+:root[data-theme="dark"] .panel-banner-close {
+  background: rgba(159, 178, 199, 0.12);
+}
+
+:root[data-theme="dark"] .panel-banner-close:hover {
+  background: rgba(159, 178, 199, 0.2);
 }
 
 :root[data-theme="dark"] .map-selector:hover,
