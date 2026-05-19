@@ -1,6 +1,6 @@
 import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260519d";
 import { WIKI_MAP_MARKERS } from "../data/wiki-map-markers.js?v=20260518j";
-import { MARKER_CONTENT } from "./data/marker-content.js?v=20260519d";
+import { MARKER_CONTENT } from "./data/marker-content.js?v=20260519e";
 import { MOB_ICON_URLS } from "../data/mob-icon-urls.js?v=20260518j";
 import { REFERENCE_IMAGE_URLS } from "../data/reference-images.js?v=20260518j";
 
@@ -969,6 +969,9 @@ function contentPreviewHtml(marker, entry) {
       <section class="content-block content-links">
         <h3>Opening Ingredient</h3>
         <div class="content-link-list">
+          <button type="button" class="content-link-chip" data-ingredient-mobs="${escapeAttribute(altarIngredient.itemName)}">
+            ${escapeHtml(`Show ${altarIngredient.itemName} mobs`)}
+          </button>
           <a class="content-link-chip" href="${escapeAttribute(altarIngredient.url)}" target="_blank" rel="noreferrer">
             ${escapeHtml(`Where to get ${altarIngredient.raw}`)}
           </a>
@@ -1567,6 +1570,37 @@ function markerMatchesSearch(marker) {
   return haystack.includes(state.search);
 }
 
+function mobMarkersForIngredient(ingredientName) {
+  const target = String(ingredientName || "").trim().toLowerCase();
+  if (!target) {
+    return [];
+  }
+  return state.markers
+    .filter((marker) => isMobCategory(marker.category))
+    .filter((marker) => (marker.tags || []).some((tag) => String(tag).trim().toLowerCase() === target))
+    .sort((left, right) => left.title.localeCompare(right.title) || left.region.localeCompare(right.region));
+}
+
+function focusIngredientMobs(ingredientName) {
+  const matches = mobMarkersForIngredient(ingredientName);
+  if (!matches.length) {
+    return false;
+  }
+
+  state.search = String(ingredientName || "").trim().toLowerCase();
+  if (elements.searchInput) {
+    elements.searchInput.value = ingredientName;
+  }
+
+  state.activeMobFamily = matches[0].category;
+  setPanelCollapsed(false);
+  syncVisibleMarkers();
+  renderCategoryFilters();
+  setSelectedMarker(matches[0].id);
+  setPanelView("markers");
+  return true;
+}
+
 function contentMarkersVisibleAtCurrentZoom() {
   return map.getZoom() >= CONTENT_MARKER_MIN_ZOOM;
 }
@@ -2151,6 +2185,13 @@ function renderDetailCard() {
         return;
       }
       flyToMarker(target);
+    });
+  });
+
+  interactiveRoot.querySelectorAll("[data-ingredient-mobs]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const ingredient = button.dataset.ingredientMobs || "";
+      focusIngredientMobs(ingredient);
     });
   });
 
