@@ -1435,12 +1435,12 @@ function buildMarkerIcon(marker, isFound, isSelected) {
   }
 
   const iconMarkup = iconUrl
-    ? `<img class="${classes.join(" ")}" src="${iconUrl}" alt="" draggable="false" style="--pin-glow:${meta.color};">`
-    : `<span class="generic-pin ${classes.join(" ")}" style="--pin-glow:${meta.color};--pin-fill:${meta.color};"></span>`;
+    ? `<img class="${classes.join(" ")}" src="${iconUrl}" alt="" draggable="false" style="--pin-glow:${meta.color};width:${pinSize}px;height:${pinSize}px;">`
+    : `<span class="generic-pin ${classes.join(" ")}" style="--pin-glow:${meta.color};--pin-fill:${meta.color};width:${pinSize}px;height:${pinSize}px;"></span>`;
 
   return L.divIcon({
     className: "map-pin-wrapper",
-    html: `<span class="asset-pin-shell">${iconMarkup}</span>`,
+    html: `<span class="asset-pin-shell" style="width:${pinSize}px;height:${pinSize}px;">${iconMarkup}</span>`,
     iconSize: [pinSize, pinSize],
     iconAnchor: [pinSize / 2, pinSize / 2],
   });

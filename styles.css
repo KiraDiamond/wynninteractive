@@ -1602,8 +1602,8 @@ input {
 .asset-pin-shell {
   display: grid;
   place-items: center;
-  width: var(--map-pin-size);
-  height: var(--map-pin-size);
+  width: 100%;
+  height: 100%;
   overflow: visible;
   transform: scale(var(--map-pin-scale));
   transform-origin: center center;
@@ -1714,8 +1714,8 @@ input {
 
 .asset-pin {
   display: block;
-  width: var(--map-pin-size);
-  height: var(--map-pin-size);
+  width: 100%;
+  height: 100%;
   image-rendering: pixelated;
   filter: drop-shadow(0 0 4px rgba(17, 24, 37, 0.28));
   user-select: none;
