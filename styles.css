@@ -103,11 +103,16 @@ input {
 
 .leaflet-control-zoom {
   margin-top: 26px !important;
-  margin-left: 18px !important;
+  margin-right: 18px !important;
   border: 0 !important;
   border-radius: 14px !important;
   overflow: hidden;
   box-shadow: var(--shadow-soft) !important;
+}
+
+.leaflet-top.leaflet-left {
+  left: auto;
+  right: 0;
 }
 
 .leaflet-control-zoom a {
