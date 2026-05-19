@@ -706,6 +706,25 @@ input {
   line-height: 1.45;
 }
 
+.mob-tracking-strip {
+  margin-top: 12px;
+  padding: 9px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(226, 236, 248, 0.95), rgba(214, 227, 243, 0.92));
+  border: 1px solid rgba(164, 185, 209, 0.65);
+}
+
+.mob-tracking-strip span {
+  min-width: 0;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #36506c;
+}
+
 .mob-browser-list {
   display: grid;
   gap: 8px;
@@ -1878,6 +1897,15 @@ input {
 :root[data-theme="dark"] .mob-list-copy span,
 :root[data-theme="dark"] .mob-browser-empty {
   color: #8ea2b8;
+}
+
+:root[data-theme="dark"] .mob-tracking-strip {
+  background: linear-gradient(180deg, rgba(36, 54, 73, 0.95), rgba(28, 45, 63, 0.92));
+  border-color: rgba(80, 104, 130, 0.72);
+}
+
+:root[data-theme="dark"] .mob-tracking-strip span {
+  color: #dce8f6;
 }
 
 :root[data-theme="dark"] .mob-browser-copy strong,

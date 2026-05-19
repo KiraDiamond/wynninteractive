@@ -166,6 +166,7 @@ const state = {
   theme: loadTheme(),
   panelView: "markers",
   activeMobFamily: null,
+  trackedIngredient: "",
   currentArea: "wynn",
   mapSelectorOpen: false,
 };
@@ -1403,6 +1404,7 @@ function focusIngredientMobs(ingredientName) {
     return false;
   }
 
+  state.trackedIngredient = ingredientName;
   state.search = String(ingredientName || "").trim().toLowerCase();
   if (elements.searchInput) {
     elements.searchInput.value = ingredientName;
@@ -1415,6 +1417,24 @@ function focusIngredientMobs(ingredientName) {
   setSelectedMarker(matches[0].id);
   setPanelView("markers");
   return true;
+}
+
+function clearIngredientTracking() {
+  const selected = state.markers.find((marker) => marker.id === state.selectedMarkerId);
+  state.trackedIngredient = "";
+  state.search = "";
+  state.activeMobFamily = null;
+  if (elements.searchInput) {
+    elements.searchInput.value = "";
+  }
+  if (selected && isMobCategory(selected.category)) {
+    state.selectedMarkerId = null;
+  }
+  syncVisibleMarkers();
+  renderCategoryFilters();
+  renderDetailCard();
+  renderActiveAreaHighlight();
+  setPanelView("markers");
 }
 
 function contentMarkersVisibleAtCurrentZoom() {
@@ -1662,6 +1682,12 @@ function renderCategoryFilters() {
                   </div>
                   <button type="button" class="mob-browser-close" data-close-mob-family="1" aria-label="Close mob family list">×</button>
                 </div>
+                ${state.trackedIngredient ? `
+                  <div class="mob-tracking-strip">
+                    <span>Tracking ${escapeHtml(state.trackedIngredient)}</span>
+                    <button type="button" class="text-action" data-clear-ingredient-tracking="1">Cancel tracking</button>
+                  </div>
+                ` : ""}
                 <p class="mob-browser-note">Pick a mob and the map will outline every exact spawn node we have for it.</p>
                 <div class="mob-browser-list">
                   ${activeMobFamilyMarkers().length
@@ -1777,13 +1803,24 @@ function renderCategoryFilters() {
   elements.categoryFilters.querySelectorAll("[data-close-mob-family]").forEach((button) => {
     button.addEventListener("click", () => {
       const selected = state.markers.find((marker) => marker.id === state.selectedMarkerId);
+      state.trackedIngredient = "";
       state.activeMobFamily = null;
       if (selected && isMobCategory(selected.category)) {
         state.selectedMarkerId = null;
       }
+      state.search = "";
+      if (elements.searchInput) {
+        elements.searchInput.value = "";
+      }
       syncVisibleMarkers();
       renderCategoryFilters();
       renderDetailCard();
+    });
+  });
+
+  elements.categoryFilters.querySelectorAll("[data-clear-ingredient-tracking]").forEach((button) => {
+    button.addEventListener("click", () => {
+      clearIngredientTracking();
     });
   });
 
