@@ -1451,7 +1451,8 @@ function markerIsVisible(marker) {
   }
 
   const matchesSearch = markerMatchesSearch(marker);
-  if (isMobCategory(marker.category)) {
+  const searchSurfacedMob = Boolean(state.search) && isMobCategory(marker.category) && matchesSearch;
+  if (isMobCategory(marker.category) && !searchSurfacedMob) {
     return false;
   }
 
@@ -1465,10 +1466,10 @@ function markerIsVisible(marker) {
     return state.categoryFilter.has(marker.category);
   }
 
-  if (!contentMarkersVisibleAtCurrentZoom()) {
+  if (!contentMarkersVisibleAtCurrentZoom() && !searchSurfacedMob) {
     return false;
   }
-  if (!state.categoryFilter.has(marker.category)) {
+  if (!state.categoryFilter.has(marker.category) && !searchSurfacedMob) {
     return false;
   }
   if (state.hideFound && markerIsFound(marker)) {
