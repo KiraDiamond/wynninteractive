@@ -62,23 +62,6 @@ const BOSS_ALTAR_INGREDIENT_OVERRIDES = {
   "atlas-boss_altar-plague-laboratory--1833--5259": "1 Venom Sac",
   "atlas-boss_altar-tribal-sanctuary--711--657": "4 Zombie Eyes",
 };
-const BOSS_ALTAR_INGREDIENT_PAGES = {
-  "Broken Amulets": "Broken_Amulet",
-  "Soul Essence": "Soul_Essence",
-  "Leather": "Leather",
-  "Werewolf Tails": "Werewolf_Tail",
-  "Noble Ribbon": "Noble_Ribbon",
-  "Mineral Cinders": "Mineral_Cinder",
-  "Ghostly Essence": "Ghostly_Essence",
-  "Rotten Flesh": "Rotten_Flesh",
-  "Coyote Fangs": "Coyote_Fang",
-  "Wybel Fluff": "Wybel_Fluff",
-  "Turtle Shells": "Turtle_Shell",
-  "Skiens Badge": "Skiens_Badge",
-  "Robot Antennas": "Robot_Antenna",
-  "Venom Sac": "Venom_Sac",
-  "Zombie Eyes": "Zombie_Eye",
-};
 
 function parseNumberParam(name, fallback) {
   const raw = query.get(name);
@@ -87,14 +70,6 @@ function parseNumberParam(name, fallback) {
   }
   const value = Number(raw);
   return Number.isFinite(value) ? value : fallback;
-}
-
-function wikiArticleUrl(title) {
-  const article = String(title || "").trim();
-  if (!article) {
-    return "";
-  }
-  return `https://wynncraft.wiki.gg/wiki/${encodeURIComponent(article.replace(/\s+/g, "_"))}`;
 }
 
 function loadTheme() {
@@ -829,15 +804,8 @@ function bossAltarIngredientMeta(marker, entry) {
   }
 
   const match = raw.match(/^(\d+)\s+(.+)$/);
-  const quantity = match ? match[1] : "";
   const itemName = (match ? match[2] : raw).trim();
-  const pageTitle = BOSS_ALTAR_INGREDIENT_PAGES[itemName] || itemName;
-  const url = wikiArticleUrl(pageTitle);
-  if (!url) {
-    return null;
-  }
-
-  return { raw, quantity, itemName, url };
+  return { raw, itemName };
 }
 
 function contentPreviewHtml(marker, entry) {
@@ -931,11 +899,8 @@ function contentPreviewHtml(marker, entry) {
         <h3>Opening Ingredient</h3>
         <div class="content-link-list">
           <button type="button" class="content-link-chip" data-ingredient-mobs="${escapeAttribute(altarIngredient.itemName)}">
-            ${escapeHtml(`Show ${altarIngredient.itemName} mobs`)}
+            ${escapeHtml(`Show where to get ${altarIngredient.raw}`)}
           </button>
-          <a class="content-link-chip" href="${escapeAttribute(altarIngredient.url)}" target="_blank" rel="noreferrer">
-            ${escapeHtml(`Where to get ${altarIngredient.raw}`)}
-          </a>
         </div>
       </section>
     `);
@@ -1515,7 +1480,7 @@ function markerIsVisible(marker) {
 function buildMarkerIcon(marker, isFound, isSelected) {
   const meta = CATEGORY_META[marker.category];
   const isTravelMarker = marker.category === "fast_travel" || marker.category === "seaskipper";
-  const pinSize = isTravelMarker ? MAP_PIN_SIZE * 2 : MAP_PIN_SIZE;
+  const pinSize = isTravelMarker ? 20 : MAP_PIN_SIZE;
   const artSize = pinSize;
   if (marker.fixed) {
     return L.divIcon({
