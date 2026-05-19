@@ -1,0 +1,1162 @@
+export const GENERATED_FAST_TRAVEL_MARKERS = [
+  {
+    "id": "fast-travel-sky-cranes-ahmsord-1031--4561",
+    "title": "Ahmsord",
+    "category": "fast_travel",
+    "region": "Sky Cranes",
+    "description": "Sky Cranes. Sky Cranes around Ahmsord serving as the only way to access the dark void found underneath the Sky Islands. While there are multiple in Ahmsord, they all lead to the same one in The Void. Unlocked by completing the quest One Thousand Meters Under.",
+    "tags": [
+      "fast-travel",
+      "sky-cranes",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": 1031,
+        "z": -4561
+      }
+    }
+  },
+  {
+    "id": "fast-travel-sky-cranes-ahmsord-1093--4510",
+    "title": "Ahmsord",
+    "category": "fast_travel",
+    "region": "Sky Cranes",
+    "description": "Sky Cranes. Sky Cranes around Ahmsord serving as the only way to access the dark void found underneath the Sky Islands. While there are multiple in Ahmsord, they all lead to the same one in The Void. Unlocked by completing the quest One Thousand Meters Under.",
+    "tags": [
+      "fast-travel",
+      "sky-cranes",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": 1093,
+        "z": -4510
+      }
+    }
+  },
+  {
+    "id": "fast-travel-the-juggler-s-tavern-ahmsord-998--4552",
+    "title": "Ahmsord",
+    "category": "fast_travel",
+    "region": "The Juggler's Tavern",
+    "description": "The Juggler's Tavern. The Juggler's Tavern is an area in Cinfras that transports players one-way to a number of other cities, each unlocked by completing a quest in the respective city. There are four destinations - Aldorei, requiring completion of Aldorei's Secret Part II, Thesead, requiring completion of The Hidden City, Rodoroc, requiring completion of Dwarves and Doguns Part I, and Ahmsord, requiring completion of Recipe For Disaster.",
+    "tags": [
+      "fast-travel",
+      "the-juggler-s-tavern",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": 998,
+        "z": -4552
+      }
+    }
+  },
+  {
+    "id": "fast-travel-the-juggler-s-tavern-aldorei-town--138--4417",
+    "title": "Aldorei Town",
+    "category": "fast_travel",
+    "region": "The Juggler's Tavern",
+    "description": "The Juggler's Tavern. The Juggler's Tavern is an area in Cinfras that transports players one-way to a number of other cities, each unlocked by completing a quest in the respective city. There are four destinations - Aldorei, requiring completion of Aldorei's Secret Part II, Thesead, requiring completion of The Hidden City, Rodoroc, requiring completion of Dwarves and Doguns Part I, and Ahmsord, requiring completion of Recipe For Disaster.",
+    "tags": [
+      "fast-travel",
+      "the-juggler-s-tavern",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": -138,
+        "z": -4417
+      }
+    }
+  },
+  {
+    "id": "fast-travel-alekin-village-wagon-alekin-village-wagon--127--1638",
+    "title": "Alekin Village Wagon",
+    "category": "fast_travel",
+    "region": "Alekin Village Wagon",
+    "description": "Alekin Village Wagon. A wagon that is used to travel between Alekin Village and Detlas. Unlocked by completing the quest Supply and Delivery.",
+    "tags": [
+      "fast-travel",
+      "alekin-village-wagon",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": -127,
+        "z": -1638
+      }
+    }
+  },
+  {
+    "id": "fast-travel-corkus-pipelines-avos-temple--1417--3296",
+    "title": "Avos Temple",
+    "category": "fast_travel",
+    "region": "Corkus Pipelines",
+    "description": "Corkus Pipelines. A network of pipes, which connects 6 locations in outer parts of the province with the The Corkus Traversal Lootrun Camp. Does not require a quest to unlock it.",
+    "tags": [
+      "fast-travel",
+      "corkus-pipelines",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": -1417,
+        "z": -3296
+      }
+    }
+  },
+  {
+    "id": "fast-travel-corkus-pipelines-avos-workshop--1870--3229",
+    "title": "Avos Workshop",
+    "category": "fast_travel",
+    "region": "Corkus Pipelines",
+    "description": "Corkus Pipelines. A network of pipes, which connects 6 locations in outer parts of the province with the The Corkus Traversal Lootrun Camp. Does not require a quest to unlock it.",
+    "tags": [
+      "fast-travel",
+      "corkus-pipelines",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": -1870,
+        "z": -3229
+      }
+    }
+  },
+  {
+    "id": "fast-travel-the-juggler-s-tavern-cinfras--480--4910",
+    "title": "Cinfras",
+    "category": "fast_travel",
+    "region": "The Juggler's Tavern",
+    "description": "The Juggler's Tavern. The Juggler's Tavern is an area in Cinfras that transports players one-way to a number of other cities, each unlocked by completing a quest in the respective city. There are four destinations - Aldorei, requiring completion of Aldorei's Secret Part II, Thesead, requiring completion of The Hidden City, Rodoroc, requiring completion of Dwarves and Doguns Part I, and Ahmsord, requiring completion of Recipe For Disaster.",
+    "tags": [
+      "fast-travel",
+      "the-juggler-s-tavern",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": -480,
+        "z": -4910
+      }
+    }
+  },
+  {
+    "id": "fast-travel-hot-air-balloon-corkus-city--1560--2913",
+    "title": "Corkus City",
+    "category": "fast_travel",
+    "region": "Hot Air Balloon",
+    "description": "Hot Air Balloon. A hot air balloon connecting the cities of Corkus City and Kandon-Beda. Unlocked by completing the quest The Envoy Part II.",
+    "tags": [
+      "fast-travel",
+      "hot-air-balloon",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": -1560,
+        "z": -2913
+      }
+    }
+  },
+  {
+    "id": "fast-travel-c-s-s-wavebreaker-corkus-docks--1364--2936",
+    "title": "Corkus Docks",
+    "category": "fast_travel",
+    "region": "C.S.S. Wavebreaker",
+    "description": "C.S.S. Wavebreaker. A boat connecting the seaport city Selchar and the Corkus Docks. Unlocked during the quest The Envoy Part I.",
+    "tags": [
+      "fast-travel",
+      "c-s-s-wavebreaker",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": -1364,
+        "z": -2936
+      }
+    }
+  },
+  {
+    "id": "fast-travel-corkus-pipelines-corkus-forest-north--1814--2872",
+    "title": "Corkus Forest North",
+    "category": "fast_travel",
+    "region": "Corkus Pipelines",
+    "description": "Corkus Pipelines. A network of pipes, which connects 6 locations in outer parts of the province with the The Corkus Traversal Lootrun Camp. Does not require a quest to unlock it.",
+    "tags": [
+      "fast-travel",
+      "corkus-pipelines",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": -1814,
+        "z": -2872
+      }
+    }
+  },
+  {
+    "id": "fast-travel-corkus-pipelines-corkus-lootrun-camp--1526--2677",
+    "title": "Corkus Lootrun Camp",
+    "category": "fast_travel",
+    "region": "Corkus Pipelines",
+    "description": "Corkus Pipelines. A network of pipes, which connects 6 locations in outer parts of the province with the The Corkus Traversal Lootrun Camp. Does not require a quest to unlock it.",
+    "tags": [
+      "fast-travel",
+      "corkus-pipelines",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": -1526,
+        "z": -2677
+      }
+    }
+  },
+  {
+    "id": "fast-travel-corkus-pipelines-corkus-lootrun-camp--1541--2690",
+    "title": "Corkus Lootrun Camp",
+    "category": "fast_travel",
+    "region": "Corkus Pipelines",
+    "description": "Corkus Pipelines. A network of pipes, which connects 6 locations in outer parts of the province with the The Corkus Traversal Lootrun Camp. Does not require a quest to unlock it.",
+    "tags": [
+      "fast-travel",
+      "corkus-pipelines",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": -1541,
+        "z": -2690
+      }
+    }
+  },
+  {
+    "id": "fast-travel-corkus-pipelines-corkus-lootrun-camp--1543--2664",
+    "title": "Corkus Lootrun Camp",
+    "category": "fast_travel",
+    "region": "Corkus Pipelines",
+    "description": "Corkus Pipelines. A network of pipes, which connects 6 locations in outer parts of the province with the The Corkus Traversal Lootrun Camp. Does not require a quest to unlock it.",
+    "tags": [
+      "fast-travel",
+      "corkus-pipelines",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": -1543,
+        "z": -2664
+      }
+    }
+  },
+  {
+    "id": "fast-travel-corkus-pipelines-corkus-lootrun-camp--1547--2657",
+    "title": "Corkus Lootrun Camp",
+    "category": "fast_travel",
+    "region": "Corkus Pipelines",
+    "description": "Corkus Pipelines. A network of pipes, which connects 6 locations in outer parts of the province with the The Corkus Traversal Lootrun Camp. Does not require a quest to unlock it.",
+    "tags": [
+      "fast-travel",
+      "corkus-pipelines",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": -1547,
+        "z": -2657
+      }
+    }
+  },
+  {
+    "id": "fast-travel-corkus-pipelines-corkus-lootrun-camp--1550--2683",
+    "title": "Corkus Lootrun Camp",
+    "category": "fast_travel",
+    "region": "Corkus Pipelines",
+    "description": "Corkus Pipelines. A network of pipes, which connects 6 locations in outer parts of the province with the The Corkus Traversal Lootrun Camp. Does not require a quest to unlock it.",
+    "tags": [
+      "fast-travel",
+      "corkus-pipelines",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": -1550,
+        "z": -2683
+      }
+    }
+  },
+  {
+    "id": "fast-travel-corkus-pipelines-corkus-lootrun-camp--1568--2681",
+    "title": "Corkus Lootrun Camp",
+    "category": "fast_travel",
+    "region": "Corkus Pipelines",
+    "description": "Corkus Pipelines. A network of pipes, which connects 6 locations in outer parts of the province with the The Corkus Traversal Lootrun Camp. Does not require a quest to unlock it.",
+    "tags": [
+      "fast-travel",
+      "corkus-pipelines",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": -1568,
+        "z": -2681
+      }
+    }
+  },
+  {
+    "id": "fast-travel-corkus-pipelines-corkus-statue--1375--2881",
+    "title": "Corkus Statue",
+    "category": "fast_travel",
+    "region": "Corkus Pipelines",
+    "description": "Corkus Pipelines. A network of pipes, which connects 6 locations in outer parts of the province with the The Corkus Traversal Lootrun Camp. Does not require a quest to unlock it.",
+    "tags": [
+      "fast-travel",
+      "corkus-pipelines",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": -1375,
+        "z": -2881
+      }
+    }
+  },
+  {
+    "id": "fast-travel-calo-s-airship-detlas-415--1515",
+    "title": "Detlas",
+    "category": "fast_travel",
+    "region": "Calo's Airship",
+    "description": "Calo's Airship. An airship transporting players between Detlas and the Letvus Airbase. Unlocked by completing the quest Flight in Distress.",
+    "tags": [
+      "fast-travel",
+      "calo-s-airship",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": 415,
+        "z": -1515
+      }
+    }
+  },
+  {
+    "id": "fast-travel-alekin-village-wagon-detlas-wagon-377--1631",
+    "title": "Detlas Wagon",
+    "category": "fast_travel",
+    "region": "Alekin Village Wagon",
+    "description": "Alekin Village Wagon. A wagon that is used to travel between Alekin Village and Detlas. Unlocked by completing the quest Supply and Delivery.",
+    "tags": [
+      "fast-travel",
+      "alekin-village-wagon",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": 377,
+        "z": -1631
+      }
+    }
+  },
+  {
+    "id": "fast-travel-ragni-detlas-tunnel-detlas-west-entrance-385--1563",
+    "title": "Detlas West Entrance",
+    "category": "fast_travel",
+    "region": "Ragni-Detlas Tunnel",
+    "description": "Ragni-Detlas Tunnel. A tunnel going directly between Ragni and Detlas. Unlocked by completing the quest Tunnel Trouble.",
+    "tags": [
+      "fast-travel",
+      "ragni-detlas-tunnel",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": 385,
+        "z": -1563
+      }
+    }
+  },
+  {
+    "id": "fast-travel-eltom-thesead-tunnel-eltom-942--5545",
+    "title": "Eltom",
+    "category": "fast_travel",
+    "region": "Eltom-Thesead Tunnel",
+    "description": "Eltom-Thesead Tunnel. An instant travel between Eltom and Thesead. Needs to be opened by pressing the button at [857, 112, -5039] on the Thesead side. Unlocked by completing the quest The Hidden City.",
+    "tags": [
+      "fast-travel",
+      "eltom-thesead-tunnel",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": 942,
+        "z": -5545
+      }
+    }
+  },
+  {
+    "id": "fast-travel-colossus-tunnel-kandon-beda-736--4370",
+    "title": "Kandon-Beda",
+    "category": "fast_travel",
+    "region": "Colossus Tunnel",
+    "description": "Colossus Tunnel. A tunnel allowing players to travel quickly between the entrance of The Canyon Colossus raid and Kandon-Beda without climbing over the mountains. Does not require a quest to unlock it.",
+    "tags": [
+      "fast-travel",
+      "colossus-tunnel",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": 736,
+        "z": -4370
+      }
+    }
+  },
+  {
+    "id": "fast-travel-hot-air-balloon-kandon-beda-754--4395",
+    "title": "Kandon-Beda",
+    "category": "fast_travel",
+    "region": "Hot Air Balloon",
+    "description": "Hot Air Balloon. A hot air balloon connecting the cities of Corkus City and Kandon-Beda. Unlocked by completing the quest The Envoy Part II.",
+    "tags": [
+      "fast-travel",
+      "hot-air-balloon",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": 754,
+        "z": -4395
+      }
+    }
+  },
+  {
+    "id": "fast-travel-calo-s-airship-letvus-airbase--205--4921",
+    "title": "Letvus Airbase",
+    "category": "fast_travel",
+    "region": "Calo's Airship",
+    "description": "Calo's Airship. An airship transporting players between Detlas and the Letvus Airbase. Unlocked by completing the quest Flight in Distress.",
+    "tags": [
+      "fast-travel",
+      "calo-s-airship",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": -205,
+        "z": -4921
+      }
+    }
+  },
+  {
+    "id": "fast-travel-the-nexus-llevigar--1930--4475",
+    "title": "Llevigar",
+    "category": "fast_travel",
+    "region": "The Nexus",
+    "description": "The Nexus. The Nexus is a magical transportation hub, accessed with secret tunnels hidden by dirt walls in Pirate Cove, Mage Island, Nemract, Llevigar, Selchar, and Grookwarts. Unlocked during the quest The Order of the Grook.",
+    "tags": [
+      "fast-travel",
+      "the-nexus",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": -1930,
+        "z": -4475
+      }
+    }
+  },
+  {
+    "id": "fast-travel-dogun-elevators-lower-molten-heights-1351--5462",
+    "title": "Lower Molten Heights",
+    "category": "fast_travel",
+    "region": "Dogun Elevators",
+    "description": "Dogun Elevators. Elevators used to travel between the Upper and Lower Molten Heights. Unlocked during the quest Dwarves and Doguns Part I.",
+    "tags": [
+      "fast-travel",
+      "dogun-elevators",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": 1351,
+        "z": -5462
+      }
+    }
+  },
+  {
+    "id": "fast-travel-dogun-elevators-lower-molten-heights-1396--5266",
+    "title": "Lower Molten Heights",
+    "category": "fast_travel",
+    "region": "Dogun Elevators",
+    "description": "Dogun Elevators. Elevators used to travel between the Upper and Lower Molten Heights. Unlocked during the quest Dwarves and Doguns Part I.",
+    "tags": [
+      "fast-travel",
+      "dogun-elevators",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": 1396,
+        "z": -5266
+      }
+    }
+  },
+  {
+    "id": "fast-travel-dogun-elevators-lower-molten-heights-1556--5494",
+    "title": "Lower Molten Heights",
+    "category": "fast_travel",
+    "region": "Dogun Elevators",
+    "description": "Dogun Elevators. Elevators used to travel between the Upper and Lower Molten Heights. Unlocked during the quest Dwarves and Doguns Part I.",
+    "tags": [
+      "fast-travel",
+      "dogun-elevators",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": 1556,
+        "z": -5494
+      }
+    }
+  },
+  {
+    "id": "fast-travel-the-nexus-mage-island-890--2790",
+    "title": "Mage Island",
+    "category": "fast_travel",
+    "region": "The Nexus",
+    "description": "The Nexus. The Nexus is a magical transportation hub, accessed with secret tunnels hidden by dirt walls in Pirate Cove, Mage Island, Nemract, Llevigar, Selchar, and Grookwarts. Unlocked during the quest The Order of the Grook.",
+    "tags": [
+      "fast-travel",
+      "the-nexus",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": 890,
+        "z": -2790
+      }
+    }
+  },
+  {
+    "id": "fast-travel-the-nexus-nemract-160--2214",
+    "title": "Nemract",
+    "category": "fast_travel",
+    "region": "The Nexus",
+    "description": "The Nexus. The Nexus is a magical transportation hub, accessed with secret tunnels hidden by dirt walls in Pirate Cove, Mage Island, Nemract, Llevigar, Selchar, and Grookwarts. Unlocked during the quest The Order of the Grook.",
+    "tags": [
+      "fast-travel",
+      "the-nexus",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": 160,
+        "z": -2214
+      }
+    }
+  },
+  {
+    "id": "fast-travel-mysterious-obelisk-nemract-s-obelisk-99--2161",
+    "title": "Nemract's Obelisk",
+    "category": "fast_travel",
+    "region": "Mysterious Obelisk",
+    "description": "Mysterious Obelisk. A mysterious crystal found in Nemract and Tempo Town. It requires the completion of Tempo Town Trouble.",
+    "tags": [
+      "fast-travel",
+      "mysterious-obelisk",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": 99,
+        "z": -2161
+      }
+    }
+  },
+  {
+    "id": "fast-travel-nexus-gate-orphion-s-nexus-of-light--747--6394",
+    "title": "Orphion's Nexus of Light",
+    "category": "fast_travel",
+    "region": "Nexus Gate",
+    "description": "Nexus Gate. The Nexus Gate is a ring of light connecting the landing area for the Realm of Light to Orphion's Nexus of Light. It requires Realm of Light V - The Realm of Light to be completed in order to use it.",
+    "tags": [
+      "fast-travel",
+      "nexus-gate",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": -747,
+        "z": -6394
+      }
+    }
+  },
+  {
+    "id": "fast-travel-the-passage-pigmen-s-ravines--819--1165",
+    "title": "Pigmen's Ravines",
+    "category": "fast_travel",
+    "region": "The Passage",
+    "description": "The Passage. A short passage between the Pigmen's Ravines and Troms. Unlocked by completing the quest of the same name, The Passage.",
+    "tags": [
+      "fast-travel",
+      "the-passage",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": -819,
+        "z": -1165
+      }
+    }
+  },
+  {
+    "id": "fast-travel-the-nexus-pirate-cove--675--3140",
+    "title": "Pirate Cove",
+    "category": "fast_travel",
+    "region": "The Nexus",
+    "description": "The Nexus. The Nexus is a magical transportation hub, accessed with secret tunnels hidden by dirt walls in Pirate Cove, Mage Island, Nemract, Llevigar, Selchar, and Grookwarts. Unlocked during the quest The Order of the Grook.",
+    "tags": [
+      "fast-travel",
+      "the-nexus",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": -675,
+        "z": -3140
+      }
+    }
+  },
+  {
+    "id": "fast-travel-gate-of-recall-portal-to-dern-1318--465",
+    "title": "Portal to Dern",
+    "category": "fast_travel",
+    "region": "Gate of Recall",
+    "description": "Gate of Recall. A one-way portal that will take the player from Portal to Dern to Lutho. Not explicitly locked, but can only be reached after completing the Eldritch Outlook dungeon.",
+    "tags": [
+      "fast-travel",
+      "gate-of-recall",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": 1318,
+        "z": -465
+      }
+    }
+  },
+  {
+    "id": "fast-travel-ragni-detlas-tunnel-ragni-east-entrance--734--1596",
+    "title": "Ragni East Entrance",
+    "category": "fast_travel",
+    "region": "Ragni-Detlas Tunnel",
+    "description": "Ragni-Detlas Tunnel. A tunnel going directly between Ragni and Detlas. Unlocked by completing the quest Tunnel Trouble.",
+    "tags": [
+      "fast-travel",
+      "ragni-detlas-tunnel",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": -734,
+        "z": -1596
+      }
+    }
+  },
+  {
+    "id": "fast-travel-corkus-pipelines-relos--1739--2243",
+    "title": "Relos",
+    "category": "fast_travel",
+    "region": "Corkus Pipelines",
+    "description": "Corkus Pipelines. A network of pipes, which connects 6 locations in outer parts of the province with the The Corkus Traversal Lootrun Camp. Does not require a quest to unlock it.",
+    "tags": [
+      "fast-travel",
+      "corkus-pipelines",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": -1739,
+        "z": -2243
+      }
+    }
+  },
+  {
+    "id": "fast-travel-dwarven-trading-tunnel-rodoroc-991--5070",
+    "title": "Rodoroc",
+    "category": "fast_travel",
+    "region": "Dwarven Trading Tunnel",
+    "description": "Dwarven Trading Tunnel. A tunnel acting as a fast-travel connection between the dwarven cities of Rodoroc and Thanos. Unlocked by completing the quest Dwarves and Doguns Part II.",
+    "tags": [
+      "fast-travel",
+      "dwarven-trading-tunnel",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": 991,
+        "z": -5070
+      }
+    }
+  },
+  {
+    "id": "fast-travel-the-juggler-s-tavern-rodoroc-1060--5105",
+    "title": "Rodoroc",
+    "category": "fast_travel",
+    "region": "The Juggler's Tavern",
+    "description": "The Juggler's Tavern. The Juggler's Tavern is an area in Cinfras that transports players one-way to a number of other cities, each unlocked by completing a quest in the respective city. There are four destinations - Aldorei, requiring completion of Aldorei's Secret Part II, Thesead, requiring completion of The Hidden City, Rodoroc, requiring completion of Dwarves and Doguns Part I, and Ahmsord, requiring completion of Recipe For Disaster.",
+    "tags": [
+      "fast-travel",
+      "the-juggler-s-tavern",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": 1060,
+        "z": -5105
+      }
+    }
+  },
+  {
+    "id": "fast-travel-scavenger-s-teleporter-scavenger-s-workshop-13964--3798",
+    "title": "Scavenger's Workshop",
+    "category": "fast_travel",
+    "region": "Outer Void",
+    "description": "Scavenger's Teleporter. Near the Void Village and Scavenger's Workshop is a broken teleporter. Using the Transport Repair Kit on the teleporter near the Scavenger's Workshop repairs both teleporters.",
+    "tags": [
+      "fast-travel",
+      "scavenger-s-teleporter",
+      "outer-void",
+      "wiki-fast-travel"
+    ],
+    "area": "outer_void",
+    "position": {
+      "world": {
+        "x": 13964,
+        "z": -3798
+      }
+    }
+  },
+  {
+    "id": "fast-travel-c-s-s-wavebreaker-selchar-157--3107",
+    "title": "Selchar",
+    "category": "fast_travel",
+    "region": "C.S.S. Wavebreaker",
+    "description": "C.S.S. Wavebreaker. A boat connecting the seaport city Selchar and the Corkus Docks. Unlocked during the quest The Envoy Part I.",
+    "tags": [
+      "fast-travel",
+      "c-s-s-wavebreaker",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": 157,
+        "z": -3107
+      }
+    }
+  },
+  {
+    "id": "fast-travel-the-nexus-selchar-72--3110",
+    "title": "Selchar",
+    "category": "fast_travel",
+    "region": "The Nexus",
+    "description": "The Nexus. The Nexus is a magical transportation hub, accessed with secret tunnels hidden by dirt walls in Pirate Cove, Mage Island, Nemract, Llevigar, Selchar, and Grookwarts. Unlocked during the quest The Order of the Grook.",
+    "tags": [
+      "fast-travel",
+      "the-nexus",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": 72,
+        "z": -3110
+      }
+    }
+  },
+  {
+    "id": "fast-travel-corkus-pipelines-southern-outpost--1277--2252",
+    "title": "Southern Outpost",
+    "category": "fast_travel",
+    "region": "Corkus Pipelines",
+    "description": "Corkus Pipelines. A network of pipes, which connects 6 locations in outer parts of the province with the The Corkus Traversal Lootrun Camp. Does not require a quest to unlock it.",
+    "tags": [
+      "fast-travel",
+      "corkus-pipelines",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": -1277,
+        "z": -2252
+      }
+    }
+  },
+  {
+    "id": "fast-travel-mysterious-obelisk-tempo-town-s-obelisk--280--1174",
+    "title": "Tempo Town's Obelisk",
+    "category": "fast_travel",
+    "region": "Mysterious Obelisk",
+    "description": "Mysterious Obelisk. A mysterious crystal found in Nemract and Tempo Town. It requires the completion of Tempo Town Trouble.",
+    "tags": [
+      "fast-travel",
+      "mysterious-obelisk",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": -280,
+        "z": -1174
+      }
+    }
+  },
+  {
+    "id": "fast-travel-dwarven-trading-tunnel-thanos-202--5241",
+    "title": "Thanos",
+    "category": "fast_travel",
+    "region": "Dwarven Trading Tunnel",
+    "description": "Dwarven Trading Tunnel. A tunnel acting as a fast-travel connection between the dwarven cities of Rodoroc and Thanos. Unlocked by completing the quest Dwarves and Doguns Part II.",
+    "tags": [
+      "fast-travel",
+      "dwarven-trading-tunnel",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": 202,
+        "z": -5241
+      }
+    }
+  },
+  {
+    "id": "fast-travel-colossus-tunnel-the-canyon-colossus-633--4372",
+    "title": "The Canyon Colossus",
+    "category": "fast_travel",
+    "region": "Colossus Tunnel",
+    "description": "Colossus Tunnel. A tunnel allowing players to travel quickly between the entrance of The Canyon Colossus raid and Kandon-Beda without climbing over the mountains. Does not require a quest to unlock it.",
+    "tags": [
+      "fast-travel",
+      "colossus-tunnel",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": 633,
+        "z": -4372
+      }
+    }
+  },
+  {
+    "id": "fast-travel-nexus-gate-the-realm-of-light--866--5995",
+    "title": "The Realm of Light",
+    "category": "fast_travel",
+    "region": "Nexus Gate",
+    "description": "Nexus Gate. The Nexus Gate is a ring of light connecting the landing area for the Realm of Light to Orphion's Nexus of Light. It requires Realm of Light V - The Realm of Light to be completed in order to use it.",
+    "tags": [
+      "fast-travel",
+      "nexus-gate",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": -866,
+        "z": -5995
+      }
+    }
+  },
+  {
+    "id": "fast-travel-sky-cranes-the-void-14039--4095",
+    "title": "The Void",
+    "category": "fast_travel",
+    "region": "Outer Void",
+    "description": "Sky Cranes. Sky Cranes around Ahmsord serving as the only way to access the dark void found underneath the Sky Islands. While there are multiple in Ahmsord, they all lead to the same one in The Void. Unlocked by completing the quest One Thousand Meters Under.",
+    "tags": [
+      "fast-travel",
+      "sky-cranes",
+      "outer-void",
+      "wiki-fast-travel"
+    ],
+    "area": "outer_void",
+    "position": {
+      "world": {
+        "x": 14039,
+        "z": -4095
+      }
+    }
+  },
+  {
+    "id": "fast-travel-eltom-thesead-tunnel-thesead-857--5039",
+    "title": "Thesead",
+    "category": "fast_travel",
+    "region": "Eltom-Thesead Tunnel",
+    "description": "Eltom-Thesead Tunnel. An instant travel between Eltom and Thesead. Needs to be opened by pressing the button at [857, 112, -5039] on the Thesead side. Unlocked by completing the quest The Hidden City.",
+    "tags": [
+      "fast-travel",
+      "eltom-thesead-tunnel",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": 857,
+        "z": -5039
+      }
+    }
+  },
+  {
+    "id": "fast-travel-the-juggler-s-tavern-thesead-775--5038",
+    "title": "Thesead",
+    "category": "fast_travel",
+    "region": "The Juggler's Tavern",
+    "description": "The Juggler's Tavern. The Juggler's Tavern is an area in Cinfras that transports players one-way to a number of other cities, each unlocked by completing a quest in the respective city. There are four destinations - Aldorei, requiring completion of Aldorei's Secret Part II, Thesead, requiring completion of The Hidden City, Rodoroc, requiring completion of Dwarves and Doguns Part I, and Ahmsord, requiring completion of Recipe For Disaster.",
+    "tags": [
+      "fast-travel",
+      "the-juggler-s-tavern",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": 775,
+        "z": -5038
+      }
+    }
+  },
+  {
+    "id": "fast-travel-the-passage-troms--819--1045",
+    "title": "Troms",
+    "category": "fast_travel",
+    "region": "The Passage",
+    "description": "The Passage. A short passage between the Pigmen's Ravines and Troms. Unlocked by completing the quest of the same name, The Passage.",
+    "tags": [
+      "fast-travel",
+      "the-passage",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": -819,
+        "z": -1045
+      }
+    }
+  },
+  {
+    "id": "fast-travel-dogun-elevators-upper-molten-heights-1351--5462",
+    "title": "Upper Molten Heights",
+    "category": "fast_travel",
+    "region": "Dogun Elevators",
+    "description": "Dogun Elevators. Elevators used to travel between the Upper and Lower Molten Heights. Unlocked during the quest Dwarves and Doguns Part I.",
+    "tags": [
+      "fast-travel",
+      "dogun-elevators",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": 1351,
+        "z": -5462
+      }
+    }
+  },
+  {
+    "id": "fast-travel-dogun-elevators-upper-molten-heights-1388--5266",
+    "title": "Upper Molten Heights",
+    "category": "fast_travel",
+    "region": "Dogun Elevators",
+    "description": "Dogun Elevators. Elevators used to travel between the Upper and Lower Molten Heights. Unlocked during the quest Dwarves and Doguns Part I.",
+    "tags": [
+      "fast-travel",
+      "dogun-elevators",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": 1388,
+        "z": -5266
+      }
+    }
+  },
+  {
+    "id": "fast-travel-dogun-elevators-upper-molten-heights-1556--5494",
+    "title": "Upper Molten Heights",
+    "category": "fast_travel",
+    "region": "Dogun Elevators",
+    "description": "Dogun Elevators. Elevators used to travel between the Upper and Lower Molten Heights. Unlocked during the quest Dwarves and Doguns Part I.",
+    "tags": [
+      "fast-travel",
+      "dogun-elevators",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": 1556,
+        "z": -5494
+      }
+    }
+  },
+  {
+    "id": "fast-travel-scavenger-s-teleporter-void-village-14022--4167",
+    "title": "Void Village",
+    "category": "fast_travel",
+    "region": "Outer Void",
+    "description": "Scavenger's Teleporter. Near the Void Village and Scavenger's Workshop is a broken teleporter. Using the Transport Repair Kit on the teleporter near the Scavenger's Workshop repairs both teleporters.",
+    "tags": [
+      "fast-travel",
+      "scavenger-s-teleporter",
+      "outer-void",
+      "wiki-fast-travel"
+    ],
+    "area": "outer_void",
+    "position": {
+      "world": {
+        "x": 14022,
+        "z": -4167
+      }
+    }
+  },
+  {
+    "id": "fast-travel-teleportation-crystal-voidstone-sanctuary-13820--4338",
+    "title": "Voidstone Sanctuary",
+    "category": "fast_travel",
+    "region": "Outer Void",
+    "description": "Teleportation Crystal. In the Voidstone Sanctuary a Teleportation Crystal can be found. Interacting with it sends the player back to the Void Village.",
+    "tags": [
+      "fast-travel",
+      "teleportation-crystal",
+      "outer-void",
+      "wiki-fast-travel"
+    ],
+    "area": "outer_void",
+    "position": {
+      "world": {
+        "x": 13820,
+        "z": -4338
+      }
+    }
+  },
+  {
+    "id": "fast-travel-mountain-trail-wynnter-fair--896-16650",
+    "title": "Wynnter Fair",
+    "category": "fast_travel",
+    "region": "Mountain Trail",
+    "description": "Mountain Trail. A two-way passage between the Wynnter Fair to the Mountainside. It is only accessible during the Festival of the Blizzard.",
+    "tags": [
+      "fast-travel",
+      "mountain-trail",
+      "wynn",
+      "wiki-fast-travel"
+    ],
+    "area": "wynn",
+    "position": {
+      "world": {
+        "x": -896,
+        "z": 16650
+      }
+    }
+  }
+];

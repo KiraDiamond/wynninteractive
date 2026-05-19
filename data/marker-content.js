@@ -1,17 +1,75 @@
 import { GENERATED_QUEST_MARKER_CONTENT } from "./generated-quest-marker-content.js?v=20260517ac";
 import { GENERATED_QUEST_VIDEO_LINKS } from "./generated-quest-video-links.js?v=20260518x";
+import { GENERATED_FAST_TRAVEL_CONTENT } from "./generated-fast-travel-content.js?v=20260519b";
 import { GENERATED_PROFESSION_MARKER_CONTENT } from "./generated-profession-marker-content.js?v=20260518u";
 import { GENERATED_SUPPLEMENTAL_MARKER_CONTENT } from "./generated-supplemental-marker-content.js?v=20260517ac";
 import { GENERATED_MOB_CONTENT } from "./generated-mob-content.js?v=20260518i";
 
 const BASE_MARKER_CONTENT = {
   ...GENERATED_QUEST_MARKER_CONTENT,
+  ...GENERATED_FAST_TRAVEL_CONTENT,
   ...GENERATED_PROFESSION_MARKER_CONTENT,
   ...GENERATED_SUPPLEMENTAL_MARKER_CONTENT,
   ...GENERATED_MOB_CONTENT,
 };
 
 const MANUAL_MARKER_OVERRIDES = {
+  "atlas-quests-the-qira-hive-372--5501": {
+    sourceUrl: "https://wynncraft.wiki.gg/wiki/The_Qira_Hive_(Quest)",
+    links: [
+      { label: "Qira phase guide", url: "https://forums.wynncraft.com/threads/an-in-depth-guide-to-fighting-qira.291617/" },
+      { label: "Hive mob list", url: "https://wynncraft.fandom.com/wiki/Lists_of_mobs/The_Qira_Hive" },
+    ],
+  },
+  "qira-hive-thunder": {
+    summary: "First elemental wing. Clear the Thunder floors, bank five catalysts per floor, and finish on Psychomancer for Thunder Catalyst X.",
+    explanation: "Route\n• Enter the Thunder Division from Yansur's hall and push floor by floor instead of trying to brute-force the whole quest in one session.\n• Each normal floor wants five catalyst drops turned in to the collector before the next floor unlocks.\n• Thunder enemies lean into burst damage, teleports, pulls, and mind-game pressure, so keep moving and save escape skills for bad overlaps.\n\nBoss\n• Psychomancer — Lv. 95, 530,000 HP, burst-ranged.\n• Core mechanics: heavy teleport, heavy vanish, explode, clone pressure, trap pressure, and force strike.\n• Reward drop: Thunder Catalyst X.\n\nDivision Targets\n• Elecculent through Incarnate supply Thunder Catalysts I-IX.\n• Huwa Kam Bali has a short two-step handoff into a self-destructing second phase before the wing settles back into regular catalyst progression.",
+    sourceUrl: "https://wynncraft.wiki.gg/wiki/The_Qira_Hive_(Quest)",
+    links: [
+      { label: "Hive mob list", url: "https://wynncraft.fandom.com/wiki/Lists_of_mobs/The_Qira_Hive" },
+    ],
+  },
+  "qira-hive-air": {
+    summary: "Second elemental wing. Finish the Air floors, cash the catalysts, and end the route on Spirit of Gale.",
+    explanation: "Route\n• The Air Division keeps pressure high with knockback, mobility checks, and long ranged lanes.\n• Work each floor for the needed catalyst set before moving on instead of burning resources trying to skip the attrition.\n• Ram Zephyria splits into a follow-up phase, so do not stand still after the first takedown animation.\n\nBoss\n• Spirit of Gale — Lv. 101, 720,000 HP, ranged.\n• Core mechanics: teleport chains, heavy charge, arrow storm, heavy push, heavy pull, aerial bombardment, and sonic boom.\n• Reward drop: Air Catalyst X.\n\nDivision Targets\n• Mist Starling through Stormy Knight supply Air Catalysts I-IX.\n• The wing is built around repositioning, so keep clean sightlines and reset before the boss room if your movement cooldowns are down.",
+    sourceUrl: "https://wynncraft.wiki.gg/wiki/The_Qira_Hive_(Quest)",
+    links: [
+      { label: "Hive mob list", url: "https://wynncraft.fandom.com/wiki/Lists_of_mobs/The_Qira_Hive" },
+    ],
+  },
+  "qira-hive-earth": {
+    summary: "Third elemental wing. The Earth path is slower, heavier, and full of chained phase mobs before Genemorph.",
+    explanation: "Route\n• The Earth Division trades speed for impact: more tanky enemies, more punishing contact damage, and several chained forms.\n• Deposit five catalysts per normal floor as usual, then slow down for the boss floor rather than greed extra hits.\n• Several enemies fake the kill moment with follow-up spawns, so watch the arena after each finish.\n\nBoss Phases\n• Genemorph Phase 1 — Lv. 98, 15,000 HP. Charge, self-destruct, and meteor pressure.\n• Genemorph Phase 2 — Lv. 98, 15,000 HP. Repeats the same aggressive pattern and drops the Genococoon handoff.\n• Genococoon — Invulnerable cocoon phase. It self-destructs and loops the fight back into the Genemorph chain if you lose control.\n\nDivision Targets\n• Ambertoise through Golemlus supply Earth Catalysts I-IX.\n• Genesis-Revorse is another major spike in the wing with collapse-style arena pressure before the true boss handoff.",
+    sourceUrl: "https://wynncraft.wiki.gg/wiki/The_Qira_Hive_(Quest)",
+    links: [
+      { label: "Hive mob list", url: "https://wynncraft.fandom.com/wiki/Lists_of_mobs/The_Qira_Hive" },
+    ],
+  },
+  "qira-hive-water": {
+    summary: "Fourth elemental wing. The Water route is built around control effects, teleports, and a hard judge fight at the end.",
+    explanation: "Route\n• Expect more slows, pulls, and ranged punish in the Water Division than raw melee pressure.\n• Keep the floor loop disciplined: gather the five catalyst drops, bank them, then reset your position before the next room.\n• Water mobs punish panic movement, so preserve movement tools for when you need to break a teleport or pull sequence.\n\nBoss\n• Oceanic Judge — Lv. 113, 350,000 HP, ranged.\n• Core mechanics: wave, teleport, push, typhoon, counterspell retaliation, and Ocean's Fury.\n• Reward drop: Water Catalyst X.\n\nDivision Targets\n• Abyss Navigator through Hailstone Lamia supply Water Catalysts I-IX.\n• This is usually where underprepared builds start leaking pots fast, so enter the judge room with clean inventory and cooldowns ready.",
+    sourceUrl: "https://wynncraft.wiki.gg/wiki/The_Qira_Hive_(Quest)",
+    links: [
+      { label: "Hive mob list", url: "https://wynncraft.fandom.com/wiki/Lists_of_mobs/The_Qira_Hive" },
+    ],
+  },
+  "qira-hive-fire": {
+    summary: "Fifth elemental wing. Fire leans into direct damage and ends with a two-phase Solar Vanguard fight.",
+    explanation: "Route\n• The Fire Division is the most straightforward wing mechanically, but it spikes damage harder than the earlier branches.\n• Keep the catalyst loop clean and do not overcommit when charge or flamethrower chains start stacking.\n• Most of the wing is about surviving burst while keeping enough room to dodge meteor or pull follow-ups.\n\nBoss Phases\n• Solar Vanguard Phase 1 — Lv. 120, 300,000 HP. Flamethrower, pull, explosion, charge, searing ground, and magma pillar pressure.\n• Solar Vanguard Phase 2 — Lv. 120, 300,000 HP. Keeps the charge-heavy pattern, adds meteor emphasis, and awards Fire Catalyst X at the end.\n\nDivision Targets\n• Flame Dancer through Magmorous supply Fire Catalysts I-IX.\n• If you enter the boss room low on healing, back out and recover first because the second phase starts before the fight really slows down.",
+    sourceUrl: "https://wynncraft.wiki.gg/wiki/The_Qira_Hive_(Quest)",
+    links: [
+      { label: "Hive mob list", url: "https://wynncraft.fandom.com/wiki/Lists_of_mobs/The_Qira_Hive" },
+    ],
+  },
+  "qira-hive-qira": {
+    summary: "Master Division boss room. Once every voucher is cleared, this is the three-phase Qira fight that ends the hive.",
+    explanation: "Entry\n• Finish Thunder, Air, Earth, Water, and Fire first, then return to Yansur and push into the Master Division.\n• Enter with healing ready and movement off cooldown because Qira starts real pressure immediately and never really gives the room back.\n\nBoss Phases\n• Phase 1 — 375,000 HP, ranged. Explosion, spiderweb, push, flamethrower, pull, teleport, wave, heal, drone summon, and eldritch force strike.\n• Phase 2 — 375,000 HP, melee. Explosion, teleport, spiderweb, charge, multihit, vanish, eldritch force strike, and bombardment.\n• Phase 3 — 500,000 HP, ranged. Teleport, spiderweb, meteor, wave, explosion, charge, pull, drone summon, bombardment, and eldritch storm.\n\nForum Pattern Notes\n• Phase 1 rotates between explosion or wave strings, web traps, teleport loops, and one heal-based ultimate sequence.\n• Phase 2 shifts into charge chains, explosion bursts, vanish pressure, and a long ultimate that ends on a web trap.\n• Phase 3 adds meteor-heavy rotations plus three different ultimates built around teleports, charges, and repeated webs.\n\nReward\n• Master Voucher ends the quest and unlocks the final hand-in back with Yansur.",
+    sourceUrl: "https://wynncraft.wiki.gg/wiki/The_Qira_Hive_(Quest)",
+    links: [
+      { label: "Qira phase guide", url: "https://forums.wynncraft.com/threads/an-in-depth-guide-to-fighting-qira.291617/" },
+      { label: "Hive mob list", url: "https://wynncraft.fandom.com/wiki/Lists_of_mobs/The_Qira_Hive" },
+    ],
+  },
   "atlas-raid-orphions-nexus-of-light--732--6412": {
     summary: "Level 79 raid. Requires Realm of Light V - The Realm of Light. Uses 1 Uth Rune.",
     explanation: "Entry\n• Minimum level: 79.\n• Required quest: Realm of Light V - The Realm of Light.\n• Rune: 1 Uth Rune.\n• Party size: 4 players.\n\nBosses\n• Orphion, the Light Beast\n• The Parasite",
@@ -64,6 +122,45 @@ const MANUAL_MARKER_OVERRIDES = {
   },
   "atlas-secret-discovery-somewhere-in-between--732--1270": {
     tutorials: ["https://www.youtube.com/shorts/lvaN9mjDN_4"],
+  },
+  "atlas-quests-acquiring-credentials--256--4983": {
+    sourceUrl: "https://wynncraft.wiki.gg/wiki/Acquiring_Credentials",
+  },
+  "atlas-quests-aldorei-s-secret-part-i--462--4460": {
+    sourceUrl: "https://wynncraft.wiki.gg/wiki/Aldorei's_Secret_Part_I",
+  },
+  "atlas-quests-an-iron-heart-part-i--1613--4964": {
+    sourceUrl: "https://wynncraft.wiki.gg/wiki/An_Iron_Heart_Part_I",
+  },
+  "atlas-quests-an-iron-heart-part-ii--1745--5479": {
+    sourceUrl: "https://wynncraft.wiki.gg/wiki/An_Iron_Heart_Part_II",
+  },
+  "atlas-quests-from-the-mountains--1366--4543": {
+    sourceUrl: "https://wynncraft.wiki.gg/wiki/From_the_Mountains",
+  },
+  "atlas-quests-lazarus-pit--1025--5302": {
+    sourceUrl: "https://wynncraft.wiki.gg/wiki/Lazarus_Pit_(Quest)",
+  },
+  "atlas-quests-out-of-my-mind--860--961": {
+    sourceUrl: "https://wynncraft.wiki.gg/wiki/Out_of_my_Mind",
+  },
+  "atlas-quests-reclaiming-the-house--1499--5349": {
+    sourceUrl: "https://wynncraft.wiki.gg/wiki/Reclaiming_the_House",
+  },
+  "atlas-quests-stable-story-561--1598": {
+    sourceUrl: "https://wynncraft.wiki.gg/wiki/Stable_Story",
+  },
+  "atlas-quests-star-thief--2018--4822": {
+    sourceUrl: "https://wynncraft.wiki.gg/wiki/Star_Thief",
+  },
+  "atlas-quests-the-ultimate-weapon--947--4593": {
+    sourceUrl: "https://wynncraft.wiki.gg/wiki/The_Ultimate_Weapon",
+  },
+  "atlas-quests-underice-157--812": {
+    sourceUrl: "https://wynncraft.wiki.gg/wiki/Underice",
+  },
+  "atlas-quests-true-colours--1372--563": {
+    tutorials: ["https://youtu.be/JyIDve2iKng?si=urOI4IJDqUfcCNki"],
   },
 };
 

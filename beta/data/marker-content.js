@@ -1,4 +1,4 @@
-import { MARKER_CONTENT as ROOT_MARKER_CONTENT } from "../../data/marker-content.js?v=20260518i";
+import { MARKER_CONTENT as ROOT_MARKER_CONTENT } from "../../data/marker-content.js?v=20260519b";
 import { GENERATED_MOB_CONTENT } from "../../data/generated-mob-content.js?v=20260518i";
 
 export const MARKER_CONTENT = {

@@ -1,6 +1,6 @@
-import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260518u";
+import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260519b";
 import { WIKI_MAP_MARKERS } from "../data/wiki-map-markers.js?v=20260518j";
-import { MARKER_CONTENT } from "./data/marker-content.js?v=20260518y";
+import { MARKER_CONTENT } from "./data/marker-content.js?v=20260519b";
 import { MOB_ICON_URLS } from "../data/mob-icon-urls.js?v=20260518j";
 import { REFERENCE_IMAGE_URLS } from "../data/reference-images.js?v=20260518j";
 
@@ -103,7 +103,7 @@ const CATEGORY_GROUPS = [
   {
     id: "activities",
     label: "Activities",
-    categories: ["caves", "dungeon", "raid", "boss_altar", "lootrun_camp"],
+    categories: ["fast_travel", "caves", "dungeon", "raid", "boss_altar", "lootrun_camp"],
   },
   {
     id: "professions",
@@ -118,6 +118,7 @@ const CATEGORY_GROUPS = [
 ];
 const PASSIVE_CATEGORIES = new Set([
   ...MOB_CATEGORY_IDS,
+  "fast_travel",
   "profession_fishing",
   "profession_farming",
   "profession_mining",
@@ -533,8 +534,20 @@ function splitMultiline(value) {
     .filter(Boolean);
 }
 
+function normalizeContentLinks(value) {
+  if (!Array.isArray(value)) {
+    return [];
+  }
+  return value
+    .filter((item) => item && item.url)
+    .map((item) => ({
+      label: item.label || item.url,
+      url: item.url,
+    }));
+}
+
 function markerSupportsFound(marker) {
-  return !marker.fixed && !PASSIVE_CATEGORIES.has(marker.category);
+  return !marker.fixed && !marker.disableFound && !PASSIVE_CATEGORIES.has(marker.category);
 }
 
 function isMobCategory(categoryId) {
@@ -567,6 +580,7 @@ function markerContentAuthorEntry(markerId) {
     coverImage: entry.coverImage || "",
     gallery: Array.isArray(entry.gallery) ? entry.gallery : splitMultiline(entry.gallery || ""),
     sourceUrl: entry.sourceUrl || "",
+    links: normalizeContentLinks(entry.links),
     tutorials: Array.isArray(entry.tutorials) ? entry.tutorials : splitMultiline(entry.tutorials || ""),
   };
 }
@@ -578,6 +592,7 @@ function normalizeMarkerContentEntry(entry) {
     coverImage: entry?.coverImage || "",
     gallery: Array.isArray(entry?.gallery) ? entry.gallery : splitMultiline(entry?.gallery || ""),
     sourceUrl: entry?.sourceUrl || "",
+    links: normalizeContentLinks(entry?.links),
     tutorials: Array.isArray(entry?.tutorials) ? entry.tutorials : splitMultiline(entry?.tutorials || ""),
   };
 }
@@ -594,6 +609,7 @@ function markerContentEntry(marker) {
     coverImage: entry.coverImage || shipped.coverImage,
     gallery: entry.gallery.length ? entry.gallery : shipped.gallery,
     sourceUrl: entry.sourceUrl || shipped.sourceUrl,
+    links: entry.links.length ? entry.links : shipped.links,
     tutorials: entry.tutorials.length ? entry.tutorials : shipped.tutorials,
   };
 }
@@ -615,6 +631,7 @@ function contentExportEntry(marker) {
     coverImage: entry.coverImage,
     gallery: entry.gallery,
     sourceUrl: entry.sourceUrl,
+    links: entry.links,
     tutorials: entry.tutorials,
   };
 }
@@ -626,8 +643,76 @@ function hasMarkerContent(entry) {
     entry.coverImage ||
     entry.gallery.length ||
     entry.sourceUrl ||
+    entry.links.length ||
     entry.tutorials.length
   );
+}
+
+function contextGroupIdForMarker(marker) {
+  return marker?.contextGroupId || null;
+}
+
+function activeContextGroupId() {
+  const selected = state.markers.find((item) => item.id === state.selectedMarkerId);
+  return contextGroupIdForMarker(selected);
+}
+
+function contextChildMarkers(marker) {
+  const groupId = contextGroupIdForMarker(marker);
+  if (!groupId) {
+    return [];
+  }
+  return state.markers
+    .filter((item) => item.contextOnly && item.contextGroupId === groupId)
+    .sort((left, right) => (left.contextOrder || 0) - (right.contextOrder || 0) || left.title.localeCompare(right.title));
+}
+
+function contextParentMarker(marker) {
+  const groupId = contextGroupIdForMarker(marker);
+  if (!groupId) {
+    return null;
+  }
+  return state.markers.find((item) => !item.contextOnly && item.contextGroupId === groupId) || null;
+}
+
+function encounterNavigatorHtml(marker) {
+  const encounters = contextChildMarkers(marker);
+  if (!encounters.length) {
+    return "";
+  }
+
+  const parent = contextParentMarker(marker);
+  const returnButton = parent
+    ? `
+      <button type="button" class="context-return" data-context-marker="${escapeAttribute(parent.id)}">
+        Return to ${escapeHtml(parent.title)}
+      </button>
+    `
+    : "";
+
+  return `
+    <section class="context-panel">
+      <div class="context-head">
+        <div>
+          <h3>Hive Encounters</h3>
+          <p>Select a wing to open its own route and boss guide.</p>
+        </div>
+        ${returnButton}
+      </div>
+      <div class="context-chip-grid">
+        ${encounters.map((entry) => `
+          <button
+            type="button"
+            class="context-chip ${entry.id === marker.id ? "active" : ""}"
+            data-context-marker="${escapeAttribute(entry.id)}"
+          >
+            <strong>${escapeHtml(entry.title)}</strong>
+            <span>${escapeHtml(entry.description || entry.region || "Encounter")}</span>
+          </button>
+        `).join("")}
+      </div>
+    </section>
+  `;
 }
 
 function extractGoogleDriveId(url) {
@@ -739,6 +824,7 @@ function youtubeEmbedMeta(url) {
 function contentPreviewHtml(marker, entry) {
   const blocks = [];
   const gallery = entry.gallery.filter((url) => url !== entry.coverImage);
+  const referenceLinks = entry.links;
   const tutorials = entry.tutorials;
 
   if (entry.coverImage) {
@@ -815,6 +901,21 @@ function contentPreviewHtml(marker, entry) {
       <section class="content-source">
         <span>Full article</span>
         <a href="${escapeAttribute(entry.sourceUrl)}" target="_blank" rel="noreferrer">Open the wiki page</a>
+      </section>
+    `);
+  }
+
+  if (referenceLinks.length) {
+    blocks.push(`
+      <section class="content-block content-links">
+        <h3>Reference Links</h3>
+        <div class="content-link-list">
+          ${referenceLinks.map((item) => `
+            <a class="content-link-chip" href="${escapeAttribute(item.url)}" target="_blank" rel="noreferrer">
+              ${escapeHtml(item.label)}
+            </a>
+          `).join("")}
+        </div>
       </section>
     `);
   }
@@ -1432,6 +1533,16 @@ function markerIsVisible(marker) {
     return false;
   }
 
+  if (marker.contextOnly) {
+    if (activeContextGroupId() !== marker.contextGroupId) {
+      return false;
+    }
+    if (!contentMarkersVisibleAtCurrentZoom()) {
+      return false;
+    }
+    return state.categoryFilter.has(marker.category);
+  }
+
   const searchSurfacedMob = Boolean(state.search) && isMobCategory(marker.category) && matchesSearch;
   if (!contentMarkersVisibleAtCurrentZoom() && !searchSurfacedMob) {
     return false;
@@ -1614,6 +1725,7 @@ function categoryCount(categoryId) {
   return state.markers.filter((marker) =>
     marker.category === categoryId &&
     !marker.fixed &&
+    !marker.contextOnly &&
     markerArea(marker) === state.currentArea,
   ).length;
 }
@@ -1622,6 +1734,7 @@ function categoryVisibleCount(categoryId) {
   return state.filteredMarkers.filter((marker) =>
     marker.category === categoryId &&
     !marker.fixed &&
+    !marker.contextOnly &&
     markerArea(marker) === state.currentArea,
   ).length;
 }
@@ -1878,6 +1991,7 @@ function renderDetailCard() {
     <div class="detail-actions">
       ${actionButtons}
     </div>
+    ${encounterNavigatorHtml(marker)}
     <section class="content-preview-panel">
       <div class="content-preview-head">
         <h3>Guide & Reference</h3>
@@ -1952,6 +2066,16 @@ function renderDetailCard() {
       if (saveNote) {
         saveNote.textContent = "Saved locally.";
       }
+    });
+  });
+
+  interactiveRoot.querySelectorAll("[data-context-marker]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const target = state.markers.find((item) => item.id === button.dataset.contextMarker);
+      if (!target) {
+        return;
+      }
+      flyToMarker(target);
     });
   });
 
@@ -2224,6 +2348,7 @@ function setSelectedMarker(markerId) {
   }
 
   setPanelCollapsed(false);
+  syncVisibleMarkers();
   renderDetailCard();
   renderActiveAreaHighlight();
   renderCategoryFilters();
@@ -2289,7 +2414,12 @@ function syncVisibleMarkers() {
 function hydrateMarkerState() {
   const fixedCities = STARTER_MARKERS.map((marker) => ({ ...marker, fixed: true }));
   const curatedSupplemental = CURATED_MARKERS.filter((marker) => marker.category !== "world_events");
-  state.markers = [...fixedCities, ...curatedSupplemental, ...WIKI_MAP_MARKERS];
+  const wikiMarkers = WIKI_MAP_MARKERS.map((marker) => (
+    marker.id === "atlas-quests-the-qira-hive-372--5501"
+      ? { ...marker, contextGroupId: "qira-hive" }
+      : marker
+  ));
+  state.markers = [...fixedCities, ...curatedSupplemental, ...wikiMarkers];
   state.markers.forEach(createMarkerLayer);
 }
 

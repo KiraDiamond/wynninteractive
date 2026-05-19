@@ -3,8 +3,7 @@ import {
   CATEGORY_ORDER as ROOT_CATEGORY_ORDER,
   CURATED_MARKERS as ROOT_CURATED_MARKERS,
   STARTER_MARKERS,
-} from "../../data/markers.js?v=20260518u";
-
+} from "../../data/markers.js?v=20260519b";
 export const CATEGORY_META = ROOT_CATEGORY_META;
 export const CATEGORY_ORDER = ROOT_CATEGORY_ORDER;
 
