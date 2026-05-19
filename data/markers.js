@@ -31,7 +31,7 @@ export const CATEGORY_META = {
   quests: { label: "Quests", color: "#6f9eea", selectable: true, icon: "quest" },
   mini_quests: { label: "Mini Quests", color: "#8dca6b", selectable: true, icon: "mini_quest" },
   world_events: { label: "World Events", color: "#f3b35f", selectable: true, icon: "world_event" },
-  fast_travel: { label: "Fast Travel", color: "#56a9c8", selectable: true, icon: null },
+  fast_travel: { label: "Fast Travel", color: "#56a9c8", selectable: true, icon: "fast_travel" },
   secret_discovery: { label: "Secret Discovery", color: "#c77af4", selectable: true, icon: "discovery" },
   world_discovery: { label: "World Discovery", color: "#59c7c7", selectable: true, icon: "discovery" },
   territorial_discovery: { label: "Territorial Discovery", color: "#e96e7f", selectable: true, icon: "discovery" },

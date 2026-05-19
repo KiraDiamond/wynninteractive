@@ -1,4 +1,4 @@
-import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260519b";
+import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260519c";
 import { WIKI_MAP_MARKERS } from "../data/wiki-map-markers.js?v=20260518j";
 import { MARKER_CONTENT } from "./data/marker-content.js?v=20260519b";
 import { MOB_ICON_URLS } from "../data/mob-icon-urls.js?v=20260518j";
