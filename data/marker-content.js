@@ -164,6 +164,37 @@ const MANUAL_MARKER_OVERRIDES = {
   "atlas-quests-true-colours--1372--563": {
     tutorials: ["https://youtu.be/JyIDve2iKng?si=urOI4IJDqUfcCNki"],
   },
+  "atlas-world_discovery-light-s-secret--1050--4295": {
+    summary: "Hidden light gateway beneath the Light Forest. This discovery marks the concealed entrance used to reach the Realm of Light from Gavel.",
+    explanation: "Access\n• Found beneath the colossal tree in the Light Forest.\n• This is the hidden light portal route tied into the later Realm of Light quest chain.\n\nUse\n• The portal serves as the physical entrance into the Realm of Light.\n• If you are tracing the route manually, treat this as the handoff point between the forest approach and the realm itself.",
+    sourceUrl: "https://wynncraft.fandom.com/wiki/Light_Portal",
+  },
+  "atlas-world_discovery-tol-altar-529--457": {
+    summary: "Olmic Tol Altar. This altar upgrades lower-tier runes into Tol runes once you reach the Olmic Cathedral route.",
+    explanation: "Access\n• Located in the Olmic Cathedral route near Lutho.\n• This altar is the stricter Tol conversion point and is typically tied to the later Olmic progression path.\n\nUse\n• Bring spare Az, Nii, or Uth runes and convert them upward into Tol runes here.\n• This is the more valuable Tol stop if you are already routing Olmic content and want to consolidate rune upgrades in one run.",
+    sourceUrl: "https://wynncraft.wiki.gg/wiki/Tol_Altar",
+  },
+  "atlas-world_discovery-tol-altar-1431--4634": {
+    summary: "Sky Islands Tol Altar. This is the second Tol conversion point for turning lower-tier runes into Tol runes during Sky routes.",
+    explanation: "Access\n• Located in the Sky Islands route.\n• This altar is the easier Tol stop to fold into sky travel if you are not already heading toward Olmic Cathedral.\n\nUse\n• Convert spare Az, Nii, or Uth runes into Tol runes here.\n• Use this one when your route is already in the sky chain and you do not want to detour back through the ocean-side altar.",
+    sourceUrl: "https://wynncraft.wiki.gg/wiki/Tol_Altar",
+  },
+  "atlas-world_discovery-uth-shrine--1911--3235": {
+    summary: "Corkus-side Uth Shrine. Offer a Golden Avia Feather here to summon the Uth Guardians and earn Uth runes.",
+    explanation: "Access\n• This shrine sits on the Corkus-side route.\n• To activate it, bring a Golden Avia Feather and use it at the shrine.\n\nUse\n• The shrine summons the Uth Guardians encounter.\n• Clearing the guardian set rewards Uth runes, which makes this one of the direct rune-upgrade stops worth routing once you have spare feathers.",
+    sourceUrl: "https://wynncraft.fandom.com/wiki/Uth_Shrine",
+    links: [
+      { label: "Uth guardian notes", url: "https://forums.wynncraft.com/threads/uth-runes-uth-guardians-because-i-got-bored.243575/" },
+    ],
+  },
+  "atlas-world_discovery-uth-shrine--215--4460": {
+    summary: "Ocean-side Uth Shrine. Offer a Golden Avia Feather here to trigger the Uth Guardians and cash out for Uth runes.",
+    explanation: "Access\n• This shrine sits on the ocean-side route near Aldorei-facing travel.\n• Bring a Golden Avia Feather to start the guardian encounter.\n\nUse\n• Activating the shrine summons the Uth Guardians fight.\n• This is the better Uth stop when your route is already running the ocean and forest side instead of Corkus.",
+    sourceUrl: "https://wynncraft.fandom.com/wiki/Uth_Shrine",
+    links: [
+      { label: "Uth guardian notes", url: "https://forums.wynncraft.com/threads/uth-runes-uth-guardians-because-i-got-bored.243575/" },
+    ],
+  },
 };
 
 const ALL_MARKER_CONTENT_KEYS = new Set([

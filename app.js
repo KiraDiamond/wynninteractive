@@ -55,6 +55,30 @@ const LOW_VALUE_DESCRIPTION_PATTERNS = [
 ];
 const VIDEO_GUIDE_CATEGORY_IDS = new Set(["quests", "mini_quests", "secret_discovery"]);
 const MOB_CATEGORY_IDS = CATEGORY_ORDER.filter((categoryId) => categoryId.startsWith("hostile_mobs"));
+const BOSS_ALTAR_INGREDIENT_OVERRIDES = {
+  "atlas-boss_altar-aerie-of-the-recluse--1746--3069": "7 Turtle Shells",
+  "atlas-boss_altar-altar-of-sanctification--911--623": "1 Skiens Badge",
+  "atlas-boss_altar-geyser-pit--1573--3204": "8 Robot Antennas",
+  "atlas-boss_altar-plague-laboratory--1833--5259": "1 Venom Sac",
+  "atlas-boss_altar-tribal-sanctuary--711--657": "4 Zombie Eyes",
+};
+const BOSS_ALTAR_INGREDIENT_PAGES = {
+  "Broken Amulets": "Broken_Amulet",
+  "Soul Essence": "Soul_Essence",
+  "Leather": "Leather",
+  "Werewolf Tails": "Werewolf_Tail",
+  "Noble Ribbon": "Noble_Ribbon",
+  "Mineral Cinders": "Mineral_Cinder",
+  "Ghostly Essence": "Ghostly_Essence",
+  "Rotten Flesh": "Rotten_Flesh",
+  "Coyote Fangs": "Coyote_Fang",
+  "Wybel Fluff": "Wybel_Fluff",
+  "Turtle Shells": "Turtle_Shell",
+  "Skiens Badge": "Skiens_Badge",
+  "Robot Antennas": "Robot_Antenna",
+  "Venom Sac": "Venom_Sac",
+  "Zombie Eyes": "Zombie_Eye",
+};
 
 function parseNumberParam(name, fallback) {
   const raw = query.get(name);
@@ -63,6 +87,14 @@ function parseNumberParam(name, fallback) {
   }
   const value = Number(raw);
   return Number.isFinite(value) ? value : fallback;
+}
+
+function wikiArticleUrl(title) {
+  const article = String(title || "").trim();
+  if (!article) {
+    return "";
+  }
+  return `https://wynncraft.wiki.gg/wiki/${encodeURIComponent(article.replace(/\s+/g, "_"))}`;
 }
 
 function loadTheme() {
@@ -783,11 +815,37 @@ function youtubeEmbedMeta(url) {
   return null;
 }
 
+function bossAltarIngredientMeta(marker, entry) {
+  if (marker.category !== "boss_altar") {
+    return null;
+  }
+
+  const rawRequirement = BOSS_ALTAR_INGREDIENT_OVERRIDES[marker.id]
+    || String(entry.explanation || "").match(/Items required:\s*([^\.\n]+)/i)?.[1]
+    || "";
+  const raw = String(rawRequirement).trim();
+  if (!raw) {
+    return null;
+  }
+
+  const match = raw.match(/^(\d+)\s+(.+)$/);
+  const quantity = match ? match[1] : "";
+  const itemName = (match ? match[2] : raw).trim();
+  const pageTitle = BOSS_ALTAR_INGREDIENT_PAGES[itemName] || itemName;
+  const url = wikiArticleUrl(pageTitle);
+  if (!url) {
+    return null;
+  }
+
+  return { raw, quantity, itemName, url };
+}
+
 function contentPreviewHtml(marker, entry) {
   const blocks = [];
   const gallery = entry.gallery.filter((url) => url !== entry.coverImage);
   const referenceLinks = entry.links;
   const tutorials = entry.tutorials;
+  const altarIngredient = bossAltarIngredientMeta(marker, entry);
 
   if (entry.coverImage) {
     const coverUrl = resolveImageUrl(entry.coverImage);
@@ -863,6 +921,19 @@ function contentPreviewHtml(marker, entry) {
       <section class="content-source">
         <span>Full article</span>
         <a href="${escapeAttribute(entry.sourceUrl)}" target="_blank" rel="noreferrer">Open the wiki page</a>
+      </section>
+    `);
+  }
+
+  if (altarIngredient) {
+    blocks.push(`
+      <section class="content-block content-links">
+        <h3>Opening Ingredient</h3>
+        <div class="content-link-list">
+          <a class="content-link-chip" href="${escapeAttribute(altarIngredient.url)}" target="_blank" rel="noreferrer">
+            ${escapeHtml(`Where to get ${altarIngredient.raw}`)}
+          </a>
+        </div>
       </section>
     `);
   }
@@ -1409,12 +1480,8 @@ function markerIsVisible(marker) {
 
 function buildMarkerIcon(marker, isFound, isSelected) {
   const meta = CATEGORY_META[marker.category];
-  const pinSize = marker.category === "fast_travel"
-    ? Math.round(MAP_PIN_SIZE / 4)
-    : (marker.category === "seaskipper" ? Math.round(MAP_PIN_SIZE / 2) : MAP_PIN_SIZE);
-  const artSize = marker.category === "fast_travel"
-    ? Math.max(9, Math.round(pinSize * 0.625))
-    : (marker.category === "seaskipper" ? Math.max(7, Math.round(pinSize / 2)) : pinSize);
+  const pinSize = MAP_PIN_SIZE;
+  const artSize = pinSize;
   if (marker.fixed) {
     return L.divIcon({
       className: "city-anchor-icon",
