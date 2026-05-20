@@ -10,6 +10,22 @@ export function clamp(value, min, max) {
 }
 
 /**
+ * Wraps a callback in a debounce guard so rapid calls collapse into one trailing call.
+ * @param {Function} callback - Callback to invoke after the debounce window.
+ * @param {number} delayMs - Debounce delay in milliseconds.
+ * @returns {Function} Debounced callback.
+ */
+export function debounce(callback, delayMs) {
+  let timeoutId = 0;
+  return (...args) => {
+    window.clearTimeout(timeoutId);
+    timeoutId = window.setTimeout(() => {
+      callback(...args);
+    }, delayMs);
+  };
+}
+
+/**
  * Escapes user-facing HTML to prevent unsafe markup injection.
  * @param {string} value - Raw string value.
  * @returns {string} HTML-escaped string.
@@ -30,6 +46,46 @@ export function escapeHtml(value) {
  */
 export function escapeAttribute(value) {
   return escapeHtml(value ?? "");
+}
+
+/**
+ * Tagged template helper that escapes interpolated values by default.
+ * Use `html.raw()` for trusted prebuilt markup.
+ * @param {TemplateStringsArray} strings - Raw template string segments.
+ * @param {...unknown} values - Interpolated values to escape or flatten.
+ * @returns {string} Safe HTML string.
+ */
+export function html(strings, ...values) {
+  let output = "";
+  for (let index = 0; index < strings.length; index += 1) {
+    output += strings[index];
+    if (index < values.length) {
+      output += renderHtmlValue(values[index]);
+    }
+  }
+  return output;
+}
+
+/**
+ * Marks a string as trusted HTML for the `html` template helper.
+ * @param {string} value - Already-escaped or trusted markup.
+ * @returns {{__html: string}} Trusted HTML wrapper.
+ */
+html.raw = function raw(value) {
+  return { __html: String(value ?? "") };
+};
+
+function renderHtmlValue(value) {
+  if (value == null || value === false) {
+    return "";
+  }
+  if (Array.isArray(value)) {
+    return value.map(renderHtmlValue).join("");
+  }
+  if (typeof value === "object" && "__html" in value) {
+    return String(value.__html);
+  }
+  return escapeHtml(String(value));
 }
 
 /**

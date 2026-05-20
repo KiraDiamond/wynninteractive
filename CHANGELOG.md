@@ -4,6 +4,12 @@ All notable changes to Wynnteractive Map are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
+### Changed
+- Debounced marker search updates to reduce per-keystroke map refresh work
+- Bucketed marker state by category and area to avoid repeated full-array scans
+- Split large detail and category renderers into smaller helper functions
+- Added an auto-escaping HTML template helper for shared renderer safety
+- Replaced matching hardcoded UI colors with existing CSS variables
 
 ## [1.0.0] — 2026-05-20
 ### Added

@@ -49,7 +49,7 @@ Marker data lives in `data/markers.js` and `data/wiki-map-markers.js`. To add or
 - Qira Hive guide credit: [An In-Depth Guide To Fighting Qira](https://forums.wynncraft.com/threads/an-in-depth-guide-to-fighting-qira.291617/)
 - Lootrun guide credit: [Ultimate Wynncraft Lootrun Guide](https://docs.google.com/document/d/11aw2yFc2vi0yrKxPuWl6Uedctw4RnxmtkJbkvm7PB-M/edit?tab=t.0)
 - Profession guide credit: [Zy's updated profession guide](https://docs.google.com/document/d/1Wv5I296Cd5j7yWT2vgGFp1AFM_1R2Xw-M73TIoR56-M/edit?tab=t.0)
-- Code assistance: OpenAI Codex
+- Code assistance: OpenAI Codex in the Codex desktop app
 - Special thanks to `gale_nasin` for answering rule-related questions for the project.
 - Special thanks to `Xnova204` for making the site logo.
 

@@ -10,9 +10,11 @@ import { MOB_ICON_URLS } from "../data/mob-icon-urls.js?v=20260518j";
 import { REFERENCE_IMAGE_URLS } from "../data/reference-images.js?v=20260518j";
 import {
   clamp,
+  debounce,
   escapeAttribute,
   escapeHtml,
   findMarkerByTitle,
+  html,
   loadDismissedFlag,
   loadTheme,
   markerShareUrl,
@@ -164,6 +166,9 @@ const state = {
   panelCollapsed: false,
   markerLayers: new Map(),
   markerRenderCache: new Map(),
+  markersByCategory: new Map(),
+  markersByArea: new Map(),
+  visibleMarkersByCategory: new Map(),
   areaHighlightLayer: null,
   travelLinkLayer: null,
   categoryFilter: new Set(DEFAULT_CATEGORY_FILTER),
@@ -584,8 +589,8 @@ function isMobCategory(categoryId) {
 }
 
 function mobFamilyMarkers(categoryId) {
-  return state.markers
-    .filter((marker) => !marker.fixed && marker.category === categoryId)
+  return (state.markersByCategory.get(categoryId) || [])
+    .filter((marker) => !marker.fixed)
     .sort((left, right) => left.title.localeCompare(right.title) || left.region.localeCompare(right.region));
 }
 
@@ -751,38 +756,36 @@ function encounterNavigatorHtml(marker) {
   }
 
   const parent = contextParentMarker(marker);
-  const returnButton = parent
-    ? `
-      <button type="button" class="context-return" data-context-marker="${escapeAttribute(parent.id)}">
-        Return to ${escapeHtml(parent.title)}
-      </button>
-    `
-    : "";
-
-  return `
+  return html`
     <section class="context-panel">
       <div class="context-head">
         <div>
           <h3>Hive Encounters</h3>
           <p>Select a wing to open its own route and boss guide.</p>
         </div>
-        ${returnButton}
+        ${
+          parent
+            ? html`
+                <button type="button" class="context-return" data-context-marker="${parent.id}">
+                  Return to ${parent.title}
+                </button>
+              `
+            : ""
+        }
       </div>
       <div class="context-chip-grid">
-        ${encounters
-          .map(
-            (entry) => `
-          <button
-            type="button"
-            class="context-chip ${entry.id === marker.id ? "active" : ""}"
-            data-context-marker="${escapeAttribute(entry.id)}"
-          >
-            <strong>${escapeHtml(entry.title)}</strong>
-            <span>${escapeHtml(entry.description || entry.region || "Encounter")}</span>
-          </button>
-        `
-          )
-          .join("")}
+        ${encounters.map(
+          (entry) => html`
+            <button
+              type="button"
+              class="context-chip ${entry.id === marker.id ? "active" : ""}"
+              data-context-marker="${entry.id}"
+            >
+              <strong>${entry.title}</strong>
+              <span>${entry.description || entry.region || "Encounter"}</span>
+            </button>
+          `
+        )}
       </div>
     </section>
   `;
@@ -883,15 +886,15 @@ function contentPreviewHtml(marker, entry) {
 
   if (entry.coverImage) {
     const coverUrl = resolveImageUrl(entry.coverImage, MOB_ICON_URLS, REFERENCE_IMAGE_URLS);
-    blocks.push(`
-      <button type="button" class="content-image-button content-cover" data-preview-image="${escapeAttribute(coverUrl)}" data-preview-caption="${escapeAttribute(`${marker.title} cover image`)}">
-        <img src="${escapeAttribute(coverUrl)}" alt="${escapeAttribute(marker.title)} cover image" loading="lazy" referrerpolicy="no-referrer">
+    blocks.push(html`
+      <button type="button" class="content-image-button content-cover" data-preview-image="${coverUrl}" data-preview-caption="${marker.title} cover image">
+        <img src="${coverUrl}" alt="${marker.title} cover image" loading="lazy" referrerpolicy="no-referrer">
       </button>
     `);
   }
 
   if (entry.summary) {
-    blocks.push(`<p class="content-summary">${escapeHtml(entry.summary)}</p>`);
+    blocks.push(html`<p class="content-summary">${entry.summary}</p>`);
   }
 
   if (entry.explanation) {
@@ -914,14 +917,14 @@ function contentPreviewHtml(marker, entry) {
               return "";
             }
 
-            return `
-            <section class="content-step">
-              <h3>${escapeHtml(title)}</h3>
-              <ul>
-                ${items.map((line) => `<li>${escapeHtml(line.replace(/^[•»]\s*/, ""))}</li>`).join("")}
-              </ul>
-            </section>
-          `;
+            return html`
+              <section class="content-step">
+                <h3>${title}</h3>
+                <ul>
+                  ${items.map((line) => html`<li>${line.replace(/^[•»]\s*/, "")}</li>`)}
+                </ul>
+              </section>
+            `;
           })
           .filter(Boolean)
           .join("")
@@ -935,46 +938,46 @@ function contentPreviewHtml(marker, entry) {
         ? sections
             .map((lines) => {
               const [title, ...items] = lines;
-              return `
-            <section class="content-step content-step-list">
-              <h3>${escapeHtml(title)}</h3>
-              <ul>
-                ${items.map((line) => `<li>${escapeHtml(line.replace(/^[•»]\s*/, ""))}</li>`).join("")}
-              </ul>
-            </section>
-          `;
+              return html`
+                <section class="content-step content-step-list">
+                  <h3>${title}</h3>
+                  <ul>
+                    ${items.map((line) => html`<li>${line.replace(/^[•»]\s*/, "")}</li>`)}
+                  </ul>
+                </section>
+              `;
             })
             .join("")
         : "";
 
     if (stepCards) {
-      blocks.push(`<div class="content-steps">${stepCards}</div>`);
+      blocks.push(html`<div class="content-steps">${html.raw(stepCards)}</div>`);
     } else if (listCards) {
-      blocks.push(`<div class="content-steps">${listCards}</div>`);
+      blocks.push(html`<div class="content-steps">${html.raw(listCards)}</div>`);
     } else {
-      const paragraphs = sections
-        .map((lines) => `<p>${escapeHtml(lines.join("\n")).replaceAll("\n", "<br>")}</p>`)
-        .join("");
-      blocks.push(`<div class="content-prose">${paragraphs}</div>`);
+      const paragraphs = sections.map((lines) =>
+        html`<p>${html.raw(escapeHtml(lines.join("\n")).replaceAll("\n", "<br>"))}</p>`
+      );
+      blocks.push(html`<div class="content-prose">${paragraphs}</div>`);
     }
   }
 
   if (entry.sourceUrl) {
-    blocks.push(`
+    blocks.push(html`
       <section class="content-source">
         <span>Full article</span>
-        <a href="${escapeAttribute(entry.sourceUrl)}" target="_blank" rel="noreferrer">Open the wiki page</a>
+        <a href="${entry.sourceUrl}" target="_blank" rel="noreferrer">Open the wiki page</a>
       </section>
     `);
   }
 
   if (altarIngredient) {
-    blocks.push(`
+    blocks.push(html`
       <section class="content-block content-links">
         <h3>Opening Ingredient</h3>
         <div class="content-link-list">
-          <button type="button" class="content-link-chip" data-ingredient-mobs="${escapeAttribute(altarIngredient.itemName)}">
-            ${escapeHtml(`Show where to get ${altarIngredient.raw}`)}
+          <button type="button" class="content-link-chip" data-ingredient-mobs="${altarIngredient.itemName}">
+            ${`Show where to get ${altarIngredient.raw}`}
           </button>
         </div>
       </section>
@@ -982,38 +985,34 @@ function contentPreviewHtml(marker, entry) {
   }
 
   if (miniQuestIngredients.length) {
-    blocks.push(`
+    blocks.push(html`
       <section class="content-block content-links">
         <h3>${miniQuestIngredients.length === 1 ? "Required Item" : "Required Items"}</h3>
         <div class="content-link-list">
-          ${miniQuestIngredients
-            .map(
-              (item) => `
-            <button type="button" class="content-link-chip" data-ingredient-mobs="${escapeAttribute(item.itemName)}">
-              ${escapeHtml(`Show where to get ${item.raw}`)}
-            </button>
-          `
-            )
-            .join("")}
+          ${miniQuestIngredients.map(
+            (item) => html`
+              <button type="button" class="content-link-chip" data-ingredient-mobs="${item.itemName}">
+                ${`Show where to get ${item.raw}`}
+              </button>
+            `
+          )}
         </div>
       </section>
     `);
   }
 
   if (referenceLinks.length) {
-    blocks.push(`
+    blocks.push(html`
       <section class="content-block content-links">
         <h3>Reference Links</h3>
         <div class="content-link-list">
-          ${referenceLinks
-            .map(
-              (item) => `
-            <a class="content-link-chip" href="${escapeAttribute(item.url)}" target="_blank" rel="noreferrer">
-              ${escapeHtml(item.label)}
-            </a>
-          `
-            )
-            .join("")}
+          ${referenceLinks.map(
+            (item) => html`
+              <a class="content-link-chip" href="${item.url}" target="_blank" rel="noreferrer">
+                ${item.label}
+              </a>
+            `
+          )}
         </div>
       </section>
     `);
@@ -1022,17 +1021,15 @@ function contentPreviewHtml(marker, entry) {
   const embeddableGallery = gallery.map((url) => resolveImageUrl(url, MOB_ICON_URLS, REFERENCE_IMAGE_URLS));
 
   if (embeddableGallery.length) {
-    blocks.push(`
+    blocks.push(html`
       <div class="content-gallery">
-        ${embeddableGallery
-          .map(
-            (url, index) => `
-          <button type="button" class="content-image-button content-thumb" data-preview-image="${escapeAttribute(url)}" data-preview-caption="${escapeAttribute(`${marker.title} reference image ${index + 1}`)}">
-            <img src="${escapeAttribute(url)}" alt="${escapeAttribute(`${marker.title} gallery ${index + 1}`)}" loading="lazy" referrerpolicy="no-referrer">
-          </button>
-        `
-          )
-          .join("")}
+        ${embeddableGallery.map(
+          (url, index) => html`
+            <button type="button" class="content-image-button content-thumb" data-preview-image="${url}" data-preview-caption="${marker.title} reference image ${index + 1}">
+              <img src="${url}" alt="${marker.title} gallery ${index + 1}" loading="lazy" referrerpolicy="no-referrer">
+            </button>
+          `
+        )}
       </div>
     `);
   }
@@ -1042,32 +1039,32 @@ function contentPreviewHtml(marker, entry) {
       .map((url) => {
         const embed = youtubeEmbedMeta(url);
         if (embed?.embedUrl) {
-          return `
-          <div class="tutorial-card${embed.isShort ? " short" : ""}">
-            <iframe
-              src="${escapeAttribute(embed.embedUrl)}"
-              title="${escapeAttribute(`${marker.title} tutorial video`)}"
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-            <a href="${escapeAttribute(url)}" target="_blank" rel="noreferrer">Open source video</a>
-          </div>
-        `;
+          return html`
+            <div class="tutorial-card${embed.isShort ? " short" : ""}">
+              <iframe
+                src="${embed.embedUrl}"
+                title="${marker.title} tutorial video"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <a href="${url}" target="_blank" rel="noreferrer">Open source video</a>
+            </div>
+          `;
         }
 
-        return `
-        <div class="tutorial-link">
-          <a href="${escapeAttribute(url)}" target="_blank" rel="noreferrer">${escapeHtml(url)}</a>
-        </div>
-      `;
+        return html`
+          <div class="tutorial-link">
+            <a href="${url}" target="_blank" rel="noreferrer">${url}</a>
+          </div>
+        `;
       })
       .join("");
 
-    blocks.push(`
+    blocks.push(html`
       <section class="content-block">
         <h3>Tutorials</h3>
-        <div class="tutorial-stack">${tutorialCards}</div>
+        <div class="tutorial-stack">${html.raw(tutorialCards)}</div>
       </section>
     `);
   }
@@ -1078,7 +1075,7 @@ function contentPreviewHtml(marker, entry) {
       ? "Use the editor below for notes, image links, and tutorial links. Changes save locally in this browser."
       : "This marker still links to the source page even when no local notes are available.";
 
-    return `
+    return html`
       <div class="content-empty">
         <strong>${emptyTitle}</strong>
         <span>${emptyCopy}</span>
@@ -1104,7 +1101,7 @@ function videoGuidePreviewHtml(marker, entry) {
     return `
       <div class="content-empty video-guide-empty">
         <strong>No linked video yet.</strong>
-        <span>a video guide for this isnt currently avalable</span>
+        <span>No video guide is currently available for this marker.</span>
       </div>
     `;
   }
@@ -1138,7 +1135,7 @@ function videoGuidePreviewHtml(marker, entry) {
 }
 
 function contentEditorHtml(marker, entry) {
-  return `
+  return html`
     <section class="content-studio">
       <div class="content-studio-head">
         <h3>Content Studio</h3>
@@ -1146,23 +1143,23 @@ function contentEditorHtml(marker, entry) {
       </div>
       <label class="content-field">
         <span>Summary</span>
-        <input type="text" data-content-field="summary" value="${escapeAttribute(entry.summary)}" placeholder="Short line shown at the top of the marker entry.">
+        <input type="text" data-content-field="summary" value="${entry.summary}" placeholder="Short line shown at the top of the marker entry.">
       </label>
       <label class="content-field">
         <span>Cover Image URL</span>
-        <input type="url" data-content-field="coverImage" value="${escapeAttribute(entry.coverImage)}" placeholder="https://drive.google.com/file/d/.../view">
+        <input type="url" data-content-field="coverImage" value="${entry.coverImage}" placeholder="https://drive.google.com/file/d/.../view">
       </label>
       <label class="content-field">
         <span>Gallery Image URLs</span>
-        <textarea data-content-field="gallery" rows="4" placeholder="One Google Drive image link per line.">${escapeHtml(entry.gallery.join("\n"))}</textarea>
+        <textarea data-content-field="gallery" rows="4" placeholder="One Google Drive image link per line.">${entry.gallery.join("\n")}</textarea>
       </label>
       <label class="content-field">
         <span>Explanation</span>
-        <textarea data-content-field="explanation" rows="8" placeholder="Write the full explanation for this location.">${escapeHtml(entry.explanation)}</textarea>
+        <textarea data-content-field="explanation" rows="8" placeholder="Write the full explanation for this location.">${entry.explanation}</textarea>
       </label>
       <label class="content-field">
         <span>Tutorial Videos</span>
-        <textarea data-content-field="tutorials" rows="4" placeholder="One YouTube URL per line.">${escapeHtml(entry.tutorials.join("\n"))}</textarea>
+        <textarea data-content-field="tutorials" rows="4" placeholder="One YouTube URL per line.">${entry.tutorials.join("\n")}</textarea>
       </label>
       <div class="detail-actions">
         <button type="button" class="detail-button secondary" data-content-action="copy-marker">Copy marker JSON</button>
@@ -1185,44 +1182,35 @@ function worldEventDetailsHtml(marker) {
   const coordinates = Array.isArray(details.coordinates) ? details.coordinates : [];
   const coordText = coordinates.length ? coordinates.map((point) => `${point.x}, ${point.z}`).join(" | ") : "Unknown";
   const enemyBlock = enemies.length
-    ? `
+    ? html`
         <section class="event-detail-block">
           <h4>Enemies</h4>
           <ul>
-            ${enemies.map((enemy) => `<li>${escapeHtml(enemy)}</li>`).join("")}
+            ${enemies.map((enemy) => html`<li>${enemy}</li>`)}
           </ul>
         </section>
       `
     : "";
   const bossBlock = boss
-    ? `
+    ? html`
         <section class="event-detail-block">
           <h4>Boss</h4>
-          <p>${escapeHtml(boss)}</p>
+          <p>${boss}</p>
         </section>
       `
     : "";
-  const detailGrid =
-    enemyBlock || bossBlock
-      ? `
-      <div class="event-detail-grid">
-        ${enemyBlock}
-        ${bossBlock}
-      </div>
-    `
-      : "";
   const dropsBlock = drops.length
-    ? `
-      <section class="event-detail-block drops">
-        <h4>Drops</h4>
-        <div class="event-drop-list">
-          ${drops.map((drop) => `<span class="event-drop-chip">${escapeHtml(drop)}</span>`).join("")}
-        </div>
-      </section>
-    `
+    ? html`
+        <section class="event-detail-block drops">
+          <h4>Drops</h4>
+          <div class="event-drop-list">
+            ${drops.map((drop) => html`<span class="event-drop-chip">${drop}</span>`)}
+          </div>
+        </section>
+      `
     : "";
 
-  return `
+  return html`
     <section class="event-intel-panel">
       <div class="event-intel-head">
         <h3>World Event Intel</h3>
@@ -1231,37 +1219,46 @@ function worldEventDetailsHtml(marker) {
       <div class="event-stat-grid">
         <div class="event-stat-card">
           <strong>Suggested Lv.</strong>
-          <span>${escapeHtml(details.level)}</span>
+          <span>${details.level}</span>
         </div>
         <div class="event-stat-card">
           <strong>Waves</strong>
-          <span>${escapeHtml(details.waves)}</span>
+          <span>${details.waves}</span>
         </div>
         <div class="event-stat-card">
           <strong>Length</strong>
-          <span>${escapeHtml(details.length)}</span>
+          <span>${details.length}</span>
         </div>
         <div class="event-stat-card">
           <strong>Difficulty</strong>
-          <span>${escapeHtml(details.difficulty)}</span>
+          <span>${details.difficulty}</span>
         </div>
       </div>
       ${
         details.requiredQuest
-          ? `
-        <div class="event-detail-row">
-          <strong>Required Quest</strong>
-          <span>${escapeHtml(details.requiredQuest)}</span>
-        </div>
-      `
+          ? html`
+              <div class="event-detail-row">
+                <strong>Required Quest</strong>
+                <span>${details.requiredQuest}</span>
+              </div>
+            `
           : ""
       }
       <div class="event-detail-row">
         <strong>Anchor Coordinates</strong>
-        <span>${escapeHtml(coordText)}</span>
+        <span>${coordText}</span>
       </div>
-      ${detailGrid}
-      ${dropsBlock}
+      ${
+        enemyBlock || bossBlock
+          ? html`
+              <div class="event-detail-grid">
+                ${html.raw(enemyBlock)}
+                ${html.raw(bossBlock)}
+              </div>
+            `
+          : ""
+      }
+      ${html.raw(dropsBlock)}
     </section>
   `;
 }
@@ -2031,157 +2028,152 @@ function updateMarkerLayerPositions() {
 }
 
 function categoryCount(categoryId) {
-  return state.markers.filter(
-    (marker) =>
-      marker.category === categoryId && !marker.fixed && !marker.contextOnly && markerArea(marker) === state.currentArea
+  return (state.markersByCategory.get(categoryId) || []).filter(
+    (marker) => !marker.fixed && !marker.contextOnly && markerArea(marker) === state.currentArea
   ).length;
 }
 
 function categoryVisibleCount(categoryId) {
-  return state.filteredMarkers.filter(
-    (marker) =>
-      marker.category === categoryId && !marker.fixed && !marker.contextOnly && markerArea(marker) === state.currentArea
-  ).length;
+  return state.visibleMarkersByCategory.get(categoryId)?.length || 0;
+}
+
+function renderMobBrowserPanel(categoryId, meta) {
+  const listedMarkers = activeMobFamilyMarkers();
+  return html`
+    <section class="mob-browser-panel">
+      <div class="mob-browser-head">
+        <div class="mob-browser-copy">
+          <span class="mob-browser-kicker">Mob Browser</span>
+          <strong>${meta.label}</strong>
+        </div>
+        <button type="button" class="mob-browser-close" data-close-mob-family="1" aria-label="Close mob family list">×</button>
+      </div>
+      ${
+        state.trackedIngredient
+          ? html`
+              <div class="mob-tracking-strip">
+                <div class="mob-tracking-copy">
+                  <span>Tracking ${state.trackedIngredient}</span>
+                </div>
+                <button type="button" class="text-action" data-clear-ingredient-tracking="1">Cancel tracking</button>
+              </div>
+            `
+          : ""
+      }
+      <p class="mob-browser-note">Pick a mob and the map will outline every exact spawn node we have for it.</p>
+      <div class="mob-browser-list">
+        ${
+          listedMarkers.length
+            ? listedMarkers.map((marker) => {
+                const selected = marker.id === state.selectedMarkerId;
+                const secondary = [
+                  marker.region || "World",
+                  `${marker.spawnPointCount || 0} ${marker.spawnPointCount === 1 ? "node" : "nodes"}`,
+                ].join(" · ");
+                const mobIconUrl = markerIconUrl(marker, "active");
+                return html.raw(html`
+                  <button
+                    type="button"
+                    class="mob-list-item ${selected ? "active" : ""}"
+                    data-mob-marker="${marker.id}"
+                  >
+                    <span class="mob-list-icon-shell">
+                      ${
+                        mobIconUrl
+                          ? html`<img class="mob-list-icon" src="${mobIconUrl}" alt="" loading="lazy" referrerpolicy="no-referrer">`
+                          : html.raw(genericIconMarkup(marker.category, "mob-list-icon generic-category-icon"))
+                      }
+                    </span>
+                    <span class="mob-list-copy">
+                      <strong>${marker.title}</strong>
+                      <span>${secondary}</span>
+                    </span>
+                    <span class="mob-list-count">${marker.spawnPointCount || 0}</span>
+                  </button>
+                `);
+              })
+            : html`<div class="mob-browser-empty">No ${meta.label.toLowerCase()} match the current search.</div>`
+        }
+      </div>
+    </section>
+  `;
+}
+
+function renderMobFamilyCard(categoryId) {
+  const meta = CATEGORY_META[categoryId];
+  const total = categoryCount(categoryId);
+  const matching = filteredMobFamilyMarkers(categoryId).length;
+  const active = state.activeMobFamily === categoryId;
+  const metaText = active
+    ? `${matching} ${matching === 1 ? "mob" : "mobs"} listed`
+    : state.search && matching
+      ? `${matching} matching`
+      : `${total} ${total === 1 ? "type" : "types"}`;
+  return html`
+    <div class="mob-family-stack ${active ? "active" : ""}">
+      <button type="button" class="category-card ${active ? "active" : "inactive"} mob-family-card" data-mob-family="${categoryId}">
+        ${html.raw(genericIconMarkup(categoryId, "category-icon"))}
+        <span class="category-copy">
+          <strong>${meta.label}</strong>
+          <span class="category-meta">${metaText}</span>
+        </span>
+        <span class="category-count">${total}</span>
+      </button>
+      ${active ? html.raw(renderMobBrowserPanel(categoryId, meta)) : ""}
+    </div>
+  `;
+}
+
+function renderStandardCategoryCard(group, categoryId) {
+  const meta = CATEGORY_META[categoryId];
+  const active = state.categoryFilter.has(categoryId);
+  const total = categoryCount(categoryId);
+  const visible = categoryVisibleCount(categoryId);
+  const iconUrl = categoryAssetUrl(categoryId, active ? "active" : "locked");
+  const metaText = active ? `${visible} shown` : state.search && visible ? `${visible} matching` : "Hidden";
+  return html`
+    <button type="button" class="category-card ${active ? "active" : "inactive"}" data-category="${categoryId}">
+      ${
+        iconUrl
+          ? html`<span class="category-icon asset-icon" style="--category-icon:url('${iconUrl}');--category-accent:${meta.color};"></span>`
+          : html.raw(genericIconMarkup(categoryId, "category-icon"))
+      }
+      <span class="category-copy">
+        <strong>${meta.label}</strong>
+        <span class="category-meta">${metaText}</span>
+      </span>
+      <span class="category-count">${total}</span>
+    </button>
+  `;
 }
 
 function renderCategoryFilters() {
   elements.categoryFilters.innerHTML = CATEGORY_GROUPS.map((group) => {
     if (group.id === "mobs") {
-      const cards = group.categories
-        .map((categoryId) => {
-          const meta = CATEGORY_META[categoryId];
-          const total = categoryCount(categoryId);
-          const matching = filteredMobFamilyMarkers(categoryId).length;
-          const active = state.activeMobFamily === categoryId;
-          const metaText = active
-            ? `${matching} ${matching === 1 ? "mob" : "mobs"} listed`
-            : state.search && matching
-              ? `${matching} matching`
-              : `${total} ${total === 1 ? "type" : "types"}`;
-          const iconMarkup = genericIconMarkup(categoryId, "category-icon");
-          return `
-          <div class="mob-family-stack ${active ? "active" : ""}">
-            <button type="button" class="category-card ${active ? "active" : "inactive"} mob-family-card" data-mob-family="${categoryId}">
-              ${iconMarkup}
-              <span class="category-copy">
-                <strong>${escapeHtml(meta.label)}</strong>
-                <span class="category-meta">${metaText}</span>
-              </span>
-              <span class="category-count">${total}</span>
-            </button>
-            ${
-              active
-                ? `
-              <section class="mob-browser-panel">
-                <div class="mob-browser-head">
-                  <div class="mob-browser-copy">
-                    <span class="mob-browser-kicker">Mob Browser</span>
-                    <strong>${escapeHtml(meta.label)}</strong>
-                  </div>
-                  <button type="button" class="mob-browser-close" data-close-mob-family="1" aria-label="Close mob family list">×</button>
-                </div>
-                ${
-                  state.trackedIngredient
-                    ? `
-                  <div class="mob-tracking-strip">
-                    <div class="mob-tracking-copy">
-                      <span>Tracking ${escapeHtml(state.trackedIngredient)}</span>
-                    </div>
-                    <button type="button" class="text-action" data-clear-ingredient-tracking="1">Cancel tracking</button>
-                  </div>
-                `
-                    : ""
-                }
-                <p class="mob-browser-note">Pick a mob and the map will outline every exact spawn node we have for it.</p>
-                <div class="mob-browser-list">
-                  ${
-                    activeMobFamilyMarkers().length
-                      ? activeMobFamilyMarkers()
-                          .map((marker) => {
-                            const selected = marker.id === state.selectedMarkerId;
-                            const secondary = [
-                              marker.region || "World",
-                              `${marker.spawnPointCount || 0} ${marker.spawnPointCount === 1 ? "node" : "nodes"}`,
-                            ].join(" · ");
-                            const mobIconUrl = markerIconUrl(marker, "active");
-                            return `
-                        <button
-                          type="button"
-                          class="mob-list-item ${selected ? "active" : ""}"
-                          data-mob-marker="${marker.id}"
-                        >
-                          <span class="mob-list-icon-shell">
-                            ${
-                              mobIconUrl
-                                ? `<img class="mob-list-icon" src="${escapeAttribute(mobIconUrl)}" alt="" loading="lazy" referrerpolicy="no-referrer">`
-                                : genericIconMarkup(marker.category, "mob-list-icon generic-category-icon")
-                            }
-                          </span>
-                          <span class="mob-list-copy">
-                            <strong>${escapeHtml(marker.title)}</strong>
-                            <span>${escapeHtml(secondary)}</span>
-                          </span>
-                          <span class="mob-list-count">${marker.spawnPointCount || 0}</span>
-                        </button>
-                      `;
-                          })
-                          .join("")
-                      : `<div class="mob-browser-empty">No ${escapeHtml(meta.label.toLowerCase())} match the current search.</div>`
-                  }
-                </div>
-              </section>
-            `
-                : ""
-            }
-          </div>
-        `;
-        })
-        .join("");
-
-      return `
+      return html`
         <section class="category-section">
           <div class="section-head">
-            <span>${escapeHtml(group.label)}</span>
+            <span>${group.label}</span>
           </div>
-          <div class="category-grid mob-category-grid">${cards}</div>
+          <div class="category-grid mob-category-grid">
+            ${group.categories.map((categoryId) => html.raw(renderMobFamilyCard(categoryId)))}
+          </div>
         </section>
       `;
     }
 
-    const cards = group.categories
-      .map((categoryId) => {
-        const meta = CATEGORY_META[categoryId];
-        const active = state.categoryFilter.has(categoryId);
-        const total = categoryCount(categoryId);
-        const visible = categoryVisibleCount(categoryId);
-        const iconUrl = categoryAssetUrl(categoryId, active ? "active" : "locked");
-        const metaText = active ? `${visible} shown` : state.search && visible ? `${visible} matching` : "Hidden";
-        const iconMarkup = iconUrl
-          ? `<span class="category-icon asset-icon" style="--category-icon:url('${iconUrl}');--category-accent:${meta.color};"></span>`
-          : genericIconMarkup(categoryId, "category-icon");
-        return `
-        <button type="button" class="category-card ${active ? "active" : "inactive"}" data-category="${categoryId}">
-          ${iconMarkup}
-          <span class="category-copy">
-            <strong>${escapeHtml(meta.label)}</strong>
-            <span class="category-meta">${metaText}</span>
-          </span>
-          <span class="category-count">${total}</span>
-        </button>
-      `;
-      })
-      .join("");
-
-    return `
+    return html`
       <section class="category-section">
         <div class="section-head">
-          <span>${escapeHtml(group.label)}</span>
+          <span>${group.label}</span>
           <div class="head-actions">
             <button type="button" class="text-action" data-group-action="select" data-group="${group.id}">Select All</button>
             <button type="button" class="text-action" data-group-action="clear" data-group="${group.id}">Clear</button>
           </div>
         </div>
-        <div class="category-grid">${cards}</div>
+        <div class="category-grid">
+          ${group.categories.map((categoryId) => html.raw(renderStandardCategoryCard(group, categoryId)))}
+        </div>
       </section>
     `;
   }).join("");
@@ -2273,24 +2265,76 @@ function renderCategoryFilters() {
   });
 }
 
+function renderDetailTopline(marker, meta, detailIcon) {
+  return html`
+    <div class="detail-topline">
+      ${html.raw(detailIcon)}
+      <div>
+        <h2>${marker.title}</h2>
+        <p class="detail-kind">${meta.label}</p>
+      </div>
+    </div>
+  `;
+}
+
+function renderDetailMeta(marker, world) {
+  return html`
+    <div class="detail-meta">
+      <span class="detail-pill">${marker.region || "World"}</span>
+      <span class="detail-pill">${world.x}, ${world.z}</span>
+    </div>
+  `;
+}
+
+function renderDetailActions(marker, supportsFound, isFound) {
+  return html`
+    <div class="detail-actions">
+      ${
+        supportsFound
+          ? html`<button type="button" class="detail-button" data-action="toggle-found">${isFound ? "Mark not found" : "Mark found"}</button>`
+          : ""
+      }
+      <button type="button" class="detail-button secondary" data-action="focus">Focus</button>
+      <button type="button" class="detail-button secondary" data-action="share">Share</button>
+    </div>
+  `;
+}
+
+function renderDetailContent(marker, content, contentLoading, contentError, eventIntel) {
+  return html`
+    ${html.raw(eventIntel)}
+    ${html.raw(encounterNavigatorHtml(marker))}
+    <section class="content-preview-panel">
+      <div class="content-preview-head">
+        <h3>Guide & Reference</h3>
+      </div>
+      <div id="content-preview-body" class="content-preview-body">
+        ${contentLoading ? html`<div class="content-loading">Loading guide content…</div>` : ""}
+        ${contentError ? html`<div class="content-load-error">Guide content could not be loaded right now.</div>` : ""}
+        ${html.raw(contentPreviewHtml(marker, content))}
+      </div>
+    </section>
+  `;
+}
+
 function renderDetailCard() {
   const marker = state.markers.find((item) => item.id === state.selectedMarkerId);
   if (!marker) {
     elements.detailCard.className = "detail-card empty";
-    elements.detailCard.innerHTML = `
+    elements.detailCard.innerHTML = html`
       <h2>No marker selected</h2>
       <p>Select a marker to view notes, rewards, routes, and source links.</p>
     `;
     if (elements.studioCard) {
       elements.studioCard.className = "detail-card empty";
-      elements.studioCard.innerHTML = `
+      elements.studioCard.innerHTML = html`
         <h2>No marker selected</h2>
         <p>Select a marker to open its editor here.</p>
       `;
     }
     if (elements.linkCard) {
       elements.linkCard.className = "detail-card empty";
-      elements.linkCard.innerHTML = `
+      elements.linkCard.innerHTML = html`
         <h2>No marker selected</h2>
         <p>Select a quest or secret discovery to view or set its linked video.</p>
       `;
@@ -2316,43 +2360,11 @@ function renderDetailCard() {
   const contentLoading = !contentSourceLoaded(marker.category);
   const contentError = contentSourceLoadError(marker.category);
   const eventIntel = worldEventDetailsHtml(marker);
-  const detailMeta = [
-    `<span class="detail-pill">${escapeHtml(marker.region || "World")}</span>`,
-    `<span class="detail-pill">${world.x}, ${world.z}</span>`,
-  ].join("");
-  const actionButtons = [
-    supportsFound
-      ? `<button type="button" class="detail-button" data-action="toggle-found">${isFound ? "Mark not found" : "Mark found"}</button>`
-      : "",
-    `<button type="button" class="detail-button secondary" data-action="focus">Focus</button>`,
-    `<button type="button" class="detail-button secondary" data-action="share">Share</button>`,
-  ]
-    .filter(Boolean)
-    .join("");
-  const infoBody = `
-    <div class="detail-topline">
-      ${detailIcon}
-      <div>
-        <h2>${escapeHtml(marker.title)}</h2>
-        <p class="detail-kind">${escapeHtml(meta.label)}</p>
-      </div>
-    </div>
-    <div class="detail-meta">${detailMeta}</div>
-    ${eventIntel}
-    <div class="detail-actions">
-      ${actionButtons}
-    </div>
-    ${encounterNavigatorHtml(marker)}
-    <section class="content-preview-panel">
-      <div class="content-preview-head">
-        <h3>Guide & Reference</h3>
-      </div>
-      <div id="content-preview-body" class="content-preview-body">
-        ${contentLoading ? `<div class="content-loading">Loading guide content…</div>` : ""}
-        ${contentError ? `<div class="content-load-error">Guide content could not be loaded right now.</div>` : ""}
-        ${contentPreviewHtml(marker, content)}
-      </div>
-    </section>
+  const infoBody = html`
+    ${html.raw(renderDetailTopline(marker, meta, detailIcon))}
+    ${html.raw(renderDetailMeta(marker, world))}
+    ${html.raw(renderDetailActions(marker, supportsFound, isFound))}
+    ${html.raw(renderDetailContent(marker, content, contentLoading, contentError, eventIntel))}
   `;
 
   elements.detailCard.className = "detail-card";
@@ -2360,25 +2372,25 @@ function renderDetailCard() {
 
   if (elements.linkCard) {
     elements.linkCard.className = "detail-card";
-    elements.linkCard.innerHTML = `
+    elements.linkCard.innerHTML = html`
       <div class="detail-topline compact">
         <div>
-          <h2>${escapeHtml(marker.title)}</h2>
+          <h2>${marker.title}</h2>
           <p class="detail-kind">Linked Video</p>
         </div>
       </div>
       <div id="video-guide-preview-body" class="content-preview-body">
-        ${videoGuidePreviewHtml(marker, content)}
+        ${html.raw(videoGuidePreviewHtml(marker, content))}
       </div>
-      ${videoGuideEditorHtml(marker, authoredContent)}
+      ${html.raw(videoGuideEditorHtml(marker, authoredContent))}
     `;
   }
 
   if (elements.studioCard) {
     elements.studioCard.className = "detail-card";
-    elements.studioCard.innerHTML = `
-      ${infoBody}
-      ${contentEditorHtml(marker, authoredContent)}
+    elements.studioCard.innerHTML = html`
+      ${html.raw(infoBody)}
+      ${html.raw(contentEditorHtml(marker, authoredContent))}
     `;
   }
 
@@ -2941,8 +2953,18 @@ function toggleFound(markerId) {
 }
 
 function syncVisibleMarkers() {
-  state.filteredMarkers = state.markers.filter(markerIsVisible);
+  const areaMarkers = state.markersByArea.get(state.currentArea) || [];
+  state.filteredMarkers = areaMarkers.filter(markerIsVisible);
   state.filteredMarkerIdSet = new Set(state.filteredMarkers.map((marker) => marker.id));
+  state.visibleMarkersByCategory = new Map();
+  state.filteredMarkers.forEach((marker) => {
+    if (marker.fixed || marker.contextOnly) {
+      return;
+    }
+    const bucket = state.visibleMarkersByCategory.get(marker.category) || [];
+    bucket.push(marker);
+    state.visibleMarkersByCategory.set(marker.category, bucket);
+  });
 
   for (const marker of state.markers) {
     const layer = state.markerLayers.get(marker.id);
@@ -2965,6 +2987,18 @@ function hydrateMarkerState() {
   ).filter((marker) => marker.category !== "world_events");
   state.markers = [...fixedCities, ...curatedSupplemental, ...wikiMarkers];
   state.markerIndex = new Map(state.markers.map((marker) => [marker.id, marker]));
+  state.markersByCategory = new Map();
+  state.markersByArea = new Map();
+  state.markers.forEach((marker) => {
+    const categoryBucket = state.markersByCategory.get(marker.category) || [];
+    categoryBucket.push(marker);
+    state.markersByCategory.set(marker.category, categoryBucket);
+
+    const areaId = markerArea(marker);
+    const areaBucket = state.markersByArea.get(areaId) || [];
+    areaBucket.push(marker);
+    state.markersByArea.set(areaId, areaBucket);
+  });
   state.markers.forEach(createMarkerLayer);
 }
 
@@ -2993,6 +3027,13 @@ function recordCalibrationSample(latlng) {
 }
 
 function bindEvents() {
+  const debouncedSearchUpdate = debounce((value) => {
+    state.search = value;
+    renderSearchButton();
+    syncVisibleMarkers();
+    renderCategoryFilters();
+  }, 120);
+
   elements.panelToggle.addEventListener("click", () => {
     setPanelCollapsed(!state.panelCollapsed);
   });
@@ -3138,10 +3179,7 @@ function bindEvents() {
   });
 
   elements.searchInput.addEventListener("input", (event) => {
-    state.search = event.target.value.trim().toLowerCase();
-    renderSearchButton();
-    syncVisibleMarkers();
-    renderCategoryFilters();
+    debouncedSearchUpdate(event.target.value.trim().toLowerCase());
   });
 
   elements.clearSearch.addEventListener("click", () => {
