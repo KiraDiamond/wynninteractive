@@ -14,12 +14,13 @@ Wynnteractive Map is a static GitHub Pages map for current Wynncraft routes, gui
 
 - `index.html`: live app shell
 - `beta/index.html`: beta app shell
-- `styles.css`: shared map and panel styling
-- `app.js`: live interaction logic, marker rendering, and panel behavior
-- `beta/beta-app.js`: beta interaction logic
+- `shared-map-ui.css`: shared map and panel styling
+- `main-map-app.js`: live interaction logic, marker rendering, and panel behavior
+- `beta/beta-map-app.js`: beta interaction logic
+- `shared/app-utils.js`: shared escaping, lookup, embed, and asset helper logic
 - `data/markers.js`: local marker metadata and curated overlays
 - `data/wiki-map-markers.js`: generated live marker dataset used by the map
-- `data/marker-content.js`: merged marker note/content registry
+- `data/marker-content-loader.js`: lazy guide-content loader for marker categories
 
 ## Sources and Credits
 

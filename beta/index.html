@@ -32,8 +32,7 @@
         }
       } catch {}
     </script>
-    <link rel="stylesheet" href="../styles.css?v=20260520k" />
-    <link rel="stylesheet" href="./beta.css?v=20260519a" />
+    <link rel="stylesheet" href="../shared-map-ui.css?v=20260520o" />
   </head>
   <body>
     <div class="app-shell">
@@ -42,7 +41,7 @@
       <aside id="marker-panel" class="marker-panel">
         <div class="panel-shell-head">
           <div class="panel-brand">
-            <img class="panel-brand-icon" src="../assets/icon.png" alt="" />
+            <img class="panel-brand-icon" src="../assets/icon.avif" alt="" />
             <div class="panel-brand-copy">
               <strong>Wynnteractive Map</strong>
               <span>Beta map preview</span>
@@ -183,7 +182,48 @@
       </div>
     </div>
 
+    <div id="intro-modal" class="intro-modal hidden" aria-hidden="true" role="dialog" aria-labelledby="intro-title">
+      <div class="intro-modal-panel">
+        <div class="intro-modal-head">
+          <div class="intro-modal-brand">
+            <img class="intro-modal-icon" src="../assets/icon.avif" alt="" />
+            <div>
+              <p class="intro-modal-kicker">Welcome</p>
+              <h2 id="intro-title">Wynnteractive Map Beta</h2>
+            </div>
+          </div>
+          <button id="intro-close" type="button" class="intro-modal-close" aria-label="Close introduction">×</button>
+        </div>
+        <p class="intro-modal-copy">
+          Wynnteractive Map Beta is the testing surface for new Wynncraft map features before they move to the main
+          release.
+        </p>
+        <div class="intro-modal-grid">
+          <section class="intro-modal-block">
+            <h3>What It Does</h3>
+            <ul>
+              <li>Preview experimental marker systems and map interactions.</li>
+              <li>Test exact mob data, beta-only tools, and map calibration work.</li>
+              <li>Keep the same guide and marker experience as the main site where possible.</li>
+            </ul>
+          </section>
+          <section class="intro-modal-block">
+            <h3>Credits</h3>
+            <ul>
+              <li>Marker positions from official Wynncraft server data.</li>
+              <li>Fast travel and Seaskipper art and location support from Wynntils assets and data.</li>
+              <li>Guide information sourced from wiki.gg with fandom as backup.</li>
+              <li>Site logo by Xnova204.</li>
+            </ul>
+          </section>
+        </div>
+        <div class="intro-modal-actions">
+          <button id="intro-start" type="button" class="detail-button">Enter Beta</button>
+        </div>
+      </div>
+    </div>
+
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-    <script type="module" src="./beta-app.js?v=20260520k"></script>
+    <script type="module" src="./beta-map-app.js?v=20260520o"></script>
   </body>
 </html>
