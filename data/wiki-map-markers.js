@@ -3,25 +3,6 @@
 
 export const WIKI_MAP_MARKERS = [
   {
-    "id": "atlas-territorial_discovery-nether-portal-340--1300",
-    "title": "Nether Portal",
-    "category": "territorial_discovery",
-    "region": "Wynn",
-    "description": "I marked Nether Portal as a current territorial discovery on the live map.",
-    "tags": [
-      "travel",
-      "special rootsofcorruption",
-      "territorial-discovery",
-      "wiki-map"
-    ],
-    "position": {
-      "world": {
-        "x": 340,
-        "z": -1300
-      }
-    }
-  },
-  {
     "id": "atlas-world_discovery-light-s-secret--1050--4295",
     "title": "Light's Secret",
     "category": "world_discovery",
