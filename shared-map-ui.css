@@ -126,12 +126,13 @@ input {
 }
 
 .leaflet-control-zoom a.leaflet-disabled {
-  width: 32px !important;
-  height: 32px !important;
-  line-height: 32px !important;
+  width: 38px !important;
+  height: 38px !important;
+  line-height: 38px !important;
   color: rgba(219, 228, 237, 0.42) !important;
   background: rgba(37, 52, 71, 0.42) !important;
   cursor: default !important;
+  opacity: 0.58;
 }
 
 .map-coordinate-control {
@@ -1888,8 +1889,6 @@ input {
 }
 
 .map-pin-wrapper {
-  width: var(--map-pin-size);
-  height: var(--map-pin-size);
   background: transparent;
   border: 0;
 }
@@ -1900,8 +1899,6 @@ input {
   width: 100%;
   height: 100%;
   overflow: visible;
-  transform: scale(var(--map-pin-scale));
-  transform-origin: center center;
 }
 
 .city-anchor-icon {

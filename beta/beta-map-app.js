@@ -326,9 +326,9 @@ const map = L.map("map", {
   zoomControl: true,
   attributionControl: false,
   wheelPxPerZoomLevel: 100,
-  zoomAnimation: true,
-  fadeAnimation: true,
-  markerZoomAnimation: true,
+  zoomAnimation: false,
+  fadeAnimation: false,
+  markerZoomAnimation: false,
 });
 map.zoomControl.setPosition("bottomright");
 
@@ -369,6 +369,11 @@ function updatePinScale() {
   const zoom = map.getZoom();
   const scale = zoom <= 0 ? 1 : 1 + zoom * 0.28 + zoom * zoom * 0.05;
   document.documentElement.style.setProperty("--map-pin-scale", String(scale));
+}
+
+function currentMarkerScale() {
+  const zoom = map.getZoom();
+  return zoom <= 0 ? 1 : 1 + zoom * 0.28 + zoom * zoom * 0.05;
 }
 
 function loadFoundIds() {
@@ -1804,7 +1809,9 @@ function markerIsVisible(marker) {
 function buildMarkerIcon(marker, isFound, isSelected) {
   const meta = CATEGORY_META[marker.category];
   const isTravelMarker = marker.category === "fast_travel" || marker.category === "seaskipper";
-  const pinSize = isTravelMarker ? 20 : MAP_PIN_SIZE;
+  const basePinSize = isTravelMarker ? 20 : MAP_PIN_SIZE;
+  const scale = currentMarkerScale();
+  const pinSize = Math.max(12, Math.round(basePinSize * scale));
   const artSize = pinSize;
   if (marker.fixed) {
     if (state.areaOffsetMode) {
@@ -1919,6 +1926,7 @@ function markerRenderStateKey(marker, isVisible, isFound, isSelected) {
     isSelected ? 1 : 0,
     marker.fixed && state.editCities ? 1 : 0,
     marker.fixed && state.areaOffsetMode ? 1 : 0,
+    marker.fixed ? "city" : String(Math.round(currentMarkerScale() * 100)),
   ].join(":");
 }
 
