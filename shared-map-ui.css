@@ -93,6 +93,7 @@ input {
 #map {
   position: absolute;
   inset: 0;
+  will-change: transform;
 }
 
 .leaflet-container {
@@ -979,6 +980,17 @@ input {
   border: 1px solid rgba(120, 141, 165, 0.18);
   background: linear-gradient(180deg, rgba(243, 247, 252, 0.88), rgba(236, 241, 247, 0.92));
   color: #587089;
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.content-load-error {
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(185, 92, 92, 0.24);
+  background: linear-gradient(180deg, rgba(255, 242, 242, 0.9), rgba(252, 233, 233, 0.94));
+  color: #a23939;
   font-size: 0.84rem;
   font-weight: 600;
 }
@@ -2046,14 +2058,11 @@ input {
 .asset-pin.selected {
   filter: drop-shadow(0 0 8px color-mix(in srgb, var(--pin-glow) 68%, transparent))
     drop-shadow(0 0 5px rgba(17, 24, 37, 0.34));
+  transform: scale(1.08);
 }
 
 .asset-pin.found {
   opacity: 0.82;
-}
-
-.asset-pin.selected {
-  transform: scale(1.08);
 }
 
 .calibration-anchor {
@@ -2411,6 +2420,12 @@ input {
   border-color: rgba(109, 141, 181, 0.2);
   background: linear-gradient(180deg, rgba(18, 28, 40, 0.9), rgba(15, 23, 34, 0.96));
   color: #9bb5d1;
+}
+
+:root[data-theme="dark"] .content-load-error {
+  border-color: rgba(206, 118, 118, 0.28);
+  background: linear-gradient(180deg, rgba(58, 24, 24, 0.92), rgba(43, 18, 18, 0.96));
+  color: #ffb1b1;
 }
 
 :root[data-theme="dark"] .content-source a,

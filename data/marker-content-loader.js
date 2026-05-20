@@ -192,7 +192,27 @@ export const MANUAL_MARKER_OVERRIDES = {
   "atlas-caves-time-valley-aquifer--377--1167": LIMITED_MARKER_FALLBACK,
 };
 
-const sourceCache = new Map();
+const CONTENT_LOADERS = {
+  quests: async () => (await import("./content/quest-content.js?v=20260520a")).QUESTS_CONTENT,
+  "mini-quests": async () => (await import("./content/mini-quest-content.js?v=20260520a")).MINI_QUESTS_CONTENT,
+  "secret-discoveries": async () =>
+    (await import("./content/secret-discovery-content.js?v=20260520a")).SECRET_DISCOVERY_CONTENT,
+  "world-discoveries": async () =>
+    (await import("./content/world-discovery-content.js?v=20260520a")).WORLD_DISCOVERY_CONTENT,
+  "world-events": async () => (await import("./content/world-event-content.js?v=20260520a")).WORLD_EVENTS_CONTENT,
+  dungeons: async () => (await import("./content/dungeon-content.js?v=20260520a")).DUNGEON_CONTENT,
+  raids: async () => (await import("./content/raid-content.js?v=20260520a")).RAID_CONTENT,
+  "boss-altars": async () => (await import("./content/boss-altar-content.js?v=20260520a")).BOSS_ALTAR_CONTENT,
+  caves: async () => (await import("./content/cave-content.js?v=20260520a")).CAVES_CONTENT,
+  "lootrun-camps": async () => (await import("./content/lootrun-camp-content.js?v=20260520a")).LOOTRUN_CAMP_CONTENT,
+  "fast-travel": async () => (await import("./content/fast-travel-content.js?v=20260520a")).FAST_TRAVEL_CONTENT,
+  seaskippers: async () => (await import("./content/seaskipper-content.js?v=20260520a")).SEASKIPPER_CONTENT,
+  profession: async () => (await import("./content/profession-content.js?v=20260520a")).PROFESSION_CONTENT,
+  mobs: async () => (await import("./content/mob-content.js?v=20260520a")).MOBS_CONTENT,
+};
+
+const _cache = new Map();
+const _errors = new Map();
 
 export function contentSourceKeyForCategory(categoryId) {
   if (String(categoryId || "").startsWith("hostile_mobs")) {
@@ -224,43 +244,40 @@ export function manualMarkerContentEntry(markerId) {
   return MANUAL_MARKER_OVERRIDES[markerId] || null;
 }
 
+export function contentSourceError(categoryId) {
+  const sourceKey = contentSourceKeyForCategory(categoryId);
+  return sourceKey ? _errors.get(sourceKey) || "" : "";
+}
+
+export async function loadContent(key, request) {
+  if (_cache.has(key)) {
+    return _cache.get(key);
+  }
+
+  _errors.delete(key);
+  const pending = (async () => {
+    try {
+      return await request();
+    } catch (error) {
+      _cache.delete(key);
+      _errors.set(key, error instanceof Error ? error.message : "Failed to load guide content.");
+      throw error;
+    }
+  })();
+  _cache.set(key, pending);
+  return pending;
+}
+
 export async function loadMarkerContentForCategory(categoryId) {
   const sourceKey = contentSourceKeyForCategory(categoryId);
   if (!sourceKey) {
     return {};
   }
 
-  if (!sourceCache.has(sourceKey)) {
-    const loaderMap = {
-      quests: async () => (await import("./content/quest-content.js?v=20260520a")).QUESTS_CONTENT,
-      "mini-quests": async () => (await import("./content/mini-quest-content.js?v=20260520a")).MINI_QUESTS_CONTENT,
-      "secret-discoveries": async () =>
-        (await import("./content/secret-discovery-content.js?v=20260520a")).SECRET_DISCOVERY_CONTENT,
-      "world-discoveries": async () =>
-        (await import("./content/world-discovery-content.js?v=20260520a")).WORLD_DISCOVERY_CONTENT,
-      "world-events": async () => (await import("./content/world-event-content.js?v=20260520a")).WORLD_EVENTS_CONTENT,
-      dungeons: async () => (await import("./content/dungeon-content.js?v=20260520a")).DUNGEON_CONTENT,
-      raids: async () => (await import("./content/raid-content.js?v=20260520a")).RAID_CONTENT,
-      "boss-altars": async () => (await import("./content/boss-altar-content.js?v=20260520a")).BOSS_ALTAR_CONTENT,
-      caves: async () => (await import("./content/cave-content.js?v=20260520a")).CAVES_CONTENT,
-      "lootrun-camps": async () =>
-        (await import("./content/lootrun-camp-content.js?v=20260520a")).LOOTRUN_CAMP_CONTENT,
-      "fast-travel": async () => (await import("./content/fast-travel-content.js?v=20260520a")).FAST_TRAVEL_CONTENT,
-      seaskippers: async () => (await import("./content/seaskipper-content.js?v=20260520a")).SEASKIPPER_CONTENT,
-      profession: async () => (await import("./content/profession-content.js?v=20260520a")).PROFESSION_CONTENT,
-      mobs: async () => (await import("./content/mob-content.js?v=20260520a")).MOBS_CONTENT,
-    };
-
-    sourceCache.set(
-      sourceKey,
-      loaderMap[sourceKey]
-        ? loaderMap[sourceKey]().catch((error) => {
-            sourceCache.delete(sourceKey);
-            throw error;
-          })
-        : Promise.resolve({})
-    );
+  const loader = CONTENT_LOADERS[sourceKey];
+  if (!loader) {
+    return {};
   }
 
-  return sourceCache.get(sourceKey);
+  return loadContent(sourceKey, loader);
 }

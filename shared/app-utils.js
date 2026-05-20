@@ -1,7 +1,19 @@
+/**
+ * Clamps a number between an inclusive minimum and maximum.
+ * @param {number} value - Number to constrain.
+ * @param {number} min - Inclusive lower bound.
+ * @param {number} max - Inclusive upper bound.
+ * @returns {number} Clamped number.
+ */
 export function clamp(value, min, max) {
   return Math.min(Math.max(value, min), max);
 }
 
+/**
+ * Escapes user-facing HTML to prevent unsafe markup injection.
+ * @param {string} value - Raw string value.
+ * @returns {string} HTML-escaped string.
+ */
 export function escapeHtml(value) {
   return String(value)
     .replaceAll("&", "&amp;")
@@ -11,10 +23,20 @@ export function escapeHtml(value) {
     .replaceAll("'", "&#39;");
 }
 
+/**
+ * Escapes a string for safe placement inside an HTML attribute.
+ * @param {string} value - Raw attribute value.
+ * @returns {string} Escaped attribute string.
+ */
 export function escapeAttribute(value) {
   return escapeHtml(value ?? "");
 }
 
+/**
+ * Splits a multi-line string into trimmed, non-empty lines.
+ * @param {string|string[]} value - Source text to split.
+ * @returns {string[]} Cleaned list of lines.
+ */
 export function splitMultiline(value) {
   return String(value || "")
     .split(/\r?\n/)
@@ -22,6 +44,11 @@ export function splitMultiline(value) {
     .filter(Boolean);
 }
 
+/**
+ * Normalizes a list of content links to a consistent `{ label, url }` shape.
+ * @param {Array<{label?: string, url?: string}>} value - Raw content links.
+ * @returns {Array<{label: string, url: string}>} Normalized link objects.
+ */
 export function normalizeContentLinks(value) {
   if (!Array.isArray(value)) {
     return [];
@@ -35,6 +62,11 @@ export function normalizeContentLinks(value) {
     }));
 }
 
+/**
+ * Normalizes marker text for tolerant title and tag matching.
+ * @param {string} value - Marker text to normalize.
+ * @returns {string} Folded, punctuation-light lookup key.
+ */
 export function normalizeMarkerLookup(value) {
   return String(value || "")
     .normalize("NFKD")
@@ -42,6 +74,96 @@ export function normalizeMarkerLookup(value) {
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, " ")
     .trim();
+}
+
+/**
+ * Reads a numeric query parameter with a numeric fallback.
+ * @param {URLSearchParams} params - Query parameters to read from.
+ * @param {string} name - Parameter name.
+ * @param {number} fallback - Fallback number when parsing fails.
+ * @returns {number} Parsed finite number or the fallback.
+ */
+export function parseNumberParam(params, name, fallback) {
+  const raw = params.get(name);
+  if (raw === null) {
+    return fallback;
+  }
+  const value = Number(raw);
+  return Number.isFinite(value) ? value : fallback;
+}
+
+/**
+ * Loads the saved theme preference from local storage.
+ * @param {string} storageKey - Local storage key for the theme setting.
+ * @param {"light"|"dark"} fallbackTheme - Theme used when nothing valid is stored.
+ * @returns {"light"|"dark"} Stored theme or the provided fallback.
+ */
+export function loadTheme(storageKey, fallbackTheme) {
+  try {
+    const raw = localStorage.getItem(storageKey);
+    if (raw === "dark" || raw === "light") {
+      return raw;
+    }
+  } catch {}
+  return fallbackTheme;
+}
+
+/**
+ * Loads a boolean-style dismissal flag from local storage.
+ * @param {string} storageKey - Local storage key for the flag.
+ * @returns {boolean} `true` when the flag is stored as `"1"`.
+ */
+export function loadDismissedFlag(storageKey) {
+  try {
+    return localStorage.getItem(storageKey) === "1";
+  } catch {}
+  return false;
+}
+
+/**
+ * Persists a boolean-style dismissal flag to local storage.
+ * @param {string} storageKey - Local storage key for the flag.
+ * @param {boolean} isDismissed - Whether the flag should be stored as enabled.
+ * @returns {void} No return value.
+ */
+export function persistDismissedFlag(storageKey, isDismissed) {
+  try {
+    localStorage.setItem(storageKey, isDismissed ? "1" : "0");
+  } catch {}
+}
+
+/**
+ * Finds a marker by title using exact and normalized title matching.
+ * @param {Array<{title?: string}>} markers - Marker list to search.
+ * @param {string} markerQuery - Human-readable marker title query.
+ * @returns {object|null} Matching marker or `null` when no title matches.
+ */
+export function findMarkerByTitle(markers, markerQuery) {
+  if (!markerQuery) {
+    return null;
+  }
+
+  const exactFolded = markerQuery.toLowerCase();
+  const normalized = normalizeMarkerLookup(markerQuery);
+  const exact = markers.find((marker) => String(marker.title || "").toLowerCase() === exactFolded);
+  if (exact) {
+    return exact;
+  }
+
+  return markers.find((marker) => normalizeMarkerLookup(marker.title) === normalized) || null;
+}
+
+/**
+ * Builds a shareable URL that opens a specific marker on the current route.
+ * @param {string} currentUrl - Current page URL.
+ * @param {string} markerTitle - Marker title to deep-link.
+ * @returns {string} Shareable marker URL.
+ */
+export function markerShareUrl(currentUrl, markerTitle) {
+  const url = new URL(currentUrl);
+  url.searchParams.delete("v");
+  url.searchParams.set("marker", markerTitle);
+  return url.toString();
 }
 
 function extractGoogleDriveId(url) {
@@ -72,6 +194,11 @@ function extractGoogleDriveId(url) {
   return null;
 }
 
+/**
+ * Builds YouTube embed metadata from a YouTube watch, share, shorts, or embed URL.
+ * @param {string} url - Source YouTube URL.
+ * @returns {{embedUrl: string, isShort: boolean}|null} Embed metadata when recognized.
+ */
 export function youtubeEmbedMeta(url) {
   if (!url) {
     return null;
@@ -106,6 +233,11 @@ export function youtubeEmbedMeta(url) {
   return null;
 }
 
+/**
+ * Prefers a local AVIF asset variant when the input URL points to a same-origin asset.
+ * @param {string} url - Source asset URL.
+ * @returns {string} AVIF-upgraded URL when applicable, otherwise the original URL.
+ */
 export function preferLocalAvif(url) {
   if (!url) {
     return url;
@@ -125,6 +257,13 @@ export function preferLocalAvif(url) {
   }
 }
 
+/**
+ * Resolves image URLs against icon and reference-image maps, including Google Drive thumbnails.
+ * @param {string} url - Original image URL.
+ * @param {Record<string, string>} iconUrls - Icon URL overrides by source URL.
+ * @param {Record<string, string>} referenceUrls - Reference image overrides by source URL.
+ * @returns {string} Final image URL to render.
+ */
 export function resolveImageUrl(url, iconUrls, referenceUrls) {
   const mapped = iconUrls[url] || referenceUrls[url] || url;
   const fileId = extractGoogleDriveId(mapped);

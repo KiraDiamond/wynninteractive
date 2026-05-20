@@ -1,6 +1,7 @@
 import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260520i";
 import { WIKI_MAP_MARKERS } from "../data/wiki-map-markers.js?v=20260520f";
 import {
+  contentSourceError,
   contentSourceKeyForCategory,
   loadMarkerContentForCategory,
   manualMarkerContentEntry,
@@ -11,8 +12,14 @@ import {
   clamp,
   escapeAttribute,
   escapeHtml,
+  findMarkerByTitle,
+  loadDismissedFlag,
+  loadTheme,
+  markerShareUrl,
   normalizeContentLinks,
   normalizeMarkerLookup,
+  parseNumberParam,
+  persistDismissedFlag,
   preferLocalAvif,
   resolveImageUrl,
   splitMultiline,
@@ -84,37 +91,11 @@ const BOSS_ALTAR_INGREDIENT_OVERRIDES = {
   "atlas-boss_altar-tribal-sanctuary--711--657": "4 Zombie Eyes",
 };
 
-function parseNumberParam(name, fallback) {
-  const raw = query.get(name);
-  if (raw === null) {
-    return fallback;
-  }
-  const value = Number(raw);
-  return Number.isFinite(value) ? value : fallback;
-}
-
-function loadTheme() {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEYS.theme);
-    if (raw === "dark" || raw === "light") {
-      return raw;
-    }
-  } catch {}
-  return document.documentElement.dataset.theme === "dark" ? "dark" : "light";
-}
-
-function loadIntroDismissed() {
-  try {
-    return localStorage.getItem(STORAGE_KEYS.introDismissed) === "1";
-  } catch {}
-  return false;
-}
-
 const URL_PROJECTION_CONFIG = {
-  offsetX: parseNumberParam("offsetX", 0),
-  offsetY: parseNumberParam("offsetY", 0),
-  scaleX: parseNumberParam("scaleX", 1),
-  scaleY: parseNumberParam("scaleY", 1),
+  offsetX: parseNumberParam(query, "offsetX", 0),
+  offsetY: parseNumberParam(query, "offsetY", 0),
+  scaleX: parseNumberParam(query, "scaleX", 1),
+  scaleY: parseNumberParam(query, "scaleY", 1),
 };
 
 const CALIBRATION_TARGETS = STARTER_MARKERS.map((marker) => ({
@@ -198,8 +179,11 @@ const state = {
   shippedMarkerContent: Object.create(null),
   loadedContentSources: new Set(),
   loadingContentSources: new Set(),
-  theme: loadTheme(),
-  introDismissed: loadIntroDismissed(),
+  theme: loadTheme(
+    STORAGE_KEYS.theme,
+    document.documentElement.dataset.theme === "dark" ? "dark" : "light",
+  ),
+  introDismissed: loadDismissedFlag(STORAGE_KEYS.introDismissed),
   panelView: "markers",
   activeMobFamily: null,
   trackedIngredient: "",
@@ -454,9 +438,7 @@ function persistCityEdits() {
 }
 
 function persistIntroDismissed() {
-  try {
-    localStorage.setItem(STORAGE_KEYS.introDismissed, state.introDismissed ? "1" : "0");
-  } catch {}
+  persistDismissedFlag(STORAGE_KEYS.introDismissed, state.introDismissed);
 }
 
 function applyUrlProjectionConfig(point) {
@@ -705,6 +687,10 @@ function hasMarkerContent(entry) {
 function contentSourceLoaded(categoryId) {
   const sourceKey = contentSourceKeyForCategory(categoryId);
   return !sourceKey || state.loadedContentSources.has(sourceKey);
+}
+
+function contentSourceLoadError(categoryId) {
+  return contentSourceError(categoryId);
 }
 
 async function ensureMarkerContentLoaded(marker) {
@@ -2328,6 +2314,7 @@ function renderDetailCard() {
   const content = contentExportEntry(marker);
   const authoredContent = markerContentAuthorEntry(marker.id);
   const contentLoading = !contentSourceLoaded(marker.category);
+  const contentError = contentSourceLoadError(marker.category);
   const eventIntel = worldEventDetailsHtml(marker);
   const detailMeta = [
     `<span class="detail-pill">${escapeHtml(marker.region || "World")}</span>`,
@@ -2362,6 +2349,7 @@ function renderDetailCard() {
       </div>
       <div id="content-preview-body" class="content-preview-body">
         ${contentLoading ? `<div class="content-loading">Loading guide content…</div>` : ""}
+        ${contentError ? `<div class="content-load-error">Guide content could not be loaded right now.</div>` : ""}
         ${contentPreviewHtml(marker, content)}
       </div>
     </section>
@@ -2405,7 +2393,7 @@ function renderDetailCard() {
         flyToMarker(marker);
       } else if (action === "share") {
         const original = button.textContent;
-        copyText(markerShareUrl(marker)).then((ok) => {
+        copyText(markerShareUrl(window.location.href, marker.title)).then((ok) => {
           button.textContent = ok ? "Copied link" : "Copy failed";
           window.setTimeout(() => {
             button.textContent = original;
@@ -2615,28 +2603,6 @@ function ensureMarkerSelectable(marker) {
   state.categoryFilter.add(marker.category);
 }
 
-function findMarkerByTitle(markerQuery) {
-  if (!markerQuery) {
-    return null;
-  }
-
-  const exactFolded = markerQuery.toLowerCase();
-  const normalized = normalizeMarkerLookup(markerQuery);
-  const exact = state.markers.find((marker) => String(marker.title || "").toLowerCase() === exactFolded);
-  if (exact) {
-    return exact;
-  }
-
-  return state.markers.find((marker) => normalizeMarkerLookup(marker.title) === normalized) || null;
-}
-
-function markerShareUrl(marker) {
-  const url = new URL(window.location.href);
-  url.searchParams.delete("v");
-  url.searchParams.set("marker", marker.title);
-  return url.toString();
-}
-
 function renderCalibrationPanel() {
   if (!elements.calibrationPanel) {
     return;
@@ -2768,7 +2734,7 @@ function setCurrentArea(areaId) {
 }
 
 function applyInitialMarkerDeepLink() {
-  const marker = findMarkerByTitle(INITIAL_MARKER_QUERY);
+  const marker = findMarkerByTitle(state.markers, INITIAL_MARKER_QUERY);
   if (!marker) {
     return;
   }
