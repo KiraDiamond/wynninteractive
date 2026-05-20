@@ -154,6 +154,7 @@ const state = {
   panelCollapsed: false,
   markerLayers: new Map(),
   areaHighlightLayer: null,
+  travelLinkLayer: null,
   categoryFilter: new Set(DEFAULT_CATEGORY_FILTER),
   calibrationMode: CALIBRATION_MODE,
   calibrationSamples: loadCalibrationSamples(),
@@ -1872,6 +1873,7 @@ function updateMarkerLayerPositions() {
     }
     layer.setLatLng(markerLatLng(marker));
   }
+  renderActiveAreaHighlight();
 }
 
 function categoryCount(categoryId) {
@@ -2497,18 +2499,71 @@ function markerBoundsLatLngList(marker) {
     .filter(Boolean);
 }
 
+function fastTravelLinkedMarkers(marker) {
+  if (marker?.category !== "fast_travel") {
+    return [];
+  }
+
+  const entry = markerContentEntry(marker);
+  const connectedRaw = String(entry.explanation || "").match(/•\s*Connected stops:\s*([^\n]+)/i)?.[1] || "";
+  const connectedStops = [...new Set(
+    connectedRaw
+      .split(",")
+      .map((item) => item.trim().replace(/\.$/, ""))
+      .filter(Boolean),
+  )];
+  if (!connectedStops.length) {
+    return [];
+  }
+
+  const connectedSet = new Set(connectedStops.map((item) => item.toLowerCase()));
+  return state.markers.filter((candidate) =>
+    candidate.id !== marker.id
+    && candidate.category === "fast_travel"
+    && markerArea(candidate) === markerArea(marker)
+    && candidate.region === marker.region
+    && connectedSet.has(String(candidate.title || "").trim().toLowerCase()),
+  );
+}
+
 function renderActiveAreaHighlight() {
   if (state.areaHighlightLayer) {
     map.removeLayer(state.areaHighlightLayer);
     state.areaHighlightLayer = null;
   }
+  if (state.travelLinkLayer) {
+    map.removeLayer(state.travelLinkLayer);
+    state.travelLinkLayer = null;
+  }
 
   const marker = state.markers.find((item) => item.id === state.selectedMarkerId);
-  const boundsList = marker ? markerBoundsLatLngList(marker) : [];
   const visible = marker
     ? (isMobCategory(marker.category) || state.filteredMarkers.some((item) => item.id === marker.id))
     : false;
-  if (!marker || !boundsList.length || !visible) {
+  if (!marker || !visible) {
+    return;
+  }
+
+  if (marker.category === "fast_travel") {
+    const linked = fastTravelLinkedMarkers(marker);
+    if (linked.length) {
+      const meta = CATEGORY_META.fast_travel;
+      state.travelLinkLayer = L.featureGroup(
+        linked.map((target) => L.polyline([markerLatLng(marker), markerLatLng(target)], {
+          color: meta.color,
+          weight: 3,
+          opacity: 0.92,
+          dashArray: "10 8",
+          lineCap: "round",
+          interactive: false,
+        })),
+      ).addTo(map);
+      state.travelLinkLayer.eachLayer((layer) => layer.bringToBack());
+    }
+  }
+
+  const boundsList = markerBoundsLatLngList(marker);
+  if (!boundsList.length) {
     return;
   }
 
