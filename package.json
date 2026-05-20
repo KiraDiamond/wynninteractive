@@ -10,6 +10,7 @@
     "scrape:quest-guides": "node scripts/scrape-quest-guides.mjs",
     "build:quest-content": "node scripts/build-quest-marker-content.mjs",
     "build:cave-content": "node scripts/build-cave-marker-content.mjs",
+    "sync:category-caves": "node scripts/sync-category-caves.mjs",
     "build:quest-video-links": "node scripts/build-quest-video-links.mjs",
     "build:supplemental-content": "node scripts/build-supplemental-marker-content.mjs",
     "build:fast-travel": "node scripts/build-fast-travel-markers.mjs",

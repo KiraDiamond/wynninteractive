@@ -11,8 +11,37 @@ function normalizeWhitespace(value) {
   return String(value ?? "").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
 }
 
+function slugify(value) {
+  return normalizeWhitespace(value)
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
 function dedupe(values) {
   return [...new Set((values || []).map((value) => normalizeWhitespace(value)).filter(Boolean))];
+}
+
+function parseCoordinates(page) {
+  const text = [
+    ...(page.infoboxRows || []),
+    ...(page.topParagraphs || []),
+    page.summary || "",
+  ].join(" ");
+
+  let match = text.match(/Coordinates\s*X:\s*(-?\d+)\s*,?\s*Y:\s*(-?\d+)\s*,?\s*Z:\s*(-?\d+)/i);
+  if (!match) {
+    match = text.match(/\[\s*(-?\d+)\s*,\s*(-?\d+)\s*,\s*(-?\d+)\s*\]/);
+  }
+
+  if (!match) {
+    return null;
+  }
+
+  return {
+    x: Number(match[1]),
+    z: Number(match[3]),
+  };
 }
 
 function compactSentence(value, maxLength = 260) {
@@ -199,17 +228,30 @@ function buildExplanation(page) {
 async function main() {
   const rawPages = JSON.parse(await fs.readFile(INPUT_PATH, "utf8"));
   const content = Object.fromEntries(
-    rawPages.map((page) => [
-      page.markerId,
-      {
-        summary: normalizeWhitespace(page.summary),
-        explanation: buildExplanation(page),
-        coverImage: chooseCoverImage(page.images || []),
-        gallery: cleanGallery(page.images || []),
-        sourceUrl: page.url || "",
-        tutorials: cleanTutorials(page.videos || []),
-      },
-    ]),
+    rawPages.flatMap((page) => {
+      const fallbackCoords = parseCoordinates(page);
+      const markerId = normalizeWhitespace(page.markerId) || (
+        fallbackCoords && page.pageTitle
+          ? `atlas-caves-${slugify(page.pageTitle)}-${fallbackCoords.x}-${fallbackCoords.z}`
+          : ""
+      );
+
+      if (!markerId) {
+        return [];
+      }
+
+      return [[
+        markerId,
+        {
+          summary: normalizeWhitespace(page.summary),
+          explanation: buildExplanation(page),
+          coverImage: chooseCoverImage(page.images || []),
+          gallery: cleanGallery(page.images || []),
+          sourceUrl: page.url || "",
+          tutorials: cleanTutorials(page.videos || []),
+        },
+      ]];
+    }),
   );
 
   const file = [

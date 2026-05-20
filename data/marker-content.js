@@ -4,7 +4,7 @@ import { GENERATED_FAST_TRAVEL_CONTENT } from "./generated-fast-travel-content.j
 import { GENERATED_SEASKIPPER_CONTENT } from "./generated-seaskipper-content.js?v=20260519d";
 import { GENERATED_PROFESSION_MARKER_CONTENT } from "./generated-profession-marker-content.js?v=20260518u";
 import { GENERATED_SUPPLEMENTAL_MARKER_CONTENT } from "./generated-supplemental-marker-content.js?v=20260517ac";
-import { GENERATED_CAVE_MARKER_CONTENT } from "./generated-cave-marker-content.js?v=20260520a";
+import { GENERATED_CAVE_MARKER_CONTENT } from "./generated-cave-marker-content.js?v=20260520c";
 import { GENERATED_MOB_CONTENT } from "./generated-mob-content.js?v=20260518i";
 
 const BASE_MARKER_CONTENT = {
