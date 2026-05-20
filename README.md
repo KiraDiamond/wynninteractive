@@ -1,41 +1,59 @@
-# Wynn Interactive
+# Wynnteractive Map
 
-I built Wynn Atlas as a static GitHub Pages map for current Wynncraft routes, guides, discoveries, rewards, and profession spots.
+Wynnteractive Map is a static GitHub Pages map for current Wynncraft routes, guides, discoveries, rewards, professions, travel points, and mobs.
 
-## What I keep here
+## What is here
 
 - Fruma-era world map with pan and zoom controls
-- Search, layer filters, and found-state tracking in browser storage
-- Marker notes for quests, mini quests, discoveries, caves, dungeons, raids, boss altars, world events, and profession spots
-- Source links back to the original wiki pages and guide pages
+- Main and beta map surfaces
+- Search, filters, found-state tracking, and theme persistence in browser storage
+- Marker notes for quests, mini quests, discoveries, caves, dungeons, raids, boss altars, world events, lootrun camps, travel points, profession spots, and mobs
+- Source links back to the related information pages and guides
 
 ## Main files
 
 - `index.html`: live app shell
-- `styles.css`: map and panel styling
-- `app.js`: interaction logic, marker rendering, and panel behavior
+- `beta/index.html`: beta app shell
+- `styles.css`: shared map and panel styling
+- `app.js`: live interaction logic, marker rendering, and panel behavior
+- `beta/beta-app.js`: beta interaction logic
 - `data/markers.js`: local marker metadata and curated overlays
 - `data/wiki-map-markers.js`: generated live marker dataset used by the map
 - `data/marker-content.js`: merged marker note/content registry
-- `assets/map/WynncraftMapFruma.png`: world map image
 
 ## Build commands
 
-- `npm run build:wiki-map`: rebuild the live marker dataset from the current map/wiki information sources
-- `npm run build:quest-content`: rebuild quest guide content
-- `npm run build:supplemental-content`: rebuild world event, cave, dungeon, boss altar, and discovery content
-- `npm run build:profession-spots`: rebuild profession markers and profession notes
-- `npm run build:reference-images`: rebuild the local reference-image cache used by the marker panels
+- `npm run build:atlas-api`
+- `npm run build:wiki-map`
+- `npm run build:quest-content`
+- `npm run build:cave-content`
+- `npm run sync:category-caves`
+- `npm run build:quest-video-links`
+- `npm run build:supplemental-content`
+- `npm run build:fast-travel`
+- `npm run build:seaskippers`
+- `npm run build:profession-spots`
+- `npm run build:lootrun-content`
+- `npm run build:reference-images`
+- `npm run build:mob-areas`
+- `npm run build:mob-markers`
+- `npm run build:mob-icons`
 
-## Sources And Credits
+## Sources and Credits
 
-- Wynncraft Wiki: [wiki.gg](https://wynncraft.wiki.gg/wiki/Main_Page)
-- Legacy fallback pages where needed: [Wynncraft Fandom](https://wynncraft.fandom.com/wiki/Wynncraft_Wiki)
-- Profession route guide: [Zy's updated profession guide](https://docs.google.com/document/d/1Wv5I296Cd5j7yWT2vgGFp1AFM_1R2Xw-M73TIoR56-M/edit?tab=t.0)
+- All core marker positions are from the official Wynncraft server marker data.
+- Fast travel and Seaskipper locations are from the Wynntils project.
 - Official API docs: [List map markers](https://docs.wynncraft.com/modules/map/list-map-markers)
 - Official API endpoint: [https://api.wynncraft.com/v3/map/locations/markers](https://api.wynncraft.com/v3/map/locations/markers)
-- Implementation help: OpenAI Codex
+- Primary information source: [Wynncraft Wiki on wiki.gg](https://wynncraft.wiki.gg/wiki/Main_Page)
+- Backup information source: [Wynncraft Fandom](https://wynncraft.fandom.com/wiki/Wynncraft_Wiki)
+- Qira Hive guide credit: [An In-Depth Guide To Fighting Qira](https://forums.wynncraft.com/threads/an-in-depth-guide-to-fighting-qira.291617/)
+- Lootrun guide credit: [Ultimate Wynncraft Lootrun Guide](https://docs.google.com/document/d/11aw2yFc2vi0yrKxPuWl6Uedctw4RnxmtkJbkvm7PB-M/edit?tab=t.0)
+- Profession guide credit: [Zy's updated profession guide](https://docs.google.com/document/d/1Wv5I296Cd5j7yWT2vgGFp1AFM_1R2Xw-M73TIoR56-M/edit?tab=t.0)
+- Code assistance: OpenAI Codex
+- Special thanks to `gale_nasin` for answering rule-related questions for the project.
+- Special thanks to `Xnova204` for making the site logo.
 
 ## Deployment
 
-I deploy this repository to GitHub Pages from `main` with `.github/workflows/deploy-pages.yml`.
+This repository deploys to GitHub Pages from `main` with `.github/workflows/deploy-pages.yml`.

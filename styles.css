@@ -232,6 +232,7 @@ input {
   border-right: 1px solid rgba(201, 207, 218, 0.95);
   box-shadow: var(--shadow);
   overflow-y: auto;
+  overscroll-behavior: contain;
   transition: transform 160ms ease, opacity 160ms ease;
 }
 
@@ -305,6 +306,10 @@ input {
 
 .panel-banner-close:hover {
   background: rgba(82, 102, 122, 0.2);
+}
+
+.panel-screen {
+  padding-bottom: calc(10px + env(safe-area-inset-bottom, 0px));
 }
 
 .panel-toolbar {
@@ -2142,10 +2147,12 @@ input {
 @media (max-width: 760px) {
   :root {
     --panel-width: 100vw;
+    --panel-toggle-size: 42px;
   }
 
   .panel-shell-head {
-    padding-right: 56px;
+    padding: calc(12px + env(safe-area-inset-top, 0px)) 14px 10px;
+    padding-right: 52px;
   }
 
   .panel-brand-copy span {
@@ -2154,7 +2161,7 @@ input {
 
   .panel-edge-toggle,
   .app-shell.panel-collapsed .panel-edge-toggle {
-    top: 12px;
+    top: calc(10px + env(safe-area-inset-top, 0px));
     left: 12px;
   }
 
@@ -2165,16 +2172,52 @@ input {
   .marker-panel {
     width: 100%;
     top: auto;
-    max-height: 68vh;
+    min-height: 54vh;
+    max-height: min(74vh, 680px);
     border-right: 0;
     border-top: 1px solid rgba(201, 207, 218, 0.95);
-    border-radius: 18px 18px 0 0;
+    border-radius: 20px 20px 0 0;
   }
 
   .marker-panel.collapsed {
-    transform: translateY(calc(100% - 56px));
+    transform: translateY(calc(100% - 58px));
     opacity: 1;
     pointer-events: auto;
+  }
+
+  .panel-tabbar {
+    min-height: 48px;
+  }
+
+  .panel-banner {
+    padding: 10px 14px;
+    font-size: 0.82rem;
+    line-height: 1.3;
+  }
+
+  .panel-banner-info {
+    align-items: flex-start;
+  }
+
+  .panel-toolbar {
+    gap: 8px;
+    padding: 10px 10px 8px;
+  }
+
+  .map-selector {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .map-selector-menu {
+    left: 0;
+    right: 0;
+    min-width: 0;
+  }
+
+  .panel-search {
+    min-height: 46px;
+    padding: 0 8px 0 12px;
   }
 
   .panel-toolbar,
@@ -2182,8 +2225,31 @@ input {
     grid-template-columns: 1fr;
   }
 
+  .panel-controls {
+    gap: 10px;
+    padding: 8px 10px 10px;
+  }
+
+  .toggle-row {
+    font-size: 0.84rem;
+  }
+
+  .section-head {
+    padding: 0 10px 8px;
+  }
+
   .category-grid {
     grid-template-columns: 1fr;
+  }
+
+  .category-card {
+    min-height: 60px;
+    padding: 10px 12px;
+  }
+
+  .detail-card {
+    margin: 0 10px 14px;
+    padding: 14px;
   }
 
   .event-stat-grid {

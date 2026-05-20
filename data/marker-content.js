@@ -5,6 +5,7 @@ import { GENERATED_SEASKIPPER_CONTENT } from "./generated-seaskipper-content.js?
 import { GENERATED_PROFESSION_MARKER_CONTENT } from "./generated-profession-marker-content.js?v=20260518u";
 import { GENERATED_SUPPLEMENTAL_MARKER_CONTENT } from "./generated-supplemental-marker-content.js?v=20260517ac";
 import { GENERATED_CAVE_MARKER_CONTENT } from "./generated-cave-marker-content.js?v=20260520c";
+import { GENERATED_LOOTRUN_CAMP_CONTENT } from "./generated-lootrun-camp-content.js?v=20260520a";
 import { GENERATED_MOB_CONTENT } from "./generated-mob-content.js?v=20260518i";
 
 const BASE_MARKER_CONTENT = {
@@ -14,7 +15,13 @@ const BASE_MARKER_CONTENT = {
   ...GENERATED_PROFESSION_MARKER_CONTENT,
   ...GENERATED_SUPPLEMENTAL_MARKER_CONTENT,
   ...GENERATED_CAVE_MARKER_CONTENT,
+  ...GENERATED_LOOTRUN_CAMP_CONTENT,
   ...GENERATED_MOB_CONTENT,
+};
+
+const LIMITED_MARKER_FALLBACK = {
+  summary: "Public information for this marker is still limited.",
+  explanation: "There isn't much public information regarding this marker right now. When wiki.gg gets a dedicated page related to it, we'll add more here.",
 };
 
 const MANUAL_MARKER_OVERRIDES = {
@@ -205,6 +212,27 @@ const MANUAL_MARKER_OVERRIDES = {
       { label: "Uth guardian notes", url: "https://forums.wynncraft.com/threads/uth-runes-uth-guardians-because-i-got-bored.243575/" },
     ],
   },
+  "atlas-world-events-a-journey-home--2152--1435": LIMITED_MARKER_FALLBACK,
+  "atlas-world-events-a-journey-home--1954--1409": LIMITED_MARKER_FALLBACK,
+  "atlas-world-events-stackpeak-pinnacle--1611--1653": LIMITED_MARKER_FALLBACK,
+  "atlas-world-events-revelations-in-fall--2240--910": LIMITED_MARKER_FALLBACK,
+  "atlas-world-events-revelations-in-fall--1326--784": LIMITED_MARKER_FALLBACK,
+  "atlas-world-events-revelations-in-fall--1383--605": LIMITED_MARKER_FALLBACK,
+  "atlas-world-events-revelations-in-fall--1262--807": LIMITED_MARKER_FALLBACK,
+  "atlas-world-events-ensemble-of-hope--1704--940": LIMITED_MARKER_FALLBACK,
+  "atlas-world-events-revelations-in-fall--1079--1350": LIMITED_MARKER_FALLBACK,
+  "atlas-world-events-revelations-in-fall--1164--1246": LIMITED_MARKER_FALLBACK,
+  "atlas-world-events-revelations-in-fall--1037--1225": LIMITED_MARKER_FALLBACK,
+  "atlas-world-events-revelations-in-fall--1693--815": LIMITED_MARKER_FALLBACK,
+  "atlas-world-events-revelations-in-fall--1625--799": LIMITED_MARKER_FALLBACK,
+  "atlas-caves-estalis-gallery--1323--912": LIMITED_MARKER_FALLBACK,
+  "atlas-caves-fire-water--502--1722": LIMITED_MARKER_FALLBACK,
+  "atlas-caves-fungas-log--142--1679": LIMITED_MARKER_FALLBACK,
+  "atlas-caves-grook-s-nest--1301--1560": LIMITED_MARKER_FALLBACK,
+  "atlas-caves-hex-keep-gateway-288--1639": LIMITED_MARKER_FALLBACK,
+  "atlas-caves-pigman-barbeque--622--1570": LIMITED_MARKER_FALLBACK,
+  "atlas-caves-spore-spiral-670--1617": LIMITED_MARKER_FALLBACK,
+  "atlas-caves-time-valley-aquifer--377--1167": LIMITED_MARKER_FALLBACK,
 };
 
 const ALL_MARKER_CONTENT_KEYS = new Set([

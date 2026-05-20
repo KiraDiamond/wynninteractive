@@ -1,6 +1,6 @@
-import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260520f";
+import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260520i";
 import { WIKI_MAP_MARKERS } from "../data/wiki-map-markers.js?v=20260520f";
-import { MARKER_CONTENT } from "./data/marker-content.js?v=20260520c";
+import { MARKER_CONTENT } from "./data/marker-content.js?v=20260520f";
 import { MOB_ICON_URLS } from "../data/mob-icon-urls.js?v=20260518j";
 import { REFERENCE_IMAGE_URLS } from "../data/reference-images.js?v=20260518j";
 
@@ -45,6 +45,7 @@ const CALIBRATION_MODE = query.get("calibrate") === "1";
 const USE_STORED_CALIBRATION = CALIBRATION_MODE || query.get("useCalibration") === "1";
 const EDIT_CITY_QUERY_MODE = query.get("editCities") === "1";
 const USE_CITY_EDITS = EDIT_CITY_QUERY_MODE || query.get("useCityEdits") === "1";
+const INITIAL_MARKER_QUERY = String(query.get("marker") || "").trim();
 const DEV_MODE = window.location.pathname.replace(/\/+$/, "").endsWith("/devview");
 const MAJOR_CITY_MIN_ZOOM = -2;
 const MINOR_CITY_MIN_ZOOM = -1;
@@ -71,6 +72,15 @@ function parseNumberParam(name, fallback) {
   }
   const value = Number(raw);
   return Number.isFinite(value) ? value : fallback;
+}
+
+function normalizeMarkerLookup(value) {
+  return String(value || "")
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
 }
 
 function loadTheme() {
@@ -145,7 +155,9 @@ const DEFAULT_CATEGORY_FILTER = new Set(
 
 const state = {
   markers: [],
+  markerIndex: new Map(),
   filteredMarkers: [],
+  filteredMarkerIdSet: new Set(),
   foundIds: loadFoundIds(),
   selectedMarkerId: null,
   search: "",
@@ -153,6 +165,7 @@ const state = {
   showCities: true,
   panelCollapsed: false,
   markerLayers: new Map(),
+  markerRenderCache: new Map(),
   areaHighlightLayer: null,
   travelLinkLayer: null,
   categoryFilter: new Set(DEFAULT_CATEGORY_FILTER),
@@ -664,7 +677,7 @@ function contextGroupIdForMarker(marker) {
 }
 
 function activeContextGroupId() {
-  const selected = state.markers.find((item) => item.id === state.selectedMarkerId);
+  const selected = getMarkerById(state.selectedMarkerId);
   return contextGroupIdForMarker(selected);
 }
 
@@ -1591,13 +1604,21 @@ function markerMatchesSearch(marker) {
 }
 
 function mobMarkersForIngredient(ingredientName) {
-  const target = String(ingredientName || "").trim().toLowerCase();
-  if (!target) {
+  const normalized = normalizeMarkerLookup(ingredientName);
+  if (!normalized) {
     return [];
+  }
+  const candidates = new Set([normalized]);
+  if (normalized.endsWith("ies")) {
+    candidates.add(`${normalized.slice(0, -3)}y`);
+  } else if (normalized.endsWith("s")) {
+    candidates.add(normalized.slice(0, -1));
+  } else {
+    candidates.add(`${normalized}s`);
   }
   return state.markers
     .filter((marker) => isMobCategory(marker.category))
-    .filter((marker) => (marker.tags || []).some((tag) => String(tag).trim().toLowerCase() === target))
+    .filter((marker) => (marker.tags || []).some((tag) => candidates.has(normalizeMarkerLookup(tag))))
     .sort((left, right) => left.title.localeCompare(right.title) || left.region.localeCompare(right.region));
 }
 
@@ -1626,7 +1647,7 @@ function focusIngredientMobs(ingredientName) {
 }
 
 function clearIngredientTracking() {
-  const selected = state.markers.find((marker) => marker.id === state.selectedMarkerId);
+  const selected = getMarkerById(state.selectedMarkerId);
   state.trackedIngredient = "";
   state.ingredientNoteDismissed = false;
   state.search = "";
@@ -1818,6 +1839,45 @@ function createMarkerLayer(marker) {
   state.markerLayers.set(marker.id, layer);
 }
 
+function markerRenderStateKey(marker, isVisible, isFound, isSelected) {
+  return [
+    isVisible ? 1 : 0,
+    isFound ? 1 : 0,
+    isSelected ? 1 : 0,
+    marker.fixed && state.editCities ? 1 : 0,
+    marker.fixed && state.areaOffsetMode ? 1 : 0,
+  ].join(":");
+}
+
+function applyMarkerLayerVisual(marker, layer, isVisible, isFound, isSelected) {
+  if (isVisible) {
+    if (!map.hasLayer(layer)) {
+      layer.addTo(map);
+    }
+  } else if (map.hasLayer(layer)) {
+    map.removeLayer(layer);
+  }
+
+  if (marker.fixed && layer.dragging) {
+    if (state.editCities) {
+      layer.dragging.enable();
+    } else {
+      layer.dragging.disable();
+    }
+  }
+
+  const nextKey = markerRenderStateKey(marker, isVisible, isFound, isSelected);
+  if (state.markerRenderCache.get(marker.id) === nextKey) {
+    return;
+  }
+
+  layer.setIcon(buildMarkerIcon(marker, isFound, isSelected));
+  if (marker.fixed) {
+    bindCityTooltip(layer, marker, isFound, isSelected);
+  }
+  state.markerRenderCache.set(marker.id, nextKey);
+}
+
 function calibrationLatLng(sample) {
   return [sample.pixelY, sample.pixelX];
 }
@@ -1867,7 +1927,7 @@ function renderCalibrationMarkers() {
 
 function updateMarkerLayerPositions() {
   for (const [id, layer] of state.markerLayers) {
-    const marker = state.markers.find((item) => item.id === id);
+    const marker = getMarkerById(id);
     if (!marker) {
       continue;
     }
@@ -2362,6 +2422,71 @@ function renderSearchButton() {
     `;
 }
 
+function getMarkerById(markerId) {
+  return state.markerIndex.get(markerId) || null;
+}
+
+function markerDisplayZoom(marker) {
+  if (!marker) {
+    return Math.max(map.getZoom(), 0);
+  }
+  if (marker.fixed) {
+    return Math.max(map.getZoom(), marker.minor ? MINOR_CITY_MIN_ZOOM : MAJOR_CITY_MIN_ZOOM);
+  }
+  if (isMobCategory(marker.category)) {
+    return Math.max(map.getZoom(), 0.25);
+  }
+  return Math.max(map.getZoom(), 0);
+}
+
+function ensureMarkerSelectable(marker) {
+  if (!marker) {
+    return;
+  }
+
+  if (state.hideFound) {
+    state.hideFound = false;
+    if (elements.hideFoundToggle) {
+      elements.hideFoundToggle.checked = false;
+    }
+  }
+
+  if (marker.fixed) {
+    state.showCities = true;
+    if (elements.showCitiesToggle) {
+      elements.showCitiesToggle.checked = true;
+    }
+    return;
+  }
+
+  if (isMobCategory(marker.category)) {
+    state.activeMobFamily = marker.category;
+    state.search = marker.title.toLowerCase();
+    if (elements.searchInput) {
+      elements.searchInput.value = marker.title;
+    }
+    renderSearchButton();
+    return;
+  }
+
+  state.categoryFilter.add(marker.category);
+}
+
+function findMarkerByTitle(markerQuery) {
+  if (!markerQuery) {
+    return null;
+  }
+
+  const exactFolded = markerQuery.toLowerCase();
+  const normalized = normalizeMarkerLookup(markerQuery);
+  const exact = state.markers.find((marker) => String(marker.title || "").toLowerCase() === exactFolded);
+  if (exact) {
+    return exact;
+  }
+
+  return state.markers.find((marker) => normalizeMarkerLookup(marker.title) === normalized) || null;
+}
+
 function renderCalibrationPanel() {
   if (!elements.calibrationPanel) {
     return;
@@ -2466,6 +2591,26 @@ function setCurrentArea(areaId) {
   renderActiveAreaHighlight();
 }
 
+function applyInitialMarkerDeepLink() {
+  const marker = findMarkerByTitle(INITIAL_MARKER_QUERY);
+  if (!marker) {
+    return;
+  }
+
+  ensureMarkerSelectable(marker);
+  const areaId = markerArea(marker);
+  if (areaId !== state.currentArea) {
+    setCurrentArea(areaId);
+  }
+  updateMapSelector();
+  syncVisibleMarkers();
+  renderCategoryFilters();
+
+  const targetZoom = markerDisplayZoom(marker);
+  map.setView(markerLatLng(marker), targetZoom, { animate: false });
+  setSelectedMarker(marker.id);
+}
+
 function worldBoundsToLatLng(bounds) {
   if (!bounds) {
     return null;
@@ -2536,9 +2681,9 @@ function renderActiveAreaHighlight() {
     state.travelLinkLayer = null;
   }
 
-  const marker = state.markers.find((item) => item.id === state.selectedMarkerId);
+  const marker = getMarkerById(state.selectedMarkerId);
   const visible = marker
-    ? (isMobCategory(marker.category) || state.filteredMarkers.some((item) => item.id === marker.id))
+    ? (isMobCategory(marker.category) || state.filteredMarkerIdSet.has(marker.id))
     : false;
   if (!marker || !visible) {
     return;
@@ -2585,19 +2730,9 @@ function renderActiveAreaHighlight() {
 
 function setSelectedMarker(markerId) {
   state.selectedMarkerId = markerId;
-  const marker = state.markers.find((item) => item.id === markerId);
+  const marker = getMarkerById(markerId);
   if (marker && isMobCategory(marker.category)) {
     state.activeMobFamily = marker.category;
-  }
-
-  for (const [id, layer] of state.markerLayers) {
-    const marker = state.markers.find((item) => item.id === id);
-    const isFound = markerIsFound(marker);
-    const isSelected = id === markerId;
-    layer.setIcon(buildMarkerIcon(marker, isFound, isSelected));
-    if (marker.fixed) {
-      bindCityTooltip(layer, marker, isFound, isSelected);
-    }
   }
 
   if (DEV_MODE && elements.studioCard) {
@@ -2639,33 +2774,18 @@ function toggleFound(markerId) {
 
 function syncVisibleMarkers() {
   state.filteredMarkers = state.markers.filter(markerIsVisible);
+  state.filteredMarkerIdSet = new Set(state.filteredMarkers.map((marker) => marker.id));
 
   for (const marker of state.markers) {
     const layer = state.markerLayers.get(marker.id);
     if (!layer) {
       continue;
     }
-    const visible = state.filteredMarkers.some((item) => item.id === marker.id);
-    if (visible && !map.hasLayer(layer)) {
-      layer.addTo(map);
-    }
-    if (!visible && map.hasLayer(layer)) {
-      map.removeLayer(layer);
-    }
-    if (layer.dragging) {
-      if (marker.fixed && state.editCities && !state.areaOffsetMode) {
-        layer.dragging.enable();
-      } else {
-        layer.dragging.disable();
-      }
-    }
+    const visible = state.filteredMarkerIdSet.has(marker.id);
     const isFound = markerIsFound(marker);
     const isSelected = marker.id === state.selectedMarkerId;
-    layer.setIcon(buildMarkerIcon(marker, isFound, isSelected));
+    applyMarkerLayerVisual(marker, layer, visible, isFound, isSelected);
     window.requestAnimationFrame(() => wireMarkerAnchor(layer, marker.id));
-    if (marker.fixed) {
-      bindCityTooltip(layer, marker, isFound, isSelected);
-    }
   }
   renderActiveAreaHighlight();
 }
@@ -2679,6 +2799,7 @@ function hydrateMarkerState() {
       : marker
   ));
   state.markers = [...fixedCities, ...curatedSupplemental, ...wikiMarkers];
+  state.markerIndex = new Map(state.markers.map((marker) => [marker.id, marker]));
   state.markers.forEach(createMarkerLayer);
 }
 
@@ -2965,11 +3086,8 @@ function bindEvents() {
 
   map.on("zoom", () => {
     updatePinScale();
-    syncVisibleMarkers();
-    renderCategoryFilters();
   });
   map.on("zoomend", () => {
-    updatePinScale();
     syncVisibleMarkers();
     renderCategoryFilters();
   });
@@ -2990,3 +3108,4 @@ renderCategoryFilters();
 renderDetailCard();
 renderCityEditor();
 renderCalibrationPanel();
+applyInitialMarkerDeepLink();
