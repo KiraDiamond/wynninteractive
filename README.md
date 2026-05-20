@@ -1,5 +1,9 @@
 # Wynnteractive Map
 
+![GitHub Pages](https://img.shields.io/badge/Live-GitHub%20Pages-blue?logo=github)
+![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL--3.0-green)
+![JS](https://img.shields.io/badge/Built%20with-Vanilla%20JS-yellow?logo=javascript)
+
 Wynnteractive Map is a static GitHub Pages map for current Wynncraft routes, guides, discoveries, rewards, professions, travel points, and mobs.
 
 ## What is here
@@ -21,6 +25,18 @@ Wynnteractive Map is a static GitHub Pages map for current Wynncraft routes, gui
 - `data/markers.js`: local marker metadata and curated overlays
 - `data/wiki-map-markers.js`: generated live marker dataset used by the map
 - `data/marker-content-loader.js`: lazy guide-content loader for marker categories
+
+## Quick start (local)
+
+Clone the repo and open `index.html` directly in a browser — no build step required. For live-reload during development, use:
+
+```bash
+npx serve .
+```
+
+## Contributing
+
+Marker data lives in `data/markers.js` and `data/wiki-map-markers.js`. To add or correct a marker, edit the relevant file and open a pull request. Please include the in-game coordinates and a source link.
 
 ## Sources and Credits
 
