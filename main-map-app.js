@@ -1389,6 +1389,9 @@ function categoryAssetUrl(categoryId, variant = "active") {
   if (!icon) {
     return null;
   }
+  if (categoryId === "fast_travel" || categoryId === "seaskipper") {
+    return `${CONTENT_BOOK_ROOT}/${icon}_${variant}.png`;
+  }
   return `${CONTENT_BOOK_ROOT}/${icon}_${variant}.avif`;
 }
 
@@ -1816,7 +1819,10 @@ function createMarkerLayer(marker) {
     autoPan: marker.fixed,
   });
 
-  layer.on("click", () => setSelectedMarker(marker.id));
+  layer.on("click", (event) => {
+    event.originalEvent?.stopPropagation?.();
+    setSelectedMarker(marker.id);
+  });
   if (marker.fixed) {
     bindCityTooltip(layer, marker, markerIsFound(marker), false);
     layer.on("add", () => {
