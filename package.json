@@ -1,6 +1,7 @@
 {
   "name": "wynninteractive",
   "private": true,
+  "license": "AGPL-3.0-only",
   "type": "module",
   "scripts": {
     "build:atlas-api": "node scripts/build-atlas-api-dataset.mjs",

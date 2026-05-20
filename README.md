@@ -24,7 +24,7 @@ Wynnteractive Map is a static GitHub Pages map for current Wynncraft routes, gui
 ## Sources and Credits
 
 - All core marker positions are from the official Wynncraft server marker data.
-- Fast travel and Seaskipper locations are from the Wynntils project, and their marker art is based on Wynntils-derived travel icon assets.
+- Fast travel and Seaskipper locations are from the Wynntils project, and the Fast Travel / Seaskipper marker art is taken directly from the Wynntils resource pack.
 - Official API docs: [List map markers](https://docs.wynncraft.com/modules/map/list-map-markers)
 - Official API endpoint: [https://api.wynncraft.com/v3/map/locations/markers](https://api.wynncraft.com/v3/map/locations/markers)
 - Primary information source: [Wynncraft Wiki on wiki.gg](https://wynncraft.wiki.gg/wiki/Main_Page)
@@ -35,6 +35,11 @@ Wynnteractive Map is a static GitHub Pages map for current Wynncraft routes, gui
 - Code assistance: OpenAI Codex
 - Special thanks to `gale_nasin` for answering rule-related questions for the project.
 - Special thanks to `Xnova204` for making the site logo.
+
+## License
+
+This project is licensed under the GNU AGPLv3. See [LICENSE](./LICENSE).
+Third-party assets and source material remain credited to their original upstream projects and authors.
 
 ## Deployment
 
