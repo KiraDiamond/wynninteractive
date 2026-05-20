@@ -347,6 +347,21 @@ input {
   border-color: rgba(140, 63, 214, 0.18);
 }
 
+.map-selector.single-area {
+  cursor: default;
+  color: #4a6078;
+}
+
+.map-selector.single-area:hover,
+.map-selector.single-area[aria-expanded="true"] {
+  background: transparent;
+  border-color: transparent;
+}
+
+.map-selector.single-area svg {
+  display: none;
+}
+
 .map-selector span {
   min-width: 0;
   overflow: hidden;

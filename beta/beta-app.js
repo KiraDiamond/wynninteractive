@@ -2211,6 +2211,7 @@ function renderDetailCard() {
   const actionButtons = [
     supportsFound ? `<button type="button" class="detail-button" data-action="toggle-found">${isFound ? "Mark not found" : "Mark found"}</button>` : "",
     `<button type="button" class="detail-button secondary" data-action="focus">Focus</button>`,
+    `<button type="button" class="detail-button secondary" data-action="share">Share</button>`,
   ].filter(Boolean).join("");
   const infoBody = `
     <div class="detail-topline">
@@ -2272,6 +2273,14 @@ function renderDetailCard() {
         toggleFound(marker.id);
       } else if (action === "focus") {
         flyToMarker(marker);
+      } else if (action === "share") {
+        const original = button.textContent;
+        copyText(markerShareUrl(marker)).then((ok) => {
+          button.textContent = ok ? "Copied link" : "Copy failed";
+          window.setTimeout(() => {
+            button.textContent = original;
+          }, 1400);
+        });
       }
     });
   });
@@ -2485,6 +2494,13 @@ function findMarkerByTitle(markerQuery) {
   }
 
   return state.markers.find((marker) => normalizeMarkerLookup(marker.title) === normalized) || null;
+}
+
+function markerShareUrl(marker) {
+  const url = new URL(window.location.href);
+  url.searchParams.delete("v");
+  url.searchParams.set("marker", marker.title);
+  return url.toString();
 }
 
 function renderCalibrationPanel() {

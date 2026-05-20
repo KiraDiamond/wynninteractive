@@ -32,13 +32,8 @@ const MAP_AREAS = {
     buttonLabel: "Wynncraft Map",
     imageUrl: new URL("./assets/map/WynncraftMapFruma.png", import.meta.url).href,
   },
-  outer_void: {
-    id: "outer_void",
-    label: "Outer Void",
-    buttonLabel: "Outer Void",
-    imageUrl: new URL("./assets/map/OuterVoid.png", import.meta.url).href,
-  },
 };
+const HAS_MULTIPLE_MAP_AREAS = Object.keys(MAP_AREAS).length > 1;
 const query = new URLSearchParams(window.location.search);
 const CALIBRATION_MODE = query.get("calibrate") === "1";
 const USE_STORED_CALIBRATION = CALIBRATION_MODE || query.get("useCalibration") === "1";
@@ -368,6 +363,13 @@ function findMarkerByTitle(markerQuery) {
   }
 
   return state.markers.find((marker) => normalizeMarkerLookup(marker.title) === normalized) || null;
+}
+
+function markerShareUrl(marker) {
+  const url = new URL(window.location.href);
+  url.searchParams.delete("v");
+  url.searchParams.set("marker", marker.title);
+  return url.toString();
 }
 
 function applyTheme(theme, { persist = true } = {}) {
@@ -2124,6 +2126,7 @@ function renderDetailCard() {
   const actionButtons = [
     supportsFound ? `<button type="button" class="detail-button" data-action="toggle-found">${isFound ? "Mark not found" : "Mark found"}</button>` : "",
     `<button type="button" class="detail-button secondary" data-action="focus">Focus</button>`,
+    `<button type="button" class="detail-button secondary" data-action="share">Share</button>`,
   ].filter(Boolean).join("");
   const infoBody = `
     <div class="detail-topline">
@@ -2182,6 +2185,14 @@ function renderDetailCard() {
         toggleFound(marker.id);
       } else if (action === "focus") {
         flyToMarker(marker);
+      } else if (action === "share") {
+        const original = button.textContent;
+        copyText(markerShareUrl(marker)).then((ok) => {
+          button.textContent = ok ? "Copied link" : "Copy failed";
+          window.setTimeout(() => {
+            button.textContent = original;
+          }, 1400);
+        });
       }
     });
   });
@@ -2339,11 +2350,13 @@ function updateMapSelector() {
     elements.mapSelectorLabel.textContent = area.buttonLabel;
   }
   if (elements.mapSelector) {
-    elements.mapSelector.setAttribute("aria-expanded", String(state.mapSelectorOpen));
+    elements.mapSelector.setAttribute("aria-expanded", String(HAS_MULTIPLE_MAP_AREAS && state.mapSelectorOpen));
+    elements.mapSelector.classList.toggle("single-area", !HAS_MULTIPLE_MAP_AREAS);
+    elements.mapSelector.disabled = !HAS_MULTIPLE_MAP_AREAS;
   }
   if (elements.mapSelectorMenu) {
     elements.mapSelectorMenu.classList.toggle("hidden", !state.mapSelectorOpen);
-    elements.mapSelectorMenu.innerHTML = Object.values(MAP_AREAS).map((mapArea) => `
+    elements.mapSelectorMenu.innerHTML = HAS_MULTIPLE_MAP_AREAS ? Object.values(MAP_AREAS).map((mapArea) => `
       <button
         type="button"
         class="map-selector-option ${mapArea.id === state.currentArea ? "active" : ""}"
@@ -2355,12 +2368,12 @@ function updateMapSelector() {
           <strong>${escapeHtml(mapArea.buttonLabel)}</strong>
         </span>
       </button>
-    `).join("");
+    `).join("") : "";
   }
 }
 
 function setMapSelectorOpen(open) {
-  state.mapSelectorOpen = open;
+  state.mapSelectorOpen = HAS_MULTIPLE_MAP_AREAS ? open : false;
   updateMapSelector();
 }
 
@@ -2395,6 +2408,10 @@ function setCurrentArea(areaId) {
 function applyInitialMarkerDeepLink() {
   const marker = findMarkerByTitle(INITIAL_MARKER_QUERY);
   if (!marker) {
+    return;
+  }
+
+  if (!MAP_AREAS[markerArea(marker)]) {
     return;
   }
 
@@ -2637,14 +2654,14 @@ function bindEvents() {
     });
   });
 
-  if (elements.mapSelector) {
+  if (elements.mapSelector && HAS_MULTIPLE_MAP_AREAS) {
     elements.mapSelector.addEventListener("click", (event) => {
       event.stopPropagation();
       setMapSelectorOpen(!state.mapSelectorOpen);
     });
   }
 
-  if (elements.mapSelectorMenu) {
+  if (elements.mapSelectorMenu && HAS_MULTIPLE_MAP_AREAS) {
     elements.mapSelectorMenu.addEventListener("click", (event) => {
       const button = event.target.closest("[data-map-area]");
       if (!button) {
@@ -2666,7 +2683,7 @@ function bindEvents() {
   }
 
   document.addEventListener("click", (event) => {
-    if (!state.mapSelectorOpen) {
+    if (!HAS_MULTIPLE_MAP_AREAS || !state.mapSelectorOpen) {
       return;
     }
     if (event.target.closest(".map-selector-wrap")) {
