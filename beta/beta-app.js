@@ -1,6 +1,6 @@
 import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260519d";
 import { WIKI_MAP_MARKERS } from "../data/wiki-map-markers.js?v=20260518j";
-import { MARKER_CONTENT } from "./data/marker-content.js?v=20260519e";
+import { MARKER_CONTENT } from "./data/marker-content.js?v=20260520a";
 import { MOB_ICON_URLS } from "../data/mob-icon-urls.js?v=20260518j";
 import { REFERENCE_IMAGE_URLS } from "../data/reference-images.js?v=20260518j";
 

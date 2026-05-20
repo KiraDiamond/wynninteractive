@@ -1,4 +1,4 @@
-import { GENERATED_QUEST_MARKER_CONTENT } from "./generated-quest-marker-content.js?v=20260517ac";
+import { GENERATED_QUEST_MARKER_CONTENT } from "./generated-quest-marker-content.js?v=20260520a";
 import { GENERATED_QUEST_VIDEO_LINKS } from "./generated-quest-video-links.js?v=20260518x";
 import { GENERATED_FAST_TRAVEL_CONTENT } from "./generated-fast-travel-content.js?v=20260519b";
 import { GENERATED_SEASKIPPER_CONTENT } from "./generated-seaskipper-content.js?v=20260519d";

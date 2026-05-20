@@ -125,22 +125,6 @@ export const GENERATED_QUEST_MARKER_CONTENT = {
     "sourceUrl": "https://wynncraft.wiki.gg/wiki/The_Maiden_Tower",
     "tutorials": []
   },
-  "atlas-quests-clearing-the-camps--1991--4658": {
-    "summary": "",
-    "explanation": "Stage 1\n• Talk to Captain Kymer outside Llevigar at [-1991, 34, -4658]\n\nStage 2\n• Find and kill Orc Chieftains Elisu, Veltu, and Ceifko in the camps around Llevigar- look for green flags\n\nStage 3\n• Report back to Captain Kymer once you have the three heads.",
-    "coverImage": "https://wynncraft.wiki.gg/images/thumb/CaptainKymer.png/200px-CaptainKymer.png?b44927",
-    "gallery": [
-      "https://wynncraft.wiki.gg/images/thumb/CBQuestIcon.png/32px-CBQuestIcon.png?58a8d7",
-      "https://wynncraft.wiki.gg/images/thumb/CaptainKymer.png/200px-CaptainKymer.png?b44927",
-      "https://wynncraft.wiki.gg/images/PinpointConcept2.png?5b3504",
-      "https://wynncraft.wiki.gg/images/thumb/CliffhearthOrcChopper.png/100px-CliffhearthOrcChopper.png?42e3ae",
-      "https://wynncraft.wiki.gg/images/thumb/CliffhearthOrcSmoker.png/100px-CliffhearthOrcSmoker.png?84fdd7",
-      "https://wynncraft.wiki.gg/images/thumb/CliffhearthOrcKindler.png/100px-CliffhearthOrcKindler.png?6f1d41",
-      "https://wynncraft.wiki.gg/images/thumb/CliffhearthRai-Elisu.png/100px-CliffhearthRai-Elisu.png?827518"
-    ],
-    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Clearing_the_Camps",
-    "tutorials": []
-  },
   "atlas-quests-through-the-pipes--1777--570": {
     "summary": "",
     "explanation": "Stage 1\n• Talk with the citizen in despair at [-1777, 26, -570].\n\nStage 2\n• Confront the raccoon at [-1725, 29, -537].\n\nStage 3\n• Enter the drainage hole at [-1699, 33, -516].\n• Enter the hole at the destination to enter the sewers.\n\nStage 4\n• Dive deeper into the sewer network.\n\nStage 5\n• Explore past the flood gate.\n• Enter the newly opened gate.\n• Travel into the large pipe across from the waterfall. The player is taken to a new room, where the raccoon is found in the middle. It runs further in when the player gets close, then it escapes through a pipe.\n\nStage 6\n• Find a way to get across the flooded section of the sewer.\n• Use the Scuttle Raft item to sink the raft and restart.\n• Continue through the tunnel. Upon reaching the end, a shadowy figure can be seen higher up and dialogue will play.\n\nStage 7\n• Continue chasing the raccoon through the sewers.\n• Open the door using the lever and take the elevator behind it to continue.\n\nStage 8\n• Encounter a familiar face in the sewers.\n\nStage 9\n• Find a safe way past the flooded rail tunnels.\n• Open the door downstairs using the lever at [9913, 28, 18349] to reveal a new raft part. Add the Broken Grapple Hook to it to create the Harpoon.\n\nStage 10\n• Navigate through the end of the sewer network with Fichu.\n• Follow both of them through the door.\n\nStage 11\n• Confront the raccoon.\n• Fight [?] Trap in cage (This option only appears if you have the Empty Cage in your inventory.) [?] Show shiny object (This option only appears if you have the Shiny Jewelry in your inventory.) Fichu: Woah, that looks like an expensive ring! You really think the raccoon will take it? Fichu: Hold on, where did you even get that- nevermind, I won't ask any questions. Give it a try! Place the Shiny Object in front of the raccoon using Right-Click. The raccoon drops the package, picks up the ring, and runs away. Fichu: Oh! That was surprisingly easy. Fichu: I hope no one cared about that rung, because they sure aren't getting it back... Use firecracker (This option only appears if you have the Firecracker in your inventory.) [?]",
@@ -188,22 +172,6 @@ export const GENERATED_QUEST_MARKER_CONTENT = {
       "https://wynncraft.wiki.gg/images/thumb/LurkingShade.png/100px-LurkingShade.png?a73414"
     ],
     "sourceUrl": "https://wynncraft.wiki.gg/wiki/Tower_of_Ascension_(Quest)",
-    "tutorials": []
-  },
-  "atlas-quests-tribal-aggression-1077--1613": {
-    "summary": "",
-    "explanation": "Stage 1\n• Talk to Caras at [1077, 84, -1613]\n\nStage 2\n• Enter the Eagle Camp and talk to Favian\n• Location: Eagle Tribe 1399, 84, -1618\n\nStage 3\n• Bring back the Eagle Totem from the Owl Camp\n\nStage 4\n• Retrieve the Owl Totem and return it to the Owl Camp",
-    "coverImage": "https://wynncraft.wiki.gg/images/thumb/Caras.png/200px-Caras.png?a6017e",
-    "gallery": [
-      "https://wynncraft.wiki.gg/images/thumb/CBQuestIcon.png/32px-CBQuestIcon.png?58a8d7",
-      "https://wynncraft.wiki.gg/images/thumb/Caras.png/200px-Caras.png?a6017e",
-      "https://wynncraft.wiki.gg/images/PinpointConcept2.png?5b3504",
-      "https://wynncraft.wiki.gg/images/thumb/Favian.png/200px-Favian.png?2fcbfa",
-      "https://wynncraft.wiki.gg/images/thumb/OwlDescendant.png/100px-OwlDescendant.png?6e8495",
-      "https://wynncraft.wiki.gg/images/thumb/OwlShaman.png/100px-OwlShaman.png?dcb9da",
-      "https://wynncraft.wiki.gg/images/thumb/TotemicProtector.png/100px-TotemicProtector.png?42b07f"
-    ],
-    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Tribal_Aggression",
     "tutorials": []
   },
   "atlas-quests-from-the-bottom-191--5236": {
@@ -391,18 +359,6 @@ export const GENERATED_QUEST_MARKER_CONTENT = {
     "sourceUrl": "https://wynncraft.wiki.gg/wiki/Lost_Tower",
     "tutorials": []
   },
-  "atlas-quests-cluck-cluck--83--2497": {
-    "summary": "",
-    "explanation": "Stage 1\n• Talk to Nohno on Rooster Island at [-83, 48, -2497]\n\nStage 2\n• Bring back [1 Cluckles' Favourite Feather] to Nohno.",
-    "coverImage": "https://wynncraft.wiki.gg/images/thumb/Nohno.png/200px-Nohno.png?fd33ca",
-    "gallery": [
-      "https://wynncraft.wiki.gg/images/thumb/CBQuestIcon.png/32px-CBQuestIcon.png?58a8d7",
-      "https://wynncraft.wiki.gg/images/thumb/Nohno.png/200px-Nohno.png?fd33ca",
-      "https://wynncraft.wiki.gg/images/thumb/Cluckles.png/100px-Cluckles.png?9806c3"
-    ],
-    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Cluck_Cluck",
-    "tutorials": []
-  },
   "atlas-quests-point-of-no-return-1013--676": {
     "summary": "",
     "explanation": "Stage 1\n• Talk to the Lutho Citizen at [1014,77,-675]. Dialogue:\n\nStage 2\n• ...\n• Use the Soul Retainer behind you to switch places with your soul.\n\nStage 3\n• ...\n• Follow your soul walking away from you.\n\nStage 4\n• ...\n• Continue following your soul.\n\nStage 5\n• ...\n• Follow the blood trail to the next room.\n\nStage 6\n• ...\n\nStage 7\n• ...\n• Follow your soul's movements. While this part may seem hard, there will be indicators as to where to turn in the form of fire particles. Follow these until you reach the end and walk towards your soul, which will then proceed to disappear and teleport you to the next room.\n\nStage 8\n• ...\n\nStage 9\n• ...\n• Follow your soul while avoiding collision with the other souls walking in your direction.\n\nStage 10\n• Explore this happier version of Lutho.\n• Go to the part of the Obelisk that's sparkling in the bank which will cause it to open up. Enter and fall down to a lush area. Stand on the beacon to start levitating upwards to the top of the obelisk where you will confront your soul.\n\nStage 11\n• Talk with your Soul.\n\nStage 12\n• Leave Happier Lutho.\n\nStage 13\n• Talk to the Lutho Citizen who sent you on this journey.",
@@ -482,16 +438,6 @@ export const GENERATED_QUEST_MARKER_CONTENT = {
     "sourceUrl": "https://wynncraft.wiki.gg/wiki/One_Thousand_Meters_Under",
     "tutorials": []
   },
-  "atlas-quests-reincarnation-372--775": {
-    "summary": "",
-    "explanation": "Stage 1\n• Talk to Batelu in Bob's Tomb.\n\nStage 2\n• Bring back 1 Cluckles' Favourite Feather, Baab's Wool, and Mooington's Skin to Batelu.\n\nStage 3\n• Kill Bob's Reincarnation.\n\nStage 4\n• Bring back 1 Bob's Seal of Approval to Batelu.",
-    "coverImage": "https://wynncraft.wiki.gg/images/thumb/CBQuestIcon.png/32px-CBQuestIcon.png?58a8d7",
-    "gallery": [
-      "https://wynncraft.wiki.gg/images/thumb/CBQuestIcon.png/32px-CBQuestIcon.png?58a8d7"
-    ],
-    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Reincarnation",
-    "tutorials": []
-  },
   "atlas-quests-misadventure-on-the-sea-114--2176": {
     "summary": "",
     "explanation": "Stage 1\n• Visit the Nemract bar at [114, 40, -2176]\n• Location: Nemract 118, 40, -2172\n\nStage 2\n• Meet Honip at [103, 37, -2254]\n• Go on board Honip's ship.\n\nStage 3\n• Clean the bodies in the boat. Look for clues on how to escape at the same time. -Bodies cleaned: #/7 Tip: Left-click the bodies with the sponge to clean them, but right-click the clues you find.\n• Location: Honip's Ship -3285, 48, 16387\n• Location: Honip's Ship -3287, 48, 16362\n• Location: Honip's Ship -3284, 48, 16358\n• Location: Honip's Ship -3283, 51, 16397\n• Location: Honip's Ship -3279, 56, 16376\n• Location: Honip's Ship -3288, 57, 16356\n• Location: Honip's Ship -3284, 61, 16356\n• Location: Honip's Ship -3281, 52, 16375\n\nStage 4\n• Talk to Honip on the deck to get your next task\n• Location: Honip's Ship -3284, 61, 16356\n\nStage 5\n• Explore the hold and kill the rats\n\nStage 6\n• Defeat the Colossal Rat in the hold\n• Location: Honip's Ship's Hold -3311, 25, 16382\n• Location: Honip's Ship's Hold -3332, 25, 16382\n\nStage 7\n• Use the gunpowder and the fuse to activate the cannon and escape Note: Talk to Honip before you escape, or else you will not get your emerald rewards.\n• Location: Honip's Ship -3284, 61, 16356\n\nStage 8\n• Find out where you are and a way to flee the island\n• Location: Island -2876, 52, 16394\n• Location: Island -2876, 56, 16393\n• Location: Island -2878, 50, 16396\n• Get on the Seaskipper.",
@@ -506,19 +452,6 @@ export const GENERATED_QUEST_MARKER_CONTENT = {
       "https://wynncraft.wiki.gg/images/thumb/Pirate%28MotS%2C1%29.png/200px-Pirate%28MotS%2C1%29.png?1cb983"
     ],
     "sourceUrl": "https://wynncraft.wiki.gg/wiki/Misadventure_on_the_Sea",
-    "tutorials": []
-  },
-  "atlas-quests-dwelling-walls-196--2172": {
-    "summary": "",
-    "explanation": "Stage 1\n• Talk to Leucsaa at [196, 41, -2172]\n\nStage 2\n• Enter the mansion\n• Location: 203, 38, -2178\n\nStage 3\n• Navigate the mansion to the room holding the journal\n\nStage 4\n• Talk to Leucsaa",
-    "coverImage": "https://wynncraft.wiki.gg/images/thumb/Leucsaa.png/200px-Leucsaa.png?dd6382",
-    "gallery": [
-      "https://wynncraft.wiki.gg/images/thumb/CBQuestIcon.png/32px-CBQuestIcon.png?58a8d7",
-      "https://wynncraft.wiki.gg/images/thumb/Leucsaa.png/200px-Leucsaa.png?dd6382",
-      "https://wynncraft.wiki.gg/images/PinpointConcept2.png?5b3504",
-      "https://wynncraft.wiki.gg/images/thumb/Leucsaa%27sJournal.png/100px-Leucsaa%27sJournal.png?333ee2"
-    ],
-    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Dwelling_Walls",
     "tutorials": []
   },
   "atlas-quests-elemental-exercise-518--1631": {
@@ -1067,21 +1000,6 @@ export const GENERATED_QUEST_MARKER_CONTENT = {
     "sourceUrl": "https://wynncraft.wiki.gg/wiki/A_Journey_Further",
     "tutorials": []
   },
-  "atlas-quests-lost-in-the-jungle--753--663": {
-    "summary": "",
-    "explanation": "Stage 1\n• Speak to Gracen at [-753, 82, -663]\n\nStage 2\n• Search the Dernel Jungle for Aryn\n\nStage 3\n• Defeat the spirit possessing Aryn\n\nStage 4\n• Make sure Aryn is safe at [-699, 6, -354]\n\nStage 5\n• Bring the Mysterious Gemstone to Gracen at [-753, 82, -663]",
-    "coverImage": "https://wynncraft.wiki.gg/images/thumb/Gracen.png/250px-Gracen.png?3abed2",
-    "gallery": [
-      "https://wynncraft.wiki.gg/images/thumb/CBQuestIcon.png/32px-CBQuestIcon.png?58a8d7",
-      "https://wynncraft.wiki.gg/images/thumb/Gracen.png/250px-Gracen.png?3abed2",
-      "https://wynncraft.wiki.gg/images/thumb/Aryn%28Possessed%29.png/250px-Aryn%28Possessed%29.png?3c4893",
-      "https://wynncraft.wiki.gg/images/thumb/PossessedAryn%28Phase1%29.png/100px-PossessedAryn%28Phase1%29.png?5a3b23",
-      "https://wynncraft.wiki.gg/images/thumb/PossessedAryn%28Phase2%29.png/100px-PossessedAryn%28Phase2%29.png?26f1c4",
-      "https://wynncraft.wiki.gg/images/thumb/Aryn.png/250px-Aryn.png?1abba1"
-    ],
-    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Lost_in_the_Jungle",
-    "tutorials": []
-  },
   "atlas-quests-meaningful-holiday-930--1903": {
     "summary": "",
     "explanation": "Stage 1\n• Talk to Haily in Almuj at [929, 75, -1899]\n\nStage 2\n• Go talk to Haily's friend Nick at the poor area.\n• Location: Almuj 936, 68, -1841\n\nStage 3\n• Go to the budget store and ask for food.\n• Location: Almuj 943, 75, -1879\n\nStage 4\n• Look for food on the second floor.\n• Go upstairs, kill the Moldy apple, and return to Flodur.\n\nStage 5\n• Return to Nick and tell him the bad news.\n\nStage 6\n• Bring the blanket to the woman in the tunnel south of Nick.\n• Location: Tunnel 898, 52, -1779\n\nStage 7\n• Continue the tunnel and find Nick's friend.\n• Location: Ternaves 780, 70, -1617\n\nStage 8\n• Explore the area and look for Santa.\n• Location: Santa's Village 22834, 56, -9568\n\nStage 9\n• Enter Santa's home and speak to him.\n• Location: Santa's Village 22801, 40, -9582\n\nStage 10\n• Leave through the portal behind Santa.\n\nStage 11\n• Enter the ball room. Note: You do not need a ticket to enter.\n• Location: Detlas Ballroom 10055, 33, 5297\n\nStage 12\n• Ask the guests for food.\n• Location: Detlas Ballroom 9991, 21, 5297\n\nStage 13\n• Steal the food from the kitchen and talk to Nick.\n\nStage 14\n• Escape the ball with Nick.\n\nStage 15\n• Talk to Nick.",
@@ -1341,19 +1259,6 @@ export const GENERATED_QUEST_MARKER_CONTENT = {
     "sourceUrl": "https://wynncraft.wiki.gg/wiki/Bob%27s_Lost_Soul",
     "tutorials": []
   },
-  "atlas-quests-the-lost-447--4461": {
-    "summary": "",
-    "explanation": "Stage 1\n• Talk to Dejol.\n• Location: Canyon of the Lost 452, 28, -4455\n\nStage 7\n• Return to Dejol to tell him of your success.",
-    "coverImage": "https://wynncraft.wiki.gg/images/PinpointConcept2.png?5b3504",
-    "gallery": [
-      "https://wynncraft.wiki.gg/images/thumb/CBQuestIcon.png/32px-CBQuestIcon.png?58a8d7",
-      "https://wynncraft.wiki.gg/images/PinpointConcept2.png?5b3504",
-      "https://wynncraft.wiki.gg/images/thumb/FerociousBear.png/100px-FerociousBear.png?58668e",
-      "https://wynncraft.wiki.gg/images/thumb/BearCub%28TheLost%29.png/100px-BearCub%28TheLost%29.png?f2e08d"
-    ],
-    "sourceUrl": "https://wynncraft.wiki.gg/wiki/The_Lost_(1.20)",
-    "tutorials": []
-  },
   "atlas-quests-kingdom-of-sand-1405--1829": {
     "summary": "",
     "explanation": "Stage 1\n• Talk to Junes at [1341, 81, -1826]\n\nStage 2\n• Attempt to enter the bandit hideout at [1314, 91, -1660].\n• Location: Bandit Hideout 1314, 90, -1660\n\nStage 3\n• Meet with Geo & Tarek at [1311, 90, -1654].\n\nStage 4\n• Sneak into the highest room of the Rymek Mansion at [1179, 32, -1295].\n• Location: Rymek Mansion 1179, 32, -1295\n\nStage 5\n• Bring the journal from the Rymek Mansion to the Vault Guard to enter the hideout.\n• Enter the cart.\n\nStage 6\n• Look for the sceptre within the bandit hideout at [1314, 92, -1690].\n\nStage 7\n• Search the broken cart at [1183, 78, -1857].\n• Location: Cart 1183, 76, -1857\n\nStage 8\n• Search the abandoned house at [1220, 78, -1873].\n• Location: Abandoned House 1220, 78, -1873\n• Grab the sceptre on the second floor of the house.\n\nStage 9\n• Return to the tomb and give Junes the sceptre at [1408, 97, -1824].\n• Location: Sand-Swept Tomb 1408, 97, -1824",
@@ -1558,6 +1463,271 @@ export const GENERATED_QUEST_MARKER_CONTENT = {
       "https://wynncraft.wiki.gg/images/thumb/Alfonse.png/200px-Alfonse.png?ecc639"
     ],
     "sourceUrl": "https://wynncraft.wiki.gg/wiki/The_Corrupted_Village",
+    "tutorials": []
+  },
+  "atlas-quests-acquiring-credentials--256--4983": {
+    "summary": "",
+    "explanation": "Stage 1\n• Get a Gavellian Passport at [-256, 57, -4983]\n• Location: Letvus Airbase -256, 57, -4983\n\nStage 2\n• Explore the Airbase looking for clues about the Black Market.\n\nStage 3\n• Keep exploring the Airbase looking for clues about the Black Market.\n• Go behind the waiter and right-click a plate and the sandwich nearby. Serve them to the Cinfras Citizen to continue.\n\nStage 4\n• Follow the clue: The airship commanders love what they hate.\n• Go through the gate at [-216, 84, -4947]\n\nStage 5\n• Follow the clue: Once torn, forever broken beyond repair.\n\nStage 6\n• Follow the Mechanic.\n\nStage 7\n• Travel with the Mechanic and Doan to the Sky Islands to get the Dragonling Egg.\n\nStage 8\n• Go back to the bar at the Blackbird Inn with Doan.\n\nStage 9\n• Enter the Black Market and talk to the Member at the end of the hallway.\n\nStage 10\n• Talk to the Merchants and try to get 2000 emeralds to buy a passport.\n• Go to the 50-emerald bid NPC first to set the price at 1000 emeralds. Then, go to the 300 bid NPC to get to 1300. Then alternate twice between the 200 bid increase NPC and the 150 bid increase NPC to reach exactly 2000.\n\nStage 11\n• Talk to the Black Market Member again.",
+    "coverImage": "https://wynncraft.wiki.gg/images/PinpointConcept2.png?5b3504",
+    "gallery": [
+      "https://wynncraft.wiki.gg/images/thumb/CBQuestIcon.png/32px-CBQuestIcon.png?58a8d7",
+      "https://wynncraft.wiki.gg/images/PinpointConcept2.png?5b3504"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Acquiring_Credentials",
+    "tutorials": []
+  },
+  "atlas-quests-aldorei-s-secret-part-i--462--4460": {
+    "summary": "",
+    "explanation": "Stage 1\n• Talk to the Elf Guard at [-462, 132, -4460].\n\nStage 2\n• See if anyone in Aldorei Valley knows what happened\n• Location: Aldorei Valley -543, 112, -4449\n\nStage 3\n• Find a use for Damys' Bucket\n• Location: Aldorei Valley -504, 112, -4425\n\nStage 4\n• Find a way to grow the plant by the waterfall\n• Bring the bucket up the hill behind Vaenr and Sylvar, and right-click the waterfall with the bucket to fill it. Then, right-click the sapling at (-499, 121, -4397) to make it grow and let you up.\n\nStage 5\n• Explore the secret garden\n• Location: Aldorei Valley -466, 166, -4382\n\nStage 6\n• Investigate the [Iridescent Leaves]\n• Location: Aldorei Valley -545, 112, -4446\n\nStage 7\n• Go to the botanist's house at [-541, 106, -4538]\n\nStage 8\n• Kill the carnivorous plant and loot the book You must kill three carnivorous plant mobs around the plant to get the book to drop.\n\nStage 9\n• Investigate the alchemist's shop at [-495, 112, -4430]\n\nStage 10\n• Chase the criminal. You must follow the criminal out of the shop and across Aldorei Valley.\n• Location: Aldorei Valley -480, 125, -4421\n• Climb up the stairs near where the criminal jumps from and walk over to the window in the upper level to get out of the building. Then, follow Korben around the valley to a bridge. He will use a spell to break the bridge and fall down to the lower area, you can jump down either using a movement spell or by climbing down a series of air particles that will appear. When you continue, he will cast another spell to grow a plant and block your path, but you can break the plant by right-clicking it. He will then use an elevator to go back to the upper area.\n• Location: Aldorei Valley -620, 65, -4500\n• Location: Aldorei Valley -613, 97, -4453\n\nStage 11\n• Choose\n• Location: Aldorei Valley -461, 132, -4459\n• Location: Aldorei Valley -613, 97, -4453",
+    "coverImage": "https://wynncraft.wiki.gg/images/thumb/OutdatedLogo.png/48px-OutdatedLogo.png?cc30c2",
+    "gallery": [
+      "https://wynncraft.wiki.gg/images/thumb/OutdatedLogo.png/48px-OutdatedLogo.png?cc30c2",
+      "https://wynncraft.wiki.gg/images/thumb/CBQuestIcon.png/32px-CBQuestIcon.png?58a8d7",
+      "https://wynncraft.wiki.gg/images/PinpointConcept2.png?5b3504",
+      "https://wynncraft.wiki.gg/images/thumb/CarnivorousPlant.png/100px-CarnivorousPlant.png?835522"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Aldorei's_Secret_Part_I",
+    "tutorials": []
+  },
+  "atlas-quests-an-iron-heart-part-i--1613--4964": {
+    "summary": "",
+    "explanation": "Stage 1\n• Speak with Duvale at [-1613, 51, -4964]\n\nStage 2\n• Find the defective Guard Golem in the mountain at [-1655, 59, -5087]\n• Follow the scrap trail along the path towards the swamp in the south. Go up the mountain path starting at [-1655, 59, -5087], avoiding all the golem-based mobs attacking you as you follow the path.\n\nStage 3\n• Find the defective Guard Golem\n\nStage 4\n• Subdue the defective Guard Golem and return to Duvale at [-1613, 51, -4964]",
+    "coverImage": "https://wynncraft.wiki.gg/images/thumb/Duvale.png/200px-Duvale.png?121553",
+    "gallery": [
+      "https://wynncraft.wiki.gg/images/thumb/CBQuestIcon.png/32px-CBQuestIcon.png?58a8d7",
+      "https://wynncraft.wiki.gg/images/thumb/Duvale.png/200px-Duvale.png?121553",
+      "https://wynncraft.wiki.gg/images/thumb/Mistake.png/100px-Mistake.png?6d7824",
+      "https://wynncraft.wiki.gg/images/thumb/DefectiveBolt.png/100px-DefectiveBolt.png?1f7119",
+      "https://wynncraft.wiki.gg/images/thumb/DefectiveGear.png/100px-DefectiveGear.png?ce0f87",
+      "https://wynncraft.wiki.gg/images/thumb/HaywireHardDrive.png/100px-HaywireHardDrive.png?c6ba93",
+      "https://wynncraft.wiki.gg/images/thumb/MetalkalineSlime.png/100px-MetalkalineSlime.png?74d31c",
+      "https://wynncraft.wiki.gg/images/thumb/MetalkalineDrip.png/100px-MetalkalineDrip.png?fe0641"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/An_Iron_Heart_Part_I",
+    "tutorials": []
+  },
+  "atlas-quests-an-iron-heart-part-ii--1745--5479": {
+    "summary": "",
+    "explanation": "Stage 1\n• Speak to Detective Hart at [-1745, 66, -5479]\n\nStage 2\n• Follow the west road and speak with Daxe in his home at [-1924, 55, -5466]\n\nStage 3\n• Head to the Golem Factory at [-2119, 55, -5557]\n\nStage 4\n• Find a way to deactivate the Guard Golem\n• Location: Iron Golem Factory -2115, 57, -5565\n\nStage 5\n• Find a way into the factory in Urelix's house\n\nStage 6\n• Escape the Golem Factory and find Urelix.\n• Follow the first path, avoiding objects falling from the ceiling. Go through the tunnel, then follow the next path, which will trigger the following dialogue: ???: Initiating Chip Insertion Machine - All personell in machine be advised, avoid the spikes. Avoid the spikes pressing repeatedly from the ceiling, then head through the second tunnel, and follow the next path while avoiding the mobs on it. Go through the next tunnel, then stand on the platform to get it to start rising and dodge the flamethrower attacks from the turrets on the walls. Once you reach the top, go across the path, then drop down without hitting any of the blocks. Enter the next tunnel, and head across the next path while avoiding mobs again, then enter another tunnel, triggering the following dialogue: ???: Intruder Detected - Emergency meltdown initiated. Please evacuate immediately via the emergency exit. Parkour across the path, avoiding lava and drops, until you reach an open chamber, in which you must kill a miniboss, the Factory Sentinel. Use its drop to open a door and escape.\n\nStage 7\n• Talk to Dr. Urelix in his office\n• Location: Iron Golem Factory -6196, 47, -7614\n\nStage 8\n• Either take the bribe or return to Detective Hart",
+    "coverImage": "https://wynncraft.wiki.gg/images/thumb/DetectiveHart.png/200px-DetectiveHart.png?700f7f",
+    "gallery": [
+      "https://wynncraft.wiki.gg/images/thumb/CBQuestIcon.png/32px-CBQuestIcon.png?58a8d7",
+      "https://wynncraft.wiki.gg/images/thumb/DetectiveHart.png/200px-DetectiveHart.png?700f7f",
+      "https://wynncraft.wiki.gg/images/thumb/Daxe.png/200px-Daxe.png?e5fd70",
+      "https://wynncraft.wiki.gg/images/thumb/GuardGolem%28NPC%29.png/200px-GuardGolem%28NPC%29.png?56019c",
+      "https://wynncraft.wiki.gg/images/PinpointConcept2.png?5b3504",
+      "https://wynncraft.wiki.gg/images/thumb/Dr.Urelix%28AnIronHeartPartII%2CHouse%29.png/200px-Dr.Urelix%28AnIronHeartPartII%2CHouse%29.png?a3cfe2",
+      "https://wynncraft.wiki.gg/images/thumb/SubmissionSentry.png/100px-SubmissionSentry.png?717ba6",
+      "https://wynncraft.wiki.gg/images/thumb/UnfulfilledGolem.png/100px-UnfulfilledGolem.png?61ba88"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/An_Iron_Heart_Part_II",
+    "tutorials": []
+  },
+  "atlas-quests-clearing-the-camps--1991--4658": {
+    "summary": "",
+    "explanation": "Stage 1\n• Talk to Captain Kymer outside Llevigar at [-1991, 34, -4658]\n\nStage 2\n• Find and kill Orc Chieftains Elisu, Veltu, and Ceifko in the camps around Llevigar- look for green flags\n\nStage 3\n• Report back to Captain Kymer once you have the three heads.",
+    "coverImage": "https://wynncraft.wiki.gg/images/thumb/CaptainKymer.png/200px-CaptainKymer.png?b44927",
+    "gallery": [
+      "https://wynncraft.wiki.gg/images/thumb/CBQuestIcon.png/32px-CBQuestIcon.png?58a8d7",
+      "https://wynncraft.wiki.gg/images/thumb/CaptainKymer.png/200px-CaptainKymer.png?b44927",
+      "https://wynncraft.wiki.gg/images/PinpointConcept2.png?5b3504",
+      "https://wynncraft.wiki.gg/images/thumb/CliffhearthOrcChopper.png/100px-CliffhearthOrcChopper.png?42e3ae",
+      "https://wynncraft.wiki.gg/images/thumb/CliffhearthOrcSmoker.png/100px-CliffhearthOrcSmoker.png?84fdd7",
+      "https://wynncraft.wiki.gg/images/thumb/CliffhearthOrcKindler.png/100px-CliffhearthOrcKindler.png?6f1d41",
+      "https://wynncraft.wiki.gg/images/thumb/CliffhearthRai-Elisu.png/100px-CliffhearthRai-Elisu.png?827518"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Clearing_the_Camps",
+    "tutorials": []
+  },
+  "atlas-quests-cluck-cluck--83--2497": {
+    "summary": "",
+    "explanation": "Stage 1\n• Talk to Nohno on Rooster Island at [-83, 48, -2497]\n\nStage 2\n• Bring back [1 Cluckles' Favourite Feather] to Nohno.",
+    "coverImage": "https://wynncraft.wiki.gg/images/thumb/Nohno.png/200px-Nohno.png?fd33ca",
+    "gallery": [
+      "https://wynncraft.wiki.gg/images/thumb/CBQuestIcon.png/32px-CBQuestIcon.png?58a8d7",
+      "https://wynncraft.wiki.gg/images/thumb/Nohno.png/200px-Nohno.png?fd33ca",
+      "https://wynncraft.wiki.gg/images/thumb/Cluckles.png/100px-Cluckles.png?9806c3"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Cluck_Cluck",
+    "tutorials": []
+  },
+  "atlas-quests-dwelling-walls-196--2172": {
+    "summary": "",
+    "explanation": "Stage 1\n• Talk to Leucsaa at [196, 41, -2172]\n\nStage 2\n• Enter the mansion\n• Location: 203, 38, -2178\n\nStage 3\n• Navigate the mansion to the room holding the journal\n\nStage 4\n• Talk to Leucsaa",
+    "coverImage": "https://wynncraft.wiki.gg/images/thumb/Leucsaa.png/200px-Leucsaa.png?dd6382",
+    "gallery": [
+      "https://wynncraft.wiki.gg/images/thumb/CBQuestIcon.png/32px-CBQuestIcon.png?58a8d7",
+      "https://wynncraft.wiki.gg/images/thumb/Leucsaa.png/200px-Leucsaa.png?dd6382",
+      "https://wynncraft.wiki.gg/images/PinpointConcept2.png?5b3504",
+      "https://wynncraft.wiki.gg/images/thumb/Leucsaa%27sJournal.png/100px-Leucsaa%27sJournal.png?333ee2"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Dwelling_Walls",
+    "tutorials": []
+  },
+  "atlas-quests-from-the-mountains--1366--4543": {
+    "summary": "",
+    "explanation": "Stage 1\n• Find out what's going on at [-1366, 42, -4543].\n• Location: Pre-Light Forest -1366, 42, -4542\n\nStage 2\n• Find what Arnod wants inside of the house.\n• Go up the ladder on the right and pick up the Lost Dentures at (-1375, 48, -4548), then bring them to Arnod\n\nStage 3\n• Find someone in Bucie who can help you with the fires.\n• Location: Bucie -1409, 43, -4728\n\nStage 4\n• Go to the path at [-1447, 61, -4582], and follow it up to the top of the mountain.\n• Location: Mountain Top -1426, 95, -4516\n\nStage 5\n• Capture all of the rogue Flerisi and bring them to Axelus.\n\nStage 6\n• Enter the hole at [-1390, 96, -4495].\n\nStage 7\n• Investigate the trail of fire.\n\nStage 8\n• Subdue the Fleris.\n\nStage 9\n• Exit the cave and talk with Axelus at [-1263, 43, -4490].",
+    "coverImage": "https://wynncraft.wiki.gg/images/PinpointConcept2.png?5b3504",
+    "gallery": [
+      "https://wynncraft.wiki.gg/images/thumb/CBQuestIcon.png/32px-CBQuestIcon.png?58a8d7",
+      "https://wynncraft.wiki.gg/images/PinpointConcept2.png?5b3504",
+      "https://wynncraft.wiki.gg/images/thumb/VolatileFleris%28Phase1%29.png/100px-VolatileFleris%28Phase1%29.png?4fa590",
+      "https://wynncraft.wiki.gg/images/thumb/VolatileFleris%28Phase2%29.png/100px-VolatileFleris%28Phase2%29.png?47d188",
+      "https://wynncraft.wiki.gg/images/thumb/VolatileFleris%28Phase3%29.png/100px-VolatileFleris%28Phase3%29.png?da7578",
+      "https://wynncraft.wiki.gg/images/thumb/VolatileFleris%28Phase4%29.png/100px-VolatileFleris%28Phase4%29.png?2b1f91"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/From_the_Mountains",
+    "tutorials": []
+  },
+  "atlas-quests-lazarus-pit--1025--5302": {
+    "summary": "",
+    "explanation": "",
+    "coverImage": "https://commons.wiki.gg/images/Disambig.svg?5de338",
+    "gallery": [
+      "https://commons.wiki.gg/images/Disambig.svg?5de338"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Lazarus_Pit",
+    "tutorials": []
+  },
+  "atlas-quests-lost-in-the-jungle--753--663": {
+    "summary": "",
+    "explanation": "Stage 1\n• Speak to Gracen at [-753, 82, -663]\n\nStage 2\n• Search the Dernel Jungle for Aryn\n\nStage 3\n• Defeat the spirit possessing Aryn\n\nStage 4\n• Make sure Aryn is safe at [-699, 6, -354]\n\nStage 5\n• Bring the Mysterious Gemstone to Gracen at [-753, 82, -663]",
+    "coverImage": "https://wynncraft.wiki.gg/images/thumb/Gracen.png/250px-Gracen.png?3abed2",
+    "gallery": [
+      "https://wynncraft.wiki.gg/images/thumb/CBQuestIcon.png/32px-CBQuestIcon.png?58a8d7",
+      "https://wynncraft.wiki.gg/images/thumb/Gracen.png/250px-Gracen.png?3abed2",
+      "https://wynncraft.wiki.gg/images/thumb/Aryn%28Possessed%29.png/250px-Aryn%28Possessed%29.png?3c4893",
+      "https://wynncraft.wiki.gg/images/thumb/PossessedAryn%28Phase1%29.png/100px-PossessedAryn%28Phase1%29.png?5a3b23",
+      "https://wynncraft.wiki.gg/images/thumb/PossessedAryn%28Phase2%29.png/100px-PossessedAryn%28Phase2%29.png?26f1c4",
+      "https://wynncraft.wiki.gg/images/thumb/Aryn.png/250px-Aryn.png?1abba1"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Lost_in_the_Jungle",
+    "tutorials": []
+  },
+  "atlas-quests-out-of-my-mind--860--961": {
+    "summary": "",
+    "explanation": "Stage 1\n• Speak with the Troms children in the treehouse.\n• Location: -860, 93, -963\n\nStage 2\n• Find the hidden door next to the gate near the Undergrowth Ruins outside Troms\n• Location: Hidden Door -701, 58, -817\n\nStage 3\n• Find a way inside the house at [-705,59,-817]\n• Press the button in the middle of the door. (Note: You have to have the key earlier given to you at the treehouse with you.)\n\nStage 4\n• Explore the hidden lab in search of information\n\nStage 5\n• Build a machine to hit your head and get back to normal\n\nStage 6\n• Find a way to destroy the plant monster, then return to the group in Troms at [-830,75,-979] to report your findings\n• Go to the left, kill the Thorned Beast, get the key, go back to the entrance, take the right path and throw the key in the hopper.\n• The entrance has been cleared. What could lay behind it?\n• Go back to the last room, throw the Malignant Bud that you got from killing the Malignant Beast in the previous room, in the hopper.",
+    "coverImage": "https://wynncraft.wiki.gg/images/PinpointConcept2.png?5b3504",
+    "gallery": [
+      "https://wynncraft.wiki.gg/images/thumb/CBQuestIcon.png/32px-CBQuestIcon.png?58a8d7",
+      "https://wynncraft.wiki.gg/images/PinpointConcept2.png?5b3504"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Out_of_my_Mind",
+    "tutorials": []
+  },
+  "atlas-quests-reclaiming-the-house--1499--5349": {
+    "summary": "",
+    "explanation": "Stage 1\n• Join Elphaba on a mission in the Temporary Camp at [-1499, 47, -5349]\n\nStage 2\n• Kill the mobs raiding the Camp.\n\nStage 3\n• Talk to Elphaba for information on the upcoming attack.\n\nStage 4\n• Go to the watch tower at [-1384, 42, -5273] to plan the attack.\n\nStage 5\n• Enter to the watch tower at [-1384, 42, -5273] to plan the attack.\n\nStage 6\n• Explore the outpost's surroundings to find another way in.\n• Go to [-1411, 45, -5168] and watch the muddied orc be let in.\n\nStage 7\n• Follow the trail of mud left by the orc. It leads to the cave at [-1522, 47, -5152]\n\nStage 8\n• Enter the outpost while covered in mud.\n\nStage 9\n• Cut the ropes to free the guards from the cage.\n• You can avoid being seen by looking out for the exclamation marks above the orc's heads. Only press when there are no exclamation marks available\n• You can't let the orcs see you cutting the ropes, or they'll see through your disguise.\n\nStage 10\n• Kill the Orcish Overtakers.\n\nStage 11\n• Open the gate with a spell\n\nStage 11\n• Talk to Elphaba.",
+    "coverImage": "https://wynncraft.wiki.gg/images/thumb/CBQuestIcon.png/32px-CBQuestIcon.png?58a8d7",
+    "gallery": [
+      "https://wynncraft.wiki.gg/images/thumb/CBQuestIcon.png/32px-CBQuestIcon.png?58a8d7"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Reclaiming_the_House",
+    "tutorials": []
+  },
+  "atlas-quests-reincarnation-372--775": {
+    "summary": "",
+    "explanation": "Stage 1\n• Talk to Batelu in Bob's Tomb.\n\nStage 2\n• Bring back 1 Cluckles' Favourite Feather, Baab's Wool, and Mooington's Skin to Batelu.\n\nStage 3\n• Kill Bob's Reincarnation.\n\nStage 4\n• Bring back 1 Bob's Seal of Approval to Batelu.",
+    "coverImage": "https://wynncraft.wiki.gg/images/thumb/CBQuestIcon.png/32px-CBQuestIcon.png?58a8d7",
+    "gallery": [
+      "https://wynncraft.wiki.gg/images/thumb/CBQuestIcon.png/32px-CBQuestIcon.png?58a8d7"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Reincarnation",
+    "tutorials": []
+  },
+  "atlas-quests-stable-story-561--1598": {
+    "summary": "",
+    "explanation": "Stage 1\n• Talk to Enkser outside Detlas at [561, 67, -1598]\n\nStage 2\n• Bring back [1 Stable Key] to Enkser from the tunnel at [836, 69, -1649]\n• Location: Ternaves 829, 69, -1628",
+    "coverImage": "https://wynncraft.wiki.gg/images/thumb/Enkser.png/250px-Enkser.png?3acd5e",
+    "gallery": [
+      "https://wynncraft.wiki.gg/images/thumb/CBQuestIcon.png/32px-CBQuestIcon.png?58a8d7",
+      "https://wynncraft.wiki.gg/images/thumb/Enkser.png/250px-Enkser.png?3acd5e",
+      "https://wynncraft.wiki.gg/images/thumb/Betty.png/100px-Betty.png?2160b4",
+      "https://wynncraft.wiki.gg/images/thumb/RebelCow.png/100px-RebelCow.png?ab2201",
+      "https://wynncraft.wiki.gg/images/thumb/ArmoredRebelCow.png/100px-ArmoredRebelCow.png?3e5a20",
+      "https://wynncraft.wiki.gg/images/thumb/AlberttheStrong.png/100px-AlberttheStrong.png?e3d746",
+      "https://wynncraft.wiki.gg/images/thumb/EtustheBlind.png/100px-EtustheBlind.png?9cdcfc",
+      "https://wynncraft.wiki.gg/images/PinpointConcept2.png?5b3504"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Stable_Story",
+    "tutorials": []
+  },
+  "atlas-quests-star-thief--2018--4822": {
+    "summary": "",
+    "explanation": "Stage 1\n• Look into the rumors of strange weather near the Imal Inn at [-2018, 43, -4822].\n\nStage 2\n• Find the meteor's crash site at [-2122, 53, -4880].\n\nStage 3\n• Explore the cave that the meteor crashed into.\n• Continue through the cave until you reach an intersection where you can see a meteor shard along the path the meteor crashed down through.\n\nStage 4\n• Escape the collapsing cave.\n\nStage 5\n• Follow the trail leading off to the east from the cave.\n\nStage 6\n• Explore the cave at [-1876, 42, -4834] and defeat the insane thief.\n\nStage 7\n• Bring back the piece of meteor to the secret agent at [-2120, 54, -4887].",
+    "coverImage": "https://wynncraft.wiki.gg/images/thumb/Agent.png/250px-Agent.png?449b74",
+    "gallery": [
+      "https://wynncraft.wiki.gg/images/thumb/CBQuestIcon.png/32px-CBQuestIcon.png?58a8d7",
+      "https://wynncraft.wiki.gg/images/thumb/Agent.png/250px-Agent.png?449b74",
+      "https://wynncraft.wiki.gg/images/thumb/InsaneThief%28Stage3%29.png/200px-InsaneThief%28Stage3%29.png?8053f5",
+      "https://wynncraft.wiki.gg/images/thumb/PossessedCarrot.png/100px-PossessedCarrot.png?af300d",
+      "https://wynncraft.wiki.gg/images/thumb/StardustWeird.png/100px-StardustWeird.png?5ffaa5",
+      "https://wynncraft.wiki.gg/images/thumb/CosmicWeird%28Lv45%29.png/100px-CosmicWeird%28Lv45%29.png?cb307a",
+      "https://wynncraft.wiki.gg/images/thumb/AnimatedOre.png/100px-AnimatedOre.png?1a0807",
+      "https://wynncraft.wiki.gg/images/thumb/InsaneThief%28Stage6%29.png/200px-InsaneThief%28Stage6%29.png?24d8d6"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Star_Thief",
+    "tutorials": []
+  },
+  "atlas-quests-the-lost-447--4461": {
+    "summary": "",
+    "explanation": "Stage 1\n• Find Dejol at [452, 28, 4456]\n\nStage 2\n• Find the three lost crew members at the red flags around [452, 28, -4456]\n\nStage 3\n• Return to Dejol at [452, 28, -4456] to tell him of your success",
+    "coverImage": "https://wynncraft.wiki.gg/images/thumb/Dejol.png/131px-Dejol.png?45bc77",
+    "gallery": [
+      "https://wynncraft.wiki.gg/images/thumb/CBQuestIcon.png/32px-CBQuestIcon.png?58a8d7",
+      "https://wynncraft.wiki.gg/images/thumb/Dejol.png/131px-Dejol.png?45bc77",
+      "https://wynncraft.wiki.gg/images/thumb/Fetu.png/256px-Fetu.png?7d453f",
+      "https://wynncraft.wiki.gg/images/thumb/Yuge.png/124px-Yuge.png?e56b4c",
+      "https://wynncraft.wiki.gg/images/Gordon.png?262f4b"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/The_Lost",
+    "tutorials": []
+  },
+  "atlas-quests-the-ultimate-weapon--947--4593": {
+    "summary": "",
+    "explanation": "Stage 1\n• Speak to Dodegar Bandysnoot at [-987, 42, -4593].\n\nStage 2\n• Collect [1 Enchanted Stick] from Wood Sprites at [-1073, 47, -4619] and return them to Dodegar\n\nStage 3\n• Dodegar needs [1 Sacred Hobbit Metal] from the Shiar at [-937, 46, -4540]\n\nStage 4\n• Find Togedar in the Shiar.\n\nStage 5\n• Find Alegdar in the Shiar.\n\nStage 6\n• Find Balegar in the Shiar.\n\nStage 7\n• Find Reyoretrsed in the Shiar.\n\nStage 8\n• Find Richard in the Shiar.\n\nStage 9\n• Return to Dodegar with the metal.\n\nStage 10\n• Find the Diplacus Aurantiacus by following the riddle to [-980, 38, -4571].\n\nStage 11\n• Talk to Dodegar with the Diplacus Aurantiacus.\n\nStage 12\n• Find the cave at [-834, 27, -4628] and bring back [2000 Luster Blood] and bring it back to Dodegar.",
+    "coverImage": "https://wynncraft.wiki.gg/images/thumb/Dodegar.png/256px-Dodegar.png?5973b8",
+    "gallery": [
+      "https://wynncraft.wiki.gg/images/thumb/CBQuestIcon.png/32px-CBQuestIcon.png?58a8d7",
+      "https://wynncraft.wiki.gg/images/thumb/Dodegar.png/256px-Dodegar.png?5973b8",
+      "https://wynncraft.wiki.gg/images/thumb/Gogedar.png/256px-Gogedar.png?2e2bed",
+      "https://wynncraft.wiki.gg/images/thumb/Togedar.png/256px-Togedar.png?faff47",
+      "https://wynncraft.wiki.gg/images/thumb/Alegdar.png/256px-Alegdar.png?ace869",
+      "https://wynncraft.wiki.gg/images/thumb/Balegar.png/256px-Balegar.png?70ad41",
+      "https://wynncraft.wiki.gg/images/thumb/Reyoretrsed.png/256px-Reyoretrsed.png?8999eb"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/The_Ultimate_Weapon",
+    "tutorials": []
+  },
+  "atlas-quests-tribal-aggression-1077--1613": {
+    "summary": "",
+    "explanation": "Stage 1\n• Talk to Caras at [1077, 84, -1613]\n\nStage 2\n• Enter the Eagle Camp and talk to Favian\n• Location: Eagle Tribe 1399, 84, -1618\n\nStage 3\n• Bring back the Eagle Totem from the Owl Camp\n\nStage 4\n• Retrieve the Owl Totem and return it to the Owl Camp",
+    "coverImage": "https://wynncraft.wiki.gg/images/thumb/Caras.png/200px-Caras.png?a6017e",
+    "gallery": [
+      "https://wynncraft.wiki.gg/images/thumb/CBQuestIcon.png/32px-CBQuestIcon.png?58a8d7",
+      "https://wynncraft.wiki.gg/images/thumb/Caras.png/200px-Caras.png?a6017e",
+      "https://wynncraft.wiki.gg/images/PinpointConcept2.png?5b3504",
+      "https://wynncraft.wiki.gg/images/thumb/Favian.png/200px-Favian.png?2fcbfa",
+      "https://wynncraft.wiki.gg/images/thumb/OwlDescendant.png/100px-OwlDescendant.png?6e8495",
+      "https://wynncraft.wiki.gg/images/thumb/OwlShaman.png/100px-OwlShaman.png?dcb9da",
+      "https://wynncraft.wiki.gg/images/thumb/TotemicProtector.png/100px-TotemicProtector.png?42b07f"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Tribal_Aggression",
+    "tutorials": []
+  },
+  "atlas-quests-underice-157--812": {
+    "summary": "",
+    "explanation": "Stage 1\n• Talk to Fredris in Nesaak at [157, 73, -812]\n\nStage 2\n• Return to Nesaak and bring Fredris a [Breathing Helmet I]\n\nStage 3\n• Buy a [Breathing Helmet II] and find the underwater cave\n\nStage 4\n• Explore the cave underneath the frozen lake in Nesaak\n• Location: Squid Village 227, 20, -740\n\nStage 5\n• Follow the river south to find the fishing dock\n• Location: Nesaak Forest 56, 72, -674\n\nStage 6\n• Obtain the bait at the woodcutting camp northwest of Nesaak, use it to catch the fish and then give it to Calamaro or Gernald\n\nStage 7\n• Meet up with Fredris in Nesaak and claim your reward",
+    "coverImage": "https://wynncraft.wiki.gg/images/thumb/Fredris.png/200px-Fredris.png?9328d1",
+    "gallery": [
+      "https://wynncraft.wiki.gg/images/thumb/CBQuestIcon.png/32px-CBQuestIcon.png?58a8d7",
+      "https://wynncraft.wiki.gg/images/thumb/Fredris.png/200px-Fredris.png?9328d1",
+      "https://wynncraft.wiki.gg/images/thumb/NauterFighter.png/100px-NauterFighter.png?23156e",
+      "https://wynncraft.wiki.gg/images/PinpointConcept2.png?5b3504",
+      "https://wynncraft.wiki.gg/images/thumb/Calamaro.png/200px-Calamaro.png?6d2d41",
+      "https://wynncraft.wiki.gg/images/thumb/Gernald.png/200px-Gernald.png?978331"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Underice",
     "tutorials": []
   }
 };
