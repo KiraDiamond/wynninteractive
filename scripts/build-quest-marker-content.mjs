@@ -10,15 +10,23 @@ const INPUT_PATH = path.join(ROOT, "data", "wiki-scrape", "quest-guides", "quest
 const OUTPUT_PATH = path.join(ROOT, "data", "generated-quest-marker-content.js");
 
 function normalizeWhitespace(value) {
-  return String(value ?? "").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
+  return String(value ?? "")
+    .replace(/\u00a0/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function normalizeGuideLine(value) {
-  return String(value ?? "").replace(/\u00a0/g, " ").replace(/[ \t]+/g, " ").trim();
+  return String(value ?? "")
+    .replace(/\u00a0/g, " ")
+    .replace(/[ \t]+/g, " ")
+    .trim();
 }
 
 function cleanMapSuffix(value) {
-  return normalizeGuideLine(value).replace(/\s+Wynncraft Map\b/gi, "").trim();
+  return normalizeGuideLine(value)
+    .replace(/\s+Wynncraft Map\b/gi, "")
+    .trim();
 }
 
 function isSpeakerLine(value) {
@@ -70,7 +78,7 @@ function cleanGuideLine(line) {
 
   if (
     /^(You hear\b|The camera will show\b|The crackling and huming gets louder\b|You can hear a soft humming\b|Previously\.\.\.|Upon approaching\b|After exiting the front gate\b|Majin heads up\b|Majin walks to\b|Sui leaves the room\b)/i.test(
-      value,
+      value
     )
   ) {
     return "";
@@ -105,12 +113,14 @@ function compactSupportLine(value) {
 
 function isSupportStep(value) {
   return /^(Location:|Coordinates:|Tip:|The code\b|The answer\b|The entrance\b|The next wind chime\b|The Clothes Merchant is found at\b|The hotel entrance is found at\b|You will need\b|You can\b|Use\b|Get\b|Go\b|Enter\b|Follow\b|Climb\b|Continue\b|Fight\b|Head\b|Travel\b|Press\b|Collect\b|Grab\b|Jump\b|Return\b|Bring\b|Investigate\b|Open\b|To get\b|Right next to\b|Moving block puzzle:|The Second Puzzle:|Pink Wool can be purchased\b)/i.test(
-    value,
+    value
   );
 }
 
 function extractQuestSteps(value) {
-  const lines = String(value ?? "").replace(/\r/g, "").split("\n");
+  const lines = String(value ?? "")
+    .replace(/\r/g, "")
+    .split("\n");
   const stages = [];
   let currentStage = null;
 
@@ -155,9 +165,7 @@ function extractQuestSteps(value) {
     return "";
   }
 
-  return stages
-    .map((stage) => [stage.title, ...stage.items.map((item) => `• ${item}`)].join("\n"))
-    .join("\n\n");
+  return stages.map((stage) => [stage.title, ...stage.items.map((item) => `• ${item}`)].join("\n")).join("\n\n");
 }
 
 function dedupe(values) {
@@ -183,7 +191,9 @@ function chooseCoverImage(images) {
 }
 
 async function main() {
-  const questIds = new Set(WIKI_MAP_MARKERS.filter((marker) => marker.category === "quests").map((marker) => marker.id));
+  const questIds = new Set(
+    WIKI_MAP_MARKERS.filter((marker) => marker.category === "quests").map((marker) => marker.id)
+  );
   const rawGuides = JSON.parse(await fs.readFile(INPUT_PATH, "utf8"));
 
   const included = [];
@@ -230,12 +240,18 @@ async function main() {
 
   await fs.writeFile(OUTPUT_PATH, file, "utf8");
 
-  console.log(JSON.stringify({
-    output: path.relative(ROOT, OUTPUT_PATH).replace(/\\/g, "/"),
-    included: included.length,
-    excluded: excluded.length,
-    excludedSample: excluded.slice(0, 20),
-  }, null, 2));
+  console.log(
+    JSON.stringify(
+      {
+        output: path.relative(ROOT, OUTPUT_PATH).replace(/\\/g, "/"),
+        included: included.length,
+        excluded: excluded.length,
+        excludedSample: excluded.slice(0, 20),
+      },
+      null,
+      2
+    )
+  );
 }
 
 main().catch((error) => {

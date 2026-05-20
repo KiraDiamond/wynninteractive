@@ -27,36 +27,51 @@ const RAID_PAGE_URLS = new Map([
   ["orphion s nexus of light", "https://wynncraft.wiki.gg/wiki/Orphion%27s_Nexus_of_Light"],
 ]);
 const RAID_OVERRIDES = new Map([
-  ["nest of the grootslangs", {
-    minLevel: "54",
-    quest: "Realm of Light I - The Worm Holes",
-    rune: "Az Rune",
-    bosses: ["The Grootslang Wyrmlings"],
-  }],
-  ["the canyon colossus", {
-    minLevel: "95",
-    quest: "The Breaking Point",
-    rune: "Tol Rune",
-    bosses: ["The Canyon Colossus"],
-  }],
-  ["the nameless anomaly", {
-    minLevel: "103",
-    quest: "A Journey Further",
-    rune: "Tol Rune",
-    bosses: ["The Nameless Anomaly"],
-  }],
-  ["the wartorn palace", {
-    minLevel: "119",
-    quest: "The Hero of Gavel",
-    rune: "Ek Rune",
-    bosses: ["Anathema"],
-  }],
-  ["orphion s nexus of light", {
-    minLevel: "79",
-    quest: "Realm of Light V - The Realm of Light",
-    rune: "Uth Rune",
-    bosses: ["Orphion, the Light Beast", "The Parasite"],
-  }],
+  [
+    "nest of the grootslangs",
+    {
+      minLevel: "54",
+      quest: "Realm of Light I - The Worm Holes",
+      rune: "Az Rune",
+      bosses: ["The Grootslang Wyrmlings"],
+    },
+  ],
+  [
+    "the canyon colossus",
+    {
+      minLevel: "95",
+      quest: "The Breaking Point",
+      rune: "Tol Rune",
+      bosses: ["The Canyon Colossus"],
+    },
+  ],
+  [
+    "the nameless anomaly",
+    {
+      minLevel: "103",
+      quest: "A Journey Further",
+      rune: "Tol Rune",
+      bosses: ["The Nameless Anomaly"],
+    },
+  ],
+  [
+    "the wartorn palace",
+    {
+      minLevel: "119",
+      quest: "The Hero of Gavel",
+      rune: "Ek Rune",
+      bosses: ["Anathema"],
+    },
+  ],
+  [
+    "orphion s nexus of light",
+    {
+      minLevel: "79",
+      quest: "Realm of Light V - The Realm of Light",
+      rune: "Uth Rune",
+      bosses: ["Orphion, the Light Beast", "The Parasite"],
+    },
+  ],
 ]);
 const WORLD_EVENT_PATH = path.join(ROOT, "data", "wiki-scrape", "browser-persistent", "categories", "world-event.json");
 const CAVE_PATH = path.join(ROOT, "data", "wiki-scrape", "browser-persistent", "categories", "cave.json");
@@ -79,7 +94,10 @@ const QUEST_FALLBACKS = [
 ];
 
 function normalizeWhitespace(value) {
-  return String(value ?? "").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
+  return String(value ?? "")
+    .replace(/\u00a0/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function titleKey(value) {
@@ -100,13 +118,16 @@ function dedupe(values) {
 }
 
 function stripNotes(value) {
-  return normalizeWhitespace(value).replace(/\[[^\]]+\]/g, "").replace(/\s+/g, " ").trim();
+  return normalizeWhitespace(value)
+    .replace(/\[[^\]]+\]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function titleCase(value) {
   return normalizeWhitespace(value)
     .split(/\s+/)
-    .map((part) => part ? part[0].toUpperCase() + part.slice(1).toLowerCase() : "")
+    .map((part) => (part ? part[0].toUpperCase() + part.slice(1).toLowerCase() : ""))
     .join(" ");
 }
 
@@ -123,7 +144,10 @@ function compactLine(value, maxLength = 220) {
   if (text.length <= maxLength) {
     return text;
   }
-  const sentences = text.match(/[^.!?]+[.!?]?/g)?.map((part) => normalizeWhitespace(part)).filter(Boolean) || [text];
+  const sentences = text
+    .match(/[^.!?]+[.!?]?/g)
+    ?.map((part) => normalizeWhitespace(part))
+    .filter(Boolean) || [text];
   let output = "";
   for (const sentence of sentences) {
     if (!sentence) {
@@ -163,7 +187,10 @@ function withoutNpcDialogue(items) {
 }
 
 function normalizeInfoboxLabel(value) {
-  return normalizeWhitespace(value).toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  return normalizeWhitespace(value)
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
 }
 
 function getInfoboxValue(infobox, patterns) {
@@ -238,16 +265,14 @@ function buildStageExplanation(steps) {
 function buildSectionExplanation(sections) {
   return sections
     .filter((section) => section.title && section.items.length)
-    .map((section) => [
-      section.title,
-      ...section.items.map((item) => `• ${item}`),
-    ].join("\n"))
+    .map((section) => [section.title, ...section.items.map((item) => `• ${item}`)].join("\n"))
     .join("\n\n");
 }
 
 function parseChestTiers(description) {
-  return [...String(description ?? "").matchAll(/(\d+x Tier \d(?:\s*\[[^\]]+\])?)/g)]
-    .map((match) => normalizeWhitespace(match[1]));
+  return [...String(description ?? "").matchAll(/(\d+x Tier \d(?:\s*\[[^\]]+\])?)/g)].map((match) =>
+    normalizeWhitespace(match[1])
+  );
 }
 
 function parseCoordinateTriple(value) {
@@ -263,7 +288,9 @@ function parseCoordinateTriple(value) {
 }
 
 function chooseCoverImage(images) {
-  const nonIcon = images.find((url) => url && !url.startsWith("data:") && !/CBQuestIcon|QuestIcon|PinpointConcept|map\.png|icon/i.test(url));
+  const nonIcon = images.find(
+    (url) => url && !url.startsWith("data:") && !/CBQuestIcon|QuestIcon|PinpointConcept|map\.png|icon/i.test(url)
+  );
   return nonIcon || images[0] || "";
 }
 
@@ -290,18 +317,22 @@ async function canReachChromeDebug() {
 }
 
 async function startChromeDebugSession() {
-  const child = spawn(CHROME_PATH, [
-    `--remote-debugging-port=${DEBUG_PORT}`,
-    `--user-data-dir=${PROFILE_DIR}`,
-    "--no-first-run",
-    "--no-default-browser-check",
-    "--new-window",
-    "about:blank",
-  ], {
-    detached: true,
-    stdio: "ignore",
-    windowsHide: false,
-  });
+  const child = spawn(
+    CHROME_PATH,
+    [
+      `--remote-debugging-port=${DEBUG_PORT}`,
+      `--user-data-dir=${PROFILE_DIR}`,
+      "--no-first-run",
+      "--no-default-browser-check",
+      "--new-window",
+      "about:blank",
+    ],
+    {
+      detached: true,
+      stdio: "ignore",
+      windowsHide: false,
+    }
+  );
   child.unref();
 
   for (let attempt = 0; attempt < 20; attempt += 1) {
@@ -351,23 +382,24 @@ async function loadProgress(targets) {
 }
 
 function buildRawExport(progress) {
-  return Object.values(progress.entries)
-    .sort((a, b) => a.markerId.localeCompare(b.markerId));
+  return Object.values(progress.entries).sort((a, b) => a.markerId.localeCompare(b.markerId));
 }
 
 async function persist(progress) {
   const raw = buildRawExport(progress);
-  const generated = Object.fromEntries(raw.map((entry) => [
-    entry.markerId,
-    {
-      summary: entry.summary,
-      explanation: entry.explanation,
-      coverImage: entry.coverImage,
-      gallery: entry.gallery,
-      sourceUrl: entry.sourceUrl,
-      tutorials: entry.tutorials,
-    },
-  ]));
+  const generated = Object.fromEntries(
+    raw.map((entry) => [
+      entry.markerId,
+      {
+        summary: entry.summary,
+        explanation: entry.explanation,
+        coverImage: entry.coverImage,
+        gallery: entry.gallery,
+        sourceUrl: entry.sourceUrl,
+        tutorials: entry.tutorials,
+      },
+    ])
+  );
 
   await writeJson(PROGRESS_PATH, progress);
   await writeJson(RAW_PATH, raw);
@@ -392,12 +424,14 @@ function buildTargets(worldEvents, caves, secrets, bossAltars) {
   const secretSource = seedMap(secrets);
   const bossAltarSource = seedMap(bossAltars);
 
-  const targets = [{
-    markerId: "__mini_quests__",
-    title: "Mini Quests",
-    url: QUESTS_INDEX_URL,
-    kind: "mini-quest-index",
-  }];
+  const targets = [
+    {
+      markerId: "__mini_quests__",
+      title: "Mini Quests",
+      url: QUESTS_INDEX_URL,
+      kind: "mini-quest-index",
+    },
+  ];
 
   for (const marker of WIKI_MAP_MARKERS) {
     const key = titleKey(marker.title);
@@ -499,7 +533,11 @@ async function ensureUsablePage(page, url, progress) {
 
 async function extractMiniQuestIndex(page) {
   return page.evaluate(() => {
-    const normalize = (value) => String(value ?? "").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
+    const normalize = (value) =>
+      String(value ?? "")
+        .replace(/\u00a0/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
     const content = document.querySelector("#mw-content-text .mw-parser-output, .mw-parser-output");
     if (!content) {
       return { rows: [], sourceUrl: location.href };
@@ -520,24 +558,17 @@ async function extractMiniQuestIndex(page) {
       }
 
       for (const cells of bodyRows) {
-        const [
-          rawName,
-          level,
-          startLocation,
-          coordinates,
-          province,
-          itemsRequired,
-          combatXp,
-          extraXp,
-        ] = cells;
+        const [rawName, level, startLocation, coordinates, province, itemsRequired, combatXp, extraXp] = cells;
 
         const name = normalize(rawName).replace(/^Mini-Quest\s*-\s*/i, "");
         if (!name || /Mini-Quest Name|Name/i.test(name)) {
           continue;
         }
 
-        const professionHeader = headerCells.find((header) => /Min\.?\s*Level/i.test(header) && !/^Min\.?\s*Level$/i.test(header)) || "";
-        const professionRewardHeader = headerCells.find((header) => /XP Given/i.test(header) && !/Combat XP/i.test(header)) || "";
+        const professionHeader =
+          headerCells.find((header) => /Min\.?\s*Level/i.test(header) && !/^Min\.?\s*Level$/i.test(header)) || "";
+        const professionRewardHeader =
+          headerCells.find((header) => /XP Given/i.test(header) && !/Combat XP/i.test(header)) || "";
         rows.push({
           section: sectionLabel,
           name,
@@ -580,7 +611,11 @@ async function extractMiniQuestIndex(page) {
 
 async function extractDungeonPage(page) {
   return page.evaluate(() => {
-    const normalize = (value) => String(value ?? "").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
+    const normalize = (value) =>
+      String(value ?? "")
+        .replace(/\u00a0/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
     const content = document.querySelector("#mw-content-text .mw-parser-output, .mw-parser-output");
     const title = normalize(document.querySelector(".page-header__title, .mw-page-title-main, h1")?.textContent);
     const images = [...document.querySelectorAll(".mw-parser-output img")]
@@ -648,13 +683,17 @@ async function extractDungeonPage(page) {
           }
 
           if (node.tagName === "UL" || node.tagName === "OL") {
-            items.push(...[...node.querySelectorAll(":scope > li")].map((item) => normalize(item.textContent)).filter(Boolean));
+            items.push(
+              ...[...node.querySelectorAll(":scope > li")].map((item) => normalize(item.textContent)).filter(Boolean)
+            );
             continue;
           }
 
           if (node.tagName === "TABLE") {
             const rows = [...node.querySelectorAll("tr")]
-              .map((row) => [...row.querySelectorAll("th, td")].map((cell) => normalize(cell.textContent)).filter(Boolean))
+              .map((row) =>
+                [...row.querySelectorAll("th, td")].map((cell) => normalize(cell.textContent)).filter(Boolean)
+              )
               .filter((cells) => cells.length);
             if (rows.length) {
               tableRows.push(...rows);
@@ -672,7 +711,11 @@ async function extractDungeonPage(page) {
 
 async function extractCorruptedDungeonsPage(page) {
   return page.evaluate(() => {
-    const normalize = (value) => String(value ?? "").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
+    const normalize = (value) =>
+      String(value ?? "")
+        .replace(/\u00a0/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
     const content = document.querySelector("#mw-content-text .mw-parser-output, .mw-parser-output");
     const title = normalize(document.querySelector(".page-header__title, .mw-page-title-main, h1")?.textContent);
     const intro = [];
@@ -714,7 +757,11 @@ async function extractCorruptedDungeonsPage(page) {
 
 async function extractBossAltarPage(page) {
   return page.evaluate(() => {
-    const normalize = (value) => String(value ?? "").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
+    const normalize = (value) =>
+      String(value ?? "")
+        .replace(/\u00a0/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
     const content = document.querySelector("#mw-content-text .mw-parser-output, .mw-parser-output");
     const title = normalize(document.querySelector(".page-header__title, .mw-page-title-main, h1")?.textContent);
     const images = [...document.querySelectorAll(".mw-parser-output img")]
@@ -781,13 +828,17 @@ async function extractBossAltarPage(page) {
           }
 
           if (node.tagName === "UL" || node.tagName === "OL") {
-            items.push(...[...node.querySelectorAll(":scope > li")].map((item) => normalize(item.textContent)).filter(Boolean));
+            items.push(
+              ...[...node.querySelectorAll(":scope > li")].map((item) => normalize(item.textContent)).filter(Boolean)
+            );
             continue;
           }
 
           if (node.tagName === "TABLE") {
             const rows = [...node.querySelectorAll("tr")]
-              .map((row) => [...row.querySelectorAll("th, td")].map((cell) => normalize(cell.textContent)).filter(Boolean))
+              .map((row) =>
+                [...row.querySelectorAll("th, td")].map((cell) => normalize(cell.textContent)).filter(Boolean)
+              )
               .filter((cells) => cells.length);
             if (rows.length) {
               tables.push(rows);
@@ -805,7 +856,11 @@ async function extractBossAltarPage(page) {
 
 async function extractRaidPage(page) {
   return page.evaluate(() => {
-    const normalize = (value) => String(value ?? "").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
+    const normalize = (value) =>
+      String(value ?? "")
+        .replace(/\u00a0/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
     const content = document.querySelector("#mw-content-text .mw-parser-output, .mw-parser-output");
     const title = normalize(document.querySelector(".page-header__title, .mw-page-title-main, h1")?.textContent);
     const images = [...document.querySelectorAll(".mw-parser-output img")]
@@ -871,7 +926,9 @@ async function extractRaidPage(page) {
           }
 
           if (node.tagName === "UL" || node.tagName === "OL") {
-            items.push(...[...node.querySelectorAll(":scope > li")].map((item) => normalize(item.textContent)).filter(Boolean));
+            items.push(
+              ...[...node.querySelectorAll(":scope > li")].map((item) => normalize(item.textContent)).filter(Boolean)
+            );
           }
         }
 
@@ -885,7 +942,11 @@ async function extractRaidPage(page) {
 
 async function extractWorldEventPage(page) {
   return page.evaluate(() => {
-    const normalize = (value) => String(value ?? "").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
+    const normalize = (value) =>
+      String(value ?? "")
+        .replace(/\u00a0/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
     const content = document.querySelector("#mw-content-text .mw-parser-output, .mw-parser-output");
     const title = normalize(document.querySelector(".page-header__title, .mw-page-title-main, h1")?.textContent);
     const images = [...document.querySelectorAll(".mw-parser-output img")]
@@ -929,9 +990,9 @@ async function extractWorldEventPage(page) {
             const paragraphItems = listItems.length
               ? listItems
               : table.textContent
-                .split("\n")
-                .map((item) => normalize(item))
-                .filter((item) => item && item !== titleText);
+                  .split("\n")
+                  .map((item) => normalize(item))
+                  .filter((item) => item && item !== titleText);
             sections.push({ title: titleText, items: paragraphItems });
           }
         }
@@ -944,7 +1005,11 @@ async function extractWorldEventPage(page) {
 
 async function extractSecretDiscoveryPage(page) {
   return page.evaluate(() => {
-    const normalize = (value) => String(value ?? "").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
+    const normalize = (value) =>
+      String(value ?? "")
+        .replace(/\u00a0/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
     const content = document.querySelector("#mw-content-text .mw-parser-output, .mw-parser-output");
     const title = normalize(document.querySelector(".page-header__title, .mw-page-title-main, h1")?.textContent);
     const images = [...document.querySelectorAll(".mw-parser-output img")]
@@ -962,7 +1027,10 @@ async function extractSecretDiscoveryPage(page) {
     const headings = [...content.querySelectorAll(":scope > h2, :scope > h3")]
       .map((node) => ({ text: normalize(node.textContent), node }))
       .filter(({ text }) => text && !/Trivia|Navigation|Contents/i.test(text));
-    const sectionHeading = headings.find(({ text }) => /Towers|Route|Solution|Access|Obtaining|Interior|Discovery/i.test(text)) || headings[0] || null;
+    const sectionHeading =
+      headings.find(({ text }) => /Towers|Route|Solution|Access|Obtaining|Interior|Discovery/i.test(text)) ||
+      headings[0] ||
+      null;
 
     const steps = [];
     if (sectionHeading) {
@@ -973,7 +1041,8 @@ async function extractSecretDiscoveryPage(page) {
         }
 
         if (node.tagName === "TABLE" && /Location/i.test(normalize(node.textContent))) {
-          const locationLabel = normalize(node.querySelector("td b")?.textContent) || normalize(node.textContent.split("Wynncraft Map")[0]);
+          const locationLabel =
+            normalize(node.querySelector("td b")?.textContent) || normalize(node.textContent.split("Wynncraft Map")[0]);
           const coords = normalize(node.querySelector("span[style*='user-select: all']")?.textContent || "");
           current = [];
           steps.push(current);
@@ -997,7 +1066,9 @@ async function extractSecretDiscoveryPage(page) {
           const items = [...node.querySelectorAll(":scope > li")]
             .map((item) => normalize(item.textContent))
             .filter(Boolean)
-            .filter((text) => /\b(jump|climb|enter|use|press|walk|head|talk|go|visit|follow|collect|listen|reach|find)\b/i.test(text));
+            .filter((text) =>
+              /\b(jump|climb|enter|use|press|walk|head|talk|go|visit|follow|collect|listen|reach|find)\b/i.test(text)
+            );
           if (items.length) {
             current.push(...items);
           }
@@ -1011,7 +1082,11 @@ async function extractSecretDiscoveryPage(page) {
 
 async function extractQuestFallbackPage(page) {
   return page.evaluate(() => {
-    const normalize = (value) => String(value ?? "").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
+    const normalize = (value) =>
+      String(value ?? "")
+        .replace(/\u00a0/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
     const content = document.querySelector("#mw-content-text .mw-parser-output, .mw-parser-output");
     const title = normalize(document.querySelector(".page-header__title, .mw-page-title-main, h1")?.textContent);
     const images = [...document.querySelectorAll(".mw-parser-output img")]
@@ -1023,9 +1098,7 @@ async function extractQuestFallbackPage(page) {
     const infobox = [...document.querySelectorAll(".portable-infobox .pi-item, .infobox tr")]
       .map((node) => normalize(node.textContent))
       .filter(Boolean);
-    const headings = [...content.querySelectorAll("h2")]
-      .map((node) => normalize(node.textContent))
-      .filter(Boolean);
+    const headings = [...content.querySelectorAll("h2")].map((node) => normalize(node.textContent)).filter(Boolean);
     const paragraphs = [...content.querySelectorAll(":scope > p")]
       .map((node) => normalize(node.textContent))
       .filter(Boolean);
@@ -1049,10 +1122,9 @@ function worldEventEntry(target, data) {
     title: data.title || target.title,
     sourceUrl: data.sourceUrl,
     summary: completion[0] || "",
-    explanation: buildSectionExplanation([
-      completion.length > 1 ? { title: "Completion", items: completion } : null,
-      ...sections,
-    ].filter(Boolean)),
+    explanation: buildSectionExplanation(
+      [completion.length > 1 ? { title: "Completion", items: completion } : null, ...sections].filter(Boolean)
+    ),
     coverImage: chooseCoverImage(data.images),
     gallery: cleanGallery(data.images),
     tutorials: [],
@@ -1188,7 +1260,9 @@ function buildMiniQuestEntryMap(rows, sourceUrl) {
     if (!row) {
       const markerX = Number(marker.position?.world?.x);
       const markerZ = Number(marker.position?.world?.z);
-      row = withCoords.find((item) => Math.abs(markerX - item.coordinates.x) <= 6 && Math.abs(markerZ - item.coordinates.z) <= 6)?.row;
+      row = withCoords.find(
+        (item) => Math.abs(markerX - item.coordinates.x) <= 6 && Math.abs(markerZ - item.coordinates.z) <= 6
+      )?.row;
     }
     if (!row) {
       const uncertainObjective = miniQuestDisplayTitle(marker.title);
@@ -1196,12 +1270,15 @@ function buildMiniQuestEntryMap(rows, sourceUrl) {
         markerId: marker.id,
         title: marker.title,
         sourceUrl,
-        summary: "Current map marker exists, but the live wiki index no longer exposes a confirmed row for this legacy mini-quest name.",
-        explanation: buildStageExplanation([[
-          "Start at this marker location on the map.",
-          `Complete the objective shown by the marker title: ${uncertainObjective}.`,
-          "The official Quests index appears to have renamed or replaced this gathering post, so item counts and rewards are left unconfirmed on purpose.",
-        ]]),
+        summary:
+          "Current map marker exists, but the live wiki index no longer exposes a confirmed row for this legacy mini-quest name.",
+        explanation: buildStageExplanation([
+          [
+            "Start at this marker location on the map.",
+            `Complete the objective shown by the marker title: ${uncertainObjective}.`,
+            "The official Quests index appears to have renamed or replaced this gathering post, so item counts and rewards are left unconfirmed on purpose.",
+          ],
+        ]),
         coverImage: "",
         gallery: [],
         tutorials: [],
@@ -1252,20 +1329,15 @@ function dungeonEntry(target, data) {
       location ? `Location: ${location}.` : "",
       ...withoutNpcDialogue(preparation?.items || []),
     ]),
-    ...roomSections.map((section) => buildSection(trimWikiHeading(section.title), withoutNpcDialogue(section.items).slice(0, 6))),
-    buildSection("Rewards", [
-      reward ? reward : "",
-      ...withoutNpcDialogue(rewardSection?.items || []),
-    ]),
+    ...roomSections.map((section) =>
+      buildSection(trimWikiHeading(section.title), withoutNpcDialogue(section.items).slice(0, 6))
+    ),
+    buildSection("Rewards", [reward ? reward : "", ...withoutNpcDialogue(rewardSection?.items || [])]),
     buildSection("Dungeon Loot", merchant ? dungeonLootLines(merchant) : []),
   ].filter(Boolean);
 
   const introSummary = compactLine(data.intro[0] || "");
-  const summary = dedupe([
-    level ? `Level ${level}.` : "",
-    boss ? `Boss: ${boss}.` : "",
-    introSummary,
-  ]).join(" ");
+  const summary = dedupe([level ? `Level ${level}.` : "", boss ? `Boss: ${boss}.` : "", introSummary]).join(" ");
 
   return {
     markerId: target.markerId,
@@ -1280,20 +1352,26 @@ function dungeonEntry(target, data) {
 }
 
 function corruptedDungeonsEntry(target, data) {
-  const lines = dedupe((data.variants || []).map((variant) => {
-    const level = stripNotes(variant.level);
-    const boss = stripNotes(variant.boss);
-    return [stripNotes(variant.name), level ? `(${level})` : "", boss ? `- Boss: ${boss}` : ""].filter(Boolean).join(" ");
-  }));
+  const lines = dedupe(
+    (data.variants || []).map((variant) => {
+      const level = stripNotes(variant.level);
+      const boss = stripNotes(variant.boss);
+      return [stripNotes(variant.name), level ? `(${level})` : "", boss ? `- Boss: ${boss}` : ""]
+        .filter(Boolean)
+        .join(" ");
+    })
+  );
 
   return {
     markerId: target.markerId,
     title: target.title,
     sourceUrl: data.sourceUrl,
-    summary: compactLine(data.intro.find((line) => /harder|endgame|corrupted/i.test(line)) || data.intro[0] || "Harder endgame variants of the standard dungeons."),
-    explanation: buildSectionExplanation([
-      buildSection("Available Dungeons", lines),
-    ].filter(Boolean)),
+    summary: compactLine(
+      data.intro.find((line) => /harder|endgame|corrupted/i.test(line)) ||
+        data.intro[0] ||
+        "Harder endgame variants of the standard dungeons."
+    ),
+    explanation: buildSectionExplanation([buildSection("Available Dungeons", lines)].filter(Boolean)),
     coverImage: "",
     gallery: [],
     tutorials: [],
@@ -1322,13 +1400,11 @@ function bossAltarDropLines(section) {
     }
 
     for (const row of table) {
-      const line = row.map((cell) => stripNotes(cell)).filter(Boolean).join(" - ");
-      if (
-        line
-        && !/drop|reward/i.test(line)
-        && !/^\d+\s*:/i.test(line)
-        && !/\(phase\s*\d+\)/i.test(line)
-      ) {
+      const line = row
+        .map((cell) => stripNotes(cell))
+        .filter(Boolean)
+        .join(" - ");
+      if (line && !/drop|reward/i.test(line) && !/^\d+\s*:/i.test(line) && !/\(phase\s*\d+\)/i.test(line)) {
         drops.push(line);
       }
     }
@@ -1338,10 +1414,7 @@ function bossAltarDropLines(section) {
 
 function isInvalidBossDropLine(value) {
   const text = stripNotes(value);
-  return !text
-    || /^\d+\s*:/i.test(text)
-    || /\(phase\s*\d+\)/i.test(text)
-    || /^phase\s*\d+/i.test(text);
+  return !text || /^\d+\s*:/i.test(text) || /\(phase\s*\d+\)/i.test(text) || /^phase\s*\d+/i.test(text);
 }
 
 function bossAltarEntry(target, data) {
@@ -1365,16 +1438,16 @@ function bossAltarEntry(target, data) {
       itemsRequired ? `Items required: ${itemsRequired}.` : "",
       ...withoutNpcDialogue(itemsSection?.items || []),
     ]),
-    buildSection("Bosses", [
-      bosses ? bosses : "",
-      ...withoutNpcDialogue(bossSection?.items || []),
-    ]),
-    buildSection("Drops", [
-      rewards ? rewards : "",
-      ...bossAltarDropLines(bossSection || { tables: [] }),
-      ...bossAltarDropLines(rewardsSection || { tables: [] }),
-      ...withoutNpcDialogue(rewardsSection?.items || []),
-    ].filter((item) => !isInvalidBossDropLine(item))),
+    buildSection("Bosses", [bosses ? bosses : "", ...withoutNpcDialogue(bossSection?.items || [])]),
+    buildSection(
+      "Drops",
+      [
+        rewards ? rewards : "",
+        ...bossAltarDropLines(bossSection || { tables: [] }),
+        ...bossAltarDropLines(rewardsSection || { tables: [] }),
+        ...withoutNpcDialogue(rewardsSection?.items || []),
+      ].filter((item) => !isInvalidBossDropLine(item))
+    ),
     buildSection("Tips", withoutNpcDialogue(tipsSection?.items || [])),
   ].filter(Boolean);
 
@@ -1410,13 +1483,14 @@ function raidBossLines(value) {
     String(value || "")
       .split(/\s{2,}|\n|,|;/)
       .map((item) => stripNotes(item))
-      .filter(Boolean),
+      .filter(Boolean)
   );
 }
 
 function raidEntry(target, data) {
   const override = RAID_OVERRIDES.get(titleKey(target.title)) || null;
-  const level = override?.minLevel || getInfoboxValue(data.infobox, [/player level minimum/, /minimum level/, /^level$/]);
+  const level =
+    override?.minLevel || getInfoboxValue(data.infobox, [/player level minimum/, /minimum level/, /^level$/]);
   const quest = override?.quest || getInfoboxValue(data.infobox, [/quest requirements?/, /^quest$/]);
   const rune = override?.rune || raidRuneLabel(getInfoboxValue(data.infobox, [/rune cost/, /rune/]));
   const bosses = override?.bosses || raidBossLines(getInfoboxValue(data.infobox, [/boss/]));
@@ -1463,18 +1537,20 @@ async function main() {
     String(process.env.FORCE_REFRESH_IDS || "")
       .split(",")
       .map((value) => value.trim())
-      .filter(Boolean),
+      .filter(Boolean)
   );
   progress.status = "running";
   await persist(progress);
 
   const { browser, context } = await connectToChrome();
-  const page = context.pages()[0] || await context.newPage();
+  const page = context.pages()[0] || (await context.newPage());
   const miniQuestMarkers = WIKI_MAP_MARKERS.filter((marker) => marker.category === "mini_quests");
 
   for (const target of targets) {
     if (target.kind === "mini-quest-index") {
-      const needsMiniQuestRefresh = miniQuestMarkers.some((marker) => !progress.entries[marker.id] || forceRefreshIds.has(marker.id));
+      const needsMiniQuestRefresh = miniQuestMarkers.some(
+        (marker) => !progress.entries[marker.id] || forceRefreshIds.has(marker.id)
+      );
       if (!needsMiniQuestRefresh) {
         continue;
       }
@@ -1534,12 +1610,18 @@ async function main() {
   await persist(progress);
   await browser.close();
 
-  console.log(JSON.stringify({
-    totalTargets: targets.length,
-    completed: Object.keys(progress.entries).length,
-    failed: progress.failed.length,
-    output: path.relative(ROOT, JS_OUTPUT_PATH).replace(/\\/g, "/"),
-  }, null, 2));
+  console.log(
+    JSON.stringify(
+      {
+        totalTargets: targets.length,
+        completed: Object.keys(progress.entries).length,
+        failed: progress.failed.length,
+        output: path.relative(ROOT, JS_OUTPUT_PATH).replace(/\\/g, "/"),
+      },
+      null,
+      2
+    )
+  );
 }
 
 main().catch(async (error) => {

@@ -8,7 +8,10 @@ const INPUT_PATH = path.join(ROOT, "data", "wiki-scrape", "caves", "cave-pages.j
 const OUTPUT_PATH = path.join(ROOT, "data", "generated-cave-marker-content.js");
 
 function normalizeWhitespace(value) {
-  return String(value ?? "").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
+  return String(value ?? "")
+    .replace(/\u00a0/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function slugify(value) {
@@ -23,11 +26,7 @@ function dedupe(values) {
 }
 
 function parseCoordinates(page) {
-  const text = [
-    ...(page.infoboxRows || []),
-    ...(page.topParagraphs || []),
-    page.summary || "",
-  ].join(" ");
+  const text = [...(page.infoboxRows || []), ...(page.topParagraphs || []), page.summary || ""].join(" ");
 
   let match = text.match(/Coordinates\s*X:\s*(-?\d+)\s*,?\s*Y:\s*(-?\d+)\s*,?\s*Z:\s*(-?\d+)/i);
   if (!match) {
@@ -45,7 +44,9 @@ function parseCoordinates(page) {
 }
 
 function compactSentence(value, maxLength = 260) {
-  const text = normalizeWhitespace(value).replace(/\[\d+\]/g, "").trim();
+  const text = normalizeWhitespace(value)
+    .replace(/\[\d+\]/g, "")
+    .trim();
   if (!text) {
     return "";
   }
@@ -54,7 +55,10 @@ function compactSentence(value, maxLength = 260) {
     return text;
   }
 
-  const sentences = text.match(/[^.!?]+[.!?]?/g)?.map((part) => normalizeWhitespace(part)).filter(Boolean) || [text];
+  const sentences = text
+    .match(/[^.!?]+[.!?]?/g)
+    ?.map((part) => normalizeWhitespace(part))
+    .filter(Boolean) || [text];
   let output = "";
   for (const sentence of sentences) {
     const next = output ? `${output} ${sentence}` : sentence;
@@ -110,22 +114,17 @@ function splitRewards(value) {
 
 function parseMobs(value) {
   return dedupe(
-    [...String(value ?? "").matchAll(/([A-Z0-9][A-Za-z0-9'’.,\- ]+?\(Lv\.\s*\d+\))/g)].map((match) => match[1]),
+    [...String(value ?? "").matchAll(/([A-Z0-9][A-Za-z0-9'’.,\- ]+?\(Lv\.\s*\d+\))/g)].map((match) => match[1])
   );
 }
 
 function parseChestTiers(value) {
-  return dedupe(
-    [...String(value ?? "").matchAll(/(\d+x Tier \d(?:\s*\[[^\]]+\])?)/g)].map((match) => match[1]),
-  );
+  return dedupe([...String(value ?? "").matchAll(/(\d+x Tier \d(?:\s*\[[^\]]+\])?)/g)].map((match) => match[1]));
 }
 
 function chooseCoverImage(images) {
   return (
-    images.find((url) =>
-      url &&
-      !/CBCaveIcon|NaturalIcon|PinpointConcept|\/100px-|LootChest|Map\.png/i.test(url),
-    ) ||
+    images.find((url) => url && !/CBCaveIcon|NaturalIcon|PinpointConcept|\/100px-|LootChest|Map\.png/i.test(url)) ||
     images.find((url) => url && !/CBCaveIcon|NaturalIcon|PinpointConcept/i.test(url)) ||
     images[0] ||
     ""
@@ -133,11 +132,7 @@ function chooseCoverImage(images) {
 }
 
 function cleanGallery(images) {
-  return dedupe(
-    (images || []).filter(
-      (url) => url && !/PinpointConcept|Map\.png/i.test(url),
-    ),
-  );
+  return dedupe((images || []).filter((url) => url && !/PinpointConcept|Map\.png/i.test(url)));
 }
 
 function cleanTutorials(videos) {
@@ -230,28 +225,30 @@ async function main() {
   const content = Object.fromEntries(
     rawPages.flatMap((page) => {
       const fallbackCoords = parseCoordinates(page);
-      const markerId = normalizeWhitespace(page.markerId) || (
-        fallbackCoords && page.pageTitle
+      const markerId =
+        normalizeWhitespace(page.markerId) ||
+        (fallbackCoords && page.pageTitle
           ? `atlas-caves-${slugify(page.pageTitle)}-${fallbackCoords.x}-${fallbackCoords.z}`
-          : ""
-      );
+          : "");
 
       if (!markerId) {
         return [];
       }
 
-      return [[
-        markerId,
-        {
-          summary: normalizeWhitespace(page.summary),
-          explanation: buildExplanation(page),
-          coverImage: chooseCoverImage(page.images || []),
-          gallery: cleanGallery(page.images || []),
-          sourceUrl: page.url || "",
-          tutorials: cleanTutorials(page.videos || []),
-        },
-      ]];
-    }),
+      return [
+        [
+          markerId,
+          {
+            summary: normalizeWhitespace(page.summary),
+            explanation: buildExplanation(page),
+            coverImage: chooseCoverImage(page.images || []),
+            gallery: cleanGallery(page.images || []),
+            sourceUrl: page.url || "",
+            tutorials: cleanTutorials(page.videos || []),
+          },
+        ],
+      ];
+    })
   );
 
   const file = [
@@ -264,10 +261,16 @@ async function main() {
 
   await fs.writeFile(OUTPUT_PATH, file, "utf8");
 
-  console.log(JSON.stringify({
-    output: path.relative(ROOT, OUTPUT_PATH).replace(/\\/g, "/"),
-    records: Object.keys(content).length,
-  }, null, 2));
+  console.log(
+    JSON.stringify(
+      {
+        output: path.relative(ROOT, OUTPUT_PATH).replace(/\\/g, "/"),
+        records: Object.keys(content).length,
+      },
+      null,
+      2
+    )
+  );
 }
 
 main().catch((error) => {

@@ -20,7 +20,10 @@ const SUMMARY_PATH = path.join(OUTPUT_ROOT, "category-sync-summary.md");
 const WIKI_MARKERS_OUTPUT = path.join(ROOT, "data", "wiki-map-markers.js");
 
 function normalizeWhitespace(value) {
-  return String(value ?? "").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
+  return String(value ?? "")
+    .replace(/\u00a0/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function titleKey(value) {
@@ -45,11 +48,7 @@ function dedupe(values) {
 }
 
 function parseCoordinates(pageData, fallbackMarker) {
-  const text = [
-    ...(pageData.infoboxRows || []),
-    ...(pageData.topParagraphs || []),
-    pageData.summary || "",
-  ].join(" ");
+  const text = [...(pageData.infoboxRows || []), ...(pageData.topParagraphs || []), pageData.summary || ""].join(" ");
 
   let match = text.match(/Coordinates\s*X:\s*(-?\d+)\s*,?\s*Y:\s*(-?\d+)\s*,?\s*Z:\s*(-?\d+)/i);
   if (!match) {
@@ -76,10 +75,7 @@ function parseCoordinates(pageData, fallbackMarker) {
 }
 
 function parseRegion(pageData, fallbackMarker) {
-  const candidates = [
-    pageData.summary,
-    ...(pageData.topParagraphs || []),
-  ].map((value) => normalizeWhitespace(value));
+  const candidates = [pageData.summary, ...(pageData.topParagraphs || [])].map((value) => normalizeWhitespace(value));
 
   for (const text of candidates) {
     let match = text.match(/\bfound in the (.+?) subregion of the .+?[.!?]$/i);
@@ -153,18 +149,22 @@ async function canReachChromeDebug() {
 }
 
 async function startChromeDebugSession() {
-  const child = spawn(CHROME_PATH, [
-    `--remote-debugging-port=${DEBUG_PORT}`,
-    `--user-data-dir=${PROFILE_DIR}`,
-    "--no-first-run",
-    "--no-default-browser-check",
-    "--new-window",
-    "about:blank",
-  ], {
-    detached: true,
-    stdio: "ignore",
-    windowsHide: false,
-  });
+  const child = spawn(
+    CHROME_PATH,
+    [
+      `--remote-debugging-port=${DEBUG_PORT}`,
+      `--user-data-dir=${PROFILE_DIR}`,
+      "--no-first-run",
+      "--no-default-browser-check",
+      "--new-window",
+      "about:blank",
+    ],
+    {
+      detached: true,
+      stdio: "ignore",
+      windowsHide: false,
+    }
+  );
   child.unref();
 
   for (let attempt = 0; attempt < 20; attempt += 1) {
@@ -206,13 +206,17 @@ async function extractCategorySeeds(page) {
         title: a.textContent.trim(),
         url: a.href,
       }))
-      .filter((row) => row.title && row.url),
+      .filter((row) => row.title && row.url)
   );
 }
 
 async function extractCavePage(page) {
   return page.evaluate(() => {
-    const normalize = (value) => String(value ?? "").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
+    const normalize = (value) =>
+      String(value ?? "")
+        .replace(/\u00a0/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
     const content = document.querySelector("#mw-content-text .mw-parser-output");
     const title = normalize(document.querySelector(".page-header__title, .mw-page-title-main, h1")?.textContent);
     const images = [...document.querySelectorAll(".mw-parser-output img")]
@@ -227,9 +231,9 @@ async function extractCavePage(page) {
 
     const topParagraphs = content
       ? [...content.children]
-        .filter((node) => node.tagName === "P")
-        .map((node) => normalize(node.textContent))
-        .filter(Boolean)
+          .filter((node) => node.tagName === "P")
+          .map((node) => normalize(node.textContent))
+          .filter(Boolean)
       : [];
 
     const infoboxRows = [...document.querySelectorAll(".portable-infobox .pi-item, .infobox tr")]
@@ -355,18 +359,24 @@ async function main() {
     await fs.writeFile(WIKI_MARKERS_OUTPUT, buildWikiMapFile(nextMarkers), "utf8");
     await writeSummary({ categorySeeds, addedMarkers, removedMarkers, skippedPages });
 
-    console.log(JSON.stringify({
-      categoryPages: categorySeeds.length,
-      categoryMarkers: categoryMarkers.length,
-      addedMarkers: addedMarkers.length,
-      removedMarkers: removedMarkers.length,
-      skippedPages: skippedPages.length,
-      output: {
-        markers: path.relative(ROOT, WIKI_MARKERS_OUTPUT).replace(/\\/g, "/"),
-        rawPages: path.relative(ROOT, RAW_PATH).replace(/\\/g, "/"),
-        summary: path.relative(ROOT, SUMMARY_PATH).replace(/\\/g, "/"),
-      },
-    }, null, 2));
+    console.log(
+      JSON.stringify(
+        {
+          categoryPages: categorySeeds.length,
+          categoryMarkers: categoryMarkers.length,
+          addedMarkers: addedMarkers.length,
+          removedMarkers: removedMarkers.length,
+          skippedPages: skippedPages.length,
+          output: {
+            markers: path.relative(ROOT, WIKI_MARKERS_OUTPUT).replace(/\\/g, "/"),
+            rawPages: path.relative(ROOT, RAW_PATH).replace(/\\/g, "/"),
+            summary: path.relative(ROOT, SUMMARY_PATH).replace(/\\/g, "/"),
+          },
+        },
+        null,
+        2
+      )
+    );
   } finally {
     await browser.close();
   }

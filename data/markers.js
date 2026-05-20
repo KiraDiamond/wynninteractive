@@ -44,7 +44,12 @@ export const CATEGORY_META = {
   profession_fishing: { label: "Fishing Spots", color: "#5caecc", selectable: true, icon: "profession_fishing" },
   profession_farming: { label: "Farming Spots", color: "#88ba59", selectable: true, icon: "profession_farming" },
   profession_mining: { label: "Mining Spots", color: "#98a4b3", selectable: true, icon: "profession_mining" },
-  profession_woodcutting: { label: "Woodcutting Spots", color: "#b88853", selectable: true, icon: "profession_woodcutting" },
+  profession_woodcutting: {
+    label: "Woodcutting Spots",
+    color: "#b88853",
+    selectable: true,
+    icon: "profession_woodcutting",
+  },
   city: { label: "City", color: "#d6b158", selectable: false, icon: null },
   ...MOB_CATEGORY_META,
 };

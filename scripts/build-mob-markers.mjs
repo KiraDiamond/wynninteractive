@@ -29,7 +29,10 @@ const MOB_FAMILY_DEFINITIONS = [
 ];
 
 function normalizeWhitespace(value) {
-  return String(value ?? "").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
+  return String(value ?? "")
+    .replace(/\u00a0/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function stripFormattingCodes(value) {
@@ -79,18 +82,32 @@ function classifyMobFamily(name) {
   if (/\b(skeleton|skull|bones?|bonelord|archer skeleton)\b/.test(key)) {
     return "hostile_mobs_skeleton";
   }
-  if (/\b(sprite|elemental|golem|construct|automaton|machine|cannon|turret|mechanism|statue|idol|sentinel|guardian|controller|generator)\b/.test(key)) {
-    return /\b(golem|construct|automaton|machine|cannon|turret|mechanism|statue|idol|sentinel|guardian|controller|generator)\b/.test(key)
+  if (
+    /\b(sprite|elemental|golem|construct|automaton|machine|cannon|turret|mechanism|statue|idol|sentinel|guardian|controller|generator)\b/.test(
+      key
+    )
+  ) {
+    return /\b(golem|construct|automaton|machine|cannon|turret|mechanism|statue|idol|sentinel|guardian|controller|generator)\b/.test(
+      key
+    )
       ? "hostile_mobs_construct"
       : "hostile_mobs_elemental";
   }
   if (/\b(fish|squid|shark|crab|sludge|coral|eel|jelly|pirahna|piranha|aqua|watery|seahorse|kraken)\b/.test(key)) {
     return "hostile_mobs_aquatic";
   }
-  if (/\b(wolf|bear|boar|fox|hawk|bat|bird|wyrm|wyvern|dragon|beast|bull|stag|goat|cow|pig|serpent|snake|toad|frog|mole|elk|horse|moa|hound|hound|harpy|vulture|rhino|pangolin|manis|turtle|tortoise|bug|beetle|ant|wasp|bee|moth|slug|snail|worm|slime|blob|mollusk|shell|lobster|octopus|ram)\b/.test(key)) {
+  if (
+    /\b(wolf|bear|boar|fox|hawk|bat|bird|wyrm|wyvern|dragon|beast|bull|stag|goat|cow|pig|serpent|snake|toad|frog|mole|elk|horse|moa|hound|hound|harpy|vulture|rhino|pangolin|manis|turtle|tortoise|bug|beetle|ant|wasp|bee|moth|slug|snail|worm|slime|blob|mollusk|shell|lobster|octopus|ram)\b/.test(
+      key
+    )
+  ) {
     return "hostile_mobs_beast";
   }
-  if (/\b(bandit|pirate|orc|villager|cultist|mage|warrior|soldier|archer|guard|knight|captain|commander|alchemist|poacher|lumberjack|citizen|hunter|scavenger|cavalier|mercenary|raider|outcast|devotee|gendarme|kipchak|sentry|runner|trader|warden|warder|foreman|pilot|smith|tinkerer|patroller|patrolling|member|monk|priest|witch|shaman|assassin|thief|sniper|sellsword|grenadier|swordancer)\b/.test(key)) {
+  if (
+    /\b(bandit|pirate|orc|villager|cultist|mage|warrior|soldier|archer|guard|knight|captain|commander|alchemist|poacher|lumberjack|citizen|hunter|scavenger|cavalier|mercenary|raider|outcast|devotee|gendarme|kipchak|sentry|runner|trader|warden|warder|foreman|pilot|smith|tinkerer|patroller|patrolling|member|monk|priest|witch|shaman|assassin|thief|sniper|sellsword|grenadier|swordancer)\b/.test(
+      key
+    )
+  ) {
     return "hostile_mobs_humanoid";
   }
   return "hostile_mobs_other";
@@ -264,8 +281,9 @@ function buildMobImageIndex(mobPages) {
     if (!counts) {
       return "";
     }
-    return [...counts.entries()]
-      .sort((left, right) => right[1] - left[1] || left[0].localeCompare(right[0]))[0]?.[0] || "";
+    return (
+      [...counts.entries()].sort((left, right) => right[1] - left[1] || left[0].localeCompare(right[0]))[0]?.[0] || ""
+    );
   }
 
   return {
@@ -297,9 +315,7 @@ function buildTerritoryIndex(territoryData) {
   return Object.entries(territoryData)
     .map(([name, entry]) => {
       const bounds = territoryBounds(entry);
-      return bounds
-        ? { name, bounds, center: centerFromBounds(bounds), key: titleKey(name) }
-        : null;
+      return bounds ? { name, bounds, center: centerFromBounds(bounds), key: titleKey(name) } : null;
     })
     .filter(Boolean);
 }
@@ -331,7 +347,9 @@ function resolveRegionName(boundsList, territoryIndex) {
     }
   }
 
-  return [...counts.entries()].sort((left, right) => right[1] - left[1] || left[0].localeCompare(right[0]))[0]?.[0] || "";
+  return (
+    [...counts.entries()].sort((left, right) => right[1] - left[1] || left[0].localeCompare(right[0]))[0]?.[0] || ""
+  );
 }
 
 function buildMobMap(items) {
@@ -361,7 +379,9 @@ function buildMobMap(items) {
       entry.itemSources.add(`https://wynncraft.com/item/${encodeURIComponent(ingredientName)}`);
 
       const coordEntries = Array.isArray(dropper.coords)
-        ? (Array.isArray(dropper.coords[0]) ? dropper.coords : [dropper.coords])
+        ? Array.isArray(dropper.coords[0])
+          ? dropper.coords
+          : [dropper.coords]
         : [];
 
       for (const coords of coordEntries) {
@@ -434,9 +454,10 @@ function buildContentEntry(mob, marker) {
     .map((point) => `• [${point.x}, ${point.y ?? "?"}, ${point.z}] radius ${point.radius}`)
     .join("\n");
 
-  const clustersLine = marker.spawnRegions.length === 1
-    ? "• Spawn data forms 1 exact cluster."
-    : `• Spawn data forms ${marker.spawnRegions.length} exact clusters.`;
+  const clustersLine =
+    marker.spawnRegions.length === 1
+      ? "• Spawn data forms 1 exact cluster."
+      : `• Spawn data forms ${marker.spawnRegions.length} exact clusters.`;
 
   const explanation = [
     "Drops",
@@ -484,7 +505,9 @@ function buildContentModule(content) {
 
 function buildSummaryMarkdown(items, mobs, markers) {
   const ingredients = items.filter((item) => item.type === "ingredient");
-  const ingredientsWithDroppedBy = ingredients.filter((item) => Array.isArray(item.droppedBy) && item.droppedBy.length).length;
+  const ingredientsWithDroppedBy = ingredients.filter(
+    (item) => Array.isArray(item.droppedBy) && item.droppedBy.length
+  ).length;
   const totalPoints = mobs.reduce((sum, mob) => sum + mob.points.length, 0);
   return [
     "# Mob Markers",
@@ -537,11 +560,17 @@ async function main() {
   await fs.writeFile(CONTENT_OUTPUT_PATH, buildContentModule(content), "utf8");
   await fs.writeFile(SUMMARY_PATH, buildSummaryMarkdown(items, mobs, markers), "utf8");
 
-  console.log(JSON.stringify({
-    ingredients: items.filter((item) => item.type === "ingredient").length,
-    mobs: markers.length,
-    spawnPoints: mobs.reduce((sum, mob) => sum + mob.points.length, 0),
-  }, null, 2));
+  console.log(
+    JSON.stringify(
+      {
+        ingredients: items.filter((item) => item.type === "ingredient").length,
+        mobs: markers.length,
+        spawnPoints: mobs.reduce((sum, mob) => sum + mob.points.length, 0),
+      },
+      null,
+      2
+    )
+  );
 }
 
 await main();

@@ -7,7 +7,10 @@ import { REFERENCE_IMAGE_URLS } from "../data/reference-images.js?v=20260518j";
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
 const MAP_PIN_SIZE = 56;
-const MAP_BOUNDS = [[0, 0], [MAP_HEIGHT, MAP_WIDTH]];
+const MAP_BOUNDS = [
+  [0, 0],
+  [MAP_HEIGHT, MAP_WIDTH],
+];
 const DEFAULT_BOUNDS = {
   minX: -2540,
   maxX: 2046,
@@ -150,7 +153,7 @@ const DEFAULT_HIDDEN_CATEGORIES = new Set([
   "profession_woodcutting",
 ]);
 const DEFAULT_CATEGORY_FILTER = new Set(
-  CATEGORY_ORDER.filter((categoryId) => !DEFAULT_HIDDEN_CATEGORIES.has(categoryId)),
+  CATEGORY_ORDER.filter((categoryId) => !DEFAULT_HIDDEN_CATEGORIES.has(categoryId))
 );
 
 const state = {
@@ -310,7 +313,7 @@ map.fitBounds(MAP_BOUNDS, { padding: [24, 24] });
 
 function updatePinScale() {
   const zoom = map.getZoom();
-  const scale = zoom <= 0 ? 1 : 1 + (zoom * 0.28) + (zoom * zoom * 0.05);
+  const scale = zoom <= 0 ? 1 : 1 + zoom * 0.28 + zoom * zoom * 0.05;
   document.documentElement.style.setProperty("--map-pin-scale", String(scale));
 }
 
@@ -349,7 +352,7 @@ function loadAreaOffsets() {
           x: Number.isFinite(Number(value?.x)) ? Number(value.x) : 0,
           y: Number.isFinite(Number(value?.y)) ? Number(value.y) : 0,
         },
-      ]),
+      ])
     );
   } catch {
     return {};
@@ -421,8 +424,8 @@ function removeUrlProjectionConfig(point) {
   const scaleY = URL_PROJECTION_CONFIG.scaleY || 1;
 
   return {
-    x: clamp(((shiftedX - 0.5) / scaleX) + 0.5, 0, 1),
-    y: clamp(((shiftedY - 0.5) / scaleY) + 0.5, 0, 1),
+    x: clamp((shiftedX - 0.5) / scaleX + 0.5, 0, 1),
+    y: clamp((shiftedY - 0.5) / scaleY + 0.5, 0, 1),
   };
 }
 
@@ -501,8 +504,8 @@ function areaOffset(areaId) {
 function applyAreaOffsetToPoint(point, areaId) {
   const offset = areaOffset(areaId);
   return {
-    x: point.x + (offset.x / MAP_WIDTH),
-    y: point.y + (offset.y / MAP_HEIGHT),
+    x: point.x + offset.x / MAP_WIDTH,
+    y: point.y + offset.y / MAP_HEIGHT,
   };
 }
 
@@ -626,7 +629,7 @@ function markerContentEntry(marker) {
   const shipped = normalizeMarkerContentEntry(MARKER_CONTENT[marker.id] || {});
   const fallbackSummary = LOW_VALUE_DESCRIPTION_PATTERNS.some((pattern) => pattern.test(marker.description || ""))
     ? ""
-    : (marker.description || "");
+    : marker.description || "";
   return {
     summary: entry.summary || shipped.summary || fallbackSummary,
     explanation: entry.explanation || shipped.explanation,
@@ -688,7 +691,9 @@ function contextChildMarkers(marker) {
   }
   return state.markers
     .filter((item) => item.contextOnly && item.contextGroupId === groupId)
-    .sort((left, right) => (left.contextOrder || 0) - (right.contextOrder || 0) || left.title.localeCompare(right.title));
+    .sort(
+      (left, right) => (left.contextOrder || 0) - (right.contextOrder || 0) || left.title.localeCompare(right.title)
+    );
 }
 
 function contextParentMarker(marker) {
@@ -724,7 +729,9 @@ function encounterNavigatorHtml(marker) {
         ${returnButton}
       </div>
       <div class="context-chip-grid">
-        ${encounters.map((entry) => `
+        ${encounters
+          .map(
+            (entry) => `
           <button
             type="button"
             class="context-chip ${entry.id === marker.id ? "active" : ""}"
@@ -733,7 +740,9 @@ function encounterNavigatorHtml(marker) {
             <strong>${escapeHtml(entry.title)}</strong>
             <span>${escapeHtml(entry.description || entry.region || "Encounter")}</span>
           </button>
-        `).join("")}
+        `
+          )
+          .join("")}
       </div>
     </section>
   `;
@@ -850,9 +859,10 @@ function bossAltarIngredientMeta(marker, entry) {
     return null;
   }
 
-  const rawRequirement = BOSS_ALTAR_INGREDIENT_OVERRIDES[marker.id]
-    || String(entry.explanation || "").match(/Items required:\s*([^\.\n]+)/i)?.[1]
-    || "";
+  const rawRequirement =
+    BOSS_ALTAR_INGREDIENT_OVERRIDES[marker.id] ||
+    String(entry.explanation || "").match(/Items required:\s*([^\.\n]+)/i)?.[1] ||
+    "";
   const raw = String(rawRequirement).trim();
   if (!raw) {
     return null;
@@ -925,17 +935,22 @@ function contentPreviewHtml(marker, entry) {
       .split(/\n{2,}/)
       .map((part) => part.trim())
       .filter(Boolean)
-      .map((part) => part.split("\n").map((line) => line.trim()).filter(Boolean));
+      .map((part) =>
+        part
+          .split("\n")
+          .map((line) => line.trim())
+          .filter(Boolean)
+      );
 
     const stepCards = sections.every((lines) => /^Stage\s+\d+\b/i.test(lines[0] || ""))
       ? sections
-        .map((lines) => {
-          const [title, ...items] = lines;
-          if (!items.length) {
-            return "";
-          }
+          .map((lines) => {
+            const [title, ...items] = lines;
+            if (!items.length) {
+              return "";
+            }
 
-          return `
+            return `
             <section class="content-step">
               <h3>${escapeHtml(title)}</h3>
               <ul>
@@ -943,16 +958,20 @@ function contentPreviewHtml(marker, entry) {
               </ul>
             </section>
           `;
-        })
-        .filter(Boolean)
-        .join("")
+          })
+          .filter(Boolean)
+          .join("")
       : "";
 
-    const listCards = !stepCards && sections.every((lines) => lines.length > 1 && !/^[•»]/.test(lines[0]) && lines.slice(1).every((line) => /^[•»]/.test(line)))
-      ? sections
-        .map((lines) => {
-          const [title, ...items] = lines;
-          return `
+    const listCards =
+      !stepCards &&
+      sections.every(
+        (lines) => lines.length > 1 && !/^[•»]/.test(lines[0]) && lines.slice(1).every((line) => /^[•»]/.test(line))
+      )
+        ? sections
+            .map((lines) => {
+              const [title, ...items] = lines;
+              return `
             <section class="content-step content-step-list">
               <h3>${escapeHtml(title)}</h3>
               <ul>
@@ -960,9 +979,9 @@ function contentPreviewHtml(marker, entry) {
               </ul>
             </section>
           `;
-        })
-        .join("")
-      : "";
+            })
+            .join("")
+        : "";
 
     if (stepCards) {
       blocks.push(`<div class="content-steps">${stepCards}</div>`);
@@ -1003,11 +1022,15 @@ function contentPreviewHtml(marker, entry) {
       <section class="content-block content-links">
         <h3>${miniQuestIngredients.length === 1 ? "Required Item" : "Required Items"}</h3>
         <div class="content-link-list">
-          ${miniQuestIngredients.map((item) => `
+          ${miniQuestIngredients
+            .map(
+              (item) => `
             <button type="button" class="content-link-chip" data-ingredient-mobs="${escapeAttribute(item.itemName)}">
               ${escapeHtml(`Show where to get ${item.raw}`)}
             </button>
-          `).join("")}
+          `
+            )
+            .join("")}
         </div>
       </section>
     `);
@@ -1018,11 +1041,15 @@ function contentPreviewHtml(marker, entry) {
       <section class="content-block content-links">
         <h3>Reference Links</h3>
         <div class="content-link-list">
-          ${referenceLinks.map((item) => `
+          ${referenceLinks
+            .map(
+              (item) => `
             <a class="content-link-chip" href="${escapeAttribute(item.url)}" target="_blank" rel="noreferrer">
               ${escapeHtml(item.label)}
             </a>
-          `).join("")}
+          `
+            )
+            .join("")}
         </div>
       </section>
     `);
@@ -1033,20 +1060,25 @@ function contentPreviewHtml(marker, entry) {
   if (embeddableGallery.length) {
     blocks.push(`
       <div class="content-gallery">
-        ${embeddableGallery.map((url, index) => `
+        ${embeddableGallery
+          .map(
+            (url, index) => `
           <button type="button" class="content-image-button content-thumb" data-preview-image="${escapeAttribute(url)}" data-preview-caption="${escapeAttribute(`${marker.title} reference image ${index + 1}`)}">
             <img src="${escapeAttribute(url)}" alt="${escapeAttribute(`${marker.title} gallery ${index + 1}`)}" loading="lazy" referrerpolicy="no-referrer">
           </button>
-        `).join("")}
+        `
+          )
+          .join("")}
       </div>
     `);
   }
 
   if (tutorials.length && !markerSupportsVideoGuide(marker)) {
-    const tutorialCards = tutorials.map((url) => {
-      const embed = youtubeEmbedMeta(url);
-      if (embed?.embedUrl) {
-        return `
+    const tutorialCards = tutorials
+      .map((url) => {
+        const embed = youtubeEmbedMeta(url);
+        if (embed?.embedUrl) {
+          return `
           <div class="tutorial-card${embed.isShort ? " short" : ""}">
             <iframe
               src="${escapeAttribute(embed.embedUrl)}"
@@ -1058,14 +1090,15 @@ function contentPreviewHtml(marker, entry) {
             <a href="${escapeAttribute(url)}" target="_blank" rel="noreferrer">Open source video</a>
           </div>
         `;
-      }
+        }
 
-      return `
+        return `
         <div class="tutorial-link">
           <a href="${escapeAttribute(url)}" target="_blank" rel="noreferrer">${escapeHtml(url)}</a>
         </div>
       `;
-    }).join("");
+      })
+      .join("");
 
     blocks.push(`
       <section class="content-block">
@@ -1186,39 +1219,44 @@ function worldEventDetailsHtml(marker) {
   const drops = Array.isArray(details.drops) ? details.drops : [];
   const boss = String(details.boss || "").trim();
   const coordinates = Array.isArray(details.coordinates) ? details.coordinates : [];
-  const coordText = coordinates.length
-    ? coordinates.map((point) => `${point.x}, ${point.z}`).join(" | ")
-    : "Unknown";
-  const enemyBlock = enemies.length ? `
+  const coordText = coordinates.length ? coordinates.map((point) => `${point.x}, ${point.z}`).join(" | ") : "Unknown";
+  const enemyBlock = enemies.length
+    ? `
         <section class="event-detail-block">
           <h4>Enemies</h4>
           <ul>
             ${enemies.map((enemy) => `<li>${escapeHtml(enemy)}</li>`).join("")}
           </ul>
         </section>
-      ` : "";
-  const bossBlock = boss ? `
+      `
+    : "";
+  const bossBlock = boss
+    ? `
         <section class="event-detail-block">
           <h4>Boss</h4>
           <p>${escapeHtml(boss)}</p>
         </section>
-      ` : "";
-  const detailGrid = enemyBlock || bossBlock
-    ? `
+      `
+    : "";
+  const detailGrid =
+    enemyBlock || bossBlock
+      ? `
       <div class="event-detail-grid">
         ${enemyBlock}
         ${bossBlock}
       </div>
     `
-    : "";
-  const dropsBlock = drops.length ? `
+      : "";
+  const dropsBlock = drops.length
+    ? `
       <section class="event-detail-block drops">
         <h4>Drops</h4>
         <div class="event-drop-list">
           ${drops.map((drop) => `<span class="event-drop-chip">${escapeHtml(drop)}</span>`).join("")}
         </div>
       </section>
-    ` : "";
+    `
+    : "";
 
   return `
     <section class="event-intel-panel">
@@ -1244,12 +1282,16 @@ function worldEventDetailsHtml(marker) {
           <span>${escapeHtml(details.difficulty)}</span>
         </div>
       </div>
-      ${details.requiredQuest ? `
+      ${
+        details.requiredQuest
+          ? `
         <div class="event-detail-row">
           <strong>Required Quest</strong>
           <span>${escapeHtml(details.requiredQuest)}</span>
         </div>
-      ` : ""}
+      `
+          : ""
+      }
       <div class="event-detail-row">
         <strong>Anchor Coordinates</strong>
         <span>${escapeHtml(coordText)}</span>
@@ -1554,23 +1596,22 @@ function solveAffineTransform(samples) {
     f: ySolution[2],
   };
 
-  const error = samples.reduce((sum, sample) => {
-    const point = applyTransform(transform, sample.x, sample.z);
-    const dx = point.x * MAP_WIDTH - sample.pixelX;
-    const dy = point.y * MAP_HEIGHT - sample.pixelY;
-    return sum + Math.hypot(dx, dy);
-  }, 0) / samples.length;
+  const error =
+    samples.reduce((sum, sample) => {
+      const point = applyTransform(transform, sample.x, sample.z);
+      const dx = point.x * MAP_WIDTH - sample.pixelX;
+      const dy = point.y * MAP_HEIGHT - sample.pixelY;
+      return sum + Math.hypot(dx, dy);
+    }, 0) / samples.length;
 
   return { ...transform, sampleCount: samples.length, averagePixelError: Number(error.toFixed(2)) };
 }
 
 function computeCalibrationTransform() {
-  const samples = CALIBRATION_TARGETS
-    .map((target) => {
-      const sample = state.calibrationSamples[target.id];
-      return sample ? { ...target, ...sample } : null;
-    })
-    .filter(Boolean);
+  const samples = CALIBRATION_TARGETS.map((target) => {
+    const sample = state.calibrationSamples[target.id];
+    return sample ? { ...target, ...sample } : null;
+  }).filter(Boolean);
 
   return solveAffineTransform(samples);
 }
@@ -1593,12 +1634,7 @@ function markerMatchesSearch(marker) {
     return true;
   }
 
-  const haystack = [
-    marker.title,
-    marker.region,
-    marker.description,
-    ...(marker.tags || []),
-  ].join(" ").toLowerCase();
+  const haystack = [marker.title, marker.region, marker.description, ...(marker.tags || [])].join(" ").toLowerCase();
 
   return haystack.includes(state.search);
 }
@@ -1630,7 +1666,9 @@ function focusIngredientMobs(ingredientName) {
 
   state.trackedIngredient = ingredientName;
   state.ingredientNoteDismissed = false;
-  state.search = String(ingredientName || "").trim().toLowerCase();
+  state.search = String(ingredientName || "")
+    .trim()
+    .toLowerCase();
   if (elements.searchInput) {
     elements.searchInput.value = ingredientName;
   }
@@ -1937,36 +1975,35 @@ function updateMarkerLayerPositions() {
 }
 
 function categoryCount(categoryId) {
-  return state.markers.filter((marker) =>
-    marker.category === categoryId &&
-    !marker.fixed &&
-    !marker.contextOnly &&
-    markerArea(marker) === state.currentArea,
+  return state.markers.filter(
+    (marker) =>
+      marker.category === categoryId && !marker.fixed && !marker.contextOnly && markerArea(marker) === state.currentArea
   ).length;
 }
 
 function categoryVisibleCount(categoryId) {
-  return state.filteredMarkers.filter((marker) =>
-    marker.category === categoryId &&
-    !marker.fixed &&
-    !marker.contextOnly &&
-    markerArea(marker) === state.currentArea,
+  return state.filteredMarkers.filter(
+    (marker) =>
+      marker.category === categoryId && !marker.fixed && !marker.contextOnly && markerArea(marker) === state.currentArea
   ).length;
 }
 
 function renderCategoryFilters() {
   elements.categoryFilters.innerHTML = CATEGORY_GROUPS.map((group) => {
     if (group.id === "mobs") {
-      const cards = group.categories.map((categoryId) => {
-        const meta = CATEGORY_META[categoryId];
-        const total = categoryCount(categoryId);
-        const matching = filteredMobFamilyMarkers(categoryId).length;
-        const active = state.activeMobFamily === categoryId;
-        const metaText = active
-          ? `${matching} ${matching === 1 ? "mob" : "mobs"} listed`
-          : (state.search && matching ? `${matching} matching` : `${total} ${total === 1 ? "type" : "types"}`);
-        const iconMarkup = genericIconMarkup(categoryId, "category-icon");
-        return `
+      const cards = group.categories
+        .map((categoryId) => {
+          const meta = CATEGORY_META[categoryId];
+          const total = categoryCount(categoryId);
+          const matching = filteredMobFamilyMarkers(categoryId).length;
+          const active = state.activeMobFamily === categoryId;
+          const metaText = active
+            ? `${matching} ${matching === 1 ? "mob" : "mobs"} listed`
+            : state.search && matching
+              ? `${matching} matching`
+              : `${total} ${total === 1 ? "type" : "types"}`;
+          const iconMarkup = genericIconMarkup(categoryId, "category-icon");
+          return `
           <div class="mob-family-stack ${active ? "active" : ""}">
             <button type="button" class="category-card ${active ? "active" : "inactive"} mob-family-card" data-mob-family="${categoryId}">
               ${iconMarkup}
@@ -1976,7 +2013,9 @@ function renderCategoryFilters() {
               </span>
               <span class="category-count">${total}</span>
             </button>
-            ${active ? `
+            ${
+              active
+                ? `
               <section class="mob-browser-panel">
                 <div class="mob-browser-head">
                   <div class="mob-browser-copy">
@@ -1985,34 +2024,42 @@ function renderCategoryFilters() {
                   </div>
                   <button type="button" class="mob-browser-close" data-close-mob-family="1" aria-label="Close mob family list">×</button>
                 </div>
-                ${state.trackedIngredient ? `
+                ${
+                  state.trackedIngredient
+                    ? `
                   <div class="mob-tracking-strip">
                     <div class="mob-tracking-copy">
                       <span>Tracking ${escapeHtml(state.trackedIngredient)}</span>
                     </div>
                     <button type="button" class="text-action" data-clear-ingredient-tracking="1">Cancel tracking</button>
                   </div>
-                ` : ""}
+                `
+                    : ""
+                }
                 <p class="mob-browser-note">Pick a mob and the map will outline every exact spawn node we have for it.</p>
                 <div class="mob-browser-list">
-                  ${activeMobFamilyMarkers().length
-                    ? activeMobFamilyMarkers().map((marker) => {
-                      const selected = marker.id === state.selectedMarkerId;
-                      const secondary = [
-                        marker.region || "World",
-                        `${marker.spawnPointCount || 0} ${marker.spawnPointCount === 1 ? "node" : "nodes"}`,
-                      ].join(" · ");
-                      const mobIconUrl = markerIconUrl(marker, "active");
-                      return `
+                  ${
+                    activeMobFamilyMarkers().length
+                      ? activeMobFamilyMarkers()
+                          .map((marker) => {
+                            const selected = marker.id === state.selectedMarkerId;
+                            const secondary = [
+                              marker.region || "World",
+                              `${marker.spawnPointCount || 0} ${marker.spawnPointCount === 1 ? "node" : "nodes"}`,
+                            ].join(" · ");
+                            const mobIconUrl = markerIconUrl(marker, "active");
+                            return `
                         <button
                           type="button"
                           class="mob-list-item ${selected ? "active" : ""}"
                           data-mob-marker="${marker.id}"
                         >
                           <span class="mob-list-icon-shell">
-                            ${mobIconUrl
-                              ? `<img class="mob-list-icon" src="${escapeAttribute(mobIconUrl)}" alt="" loading="lazy" referrerpolicy="no-referrer">`
-                              : genericIconMarkup(marker.category, "mob-list-icon generic-category-icon")}
+                            ${
+                              mobIconUrl
+                                ? `<img class="mob-list-icon" src="${escapeAttribute(mobIconUrl)}" alt="" loading="lazy" referrerpolicy="no-referrer">`
+                                : genericIconMarkup(marker.category, "mob-list-icon generic-category-icon")
+                            }
                           </span>
                           <span class="mob-list-copy">
                             <strong>${escapeHtml(marker.title)}</strong>
@@ -2021,14 +2068,19 @@ function renderCategoryFilters() {
                           <span class="mob-list-count">${marker.spawnPointCount || 0}</span>
                         </button>
                       `;
-                    }).join("")
-                    : `<div class="mob-browser-empty">No ${escapeHtml(meta.label.toLowerCase())} match the current search.</div>`}
+                          })
+                          .join("")
+                      : `<div class="mob-browser-empty">No ${escapeHtml(meta.label.toLowerCase())} match the current search.</div>`
+                  }
                 </div>
               </section>
-            ` : ""}
+            `
+                : ""
+            }
           </div>
         `;
-      }).join("");
+        })
+        .join("");
 
       return `
         <section class="category-section">
@@ -2040,19 +2092,18 @@ function renderCategoryFilters() {
       `;
     }
 
-    const cards = group.categories.map((categoryId) => {
-      const meta = CATEGORY_META[categoryId];
-      const active = state.categoryFilter.has(categoryId);
-      const total = categoryCount(categoryId);
-      const visible = categoryVisibleCount(categoryId);
-      const iconUrl = categoryAssetUrl(categoryId, active ? "active" : "locked");
-      const metaText = active
-        ? `${visible} shown`
-        : (state.search && visible ? `${visible} matching` : "Hidden");
-      const iconMarkup = iconUrl
-        ? `<span class="category-icon asset-icon" style="--category-icon:url('${iconUrl}');--category-accent:${meta.color};"></span>`
-        : genericIconMarkup(categoryId, "category-icon");
-      return `
+    const cards = group.categories
+      .map((categoryId) => {
+        const meta = CATEGORY_META[categoryId];
+        const active = state.categoryFilter.has(categoryId);
+        const total = categoryCount(categoryId);
+        const visible = categoryVisibleCount(categoryId);
+        const iconUrl = categoryAssetUrl(categoryId, active ? "active" : "locked");
+        const metaText = active ? `${visible} shown` : state.search && visible ? `${visible} matching` : "Hidden";
+        const iconMarkup = iconUrl
+          ? `<span class="category-icon asset-icon" style="--category-icon:url('${iconUrl}');--category-accent:${meta.color};"></span>`
+          : genericIconMarkup(categoryId, "category-icon");
+        return `
         <button type="button" class="category-card ${active ? "active" : "inactive"}" data-category="${categoryId}">
           ${iconMarkup}
           <span class="category-copy">
@@ -2062,7 +2113,8 @@ function renderCategoryFilters() {
           <span class="category-count">${total}</span>
         </button>
       `;
-    }).join("");
+      })
+      .join("");
 
     return `
       <section class="category-section">
@@ -2198,9 +2250,9 @@ function renderDetailCard() {
   const iconUrl = marker.fixed ? CITY_ICON_URL : markerIconUrl(marker, isFound ? "locked" : "active");
   const detailIcon = marker.fixed
     ? `<span class="detail-icon city" style="--detail-icon:url('${iconUrl}');"></span>`
-    : (iconUrl
+    : iconUrl
       ? `<span class="detail-icon ${marker.iconImage ? "mob-detail-icon" : ""}" style="--detail-icon:url('${iconUrl}');--detail-accent:${meta.color};"></span>`
-      : genericIconMarkup(marker.category, "detail-icon generic-detail-icon"));
+      : genericIconMarkup(marker.category, "detail-icon generic-detail-icon");
   const content = contentExportEntry(marker);
   const authoredContent = markerContentAuthorEntry(marker.id);
   const eventIntel = worldEventDetailsHtml(marker);
@@ -2209,10 +2261,14 @@ function renderDetailCard() {
     `<span class="detail-pill">${world.x}, ${world.z}</span>`,
   ].join("");
   const actionButtons = [
-    supportsFound ? `<button type="button" class="detail-button" data-action="toggle-found">${isFound ? "Mark not found" : "Mark found"}</button>` : "",
+    supportsFound
+      ? `<button type="button" class="detail-button" data-action="toggle-found">${isFound ? "Mark not found" : "Mark found"}</button>`
+      : "",
     `<button type="button" class="detail-button secondary" data-action="focus">Focus</button>`,
     `<button type="button" class="detail-button secondary" data-action="share">Share</button>`,
-  ].filter(Boolean).join("");
+  ]
+    .filter(Boolean)
+    .join("");
   const infoBody = `
     <div class="detail-topline">
       ${detailIcon}
@@ -2387,7 +2443,9 @@ function renderCityEditor() {
   const editedCount = Object.keys(state.cityEdits).length;
   const transformStatus = state.cityTransform
     ? ` City-fit active from ${state.cityTransform.sampleCount} cities. Average error: ${state.cityTransform.averagePixelError}px.`
-    : (editedCount >= 3 ? " City-fit could not be solved from the current edits." : " Move at least 3 cities to solve the full map transform.");
+    : editedCount >= 3
+      ? " City-fit could not be solved from the current edits."
+      : " Move at least 3 cities to solve the full map transform.";
   elements.cityEditorStatus.textContent = state.editCities
     ? `Edit mode is on. Drag city labels on the map. ${editedCount} city edits saved locally.${transformStatus}`
     : `Edit mode is off. ${editedCount} city edits saved locally. Enable edit mode to drag city labels.${transformStatus}`;
@@ -2530,11 +2588,15 @@ function renderCalibrationPanel() {
     ? `${sampleCount} points captured. Average error: ${solved.averagePixelError ?? "?"} px.`
     : `${sampleCount} points captured. Need at least 3 to solve the transform.`;
 
-  elements.calibrationOutput.textContent = JSON.stringify({
-    target: current.id,
-    samples: state.calibrationSamples,
-    transform: solved,
-  }, null, 2);
+  elements.calibrationOutput.textContent = JSON.stringify(
+    {
+      target: current.id,
+      samples: state.calibrationSamples,
+      transform: solved,
+    },
+    null,
+    2
+  );
 }
 
 function setPanelCollapsed(collapsed) {
@@ -2557,7 +2619,9 @@ function updateMapSelector() {
   }
   if (elements.mapSelectorMenu) {
     elements.mapSelectorMenu.classList.toggle("hidden", !state.mapSelectorOpen);
-    elements.mapSelectorMenu.innerHTML = Object.values(MAP_AREAS).map((mapArea) => `
+    elements.mapSelectorMenu.innerHTML = Object.values(MAP_AREAS)
+      .map(
+        (mapArea) => `
       <button
         type="button"
         class="map-selector-option ${mapArea.id === state.currentArea ? "active" : ""}"
@@ -2569,7 +2633,9 @@ function updateMapSelector() {
           <strong>${escapeHtml(mapArea.buttonLabel)}</strong>
         </span>
       </button>
-    `).join("");
+    `
+      )
+      .join("");
   }
 }
 
@@ -2637,7 +2703,8 @@ function worldBoundsToLatLng(bounds) {
     worldToImage(bounds.minX, bounds.maxZ),
     worldToImage(bounds.maxX, bounds.minZ),
     worldToImage(bounds.maxX, bounds.maxZ),
-  ].map((point) => applyAreaOffsetToPoint(point, state.currentArea))
+  ]
+    .map((point) => applyAreaOffsetToPoint(point, state.currentArea))
     .map((point) => [point.y * MAP_HEIGHT, point.x * MAP_WIDTH]);
 
   const lats = corners.map(([lat]) => lat);
@@ -2649,15 +2716,16 @@ function worldBoundsToLatLng(bounds) {
 }
 
 function markerBoundsLatLngList(marker) {
-  const sourceBounds = Array.isArray(marker.spawnNodes) && marker.spawnNodes.length
-    ? marker.spawnNodes
-    : (Array.isArray(marker.spawnRegions) && marker.spawnRegions.length
-    ? marker.spawnRegions
-    : (marker.spawnBounds ? [marker.spawnBounds] : []));
+  const sourceBounds =
+    Array.isArray(marker.spawnNodes) && marker.spawnNodes.length
+      ? marker.spawnNodes
+      : Array.isArray(marker.spawnRegions) && marker.spawnRegions.length
+        ? marker.spawnRegions
+        : marker.spawnBounds
+          ? [marker.spawnBounds]
+          : [];
 
-  return sourceBounds
-    .map((bounds) => worldBoundsToLatLng(bounds))
-    .filter(Boolean);
+  return sourceBounds.map((bounds) => worldBoundsToLatLng(bounds)).filter(Boolean);
 }
 
 function fastTravelLinkedMarkers(marker) {
@@ -2667,23 +2735,30 @@ function fastTravelLinkedMarkers(marker) {
 
   const entry = markerContentEntry(marker);
   const connectedRaw = String(entry.explanation || "").match(/•\s*Connected stops:\s*([^\n]+)/i)?.[1] || "";
-  const connectedStops = [...new Set(
-    connectedRaw
-      .split(",")
-      .map((item) => item.trim().replace(/\.$/, ""))
-      .filter(Boolean),
-  )];
+  const connectedStops = [
+    ...new Set(
+      connectedRaw
+        .split(",")
+        .map((item) => item.trim().replace(/\.$/, ""))
+        .filter(Boolean)
+    ),
+  ];
   if (!connectedStops.length) {
     return [];
   }
 
   const connectedSet = new Set(connectedStops.map((item) => item.toLowerCase()));
-  return state.markers.filter((candidate) =>
-    candidate.id !== marker.id
-    && candidate.category === "fast_travel"
-    && markerArea(candidate) === markerArea(marker)
-    && candidate.region === marker.region
-    && connectedSet.has(String(candidate.title || "").trim().toLowerCase()),
+  return state.markers.filter(
+    (candidate) =>
+      candidate.id !== marker.id &&
+      candidate.category === "fast_travel" &&
+      markerArea(candidate) === markerArea(marker) &&
+      candidate.region === marker.region &&
+      connectedSet.has(
+        String(candidate.title || "")
+          .trim()
+          .toLowerCase()
+      )
   );
 }
 
@@ -2698,9 +2773,7 @@ function renderActiveAreaHighlight() {
   }
 
   const marker = getMarkerById(state.selectedMarkerId);
-  const visible = marker
-    ? (isMobCategory(marker.category) || state.filteredMarkerIdSet.has(marker.id))
-    : false;
+  const visible = marker ? isMobCategory(marker.category) || state.filteredMarkerIdSet.has(marker.id) : false;
   if (!marker || !visible) {
     return;
   }
@@ -2710,14 +2783,16 @@ function renderActiveAreaHighlight() {
     if (linked.length) {
       const meta = CATEGORY_META.fast_travel;
       state.travelLinkLayer = L.featureGroup(
-        linked.map((target) => L.polyline([markerLatLng(marker), markerLatLng(target)], {
-          color: meta.color,
-          weight: 3,
-          opacity: 0.92,
-          dashArray: "10 8",
-          lineCap: "round",
-          interactive: false,
-        })),
+        linked.map((target) =>
+          L.polyline([markerLatLng(marker), markerLatLng(target)], {
+            color: meta.color,
+            weight: 3,
+            opacity: 0.92,
+            dashArray: "10 8",
+            lineCap: "round",
+            interactive: false,
+          })
+        )
       ).addTo(map);
       state.travelLinkLayer.eachLayer((layer) => layer.bringToBack());
     }
@@ -2731,15 +2806,17 @@ function renderActiveAreaHighlight() {
   const meta = CATEGORY_META[marker.category];
   const approximate = Boolean(marker.spawnZoneApproximate);
   state.areaHighlightLayer = L.featureGroup(
-    boundsList.map((bounds) => L.rectangle(bounds, {
-      color: meta.color,
-      weight: approximate ? 2 : 3,
-      opacity: 0.9,
-      fillColor: meta.color,
-      fillOpacity: approximate ? 0.05 : 0.08,
-      dashArray: approximate ? "9 7" : "4 4",
-      interactive: false,
-    })),
+    boundsList.map((bounds) =>
+      L.rectangle(bounds, {
+        color: meta.color,
+        weight: approximate ? 2 : 3,
+        opacity: 0.9,
+        fillColor: meta.color,
+        fillOpacity: approximate ? 0.05 : 0.08,
+        dashArray: approximate ? "9 7" : "4 4",
+        interactive: false,
+      })
+    )
   ).addTo(map);
   state.areaHighlightLayer.eachLayer((layer) => layer.bringToBack());
 }
@@ -2809,11 +2886,9 @@ function syncVisibleMarkers() {
 function hydrateMarkerState() {
   const fixedCities = STARTER_MARKERS.map((marker) => ({ ...marker, fixed: true }));
   const curatedSupplemental = CURATED_MARKERS.filter((marker) => marker.category !== "world_events");
-  const wikiMarkers = WIKI_MAP_MARKERS.map((marker) => (
-    marker.id === "atlas-quests-the-qira-hive-372--5501"
-      ? { ...marker, contextGroupId: "qira-hive" }
-      : marker
-  ));
+  const wikiMarkers = WIKI_MAP_MARKERS.map((marker) =>
+    marker.id === "atlas-quests-the-qira-hive-372--5501" ? { ...marker, contextGroupId: "qira-hive" } : marker
+  );
   state.markers = [...fixedCities, ...curatedSupplemental, ...wikiMarkers];
   state.markerIndex = new Map(state.markers.map((marker) => [marker.id, marker]));
   state.markers.forEach(createMarkerLayer);
@@ -2904,12 +2979,12 @@ function bindEvents() {
 
   document.addEventListener("keydown", (event) => {
     const target = event.target;
-    const typingTarget = target instanceof HTMLElement && (
-      target.isContentEditable ||
-      target.tagName === "INPUT" ||
-      target.tagName === "TEXTAREA" ||
-      target.tagName === "SELECT"
-    );
+    const typingTarget =
+      target instanceof HTMLElement &&
+      (target.isContentEditable ||
+        target.tagName === "INPUT" ||
+        target.tagName === "TEXTAREA" ||
+        target.tagName === "SELECT");
     if (typingTarget) {
       return;
     }

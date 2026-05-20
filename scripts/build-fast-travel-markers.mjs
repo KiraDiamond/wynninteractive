@@ -24,7 +24,10 @@ const DEFAULT_BOUNDS = {
 };
 
 function normalizeWhitespace(value) {
-  return String(value ?? "").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
+  return String(value ?? "")
+    .replace(/\u00a0/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function slugify(value) {
@@ -66,11 +69,7 @@ function buildMarkerId(sectionTitle, entry) {
 }
 
 function sectionExplanation(sectionTitle, summary, entry, connectedStops) {
-  const lines = [
-    `Route`,
-    `• Network: ${sectionTitle}.`,
-    `• Stop: ${entry.name}.`,
-  ];
+  const lines = [`Route`, `• Network: ${sectionTitle}.`, `• Stop: ${entry.name}.`];
 
   if (connectedStops.length) {
     lines.push(`• Connected stops: ${connectedStops.join(", ")}.`);
@@ -97,7 +96,7 @@ async function scrapeFastTravelSections() {
     for (let attempt = 0; attempt < 5; attempt += 1) {
       try {
         await page.goto(SOURCE_URL, { waitUntil: "domcontentloaded", timeout: 45000 });
-        await page.waitForTimeout(1800 + (attempt * 500));
+        await page.waitForTimeout(1800 + attempt * 500);
 
         return await page.evaluate(() => {
           const root = document.querySelector(".mw-parser-output");
@@ -189,9 +188,7 @@ async function main() {
       const connectedStops = section.entries
         .filter((item) => item.name !== entry.name || item.x !== entry.x || item.z !== entry.z)
         .map((item) => item.name);
-      const description = normalizeWhitespace(
-        `${section.title}. ${section.summary || ""}`.replace(/\s+/g, " "),
-      );
+      const description = normalizeWhitespace(`${section.title}. ${section.summary || ""}`.replace(/\s+/g, " "));
 
       markers.push({
         id,
@@ -230,11 +227,11 @@ async function main() {
   await fs.mkdir(path.dirname(OUTPUT_SUMMARY), { recursive: true });
   await fs.writeFile(
     OUTPUT_MARKERS,
-    `export const GENERATED_FAST_TRAVEL_MARKERS = ${JSON.stringify(markers, null, 2)};\n`,
+    `export const GENERATED_FAST_TRAVEL_MARKERS = ${JSON.stringify(markers, null, 2)};\n`
   );
   await fs.writeFile(
     OUTPUT_CONTENT,
-    `export const GENERATED_FAST_TRAVEL_CONTENT = ${JSON.stringify(content, null, 2)};\n`,
+    `export const GENERATED_FAST_TRAVEL_CONTENT = ${JSON.stringify(content, null, 2)};\n`
   );
 
   const lines = [

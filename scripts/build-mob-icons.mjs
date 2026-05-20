@@ -36,7 +36,12 @@ function fileExtension(url, contentType) {
     "image/webp": ".webp",
     "image/gif": ".gif",
     "image/svg+xml": ".svg",
-  }[String(contentType || "").split(";")[0].trim().toLowerCase()];
+  }[
+    String(contentType || "")
+      .split(";")[0]
+      .trim()
+      .toLowerCase()
+  ];
 
   if (fromType) {
     return fromType;
@@ -107,23 +112,27 @@ async function main() {
   const successes = [];
   const failures = [];
 
-  await runPool(urls, async (url) => {
-    try {
-      const result = await downloadIcon(url);
-      successes.push(result);
-    } catch (error) {
-      failures.push({
-        url,
-        error: error instanceof Error ? error.message : String(error),
-      });
-    }
-  }, CONCURRENCY);
+  await runPool(
+    urls,
+    async (url) => {
+      try {
+        const result = await downloadIcon(url);
+        successes.push(result);
+      } catch (error) {
+        failures.push({
+          url,
+          error: error instanceof Error ? error.message : String(error),
+        });
+      }
+    },
+    CONCURRENCY
+  );
 
   const mapping = Object.fromEntries(
     successes.map(({ originalUrl, fileName }) => [
       originalUrl,
       `new URL("../assets/mob-icons/${fileName}", import.meta.url).href`,
-    ]),
+    ])
   );
 
   const lines = [
@@ -137,14 +146,20 @@ async function main() {
 
   await fs.writeFile(MODULE_PATH, lines.join("\n"), "utf8");
 
-  console.log(JSON.stringify({
-    totalUrls: urls.length,
-    cached: successes.length,
-    failed: failures.length,
-    outputDir: path.relative(ROOT, OUTPUT_DIR).replace(/\\/g, "/"),
-    module: path.relative(ROOT, MODULE_PATH).replace(/\\/g, "/"),
-    failures: failures.slice(0, 20),
-  }, null, 2));
+  console.log(
+    JSON.stringify(
+      {
+        totalUrls: urls.length,
+        cached: successes.length,
+        failed: failures.length,
+        outputDir: path.relative(ROOT, OUTPUT_DIR).replace(/\\/g, "/"),
+        module: path.relative(ROOT, MODULE_PATH).replace(/\\/g, "/"),
+        failures: failures.slice(0, 20),
+      },
+      null,
+      2
+    )
+  );
 }
 
 main().catch((error) => {

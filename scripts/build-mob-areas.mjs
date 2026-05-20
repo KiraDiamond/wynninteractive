@@ -24,11 +24,55 @@ const MARKERS_OUTPUT_PATH = path.join(ROOT, "data", "generated-mob-area-markers.
 const CONTENT_OUTPUT_PATH = path.join(ROOT, "data", "generated-mob-area-content.js");
 
 const TOKEN_STOP_WORDS = new Set([
-  "city", "county", "island", "isles", "plains", "forest", "woods", "wood", "desert", "swamp", "mesa",
-  "jungle", "tundra", "trail", "suburbs", "district", "bay", "cove", "peaks", "heights", "mountainside",
-  "territory", "road", "path", "pit", "mines", "barrows", "crypt", "ruins", "factory", "outlook", "sanctum",
-  "fair", "hike", "west", "east", "south", "north", "upper", "lower", "general", "guild", "war",
-  "expedition", "exploration", "claim", "heroism", "foray", "the",
+  "city",
+  "county",
+  "island",
+  "isles",
+  "plains",
+  "forest",
+  "woods",
+  "wood",
+  "desert",
+  "swamp",
+  "mesa",
+  "jungle",
+  "tundra",
+  "trail",
+  "suburbs",
+  "district",
+  "bay",
+  "cove",
+  "peaks",
+  "heights",
+  "mountainside",
+  "territory",
+  "road",
+  "path",
+  "pit",
+  "mines",
+  "barrows",
+  "crypt",
+  "ruins",
+  "factory",
+  "outlook",
+  "sanctum",
+  "fair",
+  "hike",
+  "west",
+  "east",
+  "south",
+  "north",
+  "upper",
+  "lower",
+  "general",
+  "guild",
+  "war",
+  "expedition",
+  "exploration",
+  "claim",
+  "heroism",
+  "foray",
+  "the",
 ]);
 
 const GENERIC_LOCATION_CANDIDATES = new Set([
@@ -70,7 +114,10 @@ const LOCATION_ALIAS_MAP = new Map([
 ]);
 
 function normalizeWhitespace(value) {
-  return String(value ?? "").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
+  return String(value ?? "")
+    .replace(/\u00a0/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function titleKey(value) {
@@ -84,7 +131,10 @@ function titleKey(value) {
 
 function geoKey(value) {
   return titleKey(value)
-    .replace(/\b(guild war|expedition|exploration|city|county|island|isles|plains|forest|woods|wood|desert|swamp|mesa|jungle|tundra|trail|suburbs|district|bay|cove|peaks|heights|mountainside|territory|road|path|pit|mines|barrows|crypt|ruins|factory|outlook|sanctum|fair|hike|west|east|south|north|upper|lower|claim|heroism|foray)\b/g, " ")
+    .replace(
+      /\b(guild war|expedition|exploration|city|county|island|isles|plains|forest|woods|wood|desert|swamp|mesa|jungle|tundra|trail|suburbs|district|bay|cove|peaks|heights|mountainside|territory|road|path|pit|mines|barrows|crypt|ruins|factory|outlook|sanctum|fair|hike|west|east|south|north|upper|lower|claim|heroism|foray)\b/g,
+      " "
+    )
     .replace(/\s+/g, " ")
     .trim();
 }
@@ -273,7 +323,9 @@ function compactMobLine(mob) {
     mob.elementalStats && mob.elementalStats !== "-" ? `Element: ${mob.elementalStats}` : "",
     mob.drops && mob.drops !== "-" ? `Drops: ${mob.drops}` : "",
     mob.location && mob.location !== "-" ? `Spawn: ${mob.location}` : "",
-  ].filter(Boolean).join(". ");
+  ]
+    .filter(Boolean)
+    .join(". ");
 
   return compactLine(detail ? `${parts.join(" — ")}. ${detail}` : parts.join(" — "));
 }
@@ -321,17 +373,19 @@ function buildExistingIndex() {
 }
 
 function buildTerritoryIndex(territoryData) {
-  const territories = Object.entries(territoryData).map(([name, entry]) => {
-    const bounds = territoryBoundsFromLocation(entry.location || {});
-    return {
-      name,
-      bounds,
-      center: bounds ? centerFromBounds(bounds) : null,
-      titleKey: titleKey(name),
-      geoKey: geoKey(name),
-      searchText: titleKey(name),
-    };
-  }).filter((territory) => territory.bounds && territory.center);
+  const territories = Object.entries(territoryData)
+    .map(([name, entry]) => {
+      const bounds = territoryBoundsFromLocation(entry.location || {});
+      return {
+        name,
+        bounds,
+        center: bounds ? centerFromBounds(bounds) : null,
+        titleKey: titleKey(name),
+        geoKey: geoKey(name),
+        searchText: titleKey(name),
+      };
+    })
+    .filter((territory) => territory.bounds && territory.center);
 
   const titleMap = new Map();
   const geoMap = new Map();
@@ -356,10 +410,7 @@ function buildTerritoryIndex(territoryData) {
 function lookupMarkerMatches(title, index) {
   const exactKey = titleKey(title);
   const simplifiedKey = geoKey(title);
-  const exact = [
-    ...(index.titleMap.get(exactKey) || []),
-    ...(index.regionMap.get(exactKey) || []),
-  ];
+  const exact = [...(index.titleMap.get(exactKey) || []), ...(index.regionMap.get(exactKey) || [])];
   if (exact.length) {
     return { quality: "exact", matches: dedupeMarkerMatches(exact) };
   }
@@ -550,7 +601,9 @@ function deriveZone(pageData, existingIndex, territoryIndex) {
     x: marker.position.world.x,
     z: marker.position.world.z,
   }));
-  const exactCoordBounds = exactPoints.length ? pointBounds(exactPoints, exactPoints.length >= 2 ? 90 : 110, 260) : null;
+  const exactCoordBounds = exactPoints.length
+    ? pointBounds(exactPoints, exactPoints.length >= 2 ? 90 : 110, 260)
+    : null;
 
   if (exactPoints.length >= 2) {
     const bounds = unionBounds([exactCoordBounds], [], 0, 260);
@@ -564,11 +617,15 @@ function deriveZone(pageData, existingIndex, territoryIndex) {
   }
 
   if (exactPoints.length === 1 && (territoryBounds.length || markerPoints.length)) {
-    const regions = mergeBoundsList([
-      expandBounds(exactCoordBounds, 0),
-      ...territoryBounds.map((bounds) => expandBounds(bounds, 18)),
-      ...markerPoints.map((point) => pointBounds([point], 70, 180)),
-    ], 110, 180);
+    const regions = mergeBoundsList(
+      [
+        expandBounds(exactCoordBounds, 0),
+        ...territoryBounds.map((bounds) => expandBounds(bounds, 18)),
+        ...markerPoints.map((point) => pointBounds([point], 70, 180)),
+      ],
+      110,
+      180
+    );
     const bounds = unionBounds(regions, [], 16, 240);
     return {
       position: centerFromBounds(regions[0] || bounds),
@@ -592,20 +649,25 @@ function deriveZone(pageData, existingIndex, territoryIndex) {
   }
 
   if (territoryBounds.length || markerPoints.length) {
-    const regions = mergeBoundsList([
-      ...territoryBounds.map((bounds) => expandBounds(bounds, 18)),
-      ...markerPoints.map((point) => pointBounds([point], 72, 180)),
-    ], 120, 180);
+    const regions = mergeBoundsList(
+      [
+        ...territoryBounds.map((bounds) => expandBounds(bounds, 18)),
+        ...markerPoints.map((point) => pointBounds([point], 72, 180)),
+      ],
+      120,
+      180
+    );
     const bounds = unionBounds(regions, [], 18, markerPoints.length + territoryBounds.length === 1 ? 320 : 240);
     return {
       position: centerFromBounds(regions[0] || bounds),
       bounds,
       regions,
-      anchorSource: territoryBounds.length && markerPoints.length
-        ? "territories-and-landmarks"
-        : territoryBounds.length
-          ? "territory-union"
-          : "landmark-union",
+      anchorSource:
+        territoryBounds.length && markerPoints.length
+          ? "territories-and-landmarks"
+          : territoryBounds.length
+            ? "territory-union"
+            : "landmark-union",
       approximate: true,
     };
   }
@@ -627,7 +689,9 @@ function buildExplanation(pageData, zone) {
   if (zone?.regions?.length > 1) {
     blocks.push("Spawn Zone\n• Border is split into separate clusters when the mob page points at multiple subareas.");
   } else if (zone?.approximate && /territor|landmark/i.test(zone.anchorSource || "")) {
-    blocks.push("Spawn Zone\n• Border is approximate and based on named territories and mapped subareas mentioned on the mob page.");
+    blocks.push(
+      "Spawn Zone\n• Border is approximate and based on named territories and mapped subareas mentioned on the mob page."
+    );
   } else if (zone?.approximate) {
     blocks.push("Spawn Zone\n• Border is approximate and based on the mob list page plus listed location anchors.");
   } else if (zone) {
@@ -702,7 +766,10 @@ function buildContentModule(content) {
 function buildSummaryMarkdown(progress, markers, rawPages) {
   const mapped = markers.length;
   const total = rawPages.length;
-  const mobCount = rawPages.reduce((sum, page) => sum + page.sections.reduce((sectionSum, section) => sectionSum + section.mobs.length, 0), 0);
+  const mobCount = rawPages.reduce(
+    (sum, page) => sum + page.sections.reduce((sectionSum, section) => sectionSum + section.mobs.length, 0),
+    0
+  );
   return [
     "# Mob Areas",
     "",
@@ -811,7 +878,11 @@ async function ensureUsablePage(page, url) {
 async function extractCategoryPages(page) {
   await ensureUsablePage(page, CATEGORY_URL);
   return page.evaluate(() => {
-    const normalize = (value) => String(value ?? "").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
+    const normalize = (value) =>
+      String(value ?? "")
+        .replace(/\u00a0/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
     return [...document.querySelectorAll("main a")]
       .map((anchor) => ({ text: normalize(anchor.textContent), href: anchor.href }))
       .filter((entry) => /\/wiki\/Lists_of_mobs\//.test(entry.href));
@@ -821,10 +892,19 @@ async function extractCategoryPages(page) {
 async function extractMobPage(page, url) {
   await ensureUsablePage(page, url);
   return page.evaluate(() => {
-    const normalize = (value) => String(value ?? "").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
+    const normalize = (value) =>
+      String(value ?? "")
+        .replace(/\u00a0/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
     const main = document.querySelector("main .mw-parser-output");
-    const title = normalize(document.querySelector("main h1")?.textContent).replace(/^Lists of mobs\//i, "") || location.pathname.split("/").pop().replaceAll("_", " ");
-    const firstParagraph = normalize([...document.querySelectorAll("main .mw-parser-output > p")].find((paragraph) => normalize(paragraph.textContent))?.textContent || "");
+    const title =
+      normalize(document.querySelector("main h1")?.textContent).replace(/^Lists of mobs\//i, "") ||
+      location.pathname.split("/").pop().replaceAll("_", " ");
+    const firstParagraph = normalize(
+      [...document.querySelectorAll("main .mw-parser-output > p")].find((paragraph) => normalize(paragraph.textContent))
+        ?.textContent || ""
+    );
     const sections = [];
     let currentTitle = "General Mobs";
 
@@ -842,21 +922,23 @@ async function extractMobPage(page, url) {
       }
 
       const rows = [...child.querySelectorAll("tr")].slice(1);
-      const mobs = rows.map((row) => {
-        const cells = [...row.querySelectorAll("th, td")].map((cell) => normalize(cell.textContent));
-        const image = row.querySelector("img")?.src || "";
-        return {
-          image,
-          name: cells[1] || "",
-          level: cells[2] || "",
-          health: cells[3] || "",
-          aiType: cells[4] || "",
-          abilities: cells[5] || "",
-          elementalStats: cells[6] || "",
-          drops: cells[7] || "",
-          location: cells[8] || "",
-        };
-      }).filter((mob) => mob.name);
+      const mobs = rows
+        .map((row) => {
+          const cells = [...row.querySelectorAll("th, td")].map((cell) => normalize(cell.textContent));
+          const image = row.querySelector("img")?.src || "";
+          return {
+            image,
+            name: cells[1] || "",
+            level: cells[2] || "",
+            health: cells[3] || "",
+            aiType: cells[4] || "",
+            abilities: cells[5] || "",
+            elementalStats: cells[6] || "",
+            drops: cells[7] || "",
+            location: cells[8] || "",
+          };
+        })
+        .filter((mob) => mob.name);
 
       if (mobs.length) {
         sections.push({
@@ -937,12 +1019,22 @@ async function main() {
     await fs.writeFile(MARKERS_OUTPUT_PATH, buildMarkersModule(markers), "utf8");
     await fs.writeFile(CONTENT_OUTPUT_PATH, buildContentModule(content), "utf8");
 
-    console.log(JSON.stringify({
-      scrapedPages: rawPages.length,
-      mappedMarkers: markers.length,
-      unmappedPages: unmappedPages.length,
-      totalMobRows: rawPages.reduce((sum, pageEntry) => sum + pageEntry.sections.reduce((sectionSum, section) => sectionSum + section.mobs.length, 0), 0),
-    }, null, 2));
+    console.log(
+      JSON.stringify(
+        {
+          scrapedPages: rawPages.length,
+          mappedMarkers: markers.length,
+          unmappedPages: unmappedPages.length,
+          totalMobRows: rawPages.reduce(
+            (sum, pageEntry) =>
+              sum + pageEntry.sections.reduce((sectionSum, section) => sectionSum + section.mobs.length, 0),
+            0
+          ),
+        },
+        null,
+        2
+      )
+    );
   } finally {
     await page.close().catch(() => {});
     await browser.close().catch(() => {});

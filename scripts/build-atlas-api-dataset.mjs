@@ -117,9 +117,7 @@ function buildApiRecord(marker, importedLookup) {
 
   const genericTitle = normalizeWhitespace(marker.name);
   let title = genericTitle;
-  const notes = [
-    "Built from the official Wynncraft map markers API.",
-  ];
+  const notes = ["Built from the official Wynncraft map markers API."];
 
   if (category === "cave" && genericTitle === "Cave") {
     title = `Cave @ [${x}, ${y}, ${z}]`;
@@ -137,7 +135,9 @@ function buildApiRecord(marker, importedLookup) {
   }
 
   if (category === "world-discovery" && (genericTitle === "Uth Shrine" || genericTitle === "Tol Altar")) {
-    notes.push("Mapped to world-discovery using the current Atlas icon mapping; source marker is a special shrine/altar icon.");
+    notes.push(
+      "Mapped to world-discovery using the current Atlas icon mapping; source marker is a special shrine/altar icon."
+    );
   }
 
   if (category === "territorial-discovery") {
@@ -149,11 +149,7 @@ function buildApiRecord(marker, importedLookup) {
   }
 
   const region = imported?.region || "";
-  const tags = dedupe([
-    category,
-    ...(imported?.tags || []),
-    marker.icon.replace(/\.png$/i, ""),
-  ]);
+  const tags = dedupe([category, ...(imported?.tags || []), marker.icon.replace(/\.png$/i, "")]);
   const coordinates = { x, y, z };
 
   return {
@@ -273,7 +269,9 @@ async function main() {
   const importedLookup = buildImportedLookup();
   const apiRecords = apiMarkers.map((marker) => buildApiRecord(marker, importedLookup)).filter(Boolean);
   const worldEventRecords = WORLD_EVENT_MARKERS.map(buildWorldEventRecord);
-  const lootrunCampRecords = CURATED_MARKERS.filter((marker) => marker.category === "lootrun_camp").map(buildLootrunCampRecord);
+  const lootrunCampRecords = CURATED_MARKERS.filter((marker) => marker.category === "lootrun_camp").map(
+    buildLootrunCampRecord
+  );
 
   const records = sortRecords([...apiRecords, ...worldEventRecords, ...lootrunCampRecords]);
   const grouped = byCategory(records);
@@ -282,9 +280,16 @@ async function main() {
     await writeJson(path.join(CATEGORY_DIR, `${category}.json`), categoryRecords);
   }
 
-  const coverage = Object.fromEntries([...grouped.entries()].map(([category, categoryRecords]) => [category, categoryRecords.length]));
-  const ambiguous = records.filter((record) => record.notes.toLowerCase().includes("does not expose") || record.notes.toLowerCase().includes("mapped to"));
-  const withCoordinates = records.filter((record) => record.coordinates.x !== null || record.coordinates.z !== null).length;
+  const coverage = Object.fromEntries(
+    [...grouped.entries()].map(([category, categoryRecords]) => [category, categoryRecords.length])
+  );
+  const ambiguous = records.filter(
+    (record) =>
+      record.notes.toLowerCase().includes("does not expose") || record.notes.toLowerCase().includes("mapped to")
+  );
+  const withCoordinates = records.filter(
+    (record) => record.coordinates.x !== null || record.coordinates.z !== null
+  ).length;
   const withoutCoordinates = records.length - withCoordinates;
 
   const metadata = {

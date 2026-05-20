@@ -21,9 +21,7 @@ const IMPORT_ICON_META = {
   "Content_BossAltar.png": { category: "boss_altar" },
 };
 
-const BLOCKED_IMPORT_IDS = new Set([
-  "import-650-mini-quest-slay-angels",
-]);
+const BLOCKED_IMPORT_IDS = new Set(["import-650-mini-quest-slay-angels"]);
 
 const BOSS_ALTAR_NAME_BY_COORD = new Map([
   ["471,-2912", "Bovine Barn"],
@@ -44,7 +42,10 @@ const BOSS_ALTAR_NAME_BY_COORD = new Map([
 ]);
 
 function normalizeWhitespace(value) {
-  return String(value ?? "").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
+  return String(value ?? "")
+    .replace(/\u00a0/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function escapeRegex(value) {
@@ -93,11 +94,14 @@ function centroid(points) {
     return null;
   }
 
-  const totals = points.reduce((acc, point) => {
-    acc.x += point.x;
-    acc.z += point.z;
-    return acc;
-  }, { x: 0, z: 0 });
+  const totals = points.reduce(
+    (acc, point) => {
+      acc.x += point.x;
+      acc.z += point.z;
+      return acc;
+    },
+    { x: 0, z: 0 }
+  );
 
   return {
     x: Math.round(totals.x / points.length),
@@ -128,8 +132,7 @@ function importedCategory(marker) {
 }
 
 function normalizeImportedMarkers() {
-  return IMPORTED_MARKERS
-    .filter((marker) => !BLOCKED_IMPORT_IDS.has(marker.id))
+  return IMPORTED_MARKERS.filter((marker) => !BLOCKED_IMPORT_IDS.has(marker.id))
     .map((marker) => {
       const category = importedCategory(marker);
       if (!category) {
@@ -168,12 +171,14 @@ function caveTitleFromDescription(record) {
     return rawTitle;
   }
 
-  return normalizeWhitespace(
-    prefix
-      .replace(/\s+\d+(?:-\d+)?\s*$/i, "")
-      .replace(/\s+(?:Loot Grind|XP Grind|Combat Grind|Mob Grind|Resource Grind)\s*$/i, "")
-      .replace(/\s+(?:Normal|Grind)\s*$/i, ""),
-  ) || rawTitle;
+  return (
+    normalizeWhitespace(
+      prefix
+        .replace(/\s+\d+(?:-\d+)?\s*$/i, "")
+        .replace(/\s+(?:Loot Grind|XP Grind|Combat Grind|Mob Grind|Resource Grind)\s*$/i, "")
+        .replace(/\s+(?:Normal|Grind)\s*$/i, "")
+    ) || rawTitle
+  );
 }
 
 function parseWorldEventRegion(description) {
@@ -194,7 +199,10 @@ function buildQuestDescription(wikiRecord, fallbackDescription) {
   const parts = [];
   if (wikiRecord.summary) {
     const cleanedSummary = normalizeWhitespace(wikiRecord.summary)
-      .replace(new RegExp(`^${escapeRegex(wikiRecord.title)}\\s+scraped from the Quests wiki index page\\.\\s*`, "i"), "")
+      .replace(
+        new RegExp(`^${escapeRegex(wikiRecord.title)}\\s+scraped from the Quests wiki index page\\.\\s*`, "i"),
+        ""
+      )
       .replace(/^scraped from the Quests wiki index page\.\s*/i, "");
     if (cleanedSummary) {
       parts.push(cleanedSummary);
@@ -215,27 +223,20 @@ function buildImportedContentMarkers(imported, wikiRecords) {
     wikiRecords
       .filter((record) => record.category === "quest")
       .filter((record) => !isHistoricalVariant(record.title))
-      .map((record) => [titleKey(record.title), record]),
+      .map((record) => [titleKey(record.title), record])
   );
 
   return imported
-    .filter((marker) => [
-      "quests",
-      "mini_quests",
-      "world_discovery",
-      "territorial_discovery",
-      "dungeon",
-      "raid",
-      "boss_altar",
-    ].includes(marker.category))
+    .filter((marker) =>
+      ["quests", "mini_quests", "world_discovery", "territorial_discovery", "dungeon", "raid", "boss_altar"].includes(
+        marker.category
+      )
+    )
     .map((marker) => {
       const coordKey = `${marker.position.world.x},${marker.position.world.z}`;
-      const title = marker.category === "boss_altar"
-        ? (BOSS_ALTAR_NAME_BY_COORD.get(coordKey) || marker.title)
-        : marker.title;
-      const wikiRecord = marker.category === "quests"
-        ? questWikiByTitle.get(titleKey(title))
-        : null;
+      const title =
+        marker.category === "boss_altar" ? BOSS_ALTAR_NAME_BY_COORD.get(coordKey) || marker.title : marker.title;
+      const wikiRecord = marker.category === "quests" ? questWikiByTitle.get(titleKey(title)) : null;
 
       return {
         id: `atlas-${marker.category}-${slugify(title)}-${marker.position.world.x}-${marker.position.world.z}`,
@@ -243,11 +244,7 @@ function buildImportedContentMarkers(imported, wikiRecords) {
         category: marker.category,
         region: marker.region,
         description: buildQuestDescription(wikiRecord, buildImportedDescription(title, marker.category)),
-        tags: dedupe([
-          ...(marker.tags || []),
-          categoryTag(marker.category),
-          "wiki-map",
-        ]),
+        tags: dedupe([...(marker.tags || []), categoryTag(marker.category), "wiki-map"]),
         position: marker.position,
       };
     });
@@ -377,11 +374,17 @@ async function main() {
   ].join("\n");
 
   await fs.writeFile(OUTPUT_PATH, file, "utf8");
-  console.log(JSON.stringify({
-    output: path.relative(ROOT, OUTPUT_PATH).replace(/\\/g, "/"),
-    total: markers.length,
-    counts,
-  }, null, 2));
+  console.log(
+    JSON.stringify(
+      {
+        output: path.relative(ROOT, OUTPUT_PATH).replace(/\\/g, "/"),
+        total: markers.length,
+        counts,
+      },
+      null,
+      2
+    )
+  );
 }
 
 main().catch((error) => {

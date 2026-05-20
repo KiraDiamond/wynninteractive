@@ -1,0 +1,9 @@
+node_modules/
+data/generated-*.js
+data/wiki-map-markers.js
+data/mob-icon-urls.js
+data/reference-images.js
+assets/reference-images/
+assets/mob-icons/
+data/wiki-scrape/
+package-lock.json

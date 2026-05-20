@@ -56,10 +56,10 @@ function stopExplanation(title, connectedStops) {
     "Notes",
     "• Source page notes that Seaskipper Captain is involved with Misadventure on the Sea.",
     "• While traveling, he can tell destination stories, lore bits, jokes, or hand out occasional item rewards.",
-    connectedStops.length
-      ? `• Other mapped Seaskipper stops: ${connectedStops.join(", ")}.`
-      : "",
-  ].filter(Boolean).join("\n");
+    connectedStops.length ? `• Other mapped Seaskipper stops: ${connectedStops.join(", ")}.` : "",
+  ]
+    .filter(Boolean)
+    .join("\n");
 }
 
 async function main() {
@@ -69,17 +69,14 @@ async function main() {
   const missing = [];
 
   for (const stop of STOPS) {
-    const source = stop.manual
-      ? { position: { world: { x: stop.x, z: stop.z } } }
-      : importedById.get(stop.sourceId);
+    const source = stop.manual ? { position: { world: { x: stop.x, z: stop.z } } } : importedById.get(stop.sourceId);
     if (!source?.position?.world) {
       missing.push(stop.sourceId);
       continue;
     }
 
     const id = `seaskipper-${slugify(stop.title)}-${source.position.world.x}-${source.position.world.z}`;
-    const connectedStops = STOPS
-      .filter((entry) => entry.title !== stop.title)
+    const connectedStops = STOPS.filter((entry) => entry.title !== stop.title)
       .map((entry) => entry.title)
       .sort((left, right) => left.localeCompare(right));
 
@@ -114,11 +111,11 @@ async function main() {
   await fs.mkdir(path.dirname(OUTPUT_SUMMARY), { recursive: true });
   await fs.writeFile(
     OUTPUT_MARKERS,
-    `export const GENERATED_SEASKIPPER_MARKERS = ${JSON.stringify(markers, null, 2)};\n`,
+    `export const GENERATED_SEASKIPPER_MARKERS = ${JSON.stringify(markers, null, 2)};\n`
   );
   await fs.writeFile(
     OUTPUT_CONTENT,
-    `export const GENERATED_SEASKIPPER_CONTENT = ${JSON.stringify(content, null, 2)};\n`,
+    `export const GENERATED_SEASKIPPER_CONTENT = ${JSON.stringify(content, null, 2)};\n`
   );
 
   const summary = [

@@ -1,180 +1,187 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wynnteractive Map</title>
-  <meta
-    name="description"
-    content="Wynncraft interactive map with quests, discoveries, caves, dungeons, raids, and lootrun camps."
-  >
-  <link rel="icon" type="image/png" href="./assets/icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    crossorigin=""
-  >
-  <link rel="canonical" href="https://kiradiamond.github.io/wynninteractive/">
-  <script>
-    if (window.location.search.includes("v=")) {
-      const params = new URLSearchParams(window.location.search);
-      params.delete("v");
-      const nextQuery = params.toString();
-      const nextUrl = `${window.location.pathname}${nextQuery ? `?${nextQuery}` : ""}${window.location.hash}`;
-      window.history.replaceState({}, "", nextUrl);
-    }
-  </script>
-  <script>
-    try {
-      const savedTheme = localStorage.getItem("wynninteractive-theme-v1");
-      if (savedTheme === "dark") {
-        document.documentElement.dataset.theme = "dark";
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wynnteractive Map</title>
+    <meta
+      name="description"
+      content="Wynncraft interactive map with quests, discoveries, caves, dungeons, raids, and lootrun camps."
+    />
+    <link rel="icon" type="image/png" href="./assets/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+    <link rel="canonical" href="https://kiradiamond.github.io/wynninteractive/" />
+    <script>
+      if (window.location.search.includes("v=")) {
+        const params = new URLSearchParams(window.location.search);
+        params.delete("v");
+        const nextQuery = params.toString();
+        const nextUrl = `${window.location.pathname}${nextQuery ? `?${nextQuery}` : ""}${window.location.hash}`;
+        window.history.replaceState({}, "", nextUrl);
       }
-    } catch {}
-  </script>
-  <link rel="stylesheet" href="./styles.css?v=20260520k">
-</head>
-<body>
-  <div class="app-shell">
-    <div id="map"></div>
+    </script>
+    <script>
+      try {
+        const savedTheme = localStorage.getItem("wynninteractive-theme-v1");
+        if (savedTheme === "dark") {
+          document.documentElement.dataset.theme = "dark";
+        }
+      } catch {}
+    </script>
+    <link rel="stylesheet" href="./styles.css?v=20260520k" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <div id="map"></div>
 
-    <aside id="marker-panel" class="marker-panel">
-      <div class="panel-shell-head">
-        <div class="panel-brand">
-          <img class="panel-brand-icon" src="./assets/icon.png" alt="">
-          <div class="panel-brand-copy">
-            <strong>Wynnteractive Map</strong>
-            <span>Interactive Wynncraft map</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="panel-tabbar" role="tablist" aria-label="Map panel modes">
-        <button type="button" class="panel-tab active" aria-label="Markers" data-panel-view="markers">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 21c4-5 6-8.4 6-11a6 6 0 1 0-12 0c0 2.6 2 6 6 11Zm0-8.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/>
-          </svg>
-        </button>
-        <button type="button" class="panel-tab" aria-label="Info" data-panel-view="info">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H9l-4 3v-3H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm3 4h8v2H8V9Zm0 4h5v2H8v-2Z"/>
-          </svg>
-        </button>
-        <button type="button" class="panel-tab" aria-label="Links" data-panel-view="links">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M10.6 13.4a1 1 0 0 0 1.4 1.4l4.6-4.6a3 3 0 1 0-4.2-4.2l-1.7 1.7a1 1 0 1 0 1.4 1.4l1.7-1.7a1 1 0 1 1 1.4 1.4Zm2.8-2.8a1 1 0 0 0-1.4-1.4l-4.6 4.6a3 3 0 0 0 4.2 4.2l1.7-1.7a1 1 0 1 0-1.4-1.4l-1.7 1.7a1 1 0 1 1-1.4-1.4Z"/>
-          </svg>
-        </button>
-        <button type="button" class="panel-tab" aria-label="Appearance" data-panel-view="appearance">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 3a9 9 0 1 0 9 9 1 1 0 0 0-1-1 6 6 0 0 1-6-6 1 1 0 0 0-1-1Z"/>
-          </svg>
-        </button>
-      </div>
-
-      <div class="panel-banner">
-        Routes, rewards, discoveries, profession spots, and mobs.
-      </div>
-
-      <section class="panel-screen" data-panel-screen="markers">
-        <div class="panel-toolbar">
-          <div class="map-selector-wrap">
-            <button type="button" class="map-selector" aria-expanded="false" aria-haspopup="menu">
-              <span>Wynncraft Map</span>
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="m7 10 5 5 5-5z"/>
-              </svg>
-            </button>
-            <div class="map-selector-menu hidden" role="menu" aria-label="Choose map area"></div>
-          </div>
-
-          <div class="panel-search">
-            <label class="sr-only" for="search-input">Search markers</label>
-            <input id="search-input" type="search" placeholder="Search...">
-            <button id="clear-search" type="button" class="icon-button" aria-label="Clear search">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M10.5 4a6.5 6.5 0 0 1 5.2 10.4l4 4-1.4 1.4-4-4A6.5 6.5 0 1 1 10.5 4Zm0 2a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9Z"/>
-              </svg>
-            </button>
+      <aside id="marker-panel" class="marker-panel">
+        <div class="panel-shell-head">
+          <div class="panel-brand">
+            <img class="panel-brand-icon" src="./assets/icon.png" alt="" />
+            <div class="panel-brand-copy">
+              <strong>Wynnteractive Map</strong>
+              <span>Interactive Wynncraft map</span>
+            </div>
           </div>
         </div>
 
-        <div class="panel-controls">
-          <label class="toggle-row">
-            <span>Show City Markers</span>
-            <input id="show-cities-toggle" type="checkbox" checked>
-          </label>
-          <label class="toggle-row">
-            <span>Hide Found Markers</span>
-            <input id="hide-found-toggle" type="checkbox">
-          </label>
+        <div class="panel-tabbar" role="tablist" aria-label="Map panel modes">
+          <button type="button" class="panel-tab active" aria-label="Markers" data-panel-view="markers">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 21c4-5 6-8.4 6-11a6 6 0 1 0-12 0c0 2.6 2 6 6 11Zm0-8.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"
+              />
+            </svg>
+          </button>
+          <button type="button" class="panel-tab" aria-label="Info" data-panel-view="info">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H9l-4 3v-3H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm3 4h8v2H8V9Zm0 4h5v2H8v-2Z"
+              />
+            </svg>
+          </button>
+          <button type="button" class="panel-tab" aria-label="Links" data-panel-view="links">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M10.6 13.4a1 1 0 0 0 1.4 1.4l4.6-4.6a3 3 0 1 0-4.2-4.2l-1.7 1.7a1 1 0 1 0 1.4 1.4l1.7-1.7a1 1 0 1 1 1.4 1.4Zm2.8-2.8a1 1 0 0 0-1.4-1.4l-4.6 4.6a3 3 0 0 0 4.2 4.2l1.7-1.7a1 1 0 1 0-1.4-1.4l-1.7 1.7a1 1 0 1 1-1.4-1.4Z"
+              />
+            </svg>
+          </button>
+          <button type="button" class="panel-tab" aria-label="Appearance" data-panel-view="appearance">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3a9 9 0 1 0 9 9 1 1 0 0 0-1-1 6 6 0 0 1-6-6 1 1 0 0 0-1-1Z" />
+            </svg>
+          </button>
         </div>
 
-        <div id="category-filters" class="category-list"></div>
-      </section>
+        <div class="panel-banner">Routes, rewards, discoveries, profession spots, and mobs.</div>
 
-      <section class="panel-screen hidden" data-panel-screen="info">
-        <article id="info-card" class="detail-card empty">
-          <h2>No marker selected</h2>
-          <p>Select a marker to view guide notes, rewards, routes, and source links.</p>
-        </article>
-      </section>
+        <section class="panel-screen" data-panel-screen="markers">
+          <div class="panel-toolbar">
+            <div class="map-selector-wrap">
+              <button type="button" class="map-selector" aria-expanded="false" aria-haspopup="menu">
+                <span>Wynncraft Map</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m7 10 5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="map-selector-menu hidden" role="menu" aria-label="Choose map area"></div>
+            </div>
 
-      <section class="panel-screen hidden" data-panel-screen="links">
-        <article id="link-card" class="detail-card empty">
-          <h2>No marker selected</h2>
-          <p>Select a quest or secret discovery to view its linked video.</p>
-        </article>
-      </section>
-
-      <section class="panel-screen hidden" data-panel-screen="appearance">
-        <article id="appearance-card" class="detail-card appearance-card"></article>
-      </section>
-
-      <section id="calibration-panel" class="calibration-panel hidden">
-        <div class="section-head detail-head">
-          <span>Calibration</span>
-        </div>
-
-        <article class="detail-card calibration-card">
-          <p class="calibration-copy">
-            Enable with <code>?calibrate=1</code>. Click the exact landmark center on the map for each target below.
-          </p>
-          <div id="calibration-target" class="calibration-target"></div>
-          <div id="calibration-status" class="calibration-status"></div>
-          <div class="detail-actions">
-            <button id="calibration-prev" type="button" class="detail-button secondary">Prev</button>
-            <button id="calibration-next" type="button" class="detail-button secondary">Next</button>
-            <button id="calibration-copy" type="button" class="detail-button secondary">Copy</button>
-            <button id="calibration-clear" type="button" class="detail-button secondary">Clear</button>
+            <div class="panel-search">
+              <label class="sr-only" for="search-input">Search markers</label>
+              <input id="search-input" type="search" placeholder="Search..." />
+              <button id="clear-search" type="button" class="icon-button" aria-label="Clear search">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M10.5 4a6.5 6.5 0 0 1 5.2 10.4l4 4-1.4 1.4-4-4A6.5 6.5 0 1 1 10.5 4Zm0 2a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9Z"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
-          <pre id="calibration-output" class="calibration-output"></pre>
-        </article>
-      </section>
-    </aside>
 
-    <button id="panel-toggle" type="button" class="panel-edge-toggle" aria-label="Collapse marker panel" aria-expanded="true">
-      <span class="panel-edge-toggle-icon" aria-hidden="true"></span>
-    </button>
-  </div>
+          <div class="panel-controls">
+            <label class="toggle-row">
+              <span>Show City Markers</span>
+              <input id="show-cities-toggle" type="checkbox" checked />
+            </label>
+            <label class="toggle-row">
+              <span>Hide Found Markers</span>
+              <input id="hide-found-toggle" type="checkbox" />
+            </label>
+          </div>
 
-  <div id="image-lightbox" class="image-lightbox hidden" aria-hidden="true">
-    <div class="image-lightbox-panel">
-      <button id="image-lightbox-close" type="button" class="image-lightbox-close" aria-label="Close image viewer">×</button>
-      <figure class="image-lightbox-figure">
-        <img id="image-lightbox-image" alt="">
-        <figcaption id="image-lightbox-caption"></figcaption>
-      </figure>
+          <div id="category-filters" class="category-list"></div>
+        </section>
+
+        <section class="panel-screen hidden" data-panel-screen="info">
+          <article id="info-card" class="detail-card empty">
+            <h2>No marker selected</h2>
+            <p>Select a marker to view guide notes, rewards, routes, and source links.</p>
+          </article>
+        </section>
+
+        <section class="panel-screen hidden" data-panel-screen="links">
+          <article id="link-card" class="detail-card empty">
+            <h2>No marker selected</h2>
+            <p>Select a quest or secret discovery to view its linked video.</p>
+          </article>
+        </section>
+
+        <section class="panel-screen hidden" data-panel-screen="appearance">
+          <article id="appearance-card" class="detail-card appearance-card"></article>
+        </section>
+
+        <section id="calibration-panel" class="calibration-panel hidden">
+          <div class="section-head detail-head">
+            <span>Calibration</span>
+          </div>
+
+          <article class="detail-card calibration-card">
+            <p class="calibration-copy">
+              Enable with <code>?calibrate=1</code>. Click the exact landmark center on the map for each target below.
+            </p>
+            <div id="calibration-target" class="calibration-target"></div>
+            <div id="calibration-status" class="calibration-status"></div>
+            <div class="detail-actions">
+              <button id="calibration-prev" type="button" class="detail-button secondary">Prev</button>
+              <button id="calibration-next" type="button" class="detail-button secondary">Next</button>
+              <button id="calibration-copy" type="button" class="detail-button secondary">Copy</button>
+              <button id="calibration-clear" type="button" class="detail-button secondary">Clear</button>
+            </div>
+            <pre id="calibration-output" class="calibration-output"></pre>
+          </article>
+        </section>
+      </aside>
+
+      <button
+        id="panel-toggle"
+        type="button"
+        class="panel-edge-toggle"
+        aria-label="Collapse marker panel"
+        aria-expanded="true"
+      >
+        <span class="panel-edge-toggle-icon" aria-hidden="true"></span>
+      </button>
     </div>
-  </div>
 
-  <script
-    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    crossorigin=""
-  ></script>
-  <script type="module" src="./app.js?v=20260520k"></script>
-</body>
+    <div id="image-lightbox" class="image-lightbox hidden" aria-hidden="true">
+      <div class="image-lightbox-panel">
+        <button id="image-lightbox-close" type="button" class="image-lightbox-close" aria-label="Close image viewer">
+          ×
+        </button>
+        <figure class="image-lightbox-figure">
+          <img id="image-lightbox-image" alt="" />
+          <figcaption id="image-lightbox-caption"></figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+    <script type="module" src="./app.js?v=20260520k"></script>
+  </body>
 </html>

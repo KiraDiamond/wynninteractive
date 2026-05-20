@@ -47,11 +47,17 @@ const CAMP_CONFIG = [
 ];
 
 function normalizeWhitespace(value) {
-  return String(value ?? "").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
+  return String(value ?? "")
+    .replace(/\u00a0/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function splitLines(text) {
-  return String(text ?? "").replace(/\r/g, "").split("\n").map((line) => line.trimEnd());
+  return String(text ?? "")
+    .replace(/\r/g, "")
+    .split("\n")
+    .map((line) => line.trimEnd());
 }
 
 function sectionText(lines, heading) {
@@ -123,33 +129,36 @@ function buildExplanation(paragraphs, hazards) {
   const sections = [];
 
   if (paragraphs.length) {
-    sections.push([
-      "Overview",
-      ...paragraphs
-        .filter((paragraph) => !/masochist/i.test(paragraph))
-        .slice(0, 2)
-        .map((paragraph) => `• ${paragraph}`),
-    ].join("\n"));
+    sections.push(
+      [
+        "Overview",
+        ...paragraphs
+          .filter((paragraph) => !/masochist/i.test(paragraph))
+          .slice(0, 2)
+          .map((paragraph) => `• ${paragraph}`),
+      ].join("\n")
+    );
   }
 
-  sections.push([
-    "Unlock & Access",
-    "• Unlock camps by clearing the related area quests and caves.",
-    "• Quest completion is shared across classes, but cave completion is class-specific.",
-    "• Each camp has its own daily bonus, so rotating camps can speed up syndicate progression.",
-  ].join("\n"));
+  sections.push(
+    [
+      "Unlock & Access",
+      "• Unlock camps by clearing the related area quests and caves.",
+      "• Quest completion is shared across classes, but cave completion is class-specific.",
+      "• Each camp has its own daily bonus, so rotating camps can speed up syndicate progression.",
+    ].join("\n")
+  );
 
   if (hazards.length) {
-    sections.push([
-      "Common Trouble Spots",
-      ...hazards.map((hazard) => `• ${hazard}`),
-    ].join("\n"));
+    sections.push(["Common Trouble Spots", ...hazards.map((hazard) => `• ${hazard}`)].join("\n"));
   }
 
-  sections.push([
-    "Notes",
-    "• This guide text is intentionally descriptive rather than route-by-route so it stays useful as lootrun meta shifts.",
-  ].join("\n"));
+  sections.push(
+    [
+      "Notes",
+      "• This guide text is intentionally descriptive rather than route-by-route so it stays useful as lootrun meta shifts.",
+    ].join("\n")
+  );
 
   return sections.join("\n\n");
 }
@@ -174,7 +183,7 @@ async function main() {
           tutorials: [],
         },
       ];
-    }),
+    })
   );
 
   const file = [
@@ -187,10 +196,16 @@ async function main() {
 
   await fs.writeFile(OUTPUT_PATH, file, "utf8");
 
-  console.log(JSON.stringify({
-    output: path.relative(ROOT, OUTPUT_PATH).replace(/\\/g, "/"),
-    records: Object.keys(content).length,
-  }, null, 2));
+  console.log(
+    JSON.stringify(
+      {
+        output: path.relative(ROOT, OUTPUT_PATH).replace(/\\/g, "/"),
+        records: Object.keys(content).length,
+      },
+      null,
+      2
+    )
+  );
 }
 
 main().catch((error) => {

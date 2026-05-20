@@ -21,12 +21,18 @@ function expandReferenceUrl(url) {
     const parsed = new URL(url);
 
     if (/^(?:wynncraft|commons)\.wiki\.gg$/i.test(parsed.hostname)) {
-      parsed.pathname = parsed.pathname.replace(/\/thumb\/(.+?)\/\d+px-([^/]+)$/i, "/thumb/$1/" + `${WIDTH_TARGET}px-$2`);
+      parsed.pathname = parsed.pathname.replace(
+        /\/thumb\/(.+?)\/\d+px-([^/]+)$/i,
+        "/thumb/$1/" + `${WIDTH_TARGET}px-$2`
+      );
       return parsed.toString();
     }
 
     if (/static\.wikia\.nocookie\.net$/i.test(parsed.hostname)) {
-      parsed.pathname = parsed.pathname.replace(/\/revision\/latest\/scale-to-width-down\/\d+/i, `/revision/latest/scale-to-width-down/${WIDTH_TARGET}`);
+      parsed.pathname = parsed.pathname.replace(
+        /\/revision\/latest\/scale-to-width-down\/\d+/i,
+        `/revision/latest/scale-to-width-down/${WIDTH_TARGET}`
+      );
       return parsed.toString();
     }
 
@@ -43,7 +49,12 @@ function fileExtension(url, contentType) {
     "image/webp": ".webp",
     "image/gif": ".gif",
     "image/svg+xml": ".svg",
-  }[String(contentType || "").split(";")[0].trim().toLowerCase()];
+  }[
+    String(contentType || "")
+      .split(";")[0]
+      .trim()
+      .toLowerCase()
+  ];
 
   if (fromType) {
     return fromType;
@@ -110,10 +121,7 @@ async function runPool(items, worker, concurrency) {
 
 async function main() {
   const urls = dedupe(
-    Object.values(MARKER_CONTENT).flatMap((entry) => [
-      entry.coverImage || "",
-      ...(entry.gallery || []),
-    ]),
+    Object.values(MARKER_CONTENT).flatMap((entry) => [entry.coverImage || "", ...(entry.gallery || [])])
   );
 
   await ensureDir(OUTPUT_DIR);
@@ -121,23 +129,27 @@ async function main() {
   const successes = [];
   const failures = [];
 
-  await runPool(urls, async (url) => {
-    try {
-      const result = await downloadImage(url);
-      successes.push(result);
-    } catch (error) {
-      failures.push({
-        url,
-        error: error instanceof Error ? error.message : String(error),
-      });
-    }
-  }, CONCURRENCY);
+  await runPool(
+    urls,
+    async (url) => {
+      try {
+        const result = await downloadImage(url);
+        successes.push(result);
+      } catch (error) {
+        failures.push({
+          url,
+          error: error instanceof Error ? error.message : String(error),
+        });
+      }
+    },
+    CONCURRENCY
+  );
 
   const mapping = Object.fromEntries(
     successes.map(({ originalUrl, fileName }) => [
       originalUrl,
       `new URL("../assets/reference-images/${fileName}", import.meta.url).href`,
-    ]),
+    ])
   );
 
   const lines = [
@@ -151,14 +163,20 @@ async function main() {
 
   await fs.writeFile(MODULE_PATH, lines.join("\n"), "utf8");
 
-  console.log(JSON.stringify({
-    total: urls.length,
-    cached: successes.length,
-    failed: failures.length,
-    outputDir: path.relative(ROOT, OUTPUT_DIR).replace(/\\/g, "/"),
-    module: path.relative(ROOT, MODULE_PATH).replace(/\\/g, "/"),
-    failures: failures.slice(0, 20),
-  }, null, 2));
+  console.log(
+    JSON.stringify(
+      {
+        total: urls.length,
+        cached: successes.length,
+        failed: failures.length,
+        outputDir: path.relative(ROOT, OUTPUT_DIR).replace(/\\/g, "/"),
+        module: path.relative(ROOT, MODULE_PATH).replace(/\\/g, "/"),
+        failures: failures.slice(0, 20),
+      },
+      null,
+      2
+    )
+  );
 }
 
 main().catch((error) => {

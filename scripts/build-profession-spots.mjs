@@ -37,7 +37,8 @@ const SECTION_CONFIG = {
 };
 
 const SECTION_NAMES = Object.keys(SECTION_CONFIG);
-const IGNORE_LINE = /^(Mob Legend|None -|Very Low -|Low -|Medium -|High -|Very High -|Material|Obtaining\/Nodes|Suggested Tool|Level|_+|\*Woodcutting)/i;
+const IGNORE_LINE =
+  /^(Mob Legend|None -|Very Low -|Low -|Medium -|High -|Very High -|Material|Obtaining\/Nodes|Suggested Tool|Level|_+|\*Woodcutting)/i;
 const TOOL_LINE = /^T\d+\s+/;
 const LEVEL_RANGE_LINE = /^\d+\-\d+$/;
 const SUPPLEMENTAL_SPOTS = [
@@ -46,7 +47,8 @@ const SUPPLEMENTAL_SPOTS = [
     material: "Cinnabar",
     title: "Cinnabar - Terr spot",
     region: "Terr spot",
-    description: "I use this mining spot for Cinnabar. Route note: Terr spot. Nodes: [13■]. Tick rate: 4 tick. Coordinates: -1665, 38, -450.",
+    description:
+      "I use this mining spot for Cinnabar. Route note: Terr spot. Nodes: [13■]. Tick rate: 4 tick. Coordinates: -1665, 38, -450.",
     summary: "I use this mining spot for Cinnabar.",
     explanation: [
       "My Notes",
@@ -65,7 +67,8 @@ const SUPPLEMENTAL_SPOTS = [
     material: "Mistwood",
     title: "Mistwood - low mob count area",
     region: "Terr low mob count area",
-    description: "I use this woodcutting spot for Mistwood. Route note: Terr low mob count area. Mob pressure: Relatively low. Coordinates: -1140, 59, -840.",
+    description:
+      "I use this woodcutting spot for Mistwood. Route note: Terr low mob count area. Mob pressure: Relatively low. Coordinates: -1140, 59, -840.",
     summary: "I use this woodcutting spot for Mistwood.",
     explanation: [
       "My Notes",
@@ -138,11 +141,17 @@ const SUPPLEMENTAL_SPOTS = [
 ];
 
 function normalizeWhitespace(value) {
-  return String(value ?? "").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
+  return String(value ?? "")
+    .replace(/\u00a0/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function stripNotes(value) {
-  return normalizeWhitespace(value).replace(/\[[^\]]+\]/g, " ").replace(/\s+/g, " ").trim();
+  return normalizeWhitespace(value)
+    .replace(/\[[^\]]+\]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function slugify(value) {
@@ -154,11 +163,13 @@ function slugify(value) {
 }
 
 function isMaterialLine(line) {
-  return /^[A-Za-z][A-Za-z'’ -]+$/.test(line)
-    && !IGNORE_LINE.test(line)
-    && !TOOL_LINE.test(line)
-    && !LEVEL_RANGE_LINE.test(line)
-    && !SECTION_NAMES.includes(line);
+  return (
+    /^[A-Za-z][A-Za-z'’ -]+$/.test(line) &&
+    !IGNORE_LINE.test(line) &&
+    !TOOL_LINE.test(line) &&
+    !LEVEL_RANGE_LINE.test(line) &&
+    !SECTION_NAMES.includes(line)
+  );
 }
 
 function sectionSlice(lines, sectionName) {
@@ -166,9 +177,9 @@ function sectionSlice(lines, sectionName) {
   if (start < 0) {
     throw new Error(`Could not find section "${sectionName}" in ${GUIDE_PATH}`);
   }
-  const nextStarts = SECTION_NAMES
-    .map((name) => lines.findIndex((line, idx) => idx > start && line.trim() === name))
-    .filter((index) => index > start);
+  const nextStarts = SECTION_NAMES.map((name) =>
+    lines.findIndex((line, idx) => idx > start && line.trim() === name)
+  ).filter((index) => index > start);
   const end = nextStarts.length ? Math.min(...nextStarts) : lines.length;
   return lines.slice(start, end).map((line) => line.trim());
 }
@@ -241,13 +252,13 @@ function parseSection(lines, sectionName) {
 }
 
 function extractCoordinates(line, dims) {
-  const regex = dims === 2
-    ? /(-?\d{1,4})\s+(-?\d{1,4})/g
-    : /(-?\d{1,4})\s+(-?\d{1,3})\s+(-?\d{1,4})/g;
+  const regex = dims === 2 ? /(-?\d{1,4})\s+(-?\d{1,4})/g : /(-?\d{1,4})\s+(-?\d{1,3})\s+(-?\d{1,4})/g;
 
-  return [...line.matchAll(regex)].map((match) => dims === 2
-    ? { x: Number(match[1]), z: Number(match[2]) }
-    : { x: Number(match[1]), y: Number(match[2]), z: Number(match[3]) });
+  return [...line.matchAll(regex)].map((match) =>
+    dims === 2
+      ? { x: Number(match[1]), z: Number(match[2]) }
+      : { x: Number(match[1]), y: Number(match[2]), z: Number(match[3]) }
+  );
 }
 
 function extractNodeCount(line) {
@@ -265,9 +276,7 @@ function cleanSpotNote(line, dims) {
     .replace(/\s+/g, " ")
     .trim();
 
-  const regex = dims === 2
-    ? /-?\d{1,4}\s+-?\d{1,4}/g
-    : /-?\d{1,4}\s+-?\d{1,3}\s+-?\d{1,4}/g;
+  const regex = dims === 2 ? /-?\d{1,4}\s+-?\d{1,4}/g : /-?\d{1,4}\s+-?\d{1,3}\s+-?\d{1,4}/g;
 
   text = text.replace(regex, " ").replace(/\s+/g, " ").trim();
   text = text.replace(/^\s*(?:and|,)\s*/i, "");
@@ -283,8 +292,15 @@ function spotLabelFromNote(note, dims) {
     .trim();
 
   if (label.includes(",")) {
-    const parts = label.split(",").map((part) => normalizeWhitespace(part)).filter(Boolean);
-    const preferred = [...parts].reverse().find((part) => /\b(north|south|east|west|near|inside|outside|adjacent|around|behind|above|below|off|in|of)\b/i.test(part));
+    const parts = label
+      .split(",")
+      .map((part) => normalizeWhitespace(part))
+      .filter(Boolean);
+    const preferred = [...parts]
+      .reverse()
+      .find((part) =>
+        /\b(north|south|east|west|near|inside|outside|adjacent|around|behind|above|below|off|in|of)\b/i.test(part)
+      );
     label = preferred || parts[0] || label;
   }
 
@@ -325,9 +341,7 @@ function buildDescription(section, material, levelRange, tools, nodeCount, mobLe
 }
 
 function buildExplanation(section, material, levelRange, tools, nodeCount, mobLevel, note, coord) {
-  const coordText = coord.y === undefined
-    ? `${coord.x}, ${coord.z}`
-    : `${coord.x}, ${coord.y}, ${coord.z}`;
+  const coordText = coord.y === undefined ? `${coord.x}, ${coord.z}` : `${coord.x}, ${coord.y}, ${coord.z}`;
 
   return [
     "My Notes",
@@ -337,8 +351,12 @@ function buildExplanation(section, material, levelRange, tools, nodeCount, mobLe
     nodeCount ? `• I usually get ${nodeCount} nodes here.` : "",
     mobLevel ? `• Mob pressure: ${mobLevel}.` : "",
     `• Coordinates: ${coordText}.`,
-    cleanSpotNote(note, SECTION_CONFIG[section].dims) ? `• Route note: ${cleanSpotNote(note, SECTION_CONFIG[section].dims)}.` : "",
-  ].filter(Boolean).join("\n");
+    cleanSpotNote(note, SECTION_CONFIG[section].dims)
+      ? `• Route note: ${cleanSpotNote(note, SECTION_CONFIG[section].dims)}.`
+      : "",
+  ]
+    .filter(Boolean)
+    .join("\n");
 }
 
 function buildRegion(section, note) {
@@ -346,9 +364,7 @@ function buildRegion(section, note) {
 }
 
 function markerId(section, material, coord, index) {
-  const suffix = coord.y === undefined
-    ? `${coord.x}-${coord.z}`
-    : `${coord.x}-${coord.z}`;
+  const suffix = coord.y === undefined ? `${coord.x}-${coord.z}` : `${coord.x}-${coord.z}`;
   return `profession-${slugify(section)}-${slugify(material)}-${index}-${slugify(suffix)}`;
 }
 
@@ -372,7 +388,15 @@ function buildOutputs(lines) {
         coords.forEach((coord, index) => {
           const id = markerId(sectionName, materialEntry.material, coord, index);
           const title = titleFromNote(materialEntry.material, spotLine, config.dims, index, coords.length);
-          const description = buildDescription(sectionName, materialEntry.material, materialEntry.levelRange, materialEntry.tools, nodeCount, mobLevel, spotLine);
+          const description = buildDescription(
+            sectionName,
+            materialEntry.material,
+            materialEntry.levelRange,
+            materialEntry.tools,
+            nodeCount,
+            mobLevel,
+            spotLine
+          );
 
           markers.push({
             id,
@@ -380,22 +404,24 @@ function buildOutputs(lines) {
             category: config.category,
             region: buildRegion(sectionName, spotLine),
             description,
-            tags: [
-              "profession",
-              slugify(sectionName),
-              slugify(materialEntry.material),
-              config.iconTag,
-            ],
+            tags: ["profession", slugify(sectionName), slugify(materialEntry.material), config.iconTag],
             position: {
-              world: coord.y === undefined
-                ? { x: coord.x, z: coord.z }
-                : { x: coord.x, z: coord.z },
+              world: coord.y === undefined ? { x: coord.x, z: coord.z } : { x: coord.x, z: coord.z },
             },
           });
 
           content[id] = {
             summary: `I use this ${config.label.toLowerCase()} spot for ${materialEntry.material}${materialEntry.levelRange ? ` around levels ${materialEntry.levelRange}` : ""}.`,
-            explanation: buildExplanation(sectionName, materialEntry.material, materialEntry.levelRange, materialEntry.tools, nodeCount, mobLevel, spotLine, coord),
+            explanation: buildExplanation(
+              sectionName,
+              materialEntry.material,
+              materialEntry.levelRange,
+              materialEntry.tools,
+              nodeCount,
+              mobLevel,
+              spotLine,
+              coord
+            ),
             coverImage: "",
             gallery: [],
             sourceUrl: GUIDE_URL,
@@ -415,12 +441,7 @@ function buildOutputs(lines) {
       category: config.category,
       region: spot.region,
       description: spot.description,
-      tags: [
-        "profession",
-        slugify(spot.section),
-        slugify(spot.material),
-        spot.iconTag,
-      ],
+      tags: ["profession", slugify(spot.section), slugify(spot.material), spot.iconTag],
       position: {
         world: { x: spot.coord.x, z: spot.coord.z },
       },
@@ -441,12 +462,7 @@ function buildOutputs(lines) {
 }
 
 async function writeModule(filePath, exportName, value, sourceLine) {
-  const file = [
-    sourceLine,
-    "",
-    `export const ${exportName} = ${JSON.stringify(value, null, 2)};`,
-    "",
-  ].join("\n");
+  const file = [sourceLine, "", `export const ${exportName} = ${JSON.stringify(value, null, 2)};`, ""].join("\n");
   await fs.writeFile(filePath, file, "utf8");
 }
 
@@ -459,21 +475,27 @@ async function main() {
     MARKERS_OUTPUT,
     "GENERATED_PROFESSION_MARKERS",
     markers,
-    `// Generated by scripts/build-profession-spots.mjs from ${GUIDE_PATH.replace(/\\/g, "/")}`,
+    `// Generated by scripts/build-profession-spots.mjs from ${GUIDE_PATH.replace(/\\/g, "/")}`
   );
   await writeModule(
     CONTENT_OUTPUT,
     "GENERATED_PROFESSION_MARKER_CONTENT",
     content,
-    `// Generated by scripts/build-profession-spots.mjs from ${GUIDE_URL}`,
+    `// Generated by scripts/build-profession-spots.mjs from ${GUIDE_URL}`
   );
 
-  console.log(JSON.stringify({
-    markers: markers.length,
-    categories: [...new Set(markers.map((marker) => marker.category))],
-    markerOutput: path.relative(ROOT, MARKERS_OUTPUT).replace(/\\/g, "/"),
-    contentOutput: path.relative(ROOT, CONTENT_OUTPUT).replace(/\\/g, "/"),
-  }, null, 2));
+  console.log(
+    JSON.stringify(
+      {
+        markers: markers.length,
+        categories: [...new Set(markers.map((marker) => marker.category))],
+        markerOutput: path.relative(ROOT, MARKERS_OUTPUT).replace(/\\/g, "/"),
+        contentOutput: path.relative(ROOT, CONTENT_OUTPUT).replace(/\\/g, "/"),
+      },
+      null,
+      2
+    )
+  );
 }
 
 main().catch((error) => {

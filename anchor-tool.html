@@ -1,483 +1,485 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wynn Anchor Tool</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #111822;
-      --panel: rgba(18, 27, 39, 0.94);
-      --panel-2: rgba(31, 44, 61, 0.96);
-      --line: rgba(255, 255, 255, 0.1);
-      --ink: #eef3fb;
-      --muted: #9daac0;
-      --accent: #7dd3fc;
-      --accent-2: #a855f7;
-      --danger: #ff7070;
-      --shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wynn Anchor Tool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg: #111822;
+        --panel: rgba(18, 27, 39, 0.94);
+        --panel-2: rgba(31, 44, 61, 0.96);
+        --line: rgba(255, 255, 255, 0.1);
+        --ink: #eef3fb;
+        --muted: #9daac0;
+        --accent: #7dd3fc;
+        --accent-2: #a855f7;
+        --danger: #ff7070;
+        --shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+      }
 
-    * {
-      box-sizing: border-box;
-    }
+      * {
+        box-sizing: border-box;
+      }
 
-    html,
-    body {
-      margin: 0;
-      min-height: 100%;
-      background: radial-gradient(circle at top, #1a2533, #0c1219 60%);
-      color: var(--ink);
-      font-family: "Barlow", sans-serif;
-    }
-
-    body {
-      display: grid;
-      grid-template-columns: 360px minmax(0, 1fr);
-      min-height: 100vh;
-    }
-
-    aside {
-      padding: 18px;
-      background: var(--panel);
-      border-right: 1px solid var(--line);
-      box-shadow: var(--shadow);
-      overflow-y: auto;
-    }
-
-    main {
-      min-width: 0;
-      padding: 18px;
-    }
-
-    h1,
-    h2,
-    p {
-      margin: 0;
-    }
-
-    h1 {
-      font-size: 1.35rem;
-      margin-bottom: 6px;
-    }
-
-    .subhead {
-      color: var(--muted);
-      line-height: 1.4;
-      margin-bottom: 18px;
-    }
-
-    .card {
-      padding: 14px;
-      margin-bottom: 14px;
-      background: var(--panel-2);
-      border: 1px solid var(--line);
-      border-radius: 14px;
-    }
-
-    .card h2 {
-      font-size: 0.95rem;
-      margin-bottom: 10px;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-
-    .preset-grid {
-      display: grid;
-      gap: 8px;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .preset {
-      padding: 10px 12px;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      color: var(--ink);
-      text-align: left;
-      cursor: pointer;
-    }
-
-    .preset.active {
-      border-color: var(--accent);
-      background: rgba(125, 211, 252, 0.12);
-    }
-
-    .preset strong {
-      display: block;
-      font-size: 0.96rem;
-    }
-
-    .preset span {
-      display: block;
-      margin-top: 4px;
-      color: var(--muted);
-      font-size: 0.82rem;
-    }
-
-    .field-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 10px;
-    }
-
-    .field {
-      display: grid;
-      gap: 6px;
-    }
-
-    .field label {
-      color: var(--muted);
-      font-size: 0.84rem;
-    }
-
-    .field input,
-    textarea {
-      width: 100%;
-      padding: 10px 12px;
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      background: rgba(6, 12, 18, 0.85);
-      color: var(--ink);
-      font: inherit;
-    }
-
-    textarea {
-      min-height: 150px;
-      resize: vertical;
-      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
-      font-size: 0.82rem;
-      line-height: 1.45;
-    }
-
-    .button-row {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-top: 12px;
-    }
-
-    button.action {
-      padding: 10px 14px;
-      border: 0;
-      border-radius: 10px;
-      background: linear-gradient(180deg, #2b86b3, #1d648a);
-      color: #fff;
-      font-weight: 700;
-      cursor: pointer;
-    }
-
-    button.action.secondary {
-      background: rgba(255, 255, 255, 0.08);
-    }
-
-    .note {
-      margin-top: 10px;
-      color: var(--muted);
-      font-size: 0.88rem;
-      line-height: 1.4;
-    }
-
-    .viewport {
-      position: relative;
-      height: calc(100vh - 36px);
-      overflow: auto;
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      background: #0c1219;
-      box-shadow: var(--shadow);
-    }
-
-    .map-stage {
-      position: relative;
-      width: max-content;
-      transform-origin: top left;
-    }
-
-    #map-image {
-      display: block;
-      image-rendering: pixelated;
-      user-select: none;
-      -webkit-user-drag: none;
-    }
-
-    .crosshair {
-      position: absolute;
-      width: 18px;
-      height: 18px;
-      margin-left: -9px;
-      margin-top: -9px;
-      pointer-events: none;
-      display: none;
-    }
-
-    .crosshair::before,
-    .crosshair::after {
-      content: "";
-      position: absolute;
-      background: var(--danger);
-    }
-
-    .crosshair::before {
-      left: 8px;
-      top: 0;
-      width: 2px;
-      height: 18px;
-    }
-
-    .crosshair::after {
-      left: 0;
-      top: 8px;
-      width: 18px;
-      height: 2px;
-    }
-
-    .crosshair span {
-      position: absolute;
-      inset: 5px;
-      border: 2px solid #fff;
-      background: rgba(255, 255, 255, 0.2);
-    }
-
-    .zoom-row {
-      display: flex;
-      gap: 10px;
-      align-items: center;
-      margin-bottom: 10px;
-    }
-
-    .zoom-row input[type="range"] {
-      width: 180px;
-    }
-
-    .status {
-      color: var(--muted);
-      font-size: 0.9rem;
-      margin-top: 8px;
-    }
-
-    @media (max-width: 980px) {
+      html,
       body {
-        grid-template-columns: 1fr;
+        margin: 0;
+        min-height: 100%;
+        background: radial-gradient(circle at top, #1a2533, #0c1219 60%);
+        color: var(--ink);
+        font-family: "Barlow", sans-serif;
+      }
+
+      body {
+        display: grid;
+        grid-template-columns: 360px minmax(0, 1fr);
+        min-height: 100vh;
       }
 
       aside {
-        border-right: 0;
-        border-bottom: 1px solid var(--line);
+        padding: 18px;
+        background: var(--panel);
+        border-right: 1px solid var(--line);
+        box-shadow: var(--shadow);
+        overflow-y: auto;
+      }
+
+      main {
+        min-width: 0;
+        padding: 18px;
+      }
+
+      h1,
+      h2,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 1.35rem;
+        margin-bottom: 6px;
+      }
+
+      .subhead {
+        color: var(--muted);
+        line-height: 1.4;
+        margin-bottom: 18px;
+      }
+
+      .card {
+        padding: 14px;
+        margin-bottom: 14px;
+        background: var(--panel-2);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+      }
+
+      .card h2 {
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      .preset-grid {
+        display: grid;
+        gap: 8px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .preset {
+        padding: 10px 12px;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        color: var(--ink);
+        text-align: left;
+        cursor: pointer;
+      }
+
+      .preset.active {
+        border-color: var(--accent);
+        background: rgba(125, 211, 252, 0.12);
+      }
+
+      .preset strong {
+        display: block;
+        font-size: 0.96rem;
+      }
+
+      .preset span {
+        display: block;
+        margin-top: 4px;
+        color: var(--muted);
+        font-size: 0.82rem;
+      }
+
+      .field-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .field {
+        display: grid;
+        gap: 6px;
+      }
+
+      .field label {
+        color: var(--muted);
+        font-size: 0.84rem;
+      }
+
+      .field input,
+      textarea {
+        width: 100%;
+        padding: 10px 12px;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: rgba(6, 12, 18, 0.85);
+        color: var(--ink);
+        font: inherit;
+      }
+
+      textarea {
+        min-height: 150px;
+        resize: vertical;
+        font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+        font-size: 0.82rem;
+        line-height: 1.45;
+      }
+
+      .button-row {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 12px;
+      }
+
+      button.action {
+        padding: 10px 14px;
+        border: 0;
+        border-radius: 10px;
+        background: linear-gradient(180deg, #2b86b3, #1d648a);
+        color: #fff;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      button.action.secondary {
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .note {
+        margin-top: 10px;
+        color: var(--muted);
+        font-size: 0.88rem;
+        line-height: 1.4;
       }
 
       .viewport {
-        height: 72vh;
+        position: relative;
+        height: calc(100vh - 36px);
+        overflow: auto;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: #0c1219;
+        box-shadow: var(--shadow);
       }
-    }
-  </style>
-</head>
-<body>
-  <aside>
-    <h1>Wynn Anchor Tool</h1>
-    <p class="subhead">
-      Pick a city, click the exact in-map anchor pixel, then copy the result and send it back.
-      This runs locally from disk.
-    </p>
 
-    <section class="card">
-      <h2>Anchor Presets</h2>
-      <div id="preset-grid" class="preset-grid"></div>
-      <p class="note">
-        Start with `Detlas`. If needed later, click another far-away city like `Lutho` or `Almuj`.
+      .map-stage {
+        position: relative;
+        width: max-content;
+        transform-origin: top left;
+      }
+
+      #map-image {
+        display: block;
+        image-rendering: pixelated;
+        user-select: none;
+        -webkit-user-drag: none;
+      }
+
+      .crosshair {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        margin-left: -9px;
+        margin-top: -9px;
+        pointer-events: none;
+        display: none;
+      }
+
+      .crosshair::before,
+      .crosshair::after {
+        content: "";
+        position: absolute;
+        background: var(--danger);
+      }
+
+      .crosshair::before {
+        left: 8px;
+        top: 0;
+        width: 2px;
+        height: 18px;
+      }
+
+      .crosshair::after {
+        left: 0;
+        top: 8px;
+        width: 18px;
+        height: 2px;
+      }
+
+      .crosshair span {
+        position: absolute;
+        inset: 5px;
+        border: 2px solid #fff;
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      .zoom-row {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .zoom-row input[type="range"] {
+        width: 180px;
+      }
+
+      .status {
+        color: var(--muted);
+        font-size: 0.9rem;
+        margin-top: 8px;
+      }
+
+      @media (max-width: 980px) {
+        body {
+          grid-template-columns: 1fr;
+        }
+
+        aside {
+          border-right: 0;
+          border-bottom: 1px solid var(--line);
+        }
+
+        .viewport {
+          height: 72vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <aside>
+      <h1>Wynn Anchor Tool</h1>
+      <p class="subhead">
+        Pick a city, click the exact in-map anchor pixel, then copy the result and send it back. This runs locally from
+        disk.
       </p>
-    </section>
 
-    <section class="card">
-      <h2>Selection</h2>
-      <div class="field-grid">
-        <div class="field">
-          <label for="anchor-name">Anchor</label>
-          <input id="anchor-name" type="text" readonly>
+      <section class="card">
+        <h2>Anchor Presets</h2>
+        <div id="preset-grid" class="preset-grid"></div>
+        <p class="note">Start with `Detlas`. If needed later, click another far-away city like `Lutho` or `Almuj`.</p>
+      </section>
+
+      <section class="card">
+        <h2>Selection</h2>
+        <div class="field-grid">
+          <div class="field">
+            <label for="anchor-name">Anchor</label>
+            <input id="anchor-name" type="text" readonly />
+          </div>
+          <div class="field">
+            <label for="world-coords">World</label>
+            <input id="world-coords" type="text" readonly />
+          </div>
+          <div class="field">
+            <label for="pixel-x">Pixel X</label>
+            <input id="pixel-x" type="text" readonly />
+          </div>
+          <div class="field">
+            <label for="pixel-y">Pixel Y</label>
+            <input id="pixel-y" type="text" readonly />
+          </div>
         </div>
-        <div class="field">
-          <label for="world-coords">World</label>
-          <input id="world-coords" type="text" readonly>
+        <p class="status" id="selection-status">No pixel selected yet.</p>
+      </section>
+
+      <section class="card">
+        <h2>Export</h2>
+        <textarea id="export-output" readonly></textarea>
+        <div class="button-row">
+          <button id="copy-button" type="button" class="action">Copy Output</button>
+          <button id="clear-button" type="button" class="action secondary">Clear Point</button>
         </div>
-        <div class="field">
-          <label for="pixel-x">Pixel X</label>
-          <input id="pixel-x" type="text" readonly>
-        </div>
-        <div class="field">
-          <label for="pixel-y">Pixel Y</label>
-          <input id="pixel-y" type="text" readonly>
+      </section>
+    </aside>
+
+    <main>
+      <div class="zoom-row">
+        <label for="zoom-range">Zoom</label>
+        <input id="zoom-range" type="range" min="0.4" max="3" step="0.1" value="1" />
+        <span id="zoom-value">100%</span>
+      </div>
+
+      <div class="viewport" id="viewport">
+        <div class="map-stage" id="map-stage">
+          <img id="map-image" src="./assets/map/WynncraftMapFruma.png" alt="Wynncraft world map" />
+          <div id="crosshair" class="crosshair"><span></span></div>
         </div>
       </div>
-      <p class="status" id="selection-status">No pixel selected yet.</p>
-    </section>
+    </main>
 
-    <section class="card">
-      <h2>Export</h2>
-      <textarea id="export-output" readonly></textarea>
-      <div class="button-row">
-        <button id="copy-button" type="button" class="action">Copy Output</button>
-        <button id="clear-button" type="button" class="action secondary">Clear Point</button>
-      </div>
-    </section>
-  </aside>
+    <script>
+      const presets = [
+        { id: "detlas", title: "Detlas", world: { x: 462, y: 67, z: -1572 } },
+        { id: "nemract", title: "Nemract", world: { x: 98, y: 39, z: -2191 } },
+        { id: "almuj", title: "Almuj", world: { x: 888, y: 67, z: -1973 } },
+        { id: "lutho", title: "Lutho", world: { x: 978, y: 73, z: -671 } },
+        { id: "ragni", title: "Ragni", world: { x: -882, y: 67, z: -1575 } },
+        { id: "mage-island", title: "Mage Island", world: { x: 862, y: 42, z: -2856 } },
+      ];
 
-  <main>
-    <div class="zoom-row">
-      <label for="zoom-range">Zoom</label>
-      <input id="zoom-range" type="range" min="0.4" max="3" step="0.1" value="1">
-      <span id="zoom-value">100%</span>
-    </div>
+      const state = {
+        activePreset: presets[0],
+        point: null,
+        zoom: 1,
+      };
 
-    <div class="viewport" id="viewport">
-      <div class="map-stage" id="map-stage">
-        <img id="map-image" src="./assets/map/WynncraftMapFruma.png" alt="Wynncraft world map">
-        <div id="crosshair" class="crosshair"><span></span></div>
-      </div>
-    </div>
-  </main>
+      const presetGrid = document.querySelector("#preset-grid");
+      const anchorName = document.querySelector("#anchor-name");
+      const worldCoords = document.querySelector("#world-coords");
+      const pixelX = document.querySelector("#pixel-x");
+      const pixelY = document.querySelector("#pixel-y");
+      const output = document.querySelector("#export-output");
+      const status = document.querySelector("#selection-status");
+      const viewport = document.querySelector("#viewport");
+      const mapStage = document.querySelector("#map-stage");
+      const mapImage = document.querySelector("#map-image");
+      const crosshair = document.querySelector("#crosshair");
+      const zoomRange = document.querySelector("#zoom-range");
+      const zoomValue = document.querySelector("#zoom-value");
+      const copyButton = document.querySelector("#copy-button");
+      const clearButton = document.querySelector("#clear-button");
 
-  <script>
-    const presets = [
-      { id: "detlas", title: "Detlas", world: { x: 462, y: 67, z: -1572 } },
-      { id: "nemract", title: "Nemract", world: { x: 98, y: 39, z: -2191 } },
-      { id: "almuj", title: "Almuj", world: { x: 888, y: 67, z: -1973 } },
-      { id: "lutho", title: "Lutho", world: { x: 978, y: 73, z: -671 } },
-      { id: "ragni", title: "Ragni", world: { x: -882, y: 67, z: -1575 } },
-      { id: "mage-island", title: "Mage Island", world: { x: 862, y: 42, z: -2856 } },
-    ];
-
-    const state = {
-      activePreset: presets[0],
-      point: null,
-      zoom: 1,
-    };
-
-    const presetGrid = document.querySelector("#preset-grid");
-    const anchorName = document.querySelector("#anchor-name");
-    const worldCoords = document.querySelector("#world-coords");
-    const pixelX = document.querySelector("#pixel-x");
-    const pixelY = document.querySelector("#pixel-y");
-    const output = document.querySelector("#export-output");
-    const status = document.querySelector("#selection-status");
-    const viewport = document.querySelector("#viewport");
-    const mapStage = document.querySelector("#map-stage");
-    const mapImage = document.querySelector("#map-image");
-    const crosshair = document.querySelector("#crosshair");
-    const zoomRange = document.querySelector("#zoom-range");
-    const zoomValue = document.querySelector("#zoom-value");
-    const copyButton = document.querySelector("#copy-button");
-    const clearButton = document.querySelector("#clear-button");
-
-    function renderPresets() {
-      presetGrid.innerHTML = presets.map((preset) => `
+      function renderPresets() {
+        presetGrid.innerHTML = presets
+          .map(
+            (preset) => `
         <button class="preset ${preset.id === state.activePreset.id ? "active" : ""}" data-id="${preset.id}" type="button">
           <strong>${preset.title}</strong>
           <span>${preset.world.x}, ${preset.world.z}</span>
         </button>
-      `).join("");
+      `
+          )
+          .join("");
 
-      presetGrid.querySelectorAll("[data-id]").forEach((button) => {
-        button.addEventListener("click", () => {
-          const preset = presets.find((entry) => entry.id === button.dataset.id);
-          if (!preset) {
-            return;
-          }
-          state.activePreset = preset;
-          render();
+        presetGrid.querySelectorAll("[data-id]").forEach((button) => {
+          button.addEventListener("click", () => {
+            const preset = presets.find((entry) => entry.id === button.dataset.id);
+            if (!preset) {
+              return;
+            }
+            state.activePreset = preset;
+            render();
+          });
         });
+      }
+
+      function applyZoom() {
+        mapStage.style.transform = `scale(${state.zoom})`;
+        zoomValue.textContent = `${Math.round(state.zoom * 100)}%`;
+      }
+
+      function exportPayload() {
+        return {
+          anchor: state.activePreset.title,
+          world: state.activePreset.world,
+          pixel: state.point ? { x: state.point.x, y: state.point.y } : null,
+        };
+      }
+
+      function renderCrosshair() {
+        if (!state.point) {
+          crosshair.style.display = "none";
+          return;
+        }
+
+        crosshair.style.display = "block";
+        crosshair.style.left = `${state.point.x}px`;
+        crosshair.style.top = `${state.point.y}px`;
+      }
+
+      function render() {
+        renderPresets();
+        anchorName.value = state.activePreset.title;
+        worldCoords.value = `${state.activePreset.world.x} ${state.activePreset.world.y} ${state.activePreset.world.z}`;
+        pixelX.value = state.point ? state.point.x : "";
+        pixelY.value = state.point ? state.point.y : "";
+        output.value = JSON.stringify(exportPayload(), null, 2);
+        status.textContent = state.point
+          ? `Selected pixel ${state.point.x}, ${state.point.y} for ${state.activePreset.title}.`
+          : `Click the exact anchor pixel for ${state.activePreset.title}.`;
+        renderCrosshair();
+        applyZoom();
+      }
+
+      function focusPoint(point) {
+        const targetLeft = Math.max(0, point.x * state.zoom - viewport.clientWidth / 2);
+        const targetTop = Math.max(0, point.y * state.zoom - viewport.clientHeight / 2);
+        viewport.scrollTo({ left: targetLeft, top: targetTop });
+      }
+
+      mapImage.addEventListener("click", (event) => {
+        const rect = mapImage.getBoundingClientRect();
+        const x = Math.round((event.clientX - rect.left) * (mapImage.naturalWidth / rect.width));
+        const y = Math.round((event.clientY - rect.top) * (mapImage.naturalHeight / rect.height));
+        state.point = { x, y };
+        render();
       });
-    }
 
-    function applyZoom() {
-      mapStage.style.transform = `scale(${state.zoom})`;
-      zoomValue.textContent = `${Math.round(state.zoom * 100)}%`;
-    }
+      zoomRange.addEventListener("input", () => {
+        state.zoom = Number(zoomRange.value);
+        applyZoom();
+      });
 
-    function exportPayload() {
-      return {
-        anchor: state.activePreset.title,
-        world: state.activePreset.world,
-        pixel: state.point ? { x: state.point.x, y: state.point.y } : null,
-      };
-    }
+      copyButton.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(output.value);
+          status.textContent = `Copied ${state.activePreset.title} anchor output to clipboard.`;
+        } catch {
+          status.textContent = "Clipboard copy failed. Copy the JSON manually from the box.";
+        }
+      });
 
-    function renderCrosshair() {
-      if (!state.point) {
-        crosshair.style.display = "none";
-        return;
+      clearButton.addEventListener("click", () => {
+        state.point = null;
+        render();
+      });
+
+      mapImage.addEventListener("load", () => {
+        const detlasGuess = { x: 3032, y: 5049 };
+        state.point = detlasGuess;
+        render();
+        requestAnimationFrame(() => focusPoint(detlasGuess));
+      });
+
+      if (mapImage.complete) {
+        const detlasGuess = { x: 3032, y: 5049 };
+        state.point = detlasGuess;
+        render();
+        requestAnimationFrame(() => focusPoint(detlasGuess));
       }
 
-      crosshair.style.display = "block";
-      crosshair.style.left = `${state.point.x}px`;
-      crosshair.style.top = `${state.point.y}px`;
-    }
-
-    function render() {
-      renderPresets();
-      anchorName.value = state.activePreset.title;
-      worldCoords.value = `${state.activePreset.world.x} ${state.activePreset.world.y} ${state.activePreset.world.z}`;
-      pixelX.value = state.point ? state.point.x : "";
-      pixelY.value = state.point ? state.point.y : "";
-      output.value = JSON.stringify(exportPayload(), null, 2);
-      status.textContent = state.point
-        ? `Selected pixel ${state.point.x}, ${state.point.y} for ${state.activePreset.title}.`
-        : `Click the exact anchor pixel for ${state.activePreset.title}.`;
-      renderCrosshair();
-      applyZoom();
-    }
-
-    function focusPoint(point) {
-      const targetLeft = Math.max(0, point.x * state.zoom - viewport.clientWidth / 2);
-      const targetTop = Math.max(0, point.y * state.zoom - viewport.clientHeight / 2);
-      viewport.scrollTo({ left: targetLeft, top: targetTop });
-    }
-
-    mapImage.addEventListener("click", (event) => {
-      const rect = mapImage.getBoundingClientRect();
-      const x = Math.round((event.clientX - rect.left) * (mapImage.naturalWidth / rect.width));
-      const y = Math.round((event.clientY - rect.top) * (mapImage.naturalHeight / rect.height));
-      state.point = { x, y };
       render();
-    });
-
-    zoomRange.addEventListener("input", () => {
-      state.zoom = Number(zoomRange.value);
-      applyZoom();
-    });
-
-    copyButton.addEventListener("click", async () => {
-      try {
-        await navigator.clipboard.writeText(output.value);
-        status.textContent = `Copied ${state.activePreset.title} anchor output to clipboard.`;
-      } catch {
-        status.textContent = "Clipboard copy failed. Copy the JSON manually from the box.";
-      }
-    });
-
-    clearButton.addEventListener("click", () => {
-      state.point = null;
-      render();
-    });
-
-    mapImage.addEventListener("load", () => {
-      const detlasGuess = { x: 3032, y: 5049 };
-      state.point = detlasGuess;
-      render();
-      requestAnimationFrame(() => focusPoint(detlasGuess));
-    });
-
-    if (mapImage.complete) {
-      const detlasGuess = { x: 3032, y: 5049 };
-      state.point = detlasGuess;
-      render();
-      requestAnimationFrame(() => focusPoint(detlasGuess));
-    }
-
-    render();
-  </script>
-</body>
+    </script>
+  </body>
 </html>
