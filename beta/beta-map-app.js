@@ -209,6 +209,7 @@ const state = {
   areaOffsets: loadAreaOffsets(),
   areaOffsetMode: false,
   areaOffsetDrag: null,
+  suppressMarkerClickUntil: 0,
 };
 
 const elements = {
@@ -1467,6 +1468,7 @@ function startAreaOffsetDrag(marker, latlng) {
     markerId: marker.id,
     startLatLng: { lat: latlng.lat, lng: latlng.lng },
     startOffset: { ...areaOffset(markerArea(marker)) },
+    moved: false,
   };
   setSelectedMarker(marker.id);
   if (map.dragging?.enabled()) {
@@ -1478,9 +1480,14 @@ function updateAreaOffsetDrag(latlng) {
   if (!state.areaOffsetDrag) {
     return;
   }
+  const deltaLng = latlng.lng - state.areaOffsetDrag.startLatLng.lng;
+  const deltaLat = latlng.lat - state.areaOffsetDrag.startLatLng.lat;
+  if (Math.abs(deltaLng) > 1 || Math.abs(deltaLat) > 1) {
+    state.areaOffsetDrag.moved = true;
+  }
   state.areaOffsets[state.areaOffsetDrag.areaId] = {
-    x: Math.round(state.areaOffsetDrag.startOffset.x + (latlng.lng - state.areaOffsetDrag.startLatLng.lng)),
-    y: Math.round(state.areaOffsetDrag.startOffset.y + (latlng.lat - state.areaOffsetDrag.startLatLng.lat)),
+    x: Math.round(state.areaOffsetDrag.startOffset.x + deltaLng),
+    y: Math.round(state.areaOffsetDrag.startOffset.y + deltaLat),
   };
   updateMarkerLayerPositions();
   renderPanelBanner();
@@ -1490,6 +1497,9 @@ function updateAreaOffsetDrag(latlng) {
 function finishAreaOffsetDrag() {
   if (!state.areaOffsetDrag) {
     return;
+  }
+  if (state.areaOffsetDrag.moved) {
+    state.suppressMarkerClickUntil = Date.now() + 250;
   }
   persistAreaOffsets();
   state.areaOffsetDrag = null;
@@ -1854,6 +1864,10 @@ function createMarkerLayer(marker) {
   });
 
   layer.on("click", (event) => {
+    if (Date.now() < state.suppressMarkerClickUntil) {
+      event.originalEvent?.stopPropagation?.();
+      return;
+    }
     event.originalEvent?.stopPropagation?.();
     setSelectedMarker(marker.id);
   });
@@ -1887,6 +1901,7 @@ function createMarkerLayer(marker) {
         return;
       }
 
+      state.suppressMarkerClickUntil = Date.now() + 250;
       const latlng = event.target.getLatLng();
       state.cityEdits[marker.id] = {
         x: clamp(Math.round(latlng.lng), 0, MAP_WIDTH),

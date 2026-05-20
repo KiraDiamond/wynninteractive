@@ -200,6 +200,7 @@ const state = {
   ingredientNoteDismissed: false,
   currentArea: "wynn",
   mapSelectorOpen: false,
+  suppressMarkerClickUntil: 0,
 };
 
 const elements = {
@@ -1820,6 +1821,10 @@ function createMarkerLayer(marker) {
   });
 
   layer.on("click", (event) => {
+    if (Date.now() < state.suppressMarkerClickUntil) {
+      event.originalEvent?.stopPropagation?.();
+      return;
+    }
     event.originalEvent?.stopPropagation?.();
     setSelectedMarker(marker.id);
   });
@@ -1842,6 +1847,7 @@ function createMarkerLayer(marker) {
         return;
       }
 
+      state.suppressMarkerClickUntil = Date.now() + 250;
       const latlng = event.target.getLatLng();
       state.cityEdits[marker.id] = {
         x: clamp(Math.round(latlng.lng), 0, MAP_WIDTH),
