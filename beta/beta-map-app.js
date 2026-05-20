@@ -365,12 +365,6 @@ function resetCoordinateReadout() {
   }
 }
 
-function updatePinScale() {
-  const zoom = map.getZoom();
-  const scale = zoom <= 0 ? 1 : 1 + zoom * 0.28 + zoom * zoom * 0.05;
-  document.documentElement.style.setProperty("--map-pin-scale", String(scale));
-}
-
 function currentMarkerScale() {
   const zoom = map.getZoom();
   return zoom <= 0 ? 1 : 1 + zoom * 0.28 + zoom * zoom * 0.05;
@@ -1955,6 +1949,12 @@ function applyMarkerLayerVisual(marker, layer, isVisible, isFound, isSelected) {
   layer.setIcon(buildMarkerIcon(marker, isFound, isSelected));
   if (marker.fixed) {
     bindCityTooltip(layer, marker, isFound, isSelected);
+    window.requestAnimationFrame(() => {
+      wireCityTooltip(layer, marker.id);
+      wireMarkerAnchor(layer, marker.id);
+    });
+  } else {
+    window.requestAnimationFrame(() => wireMarkerAnchor(layer, marker.id));
   }
   state.markerRenderCache.set(marker.id, nextKey);
 }
@@ -2960,7 +2960,6 @@ function syncVisibleMarkers() {
     const isFound = markerIsFound(marker);
     const isSelected = marker.id === state.selectedMarkerId;
     applyMarkerLayerVisual(marker, layer, visible, isFound, isSelected);
-    window.requestAnimationFrame(() => wireMarkerAnchor(layer, marker.id));
   }
   renderActiveAreaHighlight();
 }
@@ -3310,9 +3309,6 @@ function bindEvents() {
     }
   });
 
-  map.on("zoom", () => {
-    updatePinScale();
-  });
   map.on("zoomend", () => {
     syncVisibleMarkers();
     renderCategoryFilters();
@@ -3327,7 +3323,6 @@ setPanelView("markers");
 updateMapSelector();
 renderPanelBanner();
 renderSearchButton();
-updatePinScale();
 renderCalibrationMarkers();
 syncVisibleMarkers();
 renderCategoryFilters();

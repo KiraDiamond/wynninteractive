@@ -461,12 +461,6 @@ function resetCoordinateReadout() {
   }
 }
 
-function updatePinScale() {
-  const zoom = map.getZoom();
-  const scale = zoom <= 0 ? 1 : 1 + zoom * 0.28 + zoom * zoom * 0.05;
-  document.documentElement.style.setProperty("--map-pin-scale", String(scale));
-}
-
 function currentMarkerScale() {
   const zoom = map.getZoom();
   return zoom <= 0 ? 1 : 1 + zoom * 0.28 + zoom * zoom * 0.05;
@@ -3108,9 +3102,6 @@ function bindEvents() {
     }
   });
 
-  map.on("zoom", () => {
-    updatePinScale();
-  });
   map.on("mousemove", (event) => {
     updateCoordinateReadout(event.latlng);
   });
@@ -3131,7 +3122,6 @@ setPanelView("markers");
 renderPanelBanner();
 renderSearchButton();
 updateMapSelector();
-updatePinScale();
 renderCalibrationMarkers();
 syncVisibleMarkers();
 renderCategoryFilters();

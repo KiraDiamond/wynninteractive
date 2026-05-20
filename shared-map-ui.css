@@ -20,7 +20,6 @@
   --panel-width: 392px;
   --panel-toggle-size: 46px;
   --map-pin-size: 56px;
-  --map-pin-scale: 1;
 }
 
 :root[data-theme="dark"] {
@@ -102,7 +101,8 @@ input {
 }
 
 .leaflet-control-zoom {
-  margin-bottom: 12px !important;
+  order: 1;
+  margin-bottom: 0 !important;
   margin-right: 18px !important;
   border: 0 !important;
   border-radius: 14px !important;
@@ -114,6 +114,7 @@ input {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  gap: 10px;
 }
 
 .leaflet-control-zoom a {
@@ -136,8 +137,10 @@ input {
 }
 
 .map-coordinate-control {
+  order: 2;
   margin-right: 18px !important;
-  margin-bottom: 20px !important;
+  margin-top: 0 !important;
+  margin-bottom: 18px !important;
   padding: 8px 12px;
   border-radius: 12px;
   background: rgba(37, 52, 71, 0.88);
@@ -2540,7 +2543,7 @@ input {
 
   .map-coordinate-control {
     margin-right: 12px !important;
-    margin-bottom: 16px !important;
+    margin-bottom: 12px !important;
     padding: 7px 10px;
   }
 
