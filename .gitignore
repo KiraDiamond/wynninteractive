@@ -1,2 +1,17 @@
 node_modules/
 data/wiki-scrape/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local dev overrides
+*.local
+.env
+.env.*
