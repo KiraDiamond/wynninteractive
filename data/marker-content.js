@@ -4,6 +4,7 @@ import { GENERATED_FAST_TRAVEL_CONTENT } from "./generated-fast-travel-content.j
 import { GENERATED_SEASKIPPER_CONTENT } from "./generated-seaskipper-content.js?v=20260519d";
 import { GENERATED_PROFESSION_MARKER_CONTENT } from "./generated-profession-marker-content.js?v=20260518u";
 import { GENERATED_SUPPLEMENTAL_MARKER_CONTENT } from "./generated-supplemental-marker-content.js?v=20260517ac";
+import { GENERATED_CAVE_MARKER_CONTENT } from "./generated-cave-marker-content.js?v=20260520a";
 import { GENERATED_MOB_CONTENT } from "./generated-mob-content.js?v=20260518i";
 
 const BASE_MARKER_CONTENT = {
@@ -12,6 +13,7 @@ const BASE_MARKER_CONTENT = {
   ...GENERATED_SEASKIPPER_CONTENT,
   ...GENERATED_PROFESSION_MARKER_CONTENT,
   ...GENERATED_SUPPLEMENTAL_MARKER_CONTENT,
+  ...GENERATED_CAVE_MARKER_CONTENT,
   ...GENERATED_MOB_CONTENT,
 };
 
@@ -141,6 +143,14 @@ const MANUAL_MARKER_OVERRIDES = {
     sourceUrl: "https://wynncraft.wiki.gg/wiki/From_the_Mountains",
   },
   "atlas-quests-lazarus-pit--1025--5302": {
+    summary: "Level 69 quest in Gelibord. Defend the town, investigate the Lazarus Pit legend, solve the crypt graves, then cut the pit off from the river.",
+    explanation: "Stage 1\n• Speak to Burtur in Gelibord at [-1025, 47, -5302].\n• Survive the undead attack and help defend the town for 30 seconds.\n\nStage 2\n• Talk to Burtur again and walk to the pyre near [-998, 47, -5273].\n• After the funeral dialogue, head north to Gelibord's graveyard to investigate the Lazarus Pit rumor.\n\nStage 3\n• Find the Order's mage in the graveyard at [-999, 49, -5340].\n• Use the Rusty Shovel on graves until the final dig spawns the mage and drops the talisman.\n\nStage 4\n• Go to the Order chapel at [-1125, 45, -5489].\n• Read the crypt riddle, then grab the bucket in the nearby shack at [-1099, 42, -5456] and collect Lazarus Water outside.\n\nStage 5\n• Revive the four graves and finish each task:\n• Blue flag: revive Lord Plaatic and kill 10 Ghastly Ghouls.\n• Red flag: revive Sir Pigglesworth and recover the Wedding Band from the hole at [-1068, 40, -5494] near the Lich's Tower.\n• Green flag: revive Uggword and defeat him.\n• Yellow flag: revive Poclo, visit the house at [-1105, 42, -5381], check on Mrs. Fluffles in the basement, then report back.\n\nStage 6\n• Open the crypt door, read the inner chamber book, and head to the debris at [-957, 47, -5438].\n• Blast the blockage with a spell, jump into the pit, and clear the three mob waves inside.\n\nStage 7\n• Find a way to block the water pillar in the Lazarus Pit.\n• Return to Burtur in Gelibord once the pit is sealed off from the river.",
+    coverImage: "https://wynncraft.wiki.gg/images/thumb/Burtur.png/200px-Burtur.png?3b7f93",
+    gallery: [
+      "https://wynncraft.wiki.gg/images/thumb/Burtur.png/200px-Burtur.png?3b7f93",
+      "https://wynncraft.wiki.gg/images/thumb/LordPlaatictheKind.png/250px-LordPlaatictheKind.png?db31b5",
+      "https://wynncraft.wiki.gg/images/thumb/SirPigglesworththeThirty-Fifth.png/250px-SirPigglesworththeThirty-Fifth.png?479608",
+    ],
     sourceUrl: "https://wynncraft.wiki.gg/wiki/Lazarus_Pit_(Quest)",
   },
   "atlas-quests-out-of-my-mind--860--961": {
