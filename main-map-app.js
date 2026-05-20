@@ -2887,6 +2887,8 @@ function bindEvents() {
       event.target.closest(".marker-panel") ||
       event.target.closest(".panel-edge-toggle") ||
       event.target.closest(".leaflet-marker-icon") ||
+      event.target.closest(".map-pin-wrapper") ||
+      event.target.closest(".asset-pin-shell") ||
       event.target.closest(".leaflet-control") ||
       event.target.closest(".image-lightbox") ||
       event.target.closest(".intro-modal")
@@ -2907,7 +2909,12 @@ function bindEvents() {
     if (state.calibrationMode) {
       return;
     }
-    if (event.target.closest(".leaflet-marker-icon") || event.target.closest(".leaflet-control")) {
+    if (
+      event.target.closest(".leaflet-marker-icon") ||
+      event.target.closest(".map-pin-wrapper") ||
+      event.target.closest(".asset-pin-shell") ||
+      event.target.closest(".leaflet-control")
+    ) {
       return;
     }
     clearSelectedMarker();
