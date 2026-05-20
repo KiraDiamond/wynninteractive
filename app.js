@@ -844,12 +844,49 @@ function bossAltarIngredientMeta(marker, entry) {
   return { raw, itemName };
 }
 
+function miniQuestIngredientOptions(marker, entry) {
+  if (marker.category !== "mini_quests") {
+    return [];
+  }
+
+  const seen = new Set();
+  return String(entry.explanation || "")
+    .split("\n")
+    .map((line) => line.replace(/^[•»]\s*/, "").trim())
+    .filter((line) => /^Bring\s+/i.test(line))
+    .map((line) => {
+      const match = line.match(/^Bring\s+([\d?()]+)\s+(.+?)\.?$/i);
+      if (!match) {
+        return null;
+      }
+
+      const rawItem = String(match[2] || "").trim();
+      if (!rawItem || /\bkilled\b$/i.test(rawItem)) {
+        return null;
+      }
+
+      const itemName = rawItem.trim();
+      const key = itemName.toLowerCase();
+      if (seen.has(key) || !mobMarkersForIngredient(itemName).length) {
+        return null;
+      }
+
+      seen.add(key);
+      return {
+        raw: `${match[1]} ${itemName}`,
+        itemName,
+      };
+    })
+    .filter(Boolean);
+}
+
 function contentPreviewHtml(marker, entry) {
   const blocks = [];
   const gallery = entry.gallery.filter((url) => url !== entry.coverImage);
   const referenceLinks = entry.links;
   const tutorials = entry.tutorials;
   const altarIngredient = bossAltarIngredientMeta(marker, entry);
+  const miniQuestIngredients = miniQuestIngredientOptions(marker, entry);
 
   if (entry.coverImage) {
     const coverUrl = resolveImageUrl(entry.coverImage);
@@ -937,6 +974,21 @@ function contentPreviewHtml(marker, entry) {
           <button type="button" class="content-link-chip" data-ingredient-mobs="${escapeAttribute(altarIngredient.itemName)}">
             ${escapeHtml(`Show where to get ${altarIngredient.raw}`)}
           </button>
+        </div>
+      </section>
+    `);
+  }
+
+  if (miniQuestIngredients.length) {
+    blocks.push(`
+      <section class="content-block content-links">
+        <h3>${miniQuestIngredients.length === 1 ? "Required Item" : "Required Items"}</h3>
+        <div class="content-link-list">
+          ${miniQuestIngredients.map((item) => `
+            <button type="button" class="content-link-chip" data-ingredient-mobs="${escapeAttribute(item.itemName)}">
+              ${escapeHtml(`Show where to get ${item.raw}`)}
+            </button>
+          `).join("")}
         </div>
       </section>
     `);
@@ -1449,6 +1501,7 @@ function focusIngredientMobs(ingredientName) {
   state.activeMobFamily = matches[0].category;
   setPanelCollapsed(false);
   syncVisibleMarkers();
+  renderSearchButton();
   renderCategoryFilters();
   renderPanelBanner();
   setSelectedMarker(matches[0].id);
@@ -1469,6 +1522,7 @@ function clearIngredientTracking() {
     state.selectedMarkerId = null;
   }
   syncVisibleMarkers();
+  renderSearchButton();
   renderCategoryFilters();
   renderPanelBanner();
   renderDetailCard();
