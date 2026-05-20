@@ -210,6 +210,7 @@ const state = {
   areaOffsetMode: false,
   areaOffsetDrag: null,
   suppressMarkerClickUntil: 0,
+  markerPointerPress: null,
 };
 
 const elements = {
@@ -1863,6 +1864,18 @@ function createMarkerLayer(marker) {
     autoPan: marker.fixed,
   });
 
+  layer.on("mousedown", (event) => {
+    const source = event.originalEvent;
+    if (!source) {
+      return;
+    }
+    state.markerPointerPress = {
+      markerId: marker.id,
+      x: source.clientX,
+      y: source.clientY,
+      moved: false,
+    };
+  });
   layer.on("click", (event) => {
     if (Date.now() < state.suppressMarkerClickUntil) {
       event.originalEvent?.stopPropagation?.();
@@ -3130,6 +3143,22 @@ function bindEvents() {
       return;
     }
     clearSelectedMarker();
+  });
+  document.addEventListener("mouseup", () => {
+    if (state.markerPointerPress?.moved) {
+      state.suppressMarkerClickUntil = Date.now() + 250;
+    }
+    state.markerPointerPress = null;
+  });
+  document.addEventListener("mousemove", (event) => {
+    if (!state.markerPointerPress) {
+      return;
+    }
+    const deltaX = event.clientX - state.markerPointerPress.x;
+    const deltaY = event.clientY - state.markerPointerPress.y;
+    if (Math.abs(deltaX) > 4 || Math.abs(deltaY) > 4) {
+      state.markerPointerPress.moved = true;
+    }
   });
   map.on("mousemove", (event) => {
     updateCoordinateReadout(event.latlng);

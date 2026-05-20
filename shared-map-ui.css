@@ -98,6 +98,19 @@ input {
 .leaflet-container {
   background: #121a24;
   font-family: "Barlow", sans-serif;
+  cursor: default !important;
+}
+
+.leaflet-grab,
+.leaflet-grab .leaflet-interactive,
+.leaflet-container.leaflet-grab {
+  cursor: default !important;
+}
+
+.leaflet-container.leaflet-grabbing,
+.leaflet-dragging .leaflet-container,
+.leaflet-dragging .leaflet-interactive {
+  cursor: grabbing !important;
 }
 
 .leaflet-control-zoom {
