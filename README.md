@@ -21,28 +21,10 @@ Wynnteractive Map is a static GitHub Pages map for current Wynncraft routes, gui
 - `data/wiki-map-markers.js`: generated live marker dataset used by the map
 - `data/marker-content.js`: merged marker note/content registry
 
-## Build commands
-
-- `npm run build:atlas-api`
-- `npm run build:wiki-map`
-- `npm run build:quest-content`
-- `npm run build:cave-content`
-- `npm run sync:category-caves`
-- `npm run build:quest-video-links`
-- `npm run build:supplemental-content`
-- `npm run build:fast-travel`
-- `npm run build:seaskippers`
-- `npm run build:profession-spots`
-- `npm run build:lootrun-content`
-- `npm run build:reference-images`
-- `npm run build:mob-areas`
-- `npm run build:mob-markers`
-- `npm run build:mob-icons`
-
 ## Sources and Credits
 
 - All core marker positions are from the official Wynncraft server marker data.
-- Fast travel and Seaskipper locations are from the Wynntils project.
+- Fast travel and Seaskipper locations are from the Wynntils project, and their marker art is based on Wynntils-derived travel icon assets.
 - Official API docs: [List map markers](https://docs.wynncraft.com/modules/map/list-map-markers)
 - Official API endpoint: [https://api.wynncraft.com/v3/map/locations/markers](https://api.wynncraft.com/v3/map/locations/markers)
 - Primary information source: [Wynncraft Wiki on wiki.gg](https://wynncraft.wiki.gg/wiki/Main_Page)
