@@ -365,11 +365,6 @@ function resetCoordinateReadout() {
   }
 }
 
-function currentMarkerScale() {
-  const zoom = map.getZoom();
-  return zoom <= 0 ? 1 : 1 + zoom * 0.28 + zoom * zoom * 0.05;
-}
-
 function loadFoundIds() {
   try {
     const raw = localStorage.getItem(STORAGE_KEYS.found);
@@ -1803,9 +1798,7 @@ function markerIsVisible(marker) {
 function buildMarkerIcon(marker, isFound, isSelected) {
   const meta = CATEGORY_META[marker.category];
   const isTravelMarker = marker.category === "fast_travel" || marker.category === "seaskipper";
-  const basePinSize = isTravelMarker ? 20 : MAP_PIN_SIZE;
-  const scale = currentMarkerScale();
-  const pinSize = Math.max(12, Math.round(basePinSize * scale));
+  const pinSize = isTravelMarker ? 20 : MAP_PIN_SIZE;
   const artSize = pinSize;
   if (marker.fixed) {
     if (state.areaOffsetMode) {
@@ -1920,7 +1913,7 @@ function markerRenderStateKey(marker, isVisible, isFound, isSelected) {
     isSelected ? 1 : 0,
     marker.fixed && state.editCities ? 1 : 0,
     marker.fixed && state.areaOffsetMode ? 1 : 0,
-    marker.fixed ? "city" : String(Math.round(currentMarkerScale() * 100)),
+    marker.fixed ? "city" : "pin",
   ].join(":");
 }
 
