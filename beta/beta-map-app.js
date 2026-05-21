@@ -6,8 +6,8 @@ import {
   deferredCategoryCount,
   deferredMarkerGroupForCategory,
   loadDeferredMarkersForCategory,
-} from "./data/markers.js?v=20260521e";
-import { WIKI_MAP_MARKERS } from "../data/wiki-map-markers.js?v=20260521e";
+} from "./data/markers.js?v=20260521g";
+import { WIKI_MAP_MARKERS } from "../data/wiki-map-markers.js?v=20260521g";
 import {
   contentSourceError,
   contentSourceKeyForCategory,
@@ -32,7 +32,7 @@ import {
   resolveImageUrl,
   splitMultiline,
   youtubeEmbedMeta,
-} from "../shared/app-utils.js?v=20260521e";
+} from "../shared/app-utils.js?v=20260521g";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
@@ -263,8 +263,9 @@ const elements = {
 };
 
 function currentMapImageTargetWidth() {
-  const mapWidth = document.querySelector("#map")?.clientWidth || window.innerWidth;
-  return Math.ceil(mapWidth * Math.min(window.devicePixelRatio || 1, 2));
+  const viewportWidth = window.visualViewport?.width || window.innerWidth;
+  const mapWidth = Math.max(viewportWidth - (viewportWidth >= 960 ? 360 : 0), 320);
+  return Math.ceil(mapWidth);
 }
 
 function preferredAreaImageUrl(areaId) {
@@ -312,7 +313,7 @@ async function ensureMobIconUrlsLoaded() {
     return mobIconUrlMap;
   }
   if (!mobIconUrlPromise) {
-    mobIconUrlPromise = import("../data/mob-icon-urls.js?v=20260521e")
+    mobIconUrlPromise = import("../data/mob-icon-urls.js?v=20260521g")
       .then((module) => {
         mobIconUrlMap = module.MOB_ICON_URLS;
         return mobIconUrlMap;
@@ -329,7 +330,7 @@ async function ensureReferenceImageUrlsLoaded() {
     return referenceImageUrlMap;
   }
   if (!referenceImageUrlPromise) {
-    referenceImageUrlPromise = import("../data/reference-images.js?v=20260521e")
+    referenceImageUrlPromise = import("../data/reference-images.js?v=20260521g")
       .then((module) => {
         referenceImageUrlMap = module.REFERENCE_IMAGE_URLS;
         return referenceImageUrlMap;

@@ -9,26 +9,11 @@
       content="Wynncraft interactive map with quests, discoveries, caves, dungeons, raids, and lootrun camps."
     />
     <link rel="icon" type="image/png" href="./assets/icon.png" />
-    <script>
-      (() => {
-        const dpr = Math.min(window.devicePixelRatio || 1, 2);
-        const mapWidth = Math.max(window.innerWidth - (window.innerWidth >= 960 ? 360 : 0), 320);
-        const targetWidth = Math.ceil(mapWidth * dpr);
-        const href =
-          targetWidth <= 1200
-            ? "./assets/map/WynncraftMapFruma-1152.avif"
-            : targetWidth <= 1600
-              ? "./assets/map/WynncraftMapFruma-1536.avif"
-              : "./assets/map/WynncraftMapFruma-2304.avif";
-        const preload = document.createElement("link");
-        preload.rel = "preload";
-        preload.as = "image";
-        preload.href = href;
-        preload.setAttribute("fetchpriority", "high");
-        document.head.appendChild(preload);
-      })();
-    </script>
-    <link rel="stylesheet" href="./assets/vendor/leaflet/leaflet.css?v=20260521e" />
+    <link rel="preload" as="image" href="./assets/map/WynncraftMapFruma-1152.avif" fetchpriority="high" />
+    <link rel="preload" as="font" type="font/woff2" href="./assets/fonts/barlow-400-latin.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="./assets/fonts/barlow-500-latin.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="./assets/fonts/barlow-600-latin.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="./assets/fonts/barlow-700-latin.woff2" crossorigin />
     <link rel="canonical" href="https://kiradiamond.github.io/wynninteractive/" />
     <script>
       if (window.location.search.includes("v=")) {
@@ -47,7 +32,7 @@
         }
       } catch {}
     </script>
-    <link rel="stylesheet" href="./shared-map-ui.css?v=20260521e" />
+    <link rel="stylesheet" href="./shared-map-ui.css?v=20260521g" />
   </head>
   <body>
     <div class="app-shell">
@@ -239,6 +224,6 @@
     </div>
 
     <script src="./assets/vendor/leaflet/leaflet.js?v=20260521e"></script>
-    <script type="module" src="./main-map-app.js?v=20260521e"></script>
+    <script type="module" src="./main-map-app.js?v=20260521g"></script>
   </body>
 </html>
