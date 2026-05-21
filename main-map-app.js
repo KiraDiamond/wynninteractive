@@ -2741,6 +2741,7 @@ function clearSelectedMarker({ resetMobFamily = true } = {}) {
   }
 
   state.selectedMarkerId = null;
+  setPanelView("markers");
   if (resetMobFamily) {
     state.activeMobFamily = null;
   }
@@ -2933,6 +2934,9 @@ function bindEvents() {
 
   map.getContainer().addEventListener("click", (event) => {
     if (state.calibrationMode) {
+      return;
+    }
+    if (Date.now() < state.suppressMarkerClickUntil) {
       return;
     }
     if (
