@@ -694,10 +694,15 @@ function suppressClicksAfterDrag(durationMs = 350) {
 function setPanelView(view) {
   state.panelView = view;
   elements.panelTabs.forEach((button) => {
-    button.classList.toggle("active", button.dataset.panelView === view);
+    const active = button.dataset.panelView === view;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-selected", String(active));
+    button.tabIndex = active ? 0 : -1;
   });
   elements.panelViews.forEach((panel) => {
-    panel.classList.toggle("hidden", panel.dataset.panelScreen !== view);
+    const active = panel.dataset.panelScreen === view;
+    panel.classList.toggle("hidden", !active);
+    panel.setAttribute("aria-hidden", String(!active));
   });
 }
 
@@ -3251,6 +3256,28 @@ function bindEvents() {
   elements.panelTabs.forEach((button) => {
     button.addEventListener("click", () => {
       setPanelView(button.dataset.panelView);
+    });
+    button.addEventListener("keydown", (event) => {
+      const tabs = [...elements.panelTabs];
+      const currentIndex = tabs.indexOf(button);
+      if (currentIndex < 0) {
+        return;
+      }
+      let nextIndex = currentIndex;
+      if (event.key === "ArrowRight") {
+        nextIndex = (currentIndex + 1) % tabs.length;
+      } else if (event.key === "ArrowLeft") {
+        nextIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+      } else if (event.key === "Home") {
+        nextIndex = 0;
+      } else if (event.key === "End") {
+        nextIndex = tabs.length - 1;
+      } else {
+        return;
+      }
+      event.preventDefault();
+      tabs[nextIndex].focus();
+      setPanelView(tabs[nextIndex].dataset.panelView);
     });
   });
 
