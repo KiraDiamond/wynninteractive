@@ -419,9 +419,10 @@ function updateCoordinateReadout(latlng) {
   if (!coordinateLabel) {
     return;
   }
-  const x = Math.round(clamp(latlng.lng, 0, MAP_WIDTH));
-  const z = Math.round(clamp(latlng.lat, 0, MAP_HEIGHT));
-  coordinateLabel.textContent = `X ${x}  Z ${z}`;
+  const normalizedX = clamp(latlng.lng / MAP_WIDTH, 0, 1);
+  const normalizedY = clamp(latlng.lat / MAP_HEIGHT, 0, 1);
+  const world = imageToWorld(normalizedX, normalizedY);
+  coordinateLabel.textContent = `X ${world.x}  Z ${world.z}`;
 }
 
 function resetCoordinateReadout() {
