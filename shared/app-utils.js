@@ -251,6 +251,50 @@ function extractGoogleDriveId(url) {
 }
 
 /**
+ * Converts a local filesystem-backed asset URL into a site-relative asset URL.
+ * This repairs generated mappings that were built from local `file:///` paths.
+ * @param {string} url - Source URL that may point at a local file.
+ * @returns {string} Browser-servable asset URL when the path targets `/assets/`.
+ */
+export function normalizeLocalAssetUrl(url) {
+  if (!url) {
+    return url;
+  }
+
+  const resolveAssetUrl = (assetPath) => {
+    const normalizedAssetPath = assetPath.startsWith("/assets/") ? assetPath : `/assets/${assetPath}`;
+    const pathname = window.location.pathname || "/";
+    const betaIndex = pathname.indexOf("/beta/");
+    const basePath = betaIndex >= 0
+      ? pathname.slice(0, betaIndex)
+      : pathname.replace(/\/[^/]*$/, "");
+    return `${window.location.origin}${basePath}${normalizedAssetPath}`;
+  };
+
+  try {
+    const parsed = new URL(url, window.location.href);
+    if (parsed.protocol !== "file:") {
+      return url;
+    }
+
+    const assetIndex = parsed.pathname.toLowerCase().indexOf("/assets/");
+    if (assetIndex < 0) {
+      return url;
+    }
+
+    return resolveAssetUrl(parsed.pathname.slice(assetIndex));
+  } catch {
+    const normalized = String(url).replaceAll("\\", "/");
+    const lower = normalized.toLowerCase();
+    const assetIndex = lower.indexOf("/assets/");
+    if (assetIndex < 0) {
+      return url;
+    }
+    return resolveAssetUrl(normalized.slice(assetIndex));
+  }
+}
+
+/**
  * Builds YouTube embed metadata from a YouTube watch, share, shorts, or embed URL.
  * @param {string} url - Source YouTube URL.
  * @returns {{embedUrl: string, isShort: boolean}|null} Embed metadata when recognized.
@@ -299,17 +343,19 @@ export function preferLocalAvif(url) {
     return url;
   }
 
+  const normalizedUrl = normalizeLocalAssetUrl(url);
+
   try {
-    const parsed = new URL(url, window.location.href);
+    const parsed = new URL(normalizedUrl, window.location.href);
     const isLocalAsset = parsed.origin === window.location.origin && parsed.pathname.includes("/assets/");
     if (!isLocalAsset) {
-      return url;
+      return normalizedUrl;
     }
 
     parsed.pathname = parsed.pathname.replace(/\.(png|jpe?g|webp)$/i, ".avif");
     return parsed.toString();
   } catch {
-    return String(url).replace(/\.(png|jpe?g|webp)(\?.*)?$/i, ".avif$2");
+    return String(normalizedUrl).replace(/\.(png|jpe?g|webp)(\?.*)?$/i, ".avif$2");
   }
 }
 
@@ -321,7 +367,7 @@ export function preferLocalAvif(url) {
  * @returns {string} Final image URL to render.
  */
 export function resolveImageUrl(url, iconUrls, referenceUrls) {
-  const mapped = iconUrls[url] || referenceUrls[url] || url;
+  const mapped = normalizeLocalAssetUrl(iconUrls[url] || referenceUrls[url] || url);
   const fileId = extractGoogleDriveId(mapped);
   if (fileId) {
     return `https://drive.google.com/thumbnail?id=${fileId}&sz=w1600`;
