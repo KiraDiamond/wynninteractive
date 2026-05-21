@@ -9,13 +9,17 @@
       content="Wynncraft interactive map with quests, discoveries, caves, dungeons, raids, and lootrun camps."
     />
     <link rel="icon" type="image/png" href="./assets/icon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script>
       (() => {
         const dpr = Math.min(window.devicePixelRatio || 1, 2);
-        const targetWidth = Math.ceil(Math.max(window.innerWidth, window.innerHeight) * dpr);
-        const href = targetWidth <= 1600 ? "./assets/map/WynncraftMapFruma-1536.avif" : "./assets/map/WynncraftMapFruma-2304.avif";
+        const mapWidth = Math.max(window.innerWidth - (window.innerWidth >= 960 ? 360 : 0), 320);
+        const targetWidth = Math.ceil(mapWidth * dpr);
+        const href =
+          targetWidth <= 1200
+            ? "./assets/map/WynncraftMapFruma-1152.avif"
+            : targetWidth <= 1600
+              ? "./assets/map/WynncraftMapFruma-1536.avif"
+              : "./assets/map/WynncraftMapFruma-2304.avif";
         const preload = document.createElement("link");
         preload.rel = "preload";
         preload.as = "image";
@@ -24,8 +28,7 @@
         document.head.appendChild(preload);
       })();
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+    <link rel="stylesheet" href="./assets/vendor/leaflet/leaflet.css?v=20260521e" />
     <link rel="canonical" href="https://kiradiamond.github.io/wynninteractive/" />
     <script>
       if (window.location.search.includes("v=")) {
@@ -44,7 +47,7 @@
         }
       } catch {}
     </script>
-    <link rel="stylesheet" href="./shared-map-ui.css?v=20260521c" />
+    <link rel="stylesheet" href="./shared-map-ui.css?v=20260521e" />
   </head>
   <body>
     <div class="app-shell">
@@ -235,7 +238,7 @@
       </div>
     </div>
 
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-    <script type="module" src="./main-map-app.js?v=20260521c"></script>
+    <script src="./assets/vendor/leaflet/leaflet.js?v=20260521e"></script>
+    <script type="module" src="./main-map-app.js?v=20260521e"></script>
   </body>
 </html>

@@ -6,8 +6,8 @@ import {
   deferredCategoryCount,
   deferredMarkerGroupForCategory,
   loadDeferredMarkersForCategory,
-} from "./data/markers.js?v=20260521c";
-import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260521c";
+} from "./data/markers.js?v=20260521e";
+import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260521e";
 import {
   contentSourceError,
   contentSourceKeyForCategory,
@@ -32,7 +32,7 @@ import {
   resolveImageUrl,
   splitMultiline,
   youtubeEmbedMeta,
-} from "./shared/app-utils.js?v=20260521c";
+} from "./shared/app-utils.js?v=20260521e";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
@@ -66,6 +66,7 @@ const MAP_AREAS = {
     buttonLabel: "Wynncraft Map",
     imageUrl: new URL("./assets/map/WynncraftMapFruma-2304.avif", import.meta.url).href,
     mobileImageUrl: new URL("./assets/map/WynncraftMapFruma-1536.avif", import.meta.url).href,
+    compactImageUrl: new URL("./assets/map/WynncraftMapFruma-1152.avif", import.meta.url).href,
     fullImageUrl: new URL("./assets/map/WynncraftMapFruma.avif", import.meta.url).href,
   },
 };
@@ -253,13 +254,17 @@ const elements = {
 };
 
 function currentMapImageTargetWidth() {
-  return Math.ceil(Math.max(window.innerWidth, window.innerHeight) * Math.min(window.devicePixelRatio || 1, 2));
+  const mapWidth = document.querySelector("#map")?.clientWidth || window.innerWidth;
+  return Math.ceil(mapWidth * Math.min(window.devicePixelRatio || 1, 2));
 }
 
 function preferredAreaImageUrl(areaId) {
   const area = MAP_AREAS[areaId];
   if (!area) {
     return "";
+  }
+  if (area.compactImageUrl && currentMapImageTargetWidth() <= 1200) {
+    return area.compactImageUrl;
   }
   if (!area.mobileImageUrl) {
     return area.imageUrl;
@@ -298,7 +303,7 @@ async function ensureMobIconUrlsLoaded() {
     return mobIconUrlMap;
   }
   if (!mobIconUrlPromise) {
-    mobIconUrlPromise = import("./data/mob-icon-urls.js?v=20260521c")
+    mobIconUrlPromise = import("./data/mob-icon-urls.js?v=20260521e")
       .then((module) => {
         mobIconUrlMap = module.MOB_ICON_URLS;
         return mobIconUrlMap;
@@ -315,7 +320,7 @@ async function ensureReferenceImageUrlsLoaded() {
     return referenceImageUrlMap;
   }
   if (!referenceImageUrlPromise) {
-    referenceImageUrlPromise = import("./data/reference-images.js?v=20260521c")
+    referenceImageUrlPromise = import("./data/reference-images.js?v=20260521e")
       .then((module) => {
         referenceImageUrlMap = module.REFERENCE_IMAGE_URLS;
         return referenceImageUrlMap;
