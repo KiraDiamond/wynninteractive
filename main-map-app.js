@@ -970,12 +970,12 @@ function contentPreviewHtml(marker, entry) {
       const body = allBullets
         ? html`
             <ul>
-              ${items.map((line) => html`<li>${line.replace(/^[•»]\s*/, "")}</li>`)}
+              ${html.raw(items.map((line) => html`<li>${line.replace(/^[•»]\s*/, "")}</li>`).join(""))}
             </ul>
           `
         : html`
             <div class="content-step-copy">
-              ${items.map((line) => html`<p>${line}</p>`)}
+              ${html.raw(items.map((line) => html`<p>${line}</p>`).join(""))}
             </div>
           `;
 
@@ -999,7 +999,7 @@ function contentPreviewHtml(marker, entry) {
               <section class="content-step">
                 <h3>${title}</h3>
                 <ul>
-                  ${items.map((line) => html`<li>${line.replace(/^[•»]\s*/, "")}</li>`)}
+                  ${html.raw(items.map((line) => html`<li>${line.replace(/^[•»]\s*/, "")}</li>`).join(""))}
                 </ul>
               </section>
             `;
@@ -1021,10 +1021,10 @@ function contentPreviewHtml(marker, entry) {
     } else if (sectionCards) {
       blocks.push(html`<div class="content-steps">${html.raw(sectionCards)}</div>`);
     } else {
-      const paragraphs = sections.map((lines) =>
-        html`<p>${html.raw(escapeHtml(lines.join("\n")).replaceAll("\n", "<br>"))}</p>`
-      );
-      blocks.push(html`<div class="content-prose">${paragraphs}</div>`);
+      const paragraphs = sections
+        .map((lines) => html`<p>${html.raw(escapeHtml(lines.join("\n")).replaceAll("\n", "<br>"))}</p>`)
+        .join("");
+      blocks.push(html`<div class="content-prose">${html.raw(paragraphs)}</div>`);
     }
   }
 
@@ -1055,12 +1055,16 @@ function contentPreviewHtml(marker, entry) {
       <section class="content-block content-links">
         <h3>${miniQuestIngredients.length === 1 ? "Required Item" : "Required Items"}</h3>
         <div class="content-link-list">
-          ${miniQuestIngredients.map(
-            (item) => html`
+          ${html.raw(
+            miniQuestIngredients
+              .map(
+                (item) => html`
               <button type="button" class="content-link-chip" data-ingredient-mobs="${item.itemName}">
                 ${`Show where to get ${item.raw}`}
               </button>
             `
+              )
+              .join("")
           )}
         </div>
       </section>
@@ -1072,12 +1076,16 @@ function contentPreviewHtml(marker, entry) {
       <section class="content-block content-links">
         <h3>Reference Links</h3>
         <div class="content-link-list">
-          ${referenceLinks.map(
-            (item) => html`
+          ${html.raw(
+            referenceLinks
+              .map(
+                (item) => html`
               <a class="content-link-chip" href="${item.url}" target="_blank" rel="noreferrer">
                 ${item.label}
               </a>
             `
+              )
+              .join("")
           )}
         </div>
       </section>
@@ -1089,12 +1097,16 @@ function contentPreviewHtml(marker, entry) {
   if (embeddableGallery.length) {
     blocks.push(html`
       <div class="content-gallery">
-        ${embeddableGallery.map(
-          (url, index) => html`
+        ${html.raw(
+          embeddableGallery
+            .map(
+              (url, index) => html`
             <button type="button" class="content-image-button content-thumb" data-preview-image="${url}" data-preview-caption="${marker.title} reference image ${index + 1}">
               <img src="${url}" alt="${marker.title} gallery ${index + 1}" loading="lazy" referrerpolicy="no-referrer">
             </button>
           `
+            )
+            .join("")
         )}
       </div>
     `);
@@ -1252,7 +1264,7 @@ function worldEventDetailsHtml(marker) {
         <section class="event-detail-block">
           <h4>Enemies</h4>
           <ul>
-            ${enemies.map((enemy) => html`<li>${enemy}</li>`)}
+            ${html.raw(enemies.map((enemy) => html`<li>${enemy}</li>`).join(""))}
           </ul>
         </section>
       `
@@ -1270,7 +1282,7 @@ function worldEventDetailsHtml(marker) {
         <section class="event-detail-block drops">
           <h4>Drops</h4>
           <div class="event-drop-list">
-            ${drops.map((drop) => html`<span class="event-drop-chip">${drop}</span>`)}
+            ${html.raw(drops.map((drop) => html`<span class="event-drop-chip">${drop}</span>`).join(""))}
           </div>
         </section>
       `
@@ -1302,12 +1314,12 @@ function worldEventDetailsHtml(marker) {
       </div>
       ${
         details.requiredQuest
-          ? html`
+          ? html.raw(html`
               <div class="event-detail-row">
                 <strong>Required Quest</strong>
                 <span>${details.requiredQuest}</span>
               </div>
-            `
+            `)
           : ""
       }
       <div class="event-detail-row">
@@ -1316,12 +1328,12 @@ function worldEventDetailsHtml(marker) {
       </div>
       ${
         enemyBlock || bossBlock
-          ? html`
+          ? html.raw(html`
               <div class="event-detail-grid">
                 ${html.raw(enemyBlock)}
                 ${html.raw(bossBlock)}
               </div>
-            `
+            `)
           : ""
       }
       ${html.raw(dropsBlock)}
@@ -1968,28 +1980,28 @@ function renderMobBrowserPanel(categoryId, meta) {
       </div>
       ${
         state.trackedIngredient
-          ? html`
+          ? html.raw(html`
               <div class="mob-tracking-strip">
                 <div class="mob-tracking-copy">
                   <span>Tracking ${state.trackedIngredient}</span>
                 </div>
                 <button type="button" class="text-action" data-clear-ingredient-tracking="1">Cancel tracking</button>
               </div>
-            `
+            `)
           : ""
       }
       <p class="mob-browser-note">Pick a mob and the map will outline every exact spawn node we have for it.</p>
       <div class="mob-browser-list">
         ${
           listedMarkers.length
-            ? listedMarkers.map((marker) => {
+            ? html.raw(listedMarkers.map((marker) => {
                 const selected = marker.id === state.selectedMarkerId;
                 const secondary = [
                   marker.region || "World",
                   `${marker.spawnPointCount || 0} ${marker.spawnPointCount === 1 ? "node" : "nodes"}`,
                 ].join(" · ");
                 const mobIconUrl = markerIconUrl(marker, "active");
-                return html.raw(html`
+                return html`
                   <button
                     type="button"
                     class="mob-list-item ${selected ? "active" : ""}"
@@ -1998,7 +2010,7 @@ function renderMobBrowserPanel(categoryId, meta) {
                     <span class="mob-list-icon-shell">
                       ${
                         mobIconUrl
-                          ? html`<img class="mob-list-icon" src="${mobIconUrl}" alt="" loading="lazy" referrerpolicy="no-referrer">`
+                          ? html.raw(html`<img class="mob-list-icon" src="${mobIconUrl}" alt="" loading="lazy" referrerpolicy="no-referrer">`)
                           : html.raw(genericIconMarkup(marker.category, "mob-list-icon generic-category-icon"))
                       }
                     </span>
@@ -2008,9 +2020,9 @@ function renderMobBrowserPanel(categoryId, meta) {
                     </span>
                     <span class="mob-list-count">${marker.spawnPointCount || 0}</span>
                   </button>
-                `);
-              })
-            : html`<div class="mob-browser-empty">No ${meta.label.toLowerCase()} match the current search.</div>`
+                `;
+              }).join(""))
+            : html.raw(html`<div class="mob-browser-empty">No ${meta.label.toLowerCase()} match the current search.</div>`)
         }
       </div>
     </section>
@@ -2052,7 +2064,7 @@ function renderStandardCategoryCard(group, categoryId) {
     <button type="button" class="category-card ${active ? "active" : "inactive"}" data-category="${categoryId}">
       ${
         iconUrl
-          ? html`<span class="category-icon asset-icon" style="--category-icon:url('${iconUrl}');--category-accent:${meta.color};"></span>`
+          ? html.raw(html`<span class="category-icon asset-icon" style="--category-icon:url('${iconUrl}');--category-accent:${meta.color};"></span>`)
           : html.raw(genericIconMarkup(categoryId, "category-icon"))
       }
       <span class="category-copy">
@@ -2208,7 +2220,9 @@ function renderDetailActions(marker, supportsFound, isFound) {
     <div class="detail-actions">
       ${
         supportsFound
-          ? html`<button type="button" class="detail-button" data-action="toggle-found">${isFound ? "Mark not found" : "Mark found"}</button>`
+          ? html.raw(
+              html`<button type="button" class="detail-button" data-action="toggle-found">${isFound ? "Mark not found" : "Mark found"}</button>`
+            )
           : ""
       }
       <button type="button" class="detail-button secondary" data-action="focus">Focus</button>
@@ -2226,8 +2240,8 @@ function renderDetailContent(marker, content, contentLoading, contentError, even
         <h3>Guide & Reference</h3>
       </div>
       <div id="content-preview-body" class="content-preview-body">
-        ${contentLoading ? html`<div class="content-loading">Loading guide content…</div>` : ""}
-        ${contentError ? html`<div class="content-load-error">Guide content could not be loaded right now.</div>` : ""}
+        ${contentLoading ? html.raw(html`<div class="content-loading">Loading guide content…</div>`) : ""}
+        ${contentError ? html.raw(html`<div class="content-load-error">Guide content could not be loaded right now.</div>`) : ""}
         ${html.raw(contentPreviewHtml(marker, content))}
       </div>
     </section>
