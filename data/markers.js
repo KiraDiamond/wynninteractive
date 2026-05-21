@@ -1,8 +1,6 @@
 import { WORLD_EVENT_MARKERS } from "./world-events.js";
 import { GENERATED_FAST_TRAVEL_MARKERS } from "./generated-fast-travel-markers.js?v=20260519b";
 import { GENERATED_SEASKIPPER_MARKERS } from "./generated-seaskipper-markers.js?v=20260519d";
-import { GENERATED_PROFESSION_MARKERS } from "./generated-profession-markers.js?v=20260518u";
-import { GENERATED_MOB_MARKERS } from "./generated-mob-markers.js?v=20260518i";
 
 const MOB_CATEGORY_META = {
   hostile_mobs_zombie: { label: "Zombies", color: "#c7644f", selectable: true, icon: null },
@@ -27,6 +25,40 @@ const MOB_CATEGORY_ORDER = [
   "hostile_mobs_aquatic",
   "hostile_mobs_other",
 ];
+
+export const DEFERRED_MARKER_CATEGORY_COUNTS = {
+  hostile_mobs_zombie: 48,
+  hostile_mobs_spider: 17,
+  hostile_mobs_skeleton: 7,
+  hostile_mobs_humanoid: 130,
+  hostile_mobs_beast: 60,
+  hostile_mobs_elemental: 8,
+  hostile_mobs_construct: 25,
+  hostile_mobs_aquatic: 17,
+  hostile_mobs_other: 614,
+  profession_fishing: 44,
+  profession_farming: 48,
+  profession_mining: 51,
+  profession_woodcutting: 32,
+};
+
+const DEFERRED_MARKER_GROUPS = {
+  hostile_mobs_zombie: "mobs",
+  hostile_mobs_spider: "mobs",
+  hostile_mobs_skeleton: "mobs",
+  hostile_mobs_humanoid: "mobs",
+  hostile_mobs_beast: "mobs",
+  hostile_mobs_elemental: "mobs",
+  hostile_mobs_construct: "mobs",
+  hostile_mobs_aquatic: "mobs",
+  hostile_mobs_other: "mobs",
+  profession_fishing: "professions",
+  profession_farming: "professions",
+  profession_mining: "professions",
+  profession_woodcutting: "professions",
+};
+
+const deferredMarkerGroupPromises = new Map();
 
 export const CATEGORY_META = {
   quests: { label: "Quests", color: "#6f9eea", selectable: true, icon: "quest" },
@@ -561,8 +593,6 @@ export const CURATED_MARKERS = [
   ...WORLD_EVENT_MARKERS,
   ...GENERATED_FAST_TRAVEL_MARKERS,
   ...GENERATED_SEASKIPPER_MARKERS,
-  ...GENERATED_PROFESSION_MARKERS,
-  ...GENERATED_MOB_MARKERS,
   ...QIRA_HIVE_CONTEXT_MARKERS,
   {
     id: "atlas-raid-orphions-nexus-of-light--732--6412",
@@ -637,3 +667,30 @@ export const CURATED_MARKERS = [
     position: { world: { x: -1294, z: -1146 } },
   },
 ];
+
+export function deferredMarkerGroupForCategory(categoryId) {
+  return DEFERRED_MARKER_GROUPS[categoryId] || null;
+}
+
+export function deferredCategoryCount(categoryId) {
+  return DEFERRED_MARKER_CATEGORY_COUNTS[categoryId] || 0;
+}
+
+export async function loadDeferredMarkersForCategory(categoryId) {
+  const groupId = deferredMarkerGroupForCategory(categoryId);
+  if (!groupId) {
+    return [];
+  }
+
+  if (!deferredMarkerGroupPromises.has(groupId)) {
+    const promise =
+      groupId === "mobs"
+        ? import("./generated-mob-markers.js?v=20260521a").then((module) => module.GENERATED_MOB_MARKERS)
+        : import("./generated-profession-markers.js?v=20260521a").then(
+            (module) => module.GENERATED_PROFESSION_MARKERS,
+          );
+    deferredMarkerGroupPromises.set(groupId, promise);
+  }
+
+  return deferredMarkerGroupPromises.get(groupId);
+}

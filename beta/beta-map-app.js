@@ -1,13 +1,19 @@
-import { CATEGORY_META, CATEGORY_ORDER, CURATED_MARKERS, STARTER_MARKERS } from "./data/markers.js?v=20260520i";
-import { WIKI_MAP_MARKERS } from "../data/wiki-map-markers.js?v=20260520f";
+import {
+  CATEGORY_META,
+  CATEGORY_ORDER,
+  CURATED_MARKERS,
+  STARTER_MARKERS,
+  deferredCategoryCount,
+  deferredMarkerGroupForCategory,
+  loadDeferredMarkersForCategory,
+} from "./data/markers.js?v=20260521a";
+import { WIKI_MAP_MARKERS } from "../data/wiki-map-markers.js?v=20260521a";
 import {
   contentSourceError,
   contentSourceKeyForCategory,
   loadMarkerContentForCategory,
   manualMarkerContentEntry,
 } from "../data/marker-content-loader.js";
-import { MOB_ICON_URLS } from "../data/mob-icon-urls.js?v=20260518j";
-import { REFERENCE_IMAGE_URLS } from "../data/reference-images.js?v=20260518j";
 import {
   clamp,
   debounce,
@@ -59,7 +65,9 @@ const MAP_AREAS = {
     id: "wynn",
     label: "Wynn",
     buttonLabel: "Wynncraft Map",
-    imageUrl: new URL("../assets/map/WynncraftMapFruma.avif", import.meta.url).href,
+    imageUrl: new URL("../assets/map/WynncraftMapFruma-2304.avif", import.meta.url).href,
+    mobileImageUrl: new URL("../assets/map/WynncraftMapFruma-1536.avif", import.meta.url).href,
+    fullImageUrl: new URL("../assets/map/WynncraftMapFruma.avif", import.meta.url).href,
   },
   outer_void: {
     id: "outer_void",
@@ -200,7 +208,15 @@ const state = {
   areaOffsetDrag: null,
   suppressMarkerClickUntil: 0,
   markerPointerPress: null,
+  loadedDeferredMarkerGroups: new Set(),
+  loadingDeferredMarkerGroups: new Set(),
+  deferredDeepLinkAttempted: false,
 };
+
+let mobIconUrlMap = null;
+let mobIconUrlPromise = null;
+let referenceImageUrlMap = null;
+let referenceImageUrlPromise = null;
 
 const elements = {
   appShell: document.querySelector(".app-shell"),
@@ -244,6 +260,89 @@ const elements = {
   introClose: document.querySelector("#intro-close"),
   introStart: document.querySelector("#intro-start"),
 };
+
+function currentMapImageTargetWidth() {
+  return Math.ceil(Math.max(window.innerWidth, window.innerHeight) * Math.min(window.devicePixelRatio || 1, 2));
+}
+
+function preferredAreaImageUrl(areaId) {
+  const area = MAP_AREAS[areaId];
+  if (!area) {
+    return "";
+  }
+  if (!area.mobileImageUrl) {
+    return area.imageUrl;
+  }
+  return currentMapImageTargetWidth() <= 1600 ? area.mobileImageUrl : area.imageUrl;
+}
+
+function primeAreaFullResolutionImage(areaId) {
+  const area = MAP_AREAS[areaId];
+  if (!area?.fullImageUrl || area.fullImageUrl === baseMapOverlay._url) {
+    return;
+  }
+  const preloader = new Image();
+  preloader.decoding = "async";
+  preloader.onload = () => {
+    if (state.currentArea === areaId && baseMapOverlay._url !== area.fullImageUrl) {
+      baseMapOverlay.setUrl(area.fullImageUrl);
+    }
+  };
+  preloader.src = area.fullImageUrl;
+}
+
+function scheduleFullResolutionMapUpgrade(areaId) {
+  if (!MAP_AREAS[areaId]?.fullImageUrl) {
+    return;
+  }
+  if ("requestIdleCallback" in window) {
+    window.requestIdleCallback(() => primeAreaFullResolutionImage(areaId), { timeout: 3000 });
+    return;
+  }
+  window.setTimeout(() => primeAreaFullResolutionImage(areaId), 1200);
+}
+
+async function ensureMobIconUrlsLoaded() {
+  if (mobIconUrlMap) {
+    return mobIconUrlMap;
+  }
+  if (!mobIconUrlPromise) {
+    mobIconUrlPromise = import("../data/mob-icon-urls.js?v=20260521a")
+      .then((module) => {
+        mobIconUrlMap = module.MOB_ICON_URLS;
+        return mobIconUrlMap;
+      })
+      .finally(() => {
+        mobIconUrlPromise = null;
+      });
+  }
+  return mobIconUrlPromise;
+}
+
+async function ensureReferenceImageUrlsLoaded() {
+  if (referenceImageUrlMap) {
+    return referenceImageUrlMap;
+  }
+  if (!referenceImageUrlPromise) {
+    referenceImageUrlPromise = import("../data/reference-images.js?v=20260521a")
+      .then((module) => {
+        referenceImageUrlMap = module.REFERENCE_IMAGE_URLS;
+        return referenceImageUrlMap;
+      })
+      .finally(() => {
+        referenceImageUrlPromise = null;
+      });
+  }
+  return referenceImageUrlPromise;
+}
+
+function mobIconUrls() {
+  return mobIconUrlMap || {};
+}
+
+function referenceImageUrls() {
+  return referenceImageUrlMap || {};
+}
 
 const firstOpenCalibrationIndex = CALIBRATION_TARGETS.findIndex((target) => !state.calibrationSamples[target.id]);
 if (firstOpenCalibrationIndex >= 0) {
@@ -291,6 +390,17 @@ function renderAppearanceCard() {
   });
 }
 
+function registerRuntimeCacheWorker() {
+  if (!("serviceWorker" in navigator) || DEV_MODE) {
+    return;
+  }
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register(new URL("../sw.js", import.meta.url), {
+      scope: new URL("../", import.meta.url).pathname,
+    }).catch(() => {});
+  });
+}
+
 function applyTheme(theme, { persist = true } = {}) {
   state.theme = theme === "dark" ? "dark" : "light";
   if (state.theme === "dark") {
@@ -323,7 +433,7 @@ const map = L.map("map", {
 });
 map.zoomControl.setPosition("bottomright");
 
-const baseMapOverlay = L.imageOverlay(MAP_AREAS.wynn.imageUrl, MAP_BOUNDS).addTo(map);
+const baseMapOverlay = L.imageOverlay(preferredAreaImageUrl("wynn"), MAP_BOUNDS).addTo(map);
 map.fitBounds(MAP_BOUNDS, { padding: [24, 24] });
 
 function createCoordinateControl() {
@@ -725,6 +835,22 @@ async function ensureMarkerContentLoaded(marker) {
   }
 }
 
+function ensureMarkerAssetsLoaded(marker) {
+  if (marker?.iconImage && !mobIconUrlMap) {
+    void ensureMobIconUrlsLoaded().then(() => {
+      renderCategoryFilters();
+      renderDetailCard();
+    });
+  }
+
+  const entry = marker ? contentExportEntry(marker) : null;
+  if (entry && (entry.coverImage || entry.gallery.length) && !referenceImageUrlMap) {
+    void ensureReferenceImageUrlsLoaded().then(() => {
+      renderDetailCard();
+    });
+  }
+}
+
 function contextGroupIdForMarker(marker) {
   return marker?.contextGroupId || null;
 }
@@ -890,7 +1016,7 @@ function contentPreviewHtml(marker, entry) {
   const miniQuestIngredients = miniQuestIngredientOptions(marker, entry);
 
   if (entry.coverImage) {
-    const coverUrl = resolveImageUrl(entry.coverImage, MOB_ICON_URLS, REFERENCE_IMAGE_URLS);
+    const coverUrl = resolveImageUrl(entry.coverImage, mobIconUrls(), referenceImageUrls());
     blocks.push(html`
       <button type="button" class="content-image-button content-cover" data-preview-image="${coverUrl}" data-preview-caption="${marker.title} cover image">
         <img src="${coverUrl}" alt="${marker.title} cover image" loading="lazy" referrerpolicy="no-referrer">
@@ -1031,7 +1157,7 @@ function contentPreviewHtml(marker, entry) {
     `);
   }
 
-  const embeddableGallery = gallery.map((url) => resolveImageUrl(url, MOB_ICON_URLS, REFERENCE_IMAGE_URLS));
+  const embeddableGallery = gallery.map((url) => resolveImageUrl(url, mobIconUrls(), referenceImageUrls()));
 
   if (embeddableGallery.length) {
     blocks.push(html`
@@ -1334,8 +1460,9 @@ function categoryAssetUrl(categoryId, variant = "active") {
 }
 
 function markerIconUrl(marker, variant = "active") {
-  if (marker?.iconImage && MOB_ICON_URLS[marker.iconImage]) {
-    return preferLocalAvif(MOB_ICON_URLS[marker.iconImage]);
+  const mobIcons = mobIconUrls();
+  if (marker?.iconImage && mobIcons[marker.iconImage]) {
+    return preferLocalAvif(mobIcons[marker.iconImage]);
   }
   return categoryAssetUrl(marker?.category, variant);
 }
@@ -2045,10 +2172,59 @@ function updateMarkerLayerPositions() {
   renderActiveAreaHighlight();
 }
 
+function integrateMarkers(markers) {
+  markers.forEach((marker) => {
+    state.markers.push(marker);
+    state.markerIndex.set(marker.id, marker);
+
+    const categoryBucket = state.markersByCategory.get(marker.category) || [];
+    categoryBucket.push(marker);
+    state.markersByCategory.set(marker.category, categoryBucket);
+
+    const areaId = markerArea(marker);
+    const areaBucket = state.markersByArea.get(areaId) || [];
+    areaBucket.push(marker);
+    state.markersByArea.set(areaId, areaBucket);
+
+    createMarkerLayer(marker);
+  });
+}
+
+async function ensureDeferredCategoryLoaded(categoryId) {
+  const groupId = deferredMarkerGroupForCategory(categoryId);
+  if (!groupId || state.loadedDeferredMarkerGroups.has(groupId) || state.loadingDeferredMarkerGroups.has(groupId)) {
+    return;
+  }
+
+  state.loadingDeferredMarkerGroups.add(groupId);
+  try {
+    const markers = await loadDeferredMarkersForCategory(categoryId);
+    integrateMarkers(markers);
+    state.loadedDeferredMarkerGroups.add(groupId);
+    syncVisibleMarkers();
+    renderCategoryFilters();
+    renderDetailCard();
+  } finally {
+    state.loadingDeferredMarkerGroups.delete(groupId);
+  }
+}
+
+function ensureDeferredMarkersForSearch(searchValue) {
+  if (!searchValue) {
+    return;
+  }
+  void ensureDeferredCategoryLoaded("profession_fishing");
+  void ensureDeferredCategoryLoaded("hostile_mobs_zombie");
+}
+
 function categoryCount(categoryId) {
-  return (state.markersByCategory.get(categoryId) || []).filter(
+  const loadedCount = (state.markersByCategory.get(categoryId) || []).filter(
     (marker) => !marker.fixed && !marker.contextOnly && markerArea(marker) === state.currentArea
   ).length;
+  if (loadedCount || state.currentArea !== "wynn") {
+    return loadedCount;
+  }
+  return deferredCategoryCount(categoryId);
 }
 
 function categoryVisibleCount(categoryId) {
@@ -2197,8 +2373,9 @@ function renderCategoryFilters() {
   }).join("");
 
   elements.categoryFilters.querySelectorAll("[data-mob-family]").forEach((button) => {
-    button.addEventListener("click", () => {
+    button.addEventListener("click", async () => {
       const categoryId = button.dataset.mobFamily;
+      await ensureDeferredCategoryLoaded(categoryId);
       const nextFamily = state.activeMobFamily === categoryId ? null : categoryId;
       const selected = state.markers.find((marker) => marker.id === state.selectedMarkerId);
       state.activeMobFamily = nextFamily;
@@ -2251,12 +2428,13 @@ function renderCategoryFilters() {
   });
 
   elements.categoryFilters.querySelectorAll("[data-category]").forEach((button) => {
-    button.addEventListener("click", () => {
+    button.addEventListener("click", async () => {
       const id = button.dataset.category;
       if (state.categoryFilter.has(id)) {
         state.categoryFilter.delete(id);
       } else {
         state.categoryFilter.add(id);
+        await ensureDeferredCategoryLoaded(id);
       }
       syncVisibleMarkers();
       renderCategoryFilters();
@@ -2264,7 +2442,7 @@ function renderCategoryFilters() {
   });
 
   elements.categoryFilters.querySelectorAll("[data-group-action]").forEach((button) => {
-    button.addEventListener("click", () => {
+    button.addEventListener("click", async () => {
       const group = CATEGORY_GROUPS.find((entry) => entry.id === button.dataset.group);
       if (!group) {
         return;
@@ -2277,6 +2455,9 @@ function renderCategoryFilters() {
           state.categoryFilter.delete(categoryId);
         }
       });
+      if (select) {
+        await Promise.all(group.categories.map((categoryId) => ensureDeferredCategoryLoaded(categoryId)));
+      }
       syncVisibleMarkers();
       renderCategoryFilters();
     });
@@ -2363,6 +2544,7 @@ function renderDetailCard() {
   }
 
   void ensureMarkerContentLoaded(marker);
+  ensureMarkerAssetsLoaded(marker);
 
   const point = markerPoint(marker);
   const world = marker.position?.world || imageToWorld(point.x, point.y);
@@ -2473,10 +2655,11 @@ function renderDetailCard() {
   });
 
   interactiveRoot.querySelectorAll("[data-ingredient-mobs]").forEach((button) => {
-    button.addEventListener("click", (event) => {
+    button.addEventListener("click", async (event) => {
       event.preventDefault();
       event.stopPropagation();
       const ingredient = button.dataset.ingredientMobs || "";
+      await ensureDeferredCategoryLoaded("hostile_mobs_zombie");
       focusIngredientMobs(ingredient);
     });
   });
@@ -2744,7 +2927,7 @@ function setCurrentArea(areaId) {
   }
 
   state.currentArea = areaId;
-  baseMapOverlay.setUrl(MAP_AREAS[areaId].imageUrl);
+  baseMapOverlay.setUrl(preferredAreaImageUrl(areaId));
 
   const selected = state.markers.find((marker) => marker.id === state.selectedMarkerId);
   if (selected && markerArea(selected) !== areaId) {
@@ -2768,6 +2951,15 @@ function setCurrentArea(areaId) {
 function applyInitialMarkerDeepLink() {
   const marker = findMarkerByTitle(state.markers, INITIAL_MARKER_QUERY);
   if (!marker) {
+    if (INITIAL_MARKER_QUERY && !state.deferredDeepLinkAttempted) {
+      state.deferredDeepLinkAttempted = true;
+      Promise.all([
+        ensureDeferredCategoryLoaded("profession_fishing"),
+        ensureDeferredCategoryLoaded("hostile_mobs_zombie"),
+      ]).then(() => {
+        applyInitialMarkerDeepLink();
+      });
+    }
     return;
   }
 
@@ -3006,21 +3198,11 @@ function hydrateMarkerState() {
   const wikiMarkers = WIKI_MAP_MARKERS.map((marker) =>
     marker.id === "atlas-quests-the-qira-hive-372--5501" ? { ...marker, contextGroupId: "qira-hive" } : marker
   ).filter((marker) => marker.category !== "world_events");
-  state.markers = [...fixedCities, ...curatedSupplemental, ...wikiMarkers];
-  state.markerIndex = new Map(state.markers.map((marker) => [marker.id, marker]));
+  state.markers = [];
+  state.markerIndex = new Map();
   state.markersByCategory = new Map();
   state.markersByArea = new Map();
-  state.markers.forEach((marker) => {
-    const categoryBucket = state.markersByCategory.get(marker.category) || [];
-    categoryBucket.push(marker);
-    state.markersByCategory.set(marker.category, categoryBucket);
-
-    const areaId = markerArea(marker);
-    const areaBucket = state.markersByArea.get(areaId) || [];
-    areaBucket.push(marker);
-    state.markersByArea.set(areaId, areaBucket);
-  });
-  state.markers.forEach(createMarkerLayer);
+  integrateMarkers([...fixedCities, ...curatedSupplemental, ...wikiMarkers]);
 }
 
 function refreshTransformFromSamples() {
@@ -3050,6 +3232,7 @@ function recordCalibrationSample(latlng) {
 function bindEvents() {
   const debouncedSearchUpdate = debounce((value) => {
     state.search = value;
+    ensureDeferredMarkersForSearch(value);
     renderSearchButton();
     syncVisibleMarkers();
     renderCategoryFilters();
@@ -3270,8 +3453,10 @@ function bindEvents() {
   }
 
   if (elements.showAllCategories) {
-    elements.showAllCategories.addEventListener("click", () => {
+    elements.showAllCategories.addEventListener("click", async () => {
       state.categoryFilter = new Set(CATEGORY_ORDER);
+      await ensureDeferredCategoryLoaded("profession_fishing");
+      await ensureDeferredCategoryLoaded("hostile_mobs_zombie");
       syncVisibleMarkers();
       renderCategoryFilters();
     });
@@ -3412,6 +3597,9 @@ function bindEvents() {
   });
 
   map.on("zoomend", () => {
+    if (map.getZoom() > -0.5) {
+      scheduleFullResolutionMapUpgrade(state.currentArea);
+    }
     syncVisibleMarkers();
     renderCategoryFilters();
   });
@@ -3433,3 +3621,4 @@ renderCityEditor();
 renderCalibrationPanel();
 applyInitialMarkerDeepLink();
 maybeOpenIntroModal();
+registerRuntimeCacheWorker();

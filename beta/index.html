@@ -12,6 +12,20 @@
     <link rel="icon" type="image/png" href="../assets/icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script>
+      (() => {
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        const targetWidth = Math.ceil(Math.max(window.innerWidth, window.innerHeight) * dpr);
+        const href =
+          targetWidth <= 1600 ? "../assets/map/WynncraftMapFruma-1536.avif" : "../assets/map/WynncraftMapFruma-2304.avif";
+        const preload = document.createElement("link");
+        preload.rel = "preload";
+        preload.as = "image";
+        preload.href = href;
+        preload.setAttribute("fetchpriority", "high");
+        document.head.appendChild(preload);
+      })();
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
     <link rel="canonical" href="https://kiradiamond.github.io/wynninteractive/beta/" />
@@ -224,6 +238,6 @@
     </div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-    <script type="module" src="./beta-map-app.js?v=20260520p"></script>
+    <script type="module" src="./beta-map-app.js?v=20260521a"></script>
   </body>
 </html>
