@@ -570,6 +570,10 @@ function markerLatLng(marker) {
   return [point.y * MAP_HEIGHT, point.x * MAP_WIDTH];
 }
 
+function suppressClicksAfterDrag(durationMs = 350) {
+  state.suppressMarkerClickUntil = Date.now() + durationMs;
+}
+
 function setPanelView(view) {
   state.panelView = view;
   elements.panelTabs.forEach((button) => {
@@ -1887,6 +1891,7 @@ function createMarkerLayer(marker) {
       wireCityTooltip(layer, marker.id);
     });
     layer.on("dragstart", () => {
+      suppressClicksAfterDrag();
       if (state.editCities) {
         setSelectedMarker(marker.id);
       }
@@ -1897,7 +1902,7 @@ function createMarkerLayer(marker) {
         return;
       }
 
-      state.suppressMarkerClickUntil = Date.now() + 250;
+      suppressClicksAfterDrag();
       const latlng = event.target.getLatLng();
       state.cityEdits[marker.id] = {
         x: clamp(Math.round(latlng.lng), 0, MAP_WIDTH),
@@ -3087,6 +3092,9 @@ function bindEvents() {
     if (state.calibrationMode || !state.selectedMarkerId) {
       return;
     }
+    if (Date.now() < state.suppressMarkerClickUntil) {
+      return;
+    }
     if (
       event.target.closest(".marker-panel") ||
       event.target.closest(".panel-edge-toggle") ||
@@ -3157,7 +3165,7 @@ function bindEvents() {
   });
   document.addEventListener("mouseup", () => {
     if (state.markerPointerPress?.moved) {
-      state.suppressMarkerClickUntil = Date.now() + 250;
+      suppressClicksAfterDrag();
     }
     state.markerPointerPress = null;
   });
@@ -3169,6 +3177,27 @@ function bindEvents() {
     const deltaY = event.clientY - state.markerPointerPress.y;
     if (Math.abs(deltaX) > 4 || Math.abs(deltaY) > 4) {
       state.markerPointerPress.moved = true;
+      suppressClicksAfterDrag();
+    }
+  });
+  map.on("movestart", () => {
+    if (state.markerPointerPress) {
+      state.markerPointerPress.moved = true;
+      suppressClicksAfterDrag();
+    }
+  });
+  map.on("dragstart", () => {
+    suppressClicksAfterDrag(500);
+    if (state.markerPointerPress) {
+      state.markerPointerPress.moved = true;
+    }
+  });
+  map.on("dragend", () => {
+    suppressClicksAfterDrag(500);
+  });
+  map.on("moveend", () => {
+    if (Date.now() < state.suppressMarkerClickUntil) {
+      suppressClicksAfterDrag();
     }
   });
   map.on("mousemove", (event) => {
