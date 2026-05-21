@@ -6,8 +6,8 @@ import {
   deferredCategoryCount,
   deferredMarkerGroupForCategory,
   loadDeferredMarkersForCategory,
-} from "./data/markers.js?v=20260521b";
-import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260521b";
+} from "./data/markers.js?v=20260521c";
+import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260521c";
 import {
   contentSourceError,
   contentSourceKeyForCategory,
@@ -32,7 +32,7 @@ import {
   resolveImageUrl,
   splitMultiline,
   youtubeEmbedMeta,
-} from "./shared/app-utils.js?v=20260521b";
+} from "./shared/app-utils.js?v=20260521c";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
@@ -197,7 +197,6 @@ const state = {
   ingredientNoteDismissed: false,
   currentArea: "wynn",
   mapSelectorOpen: false,
-  mapInteracted: false,
   suppressMarkerClickUntil: 0,
   markerPointerPress: null,
   loadedDeferredMarkerGroups: new Set(),
@@ -254,9 +253,7 @@ const elements = {
 };
 
 function currentMapImageTargetWidth() {
-  const viewportWidth = window.screen?.width || window.visualViewport?.width || 0;
-  const viewportHeight = window.screen?.height || window.visualViewport?.height || 0;
-  return Math.ceil(Math.max(viewportWidth, viewportHeight) * Math.min(window.devicePixelRatio || 1, 2));
+  return Math.ceil(Math.max(window.innerWidth, window.innerHeight) * Math.min(window.devicePixelRatio || 1, 2));
 }
 
 function preferredAreaImageUrl(areaId) {
@@ -301,7 +298,7 @@ async function ensureMobIconUrlsLoaded() {
     return mobIconUrlMap;
   }
   if (!mobIconUrlPromise) {
-    mobIconUrlPromise = import("./data/mob-icon-urls.js?v=20260521b")
+    mobIconUrlPromise = import("./data/mob-icon-urls.js?v=20260521c")
       .then((module) => {
         mobIconUrlMap = module.MOB_ICON_URLS;
         return mobIconUrlMap;
@@ -318,7 +315,7 @@ async function ensureReferenceImageUrlsLoaded() {
     return referenceImageUrlMap;
   }
   if (!referenceImageUrlPromise) {
-    referenceImageUrlPromise = import("./data/reference-images.js?v=20260521b")
+    referenceImageUrlPromise = import("./data/reference-images.js?v=20260521c")
       .then((module) => {
         referenceImageUrlMap = module.REFERENCE_IMAGE_URLS;
         return referenceImageUrlMap;
@@ -731,15 +728,10 @@ function suppressClicksAfterDrag(durationMs = 350) {
 function setPanelView(view) {
   state.panelView = view;
   elements.panelTabs.forEach((button) => {
-    const active = button.dataset.panelView === view;
-    button.classList.toggle("active", active);
-    button.setAttribute("aria-selected", String(active));
-    button.tabIndex = active ? 0 : -1;
+    button.classList.toggle("active", button.dataset.panelView === view);
   });
   elements.panelViews.forEach((panel) => {
-    const active = panel.dataset.panelScreen === view;
-    panel.classList.toggle("hidden", !active);
-    panel.setAttribute("aria-hidden", String(!active));
+    panel.classList.toggle("hidden", panel.dataset.panelScreen !== view);
   });
 }
 
@@ -3077,28 +3069,6 @@ function bindEvents() {
     button.addEventListener("click", () => {
       setPanelView(button.dataset.panelView);
     });
-    button.addEventListener("keydown", (event) => {
-      const tabs = [...elements.panelTabs];
-      const currentIndex = tabs.indexOf(button);
-      if (currentIndex < 0) {
-        return;
-      }
-      let nextIndex = currentIndex;
-      if (event.key === "ArrowRight") {
-        nextIndex = (currentIndex + 1) % tabs.length;
-      } else if (event.key === "ArrowLeft") {
-        nextIndex = (currentIndex - 1 + tabs.length) % tabs.length;
-      } else if (event.key === "Home") {
-        nextIndex = 0;
-      } else if (event.key === "End") {
-        nextIndex = tabs.length - 1;
-      } else {
-        return;
-      }
-      event.preventDefault();
-      tabs[nextIndex].focus();
-      setPanelView(tabs[nextIndex].dataset.panelView);
-    });
   });
 
   if (elements.mapSelector && HAS_MULTIPLE_MAP_AREAS) {
@@ -3393,14 +3363,12 @@ function bindEvents() {
   });
 
   map.on("movestart", () => {
-    state.mapInteracted = true;
     if (state.markerPointerPress) {
       state.markerPointerPress.moved = true;
       suppressClicksAfterDrag();
     }
   });
   map.on("dragstart", () => {
-    state.mapInteracted = true;
     suppressClicksAfterDrag(500);
     if (state.markerPointerPress) {
       state.markerPointerPress.moved = true;
@@ -3422,7 +3390,7 @@ function bindEvents() {
     resetCoordinateReadout();
   });
   map.on("zoomend", () => {
-    if (state.mapInteracted && map.getZoom() > 0.5) {
+    if (map.getZoom() > -0.5) {
       scheduleFullResolutionMapUpgrade(state.currentArea);
     }
     syncVisibleMarkers();
