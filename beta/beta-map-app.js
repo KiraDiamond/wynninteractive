@@ -2,6 +2,7 @@ import {
   CATEGORY_META,
   CATEGORY_ORDER,
   CURATED_MARKERS,
+  LOOTRUN_CAVE_REQUIREMENT_GROUPS,
   STARTER_MARKERS,
   deferredCategoryCount,
   deferredMarkerGroupForCategory,
@@ -92,6 +93,21 @@ const LOW_VALUE_DESCRIPTION_PATTERNS = [
   /\bi marked .+ on the live map\.?$/i,
   /\bimported from the external wynncraft marker dataset\.?$/i,
   /\bcommunity-style preview\b/i,
+];
+const LOOTRUN_GROUP_BY_ID = new Map(LOOTRUN_CAVE_REQUIREMENT_GROUPS.map((group) => [group.groupId, group]));
+const LOOTRUN_GROUP_BY_PARENT_ID = new Map(LOOTRUN_CAVE_REQUIREMENT_GROUPS.map((group) => [group.parentId, group]));
+const LOOTRUN_GROUP_BY_CAVE_TITLE = new Map(
+  LOOTRUN_CAVE_REQUIREMENT_GROUPS.flatMap((group) =>
+    group.caveTitles.map((title) => [title, { groupId: group.groupId, parentId: group.parentId, title: group.title }]),
+  ),
+);
+const LOOTRUN_CONTEXT_GROUP_IDS = new Set(LOOTRUN_CAVE_REQUIREMENT_GROUPS.map((group) => group.groupId));
+const LOOTRUN_CAVE_BOILERPLATE_PATTERNS = [
+  /\s*in the Silent Expanse\. This cave can appear as a challenge in the Silent Expanse Expedition lootrun\..*$/gi,
+  /\s*It can also appear as a challenge in the Silent Expanse Expedition lootrun\.?/gi,
+  /\s*(?:It|This cave)\s(?:is one of the caves required to unlock|is one of the caves required to be completed in order to unlock|is one of the caves that must be completed(?: in order)? to unlock|is one of the caves that must be done(?: in order)? to unlock|is required to be completed in order to unlock|is one of the caves that must be completed)\s(?:the\s)?Silent Expanse Expedition(?: lootrun)?\.?/gi,
+  /\s*(?:It|This cave)\s(?:is one of the caves required to unlock|is one of the caves required to be completed in order to unlock|is one of the caves that must be completed(?: in order)? to unlock|is one of the caves that must be done(?: in order)? to unlock)\sThe Corkus Traversal(?: lootrun)?\.?/gi,
+  /\s*It is one of the caves that must be completed in order to unlock the Sky Islands Exploration(?: Lootrun)?\.?/gi,
 ];
 const VIDEO_GUIDE_CATEGORY_IDS = new Set(["quests", "mini_quests", "secret_discovery"]);
 const MOB_CATEGORY_IDS = CATEGORY_ORDER.filter((categoryId) => categoryId.startsWith("hostile_mobs"));
@@ -251,6 +267,7 @@ const state = {
   activeMobFamily: null,
   trackedIngredient: "",
   ingredientNoteDismissed: false,
+  activeLootrunContextGroupId: null,
   currentArea: "wynn",
   mapSelectorOpen: false,
   areaOffsets: loadAreaOffsets(),
@@ -490,7 +507,7 @@ function itemSourceTypeLabel(type) {
 }
 
 function extractSectionLines(explanation, sectionTitle) {
-  const blocks = String(explanation || "")
+  const blocks = normalizeGuideText(explanation)
     .split(/\n{2,}/)
     .map((block) => block.trim())
     .filter(Boolean);
@@ -501,8 +518,20 @@ function extractSectionLines(explanation, sectionTitle) {
   return target
     .split("\n")
     .slice(1)
-    .map((line) => line.replace(/^•\s*/, "").trim())
+    .map((line) => line.replace(/^(?:•|â€¢|»)\s*/, "").trim())
     .filter(Boolean);
+}
+
+function normalizeGuideText(value) {
+  return String(value || "")
+    .replaceAll("â€¢", "•")
+    .replaceAll("âœ«", "✫")
+    .replaceAll("â€™", "’")
+    .replaceAll("â€œ", "“")
+    .replaceAll("â€", "”")
+    .replaceAll("â€“", "–")
+    .replaceAll("â€”", "—")
+    .replaceAll("Â", "");
 }
 
 function normalizeCoordsArray(coords) {
@@ -938,6 +967,36 @@ function possibleCaveChestSources(item) {
     .slice(0, 40);
 }
 
+function stripLootrunUnlockBoilerplate(text) {
+  let next = String(text || "");
+  LOOTRUN_CAVE_BOILERPLATE_PATTERNS.forEach((pattern) => {
+    next = next.replace(pattern, "");
+  });
+  return next.replace(/\s{2,}/g, " ").replace(/\s+\./g, ".").trim();
+}
+
+function sanitizeCaveMarker(marker) {
+  if (!marker || marker.category !== "caves") {
+    return marker;
+  }
+
+  const linkedLootrunGroup = LOOTRUN_GROUP_BY_CAVE_TITLE.get(marker.title);
+  const nextRegion = stripLootrunUnlockBoilerplate(marker.region || "").replace(/\.$/, "").trim();
+  const nextDescription = stripLootrunUnlockBoilerplate(marker.description || "");
+  const nextMarker = {
+    ...marker,
+    region: nextRegion || marker.region || "",
+    description: nextDescription || marker.description || "",
+  };
+
+  if (linkedLootrunGroup) {
+    nextMarker.contextGroupId = linkedLootrunGroup.groupId;
+    nextMarker.contextParentId = linkedLootrunGroup.parentId;
+  }
+
+  return nextMarker;
+}
+
 function itemSourceEntries(item) {
   if (!item) {
     return [];
@@ -1240,6 +1299,7 @@ function renderSearchSuggestions() {
 function setSelectedItem(itemKey) {
   state.selectedItemKey = itemKey;
   state.selectedMarkerId = null;
+  state.activeLootrunContextGroupId = null;
   state.activeMobFamily = null;
   state.searchSuggestionsOpen = false;
   setPanelView("info");
@@ -2000,8 +2060,12 @@ function markerContentEntry(marker) {
   const fallbackSummary = LOW_VALUE_DESCRIPTION_PATTERNS.some((pattern) => pattern.test(marker.description || ""))
     ? ""
     : marker.description || "";
+  const summary =
+    marker.category === "caves"
+      ? stripLootrunUnlockBoilerplate(entry.summary || shipped.summary || fallbackSummary)
+      : entry.summary || shipped.summary || fallbackSummary;
   return {
-    summary: entry.summary || shipped.summary || fallbackSummary,
+    summary,
     explanation: entry.explanation || shipped.explanation,
     coverImage: entry.coverImage || shipped.coverImage,
     gallery: entry.gallery.length ? entry.gallery : shipped.gallery,
@@ -2114,6 +2178,9 @@ function contextChildMarkers(marker) {
 }
 
 function contextParentMarker(marker) {
+  if (marker?.contextParentId) {
+    return getMarkerById(marker.contextParentId);
+  }
   const groupId = contextGroupIdForMarker(marker);
   if (!groupId) {
     return null;
@@ -2121,32 +2188,62 @@ function contextParentMarker(marker) {
   return state.markers.find((item) => !item.contextOnly && item.contextGroupId === groupId) || null;
 }
 
-function encounterNavigatorHtml(marker) {
-  const encounters = contextChildMarkers(marker);
-  if (!encounters.length) {
-    return "";
-  }
+function activeLootrunContextGroupId() {
+  return LOOTRUN_CONTEXT_GROUP_IDS.has(state.activeLootrunContextGroupId) ? state.activeLootrunContextGroupId : null;
+}
 
-  const parent = contextParentMarker(marker);
-  return html`
-    <section class="context-panel">
-      <div class="context-head">
-        <div>
-          <h3>Hive Encounters</h3>
-          <p>Select a wing to open its own route and boss guide.</p>
-        </div>
-        ${
-          parent
-            ? html`
-                <button type="button" class="context-return" data-context-marker="${parent.id}">
-                  Return to ${parent.title}
-                </button>
-              `
-            : ""
-        }
-      </div>
-      <div class="context-chip-grid">
-        ${encounters.map(
+function lootrunRequirementGroupForMarker(marker) {
+  const groupId = marker?.contextGroupId || activeLootrunContextGroupId();
+  if (!groupId) {
+    return null;
+  }
+  return LOOTRUN_GROUP_BY_ID.get(groupId) || null;
+}
+
+function lootrunRequirementCaves(marker) {
+  const group = lootrunRequirementGroupForMarker(marker);
+  if (!group) {
+    return [];
+  }
+  return state.markers
+    .filter((item) => item.category === "caves" && item.contextGroupId === group.groupId)
+    .sort((left, right) => left.title.localeCompare(right.title));
+}
+
+function selectedLootrunMarkerIdSet() {
+  const groupId = activeLootrunContextGroupId();
+  if (!groupId) {
+    return null;
+  }
+  return new Set(
+    state.markers
+      .filter(
+        (marker) =>
+          marker.contextGroupId === groupId && (marker.category === "lootrun_camp" || marker.category === "caves"),
+      )
+      .map((marker) => marker.id),
+  );
+}
+
+function encounterNavigatorHtml(marker) {
+  const lootrunGroup = marker.category === "lootrun_camp" ? lootrunRequirementGroupForMarker(marker) : null;
+  if (lootrunGroup) {
+    const caves = lootrunRequirementCaves(marker);
+    if (!caves.length) {
+      return "";
+    }
+    const parent = marker.id === lootrunGroup.parentId ? marker : contextParentMarker(marker);
+    const returnButton =
+      parent && parent.id !== marker.id
+        ? html.raw(html`
+            <button type="button" class="context-return" data-context-marker="${parent.id}">
+              Return to ${parent.title}
+            </button>
+          `)
+        : "";
+    const caveButtons = html.raw(
+      caves
+        .map(
           (entry) => html`
             <button
               type="button"
@@ -2154,11 +2251,65 @@ function encounterNavigatorHtml(marker) {
               data-context-marker="${entry.id}"
             >
               <strong>${entry.title}</strong>
-              <span>${entry.description || entry.region || "Encounter"}</span>
+              <span>${entry.region || "Required cave"}</span>
             </button>
-          `
-        )}
+          `,
+        )
+        .join(""),
+    );
+    return html`
+      <section class="context-panel">
+        <div class="context-head">
+          <div>
+            <h3>Unlock Caves</h3>
+            <p>Show only the caves required to unlock ${lootrunGroup.title}.</p>
+          </div>
+          ${returnButton}
+        </div>
+        <div class="context-chip-grid">${caveButtons}</div>
+      </section>
+    `;
+  }
+
+  const encounters = contextChildMarkers(marker);
+  if (!encounters.length) {
+    return "";
+  }
+
+  const parent = contextParentMarker(marker);
+  const returnButton = parent
+    ? html.raw(html`
+        <button type="button" class="context-return" data-context-marker="${parent.id}">
+          Return to ${parent.title}
+        </button>
+      `)
+    : "";
+  const encounterButtons = html.raw(
+    encounters
+      .map(
+        (entry) => html`
+          <button
+            type="button"
+            class="context-chip ${entry.id === marker.id ? "active" : ""}"
+            data-context-marker="${entry.id}"
+          >
+            <strong>${entry.title}</strong>
+            <span>${entry.description || entry.region || "Encounter"}</span>
+          </button>
+        `,
+      )
+      .join(""),
+  );
+  return html`
+    <section class="context-panel">
+      <div class="context-head">
+        <div>
+          <h3>Hive Encounters</h3>
+          <p>Select a wing to open its own route and boss guide.</p>
+        </div>
+        ${returnButton}
       </div>
+      <div class="context-chip-grid">${encounterButtons}</div>
     </section>
   `;
 }
@@ -2226,9 +2377,9 @@ function miniQuestIngredientOptions(marker, entry) {
   }
 
   const seen = new Set();
-  return String(entry.explanation || "")
+  return normalizeGuideText(entry.explanation)
     .split("\n")
-    .map((line) => line.replace(/^[•»]\s*/, "").trim())
+    .map((line) => line.replace(/^(?:•|â€¢|»)\s*/, "").trim())
     .filter((line) => /^Bring\s+/i.test(line))
     .map((line) => {
       const match = line.match(/^Bring\s+([\d?()]+)\s+(.+?)\.?$/i);
@@ -2289,8 +2440,9 @@ function contentPreviewHtml(marker, entry) {
     `);
   }
 
-  if (entry.explanation) {
-    const sections = entry.explanation
+  const explanationText = normalizeGuideText(entry.explanation);
+  if (explanationText) {
+    const sections = explanationText
       .split(/\n{2,}/)
       .map((part) => part.trim())
       .filter(Boolean)
@@ -2314,7 +2466,7 @@ function contentPreviewHtml(marker, entry) {
               <section class="content-step">
                 <h3>${title}</h3>
                 <ul>
-                  ${html.raw(items.map((line) => html`<li>${line.replace(/^[•»]\s*/, "")}</li>`).join(""))}
+                  ${html.raw(items.map((line) => html`<li>${line.replace(/^(?:•|â€¢|»)\s*/, "")}</li>`).join(""))}
                 </ul>
               </section>
             `;
@@ -2326,7 +2478,10 @@ function contentPreviewHtml(marker, entry) {
     const listCards =
       !stepCards &&
       sections.every(
-        (lines) => lines.length > 1 && !/^[•»]/.test(lines[0]) && lines.slice(1).every((line) => /^[•»]/.test(line))
+        (lines) =>
+          lines.length > 1 &&
+          !/^(?:•|â€¢|»)/.test(lines[0]) &&
+          lines.slice(1).every((line) => /^(?:•|â€¢|»)/.test(line))
       )
         ? sections
             .map((lines) => {
@@ -2336,7 +2491,7 @@ function contentPreviewHtml(marker, entry) {
                 <section class="content-step content-step-list">
                   <h3>${title}</h3>
                   <ul>
-                    ${html.raw(items.map((line) => html`<li>${line.replace(/^[•»]\s*/, "")}</li>`).join(""))}
+                    ${html.raw(items.map((line) => html`<li>${line.replace(/^(?:•|â€¢|»)\s*/, "")}</li>`).join(""))}
                   </ul>
                 </section>
               `;
@@ -3188,14 +3343,20 @@ function cityVisibleAtCurrentZoom(marker) {
 
 function markerIsVisible(marker) {
   const itemMarkerIds = state.selectedItemKey ? selectedItemMarkerIdSet() : null;
+  const lootrunMarkerIds = activeLootrunContextGroupId() ? selectedLootrunMarkerIdSet() : null;
   if (markerArea(marker) !== state.currentArea) {
     return false;
   }
 
+  if (itemMarkerIds) {
+    return itemMarkerIds.has(marker.id);
+  }
+
+  if (lootrunMarkerIds) {
+    return lootrunMarkerIds.has(marker.id);
+  }
+
   if (marker.fixed) {
-    if (itemMarkerIds) {
-      return false;
-    }
     if (!state.showCities) {
       return false;
     }
@@ -3209,9 +3370,6 @@ function markerIsVisible(marker) {
   }
 
   const matchesSearch = markerMatchesSearch(marker);
-  if (itemMarkerIds) {
-    return itemMarkerIds.has(marker.id);
-  }
 
   if (isMobCategory(marker.category)) {
     return false;
@@ -3698,7 +3856,9 @@ function renderCategoryFilters() {
   });
 
   elements.categoryFilters.querySelectorAll("[data-mob-marker]").forEach((button) => {
-    button.addEventListener("click", () => {
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
       const marker = state.markers.find((entry) => entry.id === button.dataset.mobMarker);
       if (!marker) {
         return;
@@ -3966,11 +4126,14 @@ function renderDetailCard() {
   });
 
   interactiveRoot.querySelectorAll("[data-context-marker]").forEach((button) => {
-    button.addEventListener("click", () => {
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
       const target = state.markers.find((item) => item.id === button.dataset.contextMarker);
       if (!target) {
         return;
       }
+      setSelectedMarker(target.id);
       flyToMarker(target);
     });
   });
@@ -4339,7 +4502,7 @@ function fastTravelLinkedMarkers(marker) {
   }
 
   const entry = markerContentEntry(marker);
-  const connectedRaw = String(entry.explanation || "").match(/•\s*Connected stops:\s*([^\n]+)/i)?.[1] || "";
+  const connectedRaw = normalizeGuideText(entry.explanation).match(/•\s*Connected stops:\s*([^\n]+)/i)?.[1] || "";
   const connectedStops = [
     ...new Set(
       connectedRaw
@@ -4429,6 +4592,13 @@ function renderActiveAreaHighlight() {
 function setSelectedMarker(markerId) {
   state.selectedMarkerId = markerId;
   const marker = getMarkerById(markerId);
+  if (marker?.category === "lootrun_camp" && LOOTRUN_CONTEXT_GROUP_IDS.has(marker.contextGroupId)) {
+    state.activeLootrunContextGroupId = marker.contextGroupId;
+  } else if (state.activeLootrunContextGroupId && marker?.contextGroupId === state.activeLootrunContextGroupId) {
+    // Keep the active lootrun filter while moving between the camp and its required caves.
+  } else {
+    state.activeLootrunContextGroupId = null;
+  }
   if (marker && isMobCategory(marker.category)) {
     state.activeMobFamily = marker.category;
   }
@@ -4452,6 +4622,7 @@ function clearSelectedMarker({ resetMobFamily = true } = {}) {
   }
 
   state.selectedMarkerId = null;
+  state.activeLootrunContextGroupId = null;
   setPanelView("markers");
   if (resetMobFamily) {
     state.activeMobFamily = null;
@@ -4515,9 +4686,17 @@ function syncVisibleMarkers() {
 
 function hydrateMarkerState() {
   const fixedCities = STARTER_MARKERS.map((marker) => ({ ...marker, fixed: true }));
-  const curatedSupplemental = CURATED_MARKERS;
+  const curatedSupplemental = CURATED_MARKERS.map((marker) => {
+    const lootrunGroup = LOOTRUN_GROUP_BY_PARENT_ID.get(marker.id);
+    if (lootrunGroup) {
+      return { ...marker, contextGroupId: lootrunGroup.groupId };
+    }
+    return marker;
+  });
   const wikiMarkers = WIKI_MAP_MARKERS.map((marker) =>
-    marker.id === "atlas-quests-the-qira-hive-372--5501" ? { ...marker, contextGroupId: "qira-hive" } : marker
+    marker.id === "atlas-quests-the-qira-hive-372--5501"
+      ? { ...marker, contextGroupId: "qira-hive" }
+      : sanitizeCaveMarker(marker)
   ).filter((marker) => marker.category !== "world_events");
   state.markers = [];
   state.markerIndex = new Map();

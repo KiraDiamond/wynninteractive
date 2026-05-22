@@ -770,7 +770,7 @@ export const CAVES_CONTENT = {
     "tutorials": []
   },
   "atlas-caves-aquaculture-aquifer--1930--3325": {
-    "summary": "The Aquaculture Aquifer is a Cave found in the Avos Territory. It is one of the caves required to unlock The Corkus Traversal lootrun.",
+    "summary": "The Aquaculture Aquifer is a Cave found in the Avos Territory.",
     "explanation": "Overview\nâ€¢ Suggested level: 100\nâ€¢ Length: Medium\nâ€¢ Estimated time: 2m\nâ€¢ Type: Normal\n\nRoute\nâ€¢ This cave has two entrances, one being the main entrance and the other being a secondary one found south of it. Both paths will converge near the start, leading to a prosperous farm underneath. The farm has a maze-like structure, with some dead ends being found at some points.\n\nLoot Chests\nâ€¢ 1x Tier 4 [âœ«âœ«âœ«âœ«]\n\nEnemies\nâ€¢ Heated Crops (Lv. 89)\nâ€¢ F-B 150 Parasite Exterminators (Lv. 92)\nâ€¢ F-100 Farm Bot (Lv. 97)\nâ€¢ M-32 Mechanic (Lv. 99)\nâ€¢ P-100 Parasite (Lv. 98)\nâ€¢ Plague Bot-1346 (Lv. 100)\n\nFirst-Time Clear Rewards\nâ€¢ +400000 XP",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/AquacultureAquifer.png/256px-AquacultureAquifer.png?1af945",
     "gallery": [
@@ -788,7 +788,7 @@ export const CAVES_CONTENT = {
     "tutorials": []
   },
   "atlas-caves-avos-animation-totem-cave--1759--2450": {
-    "summary": "The Avos Animation Totem is a level 98 Cave found in the Scraplands. It is one of the caves required to unlock The Corkus Traversal lootrun.",
+    "summary": "The Avos Animation Totem is a level 98 Cave found in the Scraplands.",
     "explanation": "Overview\nâ€¢ Suggested level: 98\nâ€¢ Difficulty: Hard\nâ€¢ Length: Long\nâ€¢ Estimated time: 3m\nâ€¢ Type: Boss Cave\n\nRoute\nâ€¢ Despite this cave being labeled as a normal cave, it functions more similarly to a Boss Cave. The only sections in this cave are the boss arena and the rewards room. The main boss of this cave is the eponymous being that resides within. Unlike most other mobs, the totem has a wide array of unique spells.\n\nLoot Chests\nâ€¢ 1x Tier 3 [âœ«âœ«âœ«âœ«]\nâ€¢ 2x Tier 4 [âœ«âœ«âœ«âœ«]\n\nEnemies\nâ€¢ Avos Animation Totem (Lv. 98)\n\nFirst-Time Clear Rewards\nâ€¢ +400,000 XP",
     "coverImage": "https://commons.wiki.gg/images/Disambig.svg?5de338",
     "gallery": [
@@ -816,7 +816,7 @@ export const CAVES_CONTENT = {
     "tutorials": []
   },
   "atlas-caves-azurite-island-953--4761": {
-    "summary": "The Azurite Island is a Cave found in the Sky Islands. It is one of the caves that must be completed in order to unlock the Sky Islands Exploration Lootrun.",
+    "summary": "The Azurite Island is a Cave found in the Sky Islands.",
     "explanation": "Overview\nâ€¢ Suggested level: 94\nâ€¢ Difficulty: Hard\nâ€¢ Length: Long\nâ€¢ Estimated time: 2m\nâ€¢ Type: Normal\n\nRoute\nâ€¢ Azurite Hollow: The start of the cave is an open hollow with several Gem Aberrants and Crystalline Irregularities, along with their source of the Absurd Azurite. Below the crystal is a Tier 3 [âœ«âœ«âœ«âœ«] Loot Chest that requires it to be destroyed in order to open it. Continuing upwards will lead on to the next section of the cave.\nâ€¢ Bijou Hideout: The main path from the spire will lead to a small house which has the madman who stole the crystal, the Bijou Bandit. Inside the house is also a Tier 4 [âœ«âœ«âœ«âœ«] Loot Chest that requires them to be killed. Inside the hideout will also be a Tier 2 [âœ«âœ«âœ«âœ«] Loot Chest.\n\nLoot Chests\nâ€¢ 1x Tier 2 [âœ«âœ«âœ«âœ«]\nâ€¢ 1x Tier 3 [âœ«âœ«âœ«âœ«]\nâ€¢ 1x Tier 4 [âœ«âœ«âœ«âœ«]\n\nEnemies\nâ€¢ Gem Aberrants (Lv. 93)\nâ€¢ Crystalline Irregularities (Lv. 94)\nâ€¢ Absurd Azurite (Lv. 96)\nâ€¢ Bijou Bandit (Lv. 99)\n\nFirst-Time Clear Rewards\nâ€¢ +700000 XP",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/AzuriteIsland.png/256px-AzuriteIsland.png?72422b",
     "gallery": [
@@ -893,7 +893,7 @@ export const CAVES_CONTENT = {
     "tutorials": []
   },
   "atlas-caves-blind-burrow-1393--1055": {
-    "summary": "Blind Burrow is a straightforward run to a mob-gated Tier 4 chest at the end. It is one of the caves required to unlock the Silent Expanse Expedition lootrun.",
+    "summary": "Blind Burrow is a straightforward run to a mob-gated Tier 4 chest at the end.",
     "explanation": "Overview\nâ€¢ Suggested level: 100\nâ€¢ Difficulty: Medium\nâ€¢ Length: Medium\nâ€¢ Estimated time: 1m 40s\nâ€¢ Type: Normal\n\nRoute\nâ€¢ The cave is mostly a straightforward path to the end. At the end of the cave is a Tier 4 [âœ«âœ«âœ«âœ«] Loot Chest that requires 6 nearby mobs to be killed.\n\nLoot Chests\nâ€¢ 1x Tier 4 [âœ«âœ«âœ«âœ«]\n\nEnemies\nâ€¢ The Unsighteds (Lv. 107)\nâ€¢ Paranoid Amblyops (Lv. 108)\nâ€¢ Kontyric Moles (Lv. 108)\n\nFirst-Time Clear Rewards\nâ€¢ +1000000 XP",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/BlindBurrow.png/256px-BlindBurrow.png?61fb80",
     "gallery": [
@@ -951,7 +951,7 @@ export const CAVES_CONTENT = {
     "tutorials": []
   },
   "atlas-caves-builder-bot-central--1674--3060": {
-    "summary": "The Builder-Bot Central is a Cave found in the Corkus Plateaus. It is one of the caves that must be completed in order to unlock The Corkus Traversal lootrun.",
+    "summary": "The Builder-Bot Central is a Cave found in the Corkus Plateaus.",
     "explanation": "Overview\nâ€¢ Suggested level: 90\nâ€¢ Difficulty: Hard\nâ€¢ Length: Long\nâ€¢ Estimated time: 3m\nâ€¢ Type: Normal\n\nRoute\nâ€¢ The first section of the cave is guarded with several B500-Mason Bots, before a section with several Boom Stones and T-1000 Tunnel Borgs. A spiral parkour will have Bricklayer-1000s along with a Tier 2 [âœ«âœ«âœ«âœ«] Loot Chest.\n\nLoot Chests\nâ€¢ 3x Tier 2 [âœ«âœ«âœ«âœ«]\nâ€¢ 2x Tier 3 [âœ«âœ«âœ«âœ«]\nâ€¢ 1x Tier 4 [âœ«âœ«âœ«âœ«]\n\nEnemies\nâ€¢ B500-Mason Bots (Lv. 85)\nâ€¢ Boom Stones (Lv. 85)\nâ€¢ T-1000 Tunnel Borgs (Lv. 90)\nâ€¢ Bricklayer-1000s (Lv. 90)\nâ€¢ Crazed Machinist (Lv. 100)\nâ€¢ Orinthopters (Lv. 100)\nâ€¢ 1900-Drill Bots (Lv. 97)\nâ€¢ Architect-430 (Lv. 100)\n\nFirst-Time Clear Rewards\nâ€¢ +400000 XP",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/Builder-BotCentral.png/256px-Builder-BotCentral.png?89681c",
     "gallery": [
@@ -1002,7 +1002,7 @@ export const CAVES_CONTENT = {
     "tutorials": []
   },
   "atlas-caves-caged-creatures-1134--1121": {
-    "summary": "Caged Creatures is built around freeing hostile captives and harvesting Explosive Masses to progress. It is one of the caves required to unlock the Silent Expanse Expedition lootrun.",
+    "summary": "Caged Creatures is built around freeing hostile captives and harvesting Explosive Masses to progress.",
     "explanation": "Overview\nâ€¢ Suggested level: 100\nâ€¢ Difficulty: Medium\nâ€¢ Length: Long\nâ€¢ Estimated time: 2m\nâ€¢ Type: Normal\n\nRoute\nâ€¢ Room 1: The first room of the cave has several Adult Lidins attack you as a Volatile Host hangs in the cage above. Walking under the cage will free the host, and when it is killed several Lidin Fledglings will attack you. Three Explosive Masses must be harvested from them in order to progress.\nâ€¢ Room 2: The room starts off as a simple passage to the end, with several Lidin Caretakers attacking you. At the ending room, three Volatile Hosts hang from cages above you, which are released by walking under them.\n\nLoot Chests\nâ€¢ 1x Tier 4 [âœ«âœ«âœ«âœ«]\n\nEnemies\nâ€¢ Adult Lidins (Lv. 101)\nâ€¢ Volatile Hosts (Lv. 101)\nâ€¢ Lidin Fledglings (Lv. 101)\nâ€¢ Lidin Caretakers (Lv. 101)\n\nFirst-Time Clear Rewards\nâ€¢ +1000000 XP",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/CagedCreatures.png/256px-CagedCreatures.png?459119",
     "gallery": [
@@ -1083,7 +1083,7 @@ export const CAVES_CONTENT = {
     "tutorials": []
   },
   "atlas-caves-corkus-quarry--1365--2736": {
-    "summary": "The Corkus Quarry is a Cave found in the Corkus Plateaus. It is one of the caves that must be completed in order to unlock The Corkus Traversal lootrun.",
+    "summary": "The Corkus Quarry is a Cave found in the Corkus Plateaus.",
     "explanation": "Overview\nâ€¢ Suggested level: 90\nâ€¢ Difficulty: Hard\nâ€¢ Length: Long\nâ€¢ Estimated time: 2m\nâ€¢ Type: Normal\n\nRoute\nâ€¢ The quarry is a long hopper-shaped cave. The first layer has a dug out section with a LAZER Driller and a Tier 2 [âœ«âœ«âœ«âœ«] Loot Chest, along with a Tier 1 [âœ«âœ«âœ«âœ«] Loot Chest found at the opposite end of the entrance.\n\nLoot Chests\nâ€¢ 2x Tier 1 [âœ«âœ«âœ«âœ«]\nâ€¢ 2x Tier 2 [âœ«âœ«âœ«âœ«]\nâ€¢ 2x Tier 3 [âœ«âœ«âœ«âœ«]\nâ€¢ 1x Tier 4 [âœ«âœ«âœ«âœ«]\n\nEnemies\nâ€¢ Derelict Mine-Bots (Lv. 95)\nâ€¢ Derelict Boom-Bots (Lv. 95)\nâ€¢ R-105 Repair Bots (Lv. 100)\nâ€¢ L.A.Z.E.R. Drillers (Lv. 100)\n\nFirst-Time Clear Rewards\nâ€¢ +400000 XP",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/CorkusQuarry.png/256px-CorkusQuarry.png?26d636",
     "gallery": [
@@ -1314,7 +1314,7 @@ export const CAVES_CONTENT = {
     "tutorials": []
   },
   "atlas-caves-eyeball-gauntlet-1088--345": {
-    "summary": "Eyeball Gauntlet is centered on clearing themed eye arenas and collecting 6 Eyes for the altar before the reward room. It can also appear as a challenge in the Silent Expanse Expedition lootrun.",
+    "summary": "Eyeball Gauntlet is centered on clearing themed eye arenas and collecting 6 Eyes for the altar before the reward room.",
     "explanation": "Overview\nâ€¢ Suggested level: 100\nâ€¢ Difficulty: Hard\nâ€¢ Length: Long\nâ€¢ Estimated time: 4m30s\nâ€¢ Type: Normal\n\nRoute\nâ€¢ Blue Eye: The Blue Eye has the neutral Crying Eye mob. 3 pillars of water are also in the room, which can be an arena hazard when fighting the Crying Eye. Defeating the Crying Eye will give the eye of the same name.\nâ€¢ Toothed Eye: The Toothed Eye has the aggressive Digesting Eye mob that is immune to gravity. The mobs are above the player's reach, and will therefore need to rely on the eye's pull spell to attack it if they have a playstyle with a short attack range.\nâ€¢ Black Eye: The Black Eye has the aggressive Shading Eye. The arena's design makes it so lighting won't work properly here. White concrete will need to be used to determine your position within the eye. Defeating the Shading Eye will give the eye of the same name.\nâ€¢ Rainbow Eye: The Rainbow Eye has the aggressive Dyeing Eye alongside its 3 minions, the Earthly Heart, Watery Heart, and Fiery Heart. The hearts are not necessary to kill to get the eye. Defeating the Dyeing Eye will give the eye of the same name.\n\nLoot Chests\nâ€¢ 2x Tier 3 [âœ«âœ«âœ«âœ«]\nâ€¢ 1x Tier 4 [âœ«âœ«âœ«âœ«]\n\nEnemies\nâ€¢ Crying Eye (Lv. 103)\nâ€¢ Digesting Eye (Lv. 100)\nâ€¢ Digestive Fires (Lv. 100)\nâ€¢ Shading Eye (Lv. 102)\nâ€¢ Dyeing Eye (Lv. 102)\nâ€¢ Earthly Heart (Lv. 98)\nâ€¢ Watery Heart (Lv. 98)\nâ€¢ Fiery Heart (Lv. 98)\nâ€¢ Crippled Fearful Bunnies (Lv. 99)\nâ€¢ Dreading Eye (Lv. 102)\nâ€¢ Blinding Eye (Lv. 100)\nâ€¢ Stalking Eye (Lv. 100)\nâ€¢ Watching Eye (Lv. 100)\nâ€¢ Infecting Eye (Lv. 102)\nâ€¢ Rampaging Velotantes (Lv. 100)\nâ€¢ Irritating Gunks (Lv. 100)\nâ€¢ Bleeding Eye (Lv. 102)\n\nFirst-Time Clear Rewards\nâ€¢ +1000000 XP",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/EyeballGauntlet.png/256px-EyeballGauntlet.png?244742",
     "gallery": [
@@ -1419,7 +1419,7 @@ export const CAVES_CONTENT = {
     "tutorials": []
   },
   "atlas-caves-forgotten-excavation-987--4977": {
-    "summary": "The Forgotten Excavation is a Boss Cave found in the Sky Islands. It is one of the caves that must be completed in order to unlock the Sky Islands Exploration Lootrun.",
+    "summary": "The Forgotten Excavation is a Boss Cave found in the Sky Islands.",
     "explanation": "Overview\nâ€¢ Suggested level: 95\nâ€¢ Difficulty: Medium\nâ€¢ Length: Medium\nâ€¢ Estimated time: 1m\nâ€¢ Type: Boss Cave\n\nRoute\nâ€¢ The cave is mostly a quick straightforward path to the end. At the end of the path is the rampaging Excavated Golem. There is also a Tier 4 [âœ«âœ«âœ«âœ«] Loot Chest found in the same boss arena that requires the golem to be killed.\n\nLoot Chests\nâ€¢ 1x Tier 4 [âœ«âœ«âœ«âœ«]\n\nEnemies\nâ€¢ Excavated Golem (Lv. 99)\n\nFirst-Time Clear Rewards\nâ€¢ +700,000 XP",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/ForgottenExcavation.png/256px-ForgottenExcavation.png?44ea9a",
     "gallery": [
@@ -1535,7 +1535,7 @@ export const CAVES_CONTENT = {
     "tutorials": []
   },
   "atlas-caves-haze-cave-948--1049": {
-    "summary": "Haze Cave focuses on surviving poisonous rooms and bounce-pad transitions before the deeper chambers. It is one of the caves required to unlock the Silent Expanse Expedition lootrun.",
+    "summary": "Haze Cave focuses on surviving poisonous rooms and bounce-pad transitions before the deeper chambers.",
     "explanation": "Overview\nâ€¢ Suggested level: 100\nâ€¢ Difficulty: Medium\nâ€¢ Length: Long\nâ€¢ Estimated time: 2m 30s\nâ€¢ Type: Normal\n\nRoute\nâ€¢ Room 1: The first room is a waiting section. Several Toxic Clouds will emerge from the crevices found in the walls. After you have survived for a while, a door will open, revealing a pad to bounce on to the next room.\nâ€¢ Room 2: The second room is a passage to the end. At the end of the passage is a large, open arena with several crevices in the walls. Toxic Clouds will emerge from them, and the miniboss of the cave will not spawn until a few seconds have gone up.\n\nLoot Chests\nâ€¢ 1x Tier 4 [âœ«âœ«âœ«âœ«]\n\nEnemies\nâ€¢ Toxic Clouds (Lv. 101)\nâ€¢ Toxic Creeper (Lv. 107)\n\nFirst-Time Clear Rewards\nâ€¢ +1000000 XP",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/HazeCave.png/256px-HazeCave.png?409bd8",
     "gallery": [
@@ -1652,7 +1652,7 @@ export const CAVES_CONTENT = {
     "tutorials": []
   },
   "atlas-caves-junk-pit--1782--2569": {
-    "summary": "The Junk Pit is a Cave found in the Scraplands. It is one of the caves required to be completed in order to unlock The Corkus Traversal lootrun.",
+    "summary": "The Junk Pit is a Cave found in the Scraplands.",
     "explanation": "Overview\nâ€¢ Suggested level: 90\nâ€¢ Difficulty: Hard\nâ€¢ Length: Long\nâ€¢ Estimated time: 2m 30s\nâ€¢ Type: Normal\n\nRoute\nâ€¢ The pit is a large and dark maze-like structure. There are three Tier 3 [âœ«âœ«âœ«âœ«] Loot Chests hidden across the cave, one being on the eastern side of the cave, one being on the western side of the cave, and one near the end of the cave, and all require 8 mobs to be killed to open them.\n\nLoot Chests\nâ€¢ 3x Tier 3 [âœ«âœ«âœ«âœ«]\n\nEnemies\nâ€¢ Leaky Warmachines (Lv. 90)\nâ€¢ Overclocked Bots (Lv. 90)\nâ€¢ Blink Bots (Lv. 93)\n\nFirst-Time Clear Rewards\nâ€¢ +400000 XP",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/JunkPit.png/256px-JunkPit.png?8f2718",
     "gallery": [
@@ -1723,7 +1723,7 @@ export const CAVES_CONTENT = {
     "tutorials": []
   },
   "atlas-caves-loot-symposium-775--950": {
-    "summary": "Loot Symposium is guarded by Kantry and built around combat-heavy chambers with multiple loot chests. It is one of the caves required to unlock the Silent Expanse Expedition lootrun.",
+    "summary": "Loot Symposium is guarded by Kantry and built around combat-heavy chambers with multiple loot chests.",
     "explanation": "Overview\nâ€¢ Suggested level: 100\nâ€¢ Difficulty: Medium\nâ€¢ Length: Long\nâ€¢ Estimated time: 1m 50s\nâ€¢ Type: Normal\n\nRoute\nâ€¢ Entrance: The entrance to the symposium is guarded by three Kantry.\nâ€¢ Room 1: The first room of the cave has some Toxamines in it, alongside what appears to be a Tier 1 [âœ«âœ«âœ«âœ«] Loot Chest. However, this loot chest is actually a Conaedi Guardian in disguise, and it will drop a Granitic Key when defeated, which is used to open the path to the second room.\nâ€¢ Room 2: The second room of the cave has what appears to be four Tier 1 [âœ«âœ«âœ«âœ«] Loot Chests, although like before, these are actually Conaedi Guardians in disguise. Two real Tier 3 [âœ«âœ«âœ«âœ«] Loot Chests are found within the cave, and both require two Conaedi Guardians to be killed, with each chest requiring a specific type.\nâ€¢ Other Mobs: Very rarely during a lootrun, a mob known as the Gilded Eyefolk can appear in the cave. It is unknown what the exact spawning conditions are.\n\nLoot Chests\nâ€¢ 5x Tier 1 [âœ«âœ«âœ«âœ«]\nâ€¢ 2x Tier 3 [âœ«âœ«âœ«âœ«]\n\nEnemies\nâ€¢ Protective Kantyr (Lv. 110)\nâ€¢ Plagued Kantyri (Lv. 110)\nâ€¢ Nurturing Kanter (Lv. 110)\nâ€¢ Toxamines (Lv. 104)\nâ€¢ Gilded Eyefolk (Lv. 110)\n\nFirst-Time Clear Rewards\nâ€¢ +1000000 XP",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/LootSymposium.png/256px-LootSymposium.png?e4a606",
     "gallery": [
@@ -1864,7 +1864,7 @@ export const CAVES_CONTENT = {
     "tutorials": []
   },
   "atlas-caves-ovine-spire-778--4721": {
-    "summary": "The Ovine Spire is a Cave found in the Sky Islands. It is one of the caves that must be completed in order to unlock the Sky Islands Exploration Lootrun.",
+    "summary": "The Ovine Spire is a Cave found in the Sky Islands.",
     "explanation": "Overview\nâ€¢ Suggested level: 96\nâ€¢ Difficulty: Hard\nâ€¢ Length: Long\nâ€¢ Estimated time: 2m 30s\nâ€¢ Type: Tower\n\nRoute\nâ€¢ Exterior: The exterior of the cave is a straightforward path to the spire. Near the to the spire is a Tier 3 [âœ«âœ«âœ«âœ«] Loot Chest that requires a Dust Devil Ovis to be killed to open it.\nâ€¢ The interior of the tower will give you permanent jump boost. Several Nimbus Lambs will attack you as you climb up the tower with Wave. As you reach the purple platform, there will be a miniboss fight with the Heat Lightning Caprine and some Pastoris Canors.\n\nLoot Chests\nâ€¢ 1x Tier 1 [âœ«âœ«âœ«âœ«]\nâ€¢ 1x Tier 3 [âœ«âœ«âœ«âœ«]\nâ€¢ 1x Tier 4 [âœ«âœ«âœ«âœ«]\n\nEnemies\nâ€¢ Thunder-Charged Goats (Lv. 96)\nâ€¢ Rain Cloud Rams (Lv. 97)\nâ€¢ Cirrostratus Sheep (Lv. 98)\nâ€¢ Pastoris Canors (Lv. 94)\nâ€¢ Dust Devil Ovis (Lv. 99)\nâ€¢ Nimbus Lambs (Lv. 94)\nâ€¢ Pastoris Canors (Lv. 95)\nâ€¢ Heat Lighting Caprine (Lv. 100)\n\nFirst-Time Clear Rewards\nâ€¢ +700000 XP\nâ€¢ +1 Unidentified Alpenglow",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/OvineSpire.png/256px-OvineSpire.png?187283",
     "gallery": [
@@ -1883,7 +1883,7 @@ export const CAVES_CONTENT = {
     "tutorials": []
   },
   "atlas-caves-pirate-lattice--1394--2393": {
-    "summary": "The Pirate Lattice is a Cave found in the Relos Plateaus. It is one of the caves required to unlock The Corkus Traversal lootrun.",
+    "summary": "The Pirate Lattice is a Cave found in the Relos Plateaus.",
     "explanation": "Overview\nâ€¢ Suggested level: 90\nâ€¢ Difficulty: Hard\nâ€¢ Length: Long\nâ€¢ Estimated time: 3m\nâ€¢ Type: Normal\n\nRoute\nâ€¢ The entrance to the cave is guarded by several Pirate Guards and Tamed Wolves. After a while, the latticework of the cave will be reached, serving as the main challenge.\n\nLoot Chests\nâ€¢ 1x Tier 2 [âœ«âœ«âœ«âœ«]\nâ€¢ 4x Tier 3 [âœ«âœ«âœ«âœ«]\n\nEnemies\nâ€¢ Tamed Wolves (Lv. 85)\nâ€¢ Pirate-Bots 9001 (Lv. 87)\nâ€¢ Pirate Guards (Lv. 89)\nâ€¢ Cyborg Picaroons (Lv. 90)\n\nFirst-Time Clear Rewards\nâ€¢ +400,000 XP",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/PirateLattice.png/256px-PirateLattice.png?4d16e9",
     "gallery": [
@@ -2062,7 +2062,7 @@ export const CAVES_CONTENT = {
     "tutorials": []
   },
   "atlas-caves-scarred-ingress-1264--4647": {
-    "summary": "The Scarred Ingress is a Cave found in the Sky Islands. It is one of the caves that must be completed in order to unlock the Sky Islands Exploration Lootrun.",
+    "summary": "The Scarred Ingress is a Cave found in the Sky Islands.",
     "explanation": "Overview\nâ€¢ Suggested level: 93\nâ€¢ Difficulty: Medium\nâ€¢ Length: Medium\nâ€¢ Estimated time: 1m 30s\nâ€¢ Type: Normal\n\nRoute\nâ€¢ The cave is mostly a straightforward path to the end. Several Abiogens and Leyline Elementals will attack you as you descend. At the bottom of the cave is an open area with a hidden Tier 1 [âœ«âœ«âœ«âœ«] Loot Chest and a miniboss named the Primordial Earth, which must be killed to open a nearby Tier 4 [âœ«âœ«âœ«âœ«] Loot Chest.\n\nLoot Chests\nâ€¢ 1x Tier 1 [âœ«âœ«âœ«âœ«]\nâ€¢ 1x Tier 4 [âœ«âœ«âœ«âœ«]\n\nEnemies\nâ€¢ Abiogens (Lv. 94)\nâ€¢ Leyline Elementals (Lv. 91)\nâ€¢ Geological Anomalies (Lv. 94)\nâ€¢ Primordial Earth (Lv. 98)\n\nFirst-Time Clear Rewards\nâ€¢ +700000 XP",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/ScarredIngress.png/256px-ScarredIngress.png?2969b9",
     "gallery": [
@@ -2251,7 +2251,7 @@ export const CAVES_CONTENT = {
     "tutorials": []
   },
   "atlas-caves-spiteful-crossing-854--668": {
-    "summary": "Spiteful Crossing is built around an invisible maze, spiteful mobs, and a loot chest guarded near the exit. It is one of the caves required to unlock the Silent Expanse Expedition lootrun.",
+    "summary": "Spiteful Crossing is built around an invisible maze, spiteful mobs, and a loot chest guarded near the exit.",
     "explanation": "Overview\nâ€¢ Suggested level: 100\nâ€¢ Difficulty: Medium\nâ€¢ Length: Medium\nâ€¢ Estimated time: 1m 30s\nâ€¢ Type: Normal\n\nRoute\nâ€¢ Room 1: The first room is an invisible maze, the path of which can be found by looking at the ground. Several Jealous Spitefuls will attack you as you traverse the maze.\nâ€¢ Room 2: The second room is a simple path to the end which has a Tier 4 [âœ«âœ«âœ«âœ«] Loot Chest at the end that requires 3 nearby mobs to be killed. The Spiteful Flatter is also at the end of the room, serving as the miniboss of the cave.\n\nLoot Chests\nâ€¢ 1x Tier 4 [âœ«âœ«âœ«âœ«]\n\nEnemies\nâ€¢ Jealous Spitefuls (Lv. 99)\nâ€¢ Spiteful Flatterer (Lv. 99)\n\nFirst-Time Clear Rewards\nâ€¢ +1000000 XP",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/SpitefulCrossing.png/256px-SpitefulCrossing.png?5e1aa1",
     "gallery": [
@@ -2264,7 +2264,7 @@ export const CAVES_CONTENT = {
     "tutorials": []
   },
   "atlas-caves-statue-opening-826--429": {
-    "summary": "Statue Opening turns passive Mystical Statues hostile and uses Statue Keys to open the central chest. It is one of the caves required to unlock the Silent Expanse Expedition lootrun.",
+    "summary": "Statue Opening turns passive Mystical Statues hostile and uses Statue Keys to open the central chest.",
     "explanation": "Overview\nâ€¢ Suggested level: 100\nâ€¢ Difficulty: Hard\nâ€¢ Length: Long\nâ€¢ Estimated time: 2m\nâ€¢ Type: Normal\n\nRoute\nâ€¢ The cave only has one section, a large open arena with passive Mystical Statues inhabiting it. However, the Mystical Statues will turn into hostile creatures when killed. A Tier 3 [âœ«âœ«âœ«âœ«] Loot Chest is found in the center which requires 6 Statue Keys to be given to it to unlock it.\n\nLoot Chests\nâ€¢ 1x Tier 3 [âœ«âœ«âœ«âœ«]\n\nEnemies\nâ€¢ Mystical Statues (Lv. 105)\nâ€¢ Ash Eaters (Lv. 102)\nâ€¢ Weeping Granites (Lv. 106)\nâ€¢ Stone Scolties (Lv. 102)\nâ€¢ Evolved Stone Scolties (Lv. 105)\n\nFirst-Time Clear Rewards\nâ€¢ +1000000 XP",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/StatueOpening.png/256px-StatueOpening.png?94051e",
     "gallery": [
@@ -2280,7 +2280,7 @@ export const CAVES_CONTENT = {
     "tutorials": []
   },
   "atlas-caves-steamworks--1471--2376": {
-    "summary": "Steamworks is a Cave found in the Relos Plateaus. It is one of the caves that must be done to unlock The Corkus Traversal lootrun.",
+    "summary": "Steamworks is a Cave found in the Relos Plateaus.",
     "explanation": "Overview\nâ€¢ Suggested level: 95\nâ€¢ Difficulty: Hard\nâ€¢ Length: Long\nâ€¢ Estimated time: 3m\nâ€¢ Type: Normal\n\nRoute\nâ€¢ Room 1: The first room of Steamworks is a parkour section. While the first section of this room is over a small stream, the second part is on a white structure. At the top is a spike that must be right-clicked to make it puncture the floor and the way to the second room.\nâ€¢ Room 2: The second room of this cave starts off with a quick way down to the final section, although a Tier 3 [âœ«âœ«âœ«âœ«] Loot Chest will be skipped. By 2 Deepwater Steambots is a Tier 2 [âœ«âœ«âœ«âœ«] Loot Chest. Continue through the pipe by going straight.\n\nLoot Chests\nâ€¢ 1x Tier 2 [âœ«âœ«âœ«âœ«]\nâ€¢ 1x Tier 3 [âœ«âœ«âœ«âœ«]\nâ€¢ 1x Tier 4 [âœ«âœ«âœ«âœ«]\n\nEnemies\nâ€¢ Sizzling Salamanders (Lv. 90)\nâ€¢ Deepwater Steambots (Lv. 91)\nâ€¢ Burgeoning Reactors (Lv. 93)\nâ€¢ Lurker Bats (Lv. 90)\nâ€¢ Fission Guardian (Lv. 95)\n\nFirst-Time Clear Rewards\nâ€¢ +400000 XP",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/Steamworks.png/256px-Steamworks.png?b613fb",
     "gallery": [
@@ -2374,7 +2374,7 @@ export const CAVES_CONTENT = {
     "tutorials": []
   },
   "atlas-caves-the-donjon-900--4408": {
-    "summary": "The Donjon is a Cave found in the Sky Islands. It is one of the caves that must be completed in order to unlock the Sky Islands Exploration.",
+    "summary": "The Donjon is a Cave found in the Sky Islands.",
     "explanation": "Overview\nâ€¢ Suggested level: 95\nâ€¢ Difficulty: Hard\nâ€¢ Length: Long\nâ€¢ Estimated time: 3m\nâ€¢ Type: Normal\n\nRoute\nâ€¢ Entrance: The castle is blocked by a gate that requires Red, Lime, and Cyan Keys to open it.\nâ€¢ The start of the castle has a Tier 1 [âœ«âœ«âœ«âœ«] Loot Chest at the start of it. Eventually a room with several Exploding Seed Pods will appear, and a Tier 2 [âœ«âœ«âœ«âœ«] Loot Chest will be hidden under a staircase.\nâ€¢ Exterior: After the parkour you then walk up the towers which lead to the roof. On top of the roof are several Castle Vampyrs and a Tier 1 [âœ«âœ«âœ«âœ«] Loot Chest. Right by the chest is the main boss of the castle, the Malfunctioning Totem. Once it is defeated it will unlock a Tier 4 [âœ«âœ«âœ«âœ«] Loot Chest.\n\nLoot Chests\nâ€¢ 3x Tier 1 [âœ«âœ«âœ«âœ«]\nâ€¢ 1x Tier 2 [âœ«âœ«âœ«âœ«]\nâ€¢ 1x Tier 3 [âœ«âœ«âœ«âœ«]\nâ€¢ 1x Tier 4 [âœ«âœ«âœ«âœ«]\n\nEnemies\nâ€¢ Castle Vampyrs (Lv. 97)\nâ€¢ Exploding Seed Pods (Lv. 95)\nâ€¢ Sticky Spitter (Lv. 95)\nâ€¢ Malfunctioning Totem (Lv. 100)\n\nFirst-Time Clear Rewards\nâ€¢ +700000 XP",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/TheDonjon.png/256px-TheDonjon.png?346940",
     "gallery": [
@@ -2389,7 +2389,7 @@ export const CAVES_CONTENT = {
     "tutorials": []
   },
   "atlas-caves-the-gwanari-983--470": {
-    "summary": "The Gwanari is entered through the creature's maw, with branching paths and stomach chambers full of loot. It is one of the caves required to unlock the Silent Expanse Expedition lootrun.",
+    "summary": "The Gwanari is entered through the creature's maw, with branching paths and stomach chambers full of loot.",
     "explanation": "Overview\nâ€¢ Suggested level: 100\nâ€¢ Difficulty: Easy\nâ€¢ Length: Medium\nâ€¢ Estimated time: 1m 30s\nâ€¢ Type: Normal\n\nRoute\nâ€¢ The Gwanari's entrance is right into its maw. There are four paths going in each of the cardinal directions, alongside three chambers with Tier 2 [âœ«âœ«âœ«âœ«] Loot Chests and a Stomach Dweller inside them.\n\nLoot Chests\nâ€¢ 3x Tier 2 [âœ«âœ«âœ«âœ«]\nâ€¢ 1x Tier 3 [âœ«âœ«âœ«âœ«]\n\nEnemies\nâ€¢ Leukocytic Growths (Lv. 104)\nâ€¢ Digestive Acids (Lv. 104)\nâ€¢ Stomach Dwellers (Lv. 105)\n\nFirst-Time Clear Rewards\nâ€¢ +1000000 XP",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/TheGwanari.png/256px-TheGwanari.png?7febaa",
     "gallery": [
@@ -2420,7 +2420,7 @@ export const CAVES_CONTENT = {
     "tutorials": []
   },
   "atlas-caves-the-lantern-keeper-s-abode-1285--1060": {
-    "summary": "The Lantern Keeper's Abode is centered on the Lantern Keeper fight and relentless Ignited minions. It is one of the caves that must be completed to unlock the Silent Expanse Expedition lootrun.",
+    "summary": "The Lantern Keeper's Abode is centered on the Lantern Keeper fight and relentless Ignited minions.",
     "explanation": "Overview\nâ€¢ Suggested level: 100\nâ€¢ Difficulty: Hard\nâ€¢ Length: Long\nâ€¢ Estimated time: 2m\nâ€¢ Type: Normal\n\nRoute\nâ€¢ The cave in its entirety is a boss cave. The main miniboss of the cave is the Lantern Keeper. Several of the Igniteds will serve as the main minions in the fight, although a mob called the Rekindled Unsurmountable will serve as a constant threat with an inability to die.\n\nLoot Chests\nâ€¢ 1x Tier 4 [âœ«âœ«âœ«âœ«]\n\nEnemies\nâ€¢ The Igniteds (Lv. 109)\nâ€¢ Rekindled Unsurmountable (Lv. 103)\nâ€¢ The Lantern Keeper (Lv. 109)\n\nFirst-Time Clear Rewards\nâ€¢ +1000000 XP",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/TheLanternKeeper%27sAbode.png/256px-TheLanternKeeper%27sAbode.png?d849d2",
     "gallery": [
@@ -2434,7 +2434,7 @@ export const CAVES_CONTENT = {
     "tutorials": []
   },
   "atlas-caves-the-place-coalesced-879--803": {
-    "summary": "The Place Coalesced has toxin-filled passages and escalating combat deeper inside the cavern. It is one of the caves required to unlock the Silent Expanse Expedition lootrun.",
+    "summary": "The Place Coalesced has toxin-filled passages and escalating combat deeper inside the cavern.",
     "explanation": "Overview\nâ€¢ Suggested level: 100\nâ€¢ Difficulty: Hard\nâ€¢ Length: Long\nâ€¢ Estimated time: 2m\nâ€¢ Type: Normal\n\nRoute\nâ€¢ The first section is a passage to the second section. Several Invading Toxins can be found in this part of the cave.\n\nLoot Chests\nâ€¢ 1x Tier 4 [âœ«âœ«âœ«âœ«]\n\nEnemies\nâ€¢ Invading Toxins (Lv. 102)\nâ€¢ Toxified Rocks (Lv. 99)\nâ€¢ Toxified Reshapeds (Lv. 99)\nâ€¢ Toxified Sheep (Lv. 99)\nâ€¢ Toxified Giant (Lv. 100)\nâ€¢ That Which Coalesces (Lv. 105)\n\nFirst-Time Clear Rewards\nâ€¢ +1000000 XP",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/ThePlaceCoalesced.png/256px-ThePlaceCoalesced.png?84478c",
     "gallery": [
@@ -2453,7 +2453,7 @@ export const CAVES_CONTENT = {
     "tutorials": []
   },
   "atlas-caves-the-place-condensed-1038--692": {
-    "summary": "The Place Condensed leads straight to the miniboss That Which Condenses and its reward chest. It is one of the caves required to unlock the Silent Expanse Expedition lootrun.",
+    "summary": "The Place Condensed leads straight to the miniboss That Which Condenses and its reward chest.",
     "explanation": "Overview\nâ€¢ Suggested level: 100\nâ€¢ Difficulty: Medium\nâ€¢ Length: Long\nâ€¢ Estimated time: 2m\nâ€¢ Type: Normal\n\nRoute\nâ€¢ The cave is a simple path to the end. At the end of the cave, there is the main miniboss of the cave, That Which Condenses, which must be killed to open at Tier 4 [âœ«âœ«âœ«âœ«] Loot Chest.\n\nLoot Chests\nâ€¢ 1x Tier 4 [âœ«âœ«âœ«âœ«]\n\nEnemies\nâ€¢ Blank Crawlers (Lv. 100)\nâ€¢ Reshaped Blanks (Lv. 102)\nâ€¢ Void Rifts (Lv. 103)\nâ€¢ That Which Condenses (Lv. 105)\n\nFirst-Time Clear Rewards\nâ€¢ +1000000 XP",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/ThePlaceCondensed.png/256px-ThePlaceCondensed.png?93fd0e",
     "gallery": [
@@ -2482,7 +2482,7 @@ export const CAVES_CONTENT = {
     "tutorials": []
   },
   "atlas-caves-the-warehouse--1847--2641": {
-    "summary": "The Warehouse is a Cave Complex found in the Scraplands. It is one of the caves that must be done in order to unlock The Corkus Traversal.",
+    "summary": "The Warehouse is a Cave Complex found in the Scraplands.",
     "explanation": "Overview\nâ€¢ Suggested level: 90\nâ€¢ Difficulty: Medium\nâ€¢ Length: Long\nâ€¢ Estimated time: 3m\nâ€¢ Type: Cave Complex\n\nRoute\nâ€¢ Primary Entrance: The main entrance to the Warehouse is guarded by several Guardian-Bots. Several Energised Mechs will be in the warehouse and will start rushing towards you. A safe spot can be found by taking a quick left in the first corridor, which also has a Tier 1 [âœ«âœ«âœ«âœ«] Loot Chest.\nâ€¢ Secondary Entrance: The secondary entrance can be found at -1858, 33, -2691, and starts off as a simple parkour section before turning into a running section, requiring you to avoid several Guardian-Bots firing at you.\nâ€¢ Storage Room: Inside the maze are two keys that are used to progress, the Red Energy Key, and the Lime Energy Key. All the points of interest in the maze are listed below:\nâ€¢ Red Room: The Red Room is unlocked at the Red Door using the Red Energy Key. Several Energy Turrets will pelt at you when you enter, with a Tier 2 [âœ«âœ«âœ«âœ«] Loot Chest being found in the middle of this room. Following this is a partly scaffolded area, which then leads to the start of the control room.\n\nLoot Chests\nâ€¢ 6x Tier 1 [âœ«âœ«âœ«âœ«]\nâ€¢ 3x Tier 2 [âœ«âœ«âœ«âœ«]\nâ€¢ 3x Tier 3 [âœ«âœ«âœ«âœ«]\n\nEnemies\nâ€¢ Guardian-Bots (Lv. 95)\nâ€¢ Energised Mechs (Lv. 95)\nâ€¢ Worker-Bots (Lv. 95)\nâ€¢ Red Energy Key (Lv. 25)\nâ€¢ Lime Energy Key (Lv. 25)\nâ€¢ Energy Turrets (Lv. 95)\nâ€¢ Cyan Energy Key (Lv. 25)\nâ€¢ Control Panels (Lv. 95)\nâ€¢ Purple Energy Key (Lv. 25)\n\nFirst-Time Clear Rewards\nâ€¢ +400000 XP",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/TheWarehouse.png/256px-TheWarehouse.png?d407af",
     "gallery": [
@@ -2689,7 +2689,7 @@ export const CAVES_CONTENT = {
     "tutorials": []
   },
   "atlas-caves-windwalker-temple-1358--4745": {
-    "summary": "The Windwalker Temple is a Cave found in the Sky Islands. It is one of the caves that must be completed in order to unlock the Sky Islands Exploration Lootrun.",
+    "summary": "The Windwalker Temple is a Cave found in the Sky Islands.",
     "explanation": "Overview\nâ€¢ Suggested level: 96\nâ€¢ Difficulty: Easy\nâ€¢ Length: Short\nâ€¢ Estimated time: 45s\nâ€¢ Type: Normal\n\nRoute\nâ€¢ The start of the cave has two Sylphid Gatekeepers standing guard. Continuing into the temple will be a central room with a Sylphid Observer alongside 3 branches. The left branch has a hidden room with a Tier 3 [âœ«âœ«âœ«âœ«] Loot Chest that requires 3 nearby Sylphid Statues to be killed.\n\nLoot Chests\nâ€¢ 1x Tier 3 [âœ«âœ«âœ«âœ«]\n\nEnemies\nâ€¢ Sylphid Ghosts (Lv. 96)\nâ€¢ Sylphid Servants (Lv. 98)\nâ€¢ Sylphid Statues (Lv. 99)\nâ€¢ Sylphid Observer (Lv. 100)\n\nFirst-Time Clear Rewards\nâ€¢ +700000 XP",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/WindwalkerTemple.png/256px-WindwalkerTemple.png?7fa971",
     "gallery": [

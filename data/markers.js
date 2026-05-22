@@ -589,6 +589,55 @@ const QIRA_HIVE_CONTEXT_MARKERS = [
   },
 ];
 
+export const LOOTRUN_CAVE_REQUIREMENT_GROUPS = [
+  {
+    groupId: "lootrun-silent-expanse",
+    parentId: "lutho-loot-camp",
+    title: "Silent Expanse Expedition",
+    caveTitles: [
+      "Blind Burrow",
+      "Caged Creatures",
+      "Eyeball Gauntlet",
+      "Haze Cave",
+      "Loot Symposium",
+      "Spiteful Crossing",
+      "Statue Opening",
+      "The Gwanari",
+      "The Lantern Keeper's Abode",
+      "The Place Coalesced",
+      "The Place Condensed",
+    ],
+  },
+  {
+    groupId: "lootrun-corkus-traversal",
+    parentId: "corkus-loot-camp",
+    title: "The Corkus Traversal",
+    caveTitles: [
+      "Aquaculture Aquifer",
+      "Avos Animation Totem (Cave)",
+      "Builder-Bot Central",
+      "Corkus Quarry",
+      "Junk Pit",
+      "Pirate Lattice",
+      "Steamworks",
+      "The Warehouse",
+    ],
+  },
+  {
+    groupId: "lootrun-sky-islands",
+    parentId: "sky-loot-camp",
+    title: "Sky Islands Exploration",
+    caveTitles: [
+      "Azurite Island",
+      "Forgotten Excavation",
+      "Ovine Spire",
+      "Scarred Ingress",
+      "The Donjon",
+      "Windwalker Temple",
+    ],
+  },
+];
+
 export const CURATED_MARKERS = [
   ...WORLD_EVENT_MARKERS,
   ...GENERATED_FAST_TRAVEL_MARKERS,
