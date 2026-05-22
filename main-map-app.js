@@ -6,8 +6,8 @@ import {
   deferredCategoryCount,
   deferredMarkerGroupForCategory,
   loadDeferredMarkersForCategory,
-} from "./data/markers.js?v=20260522d";
-import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260522d";
+} from "./data/markers.js?v=20260522e";
+import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260522e";
 import {
   contentSourceError,
   contentSourceKeyForCategory,
@@ -31,7 +31,7 @@ import {
   resolveImageUrl,
   splitMultiline,
   youtubeEmbedMeta,
-} from "./shared/app-utils.js?v=20260522d";
+} from "./shared/app-utils.js?v=20260522e";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
@@ -125,6 +125,16 @@ const INGREDIENT_DROP_MARKER_ID_OVERRIDES = {
     "mob-pu-0iner-patroller",
     "mob-u-4epaired-bot",
   ],
+};
+const MOB_ICON_TITLE_OVERRIDES = {
+  "H-10ar Machine": new URL("./assets/mob-icon-overrides/H-101WarMachine.png", import.meta.url).href,
+  "H-20ar Machine": new URL("./assets/mob-icon-overrides/H-208WarMachine.png", import.meta.url).href,
+  "H-21ar Machine": new URL("./assets/mob-icon-overrides/H-212WarMachine.png", import.meta.url).href,
+  "L-2nforcer Drone": new URL("./assets/mob-icon-overrides/L-22EnforcerDrone.png", import.meta.url).href,
+  "L-2unition Drone": new URL("./assets/mob-icon-overrides/L-21MunitionDrone.png", import.meta.url).href,
+  "P-1ogue Patroller": new URL("./assets/mob-icon-overrides/P-16RoguePatroller.png", import.meta.url).href,
+  "PU-0iner Patroller": new URL("./assets/mob-icon-overrides/PU-02MinerPatroller.png", import.meta.url).href,
+  "U-4epaired Bot": new URL("./assets/mob-icon-overrides/U-45RepairBot.png", import.meta.url).href,
 };
 
 const URL_PROJECTION_CONFIG = {
@@ -240,6 +250,7 @@ const state = {
 
 let mobIconUrlMap = null;
 let mobIconUrlPromise = null;
+let mobIconTitleLookup = null;
 let referenceImageUrlMap = null;
 let referenceImageUrlPromise = null;
 let itemDatabase = null;
@@ -310,6 +321,131 @@ function buildItemKey(item) {
 
 function itemLookupKey(value) {
   return normalizeMarkerLookup(String(value || "").replace(/\bunidentified\b/gi, "").replace(/^[+x0-9\s]+/, "").trim());
+}
+
+function levenshteinDistance(left, right) {
+  const a = String(left || "");
+  const b = String(right || "");
+  const dp = Array.from({ length: a.length + 1 }, () => new Array(b.length + 1).fill(0));
+  for (let i = 0; i <= a.length; i += 1) dp[i][0] = i;
+  for (let j = 0; j <= b.length; j += 1) dp[0][j] = j;
+  for (let i = 1; i <= a.length; i += 1) {
+    for (let j = 1; j <= b.length; j += 1) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      dp[i][j] = Math.min(dp[i - 1][j] + 1, dp[i][j - 1] + 1, dp[i - 1][j - 1] + cost);
+    }
+  }
+  return dp[a.length][b.length];
+}
+
+function mobIconTitleCandidates(iconKey) {
+  const decoded = decodeURIComponent(String(iconKey || ""));
+  const match = decoded.match(/\/([^/]+?)(?:\.[a-z0-9]+)?(?:\?|$)/i);
+  const rawBase = (match ? match[1] : decoded)
+    .replace(/^100px-/, "")
+    .replace(/%27/g, "'")
+    .replace(/\([^)]*\)/g, " ")
+    .replace(/[_-]+/g, " ")
+    .replace(/([a-z0-9])([A-Z])/g, "$1 $2")
+    .replace(/\s+/g, " ")
+    .trim();
+  const compactBase = rawBase.replace(/\s+/g, "");
+  return [rawBase, compactBase].map((candidate) => normalizeMarkerLookup(candidate)).filter(Boolean);
+}
+
+function mobIconLookup() {
+  if (mobIconTitleLookup) {
+    return mobIconTitleLookup;
+  }
+  const next = new Map();
+  const mobIcons = mobIconUrls();
+  Object.keys(mobIcons).forEach((iconKey) => {
+    mobIconTitleCandidates(iconKey).forEach((candidate) => {
+      if (candidate && !next.has(candidate)) {
+        next.set(candidate, iconKey);
+      }
+    });
+  });
+  mobIconTitleLookup = next;
+  return mobIconTitleLookup;
+}
+
+function fallbackMobIconKey(marker) {
+  if (!isMobCategory(marker?.category)) {
+    return "";
+  }
+  const lookup = mobIconLookup();
+  const directKey = normalizeMarkerLookup(marker.title);
+  if (lookup.has(directKey)) {
+    return lookup.get(directKey);
+  }
+  const directCompactKey = directKey.replace(/\s+/g, "");
+  if (lookup.has(directCompactKey)) {
+    return lookup.get(directCompactKey);
+  }
+
+  let bestKey = "";
+  let bestDistance = Number.POSITIVE_INFINITY;
+  for (const candidate of lookup.keys()) {
+    const distance = levenshteinDistance(directKey, candidate);
+    if (distance < bestDistance) {
+      bestDistance = distance;
+      bestKey = candidate;
+    }
+  }
+  return bestDistance <= 4 ? lookup.get(bestKey) || "" : "";
+}
+
+function mobIngredientDrops(marker) {
+  if (!isMobCategory(marker?.category)) {
+    return [];
+  }
+  const ignored = new Set([
+    normalizeMarkerLookup("mob"),
+    normalizeMarkerLookup("ingredient drops"),
+    normalizeMarkerLookup(marker.region),
+  ]);
+  const seen = new Set();
+  const drops = [];
+  (marker.tags || []).forEach((tag) => {
+    const normalized = normalizeMarkerLookup(tag);
+    if (!normalized || ignored.has(normalized) || seen.has(normalized)) {
+      return;
+    }
+    seen.add(normalized);
+    drops.push(String(tag).trim());
+  });
+  return drops;
+}
+
+function mobDropsWithExistingItems(marker, items = []) {
+  const seen = new Set();
+  const drops = [];
+  items.forEach((item) => {
+    const label = String(item || "").replace(/^[•»]\s*/, "").trim();
+    const normalized = normalizeMarkerLookup(label);
+    if (!normalized || seen.has(normalized)) {
+      return;
+    }
+    seen.add(normalized);
+    drops.push(label);
+  });
+  mobIngredientDrops(marker).forEach((drop) => {
+    const normalized = normalizeMarkerLookup(drop);
+    if (!normalized || seen.has(normalized)) {
+      return;
+    }
+    seen.add(normalized);
+    drops.push(drop);
+  });
+  return drops;
+}
+
+function mergeMobDropsIntoSection(title, items, marker) {
+  if (!isMobCategory(marker?.category) || normalizeMarkerLookup(title) !== normalizeMarkerLookup("Drops")) {
+    return items;
+  }
+  return mobDropsWithExistingItems(marker, items).map((item) => `• ${item}`);
 }
 
 function itemLevel(item) {
@@ -730,7 +866,7 @@ async function ensureMobIconUrlsLoaded() {
     return mobIconUrlMap;
   }
   if (!mobIconUrlPromise) {
-    mobIconUrlPromise = import("./data/mob-icon-urls.js?v=20260522d")
+    mobIconUrlPromise = import("./data/mob-icon-urls.js?v=20260522e")
       .then((module) => {
         mobIconUrlMap = module.MOB_ICON_URLS;
         return mobIconUrlMap;
@@ -747,7 +883,7 @@ async function ensureReferenceImageUrlsLoaded() {
     return referenceImageUrlMap;
   }
   if (!referenceImageUrlPromise) {
-    referenceImageUrlPromise = import("./data/reference-images.js?v=20260522d")
+    referenceImageUrlPromise = import("./data/reference-images.js?v=20260522e")
       .then((module) => {
         referenceImageUrlMap = module.REFERENCE_IMAGE_URLS;
         return referenceImageUrlMap;
@@ -1605,7 +1741,7 @@ async function ensureMarkerContentLoaded(marker) {
 }
 
 function ensureMarkerAssetsLoaded(marker) {
-  if (marker?.iconImage && !mobIconUrlMap) {
+  if (isMobCategory(marker?.category) && !mobIconUrlMap) {
     void ensureMobIconUrlsLoaded().then(() => {
       renderCategoryFilters();
       renderDetailCard();
@@ -1797,6 +1933,18 @@ function contentPreviewHtml(marker, entry) {
     blocks.push(html`<p class="content-summary">${entry.summary}</p>`);
   }
 
+  const mobDrops = !entry.explanation ? mobIngredientDrops(marker) : [];
+  if (mobDrops.length) {
+    blocks.push(html`
+      <section class="content-step content-step-rich">
+        <h3>Ingredient Drops</h3>
+        <ul>
+          ${html.raw(mobDrops.map((drop) => html`<li>${drop}</li>`).join(""))}
+        </ul>
+      </section>
+    `);
+  }
+
   if (entry.explanation) {
     const sections = entry.explanation
       .split(/\n{2,}/)
@@ -1810,7 +1958,8 @@ function contentPreviewHtml(marker, entry) {
       );
 
     const renderSectionCard = (lines) => {
-      const [title, ...items] = lines;
+      const [title, ...rawItems] = lines;
+      const items = mergeMobDropsIntoSection(title, rawItems, marker);
       if (!title) {
         return "";
       }
@@ -1846,7 +1995,8 @@ function contentPreviewHtml(marker, entry) {
     const stepCards = sections.every((lines) => /^Stage\s+\d+\b/i.test(lines[0] || ""))
       ? sections
           .map((lines) => {
-            const [title, ...items] = lines;
+            const [title, ...rawItems] = lines;
+            const items = mergeMobDropsIntoSection(title, rawItems, marker);
             if (!items.length) {
               return "";
             }
@@ -2236,9 +2386,14 @@ function genericIconMarkup(categoryId, extraClass = "") {
 }
 
 function markerIconUrl(marker, variant = "active") {
+  const overrideUrl = MOB_ICON_TITLE_OVERRIDES[marker?.title];
+  if (overrideUrl) {
+    return overrideUrl;
+  }
   const mobIcons = mobIconUrls();
-  if (marker?.iconImage && mobIcons[marker.iconImage]) {
-    return resolveImageUrl(marker.iconImage, mobIcons, {});
+  const mobIconKey = marker?.iconImage && mobIcons[marker.iconImage] ? marker.iconImage : fallbackMobIconKey(marker);
+  if (mobIconKey && mobIcons[mobIconKey]) {
+    return resolveImageUrl(mobIconKey, mobIcons, {});
   }
   return categoryAssetUrl(marker?.category, variant);
 }
@@ -2658,7 +2813,7 @@ function buildMarkerIcon(marker, isFound, isSelected) {
   const variant = isFound ? "locked" : "active";
   const iconUrl = markerIconUrl(marker, variant);
   const classes = ["asset-pin"];
-  if (marker.iconImage && iconUrl) {
+  if (isMobCategory(marker.category) && iconUrl) {
     classes.push("mob-pin");
   }
   if (isFound) {
@@ -3231,7 +3386,7 @@ function renderDetailCard() {
   const detailIcon = marker.fixed
     ? `<span class="detail-icon city" style="--detail-icon:url('${iconUrl}');"></span>`
     : iconUrl
-      ? `<span class="detail-icon ${marker.iconImage ? "mob-detail-icon" : ""}" style="--detail-icon:url('${iconUrl}');--detail-accent:${meta.color};"></span>`
+      ? `<span class="detail-icon ${isMobCategory(marker.category) ? "mob-detail-icon" : ""}" style="--detail-icon:url('${iconUrl}');--detail-accent:${meta.color};"></span>`
       : genericIconMarkup(marker.category, "detail-icon generic-detail-icon");
   const content = contentExportEntry(marker);
   const authoredContent = markerContentAuthorEntry(marker.id);

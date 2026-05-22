@@ -1,4 +1,4 @@
-const CACHE_NAME = "wynnteractive-runtime-v6";
+const CACHE_NAME = "wynnteractive-runtime-v7";
 
 function isCacheable(request) {
   if (request.method !== "GET") {
