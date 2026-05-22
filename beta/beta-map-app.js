@@ -850,6 +850,9 @@ function focusItemSource(source) {
 }
 
 function renderItemsCard() {
+  const previouslyFocusedItemSearch = document.activeElement?.id === "item-search-input";
+  const previousSelectionStart = previouslyFocusedItemSearch ? document.activeElement.selectionStart : null;
+  const previousSelectionEnd = previouslyFocusedItemSearch ? document.activeElement.selectionEnd : null;
   if (!elements.itemsCard) {
     return;
   }
@@ -1063,6 +1066,13 @@ function renderItemsCard() {
       nextInput.setSelectionRange(nextValue.length, nextValue.length);
     }
   });
+
+  if (previouslyFocusedItemSearch && itemSearchInput) {
+    itemSearchInput.focus({ preventScroll: true });
+    const selectionStart = previousSelectionStart ?? state.itemSearch.length;
+    const selectionEnd = previousSelectionEnd ?? selectionStart;
+    itemSearchInput.setSelectionRange(selectionStart, selectionEnd);
+  }
 
   elements.itemsCard.querySelector("[data-clear-item-search]")?.addEventListener("click", () => {
     state.itemSearch = "";
