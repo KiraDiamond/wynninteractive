@@ -65,21 +65,51 @@
         </div>
 
         <div class="panel-tabbar" role="tablist" aria-label="Map panel modes">
-          <button type="button" class="panel-tab active" aria-label="Markers" data-panel-view="markers">
+          <button
+            type="button"
+            class="panel-tab active"
+            id="panel-tab-markers"
+            role="tab"
+            aria-label="Markers"
+            aria-selected="true"
+            aria-controls="panel-screen-markers"
+            tabindex="0"
+            data-panel-view="markers"
+          >
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path
                 d="M12 21c4-5 6-8.4 6-11a6 6 0 1 0-12 0c0 2.6 2 6 6 11Zm0-8.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"
               />
             </svg>
           </button>
-          <button type="button" class="panel-tab" aria-label="Info" data-panel-view="info">
+          <button
+            type="button"
+            class="panel-tab"
+            id="panel-tab-info"
+            role="tab"
+            aria-label="Info"
+            aria-selected="false"
+            aria-controls="panel-screen-info"
+            tabindex="-1"
+            data-panel-view="info"
+          >
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path
                 d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H9l-4 3v-3H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm3 4h8v2H8V9Zm0 4h5v2H8v-2Z"
               />
             </svg>
           </button>
-          <button type="button" class="panel-tab" aria-label="Links" data-panel-view="links">
+          <button
+            type="button"
+            class="panel-tab"
+            id="panel-tab-links"
+            role="tab"
+            aria-label="Links"
+            aria-selected="false"
+            aria-controls="panel-screen-links"
+            tabindex="-1"
+            data-panel-view="links"
+          >
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path
                 d="M10.6 13.4a1 1 0 0 0 1.4 1.4l4.6-4.6a3 3 0 1 0-4.2-4.2l-1.7 1.7a1 1 0 1 0 1.4 1.4l1.7-1.7a1 1 0 1 1 1.4 1.4Zm2.8-2.8a1 1 0 0 0-1.4-1.4l-4.6 4.6a3 3 0 0 0 4.2 4.2l1.7-1.7a1 1 0 1 0-1.4-1.4l-1.7 1.7a1 1 0 1 1-1.4-1.4Z"
@@ -90,7 +120,14 @@
 
         <div class="panel-banner">Routes, rewards, discoveries, profession spots, and mobs.</div>
 
-        <section class="panel-screen" data-panel-screen="markers">
+        <section
+          class="panel-screen"
+          id="panel-screen-markers"
+          role="tabpanel"
+          aria-labelledby="panel-tab-markers"
+          aria-hidden="false"
+          data-panel-screen="markers"
+        >
           <div class="panel-toolbar">
             <div class="map-selector-wrap">
               <button type="button" class="map-selector" aria-expanded="false" aria-haspopup="menu">
@@ -130,14 +167,28 @@
           <div id="category-filters" class="category-list"></div>
         </section>
 
-        <section class="panel-screen hidden" data-panel-screen="info">
+        <section
+          class="panel-screen hidden"
+          id="panel-screen-info"
+          role="tabpanel"
+          aria-labelledby="panel-tab-info"
+          aria-hidden="true"
+          data-panel-screen="info"
+        >
           <article id="info-card" class="detail-card empty">
             <h2>No marker selected</h2>
             <p>Select a marker to view guide notes, rewards, routes, and source links.</p>
           </article>
         </section>
 
-        <section class="panel-screen hidden" data-panel-screen="links">
+        <section
+          class="panel-screen hidden"
+          id="panel-screen-links"
+          role="tabpanel"
+          aria-labelledby="panel-tab-links"
+          aria-hidden="true"
+          data-panel-screen="links"
+        >
           <article id="link-card" class="detail-card empty">
             <h2>No marker selected</h2>
             <p>Select a quest or secret discovery to view its linked video.</p>
@@ -193,7 +244,7 @@
       <div class="intro-modal-panel">
         <div class="intro-modal-head">
           <div class="intro-modal-brand">
-            <img class="intro-modal-icon" src="./assets/icon.avif" alt="" />
+            <img class="intro-modal-icon" src="./assets/icon-modal.png" alt="" />
             <div>
               <p class="intro-modal-kicker">Welcome</p>
               <h2 id="intro-title">Wynnteractive Map</h2>
@@ -205,6 +256,13 @@
           Wynnteractive Map is an interactive Wynncraft map that brings quests, discoveries, caves, raids, boss altars,
           profession spots, travel routes, lootrun camps, and mob locations into one place.
         </p>
+        <div class="intro-theme-row" aria-label="Choose intro theme">
+          <span class="intro-theme-label">Theme</span>
+          <div class="intro-theme-toggle" role="group" aria-label="Theme mode">
+            <button type="button" class="intro-theme-option" data-intro-theme="light">☀ Light</button>
+            <button type="button" class="intro-theme-option" data-intro-theme="dark">☾ Dark</button>
+          </div>
+        </div>
         <div class="intro-modal-grid">
           <section class="intro-modal-block">
             <h3>What It Does</h3>

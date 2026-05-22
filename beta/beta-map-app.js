@@ -321,6 +321,7 @@ const elements = {
   appearanceCard: document.querySelector("#appearance-card"),
   themeDockButton: document.querySelector("#theme-dock-button"),
   themeDockGlyph: document.querySelector("#theme-dock-glyph"),
+  introThemeButtons: document.querySelectorAll("[data-intro-theme]"),
   itemsCard: document.querySelector("#items-card"),
   studioCard: document.querySelector("#studio-card"),
   cityEditorStatus: document.querySelector("#city-editor-status"),
@@ -907,6 +908,14 @@ function renderThemeDockButton() {
   elements.themeDockButton.setAttribute("title", nextLabel);
   elements.themeDockButton.dataset.themeTarget = nextTheme;
   elements.themeDockGlyph.textContent = nextTheme === "dark" ? "☾" : "☀";
+}
+
+function renderIntroThemeButtons() {
+  elements.introThemeButtons.forEach((button) => {
+    const active = button.dataset.introTheme === state.theme;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", active ? "true" : "false");
+  });
 }
 
 function selectedItemEntry() {
@@ -1710,6 +1719,7 @@ function applyTheme(theme, { persist = true } = {}) {
   }
   renderAppearanceCard();
   renderThemeDockButton();
+  renderIntroThemeButtons();
 }
 
 applyTheme(state.theme, { persist: false });
@@ -1984,10 +1994,15 @@ function suppressClicksAfterDrag(durationMs = 350) {
 function setPanelView(view) {
   state.panelView = view;
   elements.panelTabs.forEach((button) => {
-    button.classList.toggle("active", button.dataset.panelView === view);
+    const isActive = button.dataset.panelView === view;
+    button.classList.toggle("active", isActive);
+    button.setAttribute("aria-selected", isActive ? "true" : "false");
+    button.tabIndex = isActive ? 0 : -1;
   });
   elements.panelViews.forEach((panel) => {
-    panel.classList.toggle("hidden", panel.dataset.panelScreen !== view);
+    const isHidden = panel.dataset.panelScreen !== view;
+    panel.classList.toggle("hidden", isHidden);
+    panel.setAttribute("aria-hidden", isHidden ? "true" : "false");
   });
   if (view === "appearance") {
     renderAppearanceCard();
@@ -4755,6 +4770,26 @@ function bindEvents() {
     button.addEventListener("click", () => {
       setPanelView(button.dataset.panelView);
     });
+    button.addEventListener("keydown", (event) => {
+      if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) {
+        return;
+      }
+      event.preventDefault();
+      const tabs = [...elements.panelTabs];
+      const currentIndex = tabs.indexOf(button);
+      let nextIndex = currentIndex;
+      if (event.key === "ArrowRight") {
+        nextIndex = (currentIndex + 1) % tabs.length;
+      } else if (event.key === "ArrowLeft") {
+        nextIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+      } else if (event.key === "Home") {
+        nextIndex = 0;
+      } else if (event.key === "End") {
+        nextIndex = tabs.length - 1;
+      }
+      tabs[nextIndex].focus();
+      setPanelView(tabs[nextIndex].dataset.panelView);
+    });
   });
 
   if (elements.mapSelector) {
@@ -5104,6 +5139,12 @@ function bindEvents() {
       applyTheme(elements.themeDockButton.dataset.themeTarget || (state.theme === "dark" ? "light" : "dark"));
     });
   }
+
+  elements.introThemeButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      applyTheme(button.dataset.introTheme || "light");
+    });
+  });
 
   if (elements.introModal) {
     elements.introModal.addEventListener("click", (event) => {
