@@ -1,4 +1,4 @@
-const CACHE_NAME = "wynnteractive-runtime-v3";
+const CACHE_NAME = "wynnteractive-runtime-v4";
 
 function isCacheable(request) {
   if (request.method !== "GET") {
@@ -18,6 +18,11 @@ function isCacheable(request) {
     /\.(?:js|css|avif|png|jpe?g|webp|svg|woff2?)$/i.test(url.pathname) ||
     url.pathname.includes("/data/")
   );
+}
+
+function isCodeOrDataRequest(request) {
+  const url = new URL(request.url);
+  return /\.(?:js|css)$/i.test(url.pathname) || url.pathname.includes("/data/");
 }
 
 self.addEventListener("install", () => {
@@ -51,6 +56,10 @@ self.addEventListener("fetch", (event) => {
           return response;
         })
         .catch(() => cached);
+
+      if (isCodeOrDataRequest(event.request)) {
+        return networkFetch;
+      }
 
       return cached || networkFetch;
     })
