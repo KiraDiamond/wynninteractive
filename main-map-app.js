@@ -6,8 +6,8 @@ import {
   deferredCategoryCount,
   deferredMarkerGroupForCategory,
   loadDeferredMarkersForCategory,
-} from "./data/markers.js?v=20260521g";
-import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260521g";
+} from "./data/markers.js?v=20260522a";
+import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260522a";
 import {
   contentSourceError,
   contentSourceKeyForCategory,
@@ -32,7 +32,7 @@ import {
   resolveImageUrl,
   splitMultiline,
   youtubeEmbedMeta,
-} from "./shared/app-utils.js?v=20260521g";
+} from "./shared/app-utils.js?v=20260522a";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
@@ -719,7 +719,7 @@ async function ensureMobIconUrlsLoaded() {
     return mobIconUrlMap;
   }
   if (!mobIconUrlPromise) {
-    mobIconUrlPromise = import("./data/mob-icon-urls.js?v=20260521g")
+    mobIconUrlPromise = import("./data/mob-icon-urls.js?v=20260522a")
       .then((module) => {
         mobIconUrlMap = module.MOB_ICON_URLS;
         return mobIconUrlMap;
@@ -736,7 +736,7 @@ async function ensureReferenceImageUrlsLoaded() {
     return referenceImageUrlMap;
   }
   if (!referenceImageUrlPromise) {
-    referenceImageUrlPromise = import("./data/reference-images.js?v=20260521g")
+    referenceImageUrlPromise = import("./data/reference-images.js?v=20260522a")
       .then((module) => {
         referenceImageUrlMap = module.REFERENCE_IMAGE_URLS;
         return referenceImageUrlMap;
