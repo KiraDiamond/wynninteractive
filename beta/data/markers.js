@@ -3,9 +3,17 @@ import {
   CATEGORY_ORDER as ROOT_CATEGORY_ORDER,
   CURATED_MARKERS as ROOT_CURATED_MARKERS,
   STARTER_MARKERS,
-} from "../../data/markers.js?v=20260520i";
+  deferredCategoryCount,
+  deferredMarkerGroupForCategory,
+  loadDeferredMarkersForCategory,
+} from "../../data/markers.js?v=20260522a";
 export const CATEGORY_META = ROOT_CATEGORY_META;
 export const CATEGORY_ORDER = ROOT_CATEGORY_ORDER;
 
-export { STARTER_MARKERS };
+export {
+  STARTER_MARKERS,
+  deferredCategoryCount,
+  deferredMarkerGroupForCategory,
+  loadDeferredMarkersForCategory,
+};
 export const CURATED_MARKERS = ROOT_CURATED_MARKERS;
