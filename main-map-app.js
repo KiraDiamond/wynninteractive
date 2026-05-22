@@ -88,6 +88,26 @@ const LOW_VALUE_DESCRIPTION_PATTERNS = [
 ];
 const VIDEO_GUIDE_CATEGORY_IDS = new Set(["quests", "mini_quests", "secret_discovery"]);
 const MOB_CATEGORY_IDS = CATEGORY_ORDER.filter((categoryId) => categoryId.startsWith("hostile_mobs"));
+const ITEM_DATABASE_URLS = [
+  new URL("./data/wiki-scrape/items/item-database.full.json", import.meta.url).href,
+  "https://api.wynncraft.com/v3/item/database?fullResult",
+];
+const ITEM_WIKI_EXTRACTS_URLS = [
+  new URL("./data/wiki-scrape/items/wiki-item-extracts.json", import.meta.url).href,
+];
+const ITEM_SOURCE_TYPE_LABELS = {
+  altar: "Boss altar",
+  challenge: "Challenge",
+  dungeon: "Dungeon",
+  dungeonMerchant: "Dungeon merchant",
+  "event,merchant": "Event merchant",
+  guild: "Guild reward",
+  lootrun: "Lootrun",
+  merchant: "Merchant",
+  miniboss: "Miniboss",
+  quest: "Quest reward",
+  raid: "Raid",
+};
 const BOSS_ALTAR_INGREDIENT_OVERRIDES = {
   "atlas-boss_altar-aerie-of-the-recluse--1746--3069": "7 Turtle Shells",
   "atlas-boss_altar-altar-of-sanctification--911--623": "1 Skiens Badge",
@@ -193,6 +213,8 @@ const state = {
   ),
   introDismissed: loadDismissedFlag(STORAGE_KEYS.introDismissed),
   panelView: "markers",
+  itemSearch: "",
+  selectedItemKey: "",
   activeMobFamily: null,
   trackedIngredient: "",
   ingredientNoteDismissed: false,
@@ -209,6 +231,17 @@ let mobIconUrlMap = null;
 let mobIconUrlPromise = null;
 let referenceImageUrlMap = null;
 let referenceImageUrlPromise = null;
+let itemDatabase = null;
+let itemDatabasePromise = null;
+let itemLookupEntries = [];
+let itemWikiExtractMap = null;
+let itemWikiExtractPromise = null;
+let caveRewardIndex = null;
+let caveRewardIndexPromise = null;
+let caveChestCatalog = null;
+let itemDatabaseError = "";
+let itemWikiExtractError = "";
+let caveRewardIndexError = "";
 
 const elements = {
   appShell: document.querySelector(".app-shell"),
@@ -229,6 +262,7 @@ const elements = {
   detailCard: document.querySelector("#info-card"),
   linkCard: document.querySelector("#link-card"),
   appearanceCard: document.querySelector("#appearance-card"),
+  itemsCard: document.querySelector("#items-card"),
   studioCard: document.querySelector("#studio-card"),
   cityEditorStatus: document.querySelector("#city-editor-status"),
   cityEditorOutput: document.querySelector("#city-editor-output"),
@@ -257,6 +291,387 @@ function currentMapImageTargetWidth() {
   const viewportWidth = window.visualViewport?.width || window.innerWidth;
   const mapWidth = Math.max(viewportWidth - (viewportWidth >= 960 ? 360 : 0), 320);
   return Math.ceil(mapWidth);
+}
+
+function buildItemKey(item) {
+  return [item.internalName || "", item.displayName || "", item.type || "", item.subType || ""].join("::");
+}
+
+function itemLookupKey(value) {
+  return normalizeMarkerLookup(String(value || "").replace(/\bunidentified\b/gi, "").replace(/^[+x0-9\s]+/, "").trim());
+}
+
+function itemLevel(item) {
+  return Number(item?.requirements?.level || 0);
+}
+
+function itemTypeLabel(item) {
+  const base = [item.tier, item.subType || item.type].filter(Boolean).join(" ");
+  return base.replace(/\b\w/g, (match) => match.toUpperCase());
+}
+
+function itemSourceTypeLabel(type) {
+  return ITEM_SOURCE_TYPE_LABELS[type] || String(type || "Source")
+    .replace(/([a-z])([A-Z])/g, "$1 $2")
+    .replace(/,/g, " / ")
+    .replace(/\b\w/g, (match) => match.toUpperCase());
+}
+
+function matchRewardItemEntry(rewardLine) {
+  const normalizedReward = itemLookupKey(rewardLine);
+  if (!normalizedReward) {
+    return null;
+  }
+  const paddedReward = ` ${normalizedReward} `;
+  for (const [lookup, item] of itemLookupEntries) {
+    if (paddedReward.includes(` ${lookup} `)) {
+      return item;
+    }
+  }
+  return null;
+}
+
+function extractSectionLines(explanation, sectionTitle) {
+  const blocks = String(explanation || "")
+    .split(/\n{2,}/)
+    .map((block) => block.trim())
+    .filter(Boolean);
+  const target = blocks.find((block) => block.split("\n")[0].trim().toLowerCase() === sectionTitle.toLowerCase());
+  if (!target) {
+    return [];
+  }
+  return target
+    .split("\n")
+    .slice(1)
+    .map((line) => line.replace(/^•\s*/, "").trim())
+    .filter(Boolean);
+}
+
+function normalizeCoordsArray(coords) {
+  if (!coords) {
+    return [];
+  }
+  if (Array.isArray(coords) && typeof coords[0] === "number") {
+    return coords.length >= 3 ? [{ x: coords[0], z: coords[2] }] : [];
+  }
+  if (!Array.isArray(coords)) {
+    return [];
+  }
+  return coords
+    .filter((entry) => Array.isArray(entry) && entry.length >= 3)
+    .map((entry) => ({ x: entry[0], z: entry[2] }));
+}
+
+async function loadJsonFromAny(urls) {
+  let lastError = null;
+  for (const url of urls) {
+    try {
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`${response.status} ${response.statusText}`);
+      }
+      return await response.json();
+    } catch (error) {
+      lastError = error;
+    }
+  }
+  throw lastError || new Error("Unable to load JSON data.");
+}
+
+async function ensureItemDatabaseLoaded() {
+  if (itemDatabase) {
+    return itemDatabase;
+  }
+  if (itemDatabasePromise) {
+    return itemDatabasePromise;
+  }
+  itemDatabaseError = "";
+  itemDatabasePromise = loadJsonFromAny(ITEM_DATABASE_URLS)
+    .then((data) => {
+      itemDatabase = Array.isArray(data)
+        ? data
+            .map((item) => ({
+              ...item,
+              _itemKey: buildItemKey(item),
+              _lookup: itemLookupKey(item.displayName || item.internalName),
+            }))
+            .sort(
+              (left, right) =>
+                (itemLevel(right) - itemLevel(left)) ||
+                String(left.displayName || "").localeCompare(String(right.displayName || "")) ||
+                String(left.internalName || "").localeCompare(String(right.internalName || "")),
+            )
+        : [];
+      itemLookupEntries = itemDatabase
+        .map((item) => [itemLookupKey(item.displayName || item.internalName), item])
+        .filter(([lookup]) => Boolean(lookup))
+        .sort((left, right) => right[0].length - left[0].length);
+      return itemDatabase;
+    })
+    .catch((error) => {
+      itemDatabaseError = error instanceof Error ? error.message : "Failed to load the item database.";
+      throw error;
+    })
+    .finally(() => {
+      itemDatabasePromise = null;
+      renderItemsCard();
+      if (state.selectedItemKey) {
+        syncVisibleMarkers();
+        renderCategoryFilters();
+      }
+    });
+  return itemDatabasePromise;
+}
+
+async function ensureCaveRewardIndexLoaded() {
+  if (caveRewardIndex) {
+    return caveRewardIndex;
+  }
+  if (caveRewardIndexPromise) {
+    return caveRewardIndexPromise;
+  }
+  caveRewardIndexError = "";
+
+  caveRewardIndexPromise = (async () => {
+    const caveContent = await loadMarkerContentForCategory("caves");
+    const items = await ensureItemDatabaseLoaded();
+    const itemNameMap = new Map(items.map((item) => [itemLookupKey(item.displayName || item.internalName), item]));
+    const nextIndex = new Map();
+    const nextCaveCatalog = [];
+
+    for (const [markerId, entry] of Object.entries(caveContent || {})) {
+      const rewards = extractSectionLines(entry.explanation, "First-Time Clear Rewards");
+      const lootChests = extractSectionLines(entry.explanation, "Loot Chests");
+      const caveMarker = getMarkerById(markerId);
+      const suggestedLevelLine = extractSectionLines(entry.explanation, "Overview").find((line) =>
+        /^Suggested level:/i.test(line),
+      );
+      const suggestedLevelMatch = suggestedLevelLine?.match(/Suggested level:\s*(\d+)/i);
+      const chestTiers = [...new Set(
+        lootChests.flatMap((line) => [...line.matchAll(/Tier\s+(\d)/gi)].map((match) => Number(match[1]))),
+      )].sort((left, right) => left - right);
+      nextCaveCatalog.push({
+        markerId,
+        title: caveMarker?.title || entry.summary || markerId,
+        region: caveMarker?.region || "",
+        suggestedLevel: suggestedLevelMatch ? Number(suggestedLevelMatch[1]) : null,
+        chestTiers,
+        lootChests,
+      });
+      if (!rewards.length) {
+        continue;
+      }
+      for (const reward of rewards) {
+        const normalizedReward = itemLookupKey(reward);
+        const item = itemNameMap.get(normalizedReward) || matchRewardItemEntry(reward);
+        if (!item) {
+          continue;
+        }
+        const caveSource = {
+          id: `${item._itemKey}::cave::${markerId}`,
+          type: "caveReward",
+          label: caveMarker?.title || entry.summary || markerId,
+          markerId,
+          region: caveMarker?.region || "",
+          lootChests,
+        };
+        const bucket = nextIndex.get(item._itemKey) || [];
+        bucket.push(caveSource);
+        nextIndex.set(item._itemKey, bucket);
+      }
+    }
+
+    caveRewardIndex = nextIndex;
+    caveChestCatalog = nextCaveCatalog;
+    return caveRewardIndex;
+  })()
+    .catch((error) => {
+      caveRewardIndexError = error instanceof Error ? error.message : "Failed to build cave reward sources.";
+      throw error;
+    })
+    .finally(() => {
+      caveRewardIndexPromise = null;
+      renderItemsCard();
+      if (state.selectedItemKey) {
+        syncVisibleMarkers();
+        renderCategoryFilters();
+      }
+    });
+
+  return caveRewardIndexPromise;
+}
+
+async function ensureItemWikiExtractsLoaded() {
+  if (itemWikiExtractMap) {
+    return itemWikiExtractMap;
+  }
+  if (itemWikiExtractPromise) {
+    return itemWikiExtractPromise;
+  }
+  itemWikiExtractError = "";
+  itemWikiExtractPromise = loadJsonFromAny(ITEM_WIKI_EXTRACTS_URLS)
+    .then((data) => {
+      itemWikiExtractMap = data && typeof data === "object" ? data : {};
+      return itemWikiExtractMap;
+    })
+    .catch((error) => {
+      itemWikiExtractError = error instanceof Error ? error.message : "Failed to load wiki item extracts.";
+      throw error;
+    })
+    .finally(() => {
+      itemWikiExtractPromise = null;
+      renderItemsCard();
+      if (state.selectedItemKey) {
+        syncVisibleMarkers();
+        renderCategoryFilters();
+      }
+    });
+  return itemWikiExtractPromise;
+}
+
+function selectedItemEntry() {
+  return itemDatabase?.find((item) => item._itemKey === state.selectedItemKey) || null;
+}
+
+function filteredItems() {
+  const items = itemDatabase || [];
+  const search = itemLookupKey(state.itemSearch);
+  if (!search) {
+    return [];
+  }
+  return items.filter((item) => item._lookup.includes(search)).slice(0, 80);
+}
+
+function selectedItemWikiEntry(item) {
+  if (!item || !itemWikiExtractMap) {
+    return null;
+  }
+  return itemWikiExtractMap[item.displayName] || itemWikiExtractMap[item.internalName] || null;
+}
+
+function possibleCaveChestSources(item) {
+  const wikiEntry = selectedItemWikiEntry(item);
+  const chestSource = wikiEntry?.chestSource;
+  if (!item || !chestSource || !caveChestCatalog?.length) {
+    return [];
+  }
+  const hasLevelBand = Number.isFinite(chestSource.minLevel) || Number.isFinite(chestSource.maxLevel);
+  if (!hasLevelBand) {
+    return [];
+  }
+  const allowedTiers = Array.isArray(chestSource.tiers) ? chestSource.tiers : [];
+  return caveChestCatalog
+    .filter((cave) => {
+      if (!Number.isFinite(cave.suggestedLevel)) {
+        return false;
+      }
+      if (Number.isFinite(chestSource.minLevel) && cave.suggestedLevel < chestSource.minLevel) {
+        return false;
+      }
+      if (Number.isFinite(chestSource.maxLevel) && cave.suggestedLevel > chestSource.maxLevel) {
+        return false;
+      }
+      if (!allowedTiers.length) {
+        return true;
+      }
+      return cave.chestTiers.some((tier) => allowedTiers.includes(tier));
+    })
+    .map((cave) => ({
+      id: `${item._itemKey}::possible-cave::${cave.markerId}`,
+      type: "possibleCaveChest",
+      kind: "Possible cave chest source",
+      label: cave.title,
+      markerId: cave.markerId,
+      region: cave.region,
+      note: [
+        Number.isFinite(cave.suggestedLevel) ? `Suggested level ${cave.suggestedLevel}` : "",
+        cave.chestTiers.length ? `Chest tiers ${cave.chestTiers.join(", ")}` : "",
+      ]
+        .filter(Boolean)
+        .join(" · "),
+    }))
+    .slice(0, 40);
+}
+
+function selectedItemMarkerIdSet() {
+  const item = selectedItemEntry();
+  if (!item) {
+    return null;
+  }
+  return new Set(
+    itemSourceEntries(item)
+      .filter((source) => source.markerId && (source.type === "caveReward" || source.type === "possibleCaveChest"))
+      .map((source) => source.markerId),
+  );
+}
+
+function itemSourceEntries(item) {
+  if (!item) {
+    return [];
+  }
+
+  const sources = [];
+  if (item.dropRestriction === "normal") {
+    sources.push({
+      id: `${item._itemKey}::normal-pool`,
+      type: "normalPool",
+      label: "Open-world normal chest pool",
+      kind: "Normal drop",
+      note: "The official item API does not publish exact cave or chest-area coordinates for normal-pool items.",
+    });
+  }
+
+  if (item.dropMeta) {
+    const coordinates = normalizeCoordsArray(item.dropMeta.coordinates);
+    sources.push({
+      id: `${item._itemKey}::dropMeta`,
+      type: "dropMeta",
+      label: item.dropMeta.name || itemSourceTypeLabel(item.dropMeta.type),
+      kind: itemSourceTypeLabel(item.dropMeta.type),
+      markerTitle: item.dropMeta.name || "",
+      coordinates,
+      note:
+        item.dropMeta.type === "lootrun"
+          ? "General lootrun reward pool."
+          : coordinates.length === 1
+            ? `Anchor coordinates: ${coordinates[0].x}, ${coordinates[0].z}`
+            : coordinates.length > 1
+              ? `${coordinates.length} official source coordinates recorded.`
+              : "",
+    });
+  }
+
+  if (Array.isArray(item.droppedBy)) {
+    item.droppedBy.forEach((dropper, index) => {
+      const coordinates = normalizeCoordsArray(dropper.coords);
+      sources.push({
+        id: `${item._itemKey}::dropper::${index}`,
+        type: "dropper",
+        label: dropper.name || "Dropper",
+        kind: "Dropped by",
+        coordinates,
+        note: coordinates.length
+          ? `${coordinates.length} ${coordinates.length === 1 ? "mapped spawn point" : "mapped spawn points"}`
+          : "No mapped coordinates in the official item data.",
+      });
+    });
+  }
+
+  const caveSources = caveRewardIndex?.get(item._itemKey) || [];
+  caveSources.forEach((source) => {
+    sources.push({
+      ...source,
+      kind: "Cave first-clear reward",
+      note: source.lootChests.length ? source.lootChests.join(" · ") : "No chest tier details recorded.",
+    });
+  });
+
+  const possibleChestCaves = possibleCaveChestSources(item);
+  possibleChestCaves.forEach((source) => {
+    sources.push(source);
+  });
+
+  return sources;
 }
 
 function preferredAreaImageUrl(areaId) {
@@ -383,6 +798,298 @@ function renderAppearanceCard() {
   elements.appearanceCard.querySelectorAll("[data-theme-option]").forEach((button) => {
     button.addEventListener("click", () => {
       applyTheme(button.dataset.themeOption);
+    });
+  });
+}
+
+function worldLatLngFromCoords(point) {
+  const image = worldToImage(point.x, point.z);
+  return [image.y * MAP_HEIGHT, image.x * MAP_WIDTH];
+}
+
+function focusWorldPoints(points) {
+  if (!Array.isArray(points) || !points.length) {
+    return;
+  }
+  if (points.length === 1) {
+    map.flyTo(worldLatLngFromCoords(points[0]), Math.max(map.getZoom(), 0), { duration: 0.55 });
+    return;
+  }
+  const bounds = L.latLngBounds(points.map(worldLatLngFromCoords));
+  map.fitBounds(bounds, { padding: [36, 36], animate: false, maxZoom: 0 });
+}
+
+function focusItemSource(source) {
+  if (source.markerId) {
+    const marker = getMarkerById(source.markerId);
+    if (marker) {
+      map.flyTo(markerLatLng(marker), Math.max(map.getZoom(), 0), { duration: 0.55 });
+      return;
+    }
+  }
+
+  if (source.markerTitle) {
+    const marker = findMarkerByTitle(state.markers, source.markerTitle);
+    if (marker) {
+      map.flyTo(markerLatLng(marker), Math.max(map.getZoom(), 0), { duration: 0.55 });
+      return;
+    }
+  }
+
+  if (source.coordinates?.length) {
+    focusWorldPoints(source.coordinates);
+  }
+}
+
+function renderItemsCard() {
+  if (!elements.itemsCard) {
+    return;
+  }
+
+  if (!itemDatabase && !itemDatabasePromise) {
+    void ensureItemDatabaseLoaded();
+  }
+
+  const selectedItem = selectedItemEntry();
+  if (selectedItem && !caveRewardIndex && !caveRewardIndexPromise) {
+    void ensureCaveRewardIndexLoaded();
+  }
+  if (selectedItem && !itemWikiExtractMap && !itemWikiExtractPromise) {
+    void ensureItemWikiExtractsLoaded();
+  }
+
+  const results = filteredItems();
+  const sources = selectedItem ? itemSourceEntries(selectedItem) : [];
+  const selectedLevel = itemLevel(selectedItem);
+  const selectedWikiEntry = selectedItemWikiEntry(selectedItem);
+  const itemMetaPills = selectedItem
+    ? [
+        selectedItem.tier ? `${selectedItem.tier}` : "",
+        selectedItem.subType || selectedItem.type || "",
+        selectedLevel ? `Lv. ${selectedLevel}` : "",
+      ].filter(Boolean)
+    : [];
+  const caveRewardLoading = Boolean(selectedItem && !caveRewardIndex && caveRewardIndexPromise);
+  const wikiExtractLoading = Boolean(selectedItem && !itemWikiExtractMap && itemWikiExtractPromise);
+
+  elements.itemsCard.className = "detail-card items-card";
+  elements.itemsCard.innerHTML = html`
+    <div class="detail-topline compact">
+      <div>
+        <h2>Item Search</h2>
+        <p class="detail-kind">Local prototype</p>
+      </div>
+    </div>
+    <p class="items-intro">
+      Official item API data plus exact cave first-clear reward gear. Loot chest items also use wiki chest-band text to suggest possible cave chest sources by level and tier.
+    </p>
+    <div class="items-search-shell">
+      <label class="sr-only" for="item-search-input">Search items</label>
+      <input
+        id="item-search-input"
+        class="items-search-input"
+        type="search"
+        placeholder="Search items, ingredients, tomes..."
+        value="${state.itemSearch}"
+      />
+      <button type="button" class="icon-button items-clear-search" data-clear-item-search="1" aria-label="Clear item search">
+        ${state.itemSearch ? html.raw(`<span class="icon-button-glyph">×</span>`) : html.raw(`
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M10.5 4a6.5 6.5 0 0 1 5.2 10.4l4 4-1.4 1.4-4-4A6.5 6.5 0 1 1 10.5 4Zm0 2a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9Z"/>
+          </svg>
+        `)}
+      </button>
+    </div>
+    ${
+      itemDatabasePromise && !itemDatabase
+        ? html.raw(html`<div class="content-loading">Loading item database…</div>`)
+        : ""
+    }
+    ${
+      itemDatabaseError
+        ? html.raw(html`<div class="content-load-error">Item database could not be loaded: ${itemDatabaseError}</div>`)
+        : ""
+    }
+    ${
+      selectedItem
+        ? html.raw(html`
+            <section class="items-detail-shell">
+              <div class="items-detail-head">
+                <div>
+                  <h3>${selectedItem.displayName}</h3>
+                  <p>${selectedItem.internalName || selectedItem.displayName}</p>
+                </div>
+                <button type="button" class="detail-button secondary" data-clear-selected-item="1">Back</button>
+              </div>
+              <div class="items-meta-row">
+                ${itemMetaPills.map((pill) => html.raw(html`<span class="detail-pill">${pill}</span>`))}
+              </div>
+              ${
+                selectedItem.dropRestriction === "normal"
+                  ? html.raw(html`
+                      <div class="items-callout">
+                        This item is in the normal drop pool. Any cave chest matches shown here are possible sources inferred from the wiki chest-level band, not confirmed exact drop tables.
+                      </div>
+                    `)
+                  : ""
+              }
+              ${
+                selectedItem.dropRestriction === "lootchest"
+                  ? html.raw(html`
+                      <div class="items-callout">
+                        This item is listed as a loot chest item. Possible cave sources are inferred from the wiki chest tiers and level band, not confirmed exact cave drop tables.
+                      </div>
+                    `)
+                  : ""
+              }
+              ${
+                selectedWikiEntry?.extract
+                  ? html.raw(html`<div class="items-subtle-note">${selectedWikiEntry.extract}</div>`)
+                  : ""
+              }
+              ${caveRewardLoading ? html.raw(html`<div class="items-subtle-note">Checking cave reward matches…</div>`) : ""}
+              ${wikiExtractLoading ? html.raw(html`<div class="items-subtle-note">Loading wiki chest-source summary…</div>`) : ""}
+              ${
+                caveRewardIndexError
+                  ? html.raw(html`<div class="items-subtle-note">Cave reward lookup is unavailable right now.</div>`)
+                  : ""
+              }
+              ${
+                itemWikiExtractError
+                  ? html.raw(html`<div class="items-subtle-note">Wiki chest-source lookup is unavailable right now.</div>`)
+                  : ""
+              }
+              <div class="items-source-list">
+                ${
+                  sources.length
+                    ? html.raw(
+                        sources
+                          .map((source) => {
+                            const canFocus = Boolean(source.markerId || source.markerTitle || source.coordinates?.length);
+                            return html`
+                              <article class="item-source-card">
+                                <div class="item-source-copy">
+                                  <span class="item-source-kind">${source.kind}</span>
+                                  <strong>${source.label}</strong>
+                                  ${source.region ? html.raw(html`<span>${source.region}</span>`) : ""}
+                                  ${source.note ? html.raw(html`<span>${source.note}</span>`) : ""}
+                                  ${
+                                    source.coordinates?.length && source.coordinates.length <= 3
+                                      ? html.raw(
+                                          html`<span>
+                                            ${source.coordinates.map((point) => `${point.x}, ${point.z}`).join(" · ")}
+                                          </span>`,
+                                        )
+                                      : ""
+                                  }
+                                </div>
+                                ${
+                                  canFocus
+                                    ? html.raw(
+                                        html`<button type="button" class="detail-button secondary small" data-item-source-focus="${source.id}">Focus</button>`
+                                      )
+                                    : ""
+                                }
+                              </article>
+                            `;
+                          })
+                          .join(""),
+                      )
+                    : html.raw(html`
+                        <div class="items-empty-state">
+                          No confirmed map or cave source is recorded for this item in the current prototype.
+                        </div>
+                      `)
+                }
+              </div>
+            </section>
+          `)
+        : state.itemSearch && itemDatabase
+          ? html.raw(html`<div class="items-subtle-note">${results.length ? `${results.length} matches shown` : "No items matched that search."}</div>`)
+          : html.raw(html`
+              <div class="items-empty-state">
+                Search for any item, ingredient, or tome to inspect its confirmed sources.
+              </div>
+            `)
+    }
+    ${
+      state.itemSearch && itemDatabase
+        ? html.raw(html`
+            <section class="items-results-section">
+              <div class="section-head">
+                <span>Results</span>
+              </div>
+              <div class="items-result-list">
+                ${
+                  results.length
+                    ? html.raw(
+                        results
+                          .map((item) => {
+                            const active = item._itemKey === state.selectedItemKey;
+                            return html`
+                              <button type="button" class="items-result-row ${active ? "active" : ""}" data-item-key="${item._itemKey}">
+                                <span class="items-result-copy">
+                                  <strong>${item.displayName}</strong>
+                                  <span>${itemTypeLabel(item)}${itemLevel(item) ? ` · Lv. ${itemLevel(item)}` : ""}</span>
+                                </span>
+                              </button>
+                            `;
+                          })
+                          .join(""),
+                      )
+                    : html.raw(html`<div class="items-empty-state">No items matched that search.</div>`)
+                }
+              </div>
+            </section>
+          `)
+        : ""
+    }
+  `;
+
+  const itemSearchInput = elements.itemsCard.querySelector("#item-search-input");
+  itemSearchInput?.addEventListener("input", (event) => {
+    const nextValue = event.currentTarget.value;
+    state.itemSearch = nextValue;
+    renderItemsCard();
+    const nextInput = elements.itemsCard.querySelector("#item-search-input");
+    if (nextInput) {
+      nextInput.focus({ preventScroll: true });
+      nextInput.setSelectionRange(nextValue.length, nextValue.length);
+    }
+  });
+
+  elements.itemsCard.querySelector("[data-clear-item-search]")?.addEventListener("click", () => {
+    state.itemSearch = "";
+    renderItemsCard();
+    elements.itemsCard.querySelector("#item-search-input")?.focus({ preventScroll: true });
+  });
+
+  elements.itemsCard.querySelector("[data-clear-selected-item]")?.addEventListener("click", () => {
+    state.selectedItemKey = "";
+    renderItemsCard();
+    syncVisibleMarkers();
+    renderCategoryFilters();
+  });
+
+  elements.itemsCard.querySelectorAll("[data-item-key]").forEach((button) => {
+    button.addEventListener("click", async () => {
+      state.selectedItemKey = button.dataset.itemKey;
+      renderItemsCard();
+      syncVisibleMarkers();
+      renderCategoryFilters();
+      void ensureCaveRewardIndexLoaded();
+      void ensureItemWikiExtractsLoaded();
+    });
+  });
+
+  const activeSources = sources;
+  elements.itemsCard.querySelectorAll("[data-item-source-focus]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const source = activeSources.find((entry) => entry.id === button.dataset.itemSourceFocus);
+      if (!source) {
+        return;
+      }
+      focusItemSource(source);
     });
   });
 }
@@ -739,6 +1446,11 @@ function setPanelView(view) {
   elements.panelViews.forEach((panel) => {
     panel.classList.toggle("hidden", panel.dataset.panelScreen !== view);
   });
+  if (view === "appearance") {
+    renderAppearanceCard();
+  } else if (view === "items") {
+    renderItemsCard();
+  }
 }
 
 function markerSupportsFound(marker) {
@@ -1840,11 +2552,15 @@ function cityVisibleAtCurrentZoom(marker) {
 }
 
 function markerIsVisible(marker) {
+  const itemMarkerIds = state.selectedItemKey ? selectedItemMarkerIdSet() : null;
   if (markerArea(marker) !== state.currentArea) {
     return false;
   }
 
   if (marker.fixed) {
+    if (itemMarkerIds) {
+      return false;
+    }
     if (!state.showCities) {
       return false;
     }
@@ -1861,6 +2577,10 @@ function markerIsVisible(marker) {
   const searchSurfacedMob = Boolean(state.search) && isMobCategory(marker.category) && matchesSearch;
   if (isMobCategory(marker.category) && !searchSurfacedMob) {
     return false;
+  }
+
+  if (itemMarkerIds) {
+    return itemMarkerIds.has(marker.id);
   }
 
   if (marker.contextOnly) {

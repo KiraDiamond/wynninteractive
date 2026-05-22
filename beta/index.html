@@ -38,6 +38,16 @@
   <body>
     <div class="app-shell">
       <div id="map"></div>
+      <a
+        class="support-dock-button"
+        href="https://ko-fi.com/topdiamond2006"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Support Wynnteractive Map on Ko-fi"
+      >
+        <span class="support-dock-glyph" aria-hidden="true">♡</span>
+        <span>Support</span>
+      </a>
 
       <aside id="marker-panel" class="marker-panel">
         <div class="panel-shell-head">
@@ -75,6 +85,13 @@
           <button type="button" class="panel-tab" aria-label="Appearance" data-panel-view="appearance">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M12 3a9 9 0 1 0 9 9 1 1 0 0 0-1-1 6 6 0 0 1-6-6 1 1 0 0 0-1-1Z" />
+            </svg>
+          </button>
+          <button type="button" class="panel-tab" aria-label="Items" data-panel-view="items">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M7 4h10a2 2 0 0 1 2 2v3H5V6a2 2 0 0 1 2-2Zm-2 7h14v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7Zm5 2v5h2v-5h-2Z"
+              />
             </svg>
           </button>
         </div>
@@ -136,6 +153,10 @@
 
         <section class="panel-screen hidden" data-panel-screen="appearance">
           <article id="appearance-card" class="detail-card appearance-card"></article>
+        </section>
+
+        <section class="panel-screen hidden" data-panel-screen="items">
+          <article id="items-card" class="detail-card items-card"></article>
         </section>
 
         <section id="calibration-panel" class="calibration-panel hidden">
