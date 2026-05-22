@@ -6,7 +6,7 @@ import {
   deferredCategoryCount,
   deferredMarkerGroupForCategory,
   loadDeferredMarkersForCategory,
-} from "../../data/markers.js?v=20260522b";
+} from "../../data/markers.js?v=20260522c";
 export const CATEGORY_META = ROOT_CATEGORY_META;
 export const CATEGORY_ORDER = ROOT_CATEGORY_ORDER;
 
