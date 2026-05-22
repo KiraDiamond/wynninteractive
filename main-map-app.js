@@ -6,8 +6,8 @@ import {
   deferredCategoryCount,
   deferredMarkerGroupForCategory,
   loadDeferredMarkersForCategory,
-} from "./data/markers.js?v=20260522c";
-import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260522c";
+} from "./data/markers.js?v=20260522d";
+import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260522d";
 import {
   contentSourceError,
   contentSourceKeyForCategory,
@@ -28,11 +28,10 @@ import {
   normalizeMarkerLookup,
   parseNumberParam,
   persistDismissedFlag,
-  preferLocalAvif,
   resolveImageUrl,
   splitMultiline,
   youtubeEmbedMeta,
-} from "./shared/app-utils.js?v=20260522c";
+} from "./shared/app-utils.js?v=20260522d";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
@@ -114,6 +113,18 @@ const BOSS_ALTAR_INGREDIENT_OVERRIDES = {
   "atlas-boss_altar-geyser-pit--1573--3204": "8 Robot Antennas",
   "atlas-boss_altar-plague-laboratory--1833--5259": "1 Venom Sac",
   "atlas-boss_altar-tribal-sanctuary--711--657": "4 Zombie Eyes",
+};
+const INGREDIENT_DROP_MARKER_ID_OVERRIDES = {
+  "Robot Antenna": [
+    "mob-h-10ar-machine",
+    "mob-h-20ar-machine",
+    "mob-h-21ar-machine",
+    "mob-l-2nforcer-drone",
+    "mob-l-2unition-drone",
+    "mob-p-1ogue-patroller",
+    "mob-pu-0iner-patroller",
+    "mob-u-4epaired-bot",
+  ],
 };
 
 const URL_PROJECTION_CONFIG = {
@@ -719,7 +730,7 @@ async function ensureMobIconUrlsLoaded() {
     return mobIconUrlMap;
   }
   if (!mobIconUrlPromise) {
-    mobIconUrlPromise = import("./data/mob-icon-urls.js?v=20260522c")
+    mobIconUrlPromise = import("./data/mob-icon-urls.js?v=20260522d")
       .then((module) => {
         mobIconUrlMap = module.MOB_ICON_URLS;
         return mobIconUrlMap;
@@ -736,7 +747,7 @@ async function ensureReferenceImageUrlsLoaded() {
     return referenceImageUrlMap;
   }
   if (!referenceImageUrlPromise) {
-    referenceImageUrlPromise = import("./data/reference-images.js?v=20260522c")
+    referenceImageUrlPromise = import("./data/reference-images.js?v=20260522d")
       .then((module) => {
         referenceImageUrlMap = module.REFERENCE_IMAGE_URLS;
         return referenceImageUrlMap;
@@ -2227,7 +2238,7 @@ function genericIconMarkup(categoryId, extraClass = "") {
 function markerIconUrl(marker, variant = "active") {
   const mobIcons = mobIconUrls();
   if (marker?.iconImage && mobIcons[marker.iconImage]) {
-    return preferLocalAvif(mobIcons[marker.iconImage]);
+    return resolveImageUrl(marker.iconImage, mobIcons, {});
   }
   return categoryAssetUrl(marker?.category, variant);
 }
@@ -2471,6 +2482,31 @@ function mobMarkersForIngredient(ingredientName) {
       return candidates.some((candidate) => searchHaystack.includes(candidate));
     })
     .sort((left, right) => left.title.localeCompare(right.title) || left.region.localeCompare(right.region));
+}
+
+function applyIngredientDropTagOverrides(marker) {
+  const extraTags = [];
+  for (const [ingredientName, markerIds] of Object.entries(INGREDIENT_DROP_MARKER_ID_OVERRIDES)) {
+    if (markerIds.includes(marker.id)) {
+      extraTags.push(ingredientName);
+    }
+  }
+
+  if (!extraTags.length) {
+    return marker;
+  }
+
+  const mergedTags = [...(marker.tags || [])];
+  const normalizedTags = new Set(mergedTags.map((tag) => normalizeMarkerLookup(tag)));
+  for (const tag of extraTags) {
+    const normalizedTag = normalizeMarkerLookup(tag);
+    if (normalizedTag && !normalizedTags.has(normalizedTag)) {
+      mergedTags.push(tag);
+      normalizedTags.add(normalizedTag);
+    }
+  }
+
+  return { ...marker, tags: mergedTags };
 }
 
 function ingredientSearchLabel(ingredientName, matches) {
@@ -2813,19 +2849,20 @@ function updateMarkerLayerPositions() {
 
 function integrateMarkers(markers) {
   markers.forEach((marker) => {
-    state.markers.push(marker);
-    state.markerIndex.set(marker.id, marker);
+    const hydratedMarker = applyIngredientDropTagOverrides(marker);
+    state.markers.push(hydratedMarker);
+    state.markerIndex.set(hydratedMarker.id, hydratedMarker);
 
-    const categoryBucket = state.markersByCategory.get(marker.category) || [];
-    categoryBucket.push(marker);
-    state.markersByCategory.set(marker.category, categoryBucket);
+    const categoryBucket = state.markersByCategory.get(hydratedMarker.category) || [];
+    categoryBucket.push(hydratedMarker);
+    state.markersByCategory.set(hydratedMarker.category, categoryBucket);
 
-    const areaId = markerArea(marker);
+    const areaId = markerArea(hydratedMarker);
     const areaBucket = state.markersByArea.get(areaId) || [];
-    areaBucket.push(marker);
+    areaBucket.push(hydratedMarker);
     state.markersByArea.set(areaId, areaBucket);
 
-    createMarkerLayer(marker);
+    createMarkerLayer(hydratedMarker);
   });
 }
 

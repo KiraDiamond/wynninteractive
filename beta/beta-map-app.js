@@ -6,8 +6,8 @@ import {
   deferredCategoryCount,
   deferredMarkerGroupForCategory,
   loadDeferredMarkersForCategory,
-} from "./data/markers.js?v=20260522c";
-import { WIKI_MAP_MARKERS } from "../data/wiki-map-markers.js?v=20260522c";
+} from "./data/markers.js?v=20260522d";
+import { WIKI_MAP_MARKERS } from "../data/wiki-map-markers.js?v=20260522d";
 import {
   contentSourceError,
   contentSourceKeyForCategory,
@@ -28,11 +28,10 @@ import {
   normalizeMarkerLookup,
   parseNumberParam,
   persistDismissedFlag,
-  preferLocalAvif,
   resolveImageUrl,
   splitMultiline,
   youtubeEmbedMeta,
-} from "../shared/app-utils.js?v=20260522c";
+} from "../shared/app-utils.js?v=20260522d";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
@@ -101,6 +100,9 @@ const ITEM_DATABASE_URLS = [
 const ITEM_WIKI_EXTRACTS_URLS = [
   new URL("../data/item-wiki-extracts.json", import.meta.url).href,
 ];
+const ITEM_INGREDIENT_SOURCE_URLS = [
+  new URL("../data/item-ingredient-sources.beta.json", import.meta.url).href,
+];
 const ITEM_SOURCE_TYPE_LABELS = {
   altar: "Boss altar",
   challenge: "Challenge",
@@ -120,6 +122,18 @@ const BOSS_ALTAR_INGREDIENT_OVERRIDES = {
   "atlas-boss_altar-geyser-pit--1573--3204": "8 Robot Antennas",
   "atlas-boss_altar-plague-laboratory--1833--5259": "1 Venom Sac",
   "atlas-boss_altar-tribal-sanctuary--711--657": "4 Zombie Eyes",
+};
+const INGREDIENT_DROP_MARKER_ID_OVERRIDES = {
+  "Robot Antenna": [
+    "mob-h-10ar-machine",
+    "mob-h-20ar-machine",
+    "mob-h-21ar-machine",
+    "mob-l-2nforcer-drone",
+    "mob-l-2unition-drone",
+    "mob-p-1ogue-patroller",
+    "mob-pu-0iner-patroller",
+    "mob-u-4epaired-bot",
+  ],
 };
 
 const URL_PROJECTION_CONFIG = {
@@ -245,11 +259,14 @@ let itemDatabasePromise = null;
 let itemLookupEntries = [];
 let itemWikiExtractMap = null;
 let itemWikiExtractPromise = null;
+let itemIngredientSourceMap = null;
+let itemIngredientSourcePromise = null;
 let caveRewardIndex = null;
 let caveRewardIndexPromise = null;
 let caveChestCatalog = null;
 let itemDatabaseError = "";
 let itemWikiExtractError = "";
+let itemIngredientSourceError = "";
 let caveRewardIndexError = "";
 
 const elements = {
@@ -534,8 +551,36 @@ async function ensureItemWikiExtractsLoaded() {
         syncVisibleMarkers();
         renderCategoryFilters();
       }
-    });
+  });
   return itemWikiExtractPromise;
+}
+
+async function ensureItemIngredientSourcesLoaded() {
+  if (itemIngredientSourceMap) {
+    return itemIngredientSourceMap;
+  }
+  if (itemIngredientSourcePromise) {
+    return itemIngredientSourcePromise;
+  }
+  itemIngredientSourceError = "";
+  itemIngredientSourcePromise = loadJsonFromAny(ITEM_INGREDIENT_SOURCE_URLS)
+    .then((data) => {
+      itemIngredientSourceMap = data && typeof data === "object" ? data : {};
+      return itemIngredientSourceMap;
+    })
+    .catch((error) => {
+      itemIngredientSourceError = error instanceof Error ? error.message : "Failed to load ingredient source data.";
+      throw error;
+    })
+    .finally(() => {
+      itemIngredientSourcePromise = null;
+      renderItemsCard();
+      if (state.selectedItemKey) {
+        syncVisibleMarkers();
+        renderCategoryFilters();
+      }
+    });
+  return itemIngredientSourcePromise;
 }
 
 function preferredAreaImageUrl(areaId) {
@@ -583,7 +628,7 @@ async function ensureMobIconUrlsLoaded() {
     return mobIconUrlMap;
   }
   if (!mobIconUrlPromise) {
-    mobIconUrlPromise = import("../data/mob-icon-urls.js?v=20260522c")
+    mobIconUrlPromise = import("../data/mob-icon-urls.js?v=20260522d")
       .then((module) => {
         mobIconUrlMap = module.MOB_ICON_URLS;
         return mobIconUrlMap;
@@ -600,7 +645,7 @@ async function ensureReferenceImageUrlsLoaded() {
     return referenceImageUrlMap;
   }
   if (!referenceImageUrlPromise) {
-    referenceImageUrlPromise = import("../data/reference-images.js?v=20260522c")
+    referenceImageUrlPromise = import("../data/reference-images.js?v=20260522d")
       .then((module) => {
         referenceImageUrlMap = module.REFERENCE_IMAGE_URLS;
         return referenceImageUrlMap;
@@ -686,6 +731,26 @@ function selectedItemWikiEntry(item) {
   return itemWikiExtractMap[item.displayName] || itemWikiExtractMap[item.internalName] || null;
 }
 
+function selectedItemIngredientEntry(item) {
+  if (!item || !itemIngredientSourceMap) {
+    return null;
+  }
+  return itemIngredientSourceMap[item.displayName] || itemIngredientSourceMap[item.internalName] || null;
+}
+
+function itemSourceLookupKey(value) {
+  return itemLookupKey(String(value || ""));
+}
+
+function itemWikiSummary(item) {
+  const wikiEntry = selectedItemWikiEntry(item);
+  if (wikiEntry?.extract) {
+    return wikiEntry.extract;
+  }
+  const ingredientEntry = selectedItemIngredientEntry(item);
+  return ingredientEntry?.extract || "";
+}
+
 function possibleCaveChestSources(item) {
   const wikiEntry = selectedItemWikiEntry(item);
   const chestSource = wikiEntry?.chestSource;
@@ -736,6 +801,29 @@ function itemSourceEntries(item) {
   }
 
   const sources = [];
+  const ingredientEntry = selectedItemIngredientEntry(item);
+  const officialDropperNames = new Set(
+    (Array.isArray(item.droppedBy) ? item.droppedBy : []).map((dropper) => itemSourceLookupKey(dropper.name)),
+  );
+
+  (ingredientEntry?.crafterBags || []).forEach((source, index) => {
+    sources.push({
+      id: `${item._itemKey}::crafter-bag::${index}`,
+      type: "crafterBag",
+      label: `${source.raidTitle} Crafter Bag`,
+      kind: "Crafter Bag exclusive",
+      markerId: source.markerId || "",
+      markerTitle: source.markerTitle || source.raidTitle || "",
+      note: [
+        `Exclusive to ${source.raidTitle} crafter bags.`,
+        Number.isFinite(source.level) ? `Lv. ${source.level}` : "",
+        source.description || "",
+      ]
+        .filter(Boolean)
+        .join(" "),
+    });
+  });
+
   if (item.dropRestriction === "normal") {
     sources.push({
       id: `${item._itemKey}::normal-pool`,
@@ -769,18 +857,42 @@ function itemSourceEntries(item) {
   if (Array.isArray(item.droppedBy)) {
     item.droppedBy.forEach((dropper, index) => {
       const coordinates = normalizeCoordsArray(dropper.coords);
+      const matchedWikiDrop =
+        ingredientEntry?.mobDrops?.find((entry) => itemSourceLookupKey(entry.name) === itemSourceLookupKey(dropper.name)) || null;
+      const matchedMarkerIds = matchedWikiDrop?.matchedMarkerIds || [];
       sources.push({
         id: `${item._itemKey}::dropper::${index}`,
         type: "dropper",
         label: dropper.name || "Dropper",
         kind: "Dropped by",
+        markerIds: matchedMarkerIds,
+        markerTitle: matchedWikiDrop?.matchedMarkerTitles?.length === 1 ? matchedWikiDrop.matchedMarkerTitles[0] : "",
         coordinates,
         note: coordinates.length
           ? `${coordinates.length} ${coordinates.length === 1 ? "mapped spawn point" : "mapped spawn points"}`
-          : "No mapped coordinates in the official item data.",
+          : matchedMarkerIds.length
+            ? `${matchedMarkerIds.length} ${matchedMarkerIds.length === 1 ? "matched mob marker" : "matched mob markers"} from wiki/API source names.`
+            : "No mapped coordinates in the official item data.",
       });
     });
   }
+
+  (ingredientEntry?.mobDrops || []).forEach((drop, index) => {
+    if (officialDropperNames.has(itemSourceLookupKey(drop.name))) {
+      return;
+    }
+    sources.push({
+      id: `${item._itemKey}::wiki-dropper::${index}`,
+      type: "wikiDropper",
+      label: drop.name,
+      kind: "Dropped by",
+      markerIds: drop.matchedMarkerIds || [],
+      markerTitle: drop.matchedMarkerTitles?.length === 1 ? drop.matchedMarkerTitles[0] : "",
+      note: (drop.matchedMarkerIds || []).length
+        ? `${drop.matchedMarkerIds.length} ${drop.matchedMarkerIds.length === 1 ? "matched mob marker" : "matched mob markers"} from the wiki drop list.`
+        : "Listed on the wiki drop list, but no mapped mob marker is currently matched.",
+    });
+  });
 
   const caveSources = caveRewardIndex?.get(item._itemKey) || [];
   caveSources.forEach((source) => {
@@ -803,11 +915,18 @@ function selectedItemMarkerIdSet() {
   if (!item) {
     return null;
   }
-  return new Set(
-    itemSourceEntries(item)
-      .filter((source) => source.markerId && (source.type === "caveReward" || source.type === "possibleCaveChest"))
-      .map((source) => source.markerId),
-  );
+  const markerIds = new Set();
+  itemSourceEntries(item).forEach((source) => {
+    if (source.markerId) {
+      markerIds.add(source.markerId);
+    }
+    (source.markerIds || []).forEach((markerId) => {
+      if (markerId) {
+        markerIds.add(markerId);
+      }
+    });
+  });
+  return markerIds;
 }
 
 function worldLatLngFromCoords(point) {
@@ -832,6 +951,19 @@ function focusItemSource(source) {
     const marker = getMarkerById(source.markerId);
     if (marker) {
       map.flyTo(markerLatLng(marker), Math.max(map.getZoom(), 0), { duration: 0.55 });
+      return;
+    }
+  }
+
+  if (source.markerIds?.length) {
+    const markers = source.markerIds.map((markerId) => getMarkerById(markerId)).filter(Boolean);
+    if (markers.length === 1) {
+      map.flyTo(markerLatLng(markers[0]), Math.max(map.getZoom(), 0), { duration: 0.55 });
+      return;
+    }
+    if (markers.length > 1) {
+      const bounds = L.latLngBounds(markers.map((marker) => markerLatLng(marker)));
+      map.fitBounds(bounds, { padding: [36, 36], animate: false, maxZoom: 0 });
       return;
     }
   }
@@ -868,11 +1000,20 @@ function renderItemsCard() {
   if (selectedItem && !itemWikiExtractMap && !itemWikiExtractPromise) {
     void ensureItemWikiExtractsLoaded();
   }
+  if (selectedItem && !itemIngredientSourceMap && !itemIngredientSourcePromise) {
+    void ensureItemIngredientSourcesLoaded();
+  }
+  if (
+    selectedItem &&
+    selectedItemIngredientEntry(selectedItem)?.mobDrops?.some((drop) => (drop.matchedMarkerIds || []).length)
+  ) {
+    void ensureDeferredCategoryLoaded("hostile_mobs_zombie");
+  }
 
   const results = filteredItems();
   const sources = selectedItem ? itemSourceEntries(selectedItem) : [];
   const selectedLevel = itemLevel(selectedItem);
-  const selectedWikiEntry = selectedItemWikiEntry(selectedItem);
+  const selectedWikiSummary = itemWikiSummary(selectedItem);
   const itemMetaPills = selectedItem
     ? [
         selectedItem.tier ? `${selectedItem.tier}` : "",
@@ -882,6 +1023,7 @@ function renderItemsCard() {
     : [];
   const caveRewardLoading = Boolean(selectedItem && !caveRewardIndex && caveRewardIndexPromise);
   const wikiExtractLoading = Boolean(selectedItem && !itemWikiExtractMap && itemWikiExtractPromise);
+  const ingredientSourceLoading = Boolean(selectedItem && !itemIngredientSourceMap && itemIngredientSourcePromise);
 
   elements.itemsCard.className = "detail-card items-card";
   elements.itemsCard.innerHTML = html`
@@ -953,13 +1095,10 @@ function renderItemsCard() {
                     `)
                   : ""
               }
-              ${
-                selectedWikiEntry?.extract
-                  ? html.raw(html`<div class="items-subtle-note">${selectedWikiEntry.extract}</div>`)
-                  : ""
-              }
+              ${selectedWikiSummary ? html.raw(html`<div class="items-subtle-note">${selectedWikiSummary}</div>`) : ""}
               ${caveRewardLoading ? html.raw(html`<div class="items-subtle-note">Checking cave reward matches…</div>`) : ""}
               ${wikiExtractLoading ? html.raw(html`<div class="items-subtle-note">Loading wiki chest-source summary…</div>`) : ""}
+              ${ingredientSourceLoading ? html.raw(html`<div class="items-subtle-note">Loading ingredient source notes…</div>`) : ""}
               ${
                 caveRewardIndexError
                   ? html.raw(html`<div class="items-subtle-note">Cave reward lookup is unavailable right now.</div>`)
@@ -970,13 +1109,20 @@ function renderItemsCard() {
                   ? html.raw(html`<div class="items-subtle-note">Wiki chest-source lookup is unavailable right now.</div>`)
                   : ""
               }
+              ${
+                itemIngredientSourceError
+                  ? html.raw(html`<div class="items-subtle-note">Ingredient source lookup is unavailable right now.</div>`)
+                  : ""
+              }
               <div class="items-source-list">
                 ${
                   sources.length
                     ? html.raw(
                         sources
                           .map((source) => {
-                            const canFocus = Boolean(source.markerId || source.markerTitle || source.coordinates?.length);
+                            const canFocus = Boolean(
+                              source.markerId || source.markerIds?.length || source.markerTitle || source.coordinates?.length,
+                            );
                             return html`
                               <article class="item-source-card">
                                 <div class="item-source-copy">
@@ -2187,7 +2333,7 @@ function categoryAssetUrl(categoryId, variant = "active") {
 function markerIconUrl(marker, variant = "active") {
   const mobIcons = mobIconUrls();
   if (marker?.iconImage && mobIcons[marker.iconImage]) {
-    return preferLocalAvif(mobIcons[marker.iconImage]);
+    return resolveImageUrl(marker.iconImage, mobIcons, {});
   }
   return categoryAssetUrl(marker?.category, variant);
 }
@@ -2537,6 +2683,31 @@ function mobMarkersForIngredient(ingredientName) {
     .sort((left, right) => left.title.localeCompare(right.title) || left.region.localeCompare(right.region));
 }
 
+function applyIngredientDropTagOverrides(marker) {
+  const extraTags = [];
+  for (const [ingredientName, markerIds] of Object.entries(INGREDIENT_DROP_MARKER_ID_OVERRIDES)) {
+    if (markerIds.includes(marker.id)) {
+      extraTags.push(ingredientName);
+    }
+  }
+
+  if (!extraTags.length) {
+    return marker;
+  }
+
+  const mergedTags = [...(marker.tags || [])];
+  const normalizedTags = new Set(mergedTags.map((tag) => normalizeMarkerLookup(tag)));
+  for (const tag of extraTags) {
+    const normalizedTag = normalizeMarkerLookup(tag);
+    if (normalizedTag && !normalizedTags.has(normalizedTag)) {
+      mergedTags.push(tag);
+      normalizedTags.add(normalizedTag);
+    }
+  }
+
+  return { ...marker, tags: mergedTags };
+}
+
 function ingredientSearchLabel(ingredientName, matches) {
   const candidateSet = new Set(ingredientLookupKeys(ingredientName));
   for (const match of matches) {
@@ -2638,12 +2809,12 @@ function markerIsVisible(marker) {
   }
 
   const matchesSearch = markerMatchesSearch(marker);
-  if (isMobCategory(marker.category)) {
-    return false;
-  }
-
   if (itemMarkerIds) {
     return itemMarkerIds.has(marker.id);
+  }
+
+  if (isMobCategory(marker.category)) {
+    return false;
   }
 
   if (marker.contextOnly) {
@@ -2907,19 +3078,20 @@ function updateMarkerLayerPositions() {
 
 function integrateMarkers(markers) {
   markers.forEach((marker) => {
-    state.markers.push(marker);
-    state.markerIndex.set(marker.id, marker);
+    const hydratedMarker = applyIngredientDropTagOverrides(marker);
+    state.markers.push(hydratedMarker);
+    state.markerIndex.set(hydratedMarker.id, hydratedMarker);
 
-    const categoryBucket = state.markersByCategory.get(marker.category) || [];
-    categoryBucket.push(marker);
-    state.markersByCategory.set(marker.category, categoryBucket);
+    const categoryBucket = state.markersByCategory.get(hydratedMarker.category) || [];
+    categoryBucket.push(hydratedMarker);
+    state.markersByCategory.set(hydratedMarker.category, categoryBucket);
 
-    const areaId = markerArea(marker);
+    const areaId = markerArea(hydratedMarker);
     const areaBucket = state.markersByArea.get(areaId) || [];
-    areaBucket.push(marker);
+    areaBucket.push(hydratedMarker);
     state.markersByArea.set(areaId, areaBucket);
 
-    createMarkerLayer(marker);
+    createMarkerLayer(hydratedMarker);
   });
 }
 
