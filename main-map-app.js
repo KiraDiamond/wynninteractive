@@ -14,6 +14,8 @@ import {
   loadMarkerContentForCategory,
   manualMarkerContentEntry,
 } from "./data/marker-content-loader.js";
+import { CAVES_CONTENT } from "./data/content/cave-content.js";
+import { ITEM_CAVE_CHEST_SOURCES } from "./data/item-cave-chest-sources.js";
 import {
   clamp,
   debounce,
@@ -88,11 +90,14 @@ const LOW_VALUE_DESCRIPTION_PATTERNS = [
 const VIDEO_GUIDE_CATEGORY_IDS = new Set(["quests", "mini_quests", "secret_discovery"]);
 const MOB_CATEGORY_IDS = CATEGORY_ORDER.filter((categoryId) => categoryId.startsWith("hostile_mobs"));
 const ITEM_DATABASE_URLS = [
-  new URL("./data/wiki-scrape/items/item-database.full.json", import.meta.url).href,
+  new URL("./data/item-database.beta.json", import.meta.url).href,
   "https://api.wynncraft.com/v3/item/database?fullResult",
 ];
 const ITEM_WIKI_EXTRACTS_URLS = [
-  new URL("./data/wiki-scrape/items/wiki-item-extracts.json", import.meta.url).href,
+  new URL("./data/item-wiki-extracts.json", import.meta.url).href,
+];
+const ITEM_INGREDIENT_SOURCE_URLS = [
+  new URL("./data/item-ingredient-sources.beta.json", import.meta.url).href,
 ];
 const ITEM_SOURCE_TYPE_LABELS = {
   altar: "Boss altar",
@@ -236,6 +241,7 @@ const state = {
   panelView: "markers",
   itemSearch: "",
   selectedItemKey: "",
+  searchSuggestionsOpen: false,
   activeMobFamily: null,
   trackedIngredient: "",
   ingredientNoteDismissed: false,
@@ -258,11 +264,14 @@ let itemDatabasePromise = null;
 let itemLookupEntries = [];
 let itemWikiExtractMap = null;
 let itemWikiExtractPromise = null;
+let itemIngredientSourceMap = null;
+let itemIngredientSourcePromise = null;
 let caveRewardIndex = null;
 let caveRewardIndexPromise = null;
 let caveChestCatalog = null;
 let itemDatabaseError = "";
 let itemWikiExtractError = "";
+let itemIngredientSourceError = "";
 let caveRewardIndexError = "";
 
 const elements = {
@@ -277,6 +286,7 @@ const elements = {
   mapSelectorMenu: document.querySelector(".map-selector-menu"),
   searchInput: document.querySelector("#search-input"),
   clearSearch: document.querySelector("#clear-search"),
+  searchSuggestions: document.querySelector("#search-suggestions"),
   showCitiesToggle: document.querySelector("#show-cities-toggle"),
   hideFoundToggle: document.querySelector("#hide-found-toggle"),
   editCitiesToggle: document.querySelector("#edit-cities-toggle"),
@@ -284,6 +294,8 @@ const elements = {
   detailCard: document.querySelector("#info-card"),
   linkCard: document.querySelector("#link-card"),
   appearanceCard: document.querySelector("#appearance-card"),
+  themeDockButton: document.querySelector("#theme-dock-button"),
+  themeDockGlyph: document.querySelector("#theme-dock-glyph"),
   itemsCard: document.querySelector("#items-card"),
   studioCard: document.querySelector("#studio-card"),
   cityEditorStatus: document.querySelector("#city-editor-status"),
@@ -453,6 +465,9 @@ function itemLevel(item) {
 }
 
 function itemTypeLabel(item) {
+  if (String(item?.type || "").toLowerCase() === "ingredient") {
+    return "Ingredient";
+  }
   const base = [item.tier, item.subType || item.type].filter(Boolean).join(" ");
   return base.replace(/\b\w/g, (match) => match.toUpperCase());
 }
@@ -562,6 +577,8 @@ async function ensureItemDatabaseLoaded() {
     .finally(() => {
       itemDatabasePromise = null;
       renderItemsCard();
+      renderSearchSuggestions();
+      renderDetailCard();
       if (state.selectedItemKey) {
         syncVisibleMarkers();
         renderCategoryFilters();
@@ -580,7 +597,7 @@ async function ensureCaveRewardIndexLoaded() {
   caveRewardIndexError = "";
 
   caveRewardIndexPromise = (async () => {
-    const caveContent = await loadMarkerContentForCategory("caves");
+    const caveContent = CAVES_CONTENT;
     const items = await ensureItemDatabaseLoaded();
     const itemNameMap = new Map(items.map((item) => [itemLookupKey(item.displayName || item.internalName), item]));
     const nextIndex = new Map();
@@ -639,6 +656,7 @@ async function ensureCaveRewardIndexLoaded() {
     .finally(() => {
       caveRewardIndexPromise = null;
       renderItemsCard();
+      renderDetailCard();
       if (state.selectedItemKey) {
         syncVisibleMarkers();
         renderCategoryFilters();
@@ -668,6 +686,7 @@ async function ensureItemWikiExtractsLoaded() {
     .finally(() => {
       itemWikiExtractPromise = null;
       renderItemsCard();
+      renderDetailCard();
       if (state.selectedItemKey) {
         syncVisibleMarkers();
         renderCategoryFilters();
@@ -676,12 +695,51 @@ async function ensureItemWikiExtractsLoaded() {
   return itemWikiExtractPromise;
 }
 
+async function ensureItemIngredientSourcesLoaded() {
+  if (itemIngredientSourceMap) {
+    return itemIngredientSourceMap;
+  }
+  if (!itemIngredientSourcePromise) {
+    itemIngredientSourcePromise = loadJsonFromAny(ITEM_INGREDIENT_SOURCE_URLS)
+      .then((entries) => {
+        itemIngredientSourceMap = entries || {};
+        return itemIngredientSourceMap;
+      })
+      .catch((error) => {
+        itemIngredientSourceError = error instanceof Error ? error.message : "Unable to load ingredient source data.";
+        return null;
+      })
+      .finally(() => {
+        itemIngredientSourcePromise = null;
+        renderDetailCard();
+      });
+  }
+  return itemIngredientSourcePromise;
+}
+
+function itemIsSearchable(item) {
+  const type = String(item?.type || "").toLowerCase();
+  const subType = String(item?.subType || "").toLowerCase();
+  return type !== "tome" && subType !== "tome";
+}
+
+function selectedItemIngredientEntry(item) {
+  if (!item || !itemIngredientSourceMap) {
+    return null;
+  }
+  return itemIngredientSourceMap[item.displayName] || itemIngredientSourceMap[item.internalName] || null;
+}
+
+function itemSourceLookupKey(value) {
+  return itemLookupKey(String(value || ""));
+}
+
 function selectedItemEntry() {
   return itemDatabase?.find((item) => item._itemKey === state.selectedItemKey) || null;
 }
 
 function filteredItems() {
-  const items = itemDatabase || [];
+  const items = (itemDatabase || []).filter(itemIsSearchable);
   const search = itemLookupKey(state.itemSearch);
   if (!search) {
     return [];
@@ -696,33 +754,21 @@ function selectedItemWikiEntry(item) {
   return itemWikiExtractMap[item.displayName] || itemWikiExtractMap[item.internalName] || null;
 }
 
-function possibleCaveChestSources(item) {
+function itemWikiSummary(item) {
   const wikiEntry = selectedItemWikiEntry(item);
-  const chestSource = wikiEntry?.chestSource;
-  if (!item || !chestSource || !caveChestCatalog?.length) {
+  if (wikiEntry?.extract) {
+    return wikiEntry.extract;
+  }
+  const ingredientEntry = selectedItemIngredientEntry(item);
+  return ingredientEntry?.extract || "";
+}
+
+function possibleCaveChestSources(item) {
+  const entries = ITEM_CAVE_CHEST_SOURCES[item?.displayName] || ITEM_CAVE_CHEST_SOURCES[item?.internalName] || [];
+  if (!item || !entries.length) {
     return [];
   }
-  const hasLevelBand = Number.isFinite(chestSource.minLevel) || Number.isFinite(chestSource.maxLevel);
-  if (!hasLevelBand) {
-    return [];
-  }
-  const allowedTiers = Array.isArray(chestSource.tiers) ? chestSource.tiers : [];
-  return caveChestCatalog
-    .filter((cave) => {
-      if (!Number.isFinite(cave.suggestedLevel)) {
-        return false;
-      }
-      if (Number.isFinite(chestSource.minLevel) && cave.suggestedLevel < chestSource.minLevel) {
-        return false;
-      }
-      if (Number.isFinite(chestSource.maxLevel) && cave.suggestedLevel > chestSource.maxLevel) {
-        return false;
-      }
-      if (!allowedTiers.length) {
-        return true;
-      }
-      return cave.chestTiers.some((tier) => allowedTiers.includes(tier));
-    })
+  return entries
     .map((cave) => ({
       id: `${item._itemKey}::possible-cave::${cave.markerId}`,
       type: "possibleCaveChest",
@@ -730,12 +776,7 @@ function possibleCaveChestSources(item) {
       label: cave.title,
       markerId: cave.markerId,
       region: cave.region,
-      note: [
-        Number.isFinite(cave.suggestedLevel) ? `Suggested level ${cave.suggestedLevel}` : "",
-        cave.chestTiers.length ? `Chest tiers ${cave.chestTiers.join(", ")}` : "",
-      ]
-        .filter(Boolean)
-        .join(" · "),
+      note: cave.note || "",
     }))
     .slice(0, 40);
 }
@@ -745,11 +786,18 @@ function selectedItemMarkerIdSet() {
   if (!item) {
     return null;
   }
-  return new Set(
-    itemSourceEntries(item)
-      .filter((source) => source.markerId && (source.type === "caveReward" || source.type === "possibleCaveChest"))
-      .map((source) => source.markerId),
-  );
+  const markerIds = new Set();
+  itemSourceEntries(item).forEach((source) => {
+    if (source.markerId) {
+      markerIds.add(source.markerId);
+    }
+    (source.markerIds || []).forEach((markerId) => {
+      if (markerId) {
+        markerIds.add(markerId);
+      }
+    });
+  });
+  return markerIds;
 }
 
 function itemSourceEntries(item) {
@@ -758,6 +806,29 @@ function itemSourceEntries(item) {
   }
 
   const sources = [];
+  const ingredientEntry = selectedItemIngredientEntry(item);
+  const officialDropperNames = new Set(
+    (Array.isArray(item.droppedBy) ? item.droppedBy : []).map((dropper) => itemSourceLookupKey(dropper.name)),
+  );
+
+  (ingredientEntry?.crafterBags || []).forEach((source, index) => {
+    sources.push({
+      id: `${item._itemKey}::crafter-bag::${index}`,
+      type: "crafterBag",
+      label: `${source.raidTitle} Crafter Bag`,
+      kind: "Crafter Bag exclusive",
+      markerId: source.markerId || "",
+      markerTitle: source.markerTitle || source.raidTitle || "",
+      note: [
+        `Exclusive to ${source.raidTitle} crafter bags.`,
+        Number.isFinite(source.level) ? `Lv. ${source.level}` : "",
+        source.description || "",
+      ]
+        .filter(Boolean)
+        .join(" "),
+    });
+  });
+
   if (item.dropRestriction === "normal") {
     sources.push({
       id: `${item._itemKey}::normal-pool`,
@@ -791,18 +862,42 @@ function itemSourceEntries(item) {
   if (Array.isArray(item.droppedBy)) {
     item.droppedBy.forEach((dropper, index) => {
       const coordinates = normalizeCoordsArray(dropper.coords);
+      const matchedWikiDrop =
+        ingredientEntry?.mobDrops?.find((entry) => itemSourceLookupKey(entry.name) === itemSourceLookupKey(dropper.name)) || null;
+      const matchedMarkerIds = matchedWikiDrop?.matchedMarkerIds || [];
       sources.push({
         id: `${item._itemKey}::dropper::${index}`,
         type: "dropper",
         label: dropper.name || "Dropper",
         kind: "Dropped by",
+        markerIds: matchedMarkerIds,
+        markerTitle: matchedWikiDrop?.matchedMarkerTitles?.length === 1 ? matchedWikiDrop.matchedMarkerTitles[0] : "",
         coordinates,
         note: coordinates.length
           ? `${coordinates.length} ${coordinates.length === 1 ? "mapped spawn point" : "mapped spawn points"}`
-          : "No mapped coordinates in the official item data.",
+          : matchedMarkerIds.length
+            ? `${matchedMarkerIds.length} ${matchedMarkerIds.length === 1 ? "matched mob marker" : "matched mob markers"} from wiki/API source names.`
+            : "No mapped coordinates in the official item data.",
       });
     });
   }
+
+  (ingredientEntry?.mobDrops || []).forEach((drop, index) => {
+    if (officialDropperNames.has(itemSourceLookupKey(drop.name))) {
+      return;
+    }
+    sources.push({
+      id: `${item._itemKey}::wiki-dropper::${index}`,
+      type: "wikiDropper",
+      label: drop.name,
+      kind: "Dropped by",
+      markerIds: drop.matchedMarkerIds || [],
+      markerTitle: drop.matchedMarkerTitles?.length === 1 ? drop.matchedMarkerTitles[0] : "",
+      note: (drop.matchedMarkerIds || []).length
+        ? `${drop.matchedMarkerIds.length} ${drop.matchedMarkerIds.length === 1 ? "matched mob marker" : "matched mob markers"} from the wiki drop list.`
+        : "Listed on the wiki drop list, but no mapped mob marker is currently matched.",
+    });
+  });
 
   const caveSources = caveRewardIndex?.get(item._itemKey) || [];
   caveSources.forEach((source) => {
@@ -949,6 +1044,18 @@ function renderAppearanceCard() {
   });
 }
 
+function renderThemeDockButton() {
+  if (!elements.themeDockButton || !elements.themeDockGlyph) {
+    return;
+  }
+  const nextTheme = state.theme === "dark" ? "light" : "dark";
+  const nextLabel = nextTheme === "dark" ? "Switch to dark mode" : "Switch to light mode";
+  elements.themeDockButton.setAttribute("aria-label", nextLabel);
+  elements.themeDockButton.setAttribute("title", nextLabel);
+  elements.themeDockButton.dataset.themeTarget = nextTheme;
+  elements.themeDockGlyph.textContent = nextTheme === "dark" ? "☾" : "☀";
+}
+
 function worldLatLngFromCoords(point) {
   const image = worldToImage(point.x, point.z);
   return [image.y * MAP_HEIGHT, image.x * MAP_WIDTH];
@@ -986,6 +1093,219 @@ function focusItemSource(source) {
   if (source.coordinates?.length) {
     focusWorldPoints(source.coordinates);
   }
+}
+
+function currentSearchQuery() {
+  return String(elements.searchInput?.value || "").trim();
+}
+
+function searchSuggestions() {
+  const query = currentSearchQuery();
+  const lookup = itemLookupKey(query);
+  if (!lookup) {
+    return [];
+  }
+
+  const markerSuggestions = state.markers
+    .filter((marker) => !marker.contextOnly)
+    .map((marker) => {
+      const titleKey = normalizeMarkerLookup(marker.title);
+      const regionKey = normalizeMarkerLookup(marker.region || "");
+      const exact = titleKey === lookup ? 400 : 0;
+      const prefix = titleKey.startsWith(lookup) ? 240 : 0;
+      const titleMatch = titleKey.includes(lookup) ? 120 : 0;
+      const regionMatch = regionKey.includes(lookup) ? 40 : 0;
+      const score = exact || prefix || titleMatch || regionMatch;
+      return score
+        ? {
+            type: "marker",
+            marker,
+            id: marker.id,
+            score,
+          }
+        : null;
+    })
+    .filter(Boolean)
+    .sort((left, right) => right.score - left.score || left.marker.title.localeCompare(right.marker.title))
+    .slice(0, 8);
+
+  const itemSuggestions = (itemDatabase || [])
+    .filter(itemIsSearchable)
+    .map((item) => {
+      const lookupKey = item._lookup || "";
+      const exact = lookupKey === lookup ? 400 : 0;
+      const prefix = lookupKey.startsWith(lookup) ? 220 : 0;
+      const contains = lookupKey.includes(lookup) ? 110 : 0;
+      const score = exact || prefix || contains;
+      return score
+        ? {
+            type: "item",
+            item,
+            id: item._itemKey,
+            score,
+          }
+        : null;
+    })
+    .filter(Boolean)
+    .sort((left, right) => right.score - left.score || left.item.displayName.localeCompare(right.item.displayName))
+    .slice(0, 8);
+
+  return [...markerSuggestions, ...itemSuggestions]
+    .sort((left, right) => right.score - left.score)
+    .slice(0, 12);
+}
+
+function renderSearchSuggestions() {
+  if (!elements.searchSuggestions) {
+    return;
+  }
+  const query = currentSearchQuery();
+  if (!state.searchSuggestionsOpen || !query) {
+    elements.searchSuggestions.classList.add("hidden");
+    elements.searchSuggestions.innerHTML = "";
+    return;
+  }
+
+  const suggestions = searchSuggestions();
+  const loadingItems = Boolean(itemDatabasePromise && !itemDatabase);
+
+  elements.searchSuggestions.classList.remove("hidden");
+  elements.searchSuggestions.innerHTML = suggestions.length
+    ? suggestions
+        .map((entry) => {
+          if (entry.type === "marker") {
+            const marker = entry.marker;
+            const meta = CATEGORY_META[marker.category];
+            const iconUrl = marker.fixed ? CITY_ICON_URL : markerIconUrl(marker, "active");
+            return html`
+              <button type="button" class="search-suggestion-row ${marker.id === state.selectedMarkerId ? "active" : ""}" data-search-kind="marker" data-search-id="${marker.id}">
+                <span class="search-suggestion-icon-shell">
+                  ${
+                    iconUrl
+                      ? html.raw(html`<img class="search-suggestion-icon" src="${iconUrl}" alt="">`)
+                      : html.raw(genericIconMarkup(marker.category, "search-suggestion-icon generic-category-icon"))
+                  }
+                </span>
+                <span class="search-suggestion-copy">
+                  <strong>${marker.title}</strong>
+                  <span class="search-suggestion-meta">${meta.label}${marker.region ? ` · ${marker.region}` : ""}</span>
+                </span>
+              </button>
+            `;
+          }
+          const item = entry.item;
+          return html`
+            <button type="button" class="search-suggestion-row ${item._itemKey === state.selectedItemKey ? "active" : ""}" data-search-kind="item" data-search-id="${item._itemKey}">
+              <span class="search-suggestion-icon-shell"><span class="search-suggestion-badge">${item.type === "ingredient" ? "Ing" : "Item"}</span></span>
+              <span class="search-suggestion-copy">
+                <strong>${item.displayName}</strong>
+                <span class="search-suggestion-meta">${itemTypeLabel(item)}${itemLevel(item) ? ` · Lv. ${itemLevel(item)}` : ""}</span>
+              </span>
+            </button>
+          `;
+        })
+        .join("")
+    : html`<div class="search-suggestion-empty">${loadingItems ? "Loading items…" : "No markers or items matched that search."}</div>`;
+}
+
+function setSelectedItem(itemKey) {
+  state.selectedItemKey = itemKey;
+  state.selectedMarkerId = null;
+  state.activeMobFamily = null;
+  state.searchSuggestionsOpen = false;
+  setPanelView("info");
+  setPanelCollapsed(false);
+  syncVisibleMarkers();
+  renderCategoryFilters();
+  renderDetailCard();
+  renderActiveAreaHighlight();
+  renderSearchSuggestions();
+}
+
+function renderItemDetailCard(item) {
+  if (!item) {
+    return html`
+      <h2>No marker selected</h2>
+      <p>Select a marker to view notes, rewards, routes, and source links.</p>
+    `;
+  }
+
+  if (!caveRewardIndex && !caveRewardIndexPromise) {
+    void ensureCaveRewardIndexLoaded();
+  }
+  if (!itemWikiExtractMap && !itemWikiExtractPromise) {
+    void ensureItemWikiExtractsLoaded();
+  }
+  if (!itemIngredientSourceMap && !itemIngredientSourcePromise) {
+    void ensureItemIngredientSourcesLoaded();
+  }
+
+  const sources = itemSourceEntries(item);
+  const selectedLevel = itemLevel(item);
+  const selectedWikiSummary = itemWikiSummary(item);
+  const itemMetaPills = [
+    item.tier ? `${item.tier}` : "",
+    item.subType || item.type || "",
+    selectedLevel ? `Lv. ${selectedLevel}` : "",
+  ].filter(Boolean);
+
+  return html`
+    <div class="detail-topline compact">
+      <div>
+        <h2>${item.displayName}</h2>
+        <p class="detail-kind">Source Lookup</p>
+      </div>
+    </div>
+    <div class="detail-meta">
+      ${itemMetaPills.map((pill) => html.raw(html`<span class="detail-pill">${pill}</span>`))}
+    </div>
+    ${selectedWikiSummary ? html.raw(html`<div class="items-subtle-note">${selectedWikiSummary}</div>`) : ""}
+    ${caveRewardIndexPromise && !caveRewardIndex ? html.raw(html`<div class="items-subtle-note">Checking cave reward matches…</div>`) : ""}
+    ${itemWikiExtractPromise && !itemWikiExtractMap ? html.raw(html`<div class="items-subtle-note">Loading wiki chest-source summary…</div>`) : ""}
+    ${itemIngredientSourcePromise && !itemIngredientSourceMap ? html.raw(html`<div class="items-subtle-note">Loading ingredient source notes…</div>`) : ""}
+    ${caveRewardIndexError ? html.raw(html`<div class="items-subtle-note">Cave reward lookup is unavailable right now.</div>`) : ""}
+    ${itemWikiExtractError ? html.raw(html`<div class="items-subtle-note">Wiki chest-source lookup is unavailable right now.</div>`) : ""}
+    ${itemIngredientSourceError ? html.raw(html`<div class="items-subtle-note">Ingredient source lookup is unavailable right now.</div>`) : ""}
+    <div class="items-source-list">
+      ${
+        sources.length
+          ? html.raw(
+              sources
+                .map((source) => {
+                  const canFocus = Boolean(
+                    source.markerId || source.markerIds?.length || source.markerTitle || source.coordinates?.length,
+                  );
+                  return html`
+                    <article class="item-source-card">
+                      <div class="item-source-copy">
+                        <span class="item-source-kind">${source.kind}</span>
+                        <strong>${source.label}</strong>
+                        ${source.region ? html.raw(html`<span>${source.region}</span>`) : ""}
+                        ${source.note ? html.raw(html`<span>${source.note}</span>`) : ""}
+                        ${
+                          source.coordinates?.length && source.coordinates.length <= 3
+                            ? html.raw(html`<span>${source.coordinates.map((point) => `${point.x}, ${point.z}`).join(" · ")}</span>`)
+                            : ""
+                        }
+                      </div>
+                      ${
+                        canFocus
+                          ? html.raw(
+                              html`<button type="button" class="detail-button secondary small" data-item-source-focus="${source.id}">Focus</button>`,
+                            )
+                          : ""
+                      }
+                    </article>
+                  `;
+                })
+                .join(""),
+            )
+          : html.raw(
+              html`<div class="items-empty-state">No confirmed map or cave source is recorded for this item in the current lookup.</div>`,
+            )
+      }
+    </div>
+  `;
 }
 
 function renderItemsCard() {
@@ -1348,6 +1668,7 @@ function applyTheme(theme, { persist = true } = {}) {
     } catch {}
   }
   renderAppearanceCard();
+  renderThemeDockButton();
 }
 
 applyTheme(state.theme, { persist: false });
@@ -1873,6 +2194,14 @@ function bossAltarIngredientMeta(marker, entry) {
 
   const match = raw.match(/^(\d+)\s+(.+)$/);
   const itemName = (match ? match[2] : raw).trim();
+  if (normalizeMarkerLookup(itemName) === normalizeMarkerLookup("Skiens Badge")) {
+    return {
+      raw,
+      itemName,
+      linkUrl: "https://wynncraft.wiki.gg/wiki/Skiens_Badge",
+      linkLabel: "Open Skien's Badge wiki page",
+    };
+  }
   return { raw, itemName };
 }
 
@@ -2044,13 +2373,16 @@ function contentPreviewHtml(marker, entry) {
   }
 
   if (altarIngredient) {
+    const altarIngredientAction = altarIngredient.linkUrl
+      ? html`<a class="content-link-chip" href="${altarIngredient.linkUrl}" target="_blank" rel="noreferrer">${altarIngredient.linkLabel || `Open ${altarIngredient.itemName}`}</a>`
+      : html`<button type="button" class="content-link-chip" data-ingredient-mobs="${altarIngredient.itemName}">
+          ${`Show where to get ${altarIngredient.raw}`}
+        </button>`;
     blocks.push(html`
       <section class="content-block content-links">
         <h3>Opening Ingredient</h3>
         <div class="content-link-list">
-          <button type="button" class="content-link-chip" data-ingredient-mobs="${altarIngredient.itemName}">
-            ${`Show where to get ${altarIngredient.raw}`}
-          </button>
+          ${html.raw(altarIngredientAction)}
         </div>
       </section>
     `);
@@ -3046,6 +3378,7 @@ function ensureDeferredMarkersForSearch(searchValue) {
   }
   void ensureDeferredCategoryLoaded("profession_fishing");
   void ensureDeferredCategoryLoaded("hostile_mobs_zombie");
+  void ensureItemDatabaseLoaded();
 }
 
 function categoryCount(categoryId) {
@@ -3350,12 +3683,15 @@ function renderDetailContent(marker, content, contentLoading, contentError, even
 
 function renderDetailCard() {
   const marker = state.markers.find((item) => item.id === state.selectedMarkerId);
+  const selectedItem = selectedItemEntry();
   if (!marker) {
-    elements.detailCard.className = "detail-card empty";
-    elements.detailCard.innerHTML = html`
-      <h2>No marker selected</h2>
-      <p>Select a marker to view notes, rewards, routes, and source links.</p>
-    `;
+    elements.detailCard.className = `detail-card${selectedItem ? "" : " empty"}`;
+    elements.detailCard.innerHTML = selectedItem
+      ? renderItemDetailCard(selectedItem)
+      : html`
+          <h2>No marker selected</h2>
+          <p>Select a marker to view notes, rewards, routes, and source links.</p>
+        `;
     if (elements.studioCard) {
       elements.studioCard.className = "detail-card empty";
       elements.studioCard.innerHTML = html`
@@ -3369,6 +3705,18 @@ function renderDetailCard() {
         <h2>No marker selected</h2>
         <p>Select a quest or secret discovery to view its linked video.</p>
       `;
+    }
+
+    if (selectedItem) {
+      const sources = itemSourceEntries(selectedItem);
+      elements.detailCard.querySelectorAll("[data-item-source-focus]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const source = sources.find((entry) => entry.id === button.dataset.itemSourceFocus);
+          if (source) {
+            focusItemSource(source);
+          }
+        });
+      });
     }
     return;
   }
@@ -3973,10 +4321,19 @@ function recordCalibrationSample(latlng) {
 function bindEvents() {
   const debouncedSearchUpdate = debounce((value) => {
     state.search = value;
+    state.searchSuggestionsOpen = Boolean(value);
     ensureDeferredMarkersForSearch(value);
+    if (state.selectedItemKey) {
+      state.selectedItemKey = "";
+      if (!state.selectedMarkerId) {
+        setPanelView("markers");
+      }
+    }
     renderSearchButton();
+    renderSearchSuggestions();
     syncVisibleMarkers();
     renderCategoryFilters();
+    renderDetailCard();
   }, 120);
 
   elements.panelToggle.addEventListener("click", () => {
@@ -4078,17 +4435,72 @@ function bindEvents() {
     debouncedSearchUpdate(event.target.value.trim().toLowerCase());
   });
 
+  elements.searchInput.addEventListener("focus", () => {
+    state.searchSuggestionsOpen = true;
+    renderSearchSuggestions();
+  });
+
+  elements.searchInput.addEventListener("blur", () => {
+    window.setTimeout(() => {
+      state.searchSuggestionsOpen = false;
+      renderSearchSuggestions();
+    }, 120);
+  });
+
+  elements.searchSuggestions?.addEventListener("mousedown", (event) => {
+    const button = event.target.closest("[data-search-kind]");
+    if (!button) {
+      return;
+    }
+    event.preventDefault();
+    const kind = button.dataset.searchKind;
+    if (kind === "marker") {
+      const marker = getMarkerById(button.dataset.searchId);
+      if (!marker) {
+        return;
+      }
+      state.selectedItemKey = "";
+      elements.searchInput.value = marker.title;
+      state.search = marker.title.trim().toLowerCase();
+      state.searchSuggestionsOpen = false;
+      renderSearchButton();
+      renderSearchSuggestions();
+      setSelectedMarker(marker.id);
+      return;
+    }
+    if (kind === "item") {
+      const item = itemDatabase?.find((entry) => entry._itemKey === button.dataset.searchId);
+      if (!item) {
+        return;
+      }
+      elements.searchInput.value = item.displayName;
+      state.search = itemLookupKey(item.displayName);
+      renderSearchButton();
+      setSelectedItem(item._itemKey);
+      void ensureCaveRewardIndexLoaded();
+      void ensureItemWikiExtractsLoaded();
+      void ensureItemIngredientSourcesLoaded();
+    }
+  });
+
   elements.clearSearch.addEventListener("click", () => {
     elements.searchInput.value = "";
     state.search = "";
+    state.selectedItemKey = "";
+    state.searchSuggestionsOpen = false;
+    if (!state.selectedMarkerId) {
+      setPanelView("markers");
+    }
     if (state.trackedIngredient) {
       state.trackedIngredient = "";
       state.ingredientNoteDismissed = false;
       state.activeMobFamily = null;
     }
     renderSearchButton();
+    renderSearchSuggestions();
     syncVisibleMarkers();
     renderCategoryFilters();
+    renderDetailCard();
     renderPanelBanner();
   });
 
@@ -4197,6 +4609,12 @@ function bindEvents() {
   if (elements.introStart) {
     elements.introStart.addEventListener("click", () => {
       closeIntroModal();
+    });
+  }
+
+  if (elements.themeDockButton) {
+    elements.themeDockButton.addEventListener("click", () => {
+      applyTheme(elements.themeDockButton.dataset.themeTarget || (state.theme === "dark" ? "light" : "dark"));
     });
   }
 

@@ -37,16 +37,21 @@
   <body>
     <div class="app-shell">
       <div id="map"></div>
-      <a
-        class="support-dock-button"
-        href="https://github.com/sponsors/KiraDiamond?frequency=one-time&sponsor=KiraDiamond"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Support Wynnteractive Map on Ko-fi"
-      >
-        <span class="support-dock-glyph" aria-hidden="true">♡</span>
-        <span>Support</span>
-      </a>
+      <div class="top-right-dock">
+        <a
+          class="support-dock-button"
+          href="https://github.com/sponsors/KiraDiamond?frequency=one-time&sponsor=KiraDiamond"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Support Wynnteractive Map on GitHub Sponsors"
+        >
+          <span class="support-dock-glyph" aria-hidden="true">♡</span>
+          <span>Support</span>
+        </a>
+        <button type="button" class="theme-dock-button" id="theme-dock-button" aria-label="Switch to dark mode" title="Switch to dark mode">
+          <span class="theme-dock-glyph" id="theme-dock-glyph" aria-hidden="true">☾</span>
+        </button>
+      </div>
 
       <aside id="marker-panel" class="marker-panel">
         <div class="panel-shell-head">
@@ -81,11 +86,6 @@
               />
             </svg>
           </button>
-          <button type="button" class="panel-tab" aria-label="Appearance" data-panel-view="appearance">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M12 3a9 9 0 1 0 9 9 1 1 0 0 0-1-1 6 6 0 0 1-6-6 1 1 0 0 0-1-1Z" />
-            </svg>
-          </button>
         </div>
 
         <div class="panel-banner">Routes, rewards, discoveries, profession spots, and mobs.</div>
@@ -113,6 +113,7 @@
                 </svg>
               </button>
             </div>
+            <div id="search-suggestions" class="search-suggestions hidden" aria-label="Search suggestions"></div>
           </div>
 
           <div class="panel-controls">
@@ -141,10 +142,6 @@
             <h2>No marker selected</h2>
             <p>Select a quest or secret discovery to view its linked video.</p>
           </article>
-        </section>
-
-        <section class="panel-screen hidden" data-panel-screen="appearance">
-          <article id="appearance-card" class="detail-card appearance-card"></article>
         </section>
 
         <section id="calibration-panel" class="calibration-panel hidden">

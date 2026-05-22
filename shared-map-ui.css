@@ -791,11 +791,18 @@ input {
   will-change: transform;
 }
 
-.support-dock-button {
+.top-right-dock {
   position: absolute;
   right: 18px;
   top: 18px;
   z-index: 950;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.support-dock-button {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -832,6 +839,43 @@ input {
   width: 16px;
   height: 16px;
   font-size: 0.92rem;
+  line-height: 1;
+}
+
+.theme-dock-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(248, 250, 252, 0.92);
+  color: #223247;
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition:
+    transform 120ms ease,
+    background 120ms ease,
+    color 120ms ease;
+}
+
+.theme-dock-button:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.98);
+}
+
+.theme-dock-button:focus-visible {
+  outline: 2px solid rgba(123, 67, 246, 0.48);
+  outline-offset: 2px;
+}
+
+.theme-dock-glyph {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
   line-height: 1;
 }
 
@@ -1272,6 +1316,99 @@ input {
 
 .panel-search input::placeholder {
   color: #8c96a5;
+}
+
+.search-suggestions {
+  display: grid;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid var(--panel-line);
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(250, 252, 255, 0.98), rgba(241, 246, 252, 0.96));
+  box-shadow: 0 12px 24px rgba(18, 28, 42, 0.08);
+}
+
+.search-suggestions.hidden {
+  display: none;
+}
+
+.search-suggestion-row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  align-items: start;
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--panel-line);
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(246, 249, 253, 0.96));
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+  transition:
+    transform 120ms ease,
+    box-shadow 120ms ease,
+    border-color 120ms ease;
+}
+
+.search-suggestion-row:hover,
+.search-suggestion-row:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 18px rgba(30, 42, 58, 0.08);
+}
+
+.search-suggestion-row.active {
+  border-color: color-mix(in srgb, var(--accent) 34%, var(--panel-line));
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accent) 14%, transparent);
+}
+
+.search-suggestion-icon-shell {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+}
+
+.search-suggestion-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.search-suggestion-badge {
+  display: inline-grid;
+  place-items: center;
+  min-width: 24px;
+  height: 24px;
+  padding: 0 8px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 12%, var(--panel));
+  color: var(--accent);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.search-suggestion-copy {
+  display: grid;
+  gap: 3px;
+}
+
+.search-suggestion-copy strong {
+  color: var(--ink);
+}
+
+.search-suggestion-meta {
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+}
+
+.search-suggestion-empty {
+  padding: 6px 2px 2px;
+  color: var(--ink-soft);
+  font-size: 0.84rem;
 }
 
 .icon-button {
@@ -3002,6 +3139,15 @@ input {
   background: rgba(25, 36, 50, 0.96);
 }
 
+:root[data-theme="dark"] .theme-dock-button {
+  background: rgba(17, 25, 35, 0.92);
+  color: #edf3fb;
+}
+
+:root[data-theme="dark"] .theme-dock-button:hover {
+  background: rgba(25, 36, 50, 0.96);
+}
+
 :root[data-theme="dark"] .panel-shell-head {
   background: linear-gradient(180deg, rgba(18, 26, 36, 0.98), rgba(14, 21, 30, 0.96));
 }
@@ -3133,6 +3279,20 @@ input {
 
 :root[data-theme="dark"] .panel-search input::placeholder {
   color: #6f839a;
+}
+
+:root[data-theme="dark"] .search-suggestions {
+  background: linear-gradient(180deg, rgba(23, 31, 45, 0.98), rgba(17, 25, 37, 0.96));
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.28);
+}
+
+:root[data-theme="dark"] .search-suggestion-row {
+  background: linear-gradient(180deg, rgba(28, 38, 56, 0.98), rgba(21, 29, 43, 0.96));
+}
+
+:root[data-theme="dark"] .search-suggestion-meta,
+:root[data-theme="dark"] .search-suggestion-empty {
+  color: var(--ink-soft);
 }
 
 :root[data-theme="dark"] .icon-button {
@@ -3506,11 +3666,20 @@ input {
     padding: 7px 10px;
   }
 
-  .support-dock-button {
+  .top-right-dock {
     right: 12px;
     top: 12px;
+    gap: 6px;
+  }
+
+  .support-dock-button {
     padding: 8px 11px;
     font-size: 0.72rem;
+  }
+
+  .theme-dock-button {
+    width: 38px;
+    height: 38px;
   }
 
   .map-coordinate-label {
