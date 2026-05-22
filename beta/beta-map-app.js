@@ -95,11 +95,11 @@ const LOW_VALUE_DESCRIPTION_PATTERNS = [
 const VIDEO_GUIDE_CATEGORY_IDS = new Set(["quests", "mini_quests", "secret_discovery"]);
 const MOB_CATEGORY_IDS = CATEGORY_ORDER.filter((categoryId) => categoryId.startsWith("hostile_mobs"));
 const ITEM_DATABASE_URLS = [
-  new URL("../data/wiki-scrape/items/item-database.full.json", import.meta.url).href,
+  new URL("../data/item-database.beta.json", import.meta.url).href,
   "https://api.wynncraft.com/v3/item/database?fullResult",
 ];
 const ITEM_WIKI_EXTRACTS_URLS = [
-  new URL("../data/wiki-scrape/items/wiki-item-extracts.json", import.meta.url).href,
+  new URL("../data/item-wiki-extracts.json", import.meta.url).href,
 ];
 const ITEM_SOURCE_TYPE_LABELS = {
   altar: "Boss altar",
