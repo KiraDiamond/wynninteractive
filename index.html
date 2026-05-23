@@ -256,13 +256,6 @@
           Wynnteractive Map is an interactive Wynncraft map that brings quests, discoveries, caves, raids, boss altars,
           profession spots, travel routes, lootrun camps, and mob locations into one place.
         </p>
-        <div class="intro-theme-row" aria-label="Choose intro theme">
-          <span class="intro-theme-label">Theme</span>
-          <div class="intro-theme-toggle" role="group" aria-label="Theme mode">
-            <button type="button" class="intro-theme-option" data-intro-theme="light">☀ Light</button>
-            <button type="button" class="intro-theme-option" data-intro-theme="dark">☾ Dark</button>
-          </div>
-        </div>
         <div class="intro-modal-grid">
           <section class="intro-modal-block">
             <h3>What It Does</h3>
@@ -283,6 +276,15 @@
           </section>
         </div>
         <div class="intro-modal-actions">
+          <button
+            id="intro-theme-toggle"
+            type="button"
+            class="theme-dock-button intro-theme-toggle-button"
+            aria-label="Switch to dark mode"
+            title="Switch to dark mode"
+          >
+            <span class="theme-dock-glyph" id="intro-theme-glyph" aria-hidden="true">☾</span>
+          </button>
           <button id="intro-start" type="button" class="detail-button">Enter Map</button>
         </div>
       </div>

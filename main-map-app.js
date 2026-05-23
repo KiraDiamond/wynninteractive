@@ -313,7 +313,8 @@ const elements = {
   appearanceCard: document.querySelector("#appearance-card"),
   themeDockButton: document.querySelector("#theme-dock-button"),
   themeDockGlyph: document.querySelector("#theme-dock-glyph"),
-  introThemeButtons: document.querySelectorAll("[data-intro-theme]"),
+  introThemeButton: document.querySelector("#intro-theme-toggle"),
+  introThemeGlyph: document.querySelector("#intro-theme-glyph"),
   itemsCard: document.querySelector("#items-card"),
   studioCard: document.querySelector("#studio-card"),
   cityEditorStatus: document.querySelector("#city-editor-status"),
@@ -1104,24 +1105,24 @@ function renderAppearanceCard() {
   });
 }
 
-function renderThemeDockButton() {
-  if (!elements.themeDockButton || !elements.themeDockGlyph) {
+function renderThemeToggleButton(button, glyph) {
+  if (!button || !glyph) {
     return;
   }
   const nextTheme = state.theme === "dark" ? "light" : "dark";
   const nextLabel = nextTheme === "dark" ? "Switch to dark mode" : "Switch to light mode";
-  elements.themeDockButton.setAttribute("aria-label", nextLabel);
-  elements.themeDockButton.setAttribute("title", nextLabel);
-  elements.themeDockButton.dataset.themeTarget = nextTheme;
-  elements.themeDockGlyph.textContent = nextTheme === "dark" ? "☾" : "☀";
+  button.setAttribute("aria-label", nextLabel);
+  button.setAttribute("title", nextLabel);
+  button.dataset.themeTarget = nextTheme;
+  glyph.textContent = nextTheme === "dark" ? "☾" : "☀";
 }
 
-function renderIntroThemeButtons() {
-  elements.introThemeButtons.forEach((button) => {
-    const active = button.dataset.introTheme === state.theme;
-    button.classList.toggle("active", active);
-    button.setAttribute("aria-pressed", active ? "true" : "false");
-  });
+function renderThemeDockButton() {
+  renderThemeToggleButton(elements.themeDockButton, elements.themeDockGlyph);
+}
+
+function renderIntroThemeButton() {
+  renderThemeToggleButton(elements.introThemeButton, elements.introThemeGlyph);
 }
 
 function worldLatLngFromCoords(point) {
@@ -1738,7 +1739,7 @@ function applyTheme(theme, { persist = true } = {}) {
   }
   renderAppearanceCard();
   renderThemeDockButton();
-  renderIntroThemeButtons();
+  renderIntroThemeButton();
 }
 
 applyTheme(state.theme, { persist: false });
@@ -4828,11 +4829,11 @@ function bindEvents() {
     });
   }
 
-  elements.introThemeButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      applyTheme(button.dataset.introTheme || "light");
+  if (elements.introThemeButton) {
+    elements.introThemeButton.addEventListener("click", () => {
+      applyTheme(elements.introThemeButton.dataset.themeTarget || (state.theme === "dark" ? "light" : "dark"));
     });
-  });
+  }
 
   if (elements.introModal) {
     elements.introModal.addEventListener("click", (event) => {
