@@ -1,0 +1,36 @@
+name: Refresh Beta Live Map Overlay
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 4 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Refresh beta live map overlay snapshot
+        run: node ./scripts/refresh-live-map-overlay.mjs
+
+      - name: Commit snapshot changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/live-map-overlay.beta.json
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: refresh beta live map overlay snapshot"
+          git push

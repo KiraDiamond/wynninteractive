@@ -35,6 +35,7 @@ import {
   splitMultiline,
   youtubeEmbedMeta,
 } from "../shared/app-utils.js?v=20260522e";
+import { loadLiveMapOverlay } from "./live-map-overlay.js?v=20260603g";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
@@ -134,6 +135,13 @@ const ITEM_SOURCE_TYPE_LABELS = {
   miniboss: "Miniboss",
   quest: "Quest reward",
   raid: "Raid",
+};
+const LIVE_ACTIVITY_TYPE_LABELS = {
+  CAMP: "Lootrun Camp",
+  RAID: "Raid",
+};
+const LIVE_WORLD_EVENT_TITLE_ALIASES = {
+  "defender of the plains": "haywire defender",
 };
 const BOSS_ALTAR_INGREDIENT_OVERRIDES = {
   "atlas-boss_altar-aerie-of-the-recluse--1746--3069": "7 Turtle Shells",
@@ -295,10 +303,12 @@ let itemIngredientSourcePromise = null;
 let caveRewardIndex = null;
 let caveRewardIndexPromise = null;
 let caveChestCatalog = null;
+let liveMapOverlayPromise = null;
 let itemDatabaseError = "";
 let itemWikiExtractError = "";
 let itemIngredientSourceError = "";
 let caveRewardIndexError = "";
+let liveMapOverlayError = "";
 
 const elements = {
   appShell: document.querySelector(".app-shell"),
@@ -2844,6 +2854,117 @@ function worldEventDetailsHtml(marker) {
   `;
 }
 
+function liveActivityRequirementLabel(requirement) {
+  const value = String(requirement?.value || "").trim();
+  switch (requirement?.type) {
+    case "COMBAT_LEVEL":
+      return value ? `Combat level ${value}+` : "";
+    case "QUEST":
+    case "GLOBAL_QUEST":
+      return value ? `Quest: ${value}` : "";
+    case "CAVE":
+      return "";
+    default:
+      return value ? `${itemSourceTypeLabel(requirement?.type)}: ${value}` : "";
+  }
+}
+
+function liveActivityRewardLabel(reward) {
+  const extras = [];
+  if (reward?.tier) {
+    extras.push(reward.tier);
+  }
+  if (reward?.always) {
+    extras.push("Guaranteed");
+  }
+  if (reward?.shiny) {
+    extras.push("Shiny");
+  }
+  const amount = Number(reward?.amount || 0);
+  const prefix = amount > 1 ? `${amount}x ` : "";
+  return `${prefix}${reward?.name || "Unknown reward"}${extras.length ? ` (${extras.join(", ")})` : ""}`;
+}
+
+function liveActivityDetailsHtml(marker) {
+  const details = marker.details?.liveActivity;
+  if (!details || !["raid", "lootrun_camp"].includes(marker.category)) {
+    return "";
+  }
+
+  const requirementItems = (details.requirements || [])
+    .map((requirement) => liveActivityRequirementLabel(requirement))
+    .filter(Boolean);
+  const rewards = (details.rewards || []).map((reward) => liveActivityRewardLabel(reward));
+  const typeLabel = LIVE_ACTIVITY_TYPE_LABELS[details.type] || itemSourceTypeLabel(details.type || marker.category);
+
+  return html`
+    <section class="event-intel-panel">
+      <div class="event-intel-head">
+        <h3>Live ${typeLabel} Intel</h3>
+        <span>
+          ${
+            details.generatedAt
+              ? `Refreshed from the official Wynncraft map API snapshot (${new Date(details.generatedAt).toLocaleString()}).`
+              : "Refreshed from the official Wynncraft map API snapshot."
+          }
+        </span>
+      </div>
+      <div class="event-stat-grid">
+        <div class="event-stat-card">
+          <strong>Suggested Lv.</strong>
+          <span>${details.level || "Unknown"}</span>
+        </div>
+        <div class="event-stat-card">
+          <strong>Length</strong>
+          <span>${details.length || "Unknown"}</span>
+        </div>
+        <div class="event-stat-card">
+          <strong>Difficulty</strong>
+          <span>${details.difficulty || "Unknown"}</span>
+        </div>
+        <div class="event-stat-card">
+          <strong>Reward Pool</strong>
+          <span>${rewards.length}</span>
+        </div>
+      </div>
+      ${
+        details.lore
+          ? html.raw(html`
+              <div class="event-detail-row">
+                <strong>Summary</strong>
+                <span>${details.lore}</span>
+              </div>
+            `)
+          : ""
+      }
+      ${
+        requirementItems.length
+          ? html.raw(html`
+              <section class="event-detail-block">
+                <h4>Requirements</h4>
+                <ul>
+                  ${html.raw(requirementItems.map((item) => html`<li>${item}</li>`).join(""))}
+                </ul>
+              </section>
+            `)
+          : ""
+      }
+      ${
+        rewards.length
+          ? html.raw(html`
+              <section class="event-detail-block drops">
+                <h4>Current Reward Pool</h4>
+                <div class="event-drop-list">
+                  ${html.raw(rewards.map((reward) => html`<span class="event-drop-chip">${reward}</span>`).join(""))}
+                </div>
+              </section>
+            `)
+          : ""
+      }
+    </section>
+  `;
+}
+
 function updateMarkerContent(marker, field, rawValue) {
   const current = markerContentAuthorEntry(marker.id);
   if (field === "videoGuide") {
@@ -3654,6 +3775,146 @@ function updateMarkerLayerPositions() {
   renderActiveAreaHighlight();
 }
 
+function liveMapLookupKey(value) {
+  return normalizeMarkerLookup(String(value || "").replace(/\^s/g, "'s").replace(/֎/g, "").trim());
+}
+
+function firstLiveQuestRequirement(requirements) {
+  const match = (requirements || []).find((entry) => ["QUEST", "GLOBAL_QUEST"].includes(entry.type));
+  return match ? match.value : "";
+}
+
+function isLikelyWorldLocation(location) {
+  if (!location || !Number.isFinite(Number(location.x)) || !Number.isFinite(Number(location.z))) {
+    return false;
+  }
+  const x = Number(location.x);
+  const z = Number(location.z);
+  const margin = 512;
+  return (
+    x >= DEFAULT_BOUNDS.minX - margin &&
+    x <= DEFAULT_BOUNDS.maxX + margin &&
+    z >= DEFAULT_BOUNDS.minZ - margin &&
+    z <= DEFAULT_BOUNDS.maxZ + margin
+  );
+}
+
+function liveWorldEventDescription(marker, liveEvent, coordinates) {
+  const baseDetails = marker.details || {};
+  const questText = liveEvent.requiredQuest || baseDetails.requiredQuest || "";
+  const level = liveEvent.level || baseDetails.level || "Unknown";
+  const length = liveEvent.length || baseDetails.length || "Unknown";
+  const difficulty = String(liveEvent.difficulty || baseDetails.difficulty || "Unknown").toLowerCase();
+  const waves = baseDetails.waves ? `${baseDetails.waves} waves.` : null;
+  const parts = [
+    `Suggested level ${level}.`,
+    questText ? `Requires ${questText}.` : null,
+    `${length} event, ${difficulty} difficulty${waves ? `, ${waves}` : "."}`,
+    `Anchor coordinates: ${coordinates.map((point) => `${point.x}, ${point.z}`).join(" | ")}.`,
+  ];
+  return parts.filter(Boolean).join(" ").replace(/difficulty,\s*([0-9]+ waves\.)/, "difficulty, $1");
+}
+
+function findLiveWorldEvent(overlay, titleKey) {
+  return (
+    overlay.worldEventsByTitle.get(titleKey) ||
+    overlay.worldEventsByTitle.get(LIVE_WORLD_EVENT_TITLE_ALIASES[titleKey] || "") ||
+    null
+  );
+}
+
+function applyLiveMapOverlayToMarkers(overlay) {
+  let changed = false;
+
+  state.markers.forEach((marker) => {
+    const titleKey = liveMapLookupKey(marker.title);
+    if (marker.category === "world_events") {
+      const liveEvent = findLiveWorldEvent(overlay, titleKey);
+      if (!liveEvent) {
+        return;
+      }
+      const coordinates = liveEvent.points.map((point) => ({ x: point.x, z: point.z }));
+      const centroidX = Math.round(
+        liveEvent.points.reduce((sum, point) => sum + point.x, 0) / Math.max(liveEvent.points.length, 1),
+      );
+      const centroidZ = Math.round(
+        liveEvent.points.reduce((sum, point) => sum + point.z, 0) / Math.max(liveEvent.points.length, 1),
+      );
+      marker.position = { world: { x: centroidX, z: centroidZ } };
+      marker.details = {
+        ...(marker.details || {}),
+        level: liveEvent.level || marker.details?.level,
+        requiredQuest: liveEvent.requiredQuest || marker.details?.requiredQuest || null,
+        coordinates: coordinates.length ? coordinates : marker.details?.coordinates || [],
+        length: liveEvent.length || marker.details?.length,
+        difficulty: liveEvent.difficulty || marker.details?.difficulty,
+        rewardPerLevel: liveEvent.rewardPerLevel || marker.details?.rewardPerLevel || {},
+      };
+      marker.description = liveWorldEventDescription(marker, liveEvent, marker.details.coordinates || coordinates);
+      changed = true;
+      return;
+    }
+
+    if (!["lootrun_camp", "raid"].includes(marker.category)) {
+      return;
+    }
+
+    const liveEntry =
+      marker.category === "lootrun_camp" ? overlay.campsByTitle.get(titleKey) : overlay.raidsByTitle.get(titleKey);
+    if (!liveEntry) {
+      return;
+    }
+
+    const lootPool = liveEntry.internalName ? overlay.lootPoolsByInternalName.get(liveEntry.internalName) : null;
+    marker.position = isLikelyWorldLocation(liveEntry.location)
+      ? { world: { x: Math.round(liveEntry.location.x), z: Math.round(liveEntry.location.z) } }
+      : marker.position;
+      marker.details = {
+        ...(marker.details || {}),
+        liveActivity: {
+          ...liveEntry,
+          generatedAt: overlay.generatedAt || "",
+          rewards: lootPool?.rewards?.length ? lootPool.rewards : liveEntry.rewards,
+          requirements: liveEntry.requirements,
+        },
+      };
+    const questLabel = firstLiveQuestRequirement(liveEntry.requirements);
+    marker.description = liveEntry.lore || marker.description;
+    if (questLabel) {
+      marker.tags = [...new Set([...(marker.tags || []), questLabel])];
+    }
+    changed = true;
+  });
+
+  if (!changed) {
+    return;
+  }
+
+  updateMarkerLayerPositions();
+  syncVisibleMarkers();
+  renderCategoryFilters();
+  renderDetailCard();
+}
+
+async function refreshLiveMapOverlay() {
+  if (liveMapOverlayPromise) {
+    return liveMapOverlayPromise;
+  }
+
+  liveMapOverlayPromise = loadLiveMapOverlay()
+    .then((overlay) => {
+      applyLiveMapOverlayToMarkers(overlay);
+      return overlay;
+    })
+    .catch((error) => {
+      liveMapOverlayError = error instanceof Error ? error.message : String(error || "Unknown error");
+      console.warn("Live beta map overlay failed:", liveMapOverlayError);
+      return null;
+    });
+
+  return liveMapOverlayPromise;
+}
+
 function integrateMarkers(markers) {
   markers.forEach((marker) => {
     const hydratedMarker = applyIngredientDropTagOverrides(marker);
@@ -3987,9 +4248,10 @@ function renderDetailActions(marker, supportsFound, isFound) {
   `;
 }
 
-function renderDetailContent(marker, content, contentLoading, contentError, eventIntel) {
+function renderDetailContent(marker, content, contentLoading, contentError, eventIntel, activityIntel) {
   return html`
     ${html.raw(eventIntel)}
+    ${html.raw(activityIntel)}
     ${html.raw(encounterNavigatorHtml(marker))}
     <section class="content-preview-panel">
       <div class="content-preview-head">
@@ -4063,11 +4325,12 @@ function renderDetailCard() {
   const contentLoading = !contentSourceLoaded(marker.category);
   const contentError = contentSourceLoadError(marker.category);
   const eventIntel = worldEventDetailsHtml(marker);
+  const activityIntel = liveActivityDetailsHtml(marker);
   const infoBody = html`
     ${html.raw(renderDetailTopline(marker, meta, detailIcon))}
     ${html.raw(renderDetailMeta(marker, world))}
     ${html.raw(renderDetailActions(marker, supportsFound, isFound))}
-    ${html.raw(renderDetailContent(marker, content, contentLoading, contentError, eventIntel))}
+    ${html.raw(renderDetailContent(marker, content, contentLoading, contentError, eventIntel, activityIntel))}
   `;
 
   elements.detailCard.className = "detail-card";
@@ -5248,3 +5511,4 @@ renderCalibrationPanel();
 applyInitialMarkerDeepLink();
 maybeOpenIntroModal();
 registerRuntimeCacheWorker();
+void refreshLiveMapOverlay();
