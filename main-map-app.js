@@ -61,6 +61,7 @@ const STORAGE_KEYS = {
 };
 const CONTENT_BOOK_ROOT = new URL("./assets/content-book/", import.meta.url).href.replace(/\/$/, "");
 const CITY_ICON_URL = new URL("./assets/icon.avif", import.meta.url).href;
+const MOB_MARKER_PIN_URL = new URL("./assets/mob-marker-pin.png", import.meta.url).href;
 const MAP_AREAS = {
   wynn: {
     id: "wynn",
@@ -3245,6 +3246,7 @@ function cityVisibleAtCurrentZoom(marker) {
 function markerIsVisible(marker) {
   const itemMarkerIds = state.selectedItemKey ? selectedItemMarkerIdSet() : null;
   const lootrunMarkerIds = activeLootrunContextGroupId() ? selectedLootrunMarkerIdSet() : null;
+  const isSelectedMarker = marker.id === state.selectedMarkerId;
   if (markerArea(marker) !== state.currentArea) {
     return false;
   }
@@ -3272,7 +3274,7 @@ function markerIsVisible(marker) {
 
   const matchesSearch = markerMatchesSearch(marker);
   const searchSurfacedMob = Boolean(state.search) && isMobCategory(marker.category) && matchesSearch;
-  if (isMobCategory(marker.category) && !searchSurfacedMob) {
+  if (isMobCategory(marker.category) && !searchSurfacedMob && !isSelectedMarker) {
     return false;
   }
 
@@ -3301,6 +3303,7 @@ function markerIsVisible(marker) {
 function buildMarkerIcon(marker, isFound, isSelected) {
   const meta = CATEGORY_META[marker.category];
   const isTravelMarker = marker.category === "fast_travel" || marker.category === "seaskipper";
+  const isMobMarker = isMobCategory(marker.category);
   const pinSize = isTravelMarker ? 20 : MAP_PIN_SIZE;
   const artSize = pinSize;
   if (marker.fixed) {
@@ -3313,9 +3316,9 @@ function buildMarkerIcon(marker, isFound, isSelected) {
   }
 
   const variant = isFound ? "locked" : "active";
-  const iconUrl = markerIconUrl(marker, variant);
+  const iconUrl = isMobMarker ? MOB_MARKER_PIN_URL : markerIconUrl(marker, variant);
   const classes = ["asset-pin"];
-  if (isMobCategory(marker.category) && iconUrl) {
+  if (isMobMarker && iconUrl) {
     classes.push("mob-pin");
   }
   if (isFound) {
@@ -3325,8 +3328,11 @@ function buildMarkerIcon(marker, isFound, isSelected) {
     classes.push("selected");
   }
 
+  const iconStyle = isMobMarker
+    ? `--pin-glow:${meta.color};`
+    : `--pin-glow:${meta.color};width:${artSize}px;height:${artSize}px;`;
   const iconMarkup = iconUrl
-    ? `<img class="${classes.join(" ")}" src="${iconUrl}" alt="" draggable="false" style="--pin-glow:${meta.color};width:${artSize}px;height:${artSize}px;">`
+    ? `<img class="${classes.join(" ")}" src="${iconUrl}" alt="" draggable="false" style="${iconStyle}">`
     : `<span class="generic-pin ${classes.join(" ")}" style="--pin-glow:${meta.color};--pin-fill:${meta.color};width:${artSize}px;height:${artSize}px;"></span>`;
 
   return L.divIcon({
@@ -4352,18 +4358,27 @@ function renderActiveAreaHighlight() {
 
   const meta = CATEGORY_META[marker.category];
   const approximate = Boolean(marker.spawnZoneApproximate);
+  const isMobHighlight = isMobCategory(marker.category);
   state.areaHighlightLayer = L.featureGroup(
-    boundsList.map((bounds) =>
-      L.rectangle(bounds, {
-        color: meta.color,
+    boundsList.map((bounds) => {
+      const rectangle = L.rectangle(bounds, {
+        color: isMobHighlight ? "#111111" : meta.color,
         weight: approximate ? 2 : 3,
         opacity: 0.9,
-        fillColor: meta.color,
-        fillOpacity: approximate ? 0.05 : 0.08,
+        fillColor: isMobHighlight ? "#ffffff" : meta.color,
+        fillOpacity: isMobHighlight ? (approximate ? 0.18 : 0.24) : approximate ? 0.05 : 0.08,
         dashArray: approximate ? "9 7" : "4 4",
-        interactive: false,
-      })
-    )
+        interactive: isMobHighlight,
+        className: isMobHighlight ? "mob-spawn-box" : "",
+      });
+      if (isMobHighlight) {
+        rectangle.on("click", (event) => {
+          event.originalEvent?.stopPropagation?.();
+          setSelectedMarker(marker.id);
+        });
+      }
+      return rectangle;
+    })
   ).addTo(map);
   state.areaHighlightLayer.eachLayer((layer) => layer.bringToBack());
 }
@@ -4635,6 +4650,7 @@ function bindEvents() {
       event.target.closest(".leaflet-marker-icon") ||
       event.target.closest(".map-pin-wrapper") ||
       event.target.closest(".asset-pin-shell") ||
+      event.target.closest(".leaflet-interactive") ||
       event.target.closest(".leaflet-control")
     ) {
       return;
