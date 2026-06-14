@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T07:56:07.753Z",
+  "generatedAt": "2026-06-14T08:21:17.325Z",
   "worldEvents": [
     {
       "title": "Haywire Defender",
@@ -778,7 +778,7 @@
           "y": 59,
           "z": -255,
           "radius": 15,
-          "spawnRadius": 15
+          "spawnRadius": 10
         }
       ]
     },
