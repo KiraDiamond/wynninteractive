@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T09:12:00.544Z",
+  "generatedAt": "2026-06-18T08:55:56.125Z",
   "worldEvents": [
     {
       "title": "Haywire Defender",
@@ -6736,17 +6736,17 @@
           "shiny": false
         },
         {
-          "name": "Emerald Block",
+          "name": "Liquified Emerald",
           "type": "CURRENCY",
-          "amount": 111,
+          "amount": 4,
           "always": false,
           "tier": "",
           "shiny": false
         },
         {
-          "name": "Liquified Emerald",
+          "name": "Emerald Block",
           "type": "CURRENCY",
-          "amount": 4,
+          "amount": 111,
           "always": false,
           "tier": "",
           "shiny": false
@@ -7126,6 +7126,14 @@
           "shiny": false
         },
         {
+          "name": "FRUMA RiftModeTrinket",
+          "type": "ITEM",
+          "amount": 1,
+          "always": false,
+          "tier": "",
+          "shiny": false
+        },
+        {
           "name": "CORKIAN AMPLIFIER 4",
           "type": "ITEM",
           "amount": 3,
@@ -7135,14 +7143,6 @@
         },
         {
           "name": "Charm of the Corruption",
-          "type": "ITEM",
-          "amount": 1,
-          "always": false,
-          "tier": "",
-          "shiny": false
-        },
-        {
-          "name": "FRUMA RiftModeTrinket",
           "type": "ITEM",
           "amount": 1,
           "always": false,
@@ -7238,17 +7238,17 @@
           "shiny": false
         },
         {
-          "name": "Emerald Block",
+          "name": "Liquified Emerald",
           "type": "CURRENCY",
-          "amount": 142,
+          "amount": 4,
           "always": false,
           "tier": "",
           "shiny": false
         },
         {
-          "name": "Liquified Emerald",
+          "name": "Emerald Block",
           "type": "CURRENCY",
-          "amount": 4,
+          "amount": 142,
           "always": false,
           "tier": "",
           "shiny": false
@@ -11467,17 +11467,17 @@
           "shiny": false
         },
         {
-          "name": "Emerald Block",
+          "name": "Liquified Emerald",
           "type": "CURRENCY",
-          "amount": 111,
+          "amount": 4,
           "always": false,
           "tier": "",
           "shiny": false
         },
         {
-          "name": "Liquified Emerald",
+          "name": "Emerald Block",
           "type": "CURRENCY",
-          "amount": 4,
+          "amount": 111,
           "always": false,
           "tier": "",
           "shiny": false
@@ -11840,6 +11840,14 @@
           "shiny": false
         },
         {
+          "name": "FRUMA RiftModeTrinket",
+          "type": "ITEM",
+          "amount": 1,
+          "always": false,
+          "tier": "",
+          "shiny": false
+        },
+        {
           "name": "CORKIAN AMPLIFIER 4",
           "type": "ITEM",
           "amount": 3,
@@ -11849,14 +11857,6 @@
         },
         {
           "name": "Charm of the Corruption",
-          "type": "ITEM",
-          "amount": 1,
-          "always": false,
-          "tier": "",
-          "shiny": false
-        },
-        {
-          "name": "FRUMA RiftModeTrinket",
           "type": "ITEM",
           "amount": 1,
           "always": false,
@@ -11952,17 +11952,17 @@
           "shiny": false
         },
         {
-          "name": "Emerald Block",
+          "name": "Liquified Emerald",
           "type": "CURRENCY",
-          "amount": 142,
+          "amount": 4,
           "always": false,
           "tier": "",
           "shiny": false
         },
         {
-          "name": "Liquified Emerald",
+          "name": "Emerald Block",
           "type": "CURRENCY",
-          "amount": 4,
+          "amount": 142,
           "always": false,
           "tier": "",
           "shiny": false
