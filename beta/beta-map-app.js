@@ -35,7 +35,7 @@ import {
   splitMultiline,
   youtubeEmbedMeta,
 } from "../shared/app-utils.js?v=20260522e";
-import { loadLiveMapOverlay } from "./live-map-overlay.js?v=20260603g";
+import { loadLiveMapOverlay } from "./live-map-overlay.js?v=20260623a";
 
 const MAP_WIDTH = 4608;
 const MAP_HEIGHT = 6644;
@@ -143,6 +143,7 @@ const LIVE_ACTIVITY_TYPE_LABELS = {
 const LIVE_WORLD_EVENT_TITLE_ALIASES = {
   "defender of the plains": "haywire defender",
 };
+const LOCAL_LIVE_WORLD_EVENT_POLL_MS = 30000;
 const BOSS_ALTAR_INGREDIENT_OVERRIDES = {
   "atlas-boss_altar-aerie-of-the-recluse--1746--3069": "7 Turtle Shells",
   "atlas-boss_altar-altar-of-sanctification--911--623": "1 Skiens Badge",
@@ -304,6 +305,7 @@ let caveRewardIndex = null;
 let caveRewardIndexPromise = null;
 let caveChestCatalog = null;
 let liveMapOverlayPromise = null;
+let liveMapOverlayPollHandle = null;
 let itemDatabaseError = "";
 let itemWikiExtractError = "";
 let itemIngredientSourceError = "";
@@ -970,6 +972,75 @@ function itemWikiSummary(item) {
   return ingredientEntry?.extract || "";
 }
 
+function isLocalHostRuntime() {
+  const hostname = window.location.hostname;
+  return hostname === "127.0.0.1" || hostname === "localhost" || hostname === "::1";
+}
+
+function worldEventRewardLabels(marker) {
+  const details = marker?.details || {};
+  const labels = [];
+  const seen = new Set();
+
+  const push = (value) => {
+    const label = String(value || "").replace(/^\+\s*/, "").trim();
+    const normalized = itemSourceLookupKey(label);
+    if (!label || !normalized || seen.has(normalized)) {
+      return;
+    }
+    seen.add(normalized);
+    labels.push(label);
+  };
+
+  (details.drops || []).forEach(push);
+  Object.values(details.rewardPerLevel || {}).forEach((entries) => {
+    (entries || []).forEach(push);
+  });
+
+  return labels;
+}
+
+function worldEventSourcesForItem(item) {
+  if (!item) {
+    return [];
+  }
+
+  const candidates = new Set([
+    ...ingredientLookupKeys(item.displayName),
+    ...ingredientLookupKeys(item.internalName),
+  ]);
+  if (!candidates.size) {
+    return [];
+  }
+
+  return state.markers
+    .filter((marker) => marker.category === "world_events")
+    .map((marker) => {
+      const matchedRewards = worldEventRewardLabels(marker).filter((label) => {
+        const rewardKey = itemSourceLookupKey(label);
+        if (!rewardKey) {
+          return false;
+        }
+        return [...candidates].some((candidate) => rewardKey === candidate || rewardKey.includes(candidate) || candidate.includes(rewardKey));
+      });
+
+      if (!matchedRewards.length) {
+        return null;
+      }
+
+      return {
+        id: `${item._itemKey}::world-event::${marker.id}`,
+        type: "worldEventReward",
+        kind: "World event reward",
+        label: marker.title,
+        markerId: marker.id,
+        markerTitle: marker.title,
+        note: matchedRewards.join(" · "),
+      };
+    })
+    .filter(Boolean);
+}
+
 function possibleCaveChestSources(item) {
   const entries = ITEM_CAVE_CHEST_SOURCES[item?.displayName] || ITEM_CAVE_CHEST_SOURCES[item?.internalName] || [];
   if (!item || !entries.length) {
@@ -1124,6 +1195,10 @@ function itemSourceEntries(item) {
       kind: "Cave first-clear reward",
       note: source.lootChests.length ? source.lootChests.join(" · ") : "No chest tier details recorded.",
     });
+  });
+
+  worldEventSourcesForItem(item).forEach((source) => {
+    sources.push(source);
   });
 
   possibleCaveChestSources(item).forEach((source) => {
@@ -3896,12 +3971,12 @@ function applyLiveMapOverlayToMarkers(overlay) {
   renderDetailCard();
 }
 
-async function refreshLiveMapOverlay() {
+async function refreshLiveMapOverlay({ force = false } = {}) {
   if (liveMapOverlayPromise) {
     return liveMapOverlayPromise;
   }
 
-  liveMapOverlayPromise = loadLiveMapOverlay()
+  liveMapOverlayPromise = loadLiveMapOverlay({ bustCache: force || isLocalHostRuntime() })
     .then((overlay) => {
       applyLiveMapOverlayToMarkers(overlay);
       return overlay;
@@ -3910,9 +3985,21 @@ async function refreshLiveMapOverlay() {
       liveMapOverlayError = error instanceof Error ? error.message : String(error || "Unknown error");
       console.warn("Live beta map overlay failed:", liveMapOverlayError);
       return null;
+    })
+    .finally(() => {
+      liveMapOverlayPromise = null;
     });
 
   return liveMapOverlayPromise;
+}
+
+function beginLocalLiveMapOverlayPolling() {
+  if (!isLocalHostRuntime() || liveMapOverlayPollHandle) {
+    return;
+  }
+  liveMapOverlayPollHandle = window.setInterval(() => {
+    void refreshLiveMapOverlay({ force: true });
+  }, LOCAL_LIVE_WORLD_EVENT_POLL_MS);
 }
 
 function integrateMarkers(markers) {
@@ -5511,4 +5598,5 @@ renderCalibrationPanel();
 applyInitialMarkerDeepLink();
 maybeOpenIntroModal();
 registerRuntimeCacheWorker();
-void refreshLiveMapOverlay();
+beginLocalLiveMapOverlayPolling();
+void refreshLiveMapOverlay({ force: isLocalHostRuntime() });

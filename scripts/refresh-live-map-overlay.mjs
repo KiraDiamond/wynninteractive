@@ -6,6 +6,9 @@ const ENDPOINTS = {
   raids: "https://api.wynncraft.com/v3/map/raids",
   lootPools: "https://api.wynncraft.com/v3/map/loot-pools",
 };
+const WATCH_MODE = process.argv.includes("--watch");
+const INTERVAL_ARG = process.argv.find((argument) => argument.startsWith("--interval="));
+const WATCH_INTERVAL_MS = Number(INTERVAL_ARG?.split("=")[1] || 30000);
 
 function titleCase(value) {
   return String(value || "")
@@ -126,7 +129,7 @@ async function fetchJson(url) {
   return response.json();
 }
 
-async function main() {
+async function writeSnapshot() {
   const [worldEvents, camps, raids, lootPools] = await Promise.all([
     fetchJson(ENDPOINTS.worldEvents),
     fetchJson(ENDPOINTS.camps),
@@ -144,9 +147,34 @@ async function main() {
 
   const targetPath = new URL("../data/live-map-overlay.beta.json", import.meta.url);
   await fs.writeFile(targetPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
-  process.stdout.write(
-    `Wrote beta live map overlay snapshot with ${payload.worldEvents.length} world events, ${payload.camps.length} camps, ${payload.raids.length} raids, and ${payload.lootPools.length} loot pools.\n`,
-  );
+  return payload;
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function main() {
+  if (!WATCH_MODE) {
+    const payload = await writeSnapshot();
+    process.stdout.write(
+      `Wrote beta live map overlay snapshot with ${payload.worldEvents.length} world events, ${payload.camps.length} camps, ${payload.raids.length} raids, and ${payload.lootPools.length} loot pools.\n`,
+    );
+    return;
+  }
+
+  process.stdout.write(`Watching live map overlay sources every ${WATCH_INTERVAL_MS}ms.\n`);
+  while (true) {
+    try {
+      const payload = await writeSnapshot();
+      process.stdout.write(
+        `[${new Date().toISOString()}] Refreshed snapshot: ${payload.worldEvents.length} world events, ${payload.camps.length} camps, ${payload.raids.length} raids, ${payload.lootPools.length} loot pools.\n`,
+      );
+    } catch (error) {
+      process.stderr.write(`[${new Date().toISOString()}] Live map overlay refresh failed: ${String(error)}\n`);
+    }
+    await sleep(WATCH_INTERVAL_MS);
+  }
 }
 
 await main();

@@ -1,4 +1,17 @@
-const SNAPSHOT_URL = new URL("../data/live-map-overlay.beta.json", import.meta.url).href;
+const SNAPSHOT_URL = new URL("../data/live-map-overlay.beta.json", import.meta.url);
+
+function isLocalRuntime() {
+  const hostname = window.location.hostname;
+  return hostname === "127.0.0.1" || hostname === "localhost" || hostname === "::1";
+}
+
+function snapshotUrl({ bustCache = false } = {}) {
+  const url = new URL(SNAPSHOT_URL);
+  if (bustCache || isLocalRuntime()) {
+    url.searchParams.set("t", String(Date.now()));
+  }
+  return url.href;
+}
 
 function normalizeKey(value) {
   return String(value || "")
@@ -35,9 +48,10 @@ function mapByInternalName(entries) {
   return next;
 }
 
-export async function loadLiveMapOverlay() {
-  const response = await fetch(SNAPSHOT_URL, {
+export async function loadLiveMapOverlay({ bustCache = false } = {}) {
+  const response = await fetch(snapshotUrl({ bustCache }), {
     headers: { accept: "application/json" },
+    cache: bustCache ? "no-store" : "default",
   });
   if (!response.ok) {
     throw new Error(`${response.status} ${response.statusText}`);
