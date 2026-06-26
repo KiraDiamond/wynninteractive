@@ -270,6 +270,8 @@ const state = {
   loadedDeferredMarkerGroups: new Set(),
   loadingDeferredMarkerGroups: new Set(),
   deferredDeepLinkAttempted: false,
+  activeVisibleItemMarkerIdSet: null,
+  activeVisibleLootrunMarkerIdSet: null,
 };
 
 let mobIconUrlMap = null;
@@ -291,6 +293,9 @@ let itemDatabaseError = "";
 let itemWikiExtractError = "";
 let itemIngredientSourceError = "";
 let caveRewardIndexError = "";
+let itemSourceCacheRevision = 0;
+const itemSourceEntriesCache = new Map();
+const itemMarkerIdSetCache = new Map();
 
 const elements = {
   appShell: document.querySelector(".app-shell"),
@@ -679,6 +684,7 @@ async function ensureCaveRewardIndexLoaded() {
 
     caveRewardIndex = nextIndex;
     caveChestCatalog = nextCaveCatalog;
+    invalidateItemSourceCaches();
     return caveRewardIndex;
   })()
     .catch((error) => {
@@ -735,6 +741,7 @@ async function ensureItemIngredientSourcesLoaded() {
     itemIngredientSourcePromise = loadJsonFromAny(ITEM_INGREDIENT_SOURCE_URLS)
       .then((entries) => {
         itemIngredientSourceMap = entries || {};
+        invalidateItemSourceCaches();
         return itemIngredientSourceMap;
       })
       .catch((error) => {
@@ -813,6 +820,13 @@ function possibleCaveChestSources(item) {
     .slice(0, 40);
 }
 
+function invalidateItemSourceCaches() {
+  itemSourceCacheRevision += 1;
+  itemSourceEntriesCache.clear();
+  itemMarkerIdSetCache.clear();
+  state.activeVisibleItemMarkerIdSet = null;
+}
+
 function stripLootrunUnlockBoilerplate(text) {
   let next = String(text || "");
   LOOTRUN_CAVE_BOILERPLATE_PATTERNS.forEach((pattern) => {
@@ -843,26 +857,7 @@ function sanitizeCaveMarker(marker) {
   return nextMarker;
 }
 
-function selectedItemMarkerIdSet() {
-  const item = selectedItemEntry();
-  if (!item) {
-    return null;
-  }
-  const markerIds = new Set();
-  itemSourceEntries(item).forEach((source) => {
-    if (source.markerId) {
-      markerIds.add(source.markerId);
-    }
-    (source.markerIds || []).forEach((markerId) => {
-      if (markerId) {
-        markerIds.add(markerId);
-      }
-    });
-  });
-  return markerIds;
-}
-
-function itemSourceEntries(item) {
+function buildItemSourceEntries(item) {
   if (!item) {
     return [];
   }
@@ -976,6 +971,43 @@ function itemSourceEntries(item) {
   });
 
   return sources;
+}
+
+function itemSourceEntries(item) {
+  if (!item?._itemKey) {
+    return buildItemSourceEntries(item);
+  }
+  const cacheKey = `${itemSourceCacheRevision}:${item._itemKey}`;
+  if (itemSourceEntriesCache.has(cacheKey)) {
+    return itemSourceEntriesCache.get(cacheKey);
+  }
+  const sources = buildItemSourceEntries(item);
+  itemSourceEntriesCache.set(cacheKey, sources);
+  return sources;
+}
+
+function selectedItemMarkerIdSet() {
+  const item = selectedItemEntry();
+  if (!item) {
+    return null;
+  }
+  const cacheKey = `${itemSourceCacheRevision}:${item._itemKey}`;
+  if (itemMarkerIdSetCache.has(cacheKey)) {
+    return itemMarkerIdSetCache.get(cacheKey);
+  }
+  const markerIds = new Set();
+  itemSourceEntries(item).forEach((source) => {
+    if (source.markerId) {
+      markerIds.add(source.markerId);
+    }
+    (source.markerIds || []).forEach((markerId) => {
+      if (markerId) {
+        markerIds.add(markerId);
+      }
+    });
+  });
+  itemMarkerIdSetCache.set(cacheKey, markerIds);
+  return markerIds;
 }
 
 function preferredAreaImageUrl(areaId) {
@@ -3244,8 +3276,8 @@ function cityVisibleAtCurrentZoom(marker) {
 }
 
 function markerIsVisible(marker) {
-  const itemMarkerIds = state.selectedItemKey ? selectedItemMarkerIdSet() : null;
-  const lootrunMarkerIds = activeLootrunContextGroupId() ? selectedLootrunMarkerIdSet() : null;
+  const itemMarkerIds = state.activeVisibleItemMarkerIdSet;
+  const lootrunMarkerIds = state.activeVisibleLootrunMarkerIdSet;
   const isSelectedMarker = marker.id === state.selectedMarkerId;
   if (markerArea(marker) !== state.currentArea) {
     return false;
@@ -3511,6 +3543,7 @@ function updateMarkerLayerPositions() {
 }
 
 function integrateMarkers(markers) {
+  invalidateItemSourceCaches();
   markers.forEach((marker) => {
     const hydratedMarker = applyIngredientDropTagOverrides(marker);
     state.markers.push(hydratedMarker);
@@ -4452,6 +4485,8 @@ function toggleFound(markerId) {
 }
 
 function syncVisibleMarkers() {
+  state.activeVisibleItemMarkerIdSet = state.selectedItemKey ? selectedItemMarkerIdSet() : null;
+  state.activeVisibleLootrunMarkerIdSet = activeLootrunContextGroupId() ? selectedLootrunMarkerIdSet() : null;
   const areaMarkers = state.markersByArea.get(state.currentArea) || [];
   state.filteredMarkers = areaMarkers.filter(markerIsVisible);
   state.filteredMarkerIdSet = new Set(state.filteredMarkers.map((marker) => marker.id));
