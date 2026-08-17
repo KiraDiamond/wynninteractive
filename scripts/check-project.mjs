@@ -11,6 +11,7 @@ import {
   loadDeferredMarkersForCategory,
 } from "../data/markers.js";
 import { WIKI_MAP_MARKERS } from "../data/wiki-map-markers.js";
+import { GENERATED_MARKER_SUPPLEMENTS } from "../data/generated-marker-supplements.js";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const errors = [];
@@ -88,6 +89,7 @@ const markers = [
   ...STARTER_MARKERS,
   ...CURATED_MARKERS,
   ...WIKI_MAP_MARKERS,
+  ...GENERATED_MARKER_SUPPLEMENTS,
   ...mobMarkers,
   ...professionMarkers,
 ];

@@ -9,6 +9,8 @@ import {
   loadDeferredMarkersForCategory,
 } from "./data/markers.js?v=20260522e";
 import { WIKI_MAP_MARKERS } from "./data/wiki-map-markers.js?v=20260522e";
+import { GENERATED_MARKER_SUPPLEMENTS } from "./data/generated-marker-supplements.js?v=20260817a";
+import { GENERATED_MARKER_POSITION_OVERRIDES } from "./data/generated-marker-position-overrides.js?v=20260817a";
 import {
   contentSourceError,
   contentSourceKeyForCategory,
@@ -4549,8 +4551,10 @@ function hydrateMarkerState() {
     return marker;
   });
   const wikiMarkers = WIKI_MAP_MARKERS.map((marker) => {
+    const positionOverride = GENERATED_MARKER_POSITION_OVERRIDES[marker.id];
     const sanitizedMarker = sanitizeCaveMarker({
       ...marker,
+      ...(positionOverride ? { position: positionOverride } : {}),
       description: cleanImportedMarkerText(marker.description),
     });
     return marker.id === "atlas-quests-the-qira-hive-372--5501"
@@ -4561,7 +4565,7 @@ function hydrateMarkerState() {
   state.markerIndex = new Map();
   state.markersByCategory = new Map();
   state.markersByArea = new Map();
-  integrateMarkers([...fixedCities, ...curatedSupplemental, ...wikiMarkers]);
+  integrateMarkers([...fixedCities, ...curatedSupplemental, ...wikiMarkers, ...GENERATED_MARKER_SUPPLEMENTS]);
 }
 
 function refreshTransformFromSamples() {

@@ -3,6 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "check": "node ./scripts/check-project.mjs && node --test"
+    "check": "node ./scripts/check-project.mjs && node --test",
+    "refresh:markers": "node ./scripts/refresh-marker-catalog.mjs",
+    "refresh:mobs": "node ./scripts/build-mob-markers.mjs",
+    "refresh:data": "npm run refresh:markers && npm run refresh:mobs"
   }
 }

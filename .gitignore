@@ -1,5 +1,6 @@
 node_modules/
 data/wiki-scrape/
+data/refresh-cache/
 
 # OS
 .DS_Store

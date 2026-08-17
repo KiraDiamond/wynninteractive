@@ -5,6 +5,9 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
+- Added a non-destructive official API/wiki marker refresh pipeline and weekly workflow
+- Added 22 cave supplements and the missing Slay Angels mini-quest marker
+- Added generated mob category counts and refresh consistency tests
 - Added a multi-stop route planner with reordering, map overlays, persistence, and shareable URLs
 - Added a regional completion dashboard for trackable markers
 - Added prefilled GitHub issue reports from marker details
@@ -16,6 +19,10 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Kept duplicate generated marker IDs from overwriting Leaflet layer references
 
 ### Changed
+- Refreshed 926 ingredient-dropping mob records from 4,628 current spawn points while preserving 16 upstream-absent records
+- Aligned 22 existing fast-travel markers with the current official map coordinates
+- Aligned 20 named cave markers with their current official map coordinates
+- Aligned two ultimate discoveries with their current official map coordinates
 - Reworked the desktop shell into a denser atlas layout with a dark header, flat controls, compact category rows, and map-side zoom controls
 - Removed the decorative field-kit hero from the planner and progress panel
 - Debounced marker search updates to reduce per-keystroke map refresh work

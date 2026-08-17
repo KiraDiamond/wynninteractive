@@ -1,6 +1,7 @@
 import { WORLD_EVENT_MARKERS } from "./world-events.js";
 import { GENERATED_FAST_TRAVEL_MARKERS } from "./generated-fast-travel-markers.js?v=20260519b";
 import { GENERATED_SEASKIPPER_MARKERS } from "./generated-seaskipper-markers.js?v=20260519d";
+import { GENERATED_MOB_CATEGORY_COUNTS } from "./generated-mob-counts.js";
 
 const MOB_CATEGORY_META = {
   hostile_mobs_zombie: { label: "Zombies", color: "#c7644f", selectable: true, icon: null },
@@ -27,15 +28,7 @@ const MOB_CATEGORY_ORDER = [
 ];
 
 export const DEFERRED_MARKER_CATEGORY_COUNTS = {
-  hostile_mobs_zombie: 48,
-  hostile_mobs_spider: 17,
-  hostile_mobs_skeleton: 7,
-  hostile_mobs_humanoid: 130,
-  hostile_mobs_beast: 60,
-  hostile_mobs_elemental: 8,
-  hostile_mobs_construct: 25,
-  hostile_mobs_aquatic: 17,
-  hostile_mobs_other: 614,
+  ...GENERATED_MOB_CATEGORY_COUNTS,
   profession_fishing: 44,
   profession_farming: 48,
   profession_mining: 51,

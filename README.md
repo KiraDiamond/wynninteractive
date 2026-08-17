@@ -28,6 +28,9 @@ Wynnteractive Map is a static GitHub Pages map for current Wynncraft routes, gui
 - `shared/map-tools.js`: shared route planning, completion dashboard, reporting, and progress transfer tools
 - `data/markers.js`: local marker metadata and curated overlays
 - `data/wiki-map-markers.js`: generated live marker dataset used by the map
+- `data/generated-marker-supplements.js`: non-destructive official/wiki coverage additions
+- `data/generated-marker-position-overrides.js`: official coordinate corrections for named wiki markers
+- `data/generated-mob-markers.js`: official ingredient-drop mobs and spawn locations
 - `data/marker-content-loader.js`: lazy guide-content loader for marker categories
 
 ## Quick start (local)
@@ -44,13 +47,23 @@ Run the zero-dependency project checks with:
 npm run check
 ```
 
+Refresh current marker categories and ingredient-dropping mobs with:
+
+```bash
+npm run refresh:data
+```
+
+The refresh combines the official map, item/drop, and territory APIs with the
+official wiki's MediaWiki API. Existing records are preserved when upstream no
+longer returns them. A scheduled workflow reruns the refresh weekly.
+
 The check covers JavaScript syntax, JSON parsing, local HTML/module references,
 duplicate HTML and marker IDs, marker categories, marker coordinates, and shared
 utility behavior.
 
 ## Contributing
 
-Marker data lives in `data/markers.js` and `data/wiki-map-markers.js`. To add or correct a marker, edit the relevant file and open a pull request. Please include the in-game coordinates and a source link.
+Marker data lives in `data/markers.js`, `data/wiki-map-markers.js`, and generated supplement files. To add or correct a marker, edit the relevant source or generator and open a pull request. Please include the in-game coordinates and a source link.
 
 ## Sources and Credits
 
