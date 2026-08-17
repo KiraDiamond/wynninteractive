@@ -16,6 +16,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Kept duplicate generated marker IDs from overwriting Leaflet layer references
 
 ### Changed
+- Reworked the desktop shell into a denser atlas layout with a dark header, flat controls, compact category rows, and map-side zoom controls
+- Removed the decorative field-kit hero from the planner and progress panel
 - Debounced marker search updates to reduce per-keystroke map refresh work
 - Bucketed marker state by category and area to avoid repeated full-array scans
 - Split large detail and category renderers into smaller helper functions

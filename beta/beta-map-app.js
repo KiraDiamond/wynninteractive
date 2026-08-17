@@ -38,7 +38,7 @@ import {
   splitMultiline,
   youtubeEmbedMeta,
 } from "../shared/app-utils.js?v=20260817a";
-import { createMapTools, markerIssueUrl } from "../shared/map-tools.js?v=20260817a";
+import { createMapTools, markerIssueUrl } from "../shared/map-tools.js?v=20260817b";
 import { loadLiveMapOverlay } from "./live-map-overlay.js?v=20260623a";
 
 const MAP_WIDTH = 4608;
@@ -1863,7 +1863,7 @@ const map = L.map("map", {
   fadeAnimation: false,
   markerZoomAnimation: false,
 });
-map.zoomControl.setPosition("bottomright");
+map.zoomControl.setPosition("topleft");
 
 const baseMapOverlay = L.imageOverlay(preferredAreaImageUrl("wynn"), MAP_BOUNDS).addTo(map);
 map.fitBounds(MAP_BOUNDS, { padding: [24, 24] });

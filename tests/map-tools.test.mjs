@@ -41,7 +41,8 @@ test("map tools render real route and progress markup", () => {
     focusMarker: () => {},
   });
   controller.render();
-  assert.match(root.innerHTML, /Plan\. Track\. Transfer\./);
+  assert.match(root.innerHTML, /Route planner/);
+  assert.doesNotMatch(root.innerHTML, /Field kit|Plan\. Track\. Transfer\./);
   assert.match(root.innerHTML, /Wynn/);
   assert.doesNotMatch(root.innerHTML, /&lt;section/);
   globalThis.window = previousWindow;

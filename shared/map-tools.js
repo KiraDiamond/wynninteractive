@@ -206,12 +206,6 @@ export function createMapTools({
     const distance = Math.round(routeDistance(markers));
     root.className = "detail-card map-tools-card";
     root.innerHTML = html`
-      <div class="tools-hero">
-        <span class="tools-kicker">Field kit</span>
-        <h2>Plan. Track. Transfer.</h2>
-        <p>Build a stop list, monitor each region, and carry your completion data to another device.</p>
-      </div>
-
       <section class="tools-section route-planner-section">
         <div class="tools-section-head">
           <div><span>Route planner</span><strong>${markers.length} stops · ${distance.toLocaleString()} blocks</strong></div>
