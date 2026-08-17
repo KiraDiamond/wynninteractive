@@ -18,7 +18,10 @@ import {
 import { CAVES_CONTENT } from "../data/content/cave-content.js";
 import { ITEM_CAVE_CHEST_SOURCES } from "../data/item-cave-chest-sources.js";
 import {
+  availableMarkerId,
   clamp,
+  cleanImportedMarkerText,
+  conciseImportedRegion,
   debounce,
   escapeAttribute,
   escapeHtml,
@@ -34,7 +37,8 @@ import {
   resolveImageUrl,
   splitMultiline,
   youtubeEmbedMeta,
-} from "../shared/app-utils.js?v=20260522e";
+} from "../shared/app-utils.js?v=20260817a";
+import { createMapTools, markerIssueUrl } from "../shared/map-tools.js?v=20260817a";
 import { loadLiveMapOverlay } from "./live-map-overlay.js?v=20260623a";
 
 const MAP_WIDTH = 4608;
@@ -60,6 +64,7 @@ const STORAGE_KEYS = {
   introDismissed: "wynninteractive-intro-dismissed-v1",
   markerContent: "wynninteractive-marker-content-v1",
   theme: "wynninteractive-theme-v1",
+  route: "wynninteractive-route-v1",
 };
 const CONTENT_BOOK_ROOT = new URL("../assets/content-book/", import.meta.url).href.replace(/\/$/, "");
 const CITY_ICON_URL = new URL("../assets/icon.avif", import.meta.url).href;
@@ -316,6 +321,7 @@ let liveMapOverlayError = "";
 let itemSourceCacheRevision = 0;
 const itemSourceEntriesCache = new Map();
 const itemMarkerIdSetCache = new Map();
+let mapTools = null;
 
 const elements = {
   appShell: document.querySelector(".app-shell"),
@@ -336,6 +342,7 @@ const elements = {
   categoryFilters: document.querySelector("#category-filters"),
   detailCard: document.querySelector("#info-card"),
   linkCard: document.querySelector("#link-card"),
+  toolsCard: document.querySelector("#tools-card"),
   appearanceCard: document.querySelector("#appearance-card"),
   themeDockButton: document.querySelector("#theme-dock-button"),
   themeDockGlyph: document.querySelector("#theme-dock-glyph"),
@@ -1087,8 +1094,8 @@ function sanitizeCaveMarker(marker) {
   }
 
   const linkedLootrunGroup = LOOTRUN_GROUP_BY_CAVE_TITLE.get(marker.title);
-  const nextRegion = stripLootrunUnlockBoilerplate(marker.region || "").replace(/\.$/, "").trim();
-  const nextDescription = stripLootrunUnlockBoilerplate(marker.description || "");
+  const nextRegion = conciseImportedRegion(stripLootrunUnlockBoilerplate(marker.region || ""));
+  const nextDescription = cleanImportedMarkerText(stripLootrunUnlockBoilerplate(marker.description || ""));
   const nextMarker = {
     ...marker,
     region: nextRegion || marker.region || "",
@@ -2127,6 +2134,8 @@ function setPanelView(view) {
     renderAppearanceCard();
   } else if (view === "items") {
     renderItemsCard();
+  } else if (view === "tools") {
+    mapTools?.render();
   }
 }
 
@@ -4038,7 +4047,9 @@ function beginLocalLiveMapOverlayPolling() {
 function integrateMarkers(markers) {
   invalidateItemSourceCaches();
   markers.forEach((marker) => {
-    const hydratedMarker = applyIngredientDropTagOverrides(marker);
+    const uniqueId = availableMarkerId(marker.id, state.markerIndex);
+    const uniqueMarker = uniqueId === marker.id ? marker : { ...marker, id: uniqueId };
+    const hydratedMarker = applyIngredientDropTagOverrides(uniqueMarker);
     state.markers.push(hydratedMarker);
     state.markerIndex.set(hydratedMarker.id, hydratedMarker);
 
@@ -4069,6 +4080,7 @@ async function ensureDeferredCategoryLoaded(categoryId) {
     syncVisibleMarkers();
     renderCategoryFilters();
     renderDetailCard();
+    mapTools?.render();
   } finally {
     state.loadingDeferredMarkerGroups.delete(groupId);
   }
@@ -4354,6 +4366,8 @@ function renderDetailMeta(marker, world) {
 }
 
 function renderDetailActions(marker, supportsFound, isFound) {
+  const inRoute = mapTools?.hasRouteStop(marker.id) || false;
+  const reportUrl = markerIssueUrl(marker, markerShareUrl(window.location.href, marker.title));
   return html`
     <div class="detail-actions">
       ${
@@ -4364,7 +4378,9 @@ function renderDetailActions(marker, supportsFound, isFound) {
           : ""
       }
       <button type="button" class="detail-button secondary" data-action="focus">Focus</button>
+      <button type="button" class="detail-button secondary" data-action="toggle-route">${inRoute ? "Remove stop" : "Add stop"}</button>
       <button type="button" class="detail-button secondary" data-action="share">Share</button>
+      <a class="detail-button secondary" href="${reportUrl}" target="_blank" rel="noopener noreferrer">Report marker</a>
     </div>
   `;
 }
@@ -4490,6 +4506,13 @@ function renderDetailCard() {
         toggleFound(marker.id);
       } else if (action === "focus") {
         flyToMarker(marker);
+      } else if (action === "toggle-route") {
+        if (mapTools?.hasRouteStop(marker.id)) {
+          mapTools.removeRouteStop(marker.id);
+        } else {
+          mapTools?.addRouteStop(marker);
+        }
+        renderDetailCard();
       } else if (action === "share") {
         const original = button.textContent;
         copyText(markerShareUrl(window.location.href, marker.title)).then((ok) => {
@@ -4834,6 +4857,7 @@ function setCurrentArea(areaId) {
   renderCategoryFilters();
   renderDetailCard();
   renderActiveAreaHighlight();
+  mapTools?.render();
 }
 
 function applyInitialMarkerDeepLink() {
@@ -5068,6 +5092,7 @@ function toggleFound(markerId) {
   renderCategoryFilters();
   renderDetailCard();
   renderActiveAreaHighlight();
+  mapTools?.render();
 }
 
 function syncVisibleMarkers() {
@@ -5108,11 +5133,15 @@ function hydrateMarkerState() {
     }
     return marker;
   });
-  const wikiMarkers = WIKI_MAP_MARKERS.map((marker) =>
-    marker.id === "atlas-quests-the-qira-hive-372--5501"
-      ? { ...marker, contextGroupId: "qira-hive" }
-      : sanitizeCaveMarker(marker)
-  ).filter((marker) => marker.category !== "world_events");
+  const wikiMarkers = WIKI_MAP_MARKERS.map((marker) => {
+    const sanitizedMarker = sanitizeCaveMarker({
+      ...marker,
+      description: cleanImportedMarkerText(marker.description),
+    });
+    return marker.id === "atlas-quests-the-qira-hive-372--5501"
+      ? { ...sanitizedMarker, contextGroupId: "qira-hive" }
+      : sanitizedMarker;
+  }).filter((marker) => marker.category !== "world_events");
   state.markers = [];
   state.markerIndex = new Map();
   state.markersByCategory = new Map();
@@ -5569,6 +5598,7 @@ function bindEvents() {
       renderCategoryFilters();
       renderDetailCard();
       renderActiveAreaHighlight();
+      mapTools?.render();
       return;
     }
 
@@ -5619,6 +5649,32 @@ function bindEvents() {
 
 hydrateMarkerState();
 state.cityTransform = USE_CITY_EDITS ? computeCityEditTransform() : null;
+mapTools = createMapTools({
+  root: elements.toolsCard,
+  map,
+  leaflet: L,
+  storageKey: STORAGE_KEYS.route,
+  getMarkers: () => state.markers,
+  getFoundIds: () => state.foundIds,
+  setFoundIds: (foundIds) => {
+    state.foundIds = new Set(foundIds);
+    persistFoundIds();
+    syncVisibleMarkers();
+    renderCategoryFilters();
+    renderDetailCard();
+    renderActiveAreaHighlight();
+  },
+  getCurrentArea: () => state.currentArea,
+  markerArea,
+  markerLatLng,
+  markerSupportsFound,
+  focusMarker: flyToMarker,
+});
+mapTools.render();
+if (mapTools.unresolvedRouteIds().length) {
+  void ensureDeferredCategoryLoaded("profession_fishing");
+  void ensureDeferredCategoryLoaded("hostile_mobs_zombie");
+}
 bindEvents();
 setPanelCollapsed(state.panelCollapsed);
 setPanelView("markers");

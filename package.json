@@ -1,0 +1,8 @@
+{
+  "name": "wynninteractive",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node ./scripts/check-project.mjs && node --test"
+  }
+}

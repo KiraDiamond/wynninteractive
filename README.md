@@ -11,6 +11,9 @@ Wynnteractive Map is a static GitHub Pages map for current Wynncraft routes, gui
 - Fruma-era world map with pan and zoom controls
 - Main and beta map surfaces
 - Search, filters, found-state tracking, and theme persistence in browser storage
+- Multi-stop route planning with shareable URLs
+- Regional completion percentages and portable progress import/export
+- Prefilled GitHub issue reports for incorrect markers
 - Marker notes for quests, mini quests, discoveries, caves, dungeons, raids, boss altars, world events, lootrun camps, travel points, profession spots, and mobs
 - Source links back to the related information pages and guides
 
@@ -22,6 +25,7 @@ Wynnteractive Map is a static GitHub Pages map for current Wynncraft routes, gui
 - `main-map-app.js`: live interaction logic, marker rendering, and panel behavior
 - `beta/beta-map-app.js`: beta interaction logic
 - `shared/app-utils.js`: shared escaping, lookup, embed, and asset helper logic
+- `shared/map-tools.js`: shared route planning, completion dashboard, reporting, and progress transfer tools
 - `data/markers.js`: local marker metadata and curated overlays
 - `data/wiki-map-markers.js`: generated live marker dataset used by the map
 - `data/marker-content-loader.js`: lazy guide-content loader for marker categories
@@ -33,6 +37,16 @@ Clone the repo and open `index.html` directly in a browser — no build step req
 ```bash
 npx serve .
 ```
+
+Run the zero-dependency project checks with:
+
+```bash
+npm run check
+```
+
+The check covers JavaScript syntax, JSON parsing, local HTML/module references,
+duplicate HTML and marker IDs, marker categories, marker coordinates, and shared
+utility behavior.
 
 ## Contributing
 

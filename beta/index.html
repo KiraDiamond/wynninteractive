@@ -33,7 +33,7 @@
         }
       } catch {}
     </script>
-    <link rel="stylesheet" href="../shared-map-ui.css?v=20260522e" />
+    <link rel="stylesheet" href="../shared-map-ui.css?v=20260817a" />
   </head>
   <body>
     <div class="app-shell">
@@ -117,6 +117,21 @@
               />
             </svg>
           </button>
+          <button
+            type="button"
+            class="panel-tab"
+            id="panel-tab-tools"
+            role="tab"
+            aria-label="Planner and progress"
+            aria-selected="false"
+            aria-controls="panel-screen-tools"
+            tabindex="-1"
+            data-panel-view="tools"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm14 10a3 3 0 1 0 0 6 3 3 0 0 0 0-6ZM7.8 7h4.7a3.5 3.5 0 0 1 0 7H11v-2h1.5a1.5 1.5 0 0 0 0-3H7.8V7Zm5.2 10h3.2v2H13v-2Z" />
+            </svg>
+          </button>
         </div>
 
         <div class="panel-banner">Routes, rewards, discoveries, profession spots, and exact mob markers.</div>
@@ -194,6 +209,17 @@
             <h2>No marker selected</h2>
             <p>Select a quest or secret discovery to view or set its linked video.</p>
           </article>
+        </section>
+
+        <section
+          class="panel-screen hidden"
+          id="panel-screen-tools"
+          role="tabpanel"
+          aria-labelledby="panel-tab-tools"
+          aria-hidden="true"
+          data-panel-screen="tools"
+        >
+          <article id="tools-card" class="detail-card map-tools-card"></article>
         </section>
 
         <section id="calibration-panel" class="calibration-panel hidden">
@@ -292,6 +318,6 @@
     </div>
 
     <script src="../assets/vendor/leaflet/leaflet.js?v=20260521e"></script>
-    <script type="module" src="./beta-map-app.js?v=20260623a"></script>
+    <script type="module" src="./beta-map-app.js?v=20260817a"></script>
   </body>
 </html>

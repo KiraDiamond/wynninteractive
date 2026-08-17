@@ -133,6 +133,60 @@ export function normalizeMarkerLookup(value) {
 }
 
 /**
+ * Removes unresolved wiki-template fields from imported prose before it reaches
+ * search results or marker details.
+ * @param {string} value - Imported marker text.
+ * @returns {string} Display-safe marker text.
+ */
+export function cleanImportedMarkerText(value) {
+  return String(value || "")
+    .replace(/\s*(?:Rewards?:\s*)?\{\{\{[^{}]+\}\}\}\.?/gi, "")
+    .replace(/\s{2,}/g, " ")
+    .replace(/\s+\./g, ".")
+    .trim();
+}
+
+/**
+ * Keeps a generated region label concise when a scraper has appended article
+ * prose after the actual place name.
+ * @param {string} value - Imported region label.
+ * @param {number} maxLength - Length at which sentence cleanup is attempted.
+ * @returns {string} Concise region label.
+ */
+export function conciseImportedRegion(value, maxLength = 80) {
+  const normalized = String(value || "").replace(/\s+/g, " ").trim();
+  const proseBoundary = /\.\s+(?=(?:It|This|Access|Shortly|The|Unlike|More|Reaching|Alternatively)\b)/u;
+  if (proseBoundary.test(normalized)) {
+    return normalized.split(proseBoundary, 1)[0].replace(/\.$/, "").trim();
+  }
+  if (normalized.length <= maxLength) {
+    return normalized.replace(/\.$/, "");
+  }
+
+  const firstSentence = normalized.split(/\.\s+/u, 1)[0].replace(/\.$/, "").trim();
+  return firstSentence || normalized;
+}
+
+/**
+ * Returns a stable, unused marker ID without dropping colliding generated data.
+ * @param {string} markerId - Preferred marker ID.
+ * @param {{has: (value: string) => boolean}} existingIds - Map or Set of IDs already in use.
+ * @returns {string} Available marker ID.
+ */
+export function availableMarkerId(markerId, existingIds) {
+  const baseId = String(markerId || "marker");
+  if (!existingIds.has(baseId)) {
+    return baseId;
+  }
+
+  let suffix = 2;
+  while (existingIds.has(`${baseId}-${suffix}`)) {
+    suffix += 1;
+  }
+  return `${baseId}-${suffix}`;
+}
+
+/**
  * Reads a numeric query parameter with a numeric fallback.
  * @param {URLSearchParams} params - Query parameters to read from.
  * @param {string} name - Parameter name.
