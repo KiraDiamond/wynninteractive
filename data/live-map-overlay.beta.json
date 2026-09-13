@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T08:37:47.686Z",
+  "generatedAt": "2026-09-13T09:33:34.200Z",
   "worldEvents": [
     {
       "title": "Haywire Defender",
@@ -5034,7 +5034,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Rekindling",
+          "name": "Aspect of Stances",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -5042,7 +5042,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Manaflux",
+          "name": "Aspect of Limitless Knowledge",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -5050,7 +5050,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of the Amphibian",
+          "name": "Aspect of Extreme Current",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -5058,7 +5058,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Empowering Fantasy",
+          "name": "Aspect of the Unstoppable Force",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -5066,7 +5066,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of the Forbidden Ritual",
+          "name": "Aspect of Mystic Transfer",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -5074,7 +5074,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of the Berserker",
+          "name": "Aspect of the Airborne",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -5082,7 +5082,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Exsanguination",
+          "name": "Aspect of the Dagger's Silhouette",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -5500,7 +5500,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Hyper-Perception",
+          "name": "Aspect of Empowering Fantasy",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -5508,7 +5508,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of the Forbidden Ritual",
+          "name": "Aspect of the Airborne",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -5516,7 +5516,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Stances",
+          "name": "Aspect of Rallying Fervor",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -5524,7 +5524,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Mystic Transfer",
+          "name": "Aspect of the Tightrope Walk",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -5532,7 +5532,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of the Agile Blade",
+          "name": "Aspect of Unquenching Flames",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -5540,7 +5540,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Sleight-Of-Hand",
+          "name": "Aspect of the Calling Card",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -5548,7 +5548,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Clouded Vision",
+          "name": "Aspect of Chaotic Demolition",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -5990,7 +5990,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Unquenching Flames",
+          "name": "Aspect of Chaotic Demolition",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -5998,7 +5998,15 @@
           "shiny": false
         },
         {
-          "name": "Aspect of the Inescapable Void",
+          "name": "Aspect of the Eternal Dance",
+          "type": "ASPECT",
+          "amount": 1,
+          "always": true,
+          "tier": "FABLED",
+          "shiny": false
+        },
+        {
+          "name": "Aspect of Stances",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -6014,7 +6022,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of the Airborne",
+          "name": "Aspect of Hyper-Perception",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -6022,15 +6030,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Mystic Transfer",
-          "type": "ASPECT",
-          "amount": 1,
-          "always": true,
-          "tier": "FABLED",
-          "shiny": false
-        },
-        {
-          "name": "Aspect of Rallying Fervor",
+          "name": "Aspect of the Pernicious Prankster",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -6520,14 +6520,6 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Shining Status",
-          "type": "ASPECT",
-          "amount": 1,
-          "always": true,
-          "tier": "FABLED",
-          "shiny": false
-        },
-        {
           "name": "Aspect of Visual Distortion",
           "type": "ASPECT",
           "amount": 1,
@@ -6536,7 +6528,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Unyielding Fate",
+          "name": "Aspect of the Inescapable Void",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -6544,7 +6536,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of the Beckoned Legion",
+          "name": "Aspect of Shining Status",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -6552,7 +6544,15 @@
           "shiny": false
         },
         {
-          "name": "Aspect of the Enforcer",
+          "name": "Aspect of the Pernicious Prankster",
+          "type": "ASPECT",
+          "amount": 1,
+          "always": true,
+          "tier": "FABLED",
+          "shiny": false
+        },
+        {
+          "name": "Aspect of the Poltergeist",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -7062,7 +7062,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of the Poltergeist",
+          "name": "Aspect of Burning Providence",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -7070,23 +7070,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Visual Distortion",
-          "type": "ASPECT",
-          "amount": 1,
-          "always": true,
-          "tier": "FABLED",
-          "shiny": false
-        },
-        {
-          "name": "Aspect of the Agile Blade",
-          "type": "ASPECT",
-          "amount": 1,
-          "always": true,
-          "tier": "FABLED",
-          "shiny": false
-        },
-        {
-          "name": "Aspect of the Channeler",
+          "name": "Aspect of False Coercing",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -7102,7 +7086,23 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Undercrank",
+          "name": "Aspect of the Indescribable",
+          "type": "ASPECT",
+          "amount": 1,
+          "always": true,
+          "tier": "FABLED",
+          "shiny": false
+        },
+        {
+          "name": "Aspect of Hyper-Perception",
+          "type": "ASPECT",
+          "amount": 1,
+          "always": true,
+          "tier": "FABLED",
+          "shiny": false
+        },
+        {
+          "name": "Aspect of the Poltergeist",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -10004,7 +10004,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Rekindling",
+          "name": "Aspect of Stances",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -10012,7 +10012,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Manaflux",
+          "name": "Aspect of Limitless Knowledge",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -10020,7 +10020,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of the Amphibian",
+          "name": "Aspect of Extreme Current",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -10028,7 +10028,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Empowering Fantasy",
+          "name": "Aspect of the Unstoppable Force",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -10036,7 +10036,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of the Forbidden Ritual",
+          "name": "Aspect of Mystic Transfer",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -10044,7 +10044,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of the Berserker",
+          "name": "Aspect of the Airborne",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -10052,7 +10052,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Exsanguination",
+          "name": "Aspect of the Dagger's Silhouette",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -10457,7 +10457,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Hyper-Perception",
+          "name": "Aspect of Empowering Fantasy",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -10465,7 +10465,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of the Forbidden Ritual",
+          "name": "Aspect of the Airborne",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -10473,7 +10473,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Stances",
+          "name": "Aspect of Rallying Fervor",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -10481,7 +10481,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Mystic Transfer",
+          "name": "Aspect of the Tightrope Walk",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -10489,7 +10489,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of the Agile Blade",
+          "name": "Aspect of Unquenching Flames",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -10497,7 +10497,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Sleight-Of-Hand",
+          "name": "Aspect of the Calling Card",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -10505,7 +10505,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Clouded Vision",
+          "name": "Aspect of Chaotic Demolition",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -10934,7 +10934,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Unquenching Flames",
+          "name": "Aspect of Chaotic Demolition",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -10942,7 +10942,15 @@
           "shiny": false
         },
         {
-          "name": "Aspect of the Inescapable Void",
+          "name": "Aspect of the Eternal Dance",
+          "type": "ASPECT",
+          "amount": 1,
+          "always": true,
+          "tier": "FABLED",
+          "shiny": false
+        },
+        {
+          "name": "Aspect of Stances",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -10958,7 +10966,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of the Airborne",
+          "name": "Aspect of Hyper-Perception",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -10966,15 +10974,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Mystic Transfer",
-          "type": "ASPECT",
-          "amount": 1,
-          "always": true,
-          "tier": "FABLED",
-          "shiny": false
-        },
-        {
-          "name": "Aspect of Rallying Fervor",
+          "name": "Aspect of the Pernicious Prankster",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -11451,14 +11451,6 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Shining Status",
-          "type": "ASPECT",
-          "amount": 1,
-          "always": true,
-          "tier": "FABLED",
-          "shiny": false
-        },
-        {
           "name": "Aspect of Visual Distortion",
           "type": "ASPECT",
           "amount": 1,
@@ -11467,7 +11459,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Unyielding Fate",
+          "name": "Aspect of the Inescapable Void",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -11475,7 +11467,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of the Beckoned Legion",
+          "name": "Aspect of Shining Status",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -11483,7 +11475,15 @@
           "shiny": false
         },
         {
-          "name": "Aspect of the Enforcer",
+          "name": "Aspect of the Pernicious Prankster",
+          "type": "ASPECT",
+          "amount": 1,
+          "always": true,
+          "tier": "FABLED",
+          "shiny": false
+        },
+        {
+          "name": "Aspect of the Poltergeist",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -11976,7 +11976,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of the Poltergeist",
+          "name": "Aspect of Burning Providence",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -11984,23 +11984,7 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Visual Distortion",
-          "type": "ASPECT",
-          "amount": 1,
-          "always": true,
-          "tier": "FABLED",
-          "shiny": false
-        },
-        {
-          "name": "Aspect of the Agile Blade",
-          "type": "ASPECT",
-          "amount": 1,
-          "always": true,
-          "tier": "FABLED",
-          "shiny": false
-        },
-        {
-          "name": "Aspect of the Channeler",
+          "name": "Aspect of False Coercing",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
@@ -12016,7 +12000,23 @@
           "shiny": false
         },
         {
-          "name": "Aspect of Undercrank",
+          "name": "Aspect of the Indescribable",
+          "type": "ASPECT",
+          "amount": 1,
+          "always": true,
+          "tier": "FABLED",
+          "shiny": false
+        },
+        {
+          "name": "Aspect of Hyper-Perception",
+          "type": "ASPECT",
+          "amount": 1,
+          "always": true,
+          "tier": "FABLED",
+          "shiny": false
+        },
+        {
+          "name": "Aspect of the Poltergeist",
           "type": "ASPECT",
           "amount": 1,
           "always": true,
