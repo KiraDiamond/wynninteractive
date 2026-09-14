@@ -2,21 +2,21 @@
 
 export const GENERATED_MARKER_SUPPLEMENTS = [
   {
-    "id": "live-mini_quests-slay-angels-1005--4790",
-    "title": "Slay Angels",
-    "category": "mini_quests",
-    "region": "Sky Islands",
-    "description": "Slay Angels is a level 98 mini-quest in Sky Islands. Requirement: 25 Holy Powders. XP: 2,580,600.",
+    "id": "live-caves-tericen-stables--1159--1014",
+    "title": "Tericen Stables",
+    "category": "caves",
+    "region": "Highlands",
+    "description": "Tericen Stables is a Normal cave in Highlands. Suggested level: 116.",
     "tags": [
-      "mini-quests",
+      "caves",
       "official-map",
       "wiki-refresh"
     ],
-    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Quests#Mini-Quests",
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Tericen_Stables",
     "position": {
       "world": {
-        "x": 1005,
-        "z": -4790
+        "x": -1159,
+        "z": -1014
       }
     }
   },
@@ -60,26 +60,6 @@ export const GENERATED_MARKER_SUPPLEMENTS = [
     }
   },
   {
-    "id": "live-caves-cave-near-lava-springs-735-1689-735--1689",
-    "title": "Cave near Lava Springs (735, -1689)",
-    "category": "caves",
-    "region": "Lava Springs",
-    "description": "Official Wynncraft cave entrance at [735, 67, -1689]. The current wiki cave table does not expose a matching named row, so the authoritative coordinate is retained for coverage and flagged for naming review.",
-    "tags": [
-      "caves",
-      "official-map",
-      "wiki-refresh",
-      "needs-name-review"
-    ],
-    "sourceUrl": "https://docs.wynncraft.com/modules/map/list-map-markers",
-    "position": {
-      "world": {
-        "x": 735,
-        "z": -1689
-      }
-    }
-  },
-  {
     "id": "live-caves-cave-near-gylia-fisherman-camp-13-5107--13--5107",
     "title": "Cave near Gylia Fisherman Camp (-13, -5107)",
     "category": "caves",
@@ -96,6 +76,26 @@ export const GENERATED_MARKER_SUPPLEMENTS = [
       "world": {
         "x": -13,
         "z": -5107
+      }
+    }
+  },
+  {
+    "id": "live-caves-cave-near-lava-springs-735-1689-735--1689",
+    "title": "Cave near Lava Springs (735, -1689)",
+    "category": "caves",
+    "region": "Lava Springs",
+    "description": "Official Wynncraft cave entrance at [735, 67, -1689]. The current wiki cave table does not expose a matching named row, so the authoritative coordinate is retained for coverage and flagged for naming review.",
+    "tags": [
+      "caves",
+      "official-map",
+      "wiki-refresh",
+      "needs-name-review"
+    ],
+    "sourceUrl": "https://docs.wynncraft.com/modules/map/list-map-markers",
+    "position": {
+      "world": {
+        "x": 735,
+        "z": -1689
       }
     }
   },
@@ -158,6 +158,44 @@ export const GENERATED_MARKER_SUPPLEMENTS = [
     }
   },
   {
+    "id": "live-caves-the-flush--1754--490",
+    "title": "The Flush",
+    "category": "caves",
+    "region": "Industrial District",
+    "description": "The Flush is a Normal cave in Industrial District. Suggested level: 110.",
+    "tags": [
+      "caves",
+      "official-map",
+      "wiki-refresh"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/The_Flush",
+    "position": {
+      "world": {
+        "x": -1754,
+        "z": -490
+      }
+    }
+  },
+  {
+    "id": "live-caves-aelumia-metalmill--1500--807",
+    "title": "Aelumia Metalmill",
+    "category": "caves",
+    "region": "Aelumia Citadel",
+    "description": "Aelumia Metalmill is a Normal cave in Aelumia Citadel. Suggested level: 119.",
+    "tags": [
+      "caves",
+      "official-map",
+      "wiki-refresh"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Aelumia_Metalmill",
+    "position": {
+      "world": {
+        "x": -1500,
+        "z": -807
+      }
+    }
+  },
+  {
     "id": "live-caves-cave-near-timasca-1658-516--1658--516",
     "title": "Cave near Timasca (-1658, -516)",
     "category": "caves",
@@ -174,25 +212,6 @@ export const GENERATED_MARKER_SUPPLEMENTS = [
       "world": {
         "x": -1658,
         "z": -516
-      }
-    }
-  },
-  {
-    "id": "live-caves-the-flush--1754--490",
-    "title": "The Flush",
-    "category": "caves",
-    "region": "Industrial District",
-    "description": "The Flush is a Normal cave in Industrial District. Suggested level: 110.",
-    "tags": [
-      "caves",
-      "official-map",
-      "wiki-refresh"
-    ],
-    "sourceUrl": "https://wynncraft.wiki.gg/wiki/The_Flush",
-    "position": {
-      "world": {
-        "x": -1754,
-        "z": -490
       }
     }
   },
@@ -330,25 +349,6 @@ export const GENERATED_MARKER_SUPPLEMENTS = [
     }
   },
   {
-    "id": "live-caves-tericen-stables--1159--1014",
-    "title": "Tericen Stables",
-    "category": "caves",
-    "region": "Highlands",
-    "description": "Tericen Stables is a Normal cave in Highlands. Suggested level: 116.",
-    "tags": [
-      "caves",
-      "official-map",
-      "wiki-refresh"
-    ],
-    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Tericen_Stables",
-    "position": {
-      "world": {
-        "x": -1159,
-        "z": -1014
-      }
-    }
-  },
-  {
     "id": "live-caves-saltpetre-mine--1288--1319",
     "title": "Saltpetre Mine",
     "category": "caves",
@@ -388,25 +388,6 @@ export const GENERATED_MARKER_SUPPLEMENTS = [
     }
   },
   {
-    "id": "live-caves-aelumia-metalmill--1500--807",
-    "title": "Aelumia Metalmill",
-    "category": "caves",
-    "region": "Aelumia Citadel",
-    "description": "Aelumia Metalmill is a Normal cave in Aelumia Citadel. Suggested level: 119.",
-    "tags": [
-      "caves",
-      "official-map",
-      "wiki-refresh"
-    ],
-    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Aelumia_Metalmill",
-    "position": {
-      "world": {
-        "x": -1500,
-        "z": -807
-      }
-    }
-  },
-  {
     "id": "live-caves-theatre-royal--1762--798",
     "title": "Theatre Royal",
     "category": "caves",
@@ -441,6 +422,25 @@ export const GENERATED_MARKER_SUPPLEMENTS = [
       "world": {
         "x": -1524,
         "z": -738
+      }
+    }
+  },
+  {
+    "id": "live-mini_quests-slay-angels-1005--4790",
+    "title": "Slay Angels",
+    "category": "mini_quests",
+    "region": "Sky Islands",
+    "description": "Slay Angels is a level 98 mini-quest in Sky Islands. Requirement: 25 Holy Powders. XP: 2,580,600.",
+    "tags": [
+      "mini-quests",
+      "official-map",
+      "wiki-refresh"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Quests#Mini-Quests",
+    "position": {
+      "world": {
+        "x": 1005,
+        "z": -4790
       }
     }
   }
