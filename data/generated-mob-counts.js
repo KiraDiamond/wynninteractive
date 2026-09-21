@@ -2,12 +2,12 @@
 
 export const GENERATED_MOB_CATEGORY_COUNTS = {
   "hostile_mobs_zombie": 49,
-  "hostile_mobs_spider": 17,
+  "hostile_mobs_spider": 18,
   "hostile_mobs_skeleton": 7,
-  "hostile_mobs_humanoid": 131,
-  "hostile_mobs_beast": 60,
+  "hostile_mobs_humanoid": 134,
+  "hostile_mobs_beast": 61,
   "hostile_mobs_elemental": 8,
   "hostile_mobs_construct": 25,
-  "hostile_mobs_aquatic": 17,
-  "hostile_mobs_other": 615
+  "hostile_mobs_aquatic": 19,
+  "hostile_mobs_other": 625
 };

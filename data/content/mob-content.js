@@ -114,8 +114,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-aldor-nix": {
-    "summary": "Aldor-Nix drops 4 ingredients across 2 mapped spawn points.",
-    "explanation": "Drops\n• Alga\n• Alginate Dressing\n• Elemental Crystal\n• Glowing Scales\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-706, 43, -4765] radius 5\n• [-799, 27, -4740] radius 5",
+    "summary": "Aldor-Nix drops 4 ingredients across 22 mapped spawn points.",
+    "explanation": "Drops\n• Alga\n• Alginate Dressing\n• Elemental Crystal\n• Glowing Scales\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 22 unique spawn points recorded.\n• Spawn data forms 10 exact clusters.\n\nSample Coordinates\n• [-1032, 47, -4727] radius 7\n• [-1132, 47, -4710] radius 7\n• [-1126, 46, -4563] radius 7\n• [-980, 44, -4558] radius 7\n• [-859, 42, -4608] radius 10\n• [-859, 43, -4608] radius 12\n• [-875, 44, -4631] radius 7\n• [-810, 44, -4594] radius 7\n• [-810, 45, -4594] radius 7\n• [-851, 46, -4658] radius 7\n• [-866, 43, -4777] radius 12\n• [-866, 44, -4777] radius 10",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/Aldor-Nix.png/100px-Aldor-Nix.png?618eb6",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Alga",
@@ -138,8 +138,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-amoral-miner": {
-    "summary": "Amoral Miner drops 1 ingredient across 12 mapped spawn points.",
-    "explanation": "Drops\n• Strange Geode\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 12 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [798, 30, -1174] radius 6\n• [799, 29, -1163] radius 6\n• [811, 29, -1148] radius 8\n• [819, 32, -1195] radius 8\n• [840, 30, -1216] radius 8\n• [780, 34, -1196] radius 3\n• [745, 31, -1227] radius 3\n• [703, 31, -1215] radius 4\n• [754, 31, -1192] radius 1\n• [802, 29, -1148] radius 1\n• [787, 29, -1150] radius 1\n• [830, 30, -1195] radius 5",
+    "summary": "Amoral Miner drops 1 ingredient across 7 mapped spawn points.",
+    "explanation": "Drops\n• Strange Geode\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 7 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [703, 31, -1215] radius 4\n• [754, 31, -1192] radius 1\n• [802, 29, -1148] radius 1\n• [787, 29, -1150] radius 1\n• [830, 30, -1195] radius 5\n• [840, 30, -1216] radius 8\n• [780, 34, -1196] radius 3",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/AmoralMiner.png/100px-AmoralMiner.png?e441bb",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Strange%20Geode",
@@ -250,8 +250,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-aquifer-silkworm": {
-    "summary": "Aquifer Silkworm drops 1 ingredient across 1 mapped spawn point.",
-    "explanation": "Drops\n• Mashed Insect\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1743, 20, -5468] radius 8",
+    "summary": "Aquifer Silkworm drops 1 ingredient across 2 mapped spawn points.",
+    "explanation": "Drops\n• Mashed Insect\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1736, 43, -5591] radius 6\n• [-1748, 19, -5552] radius 8",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Mashed%20Insect",
@@ -266,24 +266,24 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-armored-rebel-cow": {
-    "summary": "Armored Rebel Cow drops 1 ingredient across 1 mapped spawn point.",
-    "explanation": "Drops\n• Leather\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [975, 45, -1628] radius 0",
+    "summary": "Armored Rebel Cow drops 1 ingredient across 2 mapped spawn points.",
+    "explanation": "Drops\n• Leather\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-1992, 55, -5479] radius 4\n• [975, 45, -1628] radius 0",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Leather",
     "tutorials": []
   },
   "mob-astrochelys": {
-    "summary": "Astrochelys drops 1 ingredient across 5 mapped spawn points.",
-    "explanation": "Drops\n• Turtle Shell\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 5 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-1713, 6, -3154] radius 5\n• [-1713, 7, -3154] radius 7\n• [-1713, 8, -3154] radius 9\n• [-1713, 9, -3154] radius 11\n• [-1800, 51, -3087] radius 5",
+    "summary": "Astrochelys drops 1 ingredient across 3 mapped spawn points.",
+    "explanation": "Drops\n• Turtle Shell\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-1713, 8, -3154] radius 9\n• [-1713, 9, -3154] radius 11\n• [-1800, 51, -3087] radius 5",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/Astrochelys.png/100px-Astrochelys.png?23b9d7",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Turtle%20Shell",
     "tutorials": []
   },
   "mob-astrochelys-manis": {
-    "summary": "Astrochelys Manis drops 2 ingredients across 23 mapped spawn points.",
-    "explanation": "Drops\n• Manis Carapace\n• Turtle Shell\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 23 unique spawn points recorded.\n• Spawn data forms 7 exact clusters.\n\nSample Coordinates\n• [-1442, 143, -3332] radius 0\n• [-1405, 137, -3338] radius 0\n• [-1572, 33, -3119] radius 0\n• [-1568, 32, -3128] radius 0\n• [-1578, 35, -3129] radius 0\n• [-1553, 29, -3220] radius 0\n• [-1560, 27, -3220] radius 0\n• [-1554, 28, -3197] radius 0\n• [-1409, 51, -3175] radius 0\n• [-1422, 51, -3172] radius 0\n• [-1456, 47, -3151] radius 0\n• [-1459, 48, -3183] radius 0",
+    "summary": "Astrochelys Manis drops 2 ingredients across 20 mapped spawn points.",
+    "explanation": "Drops\n• Manis Carapace\n• Turtle Shell\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 20 unique spawn points recorded.\n• Spawn data forms 5 exact clusters.\n\nSample Coordinates\n• [-1442, 143, -3332] radius 0\n• [-1405, 137, -3338] radius 0\n• [-1572, 33, -3119] radius 0\n• [-1568, 32, -3128] radius 0\n• [-1578, 35, -3129] radius 0\n• [-1553, 29, -3220] radius 0\n• [-1560, 27, -3220] radius 0\n• [-1554, 28, -3197] radius 0\n• [-1409, 51, -3175] radius 0\n• [-1422, 51, -3172] radius 0\n• [-1456, 47, -3151] radius 0\n• [-1459, 48, -3183] radius 0",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/AstrochelysManis.png/100px-AstrochelysManis.png?cd18ff",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Manis%20Carapace",
@@ -347,7 +347,7 @@ export const MOBS_CONTENT = {
   },
   "mob-azer-foot-soldier": {
     "summary": "Azer Foot Soldier drops 2 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Broken Helmet\n• Tempered Core\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1567, 45, -5180] radius 24",
+    "explanation": "Drops\n• Broken Helmet\n• Tempered Core\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1232, 44, -5275] radius 10",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/AzerFootSoldier.png/100px-AzerFootSoldier.png?68118e",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Broken%20Helmet",
@@ -355,7 +355,7 @@ export const MOBS_CONTENT = {
   },
   "mob-azer-ironmage": {
     "summary": "Azer Ironmage drops 2 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Broken Helmet\n• Tempered Core\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1389, 53, -5250] radius 1",
+    "explanation": "Drops\n• Broken Helmet\n• Tempered Core\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1232, 44, -5275] radius 10",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/AzerIronmage.png/100px-AzerIronmage.png?ebbd7c",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Broken%20Helmet",
@@ -363,7 +363,7 @@ export const MOBS_CONTENT = {
   },
   "mob-azer-taskmaster": {
     "summary": "Azer Taskmaster drops 2 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Broken Helmet\n• Tempered Core\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1389, 53, -5250] radius 1",
+    "explanation": "Drops\n• Broken Helmet\n• Tempered Core\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1232, 44, -5275] radius 10",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/AzerTaskmaster.png/100px-AzerTaskmaster.png?33f1d5",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Broken%20Helmet",
@@ -443,7 +443,7 @@ export const MOBS_CONTENT = {
   },
   "mob-bandit-ranger": {
     "summary": "Bandit Ranger drops 2 ingredients across 5 mapped spawn points.",
-    "explanation": "Drops\n• Gold\n• Lockpicking Kit\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 5 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [174, 46, -4911] radius 5\n• [205, 71, -4890] radius 5\n• [271, 81, -4871] radius 5\n• [260, 81, -4907] radius 5\n• [260, 81, -4907] radius 10",
+    "explanation": "Drops\n• Gold\n• Lockpicking Kit\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 5 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [208, 84, -4649] radius 5\n• [268, 90, -4650] radius 5\n• [251, 90, -4647] radius 5\n• [278, 104, -4644] radius 2\n• [186, 57, -4870] radius 15",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/BanditRanger.png/100px-BanditRanger.png?34c795",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Gold",
@@ -458,8 +458,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-banshee-stag": {
-    "summary": "Banshee Stag drops 1 ingredient across 2 mapped spawn points.",
-    "explanation": "Drops\n• Spectral Horns\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-1292, 50, -595] radius 5\n• [-1208, 55, -876] radius 5",
+    "summary": "Banshee Stag drops 1 ingredient across 8 mapped spawn points.",
+    "explanation": "Drops\n• Spectral Horns\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 8 unique spawn points recorded.\n• Spawn data forms 5 exact clusters.\n\nSample Coordinates\n• [-1389, 53, -603] radius 5\n• [-1107, 126, -634] radius 20\n• [-1132, 123, -592] radius 20\n• [-1165, 62, -759] radius 6\n• [-1358, 52, -552] radius 6\n• [-1147, 62, -743] radius 4\n• [-1125, 58, -897] radius 8\n• [-1381, 45, -719] radius 8",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Spectral%20Horns",
@@ -562,8 +562,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-black-bat": {
-    "summary": "Black Bat drops 2 ingredients across 4 mapped spawn points.",
-    "explanation": "Drops\n• Bat Ear\n• Laryngeal Flesh\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 4 unique spawn points recorded.\n• Spawn data forms 3 exact clusters.\n\nSample Coordinates\n• [674, 78, -1270] radius 7\n• [448, 80, -1315] radius 7\n• [104, 60, -1718] radius 10\n• [388, 59, -1377] radius 15",
+    "summary": "Black Bat drops 2 ingredients across 10 mapped spawn points.",
+    "explanation": "Drops\n• Bat Ear\n• Laryngeal Flesh\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 10 unique spawn points recorded.\n• Spawn data forms 5 exact clusters.\n\nSample Coordinates\n• [674, 78, -1270] radius 7\n• [448, 80, -1315] radius 7\n• [562, 63, -1516] radius 7\n• [716, 67, -1586] radius 7\n• [857, 64, -1378] radius 7\n• [685, 52, -1359] radius 7\n• [807, 67, -1479] radius 7\n• [734, 64, -1501] radius 7\n• [741, 57, -1401] radius 7\n• [721, 41, -1428] radius 15",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/BlackBat%28Lv20%29.png/100px-BlackBat%28Lv20%29.png?6c7736",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Bat%20Ear",
@@ -706,8 +706,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-breathless-weird": {
-    "summary": "Breathless Weird drops 8 ingredients across 3 mapped spawn points.",
-    "explanation": "Drops\n• Arcane Anomaly\n• Disturbed Aspect\n• Erratic Aspect\n• Evaporated Aspect\n• Gylia Essence\n• Igneous Aspect\n• Overload Aspect\n• Repulsive Aspect\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-115, 38, -5395] radius 8\n• [-86, 42, -5375] radius 15\n• [-33, 33, -5346] radius 15",
+    "summary": "Breathless Weird drops 8 ingredients across 8 mapped spawn points.",
+    "explanation": "Drops\n• Arcane Anomaly\n• Disturbed Aspect\n• Erratic Aspect\n• Evaporated Aspect\n• Gylia Essence\n• Igneous Aspect\n• Overload Aspect\n• Repulsive Aspect\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 8 unique spawn points recorded.\n• Spawn data forms 3 exact clusters.\n\nSample Coordinates\n• [-186, 48, -5124] radius 20\n• [-73, 43, -5049] radius 15\n• [-16, 44, -5083] radius 25\n• [-7, 43, -5140] radius 38\n• [-32, 37, -5196] radius 15\n• [12, 36, -5229] radius 15\n• [8, 43, -5310] radius 15\n• [-255, 41, -5313] radius 20",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/BreathlessWeird.png/100px-BreathlessWeird.png?efd1c4",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Arcane%20Anomaly",
@@ -762,8 +762,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-bushpig-matriarch": {
-    "summary": "Bushpig Matriarch drops 5 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Autonomous Core\n• Insulated Wiring\n• Mega Fern\n• Piquant Pork Fillet\n• Thorned Tusk\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1805, 77, -2167] radius 20",
+    "summary": "Bushpig Matriarch drops 6 ingredients across 1 mapped spawn point.",
+    "explanation": "Drops\n• Autonomous Core\n• Defective Circuits\n• Insulated Wiring\n• Mega Fern\n• Piquant Pork Fillet\n• Thorned Tusk\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1805, 77, -2167] radius 20",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/BushpigMatriarch.png/100px-BushpigMatriarch.png?d3b983",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Autonomous%20Core",
@@ -802,8 +802,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-canyon-condor": {
-    "summary": "Canyon Condor drops 2 ingredients across 11 mapped spawn points.",
-    "explanation": "Drops\n• Condor Feather\n• Egg\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 11 unique spawn points recorded.\n• Spawn data forms 4 exact clusters.\n\nSample Coordinates\n• [1098, 41, -1329] radius 10\n• [1040, 43, -1504] radius 10\n• [1101, 47, -1536] radius 10\n• [1189, 46, -1581] radius 10\n• [1368, 44, -1533] radius 10\n• [1379, 40, -1505] radius 10\n• [1221, 43, -1452] radius 10\n• [1270, 46, -1435] radius 10\n• [1385, 44, -1406] radius 10\n• [1339, 44, -1415] radius 10\n• [-803, 67, -1909] radius 30",
+    "summary": "Canyon Condor drops 1 ingredient across 10 mapped spawn points.",
+    "explanation": "Drops\n• Condor Feather\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 10 unique spawn points recorded.\n• Spawn data forms 3 exact clusters.\n\nSample Coordinates\n• [1098, 41, -1329] radius 10\n• [1040, 43, -1504] radius 10\n• [1101, 47, -1536] radius 10\n• [1189, 46, -1581] radius 10\n• [1368, 44, -1533] radius 10\n• [1379, 40, -1505] radius 10\n• [1221, 43, -1452] radius 10\n• [1270, 46, -1435] radius 10\n• [1385, 44, -1406] radius 10\n• [1339, 44, -1415] radius 10",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/CanyonCondor.png/100px-CanyonCondor.png?17a2e4",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Condor%20Feather",
@@ -834,8 +834,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-canyon-thug": {
-    "summary": "Canyon Thug drops 2 ingredients across 5 mapped spawn points.",
-    "explanation": "Drops\n• Gold\n• Lockpicking Kit\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 5 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [208, 84, -4649] radius 5\n• [268, 90, -4650] radius 5\n• [251, 90, -4647] radius 5\n• [278, 104, -4644] radius 2\n• [186, 57, -4870] radius 15",
+    "summary": "Canyon Thug drops 2 ingredients across 1 mapped spawn point.",
+    "explanation": "Drops\n• Gold\n• Lockpicking Kit\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [261, 88, -4885] radius 5",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/CanyonThug.png/100px-CanyonThug.png?87bf30",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Gold",
@@ -939,7 +939,7 @@ export const MOBS_CONTENT = {
   },
   "mob-chalky-kanter": {
     "summary": "Chalky Kanter drops 2 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Calcified Ligament\n• Condensed Darkness\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1064, 84, -430] radius 0",
+    "explanation": "Drops\n• Calcified Ligament\n• Condensed Darkness\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [837, 80, -540] radius 100",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/ChalkyKanter.png/100px-ChalkyKanter.png?74137e",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Calcified%20Ligament",
@@ -962,8 +962,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-charging-minotaur": {
-    "summary": "Charging Minotaur drops 3 ingredients across 7 mapped spawn points.",
-    "explanation": "Drops\n• Ivory Tusk\n• Nose Ring\n• Tough Skin\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 7 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [487, 27, -5191] radius 8\n• [461, 28, -5130] radius 6\n• [458, 28, -5112] radius 8\n• [472, 28, -5142] radius 5\n• [477, 27, -5159] radius 5\n• [450, 27, -5163] radius 6\n• [451, 27, -5144] radius 8",
+    "summary": "Charging Minotaur drops 3 ingredients across 6 mapped spawn points.",
+    "explanation": "Drops\n• Ivory Tusk\n• Nose Ring\n• Tough Skin\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 6 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [234, 79, -4906] radius 10\n• [229, 79, -4927] radius 6\n• [226, 79, -4949] radius 6\n• [241, 80, -4998] radius 10\n• [213, 80, -4990] radius 10\n• [182, 75, -5052] radius 5",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/ChargingMinotaur.png/100px-ChargingMinotaur.png?99b1b6",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Ivory%20Tusk",
@@ -1058,8 +1058,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-cold-fang": {
-    "summary": "Cold Fang drops 4 ingredients across 7 mapped spawn points.",
-    "explanation": "Drops\n• Bob's Tear\n• Large Lapis\n• Snow Clump\n• Wolf Fang\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 7 unique spawn points recorded.\n• Spawn data forms 5 exact clusters.\n\nSample Coordinates\n• [-116, 67, -890] radius 5\n• [15, 70, -824] radius 5\n• [22, 68, -739] radius 5\n• [-60, 67, -699] radius 5\n• [3, 68, -673] radius 5\n• [193, 72, -735] radius 5\n• [197, 80, -1013] radius 5",
+    "summary": "Cold Fang drops 4 ingredients across 16 mapped spawn points.",
+    "explanation": "Drops\n• Bob's Tear\n• Large Lapis\n• Snow Clump\n• Wolf Fang\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 16 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [259, 14, -664] radius 1\n• [262, 14, -641] radius 1\n• [257, 14, -639] radius 1\n• [259, 14, -636] radius 1\n• [254, 15, -630] radius 1\n• [237, 20, -638] radius 1\n• [229, 20, -633] radius 1\n• [230, 20, -630] radius 1\n• [263, 27, -695] radius 8\n• [274, 35, -641] radius 20\n• [-238, 4, -581] radius 3\n• [-210, 4, -588] radius 3",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/ColdFang.png/100px-ColdFang.png?9dbd59",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Bob's%20Tear",
@@ -1154,11 +1154,11 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-corkus-bandit": {
-    "summary": "Corkus Bandit drops 2 ingredients across 60 mapped spawn points.",
-    "explanation": "Drops\n• Gold Bar\n• Protective Fabric\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 60 unique spawn points recorded.\n• Spawn data forms 9 exact clusters.\n\nSample Coordinates\n• [-1755, 72, -2435] radius 0\n• [-1738, 65, -2422] radius 0\n• [-1730, 112, -2249] radius 0\n• [-1734, 113, -2244] radius 0\n• [-1736, 114, -2241] radius 0\n• [-1441, 69, -2422] radius 0\n• [-1424, 69, -2427] radius 0\n• [-1426, 69, -2437] radius 0\n• [-1622, 78, -3164] radius 0\n• [-1601, 70, -3149] radius 0\n• [-1604, 70, -3172] radius 0\n• [-1345, 61, -3210] radius 0",
+    "summary": "Corkus Bandit drops 1 ingredient across 58 mapped spawn points.",
+    "explanation": "Drops\n• Protective Fabric\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 58 unique spawn points recorded.\n• Spawn data forms 8 exact clusters.\n\nSample Coordinates\n• [-1755, 72, -2435] radius 0\n• [-1738, 65, -2422] radius 0\n• [-1730, 112, -2249] radius 0\n• [-1734, 113, -2244] radius 0\n• [-1736, 114, -2241] radius 0\n• [-1441, 69, -2422] radius 0\n• [-1424, 69, -2427] radius 0\n• [-1426, 69, -2437] radius 0\n• [-1622, 78, -3164] radius 0\n• [-1601, 70, -3149] radius 0\n• [-1604, 70, -3172] radius 0\n• [-1345, 61, -3210] radius 0",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/CorkusBandit%28a%29.png/100px-CorkusBandit%28a%29.png?b3c35f",
     "gallery": [],
-    "sourceUrl": "https://wynncraft.com/item/Gold%20Bar",
+    "sourceUrl": "https://wynncraft.com/item/Protective%20Fabric",
     "tutorials": []
   },
   "mob-corrupt-hex": {
@@ -1170,8 +1170,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-corrupt-stone": {
-    "summary": "Corrupt Stone drops 3 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Blaze Powder\n• Corrupted Bracken\n• Spike Residue\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [198, 51, -1291] radius 35",
+    "summary": "Corrupt Stone drops 3 ingredients across 10 mapped spawn points.",
+    "explanation": "Drops\n• Blaze Powder\n• Corrupted Bracken\n• Spike Residue\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 10 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [264, 38, -1343] radius 15\n• [230, 42, -1338] radius 18\n• [234, 65, -1348] radius 6\n• [254, 63, -1347] radius 6\n• [326, 56, -1251] radius 6\n• [299, 57, -1245] radius 4\n• [250, 60, -1243] radius 6\n• [239, 46, -1250] radius 6\n• [239, 18, -1322] radius 20\n• [217, 38, -1385] radius 15",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/CorruptStone.png/100px-CorruptStone.png?569d47",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Blaze%20Powder",
@@ -1227,7 +1227,7 @@ export const MOBS_CONTENT = {
   },
   "mob-corrupted-lookout": {
     "summary": "Corrupted Lookout drops 3 ingredients across 5 mapped spawn points.",
-    "explanation": "Drops\n• Lost Talisman\n• Rancid Flesh\n• Tribal Tome\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 5 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-996, 108, -561] radius 12\n• [-604, 83, -293] radius 18\n• [-731, 124, -234] radius 9\n• [-710, 124, -233] radius 9\n• [-677, 129, -238] radius 12",
+    "explanation": "Drops\n• Lost Talisman\n• Rancid Flesh\n• Tribal Tome\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 5 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-976, 55, -492] radius 2\n• [-991, 82, -473] radius 3\n• [-995, 84, -486] radius 3\n• [-535, 42, -377] radius 8\n• [-550, 47, -379] radius 8",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/CorruptedLookout.png/100px-CorruptedLookout.png?3d5466",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Lost%20Talisman",
@@ -1243,7 +1243,7 @@ export const MOBS_CONTENT = {
   },
   "mob-corrupted-scout": {
     "summary": "Corrupted Scout drops 2 ingredients across 5 mapped spawn points.",
-    "explanation": "Drops\n• Lost Talisman\n• Tribal Tome\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 5 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-996, 108, -561] radius 12\n• [-604, 83, -293] radius 18\n• [-731, 124, -234] radius 9\n• [-710, 124, -233] radius 9\n• [-677, 129, -238] radius 12",
+    "explanation": "Drops\n• Lost Talisman\n• Tribal Tome\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 5 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-976, 55, -492] radius 2\n• [-991, 82, -473] radius 3\n• [-995, 84, -486] radius 3\n• [-535, 42, -377] radius 8\n• [-550, 47, -379] radius 8",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/CorruptedScout%28Lv70%29.png/100px-CorruptedScout%28Lv70%29.png?97f4d5",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Lost%20Talisman",
@@ -1282,8 +1282,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-cow": {
-    "summary": "Cow drops 1 ingredient across 1 mapped spawn point.",
-    "explanation": "Drops\n• Leather\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1551, 60, -5588] radius 13",
+    "summary": "Cow drops 1 ingredient across 2 mapped spawn points.",
+    "explanation": "Drops\n• Leather\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1070, 44, -5304] radius 1\n• [-1068, 44, -5301] radius 1",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/Cow%28Lv1%29.png/100px-Cow%28Lv1%29.png?1e63e4",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Leather",
@@ -1330,8 +1330,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-cryostone-golem": {
-    "summary": "Cryostone Golem drops 3 ingredients across 4 mapped spawn points.",
-    "explanation": "Drops\n• Frostbound Memory\n• Glacial Anomaly\n• Unmeltable Ice\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 4 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1523, 63, -5480] radius 15\n• [1518, 62, -5445] radius 30\n• [1504, 62, -5419] radius 30\n• [1506, 78, -5391] radius 10",
+    "summary": "Cryostone Golem drops 3 ingredients across 1 mapped spawn point.",
+    "explanation": "Drops\n• Frostbound Memory\n• Glacial Anomaly\n• Unmeltable Ice\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1566, 106, -5446] radius 65",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Frostbound%20Memory",
@@ -1538,8 +1538,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-dead-cowboy": {
-    "summary": "Dead Cowboy drops 4 ingredients across 4 mapped spawn points.",
-    "explanation": "Drops\n• Cracked Skin\n• Gold Bar\n• Rusty Spurs\n• Tanned Flesh\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 4 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1253, 9, -1501] radius 3\n• [1218, 12, -1506] radius 3\n• [1202, 12, -1515] radius 3\n• [1171, 10, -1525] radius 3",
+    "summary": "Dead Cowboy drops 4 ingredients across 5 mapped spawn points.",
+    "explanation": "Drops\n• Cracked Skin\n• Gold Bar\n• Rusty Spurs\n• Tanned Flesh\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 5 unique spawn points recorded.\n• Spawn data forms 3 exact clusters.\n\nSample Coordinates\n• [1311, 32, -1561] radius 25\n• [1444, 32, -1489] radius 25\n• [1433, 32, -1448] radius 25\n• [1135, 31, -1567] radius 25\n• [1064, 38, -1530] radius 25",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/DeadCowboy.png/100px-DeadCowboy.png?760a7b",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Cracked%20Skin",
@@ -1730,8 +1730,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-dire-fang": {
-    "summary": "Dire Fang drops 3 ingredients across 4 mapped spawn points.",
-    "explanation": "Drops\n• Large Lapis\n• Snow Clump\n• Wolf Fang\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 4 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-265, 21, -386] radius 40\n• [-236, 23, -400] radius 40\n• [-188, 24, -369] radius 40\n• [-189, 23, -421] radius 40",
+    "summary": "Dire Fang drops 3 ingredients across 1 mapped spawn point.",
+    "explanation": "Drops\n• Large Lapis\n• Snow Clump\n• Wolf Fang\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-458, 40, -293] radius 24",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/DireFang.png/100px-DireFang.png?aa1623",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Large%20Lapis",
@@ -1826,8 +1826,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-dry-zombie": {
-    "summary": "Dry Zombie drops 1 ingredient across 1 mapped spawn point.",
-    "explanation": "Drops\n• Cracked Skin\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1305, 80, -1918] radius 60",
+    "summary": "Dry Zombie drops 1 ingredient across 4 mapped spawn points.",
+    "explanation": "Drops\n• Cracked Skin\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 4 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [968, 53, -1753] radius 7\n• [1009, 51, -1832] radius 10\n• [973, 57, -1679] radius 15\n• [968, 52, -1704] radius 12",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/DryZombie.png/100px-DryZombie.png?1fec3c",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Cracked%20Skin",
@@ -1859,7 +1859,7 @@ export const MOBS_CONTENT = {
   },
   "mob-dusk-kanter": {
     "summary": "Dusk Kanter drops 2 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Calcified Ligament\n• Condensed Darkness\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [926, 103, -342] radius 0",
+    "explanation": "Drops\n• Calcified Ligament\n• Condensed Darkness\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [837, 80, -540] radius 100",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/DuskKanter.png/100px-DuskKanter.png?7117bb",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Calcified%20Ligament",
@@ -1946,8 +1946,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-elemental-miasma": {
-    "summary": "Elemental Miasma drops 1 ingredient across 1 mapped spawn point.",
-    "explanation": "Drops\n• Elemental Crystal\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1039, 18, -5289] radius 16",
+    "summary": "Elemental Miasma drops 1 ingredient across 2 mapped spawn points.",
+    "explanation": "Drops\n• Elemental Crystal\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1071, 28, -5225] radius 10\n• [-1057, 27, -5226] radius 10",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/ElementalMiasma.png/100px-ElementalMiasma.png?f6d0b2",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Elemental%20Crystal",
@@ -2010,8 +2010,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-enraged-minotaur": {
-    "summary": "Enraged Minotaur drops 3 ingredients across 7 mapped spawn points.",
-    "explanation": "Drops\n• Ivory Tusk\n• Nose Ring\n• Tough Skin\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 7 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [487, 27, -5191] radius 8\n• [461, 28, -5130] radius 6\n• [458, 28, -5112] radius 8\n• [472, 28, -5142] radius 5\n• [477, 27, -5159] radius 5\n• [450, 27, -5163] radius 6\n• [451, 27, -5144] radius 8",
+    "summary": "Enraged Minotaur drops 3 ingredients across 6 mapped spawn points.",
+    "explanation": "Drops\n• Ivory Tusk\n• Nose Ring\n• Tough Skin\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 6 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [234, 79, -4906] radius 10\n• [229, 79, -4927] radius 6\n• [226, 79, -4949] radius 6\n• [241, 80, -4998] radius 10\n• [213, 80, -4990] radius 10\n• [182, 75, -5052] radius 5",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/EnragedMinotaur.png/100px-EnragedMinotaur.png?d44769",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Ivory%20Tusk",
@@ -2066,8 +2066,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-feligember-frog": {
-    "summary": "Feligember Frog drops 1 ingredient across 3 mapped spawn points.",
-    "explanation": "Drops\n• Alga\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-1760, 62, -5308] radius 16\n• [-1512, 48, -5257] radius 15\n• [-1516, 54, -5263] radius 24",
+    "summary": "Feligember Frog drops 1 ingredient across 1 mapped spawn point.",
+    "explanation": "Drops\n• Alga\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1517, 30, -5256] radius 20",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/FeligemberFrog.png/100px-FeligemberFrog.png?93fb29",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Alga",
@@ -2211,7 +2211,7 @@ export const MOBS_CONTENT = {
   },
   "mob-formative-weird": {
     "summary": "Formative Weird drops 2 ingredients across 2 mapped spawn points.",
-    "explanation": "Drops\n• Arcane Anomaly\n• Wintery Aspect\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-851, 46, -4256] radius 7\n• [-887, 56, -4202] radius 7",
+    "explanation": "Drops\n• Arcane Anomaly\n• Wintery Aspect\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1080, 44, -4415] radius 30\n• [-988, 72, -4392] radius 30",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/FormativeWeird.png/100px-FormativeWeird.png?159041",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Arcane%20Anomaly",
@@ -2258,8 +2258,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-frigid-fang": {
-    "summary": "Frigid Fang drops 3 ingredients across 6 mapped spawn points.",
-    "explanation": "Drops\n• Large Lapis\n• Snow Clump\n• Wolf Fang\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 6 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-388, 23, -323] radius 50\n• [-264, 23, -342] radius 50\n• [-146, 24, -396] radius 70\n• [-42, 71, -708] radius 10\n• [-66, 67, -765] radius 10\n• [11, 67, -690] radius 30",
+    "summary": "Frigid Fang drops 3 ingredients across 2 mapped spawn points.",
+    "explanation": "Drops\n• Large Lapis\n• Snow Clump\n• Wolf Fang\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [244, 16, -628] radius 1\n• [253, 14, -641] radius 1",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/FrigidFang.png/100px-FrigidFang.png?eef434",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Large%20Lapis",
@@ -2282,8 +2282,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-frost-weird": {
-    "summary": "Frost Weird drops 4 ingredients across 3 mapped spawn points.",
-    "explanation": "Drops\n• Arcane Anomaly\n• Gylia Essence\n• Iceberries\n• Wintery Aspect\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-115, 38, -5395] radius 8\n• [-86, 42, -5375] radius 15\n• [-33, 33, -5346] radius 15",
+    "summary": "Frost Weird drops 4 ingredients across 8 mapped spawn points.",
+    "explanation": "Drops\n• Arcane Anomaly\n• Gylia Essence\n• Iceberries\n• Wintery Aspect\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 8 unique spawn points recorded.\n• Spawn data forms 3 exact clusters.\n\nSample Coordinates\n• [-186, 48, -5124] radius 20\n• [-73, 43, -5049] radius 15\n• [-16, 44, -5083] radius 25\n• [-7, 43, -5140] radius 38\n• [-32, 37, -5196] radius 15\n• [12, 36, -5229] radius 15\n• [8, 43, -5310] radius 15\n• [-255, 41, -5313] radius 20",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/FrostWeird.png/100px-FrostWeird.png?7e518f",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Arcane%20Anomaly",
@@ -2362,8 +2362,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-fungal-knight": {
-    "summary": "Fungal Knight drops 2 ingredients across 4 mapped spawn points.",
-    "explanation": "Drops\n• Dried Gill\n• Toxic Spores\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 4 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [731, 25, -1602] radius 20\n• [765, 28, -1563] radius 20\n• [699, 40, -1586] radius 20\n• [730, 29, -1541] radius 20",
+    "summary": "Fungal Knight drops 2 ingredients across 1 mapped spawn point.",
+    "explanation": "Drops\n• Dried Gill\n• Toxic Spores\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [692, 29, -1630] radius 10",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/FungalKnight.png/100px-FungalKnight.png?201e52",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Dried%20Gill",
@@ -2442,16 +2442,16 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-gendarme-kenshi": {
-    "summary": "Gendarme Kenshi drops 3 ingredients across 2 mapped spawn points.",
-    "explanation": "Drops\n• Gilded Regalia\n• Noble Ribbon\n• Ornamental Horn\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-1754, 130, -832] radius 16\n• [-1663, 135, -948] radius 10",
+    "summary": "Gendarme Kenshi drops 4 ingredients across 2 mapped spawn points.",
+    "explanation": "Drops\n• Gilded Regalia\n• Image of a Loved One\n• Noble Ribbon\n• Ornamental Horn\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-1754, 130, -832] radius 16\n• [-1663, 135, -948] radius 10",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/GendarmeKenshi.png/100px-GendarmeKenshi.png?5c7b03",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Gilded%20Regalia",
     "tutorials": []
   },
   "mob-gendarme-knight": {
-    "summary": "Gendarme Knight drops 4 ingredients across 3 mapped spawn points.",
-    "explanation": "Drops\n• Butterfly Buckler\n• Gilded Regalia\n• Image of a Loved One\n• Noble Ribbon\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 3 exact clusters.\n\nSample Coordinates\n• [-1694, 129, -816] radius 10\n• [-1630, 131, -955] radius 10\n• [-1564, 129, -866] radius 8",
+    "summary": "Gendarme Knight drops 2 ingredients across 3 mapped spawn points.",
+    "explanation": "Drops\n• Butterfly Buckler\n• Noble Ribbon\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 3 exact clusters.\n\nSample Coordinates\n• [-1694, 129, -816] radius 10\n• [-1630, 131, -955] radius 10\n• [-1564, 129, -866] radius 8",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/GendarmeKnight.png/100px-GendarmeKnight.png?7036d0",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Butterfly%20Buckler",
@@ -2474,8 +2474,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-gerten-hunter": {
-    "summary": "Gerten Hunter drops 4 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Gert Skin\n• Hunter's Disguise\n• Pig's Remains\n• Pig's Skull\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-265, 36, -5501] radius 3",
+    "summary": "Gerten Hunter drops 3 ingredients across 1 mapped spawn point.",
+    "explanation": "Drops\n• Gert Skin\n• Hunter's Disguise\n• Pig's Skull\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-265, 36, -5501] radius 3",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Gert%20Skin",
@@ -2530,8 +2530,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-giant-weevil": {
-    "summary": "Giant Weevil drops 2 ingredients across 4 mapped spawn points.",
-    "explanation": "Drops\n• Munched Grass\n• Wood Snippet\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 4 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [939, 70, -1344] radius 5\n• [985, 41, -1380] radius 5\n• [1016, 44, -1366] radius 4\n• [1016, 44, -1366] radius 6",
+    "summary": "Giant Weevil drops 2 ingredients across 3 mapped spawn points.",
+    "explanation": "Drops\n• Munched Grass\n• Wood Snippet\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [985, 41, -1380] radius 5\n• [1016, 44, -1366] radius 4\n• [1016, 44, -1366] radius 6",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/GiantWeevil%28Lv12%29.png/100px-GiantWeevil%28Lv12%29.png?390cab",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Munched%20Grass",
@@ -2554,8 +2554,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-goblin-forager": {
-    "summary": "Goblin Forager drops 4 ingredients across 8 mapped spawn points.",
-    "explanation": "Drops\n• Gold Nugget\n• Natural Nitrates\n• Runner's Bandages\n• Torn Rawhide\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 8 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-1888, 44, -4896] radius 4\n• [-1837, 52, -4875] radius 4\n• [-1788, 54, -4902] radius 4\n• [-1674, 56, -4887] radius 4\n• [-1706, 55, -4859] radius 4\n• [-1708, 61, -4891] radius 4\n• [-1637, 51, -4925] radius 6\n• [-1637, 51, -4925] radius 3",
+    "summary": "Goblin Forager drops 4 ingredients across 9 mapped spawn points.",
+    "explanation": "Drops\n• Gold Nugget\n• Natural Nitrates\n• Runner's Bandages\n• Torn Rawhide\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 9 unique spawn points recorded.\n• Spawn data forms 3 exact clusters.\n\nSample Coordinates\n• [-1683, 61, -4936] radius 20\n• [-1550, 54, -5025] radius 35\n• [-1643, 59, -4815] radius 40\n• [-1535, 49, -4612] radius 30\n• [-1726, 53, -4666] radius 40\n• [-1847, 83, -4706] radius 30\n• [-1847, 83, -4706] radius 15\n• [-1923, 38, -4660] radius 20\n• [-1902, 54, -4676] radius 15",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/GoblinForager.png/100px-GoblinForager.png?73a3a8",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Gold%20Nugget",
@@ -2618,8 +2618,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-gooligan": {
-    "summary": "Gooligan drops 4 ingredients across 41 mapped spawn points.",
-    "explanation": "Drops\n• Discarded Junk\n• Meal Scraps\n• Mucoid Matter\n• Oddly Untouched Marshmallow\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 41 unique spawn points recorded.\n• Spawn data forms 5 exact clusters.\n\nSample Coordinates\n• [-2207, 41, -670] radius 0\n• [-2262, 37, -654] radius 0\n• [-2144, 33, -615] radius 0\n• [-2027, 27, -529] radius 0\n• [-1957, 27, -545] radius 0\n• [-1804, 36, -704] radius 0\n• [-1836, 30, -796] radius 0\n• [-1822, 40, -846] radius 0\n• [-1882, 38, -859] radius 0\n• [-1966, 46, -888] radius 0\n• [-2048, 38, -853] radius 0\n• [-2124, 40, -899] radius 0",
+    "summary": "Gooligan drops 4 ingredients across 11 mapped spawn points.",
+    "explanation": "Drops\n• Discarded Junk\n• Meal Scraps\n• Mucoid Matter\n• Oddly Untouched Marshmallow\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 11 unique spawn points recorded.\n• Spawn data forms 7 exact clusters.\n\nSample Coordinates\n• [-2207, 41, -670] radius 0\n• [-2262, 37, -654] radius 0\n• [-2144, 33, -615] radius 0\n• [-2027, 27, -529] radius 0\n• [-1957, 27, -545] radius 0\n• [-1804, 36, -704] radius 0\n• [-1836, 30, -796] radius 0\n• [-1822, 40, -846] radius 0\n• [-1882, 38, -859] radius 0\n• [-1966, 46, -888] radius 0\n• [-2048, 38, -853] radius 0",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/Gooligan.png/100px-Gooligan.png?5e9c33",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Discarded%20Junk",
@@ -2731,7 +2731,7 @@ export const MOBS_CONTENT = {
   },
   "mob-harnort-compound-grunt": {
     "summary": "Harnort Compound Grunt drops 3 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Bandit Rations\n• Chipped Quartz\n• Pure Quartz\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1431, 52, -4354] radius 20",
+    "explanation": "Drops\n• Bandit Rations\n• Chipped Quartz\n• Pure Quartz\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1508, 41, -4384] radius 8",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/HarnortCompoundGrunt.png/100px-HarnortCompoundGrunt.png?2d4103",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Bandit%20Rations",
@@ -2747,7 +2747,7 @@ export const MOBS_CONTENT = {
   },
   "mob-harnort-compound-roughneck": {
     "summary": "Harnort Compound Roughneck drops 3 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Bandit Rations\n• Chipped Quartz\n• Pure Quartz\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1431, 52, -4354] radius 20",
+    "explanation": "Drops\n• Bandit Rations\n• Chipped Quartz\n• Pure Quartz\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1508, 41, -4384] radius 8",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/HarnortCompoundRoughneck.png/100px-HarnortCompoundRoughneck.png?d87c1d",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Bandit%20Rations",
@@ -2818,8 +2818,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-hedoro": {
-    "summary": "Hedoro drops 2 ingredients across 8 mapped spawn points.",
-    "explanation": "Drops\n• Mucoid Matter\n• Oddly Untouched Marshmallow\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 8 unique spawn points recorded.\n• Spawn data forms 7 exact clusters.\n\nSample Coordinates\n• [-1814, 43, -886] radius 2\n• [-1767, 21, -691] radius 4\n• [-1781, 29, -434] radius 3\n• [-1926, 27, -542] radius 3\n• [-1953, 26, -583] radius 3\n• [-2268, 39, -609] radius 2\n• [-2242, 33, -798] radius 2\n• [-1947, 27, -756] radius 4",
+    "summary": "Hedoro drops 2 ingredients across 7 mapped spawn points.",
+    "explanation": "Drops\n• Mucoid Matter\n• Oddly Untouched Marshmallow\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 7 unique spawn points recorded.\n• Spawn data forms 4 exact clusters.\n\nSample Coordinates\n• [-1827, 30, -786] radius 3\n• [-2003, 27, -715] radius 2\n• [-1941, 27, -545] radius 2\n• [-2260, 40, -604] radius 3\n• [-2275, 51, -655] radius 3\n• [-2076, 45, -619] radius 3\n• [-1975, 31, -655] radius 2",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/Hedoro.png/100px-Hedoro.png?5c04c8",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Mucoid%20Matter",
@@ -2850,8 +2850,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-herb-spawn": {
-    "summary": "Herb Spawn drops 2 ingredients across 2 mapped spawn points.",
-    "explanation": "Drops\n• Ancient Coins\n• Thick Vines\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-590, 101, -583] radius 3\n• [-476, 59, -838] radius 15",
+    "summary": "Herb Spawn drops 2 ingredients across 7 mapped spawn points.",
+    "explanation": "Drops\n• Ancient Coins\n• Thick Vines\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 7 unique spawn points recorded.\n• Spawn data forms 3 exact clusters.\n\nSample Coordinates\n• [-538, 55, -579] radius 12\n• [-725, 51, -762] radius 9\n• [-726, 52, -762] radius 9\n• [-477, 59, -839] radius 14\n• [-498, 65, -851] radius 12\n• [-531, 53, -841] radius 12\n• [-476, 59, -838] radius 15",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/HerbSpawn%28Lv59%29.png/100px-HerbSpawn%28Lv59%29.png?528225",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Ancient%20Coins",
@@ -2867,15 +2867,15 @@ export const MOBS_CONTENT = {
   },
   "mob-highlands-arbalist": {
     "summary": "Highlands Arbalist drops 2 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Soldier Rations\n• Stolen Heirloom\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1387, 70, -938] radius 16",
+    "explanation": "Drops\n• Soldier Rations\n• Stolen Heirloom\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1212, 67, -980] radius 18",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Soldier%20Rations",
     "tutorials": []
   },
   "mob-highlands-captain": {
-    "summary": "Highlands Captain drops 2 ingredients across 5 mapped spawn points.",
-    "explanation": "Drops\n• Soldier Rations\n• Stolen Heirloom\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 5 unique spawn points recorded.\n• Spawn data forms 3 exact clusters.\n\nSample Coordinates\n• [-1105, 66, -997] radius 10\n• [-1186, 89, -1346] radius 10\n• [-1197, 74, -1043] radius 20\n• [-1147, 81, -1266] radius 20\n• [-1065, 90, -1203] radius 25",
+    "summary": "Highlands Captain drops 2 ingredients across 1 mapped spawn point.",
+    "explanation": "Drops\n• Soldier Rations\n• Stolen Heirloom\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1508, 118, -1071] radius 15",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Soldier%20Rations",
@@ -2898,16 +2898,16 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-highlands-ranger": {
-    "summary": "Highlands Ranger drops 2 ingredients across 5 mapped spawn points.",
-    "explanation": "Drops\n• Soldier Rations\n• Stolen Heirloom\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 5 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1254, 91, -1032] radius 0\n• [-1284, 92, -1038] radius 0\n• [-1243, 87, -1016] radius 0\n• [-1266, 90, -1038] radius 0\n• [-1287, 92, -1042] radius 0",
+    "summary": "Highlands Ranger drops 5 ingredients across 7 mapped spawn points.",
+    "explanation": "Drops\n• Commander's Spyglass\n• Emergency Stimulant\n• Honoured Commander's Medal\n• Soldier Rations\n• Stolen Heirloom\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 7 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-1071, 90, -1180] radius 50\n• [-1346, 84, -1018] radius 20\n• [-1254, 91, -1032] radius 0\n• [-1284, 92, -1038] radius 0\n• [-1243, 87, -1016] radius 0\n• [-1266, 90, -1038] radius 0\n• [-1287, 92, -1042] radius 0",
     "coverImage": "",
     "gallery": [],
-    "sourceUrl": "https://wynncraft.com/item/Soldier%20Rations",
+    "sourceUrl": "https://wynncraft.com/item/Commander's%20Spyglass",
     "tutorials": []
   },
   "mob-highlands-soldier": {
     "summary": "Highlands Soldier drops 2 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Soldier Rations\n• Stolen Heirloom\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1387, 70, -938] radius 16",
+    "explanation": "Drops\n• Soldier Rations\n• Stolen Heirloom\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1212, 67, -980] radius 18",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Soldier%20Rations",
@@ -2946,8 +2946,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-hobgoblin-farmer": {
-    "summary": "Hobgoblin Farmer drops 1 ingredient across 1 mapped spawn point.",
-    "explanation": "Drops\n• Goblin Tooth\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [343, 47, -4890] radius 7",
+    "summary": "Hobgoblin Farmer drops 1 ingredient across 2 mapped spawn points.",
+    "explanation": "Drops\n• Goblin Tooth\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [410, 28, -4916] radius 20\n• [377, 47, -4892] radius 20",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Goblin%20Tooth",
@@ -3186,16 +3186,16 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-intense-weird": {
-    "summary": "Intense Weird drops 3 ingredients across 3 mapped spawn points.",
-    "explanation": "Drops\n• Arcane Anomaly\n• Gylia Essence\n• Overload Aspect\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-115, 38, -5395] radius 8\n• [-86, 42, -5375] radius 15\n• [-33, 33, -5346] radius 15",
+    "summary": "Intense Weird drops 3 ingredients across 8 mapped spawn points.",
+    "explanation": "Drops\n• Arcane Anomaly\n• Gylia Essence\n• Overload Aspect\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 8 unique spawn points recorded.\n• Spawn data forms 3 exact clusters.\n\nSample Coordinates\n• [-186, 48, -5124] radius 20\n• [-73, 43, -5049] radius 15\n• [-16, 44, -5083] radius 25\n• [-7, 43, -5140] radius 38\n• [-32, 37, -5196] radius 15\n• [12, 36, -5229] radius 15\n• [8, 43, -5310] radius 15\n• [-255, 41, -5313] radius 20",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/IntenseWeird.png/100px-IntenseWeird.png?373abd",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Arcane%20Anomaly",
     "tutorials": []
   },
   "mob-intermittenstallion": {
-    "summary": "Intermittenstallion drops 1 ingredient across 3 mapped spawn points.",
-    "explanation": "Drops\n• Intermittenstirrups\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-555, 70, -1219] radius 15\n• [-509, 70, -1103] radius 20\n• [-420, 70, -1071] radius 30",
+    "summary": "Intermittenstallion drops 1 ingredient across 1 mapped spawn point.",
+    "explanation": "Drops\n• Intermittenstirrups\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-400, 76, -1205] radius 45",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/Intermittenstallion.png/100px-Intermittenstallion.png?5e107c",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Intermittenstirrups",
@@ -3218,8 +3218,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-jad-lr-myconid": {
-    "summary": "Jad'lr Myconid drops 3 ingredients across 11 mapped spawn points.",
-    "explanation": "Drops\n• Elemental Crystal\n• Myconid Spores\n• Prismatic Spores\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 11 unique spawn points recorded.\n• Spawn data forms 5 exact clusters.\n\nSample Coordinates\n• [-886, 45, -4723] radius 5\n• [-920, 45, -4689] radius 5\n• [-979, 44, -4683] radius 5\n• [-1074, 44, -4507] radius 5\n• [-1017, 52, -4481] radius 5\n• [-1079, 44, -4436] radius 5\n• [-1024, 45, -4841] radius 5\n• [-1031, 45, -4858] radius 5\n• [-1127, 45, -5056] radius 5\n• [-1181, 45, -5101] radius 5\n• [-1233, 46, -4900] radius 5",
+    "summary": "Jad'lr Myconid drops 3 ingredients across 1 mapped spawn point.",
+    "explanation": "Drops\n• Elemental Crystal\n• Myconid Spores\n• Prismatic Spores\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-937, 47, -4701] radius 27",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/Jad%27lrMyconid.png/100px-Jad%27lrMyconid.png?3d51a7",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Elemental%20Crystal",
@@ -3235,7 +3235,7 @@ export const MOBS_CONTENT = {
   },
   "mob-jinkito": {
     "summary": "Jinkito drops 2 ingredients across 10 mapped spawn points.",
-    "explanation": "Drops\n• Cat Tail\n• Cat's Ears\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 10 unique spawn points recorded.\n• Spawn data forms 3 exact clusters.\n\nSample Coordinates\n• [568, 47, -4930] radius 15\n• [478, 47, -4895] radius 15\n• [578, 55, -4854] radius 15\n• [600, 54, -4788] radius 15\n• [636, 56, -4771] radius 15\n• [637, 54, -4731] radius 15\n• [460, 29, -4550] radius 10\n• [437, 29, -4520] radius 15\n• [462, 29, -4457] radius 15\n• [392, 45, -4444] radius 15",
+    "explanation": "Drops\n• Cat Tail\n• Cat's Ears\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 10 unique spawn points recorded.\n• Spawn data forms 3 exact clusters.\n\nSample Coordinates\n• [850, 47, -5464] radius 8\n• [841, 46, -5450] radius 11\n• [842, 47, -5406] radius 12\n• [849, 45, -5430] radius 10\n• [823, 45, -5429] radius 13\n• [150, 58, -5303] radius 15\n• [-15, 121, -5621] radius 12\n• [57, 118, -5612] radius 12\n• [97, 105, -5603] radius 10\n• [149, 65, -5568] radius 19",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/Jinkito.png/100px-Jinkito.png?25630b",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Cat's%20Ears",
@@ -3243,7 +3243,7 @@ export const MOBS_CONTENT = {
   },
   "mob-jinko-bandito": {
     "summary": "Jinko Bandito drops 3 ingredients across 10 mapped spawn points.",
-    "explanation": "Drops\n• Cat Tail\n• Cat's Ears\n• Sharp Claw\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 10 unique spawn points recorded.\n• Spawn data forms 3 exact clusters.\n\nSample Coordinates\n• [568, 47, -4930] radius 15\n• [478, 47, -4895] radius 15\n• [578, 55, -4854] radius 15\n• [600, 54, -4788] radius 15\n• [636, 56, -4771] radius 15\n• [637, 54, -4731] radius 15\n• [460, 29, -4550] radius 10\n• [437, 29, -4520] radius 15\n• [462, 29, -4457] radius 15\n• [392, 45, -4444] radius 15",
+    "explanation": "Drops\n• Cat Tail\n• Cat's Ears\n• Sharp Claw\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 10 unique spawn points recorded.\n• Spawn data forms 3 exact clusters.\n\nSample Coordinates\n• [850, 47, -5464] radius 8\n• [841, 46, -5450] radius 11\n• [842, 47, -5406] radius 12\n• [849, 45, -5430] radius 10\n• [823, 45, -5429] radius 13\n• [150, 58, -5303] radius 15\n• [-15, 121, -5621] radius 12\n• [57, 118, -5612] radius 12\n• [97, 105, -5603] radius 10\n• [149, 65, -5568] radius 19",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/JinkoBandito.png/100px-JinkoBandito.png?6ebe4c",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Cat's%20Ears",
@@ -3258,8 +3258,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-jinko-shanker": {
-    "summary": "Jinko Shanker drops 4 ingredients across 9 mapped spawn points.",
-    "explanation": "Drops\n• Cat Tail\n• Cat's Ears\n• Razor-Sharp Tooth\n• Sharp Claw\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 9 unique spawn points recorded.\n• Spawn data forms 3 exact clusters.\n\nSample Coordinates\n• [500, 29, -5012] radius 25\n• [463, 29, -4966] radius 20\n• [601, 29, -4937] radius 40\n• [626, 29, -4860] radius 25\n• [592, 29, -4687] radius 25\n• [546, 29, -4628] radius 30\n• [500, 29, -4583] radius 30\n• [356, 29, -4777] radius 20\n• [452, 46, -4591] radius 5",
+    "summary": "Jinko Shanker drops 4 ingredients across 10 mapped spawn points.",
+    "explanation": "Drops\n• Cat Tail\n• Cat's Ears\n• Razor-Sharp Tooth\n• Sharp Claw\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 10 unique spawn points recorded.\n• Spawn data forms 3 exact clusters.\n\nSample Coordinates\n• [850, 47, -5464] radius 8\n• [841, 46, -5450] radius 11\n• [842, 47, -5406] radius 12\n• [849, 45, -5430] radius 10\n• [823, 45, -5429] radius 13\n• [150, 58, -5303] radius 15\n• [-15, 121, -5621] radius 12\n• [57, 118, -5612] radius 12\n• [97, 105, -5603] radius 10\n• [149, 65, -5568] radius 19",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/JinkoShanker.png/100px-JinkoShanker.png?309973",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Cat's%20Ears",
@@ -3386,16 +3386,16 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-l-2nforcer-drone": {
-    "summary": "L-2nforcer Drone drops 2 ingredients across 5 mapped spawn points.",
-    "explanation": "Drops\n• Enhanced Post-Processing Microchip\n• Repair Toolkit\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 5 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-1638, 80, -2248] radius 20\n• [-1706, 70, -2516] radius 20\n• [-1721, 77, -2560] radius 20\n• [-1759, 73, -2563] radius 20\n• [-1767, 73, -2620] radius 40",
+    "summary": "L-2nforcer Drone drops 3 ingredients across 2 mapped spawn points.",
+    "explanation": "Drops\n• Enhanced Post-Processing Microchip\n• Repair Toolkit\n• Robot Antenna\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1623, 40, -2454] radius 20\n• [-1619, 41, -2475] radius 20",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Enhanced%20Post-Processing%20Microchip",
     "tutorials": []
   },
   "mob-l-2unition-drone": {
-    "summary": "L-2unition Drone drops 2 ingredients across 24 mapped spawn points.",
-    "explanation": "Drops\n• Enhanced Post-Processing Microchip\n• Repair Toolkit\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 24 unique spawn points recorded.\n• Spawn data forms 5 exact clusters.\n\nSample Coordinates\n• [-1664, 100, -2663] radius 0\n• [-1672, 81, -2624] radius 3\n• [-1698, 75, -2634] radius 6\n• [-1640, 81, -2543] radius 4\n• [-1585, 81, -2573] radius 6\n• [-1655, 80, -2248] radius 6\n• [-1608, 79, -2250] radius 6\n• [-1552, 75, -2241] radius 6\n• [-1742, 75, -2555] radius 6\n• [-1777, 69, -2542] radius 6\n• [-1772, 73, -2647] radius 6\n• [-1319, 53, -2464] radius 0",
+    "summary": "L-2unition Drone drops 3 ingredients across 24 mapped spawn points.",
+    "explanation": "Drops\n• Enhanced Post-Processing Microchip\n• Repair Toolkit\n• Robot Antenna\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 24 unique spawn points recorded.\n• Spawn data forms 5 exact clusters.\n\nSample Coordinates\n• [-1664, 100, -2663] radius 0\n• [-1672, 81, -2624] radius 3\n• [-1698, 75, -2634] radius 6\n• [-1640, 81, -2543] radius 4\n• [-1585, 81, -2573] radius 6\n• [-1655, 80, -2248] radius 6\n• [-1608, 79, -2250] radius 6\n• [-1552, 75, -2241] radius 6\n• [-1742, 75, -2555] radius 6\n• [-1777, 69, -2542] radius 6\n• [-1772, 73, -2647] radius 6\n• [-1319, 53, -2464] radius 0",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Enhanced%20Post-Processing%20Microchip",
@@ -3531,7 +3531,7 @@ export const MOBS_CONTENT = {
   },
   "mob-light-weird": {
     "summary": "Light Weird drops 1 ingredient across 2 mapped spawn points.",
-    "explanation": "Drops\n• Arcane Anomaly\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-851, 46, -4256] radius 7\n• [-887, 56, -4202] radius 7",
+    "explanation": "Drops\n• Arcane Anomaly\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1080, 44, -4415] radius 30\n• [-988, 72, -4392] radius 30",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/LightWeird.png/100px-LightWeird.png?9527d7",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Arcane%20Anomaly",
@@ -3562,8 +3562,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-lion-trainer": {
-    "summary": "Lion Trainer drops 1 ingredient across 4 mapped spawn points.",
-    "explanation": "Drops\n• Rotten Flesh\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 4 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [728, 87, -2266] radius 8\n• [801, 76, -2286] radius 5\n• [740, 49, -2297] radius 8\n• [757, 41, -2299] radius 8",
+    "summary": "Lion Trainer drops 1 ingredient across 1 mapped spawn point.",
+    "explanation": "Drops\n• Rotten Flesh\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [895, 30, -2328] radius 10",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/LionTrainer.png/100px-LionTrainer.png?814560",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Rotten%20Flesh",
@@ -3634,11 +3634,11 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-luciola-larvae": {
-    "summary": "Luciola Larvae drops 2 ingredients across 3 mapped spawn points.",
-    "explanation": "Drops\n• Luciolum\n• Luminescent Ink\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-728, 100, -1135] radius 18\n• [-765, 103, -1172] radius 15\n• [-783, 89, -1088] radius 10",
+    "summary": "Luciola Larvae drops 3 ingredients across 3 mapped spawn points.",
+    "explanation": "Drops\n• Jolting Geode\n• Luciolum\n• Luminescent Ink\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-728, 100, -1135] radius 18\n• [-765, 103, -1172] radius 15\n• [-783, 89, -1088] radius 10",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/LuciolaLarvae.png/100px-LuciolaLarvae.png?7d7d1e",
     "gallery": [],
-    "sourceUrl": "https://wynncraft.com/item/Luciolum",
+    "sourceUrl": "https://wynncraft.com/item/Jolting%20Geode",
     "tutorials": []
   },
   "mob-lucy": {
@@ -3666,8 +3666,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-lunar-parasite": {
-    "summary": "Lunar Parasite drops 3 ingredients across 6 mapped spawn points.",
-    "explanation": "Drops\n• Lunar Chunk\n• Lunar Dust\n• Lunar Shard\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 6 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [941, 56, -2612] radius 1\n• [968, 58, -2639] radius 2\n• [1014, 62, -2649] radius 0\n• [1000, 75, -2594] radius 5\n• [1026, 80, -2601] radius 5\n• [1065, 69, -2636] radius 5",
+    "summary": "Lunar Parasite drops 3 ingredients across 4 mapped spawn points.",
+    "explanation": "Drops\n• Lunar Chunk\n• Lunar Dust\n• Lunar Shard\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 4 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [1002, 46, -2555] radius 4\n• [925, 35, -2590] radius 7\n• [862, 43, -2609] radius 7\n• [1049, 77, -2621] radius 8",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/LunarParasite.png/100px-LunarParasite.png?248a77",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Lunar%20Chunk",
@@ -3690,16 +3690,16 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-lunatic-interloper": {
-    "summary": "Lunatic Interloper drops 4 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Lunar Charm\n• Lunar Chunk\n• Lunar Dust\n• Lunar Shard\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1045, 37, -2655] radius 8",
+    "summary": "Lunatic Interloper drops 4 ingredients across 4 mapped spawn points.",
+    "explanation": "Drops\n• Lunar Charm\n• Lunar Chunk\n• Lunar Dust\n• Lunar Shard\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 4 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [962, 46, -2547] radius 6\n• [978, 37, -2611] radius 10\n• [976, 82, -2599] radius 2\n• [1064, 69, -2636] radius 6",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/LunaticInterloper.png/100px-LunaticInterloper.png?dbdfa3",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Lunar%20Charm",
     "tutorials": []
   },
   "mob-lunatic-remnant": {
-    "summary": "Lunatic Remnant drops 3 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Lunar Chunk\n• Lunar Dust\n• Lunar Shard\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1045, 37, -2655] radius 8",
+    "summary": "Lunatic Remnant drops 3 ingredients across 4 mapped spawn points.",
+    "explanation": "Drops\n• Lunar Chunk\n• Lunar Dust\n• Lunar Shard\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 4 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [962, 46, -2547] radius 6\n• [978, 37, -2611] radius 10\n• [976, 82, -2599] radius 2\n• [1064, 69, -2636] radius 6",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/LunaticRemnant.png/100px-LunaticRemnant.png?1cf670",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Lunar%20Chunk",
@@ -3746,24 +3746,24 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-lyran-cub": {
-    "summary": "Lyran Cub drops 1 ingredient across 19 mapped spawn points.",
-    "explanation": "Drops\n• Fancy Pelt\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 19 unique spawn points recorded.\n• Spawn data forms 4 exact clusters.\n\nSample Coordinates\n• [143, 61, -4597] radius 7\n• [178, 75, -4559] radius 12\n• [154, 75, -4556] radius 5\n• [157, 63, -4476] radius 7\n• [222, 84, -4512] radius 15\n• [241, 100, -4514] radius 7\n• [212, 93, -4619] radius 14\n• [233, 95, -4586] radius 15\n• [250, 104, -4542] radius 15\n• [61, 45, -4694] radius 12\n• [75, 49, -4724] radius 12\n• [59, 48, -4751] radius 10",
+    "summary": "Lyran Cub drops 1 ingredient across 4 mapped spawn points.",
+    "explanation": "Drops\n• Fancy Pelt\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 4 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [63, 44, -4432] radius 30\n• [71, 44, -4924] radius 50\n• [-94, 110, -4389] radius 20\n• [-36, 75, -4495] radius 25",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/LyranCub.png/100px-LyranCub.png?5c8551",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Fancy%20Pelt",
     "tutorials": []
   },
   "mob-lyran-soldier": {
-    "summary": "Lyran Soldier drops 2 ingredients across 9 mapped spawn points.",
-    "explanation": "Drops\n• Fancy Pelt\n• Sharp Claw\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 9 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [800, 67, -5228] radius 5\n• [778, 61, -5245] radius 5\n• [815, 53, -5256] radius 5\n• [824, 51, -5251] radius 5\n• [832, 50, -5245] radius 5\n• [841, 47, -5236] radius 5\n• [850, 45, -5233] radius 5\n• [863, 43, -5240] radius 5\n• [869, 44, -5247] radius 5",
+    "summary": "Lyran Soldier drops 2 ingredients across 4 mapped spawn points.",
+    "explanation": "Drops\n• Fancy Pelt\n• Sharp Claw\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 4 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [63, 44, -4432] radius 30\n• [71, 44, -4924] radius 50\n• [-94, 110, -4389] radius 20\n• [-36, 75, -4495] radius 25",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/LyranSoldier.png/100px-LyranSoldier.png?97eb1b",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Fancy%20Pelt",
     "tutorials": []
   },
   "mob-lyran-veteran": {
-    "summary": "Lyran Veteran drops 3 ingredients across 3 mapped spawn points.",
-    "explanation": "Drops\n• Fancy Pelt\n• Razor-Sharp Tooth\n• Sharp Claw\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [809, 69, -5210] radius 10\n• [786, 65, -5224] radius 13\n• [868, 44, -5229] radius 10",
+    "summary": "Lyran Veteran drops 3 ingredients across 4 mapped spawn points.",
+    "explanation": "Drops\n• Fancy Pelt\n• Razor-Sharp Tooth\n• Sharp Claw\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 4 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [63, 44, -4432] radius 30\n• [71, 44, -4924] radius 50\n• [-94, 110, -4389] radius 20\n• [-36, 75, -4495] radius 25",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/LyranVeteran.png/100px-LyranVeteran.png?db6a55",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Fancy%20Pelt",
@@ -3826,8 +3826,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-magnetized-weird": {
-    "summary": "Magnetized Weird drops 3 ingredients across 3 mapped spawn points.",
-    "explanation": "Drops\n• Arcane Anomaly\n• Gylia Essence\n• Repulsive Aspect\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-115, 38, -5395] radius 8\n• [-86, 42, -5375] radius 15\n• [-33, 33, -5346] radius 15",
+    "summary": "Magnetized Weird drops 3 ingredients across 8 mapped spawn points.",
+    "explanation": "Drops\n• Arcane Anomaly\n• Gylia Essence\n• Repulsive Aspect\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 8 unique spawn points recorded.\n• Spawn data forms 3 exact clusters.\n\nSample Coordinates\n• [-186, 48, -5124] radius 20\n• [-73, 43, -5049] radius 15\n• [-16, 44, -5083] radius 25\n• [-7, 43, -5140] radius 38\n• [-32, 37, -5196] radius 15\n• [12, 36, -5229] radius 15\n• [8, 43, -5310] radius 15\n• [-255, 41, -5313] radius 20",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/MagnetizedWeird.png/100px-MagnetizedWeird.png?b6b2a6",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Arcane%20Anomaly",
@@ -3890,8 +3890,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-marksman-drone": {
-    "summary": "Marksman Drone drops 2 ingredients across 13 mapped spawn points.",
-    "explanation": "Drops\n• Fiberglass Frame\n• Linear Accelerator\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 13 unique spawn points recorded.\n• Spawn data forms 12 exact clusters.\n\nSample Coordinates\n• [-1268, 59, -3370] radius 0\n• [-1337, 74, -3365] radius 0\n• [-1575, 52, -3446] radius 0\n• [-1596, 48, -3319] radius 0\n• [-1668, 62, -3135] radius 0\n• [-1710, 90, -2701] radius 0\n• [-1768, 86, -2542] radius 0\n• [-1363, 102, -2625] radius 0\n• [-1871, 93, -2802] radius 0\n• [-1795, 90, -2727] radius 0\n• [-1475, 78, -2629] radius 0\n• [-1345, 35, -2745] radius 0",
+    "summary": "Marksman Drone drops 4 ingredients across 13 mapped spawn points.",
+    "explanation": "Drops\n• Fiberglass Frame\n• Linear Accelerator\n• Optic Fiber\n• Shorting Wire\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 13 unique spawn points recorded.\n• Spawn data forms 12 exact clusters.\n\nSample Coordinates\n• [-1268, 59, -3370] radius 0\n• [-1337, 74, -3365] radius 0\n• [-1575, 52, -3446] radius 0\n• [-1596, 48, -3319] radius 0\n• [-1668, 62, -3135] radius 0\n• [-1710, 90, -2701] radius 0\n• [-1768, 86, -2542] radius 0\n• [-1363, 102, -2625] radius 0\n• [-1871, 93, -2802] radius 0\n• [-1795, 90, -2727] radius 0\n• [-1475, 78, -2629] radius 0\n• [-1345, 35, -2745] radius 0",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/MarksmanDrone.png/92px-MarksmanDrone.png?4bd093",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Fiberglass%20Frame",
@@ -4067,7 +4067,7 @@ export const MOBS_CONTENT = {
   },
   "mob-mistdawn-speaker": {
     "summary": "Mistdawn Speaker drops 4 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Gold Nugget\n• Natural Nitrates\n• Runner's Bandages\n• Stretched Rawhide\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1711, 22, -4934] radius 12",
+    "explanation": "Drops\n• Gold Nugget\n• Natural Nitrates\n• Runner's Bandages\n• Stretched Rawhide\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1705, 29, -4980] radius 12",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/MistdawnSpeaker.png/100px-MistdawnSpeaker.png?63d10a",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Gold%20Nugget",
@@ -4090,8 +4090,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-mm-0actical-unit": {
-    "summary": "MM-0actical Unit drops 4 ingredients across 4 mapped spawn points.",
-    "explanation": "Drops\n• Autonomous Core\n• Insulated Wiring\n• Linear Accelerator\n• Silver Bullet\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 4 unique spawn points recorded.\n• Spawn data forms 4 exact clusters.\n\nSample Coordinates\n• [-1501, 75, -2530] radius 30\n• [-1796, 100, -2661] radius 0\n• [-1417, 116, -2742] radius 0\n• [-1575, 63, -3340] radius 0",
+    "summary": "MM-0actical Unit drops 5 ingredients across 4 mapped spawn points.",
+    "explanation": "Drops\n• Autonomous Core\n• Defective Circuits\n• Insulated Wiring\n• Linear Accelerator\n• Silver Bullet\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 4 unique spawn points recorded.\n• Spawn data forms 4 exact clusters.\n\nSample Coordinates\n• [-1501, 75, -2530] radius 30\n• [-1796, 100, -2661] radius 0\n• [-1417, 116, -2742] radius 0\n• [-1575, 63, -3340] radius 0",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Autonomous%20Core",
@@ -4099,7 +4099,7 @@ export const MOBS_CONTENT = {
   },
   "mob-molten-archer": {
     "summary": "Molten Archer drops 2 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Melted Steel\n• Terra Steel\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1422, 68, -5604] radius 25",
+    "explanation": "Drops\n• Melted Steel\n• Terra Steel\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1389, 8, -5300] radius 5",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/MoltenArcher.png/100px-MoltenArcher.png?5c23c8",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Melted%20Steel",
@@ -4115,7 +4115,7 @@ export const MOBS_CONTENT = {
   },
   "mob-molten-knight": {
     "summary": "Molten Knight drops 2 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Melted Steel\n• Terra Steel\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1422, 68, -5604] radius 25",
+    "explanation": "Drops\n• Melted Steel\n• Terra Steel\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1389, 8, -5300] radius 5",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/MoltenKnight.png/100px-MoltenKnight.png?417ca7",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Melted%20Steel",
@@ -4306,16 +4306,16 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-mutated-lutho-citizen": {
-    "summary": "Mutated Lutho Citizen drops 3 ingredients across 2 mapped spawn points.",
-    "explanation": "Drops\n• Doom Stone\n• Sludge Parasite\n• Toxic Lumps\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [894, 108, -882] radius 40\n• [1021, 125, -1053] radius 37",
+    "summary": "Mutated Lutho Citizen drops 3 ingredients across 7 mapped spawn points.",
+    "explanation": "Drops\n• Doom Stone\n• Sludge Parasite\n• Toxic Lumps\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 7 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [902, 90, -969] radius 10\n• [930, 90, -972] radius 10\n• [873, 96, -906] radius 10\n• [1065, 76, -970] radius 10\n• [1013, 93, -1048] radius 10\n• [906, 131, -999] radius 10\n• [992, 126, -1077] radius 10",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/MutatedLuthoCitizen.png/100px-MutatedLuthoCitizen.png?bf7325",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Doom%20Stone",
     "tutorials": []
   },
   "mob-mutineer": {
-    "summary": "Mutineer drops 2 ingredients across 4 mapped spawn points.",
-    "explanation": "Drops\n• Conscription Letter\n• Gold Tooth\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 4 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [597, 13, -2020] radius 10\n• [457, 23, -2021] radius 10\n• [446, 37, -2063] radius 7\n• [431, 28, -2022] radius 10",
+    "summary": "Mutineer drops 2 ingredients across 3 mapped spawn points.",
+    "explanation": "Drops\n• Conscription Letter\n• Gold Tooth\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [443, 16, -1990] radius 15\n• [581, 33, -2084] radius 10\n• [568, 12, -2010] radius 15",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/Mutineer.png/100px-Mutineer.png?876fd1",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Conscription%20Letter",
@@ -4338,8 +4338,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-naga-fighter": {
-    "summary": "Naga Fighter drops 1 ingredient across 8 mapped spawn points.",
-    "explanation": "Drops\n• Naga Tail\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 8 unique spawn points recorded.\n• Spawn data forms 3 exact clusters.\n\nSample Coordinates\n• [-2030, 57, -5312] radius 45\n• [-1832, 54, -5304] radius 20\n• [-1619, 52, -5201] radius 35\n• [-1619, 55, -5201] radius 35\n• [-2126, 54, -5463] radius 45\n• [-2032, 47, -5527] radius 55\n• [-1976, 54, -5539] radius 60\n• [-1940, 56, -5364] radius 20",
+    "summary": "Naga Fighter drops 1 ingredient across 1 mapped spawn point.",
+    "explanation": "Drops\n• Naga Tail\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-2072, 71, -5094] radius 1",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/NagaFighter.png/100px-NagaFighter.png?59e6b9",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Naga%20Tail",
@@ -4418,8 +4418,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-obelisk-of-inversion": {
-    "summary": "Obelisk Of Inversion drops 8 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Accursed Effigy\n• Evolving Spores\n• Hellish Cinders\n• Nova Bloom\n• Obelisk Core\n• Ritual Catalyst\n• Shadow of Ruin\n• Tenebrous Plasma\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-798, 44, -5467] radius 40",
+    "summary": "Obelisk Of Inversion drops 5 ingredients across 2 mapped spawn points.",
+    "explanation": "Drops\n• Accursed Effigy\n• Evolving Spores\n• Nova Bloom\n• Obelisk Core\n• Shadow of Ruin\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-730, 45, -5510] radius 80\n• [-750, 46, -5175] radius 100",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/ObeliskOfInversion.png/100px-ObeliskOfInversion.png?802614",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Accursed%20Effigy",
@@ -4434,8 +4434,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-obturate-sludge": {
-    "summary": "Obturate Sludge drops 2 ingredients across 8 mapped spawn points.",
-    "explanation": "Drops\n• Mucoid Matter\n• Oddly Untouched Marshmallow\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 8 unique spawn points recorded.\n• Spawn data forms 7 exact clusters.\n\nSample Coordinates\n• [-1814, 43, -886] radius 2\n• [-1767, 21, -691] radius 4\n• [-1781, 29, -434] radius 3\n• [-1926, 27, -542] radius 3\n• [-1953, 26, -583] radius 3\n• [-2268, 39, -609] radius 2\n• [-2242, 33, -798] radius 2\n• [-1947, 27, -756] radius 4",
+    "summary": "Obturate Sludge drops 2 ingredients across 7 mapped spawn points.",
+    "explanation": "Drops\n• Mucoid Matter\n• Oddly Untouched Marshmallow\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 7 unique spawn points recorded.\n• Spawn data forms 4 exact clusters.\n\nSample Coordinates\n• [-1827, 30, -786] radius 3\n• [-2003, 27, -715] radius 2\n• [-1941, 27, -545] radius 2\n• [-2260, 40, -604] radius 3\n• [-2275, 51, -655] radius 3\n• [-2076, 45, -619] radius 3\n• [-1975, 31, -655] radius 2",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/ObturateSludge.png/100px-ObturateSludge.png?56167a",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Mucoid%20Matter",
@@ -4443,7 +4443,7 @@ export const MOBS_CONTENT = {
   },
   "mob-ocean-waker": {
     "summary": "Ocean Waker drops 2 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Dead Naval Shard\n• Oceanic Silt\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-254, 35, -2703] radius 15",
+    "explanation": "Drops\n• Dead Naval Shard\n• Oceanic Silt\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-251, 23, -2751] radius 5",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/OceanWaker.png/100px-OceanWaker.png?7ec9ac",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Dead%20Naval%20Shard",
@@ -4522,16 +4522,16 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-overgrown-zombie": {
-    "summary": "Overgrown Zombie drops 3 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Ancient Coins\n• Rotten Flesh\n• Zombie Eye\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-438, 19, -2878] radius 3",
+    "summary": "Overgrown Zombie drops 3 ingredients across 6 mapped spawn points.",
+    "explanation": "Drops\n• Ancient Coins\n• Rotten Flesh\n• Zombie Eye\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 6 unique spawn points recorded.\n• Spawn data forms 6 exact clusters.\n\nSample Coordinates\n• [-508, 65, -719] radius 5\n• [-516, 121, -827] radius 5\n• [-603, 60, -755] radius 5\n• [-693, 72, -764] radius 5\n• [-543, 86, -972] radius 5\n• [-438, 19, -2878] radius 3",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/OvergrownZombie.png/100px-OvergrownZombie.png?76e412",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Ancient%20Coins",
     "tutorials": []
   },
   "mob-ozone-weird": {
-    "summary": "Ozone Weird drops 3 ingredients across 3 mapped spawn points.",
-    "explanation": "Drops\n• Arcane Anomaly\n• Atmospheric Aspect\n• Gylia Essence\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-115, 38, -5395] radius 8\n• [-86, 42, -5375] radius 15\n• [-33, 33, -5346] radius 15",
+    "summary": "Ozone Weird drops 3 ingredients across 8 mapped spawn points.",
+    "explanation": "Drops\n• Arcane Anomaly\n• Atmospheric Aspect\n• Gylia Essence\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 8 unique spawn points recorded.\n• Spawn data forms 3 exact clusters.\n\nSample Coordinates\n• [-186, 48, -5124] radius 20\n• [-73, 43, -5049] radius 15\n• [-16, 44, -5083] radius 25\n• [-7, 43, -5140] radius 38\n• [-32, 37, -5196] radius 15\n• [12, 36, -5229] radius 15\n• [8, 43, -5310] radius 15\n• [-255, 41, -5313] radius 20",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/OzoneWeird.png/100px-OzoneWeird.png?75c400",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Arcane%20Anomaly",
@@ -4602,8 +4602,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-penguin": {
-    "summary": "Penguin drops 3 ingredients across 4 mapped spawn points.",
-    "explanation": "Drops\n• Large Lapis\n• Penguin Egg\n• Snow Clump\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 4 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-9, 71, -850] radius 20\n• [-2, 70, -940] radius 20\n• [-11, 72, -723] radius 22\n• [-93, 70, -861] radius 22",
+    "summary": "Penguin drops 3 ingredients across 2 mapped spawn points.",
+    "explanation": "Drops\n• Large Lapis\n• Penguin Egg\n• Snow Clump\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-35, 72, -729] radius 70\n• [9, 68, -902] radius 70",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/Penguin.png/100px-Penguin.png?b374fe",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Large%20Lapis",
@@ -4650,8 +4650,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-phrumkin-prankster": {
-    "summary": "Phrumkin Prankster drops 3 ingredients across 2 mapped spawn points.",
-    "explanation": "Drops\n• Ignited Faebloom\n• Leafy Stalk\n• Phrumkin Seeds\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1328, 43, -4612] radius 24\n• [-1424, 48, -4598] radius 20",
+    "summary": "Phrumkin Prankster drops 3 ingredients across 11 mapped spawn points.",
+    "explanation": "Drops\n• Ignited Faebloom\n• Leafy Stalk\n• Phrumkin Seeds\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 11 unique spawn points recorded.\n• Spawn data forms 4 exact clusters.\n\nSample Coordinates\n• [-1298, 47, -4982] radius 10\n• [-1413, 47, -4968] radius 18\n• [-1393, 47, -5008] radius 10\n• [-1362, 53, -4761] radius 7\n• [-1397, 41, -4647] radius 10\n• [-1288, 44, -4709] radius 20\n• [-1199, 55, -4718] radius 12\n• [-1217, 44, -4654] radius 14\n• [-1328, 43, -4612] radius 16\n• [-1424, 48, -4598] radius 12\n• [-1320, 44, -4506] radius 10",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/PhrumkinPrankster.png/100px-PhrumkinPrankster.png?a12de6",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Ignited%20Faebloom",
@@ -4698,16 +4698,16 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-pink-sheep-of-greatness": {
-    "summary": "Pink Sheep of Greatness drops 1 ingredient across 1 mapped spawn point.",
-    "explanation": "Drops\n• Pink Wool\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [367, 67, -1602] radius 10",
+    "summary": "Pink Sheep of Greatness drops 3 ingredients across 1 mapped spawn point.",
+    "explanation": "Drops\n• Pink Wool\n• Wool\n• Wooly Armour\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [367, 67, -1602] radius 10",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/PinkSheepofGreatness.png/100px-PinkSheepofGreatness.png?be7353",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Pink%20Wool",
     "tutorials": []
   },
   "mob-pirate": {
-    "summary": "Pirate drops 2 ingredients across 16 mapped spawn points.",
-    "explanation": "Drops\n• Aquatic Beauty\n• Pirate Beard\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 16 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-1222, 54, -3282] radius 5\n• [-1228, 54, -3276] radius 10\n• [-1242, 52, -3277] radius 5\n• [-1242, 49, -3283] radius 4\n• [-630, 42, -3140] radius 10\n• [-644, 54, -3116] radius 3\n• [-699, 53, -3081] radius 5\n• [-651, 53, -3061] radius 5\n• [-622, 53, -3075] radius 5\n• [-700, 38, -3077] radius 5\n• [-675, 38, -3081] radius 5\n• [-649, 37, -3074] radius 5",
+    "summary": "Pirate drops 2 ingredients across 13 mapped spawn points.",
+    "explanation": "Drops\n• Aquatic Beauty\n• Pirate Beard\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 13 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-1200, 65, -3298] radius 0\n• [-630, 42, -3140] radius 10\n• [-644, 54, -3116] radius 3\n• [-699, 53, -3081] radius 5\n• [-651, 53, -3061] radius 5\n• [-622, 53, -3075] radius 5\n• [-700, 38, -3077] radius 5\n• [-675, 38, -3081] radius 5\n• [-649, 37, -3074] radius 5\n• [-664, 38, -3047] radius 5\n• [-640, 38, -3046] radius 5\n• [-623, 38, -3073] radius 5",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/%22Pirate%22.png/100px-%22Pirate%22.png?161370",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Aquatic%20Beauty",
@@ -4754,8 +4754,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-poison-tendril": {
-    "summary": "Poison Tendril drops 3 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Doom Stone\n• Sludge Parasite\n• Viral Tentacle\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [937, 4, -979] radius 30",
+    "summary": "Poison Tendril drops 3 ingredients across 2 mapped spawn points.",
+    "explanation": "Drops\n• Doom Stone\n• Sludge Parasite\n• Viral Tentacle\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [918, 91, -955] radius 70\n• [1062, 129, -973] radius 70",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/PoisonTendril.png/100px-PoisonTendril.png?22161a",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Doom%20Stone",
@@ -4843,7 +4843,7 @@ export const MOBS_CONTENT = {
   },
   "mob-prismatic-weird": {
     "summary": "Prismatic Weird drops 2 ingredients across 2 mapped spawn points.",
-    "explanation": "Drops\n• Arcane Anomaly\n• Evaporated Aspect\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-851, 46, -4256] radius 7\n• [-887, 56, -4202] radius 7",
+    "explanation": "Drops\n• Arcane Anomaly\n• Evaporated Aspect\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1080, 44, -4415] radius 30\n• [-988, 72, -4392] radius 30",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/PrismaticWeird.png/100px-PrismaticWeird.png?a4d95c",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Arcane%20Anomaly",
@@ -4866,16 +4866,16 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-protective-osprey": {
-    "summary": "Protective Osprey drops 1 ingredient across 4 mapped spawn points.",
-    "explanation": "Drops\n• Osprey Egg\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 4 unique spawn points recorded.\n• Spawn data forms 4 exact clusters.\n\nSample Coordinates\n• [-1524, 121, -1417] radius 5\n• [-1250, 118, -1425] radius 5\n• [-1110, 119, -1359] radius 5\n• [-1469, 101, -932] radius 5",
+    "summary": "Protective Osprey drops 1 ingredient across 2 mapped spawn points.",
+    "explanation": "Drops\n• Osprey Egg\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-1269, 140, -1006] radius 0\n• [-1363, 138, -1011] radius 0",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Osprey%20Egg",
     "tutorials": []
   },
   "mob-pu-0iner-patroller": {
-    "summary": "PU-0iner Patroller drops 1 ingredient across 24 mapped spawn points.",
-    "explanation": "Drops\n• Repair Toolkit\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 24 unique spawn points recorded.\n• Spawn data forms 12 exact clusters.\n\nSample Coordinates\n• [-1673, 64, -2665] radius 2\n• [-1890, 24, -2770] radius 2\n• [-1864, 23, -2744] radius 2\n• [-1952, 85, -3333] radius 8\n• [-1271, 27, -3206] radius 2\n• [-1247, 32, -3202] radius 2\n• [-1344, 75, -3077] radius 1\n• [-1355, 75, -3094] radius 1\n• [-1322, 44, -3057] radius 2\n• [-1424, 48, -2805] radius 0\n• [-1455, 23, -2727] radius 2\n• [-1594, 27, -2310] radius 2",
+    "summary": "PU-0iner Patroller drops 2 ingredients across 2 mapped spawn points.",
+    "explanation": "Drops\n• Repair Toolkit\n• Robot Antenna\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1623, 40, -2454] radius 20\n• [-1619, 41, -2475] radius 20",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Repair%20Toolkit",
@@ -4970,8 +4970,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-rain-cloud-ram": {
-    "summary": "Rain Cloud Ram drops 1 ingredient across 3 mapped spawn points.",
-    "explanation": "Drops\n• Storm Horn\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [779, 84, -4736] radius 10\n• [763, 89, -4730] radius 7\n• [760, 125, -4760] radius 4",
+    "summary": "Rain Cloud Ram drops 1 ingredient across 9 mapped spawn points.",
+    "explanation": "Drops\n• Storm Horn\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 9 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [1385, 118, -4263] radius 25\n• [1323, 96, -4334] radius 20\n• [763, 45, -4565] radius 20\n• [744, 62, -4589] radius 22\n• [709, 43, -4652] radius 30\n• [733, 44, -4692] radius 30\n• [740, 81, -4797] radius 25\n• [756, 81, -4877] radius 20\n• [673, 87, -4653] radius 20",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/RainCloudRam.png/100px-RainCloudRam.png?2fa2b9",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Storm%20Horn",
@@ -5034,8 +5034,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-rebel-cow": {
-    "summary": "Rebel Cow drops 1 ingredient across 8 mapped spawn points.",
-    "explanation": "Drops\n• Leather\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 8 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-803, 67, -1909] radius 30\n• [923, 45, -1616] radius 1\n• [920, 45, -1619] radius 1\n• [911, 45, -1607] radius 1\n• [946, 45, -1617] radius 1\n• [968, 45, -1627] radius 1\n• [973, 45, -1624] radius 1\n• [1005, 44, -1648] radius 1",
+    "summary": "Rebel Cow drops 1 ingredient across 7 mapped spawn points.",
+    "explanation": "Drops\n• Leather\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 7 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [923, 45, -1616] radius 1\n• [920, 45, -1619] radius 1\n• [911, 45, -1607] radius 1\n• [946, 45, -1617] radius 1\n• [968, 45, -1627] radius 1\n• [973, 45, -1624] radius 1\n• [1005, 44, -1648] radius 1",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Leather",
@@ -5058,8 +5058,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-redline-weird": {
-    "summary": "Redline Weird drops 5 ingredients across 3 mapped spawn points.",
-    "explanation": "Drops\n• Arcane Anomaly\n• Erratic Aspect\n• Gylia Essence\n• Igneous Aspect\n• Repulsive Aspect\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-115, 38, -5395] radius 8\n• [-86, 42, -5375] radius 15\n• [-33, 33, -5346] radius 15",
+    "summary": "Redline Weird drops 5 ingredients across 8 mapped spawn points.",
+    "explanation": "Drops\n• Arcane Anomaly\n• Erratic Aspect\n• Gylia Essence\n• Igneous Aspect\n• Repulsive Aspect\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 8 unique spawn points recorded.\n• Spawn data forms 3 exact clusters.\n\nSample Coordinates\n• [-186, 48, -5124] radius 20\n• [-73, 43, -5049] radius 15\n• [-16, 44, -5083] radius 25\n• [-7, 43, -5140] radius 38\n• [-32, 37, -5196] radius 15\n• [12, 36, -5229] radius 15\n• [8, 43, -5310] radius 15\n• [-255, 41, -5313] radius 20",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/RedlineWeird.png/100px-RedlineWeird.png?ed5b7c",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Arcane%20Anomaly",
@@ -5122,8 +5122,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-rising-weird": {
-    "summary": "Rising Weird drops 2 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Arcane Anomaly\n• Compressed Aspect\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-950, 64, -4337] radius 14",
+    "summary": "Rising Weird drops 2 ingredients across 2 mapped spawn points.",
+    "explanation": "Drops\n• Arcane Anomaly\n• Compressed Aspect\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1080, 44, -4415] radius 30\n• [-988, 72, -4392] radius 30",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/RisingWeird.png/100px-RisingWeird.png?3da204",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Arcane%20Anomaly",
@@ -5194,8 +5194,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-roaming-zombie": {
-    "summary": "Roaming Zombie drops 3 ingredients across 11 mapped spawn points.",
-    "explanation": "Drops\n• Decaying Skin\n• Muscle\n• Rotten Flesh\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 11 unique spawn points recorded.\n• Spawn data forms 7 exact clusters.\n\nSample Coordinates\n• [507, 62, -1931] radius 4\n• [309, 68, -1830] radius 5\n• [286, 55, -1911] radius 5\n• [58, 56, -1866] radius 5\n• [160, 49, -1974] radius 5\n• [64, 50, -2065] radius 5\n• [-2, 61, -2027] radius 5\n• [373, 50, -1971] radius 5\n• [406, 43, -2023] radius 5\n• [295, 51, -1975] radius 5\n• [171, 48, -2071] radius 2",
+    "summary": "Roaming Zombie drops 3 ingredients across 1 mapped spawn point.",
+    "explanation": "Drops\n• Decaying Skin\n• Muscle\n• Rotten Flesh\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [246, 41, -2069] radius 30",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/RoamingZombie.png/100px-RoamingZombie.png?754dc1",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Decaying%20Skin",
@@ -5291,7 +5291,7 @@ export const MOBS_CONTENT = {
   },
   "mob-roothome-scamp": {
     "summary": "Roothome Scamp drops 8 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Gold Nugget\n• Natural Nitrates\n• Rotten Log\n• Runner's Bandages\n• Shimmering Jewel\n• Stretched Rawhide\n• Torn Rawhide\n• Wood Shavings\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1711, 22, -4934] radius 12",
+    "explanation": "Drops\n• Gold Nugget\n• Natural Nitrates\n• Rotten Log\n• Runner's Bandages\n• Shimmering Jewel\n• Stretched Rawhide\n• Torn Rawhide\n• Wood Shavings\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1705, 29, -4980] radius 12",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/RoothomeScamp.png/100px-RoothomeScamp.png?96d900",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Gold%20Nugget",
@@ -5443,23 +5443,23 @@ export const MOBS_CONTENT = {
   },
   "mob-salty-sandpile": {
     "summary": "Salty Sandpile drops 2 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Desert Fossil\n• Soft Sand\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1305, 80, -1918] radius 60",
+    "explanation": "Drops\n• Desert Fossil\n• Soft Sand\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1160, 76, -1847] radius 130",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/SaltySandpile.png/100px-SaltySandpile.png?b246a7",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Desert%20Fossil",
     "tutorials": []
   },
   "mob-sand-crawler": {
-    "summary": "Sand Crawler drops 2 ingredients across 8 mapped spawn points.",
-    "explanation": "Drops\n• Crawler Eye\n• Crawler Web\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 8 unique spawn points recorded.\n• Spawn data forms 6 exact clusters.\n\nSample Coordinates\n• [1305, 80, -1918] radius 60\n• [967, 72, -2242] radius 5\n• [1090, 75, -2185] radius 5\n• [1122, 75, -2130] radius 5\n• [1190, 77, -2087] radius 5\n• [1200, 77, -1787] radius 5\n• [1047, 71, -1733] radius 5\n• [919, 67, -1773] radius 5",
+    "summary": "Sand Crawler drops 2 ingredients across 5 mapped spawn points.",
+    "explanation": "Drops\n• Crawler Eye\n• Crawler Web\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 5 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [1305, 80, -1918] radius 60\n• [1386, 80, -2206] radius 10\n• [1431, 83, -2193] radius 10\n• [1332, 97, -2202] radius 10\n• [1296, 96, -2216] radius 20",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/SandCrawler.png/100px-SandCrawler.png?51f5d5",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Crawler%20Eye",
     "tutorials": []
   },
   "mob-sand-golem": {
-    "summary": "Sand Golem drops 1 ingredient across 2 mapped spawn points.",
-    "explanation": "Drops\n• Scalding Sand\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [1064, 4, -2088] radius 32\n• [1012, 40, -1815] radius 10",
+    "summary": "Sand Golem drops 1 ingredient across 3 mapped spawn points.",
+    "explanation": "Drops\n• Scalding Sand\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [1064, 4, -2088] radius 32\n• [1012, 40, -1815] radius 10\n• [984, 47, -1778] radius 6",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Scalding%20Sand",
@@ -5482,8 +5482,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-sandy-sandpile": {
-    "summary": "Sandy Sandpile drops 2 ingredients across 3 mapped spawn points.",
-    "explanation": "Drops\n• Desert Fossil\n• Soft Sand\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [1305, 80, -1918] radius 60\n• [1001, 67, -1725] radius 40\n• [1303, 76, -1772] radius 50",
+    "summary": "Sandy Sandpile drops 2 ingredients across 2 mapped spawn points.",
+    "explanation": "Drops\n• Desert Fossil\n• Soft Sand\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [1001, 67, -1725] radius 40\n• [1303, 76, -1772] radius 50",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/SandySandpile.png/100px-SandySandpile.png?1f9fb1",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Desert%20Fossil",
@@ -5498,8 +5498,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-savage-hound": {
-    "summary": "Savage Hound drops 2 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Infernal Flesh\n• Rotten Teeth\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1337, 160, -5152] radius 20",
+    "summary": "Savage Hound drops 2 ingredients across 12 mapped spawn points.",
+    "explanation": "Drops\n• Infernal Flesh\n• Rotten Teeth\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 12 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1231, 151, -5379] radius 20\n• [1252, 149, -5354] radius 20\n• [1273, 166, -5377] radius 20\n• [1285, 146, -5348] radius 25\n• [1308, 158, -5345] radius 20\n• [1315, 147, -5316] radius 10\n• [1299, 144, -5304] radius 10\n• [1299, 151, -5234] radius 10\n• [1363, 141, -5116] radius 15\n• [1398, 144, -5123] radius 12\n• [1402, 144, -5141] radius 12\n• [1412, 144, -5164] radius 12",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/SavageHound.png/100px-SavageHound.png?f697cc",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Infernal%20Flesh",
@@ -5523,15 +5523,15 @@ export const MOBS_CONTENT = {
   },
   "mob-saw-tooth-spider": {
     "summary": "Saw-tooth Spider drops 1 ingredient across 1 mapped spawn point.",
-    "explanation": "Drops\n• Corrupted Ichor\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-154, 67, -1459] radius 9",
+    "explanation": "Drops\n• Corrupted Ichor\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-95, 67, -1678] radius 8",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/Saw-toothSpider.png/100px-Saw-toothSpider.png?71cbe4",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Corrupted%20Ichor",
     "tutorials": []
   },
   "mob-scarab": {
-    "summary": "Scarab drops 2 ingredients across 7 mapped spawn points.",
-    "explanation": "Drops\n• Mashed Insect\n• Scarab Husk\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 7 unique spawn points recorded.\n• Spawn data forms 5 exact clusters.\n\nSample Coordinates\n• [967, 72, -2242] radius 5\n• [1090, 75, -2185] radius 5\n• [1122, 75, -2130] radius 5\n• [1190, 77, -2087] radius 5\n• [1200, 77, -1787] radius 5\n• [1047, 71, -1733] radius 5\n• [919, 67, -1773] radius 5",
+    "summary": "Scarab drops 2 ingredients across 2 mapped spawn points.",
+    "explanation": "Drops\n• Mashed Insect\n• Scarab Husk\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [1001, 67, -1725] radius 40\n• [1303, 76, -1772] radius 50",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/Scarab.png/100px-Scarab.png?aedf60",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Mashed%20Insect",
@@ -5619,7 +5619,7 @@ export const MOBS_CONTENT = {
   },
   "mob-sentient-polypore": {
     "summary": "Sentient Polypore drops 1 ingredient across 1 mapped spawn point.",
-    "explanation": "Drops\n• Dried Gill\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [724, 25, -1599] radius 10",
+    "explanation": "Drops\n• Dried Gill\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [692, 29, -1630] radius 10",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/SentientPolypore.png/100px-SentientPolypore.png?3cf82e",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Dried%20Gill",
@@ -5643,7 +5643,7 @@ export const MOBS_CONTENT = {
   },
   "mob-shifting-sandpile": {
     "summary": "Shifting Sandpile drops 2 ingredients across 3 mapped spawn points.",
-    "explanation": "Drops\n• Desert Fossil\n• Soft Sand\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [1305, 80, -1918] radius 60\n• [1001, 67, -1725] radius 40\n• [1303, 76, -1772] radius 50",
+    "explanation": "Drops\n• Desert Fossil\n• Soft Sand\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1160, 76, -1847] radius 130\n• [1001, 67, -1725] radius 40\n• [1303, 76, -1772] radius 50",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/ShiftingSandpile.png/100px-ShiftingSandpile.png?1063f8",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Desert%20Fossil",
@@ -5659,7 +5659,7 @@ export const MOBS_CONTENT = {
   },
   "mob-shineridge-orc-appraiser": {
     "summary": "Shineridge Orc Appraiser drops 6 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Archaic Medallion\n• Chipped Quartz\n• Orc Eye\n• Orc Teeth\n• Pure Quartz\n• Stretched Rawhide\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1619, 46, -4635] radius 12",
+    "explanation": "Drops\n• Archaic Medallion\n• Chipped Quartz\n• Orc Eye\n• Orc Teeth\n• Pure Quartz\n• Stretched Rawhide\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1617, 49, -4611] radius 24",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Archaic%20Medallion",
@@ -5667,7 +5667,7 @@ export const MOBS_CONTENT = {
   },
   "mob-shineridge-orc-barterer": {
     "summary": "Shineridge Orc Barterer drops 6 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Archaic Medallion\n• Chipped Quartz\n• Orc Eye\n• Orc Teeth\n• Pure Quartz\n• Stretched Rawhide\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1619, 46, -4635] radius 12",
+    "explanation": "Drops\n• Archaic Medallion\n• Chipped Quartz\n• Orc Eye\n• Orc Teeth\n• Pure Quartz\n• Stretched Rawhide\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1617, 49, -4611] radius 24",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Archaic%20Medallion",
@@ -5675,7 +5675,7 @@ export const MOBS_CONTENT = {
   },
   "mob-shineridge-orc-jewelsetter": {
     "summary": "Shineridge Orc Jewelsetter drops 6 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Archaic Medallion\n• Chipped Quartz\n• Orc Eye\n• Orc Teeth\n• Pure Quartz\n• Stretched Rawhide\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1619, 46, -4635] radius 12",
+    "explanation": "Drops\n• Archaic Medallion\n• Chipped Quartz\n• Orc Eye\n• Orc Teeth\n• Pure Quartz\n• Stretched Rawhide\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1617, 49, -4611] radius 24",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Archaic%20Medallion",
@@ -5722,8 +5722,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-skien-s-bomber": {
-    "summary": "Skien's Bomber drops 3 ingredients across 9 mapped spawn points.",
-    "explanation": "Drops\n• Broken Steel Blade\n• Broken Steel Hook\n• Corroded Chunk\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 9 unique spawn points recorded.\n• Spawn data forms 4 exact clusters.\n\nSample Coordinates\n• [306, 63, -3523] radius 1\n• [349, 55, -3594] radius 1\n• [369, 49, -3610] radius 1\n• [393, 44, -3626] radius 1\n• [502, 33, -3593] radius 4\n• [413, 36, -3404] radius 1\n• [500, 34, -3492] radius 1\n• [414, 35, -3403] radius 1\n• [380, 64, -3574] radius 1",
+    "summary": "Skien's Bomber drops 3 ingredients across 12 mapped spawn points.",
+    "explanation": "Drops\n• Broken Steel Blade\n• Broken Steel Hook\n• Corroded Chunk\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 12 unique spawn points recorded.\n• Spawn data forms 4 exact clusters.\n\nSample Coordinates\n• [306, 63, -3523] radius 1\n• [349, 55, -3594] radius 1\n• [369, 49, -3610] radius 1\n• [393, 44, -3626] radius 1\n• [502, 33, -3593] radius 4\n• [413, 36, -3404] radius 1\n• [500, 34, -3492] radius 1\n• [414, 35, -3403] radius 1\n• [378, 63, -3523] radius 10\n• [383, 71, -3517] radius 10\n• [371, 79, -3529] radius 10\n• [385, 79, -3526] radius 10",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/Skien%27sBomber.png/100px-Skien%27sBomber.png?a4aa37",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Broken%20Steel%20Blade",
@@ -5738,24 +5738,24 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-skien-s-elite": {
-    "summary": "Skien's Elite drops 3 ingredients across 9 mapped spawn points.",
-    "explanation": "Drops\n• Broken Steel Blade\n• Broken Steel Hook\n• Corroded Chunk\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 9 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [468, 40, -3533] radius 10\n• [422, 42, -3517] radius 15\n• [398, 54, -3485] radius 15\n• [382, 53, -3480] radius 15\n• [348, 58, -3467] radius 15\n• [351, 59, -3496] radius 15\n• [385, 50, -3523] radius 5\n• [369, 50, -3525] radius 5\n• [363, 50, -3544] radius 5",
+    "summary": "Skien's Elite drops 3 ingredients across 10 mapped spawn points.",
+    "explanation": "Drops\n• Broken Steel Blade\n• Broken Steel Hook\n• Corroded Chunk\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 10 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [468, 40, -3533] radius 10\n• [422, 42, -3517] radius 15\n• [398, 54, -3485] radius 15\n• [382, 53, -3480] radius 15\n• [348, 58, -3467] radius 15\n• [351, 59, -3496] radius 15\n• [378, 63, -3523] radius 10\n• [383, 71, -3517] radius 10\n• [371, 79, -3529] radius 10\n• [385, 79, -3526] radius 10",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/Skien%27sElite.png/100px-Skien%27sElite.png?d07d46",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Broken%20Steel%20Blade",
     "tutorials": []
   },
   "mob-skien-s-footsoldier": {
-    "summary": "Skien's Footsoldier drops 2 ingredients across 12 mapped spawn points.",
-    "explanation": "Drops\n• Broken Steel Blade\n• Corroded Chunk\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 12 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [386, 1, -3523] radius 5\n• [379, 1, -3540] radius 5\n• [367, 1, -3532] radius 5\n• [351, 1, -3517] radius 5\n• [338, 1, -3501] radius 5\n• [356, 2, -3495] radius 5\n• [438, 2, -3489] radius 12\n• [422, 4, -3469] radius 10\n• [404, 6, -3451] radius 10\n• [382, 10, -3441] radius 12\n• [412, 6, -3451] radius 8\n• [413, 63, -3558] radius 10",
+    "summary": "Skien's Footsoldier drops 2 ingredients across 10 mapped spawn points.",
+    "explanation": "Drops\n• Broken Steel Blade\n• Corroded Chunk\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 10 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [378, 63, -3523] radius 10\n• [383, 71, -3517] radius 10\n• [371, 79, -3529] radius 10\n• [385, 79, -3526] radius 10\n• [468, 40, -3533] radius 10\n• [422, 42, -3517] radius 15\n• [398, 54, -3485] radius 15\n• [382, 53, -3480] radius 15\n• [348, 58, -3467] radius 15\n• [351, 59, -3496] radius 15",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/Skien%27sFootsoldier.png/100px-Skien%27sFootsoldier.png?f29118",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Broken%20Steel%20Blade",
     "tutorials": []
   },
   "mob-skien-s-jailkeeper": {
-    "summary": "Skien's Jailkeeper drops 2 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Broken Steel Hook\n• Corroded Chunk\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [343, 1, -3538] radius 9",
+    "summary": "Skien's Jailkeeper drops 2 ingredients across 6 mapped spawn points.",
+    "explanation": "Drops\n• Broken Steel Hook\n• Corroded Chunk\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 6 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [386, 1, -3523] radius 5\n• [379, 1, -3540] radius 5\n• [367, 1, -3532] radius 5\n• [351, 1, -3517] radius 5\n• [338, 1, -3501] radius 5\n• [356, 2, -3495] radius 5",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/Skien%27sJailkeeper.png/100px-Skien%27sJailkeeper.png?bb3063",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Broken%20Steel%20Hook",
@@ -5779,7 +5779,7 @@ export const MOBS_CONTENT = {
   },
   "mob-skien-s-scout": {
     "summary": "Skien's Scout drops 2 ingredients across 10 mapped spawn points.",
-    "explanation": "Drops\n• Broken Steel Blade\n• Corroded Chunk\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 10 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [378, 63, -3523] radius 10\n• [383, 71, -3517] radius 10\n• [371, 79, -3529] radius 10\n• [385, 79, -3526] radius 10\n• [438, 2, -3489] radius 12\n• [422, 4, -3469] radius 10\n• [404, 6, -3451] radius 10\n• [382, 10, -3441] radius 12\n• [412, 6, -3451] radius 8\n• [413, 63, -3558] radius 10",
+    "explanation": "Drops\n• Broken Steel Blade\n• Corroded Chunk\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 10 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [378, 63, -3523] radius 10\n• [383, 71, -3517] radius 10\n• [371, 79, -3529] radius 10\n• [385, 79, -3526] radius 10\n• [468, 40, -3533] radius 10\n• [422, 42, -3517] radius 15\n• [398, 54, -3485] radius 15\n• [382, 53, -3480] radius 15\n• [348, 58, -3467] radius 15\n• [351, 59, -3496] radius 15",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/Skien%27sScout.png/100px-Skien%27sScout.png?ffd22d",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Broken%20Steel%20Blade",
@@ -5818,8 +5818,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-sky-snail": {
-    "summary": "Sky Snail drops 1 ingredient across 1 mapped spawn point.",
-    "explanation": "Drops\n• Sky Snail Shell\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [996, 160, -4844] radius 35",
+    "summary": "Sky Snail drops 1 ingredient across 5 mapped spawn points.",
+    "explanation": "Drops\n• Sky Snail Shell\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 5 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1051, 138, -4908] radius 25\n• [1077, 133, -4905] radius 25\n• [946, 101, -4989] radius 25\n• [920, 119, -4889] radius 45\n• [929, 169, -4793] radius 45",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/SkySnail.png/100px-SkySnail.png?6babf2",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Sky%20Snail%20Shell",
@@ -5882,8 +5882,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-snow-owl": {
-    "summary": "Snow Owl drops 3 ingredients across 4 mapped spawn points.",
-    "explanation": "Drops\n• Large Lapis\n• Owl Feather\n• Snow Clump\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 4 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [148, 72, -986] radius 20\n• [127, 70, -921] radius 20\n• [219, 74, -736] radius 22\n• [61, 67, -959] radius 16",
+    "summary": "Snow Owl drops 3 ingredients across 3 mapped spawn points.",
+    "explanation": "Drops\n• Large Lapis\n• Owl Feather\n• Snow Clump\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [181, 74, -700] radius 70\n• [36, 68, -673] radius 45\n• [246, 76, -839] radius 70",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/SnowOwl.png/100px-SnowOwl.png?b3b2d8",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Large%20Lapis",
@@ -5946,8 +5946,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-spined-devil": {
-    "summary": "Spined Devil drops 1 ingredient across 4 mapped spawn points.",
-    "explanation": "Drops\n• Demonic Blood\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 4 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [893, 63, -4691] radius 5\n• [890, 72, -4655] radius 0\n• [836, 63, -4599] radius 5\n• [868, 54, -4600] radius 5",
+    "summary": "Spined Devil drops 1 ingredient across 1 mapped spawn point.",
+    "explanation": "Drops\n• Demonic Blood\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1289, 121, -4462] radius 5",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/SpinedDevil.png/100px-SpinedDevil.png?daea16",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Demonic%20Blood",
@@ -5955,7 +5955,7 @@ export const MOBS_CONTENT = {
   },
   "mob-spinwarp-spider": {
     "summary": "Spinwarp Spider drops 1 ingredient across 1 mapped spawn point.",
-    "explanation": "Drops\n• Corrupted Ichor\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-154, 67, -1459] radius 9",
+    "explanation": "Drops\n• Corrupted Ichor\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-392, 67, -1327] radius 6",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/SpinwarpSpider.png/100px-SpinwarpSpider.png?3718b9",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Corrupted%20Ichor",
@@ -5986,16 +5986,16 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-sporadicavalry": {
-    "summary": "Sporadicavalry drops 1 ingredient across 3 mapped spawn points.",
-    "explanation": "Drops\n• Intermittenstirrups\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-555, 70, -1219] radius 15\n• [-509, 70, -1103] radius 20\n• [-420, 70, -1071] radius 30",
+    "summary": "Sporadicavalry drops 1 ingredient across 1 mapped spawn point.",
+    "explanation": "Drops\n• Intermittenstirrups\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-400, 76, -1205] radius 45",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/Sporadicavalry.png/100px-Sporadicavalry.png?316aa9",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Intermittenstirrups",
     "tutorials": []
   },
   "mob-spore-launcher": {
-    "summary": "Spore Launcher drops 1 ingredient across 4 mapped spawn points.",
-    "explanation": "Drops\n• Toxic Spores\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 4 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [731, 25, -1602] radius 20\n• [765, 28, -1563] radius 20\n• [699, 40, -1586] radius 20\n• [730, 29, -1541] radius 20",
+    "summary": "Spore Launcher drops 1 ingredient across 1 mapped spawn point.",
+    "explanation": "Drops\n• Toxic Spores\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [692, 29, -1630] radius 10",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/SporeLauncher.png/100px-SporeLauncher.png?69df03",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Toxic%20Spores",
@@ -6058,8 +6058,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-stirge": {
-    "summary": "Stirge drops 2 ingredients across 5 mapped spawn points.",
-    "explanation": "Drops\n• Mashed Insect\n• Torn Skin\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 5 unique spawn points recorded.\n• Spawn data forms 5 exact clusters.\n\nSample Coordinates\n• [-1927, 57, -5294] radius 5\n• [-2150, 62, -5330] radius 5\n• [-1744, 55, -5138] radius 5\n• [-1521, 49, -5183] radius 5\n• [-1456, 46, -5333] radius 5",
+    "summary": "Stirge drops 2 ingredients across 26 mapped spawn points.",
+    "explanation": "Drops\n• Mashed Insect\n• Torn Skin\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 26 unique spawn points recorded.\n• Spawn data forms 4 exact clusters.\n\nSample Coordinates\n• [-2182, 55, -5243] radius 4\n• [-2158, 56, -5241] radius 4\n• [-2045, 56, -5221] radius 6\n• [-2042, 55, -5268] radius 4\n• [-1992, 56, -5264] radius 4\n• [-1946, 57, -5295] radius 4\n• [-1976, 57, -5318] radius 6\n• [-2005, 58, -5369] radius 6\n• [-2025, 58, -5183] radius 6\n• [-2060, 58, -5145] radius 6\n• [-2103, 56, -5134] radius 6\n• [-1952, 55, -5091] radius 12",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/Stirge.png/100px-Stirge.png?778a2c",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Mashed%20Insect",
@@ -6258,8 +6258,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-t-5lusive-surveillance-camera": {
-    "summary": "T-5lusive Surveillance Camera drops 6 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• 7-Yottabyte Storage Component\n• Autonomous Core\n• Enhanced Pathfinding Microchip\n• Incremental Mapping Module\n• Insulated Wiring\n• Optic Lens\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1568, 150, -2582] radius 250",
+    "summary": "T-5lusive Surveillance Camera drops 9 ingredients across 1 mapped spawn point.",
+    "explanation": "Drops\n• 7-Yottabyte Storage Component\n• Autonomous Core\n• Defective Circuits\n• Enhanced Pathfinding Microchip\n• Incremental Mapping Module\n• Insulated Wiring\n• Optic Fiber\n• Optic Lens\n• Shorting Wire\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1568, 150, -2582] radius 250",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/7-Yottabyte%20Storage%20Component",
@@ -6282,8 +6282,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-tamed-mustedog": {
-    "summary": "Tamed Mustedog drops 1 ingredient across 6 mapped spawn points.",
-    "explanation": "Drops\n• Sharper Claw\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 6 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1273, 47, -676] radius 0\n• [-1322, 45, -684] radius 0\n• [-1256, 88, -686] radius 0\n• [-1324, 89, -680] radius 0\n• [-1273, 120, -724] radius 0\n• [-1270, 46, -716] radius 0",
+    "summary": "Tamed Mustedog drops 1 ingredient across 12 mapped spawn points.",
+    "explanation": "Drops\n• Sharper Claw\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 12 unique spawn points recorded.\n• Spawn data forms 6 exact clusters.\n\nSample Coordinates\n• [-1352, 51, -635] radius 8\n• [-1433, 46, -705] radius 7\n• [-1259, 49, -846] radius 8\n• [-1166, 61, -821] radius 5\n• [-1084, 59, -896] radius 8\n• [-1158, 48, -668] radius 6\n• [-1273, 47, -676] radius 0\n• [-1322, 45, -684] radius 0\n• [-1256, 88, -686] radius 0\n• [-1324, 89, -680] radius 0\n• [-1273, 120, -724] radius 0\n• [-1270, 46, -716] radius 0",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Sharper%20Claw",
@@ -6291,7 +6291,7 @@ export const MOBS_CONTENT = {
   },
   "mob-taskmaster": {
     "summary": "Taskmaster drops 2 ingredients across 3 mapped spawn points.",
-    "explanation": "Drops\n• Foul Fluid\n• Rancid Flesh\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-754, 21, -5461] radius 2\n• [-736, 11, -5431] radius 2\n• [-740, 13, -5492] radius 0",
+    "explanation": "Drops\n• Foul Fluid\n• Rancid Flesh\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-744, 40, -5411] radius 12\n• [-736, 11, -5431] radius 2\n• [-740, 13, -5492] radius 0",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Foul%20Fluid",
@@ -6322,8 +6322,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-terracotta-soldier": {
-    "summary": "Terracotta Soldier drops 1 ingredient across 6 mapped spawn points.",
-    "explanation": "Drops\n• Terracotta Chunk\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 6 unique spawn points recorded.\n• Spawn data forms 3 exact clusters.\n\nSample Coordinates\n• [1290, 78, -1702] radius 12\n• [1163, 81, -1691] radius 12\n• [1151, 73, -1711] radius 12\n• [1104, 76, -2014] radius 7\n• [1123, 75, -2060] radius 7\n• [1160, 79, -2008] radius 7",
+    "summary": "Terracotta Soldier drops 1 ingredient across 1 mapped spawn point.",
+    "explanation": "Drops\n• Terracotta Chunk\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [857, 42, -2107] radius 13",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/TerracottaSoldier.png/100px-TerracottaSoldier.png?ec9cd2",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Terracotta%20Chunk",
@@ -6362,8 +6362,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-thawing-snow-zombie": {
-    "summary": "Thawing Snow Zombie drops 3 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Frostbitten Flesh\n• Large Lapis\n• Snow Clump\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [48, 75, -534] radius 20",
+    "summary": "Thawing Snow Zombie drops 3 ingredients across 3 mapped spawn points.",
+    "explanation": "Drops\n• Frostbitten Flesh\n• Large Lapis\n• Snow Clump\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-53, 68, -779] radius 8\n• [-29, 71, -822] radius 5\n• [48, 75, -534] radius 20",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/ThawingSnowZombie.png/100px-ThawingSnowZombie.png?32068b",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Frostbitten%20Flesh",
@@ -6394,16 +6394,16 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-thunder-grub": {
-    "summary": "Thunder Grub drops 3 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Ancient Coins\n• Soft Silk\n• Viscous Slime\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-583, 27, -817] radius 2",
+    "summary": "Thunder Grub drops 3 ingredients across 2 mapped spawn points.",
+    "explanation": "Drops\n• Ancient Coins\n• Soft Silk\n• Viscous Slime\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-584, 32, -828] radius 2\n• [-591, 51, -732] radius 2",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/ThunderGrub.png/100px-ThunderGrub.png?c4d903",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Ancient%20Coins",
     "tutorials": []
   },
   "mob-thunder-charged-goat": {
-    "summary": "Thunder-Charged Goat drops 1 ingredient across 3 mapped spawn points.",
-    "explanation": "Drops\n• Storm Horn\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [779, 84, -4736] radius 10\n• [763, 89, -4730] radius 7\n• [760, 125, -4760] radius 4",
+    "summary": "Thunder-Charged Goat drops 1 ingredient across 9 mapped spawn points.",
+    "explanation": "Drops\n• Storm Horn\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 9 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [1385, 118, -4263] radius 25\n• [1323, 96, -4334] radius 20\n• [763, 45, -4565] radius 20\n• [744, 62, -4589] radius 22\n• [709, 43, -4652] radius 30\n• [733, 44, -4692] radius 30\n• [740, 81, -4797] radius 25\n• [756, 81, -4877] radius 20\n• [673, 87, -4653] radius 20",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/Thunder-ChargedGoat.png/100px-Thunder-ChargedGoat.png?3aff3c",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Storm%20Horn",
@@ -6474,8 +6474,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-tiontaith-hunter": {
-    "summary": "Tiontaith Hunter drops 2 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Glowing Scales\n• Pristine Claw\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-413, 74, -5532] radius 4",
+    "summary": "Tiontaith Hunter drops 2 ingredients across 11 mapped spawn points.",
+    "explanation": "Drops\n• Glowing Scales\n• Pristine Claw\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 11 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-754, 63, -5201] radius 50\n• [-773, 62, -5051] radius 75\n• [-635, 53, -5168] radius 60\n• [-752, 45, -5330] radius 55\n• [-858, 75, -5421] radius 50\n• [-917, 88, -5567] radius 50\n• [-766, 60, -5432] radius 50\n• [-734, 60, -5510] radius 50\n• [-688, 61, -5380] radius 30\n• [-584, 55, -5269] radius 50\n• [-546, 47, -5360] radius 40",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/TiontaithHunter.png/100px-TiontaithHunter.png?d09006",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Glowing%20Scales",
@@ -6506,24 +6506,24 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-toxxulous-ripper": {
-    "summary": "Toxxulous Ripper drops 4 ingredients across 2 mapped spawn points.",
-    "explanation": "Drops\n• Calcified Ligament\n• Doom Stone\n• Sludge Parasite\n• Toxxulous Ripper’s Legs\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [894, 108, -882] radius 40\n• [1021, 125, -1053] radius 37",
+    "summary": "Toxxulous Ripper drops 4 ingredients across 5 mapped spawn points.",
+    "explanation": "Drops\n• Calcified Ligament\n• Doom Stone\n• Sludge Parasite\n• Toxxulous Ripper’s Legs\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 5 unique spawn points recorded.\n• Spawn data forms 3 exact clusters.\n\nSample Coordinates\n• [821, 123, -911] radius 0\n• [898, 94, -994] radius 0\n• [974, 128, -1045] radius 10\n• [957, 90, -1049] radius 0\n• [877, 77, -803] radius 0",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Calcified%20Ligament",
     "tutorials": []
   },
   "mob-trained-lion-cub": {
-    "summary": "Trained Lion Cub drops 1 ingredient across 3 mapped spawn points.",
-    "explanation": "Drops\n• Lion Fang\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [746, 85, -2302] radius 8\n• [817, 87, -2266] radius 7\n• [797, 29, -2307] radius 7",
+    "summary": "Trained Lion Cub drops 1 ingredient across 1 mapped spawn point.",
+    "explanation": "Drops\n• Lion Fang\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [895, 30, -2328] radius 10",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/TrainedLionCub%28Lv30%29.png/100px-TrainedLionCub%28Lv30%29.png?dee810",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Lion%20Fang",
     "tutorials": []
   },
   "mob-trash-scarab": {
-    "summary": "Trash Scarab drops 1 ingredient across 17 mapped spawn points.",
-    "explanation": "Drops\n• Meal Scraps\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 17 unique spawn points recorded.\n• Spawn data forms 5 exact clusters.\n\nSample Coordinates\n• [-1843, 44, -816] radius 1\n• [-1990, 47, -915] radius 2\n• [-1820, 35, -728] radius 1\n• [-1775, 23, -683] radius 1\n• [-1767, 21, -717] radius 1\n• [-1721, 26, -663] radius 1\n• [-1722, 30, -635] radius 1\n• [-1978, 27, -643] radius 1\n• [-2053, 34, -604] radius 1\n• [-2159, 35, -630] radius 1\n• [-2228, 44, -680] radius 1\n• [-2225, 44, -678] radius 1",
+    "summary": "Trash Scarab drops 1 ingredient across 2 mapped spawn points.",
+    "explanation": "Drops\n• Meal Scraps\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1773, 61, -846] radius 2\n• [-1775, 60, -845] radius 2",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Meal%20Scraps",
@@ -6602,8 +6602,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-troll-brute": {
-    "summary": "Troll Brute drops 1 ingredient across 7 mapped spawn points.",
-    "explanation": "Drops\n• Troll Hair\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 7 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [841, 46, -5376] radius 5\n• [844, 44, -5347] radius 5\n• [764, 45, -5313] radius 5\n• [752, 47, -5377] radius 5\n• [749, 46, -5352] radius 5\n• [744, 45, -5332] radius 5\n• [758, 45, -5328] radius 5",
+    "summary": "Troll Brute drops 1 ingredient across 3 mapped spawn points.",
+    "explanation": "Drops\n• Troll Hair\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [237, 41, -5172] radius 15\n• [75, 43, -5188] radius 15\n• [78, 43, -5233] radius 20",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/TrollBrute.png/100px-TrollBrute.png?916e15",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Troll%20Hair",
@@ -6618,8 +6618,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-troll-splinterbone": {
-    "summary": "Troll Splinterbone drops 1 ingredient across 7 mapped spawn points.",
-    "explanation": "Drops\n• Troll Hair\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 7 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [841, 46, -5376] radius 5\n• [844, 44, -5347] radius 5\n• [764, 45, -5313] radius 5\n• [752, 47, -5377] radius 5\n• [749, 46, -5352] radius 5\n• [744, 45, -5332] radius 5\n• [758, 45, -5328] radius 5",
+    "summary": "Troll Splinterbone drops 1 ingredient across 25 mapped spawn points.",
+    "explanation": "Drops\n• Troll Hair\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 25 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [516, 28, -5016] radius 15\n• [533, 30, -4987] radius 20\n• [522, 29, -5125] radius 6\n• [518, 29, -5144] radius 6\n• [503, 28, -5144] radius 5\n• [579, 28, -5073] radius 5\n• [551, 30, -5099] radius 15\n• [573, 28, -5105] radius 10\n• [581, 28, -5078] radius 10\n• [553, 27, -5059] radius 10\n• [501, 28, -4984] radius 5\n• [419, 32, -5311] radius 10",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/TrollSplinterbone.png/100px-TrollSplinterbone.png?365c4d",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Troll%20Hair",
@@ -6698,40 +6698,40 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-u-0ervant-bot": {
-    "summary": "U-0ervant Bot drops 2 ingredients across 8 mapped spawn points.",
-    "explanation": "Drops\n• Enhanced Behaviour Microchip\n• Repair Toolkit\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 8 unique spawn points recorded.\n• Spawn data forms 4 exact clusters.\n\nSample Coordinates\n• [-1977, 54, -3315] radius 42\n• [-1977, 80, -3315] radius 42\n• [-1597, 87, -3358] radius 42\n• [-1597, 40, -3358] radius 42\n• [-1628, 70, -3195] radius 42\n• [-2063, 58, -3310] radius 20\n• [-1585, 35, -3123] radius 35\n• [-1615, 130, -2460] radius 30",
+    "summary": "U-0ervant Bot drops 2 ingredients across 5 mapped spawn points.",
+    "explanation": "Drops\n• Repair Toolkit\n• Robot Antenna\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 5 unique spawn points recorded.\n• Spawn data forms 4 exact clusters.\n\nSample Coordinates\n• [-1727, 78, -2563] radius 0\n• [-1910, 40, -3146] radius 10\n• [-1932, 40, -3158] radius 10\n• [-1267, 48, -3373] radius 0\n• [-1210, 62, -3301] radius 0",
     "coverImage": "",
     "gallery": [],
-    "sourceUrl": "https://wynncraft.com/item/Enhanced%20Behaviour%20Microchip",
+    "sourceUrl": "https://wynncraft.com/item/Repair%20Toolkit",
     "tutorials": []
   },
   "mob-u-0iner-bot": {
-    "summary": "U-0iner Bot drops 3 ingredients across 51 mapped spawn points.",
-    "explanation": "Drops\n• Enhanced Pathfinding Microchip\n• Gunpowder\n• Repair Toolkit\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 51 unique spawn points recorded.\n• Spawn data forms 13 exact clusters.\n\nSample Coordinates\n• [-1673, 64, -2665] radius 8\n• [-1873, 23, -2764] radius 8\n• [-1885, 22, -2752] radius 8\n• [-1890, 24, -2770] radius 8\n• [-1864, 23, -2744] radius 8\n• [-1972, 82, -3285] radius 8\n• [-1952, 85, -3333] radius 8\n• [-1930, 84, -3308] radius 8\n• [-1971, 83, -3289] radius 8\n• [-1247, 32, -3202] radius 8\n• [-1261, 33, -3222] radius 8\n• [-1271, 27, -3206] radius 8",
+    "summary": "U-0iner Bot drops 4 ingredients across 51 mapped spawn points.",
+    "explanation": "Drops\n• Enhanced Pathfinding Microchip\n• Gunpowder\n• Repair Toolkit\n• Robot Antenna\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 51 unique spawn points recorded.\n• Spawn data forms 13 exact clusters.\n\nSample Coordinates\n• [-1673, 64, -2665] radius 8\n• [-1873, 23, -2764] radius 8\n• [-1885, 22, -2752] radius 8\n• [-1890, 24, -2770] radius 8\n• [-1864, 23, -2744] radius 8\n• [-1972, 82, -3285] radius 8\n• [-1952, 85, -3333] radius 8\n• [-1930, 84, -3308] radius 8\n• [-1971, 83, -3289] radius 8\n• [-1247, 32, -3202] radius 8\n• [-1261, 33, -3222] radius 8\n• [-1271, 27, -3206] radius 8",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Enhanced%20Pathfinding%20Microchip",
     "tutorials": []
   },
   "mob-u-0lockbot": {
-    "summary": "U-0lockBot drops 2 ingredients across 4 mapped spawn points.",
-    "explanation": "Drops\n• Enhanced Potential Microchip\n• Repair Toolkit\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 4 unique spawn points recorded.\n• Spawn data forms 4 exact clusters.\n\nSample Coordinates\n• [-1432, 132, -3171] radius 42\n• [-1761, 73, -2618] radius 42\n• [-1399, 98, -2847] radius 42\n• [-1702, 71, -2759] radius 42",
+    "summary": "U-0lockBot drops 3 ingredients across 1 mapped spawn point.",
+    "explanation": "Drops\n• Enhanced Potential Microchip\n• Repair Toolkit\n• Robot Antenna\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1739, 65, -2460] radius 1",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Enhanced%20Potential%20Microchip",
     "tutorials": []
   },
   "mob-u-45tabot": {
-    "summary": "U-45tabot drops 4 ingredients across 2 mapped spawn points.",
-    "explanation": "Drops\n• Autonomous Core\n• Hydrofluoric Acid\n• Insulated Wiring\n• Plasteel Plating\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1737, 75, -2650] radius 180\n• [-1496, 75, -2529] radius 220",
+    "summary": "U-45tabot drops 6 ingredients across 2 mapped spawn points.",
+    "explanation": "Drops\n• Autonomous Core\n• Defective Circuits\n• Hydrofluoric Acid\n• Insulated Wiring\n• Plasteel Plating\n• Robot Antenna\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1737, 75, -2650] radius 180\n• [-1496, 75, -2529] radius 220",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Autonomous%20Core",
     "tutorials": []
   },
   "mob-u-4epaired-bot": {
-    "summary": "U-4epaired Bot drops 2 ingredients across 5 mapped spawn points.",
-    "explanation": "Drops\n• Enhanced Post-Processing Microchip\n• Repair Toolkit\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 5 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-1450, 54, -2845] radius 10\n• [-1425, 92, -2845] radius 19\n• [-1370, 92, -2733] radius 45\n• [-1518, 38, -2856] radius 10\n• [-1775, 61, -2887] radius 10",
+    "summary": "U-4epaired Bot drops 3 ingredients across 29 mapped spawn points.",
+    "explanation": "Drops\n• Enhanced Post-Processing Microchip\n• Repair Toolkit\n• Robot Antenna\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 29 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-1474, 33, -2314] radius 0\n• [-1474, 33, -2295] radius 0\n• [-1495, 33, -2329] radius 0\n• [-1513, 33, -2334] radius 0\n• [-1556, 16, -2275] radius 0\n• [-1571, 16, -2275] radius 0\n• [-1478, 33, -2264] radius 0\n• [-1456, 33, -2251] radius 0\n• [-1474, 33, -2306] radius 0\n• [-1491, 33, -2330] radius 0\n• [-1502, 19, -2269] radius 0\n• [-1525, 19, -2265] radius 0",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Enhanced%20Post-Processing%20Microchip",
@@ -6794,8 +6794,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-valley-wanderer": {
-    "summary": "Valley Wanderer drops 3 ingredients across 3 mapped spawn points.",
-    "explanation": "Drops\n• Bone Ash\n• Drained Bone\n• Warped Skin\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-267, 66, -1306] radius 30\n• [-220, 79, -1216] radius 18\n• [-101, 79, -1072] radius 30",
+    "summary": "Valley Wanderer drops 3 ingredients across 1 mapped spawn point.",
+    "explanation": "Drops\n• Bone Ash\n• Drained Bone\n• Warped Skin\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-536, 103, -1369] radius 10",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/ValleyWanderer.png/100px-ValleyWanderer.png?97c306",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Bone%20Ash",
@@ -6803,7 +6803,7 @@ export const MOBS_CONTENT = {
   },
   "mob-vampire-bat": {
     "summary": "Vampire Bat drops 2 ingredients across 5 mapped spawn points.",
-    "explanation": "Drops\n• Ancient Coins\n• Ibjub Fruit\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 5 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-792, 61, -610] radius 5\n• [-787, 53, -594] radius 5\n• [-782, 48, -580] radius 5\n• [-771, 42, -567] radius 5\n• [-754, 35, -568] radius 5",
+    "explanation": "Drops\n• Ancient Coins\n• Ibjub Fruit\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 5 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-765, 67, -604] radius 4\n• [-757, 65, -600] radius 4\n• [-752, 64, -605] radius 4\n• [-757, 64, -619] radius 4\n• [-770, 67, -627] radius 4",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/VampireBat.png/100px-VampireBat.png?f00fcc",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Ancient%20Coins",
@@ -6843,7 +6843,7 @@ export const MOBS_CONTENT = {
   },
   "mob-vortexian-voidgap": {
     "summary": "Vortexian Voidgap drops 7 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Dernic Parasite\n• Expelled Shrapnel\n• Gaze of Darkness\n• Glow Bulb Seeds\n• Olmic Artifact\n• Portal Rift\n• Vortexian Event Horizon\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1198, 74, -1029] radius 85",
+    "explanation": "Drops\n• Dernic Parasite\n• Expelled Shrapnel\n• Gaze of Darkness\n• Glow Bulb Seeds\n• Olmic Artifact\n• Portal Rift\n• Vortexian Event Horizon\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1198, 132, -1115] radius 35",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/VortexianVoidgap.png/100px-VortexianVoidgap.png?bb27b6",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Dernic%20Parasite",
@@ -6955,7 +6955,7 @@ export const MOBS_CONTENT = {
   },
   "mob-waterway-bootlegger": {
     "summary": "Waterway Bootlegger drops 5 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Gold Nugget\n• Natural Nitrates\n• Rabbit Carcass\n• Runner's Bandages\n• Torn Rawhide\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1711, 22, -4934] radius 12",
+    "explanation": "Drops\n• Gold Nugget\n• Natural Nitrates\n• Rabbit Carcass\n• Runner's Bandages\n• Torn Rawhide\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1705, 29, -4980] radius 12",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/WaterwayBootlegger.png/100px-WaterwayBootlegger.png?a9fa21",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Gold%20Nugget",
@@ -6986,8 +6986,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-watery-sludge": {
-    "summary": "Watery Sludge drops 8 ingredients across 11 mapped spawn points.",
-    "explanation": "Drops\n• Coagulated Clot\n• Gelatinous Slime Chunk\n• Putrid Gunk\n• River Clay\n• Sticky Fern\n• Thick Mud\n• Viscous Slime\n• Waterlogged Branch\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 11 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1748, 18, -5552] radius 5\n• [-1712, 10, -5471] radius 6\n• [-1724, 10, -5450] radius 6\n• [-1763, 9, -5478] radius 6\n• [-1748, 15, -5459] radius 6\n• [-1779, 28, -5571] radius 6\n• [-1780, 22, -5548] radius 8\n• [-1717, 10, -5459] radius 6\n• [-1714, 10, -5482] radius 6\n• [-1757, 10, -5490] radius 6\n• [-1743, 20, -5468] radius 8",
+    "summary": "Watery Sludge drops 7 ingredients across 6 mapped spawn points.",
+    "explanation": "Drops\n• Coagulated Clot\n• Putrid Gunk\n• River Clay\n• Sticky Fern\n• Thick Mud\n• Viscous Slime\n• Waterlogged Branch\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 6 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1779, 28, -5571] radius 6\n• [-1780, 22, -5548] radius 8\n• [-1717, 10, -5459] radius 6\n• [-1714, 10, -5482] radius 6\n• [-1757, 10, -5490] radius 6\n• [-1743, 20, -5468] radius 8",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Coagulated%20Clot",
@@ -7034,8 +7034,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-weather-weird": {
-    "summary": "Weather Weird drops 7 ingredients across 3 mapped spawn points.",
-    "explanation": "Drops\n• Arcane Anomaly\n• Atmospheric Aspect\n• Gylia Essence\n• Overload Aspect\n• Sentient Water\n• Soggy Stone\n• Wintery Aspect\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-115, 38, -5395] radius 8\n• [-86, 42, -5375] radius 15\n• [-33, 33, -5346] radius 15",
+    "summary": "Weather Weird drops 7 ingredients across 8 mapped spawn points.",
+    "explanation": "Drops\n• Arcane Anomaly\n• Atmospheric Aspect\n• Gylia Essence\n• Overload Aspect\n• Sentient Water\n• Soggy Stone\n• Wintery Aspect\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 8 unique spawn points recorded.\n• Spawn data forms 3 exact clusters.\n\nSample Coordinates\n• [-186, 48, -5124] radius 20\n• [-73, 43, -5049] radius 15\n• [-16, 44, -5083] radius 25\n• [-7, 43, -5140] radius 38\n• [-32, 37, -5196] radius 15\n• [12, 36, -5229] radius 15\n• [8, 43, -5310] radius 15\n• [-255, 41, -5313] radius 20",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/WeatherWeird.png/100px-WeatherWeird.png?73cde3",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Arcane%20Anomaly",
@@ -7066,8 +7066,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-wild-boar": {
-    "summary": "Wild Boar drops 2 ingredients across 21 mapped spawn points.",
-    "explanation": "Drops\n• Boar Meat\n• Fresh Game\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 21 unique spawn points recorded.\n• Spawn data forms 3 exact clusters.\n\nSample Coordinates\n• [-1150, 46, -5053] radius 45\n• [-1052, 46, -5084] radius 45\n• [-927, 46, -5011] radius 45\n• [-927, 46, -4925] radius 45\n• [-1014, 46, -4919] radius 45\n• [-1106, 46, -4923] radius 45\n• [-1108, 46, -4560] radius 45\n• [-745, 46, -4618] radius 45\n• [-823, 46, -4722] radius 45\n• [-605, 46, -4720] radius 45\n• [-717, 46, -4795] radius 45\n• [-1263, 46, -5037] radius 45",
+    "summary": "Wild Boar drops 2 ingredients across 19 mapped spawn points.",
+    "explanation": "Drops\n• Boar Meat\n• Fresh Game\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 19 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-1150, 46, -5053] radius 45\n• [-1052, 46, -5084] radius 45\n• [-927, 46, -5011] radius 45\n• [-927, 46, -4925] radius 45\n• [-1014, 46, -4919] radius 45\n• [-1106, 46, -4923] radius 45\n• [-1108, 46, -4560] radius 45\n• [-745, 46, -4618] radius 45\n• [-823, 46, -4722] radius 45\n• [-605, 46, -4720] radius 45\n• [-717, 46, -4795] radius 45\n• [-1263, 46, -5037] radius 45",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/WildBoar%28LightForest%29.png/100px-WildBoar%28LightForest%29.png?652dea",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Boar%20Meat",
@@ -7082,8 +7082,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-wild-hound": {
-    "summary": "Wild Hound drops 2 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Infernal Flesh\n• Rotten Teeth\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1337, 160, -5152] radius 20",
+    "summary": "Wild Hound drops 2 ingredients across 12 mapped spawn points.",
+    "explanation": "Drops\n• Infernal Flesh\n• Rotten Teeth\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 12 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1231, 151, -5379] radius 20\n• [1252, 149, -5354] radius 20\n• [1273, 166, -5377] radius 20\n• [1285, 146, -5348] radius 25\n• [1308, 158, -5345] radius 20\n• [1315, 147, -5316] radius 10\n• [1299, 144, -5304] radius 10\n• [1299, 151, -5234] radius 10\n• [1363, 141, -5116] radius 15\n• [1398, 144, -5123] radius 12\n• [1402, 144, -5141] radius 12\n• [1412, 144, -5164] radius 12",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/WildHound.png/100px-WildHound.png?2581b8",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Infernal%20Flesh",
@@ -7106,8 +7106,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-wild-mooshroom": {
-    "summary": "Wild Mooshroom drops 4 ingredients across 3 mapped spawn points.",
-    "explanation": "Drops\n• Brown Mushroom\n• Mooshroom Ear\n• Red Mushroom\n• Toxic Spores\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 3 exact clusters.\n\nSample Coordinates\n• [608, 59, -1340] radius 20\n• [863, 64, -1381] radius 20\n• [558, 57, -1487] radius 20",
+    "summary": "Wild Mooshroom drops 4 ingredients across 6 mapped spawn points.",
+    "explanation": "Drops\n• Brown Mushroom\n• Mooshroom Ear\n• Red Mushroom\n• Toxic Spores\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 6 unique spawn points recorded.\n• Spawn data forms 4 exact clusters.\n\nSample Coordinates\n• [642, 57, -1462] radius 30\n• [477, 75, -1350] radius 30\n• [418, 81, -1314] radius 30\n• [807, 52, -1361] radius 20\n• [681, 52, -1392] radius 30\n• [837, 74, -1507] radius 30",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/WildMooshroom%28Lv12%29.png/100px-WildMooshroom%28Lv12%29.png?f822c4",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Brown%20Mushroom",
@@ -7154,8 +7154,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-wings-suppressor": {
-    "summary": "Wings Suppressor drops 2 ingredients across 2 mapped spawn points.",
-    "explanation": "Drops\n• Noble Ribbon\n• Winged Helmet\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-2126, 55, -1669] radius 0\n• [-2126, 55, -1659] radius 0",
+    "summary": "Wings Suppressor drops 2 ingredients across 1 mapped spawn point.",
+    "explanation": "Drops\n• Noble Ribbon\n• Winged Helmet\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1169, 92, -949] radius 0",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Noble%20Ribbon",
@@ -7218,8 +7218,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-ww-10avager-automaton": {
-    "summary": "WW-10avager Automaton drops 3 ingredients across 4 mapped spawn points.",
-    "explanation": "Drops\n• Autonomous Core\n• Fiberglass Frame\n• Insulated Wiring\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 4 unique spawn points recorded.\n• Spawn data forms 4 exact clusters.\n\nSample Coordinates\n• [-1562, 113, -2318] radius 0\n• [-1310, 68, -3239] radius 60\n• [-1588, 40, -3388] radius 60\n• [-1595, 78, -2696] radius 60",
+    "summary": "WW-10avager Automaton drops 5 ingredients across 4 mapped spawn points.",
+    "explanation": "Drops\n• Autonomous Core\n• Defective Circuits\n• Fiberglass Frame\n• Insulated Wiring\n• Overheated Processor\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 4 unique spawn points recorded.\n• Spawn data forms 4 exact clusters.\n\nSample Coordinates\n• [-1562, 113, -2318] radius 0\n• [-1310, 68, -3239] radius 60\n• [-1588, 40, -3388] radius 60\n• [-1595, 78, -2696] radius 60",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Autonomous%20Core",
@@ -7242,8 +7242,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-yahya-apprentice": {
-    "summary": "Yahya Apprentice drops 1 ingredient across 3 mapped spawn points.",
-    "explanation": "Drops\n• Red Mushroom\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 3 exact clusters.\n\nSample Coordinates\n• [608, 59, -1340] radius 20\n• [863, 64, -1381] radius 20\n• [558, 57, -1487] radius 20",
+    "summary": "Yahya Apprentice drops 1 ingredient across 6 mapped spawn points.",
+    "explanation": "Drops\n• Red Mushroom\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 6 unique spawn points recorded.\n• Spawn data forms 4 exact clusters.\n\nSample Coordinates\n• [642, 57, -1462] radius 30\n• [477, 75, -1350] radius 30\n• [418, 81, -1314] radius 30\n• [807, 52, -1361] radius 20\n• [681, 52, -1392] radius 30\n• [837, 74, -1507] radius 30",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/YahyaApprentice.png/100px-YahyaApprentice.png?7a3ee6",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Red%20Mushroom",
@@ -7298,24 +7298,24 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-young-forest-spider": {
-    "summary": "Young Forest Spider drops 5 ingredients across 1 mapped spawn point.",
-    "explanation": "Drops\n• Forest Web\n• Lucky Spider Egg\n• Luxurious Silk\n• Poisonous Spider Eye\n• Spider Fang\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-256, 70, -1600] radius 5",
+    "summary": "Young Forest Spider drops 2 ingredients across 1 mapped spawn point.",
+    "explanation": "Drops\n• Forest Web\n• Spider Fang\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-256, 70, -1600] radius 5",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/YoungForestSpider.png/100px-YoungForestSpider.png?ee6b01",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Forest%20Web",
     "tutorials": []
   },
   "mob-youthful-angel": {
-    "summary": "Youthful Angel drops 1 ingredient across 4 mapped spawn points.",
-    "explanation": "Drops\n• Angel's Blessing\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 4 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [1083, 79, -4660] radius 9\n• [1072, 81, -4653] radius 8\n• [1430, 121, -4631] radius 17\n• [1070, 77, -4714] radius 20",
+    "summary": "Youthful Angel drops 1 ingredient across 3 mapped spawn points.",
+    "explanation": "Drops\n• Angel's Blessing\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [1083, 79, -4660] radius 9\n• [1072, 81, -4653] radius 8\n• [1430, 121, -4631] radius 17",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/YouthfulAngel%28Melee%29.png/100px-YouthfulAngel%28Melee%29.png?b28c8e",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Angel's%20Blessing",
     "tutorials": []
   },
   "mob-zombie": {
-    "summary": "Zombie drops 3 ingredients across 26 mapped spawn points.",
-    "explanation": "Drops\n• Rotten Flesh\n• Sturdy Flesh\n• Undead Heart\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 26 unique spawn points recorded.\n• Spawn data forms 10 exact clusters.\n\nSample Coordinates\n• [-4, 61, -2030] radius 35\n• [-280, 82, -1757] radius 35\n• [901, 81, -1539] radius 35\n• [-645, 70, -1736] radius 50\n• [-872, 52, -1920] radius 60\n• [-521, 64, -1799] radius 210\n• [-79, 65, -1461] radius 30\n• [-59, 65, -1635] radius 30\n• [82, 66, -1818] radius 7\n• [369, 67, -1435] radius 15\n• [377, 67, -1457] radius 15\n• [469, 65, -1460] radius 20",
+    "summary": "Zombie drops 3 ingredients across 20 mapped spawn points.",
+    "explanation": "Drops\n• Rotten Flesh\n• Sturdy Flesh\n• Undead Heart\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 20 unique spawn points recorded.\n• Spawn data forms 8 exact clusters.\n\nSample Coordinates\n• [-82, 76, -1308] radius 35\n• [-645, 70, -1736] radius 50\n• [-872, 52, -1920] radius 60\n• [-521, 64, -1799] radius 210\n• [-739, 37, -1984] radius 4\n• [139, 88, -1699] radius 0\n• [82, 66, -1818] radius 7\n• [369, 67, -1435] radius 15\n• [377, 67, -1457] radius 15\n• [469, 65, -1460] radius 20\n• [362, 82, -1358] radius 20\n• [119, 68, -1465] radius 15",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/Zombie%28Lv10%29.png/100px-Zombie%28Lv10%29.png?726950",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Rotten%20Flesh",
@@ -7431,6 +7431,142 @@ export const MOBS_CONTENT = {
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Massive%20Anchor",
+    "tutorials": []
+  },
+  "mob-bandit-trickster": {
+    "summary": "Bandit Trickster drops 3 ingredients across 16 mapped spawn points.",
+    "explanation": "Drops\n• Gold\n• Old Explosives\n• Poorly-Made Pouch\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 16 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [512, 78, -5079] radius 5\n• [499, 78, -5058] radius 6\n• [484, 78, -5037] radius 6\n• [472, 78, -5013] radius 5\n• [410, 78, -5070] radius 6\n• [398, 78, -5045] radius 7\n• [391, 78, -5073] radius 5\n• [341, 78, -5073] radius 4\n• [321, 78, -5062] radius 4\n• [304, 79, -5047] radius 4\n• [292, 79, -5035] radius 5\n• [279, 79, -5021] radius 4",
+    "coverImage": "",
+    "gallery": [],
+    "sourceUrl": "https://wynncraft.com/item/Gold",
+    "tutorials": []
+  },
+  "mob-chalky-kantyr": {
+    "summary": "Chalky Kantyr drops 2 ingredients across 1 mapped spawn point.",
+    "explanation": "Drops\n• Calcified Ligament\n• Condensed Darkness\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [837, 80, -540] radius 100",
+    "coverImage": "",
+    "gallery": [],
+    "sourceUrl": "https://wynncraft.com/item/Calcified%20Ligament",
+    "tutorials": []
+  },
+  "mob-dusk-kantyri-calf": {
+    "summary": "Dusk Kantyri Calf drops 2 ingredients across 1 mapped spawn point.",
+    "explanation": "Drops\n• Calcified Ligament\n• Condensed Darkness\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [837, 80, -540] radius 100",
+    "coverImage": "",
+    "gallery": [],
+    "sourceUrl": "https://wynncraft.com/item/Calcified%20Ligament",
+    "tutorials": []
+  },
+  "mob-endurance-trainer": {
+    "summary": "Endurance Trainer drops 1 ingredient across 1 mapped spawn point.",
+    "explanation": "Drops\n• Broken Amulet\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-730, 72, -1052] radius 10",
+    "coverImage": "",
+    "gallery": [],
+    "sourceUrl": "https://wynncraft.com/item/Broken%20Amulet",
+    "tutorials": []
+  },
+  "mob-failing-ln-72": {
+    "summary": "Failing LN-72 drops 5 ingredients across 14 mapped spawn points.",
+    "explanation": "Drops\n• Defective Circuits\n• Optic Fiber\n• Overheated Processor\n• Robot Antenna\n• Shorting Wire\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 14 unique spawn points recorded.\n• Spawn data forms 12 exact clusters.\n\nSample Coordinates\n• [-1490, 93, -2292] radius 0\n• [-1497, 19, -2268] radius 0\n• [-1677, 101, -2241] radius 0\n• [-1358, 108, -2511] radius 0\n• [-1443, 41, -3399] radius 10\n• [-2064, 81, -3311] radius 0\n• [-1307, 68, -3346] radius 0\n• [-1395, 36, -3392] radius 0\n• [-1582, 125, -2317] radius 0\n• [-1514, 38, -2852] radius 1\n• [-1357, 36, -2641] radius 1\n• [-1356, 72, -2343] radius 1",
+    "coverImage": "",
+    "gallery": [],
+    "sourceUrl": "https://wynncraft.com/item/Defective%20Circuits",
+    "tutorials": []
+  },
+  "mob-forest-spider": {
+    "summary": "Forest Spider drops 5 ingredients across 1 mapped spawn point.",
+    "explanation": "Drops\n• Forest Web\n• Lucky Spider Egg\n• Luxurious Silk\n• Poisonous Spider Eye\n• Spider Fang\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-256, 70, -1600] radius 5",
+    "coverImage": "",
+    "gallery": [],
+    "sourceUrl": "https://wynncraft.com/item/Forest%20Web",
+    "tutorials": []
+  },
+  "mob-golden-horde": {
+    "summary": "Golden Horde drops 1 ingredient across 7 mapped spawn points.",
+    "explanation": "Drops\n• Strange Geode\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 7 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [798, 30, -1174] radius 6\n• [799, 29, -1163] radius 6\n• [811, 29, -1148] radius 8\n• [819, 32, -1195] radius 8\n• [840, 30, -1216] radius 8\n• [780, 34, -1196] radius 3\n• [745, 31, -1227] radius 3",
+    "coverImage": "",
+    "gallery": [],
+    "sourceUrl": "https://wynncraft.com/item/Strange%20Geode",
+    "tutorials": []
+  },
+  "mob-kandrekk-archwraith": {
+    "summary": "Kandrekk Archwraith drops 6 ingredients across 2 mapped spawn points.",
+    "explanation": "Drops\n• Evolving Spores\n• Hellish Cinders\n• Nova Bloom\n• Ritual Catalyst\n• Shadow of Ruin\n• Tenebrous Plasma\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-730, 45, -5510] radius 80\n• [-750, 46, -5175] radius 100",
+    "coverImage": "",
+    "gallery": [],
+    "sourceUrl": "https://wynncraft.com/item/Evolving%20Spores",
+    "tutorials": []
+  },
+  "mob-katoa-crab": {
+    "summary": "Katoa Crab drops 2 ingredients across 6 mapped spawn points.",
+    "explanation": "Drops\n• Coastal Sand\n• Fresh Water\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 6 unique spawn points recorded.\n• Spawn data forms 3 exact clusters.\n\nSample Coordinates\n• [-737, 35, -2015] radius 7\n• [-704, 34, -2035] radius 7\n• [-670, 35, -2049] radius 7\n• [-754, 35, -2125] radius 20\n• [-446, 35, -2063] radius 10\n• [-368, 35, -2118] radius 20",
+    "coverImage": "",
+    "gallery": [],
+    "sourceUrl": "https://wynncraft.com/item/Coastal%20Sand",
+    "tutorials": []
+  },
+  "mob-magical-snowman": {
+    "summary": "Magical Snowman drops 4 ingredients across 2 mapped spawn points.",
+    "explanation": "Drops\n• Bob's Tear\n• Large Lapis\n• Snow Clump\n• Snow Heart\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-35, 72, -729] radius 70\n• [9, 68, -902] radius 70",
+    "coverImage": "",
+    "gallery": [],
+    "sourceUrl": "https://wynncraft.com/item/Bob's%20Tear",
+    "tutorials": []
+  },
+  "mob-marsh-beast": {
+    "summary": "Marsh Beast drops 4 ingredients across 10 mapped spawn points.",
+    "explanation": "Drops\n• Exquisite Marsh Scale\n• Frog Eyeball\n• Preserved Relic\n• Sphagnum Moss\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 10 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-2191, 8, -1417] radius 2\n• [-2171, 9, -1361] radius 2\n• [-2148, 9, -1361] radius 2\n• [-2209, 9, -1298] radius 2\n• [-2187, 8, -1275] radius 2\n• [-2157, 9, -1239] radius 2\n• [-2112, 8, -1199] radius 2\n• [-2132, 8, -1145] radius 2\n• [-2201, 7, -1111] radius 2\n• [-2250, 61, -1485] radius 1",
+    "coverImage": "",
+    "gallery": [],
+    "sourceUrl": "https://wynncraft.com/item/Exquisite%20Marsh%20Scale",
+    "tutorials": []
+  },
+  "mob-resurrected-ragni-soldier": {
+    "summary": "Resurrected Ragni Soldier drops 1 ingredient across 1 mapped spawn point.",
+    "explanation": "Drops\n• Corruption Shard\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-245, 73, -1528] radius 6",
+    "coverImage": "",
+    "gallery": [],
+    "sourceUrl": "https://wynncraft.com/item/Corruption%20Shard",
+    "tutorials": []
+  },
+  "mob-secretcove-orc-ruinseeker": {
+    "summary": "Secretcove Orc Ruinseeker drops 7 ingredients across 1 mapped spawn point.",
+    "explanation": "Drops\n• Ancient Heart\n• Archaic Medallion\n• Green Scale\n• Orc Eye\n• Orc Teeth\n• Primeval Skin\n• Torn Rawhide\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1840, 27, -4890] radius 3",
+    "coverImage": "",
+    "gallery": [],
+    "sourceUrl": "https://wynncraft.com/item/Ancient%20Heart",
+    "tutorials": []
+  },
+  "mob-shopkeeper": {
+    "summary": "Shopkeeper drops 1 ingredient across 2 mapped spawn points.",
+    "explanation": "Drops\n• Gold Bar\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1431, 74, -1673] radius 7\n• [1438, 74, -1666] radius 7",
+    "coverImage": "",
+    "gallery": [],
+    "sourceUrl": "https://wynncraft.com/item/Gold%20Bar",
+    "tutorials": []
+  },
+  "mob-sloughing-sludge": {
+    "summary": "Sloughing Sludge drops 8 ingredients across 5 mapped spawn points.",
+    "explanation": "Drops\n• Coagulated Clot\n• Gelatinous Slime Chunk\n• Putrid Gunk\n• River Clay\n• Sticky Fern\n• Thick Mud\n• Viscous Slime\n• Waterlogged Branch\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 5 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1748, 18, -5552] radius 5\n• [-1712, 10, -5471] radius 6\n• [-1724, 10, -5450] radius 6\n• [-1763, 9, -5478] radius 6\n• [-1748, 15, -5459] radius 6",
+    "coverImage": "",
+    "gallery": [],
+    "sourceUrl": "https://wynncraft.com/item/Coagulated%20Clot",
+    "tutorials": []
+  },
+  "mob-starved-cortrich": {
+    "summary": "Starved Cortrich drops 1 ingredient across 1 mapped spawn point.",
+    "explanation": "Drops\n• Egg\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-694, 57, -1868] radius 40",
+    "coverImage": "",
+    "gallery": [],
+    "sourceUrl": "https://wynncraft.com/item/Egg",
+    "tutorials": []
+  },
+  "mob-trash-can": {
+    "summary": "Trash Can drops 3 ingredients across 30 mapped spawn points.",
+    "explanation": "Drops\n• Discarded Junk\n• Meal Scraps\n• Oddly Untouched Marshmallow\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 30 unique spawn points recorded.\n• Spawn data forms 6 exact clusters.\n\nSample Coordinates\n• [-2124, 40, -899] radius 0\n• [-2230, 32, -725] radius 0\n• [-2179, 35, -602] radius 0\n• [-1794, 26, -563] radius 0\n• [-1743, 27, -583] radius 0\n• [-1672, 29, -529] radius 0\n• [-1688, 31, -584] radius 0\n• [-1749, 32, -659] radius 0\n• [-1933, 33, -612] radius 0\n• [-2008, 33, -678] radius 0\n• [-2059, 32, -727] radius 0\n• [-1980, 29, -804] radius 0",
+    "coverImage": "",
+    "gallery": [],
+    "sourceUrl": "https://wynncraft.com/item/Discarded%20Junk",
     "tutorials": []
   }
 };

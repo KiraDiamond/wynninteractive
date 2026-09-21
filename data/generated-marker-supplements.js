@@ -2,21 +2,22 @@
 
 export const GENERATED_MARKER_SUPPLEMENTS = [
   {
-    "id": "live-caves-tericen-stables--1159--1014",
-    "title": "Tericen Stables",
+    "id": "live-caves-cave-near-ragni-south-entrance-795-1409--795--1409",
+    "title": "Cave near Ragni South Entrance (-795, -1409)",
     "category": "caves",
-    "region": "Highlands",
-    "description": "Tericen Stables is a Normal cave in Highlands. Suggested level: 116.",
+    "region": "Ragni South Entrance",
+    "description": "Official Wynncraft cave entrance at [-795, 71, -1409]. The current wiki cave table does not expose a matching named row, so the authoritative coordinate is retained for coverage and flagged for naming review.",
     "tags": [
       "caves",
       "official-map",
-      "wiki-refresh"
+      "wiki-refresh",
+      "needs-name-review"
     ],
-    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Tericen_Stables",
+    "sourceUrl": "https://docs.wynncraft.com/modules/map/list-map-markers",
     "position": {
       "world": {
-        "x": -1159,
-        "z": -1014
+        "x": -795,
+        "z": -1409
       }
     }
   },
@@ -40,26 +41,6 @@ export const GENERATED_MARKER_SUPPLEMENTS = [
     }
   },
   {
-    "id": "live-caves-cave-near-tower-of-ascension-430-303--430--303",
-    "title": "Cave near Tower of Ascension (-430, -303)",
-    "category": "caves",
-    "region": "Tower of Ascension",
-    "description": "Official Wynncraft cave entrance at [-430, 34, -303]. The current wiki cave table does not expose a matching named row, so the authoritative coordinate is retained for coverage and flagged for naming review.",
-    "tags": [
-      "caves",
-      "official-map",
-      "wiki-refresh",
-      "needs-name-review"
-    ],
-    "sourceUrl": "https://docs.wynncraft.com/modules/map/list-map-markers",
-    "position": {
-      "world": {
-        "x": -430,
-        "z": -303
-      }
-    }
-  },
-  {
     "id": "live-caves-cave-near-gylia-fisherman-camp-13-5107--13--5107",
     "title": "Cave near Gylia Fisherman Camp (-13, -5107)",
     "category": "caves",
@@ -76,6 +57,26 @@ export const GENERATED_MARKER_SUPPLEMENTS = [
       "world": {
         "x": -13,
         "z": -5107
+      }
+    }
+  },
+  {
+    "id": "live-caves-cave-near-tower-of-ascension-430-303--430--303",
+    "title": "Cave near Tower of Ascension (-430, -303)",
+    "category": "caves",
+    "region": "Tower of Ascension",
+    "description": "Official Wynncraft cave entrance at [-430, 34, -303]. The current wiki cave table does not expose a matching named row, so the authoritative coordinate is retained for coverage and flagged for naming review.",
+    "tags": [
+      "caves",
+      "official-map",
+      "wiki-refresh",
+      "needs-name-review"
+    ],
+    "sourceUrl": "https://docs.wynncraft.com/modules/map/list-map-markers",
+    "position": {
+      "world": {
+        "x": -430,
+        "z": -303
       }
     }
   },
@@ -119,26 +120,6 @@ export const GENERATED_MARKER_SUPPLEMENTS = [
     }
   },
   {
-    "id": "live-caves-cave-near-ragni-south-entrance-795-1409--795--1409",
-    "title": "Cave near Ragni South Entrance (-795, -1409)",
-    "category": "caves",
-    "region": "Ragni South Entrance",
-    "description": "Official Wynncraft cave entrance at [-795, 71, -1409]. The current wiki cave table does not expose a matching named row, so the authoritative coordinate is retained for coverage and flagged for naming review.",
-    "tags": [
-      "caves",
-      "official-map",
-      "wiki-refresh",
-      "needs-name-review"
-    ],
-    "sourceUrl": "https://docs.wynncraft.com/modules/map/list-map-markers",
-    "position": {
-      "world": {
-        "x": -795,
-        "z": -1409
-      }
-    }
-  },
-  {
     "id": "live-caves-abandoned-steelworks--1833--794",
     "title": "Abandoned Steelworks",
     "category": "caves",
@@ -154,44 +135,6 @@ export const GENERATED_MARKER_SUPPLEMENTS = [
       "world": {
         "x": -1833,
         "z": -794
-      }
-    }
-  },
-  {
-    "id": "live-caves-the-flush--1754--490",
-    "title": "The Flush",
-    "category": "caves",
-    "region": "Industrial District",
-    "description": "The Flush is a Normal cave in Industrial District. Suggested level: 110.",
-    "tags": [
-      "caves",
-      "official-map",
-      "wiki-refresh"
-    ],
-    "sourceUrl": "https://wynncraft.wiki.gg/wiki/The_Flush",
-    "position": {
-      "world": {
-        "x": -1754,
-        "z": -490
-      }
-    }
-  },
-  {
-    "id": "live-caves-aelumia-metalmill--1500--807",
-    "title": "Aelumia Metalmill",
-    "category": "caves",
-    "region": "Aelumia Citadel",
-    "description": "Aelumia Metalmill is a Normal cave in Aelumia Citadel. Suggested level: 119.",
-    "tags": [
-      "caves",
-      "official-map",
-      "wiki-refresh"
-    ],
-    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Aelumia_Metalmill",
-    "position": {
-      "world": {
-        "x": -1500,
-        "z": -807
       }
     }
   },
@@ -212,6 +155,25 @@ export const GENERATED_MARKER_SUPPLEMENTS = [
       "world": {
         "x": -1658,
         "z": -516
+      }
+    }
+  },
+  {
+    "id": "live-caves-the-flush--1754--490",
+    "title": "The Flush",
+    "category": "caves",
+    "region": "Industrial District",
+    "description": "The Flush is a Normal cave in Industrial District. Suggested level: 110.",
+    "tags": [
+      "caves",
+      "official-map",
+      "wiki-refresh"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/The_Flush",
+    "position": {
+      "world": {
+        "x": -1754,
+        "z": -490
       }
     }
   },
@@ -273,25 +235,6 @@ export const GENERATED_MARKER_SUPPLEMENTS = [
     }
   },
   {
-    "id": "live-caves-nesting-place--1542--551",
-    "title": "Nesting Place",
-    "category": "caves",
-    "region": "Mistwoods",
-    "description": "Nesting Place is a Normal cave in Mistwoods. Suggested level: 113.",
-    "tags": [
-      "caves",
-      "official-map",
-      "wiki-refresh"
-    ],
-    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Nesting_Place",
-    "position": {
-      "world": {
-        "x": -1542,
-        "z": -551
-      }
-    }
-  },
-  {
     "id": "live-caves-glacier-tunnels--1021--1333",
     "title": "Glacier Tunnels",
     "category": "caves",
@@ -311,40 +254,21 @@ export const GENERATED_MARKER_SUPPLEMENTS = [
     }
   },
   {
-    "id": "live-caves-liftal-castle--1443--1033",
-    "title": "Liftal Castle",
+    "id": "live-caves-tericen-stables--1159--1014",
+    "title": "Tericen Stables",
     "category": "caves",
     "region": "Highlands",
-    "description": "Liftal Castle is a Normal cave in Highlands. Suggested level: 119.",
+    "description": "Tericen Stables is a Normal cave in Highlands. Suggested level: 116.",
     "tags": [
       "caves",
       "official-map",
       "wiki-refresh"
     ],
-    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Liftal_Castle",
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Tericen_Stables",
     "position": {
       "world": {
-        "x": -1443,
-        "z": -1033
-      }
-    }
-  },
-  {
-    "id": "live-caves-northern-outpost--1112--1407",
-    "title": "Northern Outpost",
-    "category": "caves",
-    "region": "Highlands",
-    "description": "Northern Outpost is a Normal cave in Highlands. Suggested level: 120.",
-    "tags": [
-      "caves",
-      "official-map",
-      "wiki-refresh"
-    ],
-    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Northern_Outpost",
-    "position": {
-      "world": {
-        "x": -1112,
-        "z": -1407
+        "x": -1159,
+        "z": -1014
       }
     }
   },
@@ -388,6 +312,25 @@ export const GENERATED_MARKER_SUPPLEMENTS = [
     }
   },
   {
+    "id": "live-caves-aelumia-metalmill--1500--807",
+    "title": "Aelumia Metalmill",
+    "category": "caves",
+    "region": "Aelumia Citadel",
+    "description": "Aelumia Metalmill is a Normal cave in Aelumia Citadel. Suggested level: 119.",
+    "tags": [
+      "caves",
+      "official-map",
+      "wiki-refresh"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Aelumia_Metalmill",
+    "position": {
+      "world": {
+        "x": -1500,
+        "z": -807
+      }
+    }
+  },
+  {
     "id": "live-caves-theatre-royal--1762--798",
     "title": "Theatre Royal",
     "category": "caves",
@@ -422,6 +365,63 @@ export const GENERATED_MARKER_SUPPLEMENTS = [
       "world": {
         "x": -1524,
         "z": -738
+      }
+    }
+  },
+  {
+    "id": "live-caves-nesting-place--1542--551",
+    "title": "Nesting Place",
+    "category": "caves",
+    "region": "Mistwoods",
+    "description": "Nesting Place is a Normal cave in Mistwoods. Suggested level: 113.",
+    "tags": [
+      "caves",
+      "official-map",
+      "wiki-refresh"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Nesting_Place",
+    "position": {
+      "world": {
+        "x": -1542,
+        "z": -551
+      }
+    }
+  },
+  {
+    "id": "live-caves-liftal-castle--1443--1033",
+    "title": "Liftal Castle",
+    "category": "caves",
+    "region": "Highlands",
+    "description": "Liftal Castle is a Normal cave in Highlands. Suggested level: 119.",
+    "tags": [
+      "caves",
+      "official-map",
+      "wiki-refresh"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Liftal_Castle",
+    "position": {
+      "world": {
+        "x": -1443,
+        "z": -1033
+      }
+    }
+  },
+  {
+    "id": "live-caves-northern-outpost--1112--1407",
+    "title": "Northern Outpost",
+    "category": "caves",
+    "region": "Highlands",
+    "description": "Northern Outpost is a Normal cave in Highlands. Suggested level: 120.",
+    "tags": [
+      "caves",
+      "official-map",
+      "wiki-refresh"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Northern_Outpost",
+    "position": {
+      "world": {
+        "x": -1112,
+        "z": -1407
       }
     }
   },
