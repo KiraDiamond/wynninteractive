@@ -1,6 +1,6 @@
 # Marker Refresh Summary
 
-- Official markers scanned: 1395
+- Official markers scanned: 1392
 - Wiki cave rows parsed: 230
 - Wiki mini-quest rows parsed: 145
 - Supplemental markers added: 23
