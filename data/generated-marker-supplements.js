@@ -2,26 +2,6 @@
 
 export const GENERATED_MARKER_SUPPLEMENTS = [
   {
-    "id": "live-caves-cave-near-ragni-south-entrance-795-1409--795--1409",
-    "title": "Cave near Ragni South Entrance (-795, -1409)",
-    "category": "caves",
-    "region": "Ragni South Entrance",
-    "description": "Official Wynncraft cave entrance at [-795, 71, -1409]. The current wiki cave table does not expose a matching named row, so the authoritative coordinate is retained for coverage and flagged for naming review.",
-    "tags": [
-      "caves",
-      "official-map",
-      "wiki-refresh",
-      "needs-name-review"
-    ],
-    "sourceUrl": "https://docs.wynncraft.com/modules/map/list-map-markers",
-    "position": {
-      "world": {
-        "x": -795,
-        "z": -1409
-      }
-    }
-  },
-  {
     "id": "live-caves-drone-s-retreat-235--5423",
     "title": "Drone's Retreat",
     "category": "caves",
@@ -37,26 +17,6 @@ export const GENERATED_MARKER_SUPPLEMENTS = [
       "world": {
         "x": 235,
         "z": -5423
-      }
-    }
-  },
-  {
-    "id": "live-caves-cave-near-gylia-fisherman-camp-13-5107--13--5107",
-    "title": "Cave near Gylia Fisherman Camp (-13, -5107)",
-    "category": "caves",
-    "region": "Gylia Fisherman Camp",
-    "description": "Official Wynncraft cave entrance at [-13, 35, -5107]. The current wiki cave table does not expose a matching named row, so the authoritative coordinate is retained for coverage and flagged for naming review.",
-    "tags": [
-      "caves",
-      "official-map",
-      "wiki-refresh",
-      "needs-name-review"
-    ],
-    "sourceUrl": "https://docs.wynncraft.com/modules/map/list-map-markers",
-    "position": {
-      "world": {
-        "x": -13,
-        "z": -5107
       }
     }
   },
@@ -101,6 +61,26 @@ export const GENERATED_MARKER_SUPPLEMENTS = [
     }
   },
   {
+    "id": "live-caves-cave-near-gylia-fisherman-camp-13-5107--13--5107",
+    "title": "Cave near Gylia Fisherman Camp (-13, -5107)",
+    "category": "caves",
+    "region": "Gylia Fisherman Camp",
+    "description": "Official Wynncraft cave entrance at [-13, 35, -5107]. The current wiki cave table does not expose a matching named row, so the authoritative coordinate is retained for coverage and flagged for naming review.",
+    "tags": [
+      "caves",
+      "official-map",
+      "wiki-refresh",
+      "needs-name-review"
+    ],
+    "sourceUrl": "https://docs.wynncraft.com/modules/map/list-map-markers",
+    "position": {
+      "world": {
+        "x": -13,
+        "z": -5107
+      }
+    }
+  },
+  {
     "id": "live-caves-rotten-altar--568--609",
     "title": "Rotten Altar",
     "category": "caves",
@@ -116,6 +96,26 @@ export const GENERATED_MARKER_SUPPLEMENTS = [
       "world": {
         "x": -568,
         "z": -609
+      }
+    }
+  },
+  {
+    "id": "live-caves-cave-near-ragni-south-entrance-795-1409--795--1409",
+    "title": "Cave near Ragni South Entrance (-795, -1409)",
+    "category": "caves",
+    "region": "Ragni South Entrance",
+    "description": "Official Wynncraft cave entrance at [-795, 71, -1409]. The current wiki cave table does not expose a matching named row, so the authoritative coordinate is retained for coverage and flagged for naming review.",
+    "tags": [
+      "caves",
+      "official-map",
+      "wiki-refresh",
+      "needs-name-review"
+    ],
+    "sourceUrl": "https://docs.wynncraft.com/modules/map/list-map-markers",
+    "position": {
+      "world": {
+        "x": -795,
+        "z": -1409
       }
     }
   },
@@ -235,6 +235,25 @@ export const GENERATED_MARKER_SUPPLEMENTS = [
     }
   },
   {
+    "id": "live-caves-nesting-place--1542--551",
+    "title": "Nesting Place",
+    "category": "caves",
+    "region": "Mistwoods",
+    "description": "Nesting Place is a Normal cave in Mistwoods. Suggested level: 113.",
+    "tags": [
+      "caves",
+      "official-map",
+      "wiki-refresh"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Nesting_Place",
+    "position": {
+      "world": {
+        "x": -1542,
+        "z": -551
+      }
+    }
+  },
+  {
     "id": "live-caves-glacier-tunnels--1021--1333",
     "title": "Glacier Tunnels",
     "category": "caves",
@@ -250,6 +269,44 @@ export const GENERATED_MARKER_SUPPLEMENTS = [
       "world": {
         "x": -1021,
         "z": -1333
+      }
+    }
+  },
+  {
+    "id": "live-caves-liftal-castle--1443--1033",
+    "title": "Liftal Castle",
+    "category": "caves",
+    "region": "Highlands",
+    "description": "Liftal Castle is a Normal cave in Highlands. Suggested level: 119.",
+    "tags": [
+      "caves",
+      "official-map",
+      "wiki-refresh"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Liftal_Castle",
+    "position": {
+      "world": {
+        "x": -1443,
+        "z": -1033
+      }
+    }
+  },
+  {
+    "id": "live-caves-northern-outpost--1112--1407",
+    "title": "Northern Outpost",
+    "category": "caves",
+    "region": "Highlands",
+    "description": "Northern Outpost is a Normal cave in Highlands. Suggested level: 120.",
+    "tags": [
+      "caves",
+      "official-map",
+      "wiki-refresh"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Northern_Outpost",
+    "position": {
+      "world": {
+        "x": -1112,
+        "z": -1407
       }
     }
   },
@@ -365,63 +422,6 @@ export const GENERATED_MARKER_SUPPLEMENTS = [
       "world": {
         "x": -1524,
         "z": -738
-      }
-    }
-  },
-  {
-    "id": "live-caves-nesting-place--1542--551",
-    "title": "Nesting Place",
-    "category": "caves",
-    "region": "Mistwoods",
-    "description": "Nesting Place is a Normal cave in Mistwoods. Suggested level: 113.",
-    "tags": [
-      "caves",
-      "official-map",
-      "wiki-refresh"
-    ],
-    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Nesting_Place",
-    "position": {
-      "world": {
-        "x": -1542,
-        "z": -551
-      }
-    }
-  },
-  {
-    "id": "live-caves-liftal-castle--1443--1033",
-    "title": "Liftal Castle",
-    "category": "caves",
-    "region": "Highlands",
-    "description": "Liftal Castle is a Normal cave in Highlands. Suggested level: 119.",
-    "tags": [
-      "caves",
-      "official-map",
-      "wiki-refresh"
-    ],
-    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Liftal_Castle",
-    "position": {
-      "world": {
-        "x": -1443,
-        "z": -1033
-      }
-    }
-  },
-  {
-    "id": "live-caves-northern-outpost--1112--1407",
-    "title": "Northern Outpost",
-    "category": "caves",
-    "region": "Highlands",
-    "description": "Northern Outpost is a Normal cave in Highlands. Suggested level: 120.",
-    "tags": [
-      "caves",
-      "official-map",
-      "wiki-refresh"
-    ],
-    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Northern_Outpost",
-    "position": {
-      "world": {
-        "x": -1112,
-        "z": -1407
       }
     }
   },

@@ -13,46 +13,10 @@ export const GENERATED_MARKER_POSITION_OVERRIDES = {
       "z": -5446
     }
   },
-  "atlas-caves-fire-water--502--1722": {
-    "world": {
-      "x": -433,
-      "z": -1689
-    }
-  },
-  "atlas-caves-hill-hovel-241--1559": {
-    "world": {
-      "x": 204,
-      "z": -1560
-    }
-  },
   "atlas-caves-holehold-orc-camp--1767--4778": {
     "world": {
       "x": -1794,
       "z": -4682
-    }
-  },
-  "atlas-caves-aquaculture-aquifer--1930--3325": {
-    "world": {
-      "x": -1929,
-      "z": -3297
-    }
-  },
-  "atlas-caves-raiders-hideout--252--291": {
-    "world": {
-      "x": -257,
-      "z": -269
-    }
-  },
-  "atlas-caves-time-valley-aquifer--377--1167": {
-    "world": {
-      "x": -361,
-      "z": -1166
-    }
-  },
-  "atlas-caves-troll-burrows-858--5198": {
-    "world": {
-      "x": 849,
-      "z": -5098
     }
   },
   "atlas-caves-termite-mounds-727--1707": {
@@ -79,22 +43,46 @@ export const GENERATED_MARKER_POSITION_OVERRIDES = {
       "z": -2665
     }
   },
+  "atlas-caves-aquaculture-aquifer--1930--3325": {
+    "world": {
+      "x": -1929,
+      "z": -3297
+    }
+  },
+  "atlas-caves-raiders-hideout--252--291": {
+    "world": {
+      "x": -257,
+      "z": -269
+    }
+  },
   "atlas-caves-muddy-cavern-108--1924": {
     "world": {
       "x": 112,
       "z": -1944
     }
   },
-  "atlas-caves-burning-delve-346--4606": {
+  "atlas-caves-time-valley-aquifer--377--1167": {
     "world": {
-      "x": 315,
-      "z": -4580
+      "x": -361,
+      "z": -1166
+    }
+  },
+  "atlas-caves-troll-burrows-858--5198": {
+    "world": {
+      "x": 849,
+      "z": -5098
     }
   },
   "atlas-caves-weird-wilds--967--4353": {
     "world": {
       "x": -955,
       "z": -4341
+    }
+  },
+  "atlas-caves-burning-delve-346--4606": {
+    "world": {
+      "x": 315,
+      "z": -4580
     }
   },
   "atlas-caves-jungle-horrors--609--579": {
@@ -115,10 +103,22 @@ export const GENERATED_MARKER_POSITION_OVERRIDES = {
       "z": -2842
     }
   },
-  "atlas-caves-far-from-the-roots--497--1629": {
+  "atlas-caves-fire-water--502--1722": {
     "world": {
       "x": -515,
       "z": -1713
+    }
+  },
+  "atlas-caves-far-from-the-roots--497--1629": {
+    "world": {
+      "x": -433,
+      "z": -1689
+    }
+  },
+  "atlas-caves-hill-hovel-241--1559": {
+    "world": {
+      "x": 204,
+      "z": -1560
     }
   },
   "atlas-secret-discovery-the-bane-of-gavel--2211--5499": {

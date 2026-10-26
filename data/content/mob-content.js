@@ -98,16 +98,16 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-ailuropoda-shaman": {
-    "summary": "Ailuropoda Shaman drops 2 ingredients across 33 mapped spawn points.",
-    "explanation": "Drops\n• Fighting Stick\n• Fluffy Fur\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 33 unique spawn points recorded.\n• Spawn data forms 6 exact clusters.\n\nSample Coordinates\n• [148, 77, -4366] radius 10\n• [126, 76, -4366] radius 7\n• [108, 77, -4357] radius 10\n• [202, 87, -4338] radius 10\n• [213, 111, -4426] radius 7\n• [206, 116, -4438] radius 5\n• [54, 44, -4472] radius 15\n• [48, 44, -4514] radius 10\n• [108, 44, -4531] radius 15\n• [109, 43, -4532] radius 5\n• [556, 82, -5493] radius 5\n• [874, 45, -5375] radius 15",
+    "summary": "Ailuropoda Shaman drops 2 ingredients across 28 mapped spawn points.",
+    "explanation": "Drops\n• Fighting Stick\n• Fluffy Fur\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 28 unique spawn points recorded.\n• Spawn data forms 5 exact clusters.\n\nSample Coordinates\n• [159, 71, -4410] radius 15\n• [163, 79, -4343] radius 15\n• [148, 77, -4366] radius 15\n• [126, 76, -4366] radius 7\n• [108, 77, -4357] radius 10\n• [202, 87, -4338] radius 10\n• [213, 111, -4426] radius 7\n• [206, 116, -4438] radius 5\n• [54, 44, -4472] radius 15\n• [48, 44, -4514] radius 10\n• [108, 44, -4531] radius 15\n• [109, 43, -4532] radius 5",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/AiluropodaShaman.png/100px-AiluropodaShaman.png?fe414e",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Fighting%20Stick",
     "tutorials": []
   },
   "mob-ailuropoda-warrior": {
-    "summary": "Ailuropoda Warrior drops 2 ingredients across 33 mapped spawn points.",
-    "explanation": "Drops\n• Fighting Stick\n• Fluffy Fur\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 33 unique spawn points recorded.\n• Spawn data forms 6 exact clusters.\n\nSample Coordinates\n• [148, 77, -4366] radius 10\n• [126, 76, -4366] radius 7\n• [108, 77, -4357] radius 10\n• [202, 87, -4338] radius 10\n• [213, 111, -4426] radius 7\n• [206, 116, -4438] radius 5\n• [54, 44, -4472] radius 15\n• [48, 44, -4514] radius 10\n• [108, 44, -4531] radius 15\n• [109, 43, -4532] radius 5\n• [556, 82, -5493] radius 5\n• [874, 45, -5375] radius 15",
+    "summary": "Ailuropoda Warrior drops 2 ingredients across 28 mapped spawn points.",
+    "explanation": "Drops\n• Fighting Stick\n• Fluffy Fur\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 28 unique spawn points recorded.\n• Spawn data forms 5 exact clusters.\n\nSample Coordinates\n• [159, 71, -4410] radius 15\n• [163, 79, -4343] radius 15\n• [148, 77, -4366] radius 15\n• [126, 76, -4366] radius 7\n• [108, 77, -4357] radius 10\n• [202, 87, -4338] radius 10\n• [213, 111, -4426] radius 7\n• [206, 116, -4438] radius 5\n• [54, 44, -4472] radius 15\n• [48, 44, -4514] radius 10\n• [108, 44, -4531] radius 15\n• [109, 43, -4532] radius 5",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/AiluropodaWarrior.png/100px-AiluropodaWarrior.png?d5b322",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Fighting%20Stick",
@@ -266,8 +266,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-armored-rebel-cow": {
-    "summary": "Armored Rebel Cow drops 1 ingredient across 2 mapped spawn points.",
-    "explanation": "Drops\n• Leather\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-1992, 55, -5479] radius 4\n• [975, 45, -1628] radius 0",
+    "summary": "Armored Rebel Cow drops 1 ingredient across 1 mapped spawn point.",
+    "explanation": "Drops\n• Leather\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 1 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [975, 45, -1628] radius 0",
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Leather",
@@ -1282,8 +1282,8 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-cow": {
-    "summary": "Cow drops 1 ingredient across 2 mapped spawn points.",
-    "explanation": "Drops\n• Leather\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-1070, 44, -5304] radius 1\n• [-1068, 44, -5301] radius 1",
+    "summary": "Cow drops 1 ingredient across 3 mapped spawn points.",
+    "explanation": "Drops\n• Leather\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 3 unique spawn points recorded.\n• Spawn data forms 2 exact clusters.\n\nSample Coordinates\n• [-1992, 55, -5479] radius 4\n• [-1070, 44, -5304] radius 1\n• [-1068, 44, -5301] radius 1",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/Cow%28Lv1%29.png/100px-Cow%28Lv1%29.png?1e63e4",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Leather",
@@ -3202,11 +3202,11 @@ export const MOBS_CONTENT = {
     "tutorials": []
   },
   "mob-ironwood-uraqi": {
-    "summary": "Ironwood Uraqi drops 1 ingredient across 2 mapped spawn points.",
-    "explanation": "Drops\n• Ironwood Chips\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-551, 22, -293] radius 0\n• [-593, 27, -275] radius 0",
+    "summary": "Ironwood Uraqi drops 2 ingredients across 2 mapped spawn points.",
+    "explanation": "Drops\n• Bob's Tear\n• Ironwood Chips\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [-551, 22, -293] radius 0\n• [-593, 27, -275] radius 0",
     "coverImage": "https://wynncraft.wiki.gg/images/thumb/IronwoodUraqi.png/100px-IronwoodUraqi.png?5067ca",
     "gallery": [],
-    "sourceUrl": "https://wynncraft.com/item/Ironwood%20Chips",
+    "sourceUrl": "https://wynncraft.com/item/Bob's%20Tear",
     "tutorials": []
   },
   "mob-island-crab": {
@@ -7567,6 +7567,14 @@ export const MOBS_CONTENT = {
     "coverImage": "",
     "gallery": [],
     "sourceUrl": "https://wynncraft.com/item/Discarded%20Junk",
+    "tutorials": []
+  },
+  "mob-bandit": {
+    "summary": "Bandit drops 1 ingredient across 2 mapped spawn points.",
+    "explanation": "Drops\n• Gold Bar\n\nSpawn Data\n• Exact spawn coordinates pulled from official ingredient drop data.\n• 2 unique spawn points recorded.\n• Spawn data forms 1 exact cluster.\n\nSample Coordinates\n• [1431, 74, -1673] radius 7\n• [1438, 74, -1666] radius 7",
+    "coverImage": "",
+    "gallery": [],
+    "sourceUrl": "https://wynncraft.com/item/Gold%20Bar",
     "tutorials": []
   }
 };
