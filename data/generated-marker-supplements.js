@@ -2,6 +2,25 @@
 
 export const GENERATED_MARKER_SUPPLEMENTS = [
   {
+    "id": "live-mini_quests-slay-angels-1005--4790",
+    "title": "Slay Angels",
+    "category": "mini_quests",
+    "region": "Sky Islands",
+    "description": "Slay Angels is a level 98 mini-quest in Sky Islands. Requirement: Obtain 25 Holy Powders. XP: 2,580,600.",
+    "tags": [
+      "mini-quests",
+      "official-map",
+      "wiki-refresh"
+    ],
+    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Quests#Mini-Quests",
+    "position": {
+      "world": {
+        "x": 1005,
+        "z": -4790
+      }
+    }
+  },
+  {
     "id": "live-caves-drone-s-retreat-235--5423",
     "title": "Drone's Retreat",
     "category": "caves",
@@ -422,25 +441,6 @@ export const GENERATED_MARKER_SUPPLEMENTS = [
       "world": {
         "x": -1524,
         "z": -738
-      }
-    }
-  },
-  {
-    "id": "live-mini_quests-slay-angels-1005--4790",
-    "title": "Slay Angels",
-    "category": "mini_quests",
-    "region": "Sky Islands",
-    "description": "Slay Angels is a level 98 mini-quest in Sky Islands. Requirement: 25 Holy Powders. XP: 2,580,600.",
-    "tags": [
-      "mini-quests",
-      "official-map",
-      "wiki-refresh"
-    ],
-    "sourceUrl": "https://wynncraft.wiki.gg/wiki/Quests#Mini-Quests",
-    "position": {
-      "world": {
-        "x": 1005,
-        "z": -4790
       }
     }
   }
